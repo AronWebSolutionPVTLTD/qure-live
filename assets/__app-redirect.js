@@ -14,7 +14,8 @@ async function getClientIp() {
 
 async function getCountryCode(ip) {
     try {
-        const response = await fetch(`https://ipwhois.app/json/${ip}?key=SUX3btwlpP5R3Gs8`);
+        const randomNum = Math.floor(Math.random() * 100000) + 1;
+        const response = await fetch(`http://ipwhois.pro/${ip}?key=SUX3btwlpP5R3Gs8&random=${randomNum}`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -35,7 +36,7 @@ async function main() {
 
     const countryCode = await getCountryCode(clientIp);
 
-    //console.log('countryCode [' + countryCode + ']');
+    console.log('countryCode [' + countryCode + ']');
 
     if (['US'].includes(countryCode)) {
         if(window.location.href.includes('exclusive-holiday-bundle-deal'))
