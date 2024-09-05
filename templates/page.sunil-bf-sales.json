@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "header_sales_TMQyBR": {
@@ -72,7 +81,7 @@
         "product_cRJKBk": {
           "type": "product",
           "settings": {
-            "product": "exclusive-labor-day-bundle",
+            "product": "micro-infusion-4-month-bundle",
             "announcement_id": "",
             "button_text_id": "Get yours",
             "show_save_price": false
@@ -548,7 +557,7 @@
         "product_9rPLGX": {
           "type": "product",
           "settings": {
-            "product": "exclusive-labor-day-bundle",
+            "product": "micro-infusion-4-month-bundle",
             "comment_ammount": 100,
             "percent": 34,
             "ppl_choise": 0,
