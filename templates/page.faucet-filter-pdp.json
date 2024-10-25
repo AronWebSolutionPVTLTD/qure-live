@@ -10,7 +10,9 @@
 {
   "sections": {
     "main": {
-        "type": "temp-faucet-filter-pdp"
+      "type": "temp-faucet-filter-pdp",
+      "settings": {
+      }
     }
   },
   "order": [
