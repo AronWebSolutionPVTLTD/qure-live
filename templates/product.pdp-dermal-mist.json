@@ -28,13 +28,13 @@
         "supply_CTrVRQ": {
           "type": "supply",
           "settings": {
-            "heading": "Next batch ships 10th November 2024:",
-            "heading_mobile": "Next batch ships 10th November 2024:",
+            "heading": "Next batch ships 11th November 2024:",
+            "heading_mobile": "Next batch ships 11th November 2024:",
             "text": "<p> Order now and secure yours from the next shipment.</p>",
             "first_option_date": "October 20th",
             "first_option_text": "SOLD OUT",
             "first_option_percent": 100,
-            "second_option_date": "November 10th",
+            "second_option_date": "November 11th",
             "second_option_text": "61% Reserved",
             "second_option_percent": 60,
             "third_option_date": "December 30th",
@@ -122,7 +122,7 @@
         "image_yFkfyU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Frame_1000004190.png"
+            "image": "shopify://shop_images/Frame_1000jjjj004190.png"
           }
         },
         "heading_QaXLcc": {
