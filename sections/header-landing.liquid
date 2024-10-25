@@ -11,20 +11,29 @@
 {%- endfor -%}
 
 <div class="wrapper header-wrapperBlock home-default-wrapper mi-landing-page" id="include_header_landing">
-    
-    {% for block in section.blocks %}
-        {% if block.type == 'announcement' %}
-            <!-- -- announcement bar start -- -->
-            <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
-                <p class="d-none d-md-block" style="font-size: {{ block.settings.font_size_desktop }}px !important">{{ block.settings.heading }}</p>
-            </div>
-            <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
-                <p class="d-block d-md-none" style="font-size: {{ block.settings.font_size_mobile }}px !important">{% if block.settings.heading_mobile != blank %}{{ block.settings.heading_mobile }}{% else %}{{ block.settings.heading }}{% endif %}</p>
-            </div>
-            <!-- -- announcement bar end -- -->
-        {% endif %}
-    {% endfor %}
-    
+    {% if settings.enable_site_gamification %}
+        <div class="announcement_bar site-gamification-active">
+            {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+            {% if settings.enable_site_wide_timer %}
+                <div class="announcement_bar__timer">
+                    {% render 'pdm_site-wide-timer' %}
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        {% for block in section.blocks %}
+            {% if block.type == 'announcement' %}
+                <!-- -- announcement bar start -- -->
+                <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
+                    <p class="d-none d-md-block" style="font-size: {{ block.settings.font_size_desktop }}px !important">{{ block.settings.heading }}</p>
+                </div>
+                <div class="announcement_bar {% if block.settings.color == 'green' %}bg_Darkgreen text-light{% else %}bg-light text-dark{% endif %}">
+                    <p class="d-block d-md-none" style="font-size: {{ block.settings.font_size_mobile }}px !important">{% if block.settings.heading_mobile != blank %}{{ block.settings.heading_mobile }}{% else %}{{ block.settings.heading }}{% endif %}</p>
+                </div>
+                <!-- -- announcement bar end -- -->
+            {% endif %}
+        {% endfor %}
+    {% endif %}
     
     <!-- Header live start -->
     <div id="shopify-section-header" class="shopify-section site-header">

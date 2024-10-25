@@ -1,14 +1,25 @@
 <div class="wrapper home-default-wrapper header-wrapperBlock">
     <div id="shopify-section-header" class="shopify-section site-header">
         <div class="header-wrapper">
-            {% for block in section.blocks limit: 1 %}
-                {%- case block.type -%}
-                    {% when 'announcement' %}
-                        {% render 'header-announcement-bar', section: section, block: block %}
-                    {% when 'announcement-promotion' %}
-                        {% render 'promotion-header-announcement-bar', section: section, block: block %}
-                {%- endcase -%}
-            {% endfor %}
+            {% if settings.enable_site_gamification %}
+                <div class="announcement_bar site-gamification-active">
+                    {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+                    {% if settings.enable_site_wide_timer %}
+                        <div class="announcement_bar__timer">
+                            {% render 'pdm_site-wide-timer' %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                {% for block in section.blocks limit: 1 %}
+                    {%- case block.type -%}
+                        {% when 'announcement' %}
+                            {% render 'header-announcement-bar', section: section, block: block %}
+                        {% when 'announcement-promotion' %}
+                            {% render 'promotion-header-announcement-bar', section: section, block: block %}
+                    {%- endcase -%}
+                {% endfor %}
+            {% endif %}
             <header>
                 <div class="header-new new-hp-header">
                     {% render 'header-menu-mobile', section: section %}
