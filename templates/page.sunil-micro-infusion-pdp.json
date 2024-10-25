@@ -1007,7 +1007,7 @@
           "type": "Serum",
           "settings": {
             "background": "bg-grey",
-            "pd_img": "shopify://shop_images/u_serum_2.webp",
+            "pd_img": "shopify://shop_images/serum_d1380379-a3b9-410d-b292-baa573e30451.png",
             "name": "Hydra-Soothing Serum",
             "serum_type": "Fine Lines & Wrinkles",
             "benefit1": "Reduces the look of  fine lines & wrinkles",
@@ -1037,8 +1037,8 @@
         "heading": "Science-backed Micro-Infusion serums",
         "subheading": "<p><strong>Choose the exact serum to use in your Micro-Infusion</strong> treatment, or get both and mix them together to experience a complete set of benefits that <strong>addresses your specific skin concerns.</strong></p>",
         "bottom_txt": "Can't decide?",
-        "desk_img": "shopify://shop_images/cant_d_desk.webp",
-        "mob_img": "shopify://shop_images/cant_d_mob.webp"
+        "desk_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc.png",
+        "mob_img": "shopify://shop_images/Group_mobile_2159.png"
       }
     },
     "liquid_JJikgW": {
