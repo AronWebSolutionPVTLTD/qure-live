@@ -13,6 +13,9 @@
     {% when 'product.sunil-led-mask-onyx' %}
         {% assign main_class = 'led_mask' %}
         <link rel="stylesheet" href="{{ 'product-led-mask.css' | asset_url }}">
+    {% when 'page.faucet-filter-pdp' %}
+        {% assign main_class = 'faucet_filter' %}
+        <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
     {% when 'product.mi-patches' %}
         {% assign main_class = 'mi_landing mi-patches-pdf' %}
         <link rel="stylesheet" href="{{ 'mi-patches-pdp.css' | asset_url }}">
