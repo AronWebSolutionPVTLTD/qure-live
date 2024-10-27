@@ -204,28 +204,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function gift(cart,productId, productQuantity, priceLimit, discountCode = '') {
     if(!giftException()) {
       var total_price = cart.total_price / 100;
-      var gift = cart.items.some(item => item.id === +(productId));
+      var gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
 
       if (total_price > priceLimit && !gift) {
-        fetch('/discount/' + discountCode).then(async () => {
+        //fetch('/discount/' + discountCode).then(async () => {
           cartRequestAdd({ 
           items: [
             {
               id: productId,
               quantity: productQuantity,
               properties: {
-                _discount_code: discountCode,
-                _free_product: true
+                _required_validation: 'validated',
               }
             }
           ]  
         }, {} )
         return true;
-        });
+        //});
       }
       else if(total_price <= priceLimit && gift)
       {
-        const giftInCart = cart.items.find(item => item.id === +(productId));
+        const giftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
         cartRequestChange({ 
           id: giftInCart.key,
           quantity: 0
@@ -233,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+  
 
   function productGiftPdm (cart, productId,priceLimit) {
     const gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
