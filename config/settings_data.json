@@ -264,12 +264,9 @@
           "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
           "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Full-Size Serum worth</strong> &product-price&</p>",
           "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
-          "show_urgency_note": true,
+          "show_urgency_note": false,
           "urgency_note_label": "Due to high demand, [] is only saved for 30 minutes. Checkout now!",
           "urgency_note_product_list": [
-            "ageless-glow-bundle",
-            "all-in-one-face-serum-bundle-1",
-            "best-seller-bundle"
           ]
         }
       },
