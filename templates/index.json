@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -47,18 +47,17 @@
         "slide_9wpXXH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/M.I_Patches_Mobile.png",
-            "link_label": "Micro-Infusion Targeted Patches",
+            "image": "shopify://shop_images/Ellipse_77.png",
+            "link_label": "Micro-Infusion Patches",
             "link_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
           }
         },
         "slide_9qAien": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/homepageslide-5.jpg",
-            "link_label": "Q-urify Water Filter",
-            "link_url": "https://www.qureskincare.com/products/q-urify-water-filter"
+            "image": "shopify://shop_images/Ellipse_81.png",
+            "link_label": "Faucet Filter",
+            "link_url": "shopify://products/faucet-filter"
           }
         },
         "slide_GReD48": {
