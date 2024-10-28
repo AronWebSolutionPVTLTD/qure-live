@@ -88,7 +88,7 @@
         "heading_mobile": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
         "product": "micro-infusion-targeted-patches",
         "product_images_offset": 6,
-        "product_images_limit": 10,
+        "product_images_limit": 7,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
         "before_after_button_label": "Before & After",
@@ -603,7 +603,7 @@
         "object_Pcbmim": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_188_2a078240-295d-4e92-a36f-2acb2c6b5c1f.png",
+            "image": "shopify://shop_images/Rectangle_188_e03b9b79-24ba-43b1-b2a1-0cf5dfb0c0b5.png",
             "heading": "Micro-Infusion Targeted Patches",
             "mob_text": "",
             "text": "",
