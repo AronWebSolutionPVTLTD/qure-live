@@ -128,7 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500);
     }
 
-    {% comment %} urgency note  {% endcomment %}
+    {% comment %} urgency note  
+      Subscribes to cart actions to manage urgency products, setting a timeout to remove them after 30 minutes.
+    {% endcomment %}
     subscribeToResult( myRequestCallback => {
       if(myRequestCallback.requestType === 'add') {
 
@@ -291,15 +293,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /** Saves the urgency note close icon status to local storage. */
   function saveUrgencyNoteCloseIconToStorage (status) {
     localStorage.setItem('urgencyCloseIcon', JSON.stringify(status));
   };
 
+  /** Retrieves the urgency note close icon status from local storage. */
   function getUrgencyNoteCloseIconToStorage () {
     const urgencyCloseIcon = localStorage.getItem('urgencyCloseIcon');
     return urgencyCloseIcon ? JSON.parse(urgencyCloseIcon) : null;
   };
 
+  /** Initializes sidecart urgency note, handling visibility and close icon actions. */
   function initSidecartUrgencyNote () {
     const urgencyNoteContainer = document.querySelector('.slide_cart .urgency-note-container');
     if (!urgencyNoteContainer) return false;
@@ -315,6 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /** Checks if the cart contains any products from the urgency note list. */
   function checkUrgencyNoteProducts (cart) {
     const urgencyNoteContainer = document.querySelector('.slide_cart .urgency-note-container');
     if (!urgencyNoteContainer) return;
@@ -327,6 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return includedUrgencyNoteProducts;
   }
 
+  /** Fetches the current Shopify cart data from the server. */
   function getShopifyCart () {
     return fetch('/cart.js', {
       method: 'GET',
@@ -345,6 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   
+  /** Removes urgency products from the cart if they are present. */
   function removeUrgencyProductsFromCart () {
     saveUrgencyNoteCloseIconToStorage(false);
 

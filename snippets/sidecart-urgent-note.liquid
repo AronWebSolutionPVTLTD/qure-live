@@ -1,3 +1,11 @@
+
+{% comment %}
+  renders a urgency note container
+  Accepts:
+  - settings: { array }  - from slidecart section
+  Usage:
+  {% render 'sidecart-urgent-note', settings: section.settings %}
+{% endcomment %}
 {%liquid 
   assign product_handles = ""
   assign has_cart_urgency_products = false
