@@ -302,7 +302,7 @@
                                     </div>
                                 </div>
                                 <div class="bfs_tabContent_bx text-start">
-                                    <img src="https://qureskincaredns.com/new/assets/bfs_faucet_b.webp" alt=""
+                                    <img src="https://qureskincaredns.com/new/assets/bfs_faucet.webp" alt=""
                                         class="img-fluid faucetImage">
                                     <div class="bfs_tbx_info">
                                         <div class="bfs_tbx_title">
@@ -315,8 +315,9 @@
                                     <div class="bfs_tbx_color">
                                         <select class="form-select colorSelectorFaucet"
                                             aria-label="Default select example">
-                                            <option value="2" data-variant-id="46002559647983" selected>Black</option>
-                                            <option value="1" data-variant-id="46002559451375">White</option>
+                                            <option value="1" data-variant-id="46002559451375" selected>White</option>
+                                            <option value="2" data-variant-id="46002559647983">Black</option>
+
                                         </select>
                                     </div>
                                 </div>
@@ -1400,7 +1401,7 @@
                                         </div>
                                     </div>
                                     <div class="bfs_tbx_color">
-                                        <select class="form-select colorSelectorFaucet"
+                                        <select class="form-select form-select-first colorSelectorFaucet"
                                             aria-label="Default select example">
                                             <option value="1" selected>White</option>
                                             <option value="2">Black</option>
@@ -1419,7 +1420,7 @@
                                         </div>
                                     </div>
                                     <div class="bfs_tbx_color">
-                                        <select class="form-select colorSelector"
+                                        <select class="form-select form-select-second colorSelector"
                                             aria-label="Default select example">
                                             <option value="1" selected>White</option>
                                             <option value="2">Black</option>
@@ -1557,7 +1558,7 @@
                                     </div>
                                 </div>
                                 <div class="bfs_tabContent_bx text-start">
-                                    <img src="https://qureskincaredns.com/new/assets/bfs_faucet_b.webp" alt=""
+                                    <img src="https://qureskincaredns.com/new/assets/bfs_faucet.webp" alt=""
                                         class="img-fluid faucetImage">
                                     <div class="bfs_tbx_info">
                                         <div class="bfs_tbx_title">
@@ -1570,8 +1571,8 @@
                                     <div class="bfs_tbx_color">
                                         <select class="form-select colorSelectorFaucet"
                                             aria-label="Default select example">
-                                            <option value="2" data-variant-id="45970548850927" selected>Black</option>
-                                            <option value="1" data-variant-id="45970548883695">White</option>
+                                            <option value="1" selected>White</option>
+                                            <option value="2">Black</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1852,9 +1853,9 @@
                                         </div>
                                     </div>
                                     <div class="bfs_tbx_color">
-                                        <select class="form-select colorSelectorFaucet"
+                                        <select id="for" class="form-select form-select-first colorSelectorFaucet"
                                             aria-label="Default select example">
-                                            <option selected value="1">White</option>
+                                            <option value="1" selected>White</option>
                                             <option value="2">Black</option>
                                         </select>
                                     </div>
@@ -1871,9 +1872,9 @@
                                         </div>
                                     </div>
                                     <div class="bfs_tbx_color">
-                                        <select class="form-select colorSelector"
+                                        <select class="form-select form-select-second colorSelector"
                                             aria-label="Default select example">
-                                            <option selected value="1">White</option>
+                                            <option value="1" selected>White</option>
                                             <option value="2">Black</option>
                                         </select>
                                     </div>
@@ -1980,15 +1981,33 @@
 
         document.querySelectorAll('.form-select').forEach(select => {
             select.addEventListener('change', function() {
-                const selectedOption = this.options[this.selectedIndex];
-                const variantId = selectedOption.getAttribute('data-variant-id');
-                
+                let variantId = 0;
+                let variantTitle = '';
                 const parentDiv = this.closest('.bfs_bf_item');
-                
                 const button = parentDiv ? parentDiv.querySelector('.bfs_bf_item_buyBtn') : null;
+                const select_first = parentDiv ? parentDiv.querySelector('.form-select-first') : null;
+                const select_second = parentDiv ? parentDiv.querySelector('.form-select-second') : null;
 
-                if (button) {
-                    button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                if(select_first && select_second)
+                {
+                    variantTitle = select_first.options[select_first.selectedIndex].text + ' / ' + select_second.options[select_second.selectedIndex].text;
+                }
+
+                if(variantTitle == '')
+                {
+                    variantTitle = this.options[this.selectedIndex].text;
+                }
+                
+                if(bundle_variants[parentDiv.getAttribute('id')]) 
+                {
+                    if(variantId = bundle_variants[parentDiv.getAttribute('id')][variantTitle])
+                    {
+                        //console.log('variantTitle [' + variantTitle + '] variantId [' + variantId + ']');
+
+                        if (button) {
+                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                        }
+                    }
                 }
             });
         });
