@@ -83,11 +83,9 @@
                 {%- for block in section.blocks -%}
                     {% if block.type == 'button' %}
                         <div class="special_deals">
-                            <img src="{{ 'special_deals_n.webp' | asset_url }}" alt="">
+                            <img src="{{ 'special_deals_bf.webp' | asset_url }}" alt="">
                             <div class="special_deal_btn">
-                                {% if block.settings.button_label != blank %}
-                                    <a href="{{ block.settings.button_url }}">{{ block.settings.button_label }}<img src="{{ 'arrow-right-white.png' | asset_url }}"></a>
-                                {% endif %}
+                                <a href="{{ block.settings.button_url }}" title="{{ block.settings.button_label | escape }}">See more<span>{{ block.settings.button_label }}<img src="{{ 'arrow-right-white.png' | asset_url }}"></span></a>
                             </div>
                         </div>
                     {% endif %}

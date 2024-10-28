@@ -216,7 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'micro-infusion-special-offer',
       'micro-infusion-special-offer-v2',
       'micro-infusion-faq-page-2',
-      'qure-microinfusion-offer',
       'qure-microinfusion-offer-ar',
       'qure-microinfusion-offer-fr',
       'qure-microinfusion-offer-es',
@@ -238,28 +237,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function gift(cart,productId, productQuantity, priceLimit, discountCode = '') {
     if(!giftException()) {
       var total_price = cart.total_price / 100;
-      var gift = cart.items.some(item => item.id === +(productId));
+      var gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
 
       if (total_price > priceLimit && !gift) {
-        fetch('/discount/' + discountCode).then(async () => {
+        //fetch('/discount/' + discountCode).then(async () => {
           cartRequestAdd({ 
           items: [
             {
               id: productId,
               quantity: productQuantity,
               properties: {
-                _discount_code: discountCode,
-                _free_product: true
+                _required_validation: 'validated',
               }
             }
           ]  
         }, {} )
         return true;
-        });
+        //});
       }
       else if(total_price <= priceLimit && gift)
       {
-        const giftInCart = cart.items.find(item => item.id === +(productId));
+        const giftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
         cartRequestChange({ 
           id: giftInCart.key,
           quantity: 0
@@ -267,30 +265,29 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
+  
 
   function productGiftPdm (cart, productId,priceLimit) {
-    if(document.body.hasAttribute('data-free-gift-gamification')){
-      const gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
-      const total_price = cart.total_price;
-      if (total_price >= priceLimit && !gift) {
-        cartRequestAdd({
-          items: [
-            {
-              id: productId,
-              quantity: 1,
-              properties: {
-                _required_validation: 'validated',
-              }
+    const gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
+    const total_price = cart.total_price;
+    if (total_price >= priceLimit && !gift) {
+      cartRequestAdd({
+        items: [
+          {
+            id: productId,
+            quantity: 1,
+            properties: {
+              _required_validation: 'validated',
             }
-          ]
-        }, {} )
-      }else if (total_price < priceLimit && gift) {
-        const getGiftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
-        cartRequestChange({
-          id: getGiftInCart.key,
-          quantity: 0
-        },  {} )
-      }
+          }
+        ]
+      }, {} )
+    }else if (total_price < priceLimit && gift) {
+      const getGiftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
+      cartRequestChange({
+        id: getGiftInCart.key,
+        quantity: 0
+      },  {} )
     }
   }
 
