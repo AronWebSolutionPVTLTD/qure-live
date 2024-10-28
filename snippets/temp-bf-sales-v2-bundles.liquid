@@ -1348,28 +1348,22 @@
                     <h6>Select treatment type:</h6>
                     <div class="tmt_type_grid">
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1"
-                                id="type_p1-v1">
-                            <label class="tmt_type_label form-check-label"
-                                for="type_p1-v1">Wrinkles</label>
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v1" data-variant-id="45991849787631">
+                            <label class="tmt_type_label form-check-label" for="type_p1-v1">Wrinkles</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1"
-                                id="type_p1-v2">
-                            <label class="tmt_type_label form-check-label" for="type_p1-v2">Dark
-                                Spots</label>
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v2" data-variant-id="45991849820399">
+                            <label class="tmt_type_label form-check-label" for="type_p1-v2">Dark Spots</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1"
-                                id="type_p1-v3" checked>
-                            <label class="tmt_type_label form-check-label" for="type_p1-v3">Wrinkles
-                                + Dark Spots</label>
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v3" data-variant-id="45991849853167" checked>
+                            <label class="tmt_type_label form-check-label" for="type_p1-v3">Wrinkles + Dark Spots</label>
                         </div>
                     </div>
                 </div>
             {% endcapture %}
 
-            {% render 'temp-bf-sales-v2-bundles-bundle', product: all_products['fade-firm-bundle-pro'], bundleId: 'b2-s4-bundle', bundlePercent: '30', recommended: recommended, included: included, treatment: treatment %}
+            {% render 'temp-bf-sales-v2-bundles-bundle', product: all_products['micro-infusion-limited-edition-bundle'], bundleId: 'b2-s4-bundle', bundlePercent: '30', recommended: recommended, included: included, treatment: treatment %}
 
             {% comment %} next product {% endcomment %}
             
@@ -1948,9 +1942,42 @@
     </div>
 </div>
 
+<style>
+    .soldout {
+        --bgPercent:100% !important;
+    }
+    .soldout .stock_left {
+        display: none !important;
+    }
+    .soldout .me-1 {
+        display: none !important;
+    }
+    .soldout .add_cart {
+        text-indent: -350px;
+    }
+    .soldout .add_cart::after{
+        content: 'Sold out';
+        margin-left: 250px;
+    }
+</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.type_radio').forEach(radio => {
+            radio.addEventListener('click', function() {
+                const variantId = this.getAttribute('data-variant-id');
+                
+                const parentDiv = this.closest('.bfs_bf_item');
+                
+                const button = parentDiv ? parentDiv.querySelector('.bfs_bf_item_buyBtn') : null;
+                
+                if (button && variantId) {
+                    button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                }
+            });
+        });
+
+
         document.querySelectorAll('.form-select').forEach(select => {
             select.addEventListener('change', function() {
                 const selectedOption = this.options[this.selectedIndex];
