@@ -1349,15 +1349,15 @@
                     <h6>Select treatment type:</h6>
                     <div class="tmt_type_grid">
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v1" data-variant-id="45991849787631">
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v1" value="Wrinkles">
                             <label class="tmt_type_label form-check-label" for="type_p1-v1">Wrinkles</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v2" data-variant-id="45991849820399">
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v2" value="Dark Spots">
                             <label class="tmt_type_label form-check-label" for="type_p1-v2">Dark Spots</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v3" data-variant-id="45991849853167" checked>
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v3" value="Wrinkles + Dark Spots" checked>
                             <label class="tmt_type_label form-check-label" for="type_p1-v3">Wrinkles + Dark Spots</label>
                         </div>
                     </div>
@@ -1966,15 +1966,22 @@
     document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.type_radio').forEach(radio => {
             radio.addEventListener('click', function() {
-                const variantId = this.getAttribute('data-variant-id');
-                
+                let variantId = 0;
                 const parentDiv = this.closest('.bfs_bf_item');
-                
                 const button = parentDiv ? parentDiv.querySelector('.bfs_bf_item_buyBtn') : null;
-                
-                if (button && variantId) {
-                    button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+
+                if(bundle_variants[parentDiv.getAttribute('id')]) 
+                {
+                    if(variantId = bundle_variants[parentDiv.getAttribute('id')][this.value])
+                    {
+                        //console.log('variantTitle [' + this.value + '] variantId [' + variantId + ']');
+
+                        if (button) {
+                            button.setAttribute('data-ajax-cart-request-button', `/cart/add?id=${variantId}&quantity=1`);
+                        }
+                    }
                 }
+
             });
         });
 
