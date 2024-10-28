@@ -19,7 +19,7 @@
         {% endif %}
     </script>
 
-    <div class="bfs_bf_item" id="{{ bundleId }}">
+    <div class="bfs_bf_item{% if class != blank %} {{ class }}{% endif %}" id="{{ bundleId }}">
         <div class="bfs_bf_item_slider">
             <div class="swiper twa__swiper_thumbs" data-section-id="{{ bundleId }}" data-autoplay="false"
                 data-loop="false" data-speed="500" data-mobile="1" data-tablet="1"
