@@ -805,6 +805,7 @@
   top: 2px;
   right: 8px;
   cursor: pointer;
+  z-index: 99;
 } 
 @media screen and (max-width: 768px) {
   .slide_cart .urgency-note-container {

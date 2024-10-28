@@ -12,8 +12,8 @@
     assign product_handles = product_handles | append: product.handle
     assign products_ids = products_ids | append: product.selected_or_first_available_variant.id
     if forloop.last == false 
-       assign product_handles = product_handles | append: ","
-    assign products_ids = products_ids | append: ","
+      assign product_handles = product_handles | append: ","
+      assign products_ids = products_ids | append: ","
     endif
   endfor
   
@@ -21,11 +21,13 @@
 
   for item in cart.items
     assign length = forloop.length
-    if product_handles_array contains item.product.handle
-      assign quantity = quantity | plus: 1
-      assign has_cart_urgency_products = true
-      assign product_titles = product_titles | append: item.product.title | append: ", "
-    endif
+    unless product_titles contains item.product.title
+      if product_handles_array contains item.product.handle
+        assign quantity = quantity | plus: 1
+        assign has_cart_urgency_products = true
+        assign product_titles = product_titles | append: item.product.title | append: ", "
+      endif
+    endunless
   endfor
   
   if quantity > 1
