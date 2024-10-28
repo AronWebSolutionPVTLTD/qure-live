@@ -67,6 +67,15 @@
             "link_label": "Micro-Infusion Refill",
             "link_url": "https://www.qureskincare.com/pages/micro-infusion-refill"
           }
+        },
+        "slide_hVri9x": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_81_6730773b-c0c0-4501-9bf1-740bf439e1fd.png",
+            "link_label": "Dermal Mist",
+            "link_url": "shopify://pages/dermal-mist"
+          }
         }
       },
       "block_order": [
@@ -76,7 +85,8 @@
         "slide_aKL6kD",
         "slide_9wpXXH",
         "slide_9qAien",
-        "slide_GReD48"
+        "slide_GReD48",
+        "slide_hVri9x"
       ],
       "settings": {
       }
