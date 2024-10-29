@@ -220,11 +220,14 @@
                 if (titleElement) {
                     titleElement.textContent += " - " + selectedVariant.title;
                 }
-                const swiperInstance = document.querySelector(".swiper.bf-bundle_slider").swiper;
-                if (swiperInstance && selectedVariant.featured_image && selectedVariant.featured_image.position) {
-                    const slideIndex = selectedVariant.featured_image.position - 1;
-                    swiperInstance.slideTo(slideIndex);
-                }
+
+                setTimeout(() => {
+                    const swiperInstance = document.querySelector(".swiper.bf-bundle_slider").swiper;
+                    if (swiperInstance && selectedVariant.featured_image && selectedVariant.featured_image.position) {
+                        const slideIndex = selectedVariant.featured_image.position - 1;
+                        swiperInstance.slideTo(slideIndex);
+                    }
+                }, 1500);
             }
         }
 
