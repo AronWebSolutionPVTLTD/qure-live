@@ -105,7 +105,7 @@
                 {% if preorder != blank %}
                     <div class="add_cart">Pre-Order Now</div>
                 {% else %}
-                    <div class="add_cart"><span class="me-1">+</span>Add to Cart</div>
+                    <div class="add_cart"><span class="me-1">+</span>{% if product_variant_available %}Add to Cart{% else %}Sold out{% endif %}</div>
                 {% endif %}
             </button>
         {{ included }}
