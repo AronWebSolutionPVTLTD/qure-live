@@ -108,7 +108,7 @@
             </div>
             {{ treatment }}
         </div>
-            <button {% if preorder == blank %}data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')"{% endif %} class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:{{ bundlePercent }}%">
+            <button data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:{{ bundlePercent }}%">
                 <div class="stock_left">{{ bundlePercent }}%<div>of stock left</div>
                 </div>
                 {% if preorder != blank %}
