@@ -806,11 +806,6 @@
   cursor: pointer;
   z-index: 99;
 } 
-@media screen and (min-width: 1400px) {
-  .slide_cart .urgency-note-container {
-    width: 530px;
-  }
-}
 @media screen and (max-width: 767px) {
   .slide_cart .urgency-note-container {
     width: 435px;
