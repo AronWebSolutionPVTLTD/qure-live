@@ -30,7 +30,7 @@
           "type": "icons",
           "settings": {
             "image": "shopify://shop_images/dermatologist.svg",
-            "text": "Dermatologist Reviewed",
+            "text": "Dermatologist Approved",
             "image_second": "shopify://shop_images/free-shipping-ftr.svg",
             "text_second": "Free Shipping Over $100"
           }
