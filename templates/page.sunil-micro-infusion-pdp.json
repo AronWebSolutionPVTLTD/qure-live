@@ -24,6 +24,72 @@
           "type": "list",
           "settings": {
             "text": "<ul><li>Helps reduce appearance of <strong>fine lines, smooth texture</strong> whilst helping to infuse active ingredients into your skin.</li><li>Virtually <strong>painless</strong> and performed in the comfort and convenience of your home.</li><li>Minimal to <strong>no downtime</strong> with visible results.</li></ul>"
+<<<<<<< HEAD
+=======
+          }
+        },
+        "media_CwfKJr": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-1.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_JnMF7G": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-2.webp",
+            "wistia_id": "jg8c1a3bee"
+          }
+        },
+        "media_a6KBAn": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi-product-3.png",
+            "wistia_id": ""
+          }
+        },
+        "media_6QEUHd": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-4.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_CeVxmC": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-product-5.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_9gQKQ7": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_376.png",
+            "wistia_id": ""
+          }
+        },
+        "media_dmxg7T": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-result-1.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_kaCFw8": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-result-2.webp",
+            "wistia_id": ""
+          }
+        },
+        "media_bEn9Dc": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/mi_pdp-result-3.webp",
+            "wistia_id": ""
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
           }
         },
         "liquid_6AqWXk": {
@@ -35,7 +101,11 @@
         "product_in_page_x33rFD": {
           "type": "product_in_page",
           "settings": {
+<<<<<<< HEAD
             "image_product_1": "shopify://shop_images/awardMI.png",
+=======
+            "image_product_1": "shopify://shop_images/mi_pdp-product-1.webp",
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
             "image_product_text_1": "product one",
             "video_wistia_id_1": "",
             "image_product_2": "shopify://shop_images/mi_pdp-product-2.webp",
@@ -903,6 +973,7 @@
     "compare_products_y7yjpe": {
       "type": "compare-products",
       "blocks": {
+<<<<<<< HEAD
         "column_rBddMQ": {
           "type": "column",
           "settings": {
@@ -918,6 +989,8 @@
             "mark4": "tick"
           }
         },
+=======
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
         "column_PjJ7Q3": {
           "type": "column",
           "settings": {
@@ -931,6 +1004,21 @@
             "mark3": "tick",
             "point8": "Around $300 per treatment",
             "mark4": "cross"
+          }
+        },
+        "column_rBddMQ": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/compare_micro.webp",
+            "pd_name": "<h4><strong>Qure</strong><br/>Micro-Infusion System</h4>",
+            "point5": "As little as 1-2 days",
+            "mark1": "tick",
+            "point6": "Tailored to your skin needs",
+            "mark2": "tick",
+            "point7": "Minimal downtime & Virtually Painless",
+            "mark3": "tick",
+            "point8": "Less than $20 per treatment",
+            "mark4": "tick"
           }
         },
         "column_cHB7kF": {
@@ -950,8 +1038,8 @@
         }
       },
       "block_order": [
-        "column_rBddMQ",
         "column_PjJ7Q3",
+        "column_rBddMQ",
         "column_cHB7kF"
       ],
       "settings": {
@@ -1007,7 +1095,11 @@
           "type": "Serum",
           "settings": {
             "background": "bg-grey",
+<<<<<<< HEAD
             "pd_img": "shopify://shop_images/serum_d1380379-a3b9-410d-b292-baa573e30451.png",
+=======
+            "pd_img": "shopify://shop_images/u_serum_2.webp",
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
             "name": "Hydra-Soothing Serum",
             "serum_type": "Fine Lines & Wrinkles",
             "benefit1": "Reduces the look of  fine lines & wrinkles",
@@ -1017,7 +1109,11 @@
             "benefit3": "Boosts  hydration",
             "icon3": "shopify://shop_images/unique_hydrates_drop_b01213be-21ee-4f0a-a64e-8f4bafa5e86d.svg",
             "title1": "What can it do for your skin",
+<<<<<<< HEAD
             "drop_txt1": "<p><strong>Ultra hydration.</strong> Hydrates to help plump skin, reducing the look of fine lines and wrinkles, reduce redness, and supports the skin barrier for firmer-feeling, supple looking skin.</p><p><strong>Skin Concerns:</strong> Designed for dull looking skin with wrinkles, fine lines, dehydration, dryness and redness.</p>",
+=======
+            "drop_txt1": "<p><strong>Ultra hydration.</strong> Hydrates to help plump skin, reducing the look of fine lines and wrinkles, reduce redness, and supports the skin barrier for firmer-feeling, supple looking skin.</p><p><strong>Skin Concerns:</strong> Designed for dull looking skin with wrinkles, fine lines, dehydration, dryness and redness,</p>",
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
             "title2": "All Ingredients",
             "drop_txt2": "<p><strong>Beta Glucan:</strong> A tall glass of water for your skin. Boosts skin barrier, smooths skin, antioxidant.</p><p><strong>Niacinamide:</strong> Superstar ingredient that helps with most skin concerns from soothing to brightening and clarifying, and reducing fine lines and wrinkles.</p><p><strong>Tripeptide-1 Peptide:</strong> Proven to stimulate the production of dermal protein, which slows the skin's ageing process. Helps the skin retain water and restore elasticity, reduce appearance of wrinkles.</p><p><strong>All ingredients:</strong><br/>Rosa Damascena Flower Water, Propanediol 1,3, Glycerin, Panthenol, Niacinamide, Myrothamnus Flabellifolia leaf /stem extract, Water, Butylene glycol, 4'Hydroxyacetophenone, Copper Tripeptide-1, Oat Beta Glucan, Chrysanthellum indicum extract, Ethylhexylglycerin, Sodium Hyaluronate, Allantoin, Xanthan Gum.</p><p>Please note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites.</p>",
             "title3": "",
@@ -1037,8 +1133,13 @@
         "heading": "Science-backed Micro-Infusion serums",
         "subheading": "<p><strong>Choose the exact serum to use in your Micro-Infusion</strong> treatment, or get both and mix them together to experience a complete set of benefits that <strong>addresses your specific skin concerns.</strong></p>",
         "bottom_txt": "Can't decide?",
+<<<<<<< HEAD
         "desk_img": "shopify://shop_images/Group_2160_ffbda153-73a3-44cb-a304-27c046e928fc.png",
         "mob_img": "shopify://shop_images/Group_mobile_2159.png"
+=======
+        "desk_img": "shopify://shop_images/cant_d_desk.webp",
+        "mob_img": "shopify://shop_images/cant_d_mob.webp"
+>>>>>>> 72daa7252b6b15a120553cc2d05bdb5ea567ac48
       }
     },
     "liquid_JJikgW": {
