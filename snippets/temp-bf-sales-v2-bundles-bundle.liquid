@@ -8,8 +8,12 @@
     {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
 
     {% assign __media_limit = 10 %}
-    {% if media_limit %}
+    {% if media_limit != blank %}
         {% assign __media_limit = media_limit %}
+    {% endif %}
+
+    {% if default_variant != blank %}
+        {% assign product_variant = default_variant %}
     {% endif %}
 
     <script>
