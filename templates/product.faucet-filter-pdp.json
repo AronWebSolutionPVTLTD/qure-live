@@ -13,9 +13,16 @@
       "type": "temp-product-faucet-filter-pdp",
       "settings": {
       }
+    },
+    "liquid_N9DGCe": {
+      "type": "liquid",
+      "settings": {
+        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n$(\"#pills-home-tab\").trigger('click');\n})\n</script>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "liquid_N9DGCe"
   ]
 }
