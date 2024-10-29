@@ -123,6 +123,36 @@ document.addEventListener('DOMContentLoaded', function() {
             triggerClick('.hamburger-container');
         });
     }
+    //https://www.qureskincare.com/pages/faucet-online-guide
+    if (template == 'page.faucet-online-guide') {
+        document.querySelector('#hs_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step7');
+        });
+        document.querySelector('#hs_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step8');
+        });
+        document.querySelector('#hs_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+        });
+        document.querySelector('#hsm_1').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step7');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_2').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step8');
+            triggerClick('.hamburger-container');
+        });
+        document.querySelector('#hsm_3').addEventListener('click', function() {
+            event.preventDefault();
+            triggerClick('.step10');
+            triggerClick('.hamburger-container');
+        });
+    }
 
     //https://www.qureskincare.com/pages/microinfusion-safety-guide
     if (template == 'page.sunil-micro-infusion-safety') {
