@@ -1,21 +1,236 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
+      "type": "product-extended",
+      "blocks": {
+        "rating_Kd4mk7": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
+            "text": "<p>4.7\/5 Rated by Customers<\/p>"
+          }
+        },
+        "list_qXaKPn": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li>Advanced water filter aids in reducing irritants like for clearer, hydrated skin.<\/li><li>Reduces pore-clogging contaminants and prevents pre-mature aging without any extra steps in your routine.<\/li><li>Optimizes skincare effectiveness, and provides the most purified cleanse your skin will drink up<\/li><\/ul>"
+          }
+        },
+        "before_and_after_ACdxfn": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify:\/\/shop_images\/faucet_flter-result-1n.webp",
+            "image_new_section_text_1": "",
+            "image_new_section_2": "shopify:\/\/shop_images\/faucet_flter-result-2n.webp",
+            "image_new_section_text_2": "",
+            "image_new_section_text_3": "",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": "",
+            "image_new_section_text_6": ""
+          }
+        },
+        "video_before_and_after_tyFTP7": {
+          "type": "video_before_and_after",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "rating_Kd4mk7",
+        "list_qXaKPn",
+        "before_and_after_ACdxfn",
+        "video_before_and_after_tyFTP7"
+      ],
+      "settings": {
+        "heading": "Get clearer skin, on tap, with Qure Faucet Filter",
+        "heading_mobile": "Get clearer skin, on tap, with Qure Faucet Filter",
+        "product_images_limit": 6,
+        "product_button_label": "Product",
+        "before_after_images_limit": 2,
+        "before_after_button_label": "Real Results",
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "selected_design": "new",
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
+      }
+    },
+    "custom_qurify_filter_lp_featuredin_JkK7Ch": {
+      "type": "custom-qurify-filter-lp-featuredin",
+      "blocks": {
+        "image_ckfeCa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue2.svg"
+          }
+        },
+        "image_AXVEwp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women_health.svg"
+          }
+        },
+        "image_hJgEp3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan2.svg"
+          }
+        },
+        "image_KdrD9r": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle2.svg"
+          }
+        },
+        "image_jcQxk9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marie.svg"
+          }
+        },
+        "image_KQnz33": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia2.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_ckfeCa",
+        "image_AXVEwp",
+        "image_hJgEp3",
+        "image_KdrD9r",
+        "image_jcQxk9",
+        "image_KQnz33"
+      ],
+      "settings": {
+        "custom_class": "bg-lightGrey"
+      }
+    },
+    "reasons_Y4QGUa": {
+      "type": "reasons",
+      "blocks": {
+        "icon_tnqcGB": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason7.svg",
+            "text": "<p>Enhances the effectiveness of topical products with a clean skin base<\/p>"
+          }
+        },
+        "icon_bKH7Ca": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason11.svg",
+            "text": "<p>Reduces appearance of wrinkles and prevents premature ageing<\/p>"
+          }
+        },
+        "icon_W4LDVM": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason8.svg",
+            "text": "<p>Increases skin hydration and improves skin barrier<\/p>"
+          }
+        },
+        "icon_4F6GcW": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason9.svg",
+            "text": "<p>Reduces pore clogging contaminants for less breakouts and clearer skin<\/p>"
+          }
+        },
+        "icon_dVq99K": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason10.svg",
+            "text": "<p>Decreases redness and irritation, great for sensitive skin<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_tnqcGB",
+        "icon_bKH7Ca",
+        "icon_W4LDVM",
+        "icon_4F6GcW",
+        "icon_dVq99K"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.reasons .rs_item {margin: 0; width: calc(50% - 20px); height: auto; } .reasons .reasons_wrapper {gap: 20px; }}"
+      ],
+      "settings": {
+        "classname": "bg-transparent",
+        "heading": "",
+        "text": ""
+      }
+    },
+    "results_B6nDgh": {
+      "type": "results",
+      "blocks": {
+        "result_BGLVCf": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_kim_l.webp",
+            "heading": "Source of my unclear skin",
+            "text": "<p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”<\/p>",
+            "see-more": "",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "Australia",
+            "client": "Kim L.",
+            "code": ""
+          }
+        },
+        "result_iAGdCP": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_hanna_a9a19b3e-4b75-442b-93b7-665aee9538d4.webp",
+            "heading": "Hydrated more than ever",
+            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. <\/p>",
+            "see-more": "I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”",
+            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "text_country": "United States",
+            "client": "Hanna",
+            "code": ""
+          }
+        },
+        "result_QwpUtk": {
+          "type": "result",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/results_josie.webp",
+            "heading": "Acne and dryness gone",
+            "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”<\/p>",
+            "see-more": "",
+            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "text_country": "United States",
+            "client": "Josie",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "result_BGLVCf",
+        "result_iAGdCP",
+        "result_QwpUtk"
+      ],
+      "settings": {
+        "classname": "mi_landing_result",
+        "heading": "Results you‘ll see with your own eyes",
+        "heading_reduced": "",
+        "text_verified_customer": "Verified customer",
+        "text_reviewed": "Reviewed in"
+      }
+    },
+    "temp": {
       "type": "temp-product-faucet-filter-pdp",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_qurify_filter_lp_featuredin_JkK7Ch",
+    "reasons_Y4QGUa",
+    "results_B6nDgh",
+    "temp"
   ]
 }

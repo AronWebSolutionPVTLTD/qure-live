@@ -1,0 +1,184 @@
+<div class="ingredients_list">
+  <div class="container">
+    <div class="section_header text-center ms-0 m-md-auto">
+      {% if section.settings.heading != blank %}
+        <h2 class="title-lg">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+      {% if section.settings.subtext != blank %}
+        {{ section.settings.subtext }}
+      {% endif %}
+    </div>
+    <div class="ingredients_content">
+      <div class="row gy-3">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'column' %}
+              <div class="col-md-4 col-sm-6">
+                <div class="ingredient">
+                    {% if block.settings.flag != blank %}
+                        <div class="ingredient_flag" style="background: {{ block.settings.flag-color }};">
+                            <p>{{ block.settings.flag }}</p>
+                        </div>
+                    {% endif %}
+                  <div class="ingredients_text">
+                    {% if block.settings.i-heading != blank %}
+                        <p class="fw-bold">{{ block.settings.i-heading }}</p>
+                    {% endif %}
+                    {% if block.settings.i-text != blank %}
+                        <p>{{ block.settings.i-text }}</p>
+                     {% endif %}
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="row gy-3 pt-4">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'column' %}
+              <div class="col-md-4 col-sm-6">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="ingredients_img border-end">
+                    {% if block.settings.i_icon != blank %}
+                      <img src="{{ block.settings.i_icon | img_url: 'master' }}" alt="">
+                    {% endif %}
+                    {% if block.settings.ingredient1 != blank %}
+                      <p>{{ block.settings.ingredient1 }}</p>
+                    {% endif %}
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="ingredients_img">
+                    {% if block.settings.i_icon2 != blank %}
+                      <img src="{{ block.settings.i_icon2 | img_url: 'master' }}" alt="">
+                    {% endif %}
+                    {% if block.settings.ingredient2 != blank %}
+                      <p>{{ block.settings.ingredient2 }}</p>
+                    {% endif %}
+                    </div>
+                  </div>
+                  {% if block.settings.ingredient_text != blank %}
+                  <div class="col-12">
+                    <div class="text-center px-4">
+                      <p>{{ block.settings.ingredient_text }}</p>
+                    </div>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="section_header text-start py-5 text-md-center ms-0 m-md-auto">
+      <h6 class="n_sub-heading">Perfect for</h6>
+    </div>
+    <div class="skin_problems mw-932">
+      <div class="problem_inner">
+        <img src="https://qureskincaredns.com/new/assets/acne_skin.webp" class="img-fluid" alt="">
+        <div class="pt-4">
+          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Acne prone skin</p>
+        </div>
+      </div>
+      <div class="problem_inner">
+        <img src="https://qureskincaredns.com/new/assets/rosacea.webp" class="img-fluid" alt="">
+        <div class="pt-4">
+          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Rosacea</p>
+        </div>
+      </div>
+      <div class="problem_inner">
+        <img src="https://qureskincaredns.com/new/assets/dry_skin.webp" class="img-fluid" alt="">
+        <div class="pt-4">
+          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Dry skin</p>
+        </div>
+      </div>
+      <div class="problem_inner">
+        <img src="https://qureskincaredns.com/new/assets/sensitive_skin.webp" class="img-fluid" alt="">
+        <div class="pt-4">
+          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Sensitive skin</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.ingredient-list.label",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:common.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "t:common.text.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:common.column.label",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "flag",
+          "label": "t:common.flag.text"
+        },
+        {
+            "type": "color",
+            "id": "flag-color",
+            "label": "t:common.flag.color"
+        },
+        {
+            "type": "text",
+            "id": "i-heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "textarea",
+            "id": "i-text",
+            "label": "t:common.text.content"
+        },
+        {
+            "type": "image_picker",
+            "id": "i_icon",
+            "label": "t:common.ingredient.image"
+        },
+        {
+            "type": "text",
+            "id": "ingredient1",
+            "label": "t:common.ingredient.text"
+        },
+        {
+            "type": "image_picker",
+            "id": "i_icon2",
+            "label": "t:common.ingredient.image"
+        },
+        {
+            "type": "text",
+            "id": "ingredient2",
+            "label": "t:common.ingredient.text"
+        },
+        {
+            "type": "textarea",
+            "id": "ingredient_text",
+            "label": "t:common.text.content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "t:sections.ingredient-list.label"
+    }
+  ]
+}
+{% endschema %}
