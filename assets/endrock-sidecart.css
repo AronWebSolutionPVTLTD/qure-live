@@ -1047,6 +1047,7 @@
   .announcement_bar.site-gamification-active {
     transform: scale(0.9);
     height: auto;
+    padding: 0;
   }
 }
 @media screen and (max-width: 376px) {
