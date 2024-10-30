@@ -1139,7 +1139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // site-wide-gamification 
   document.addEventListener('cartUpdated', event => {
-    setTimeout(updateSideWideGamification, 1000);
+    setTimeout(updateSideWideGamification, 2000);
   });
 });
 
@@ -1268,7 +1268,6 @@ function updateSiteWideGamification (cartTotal) {
   const freeShippingThreshold = parseInt(progressContainer.dataset.freeShippingThreshold, 10);
   const enableProductGift = progressContainer.dataset.enableProductGift === 'true';
   const giftThresholdPdm = parseInt(progressContainer.dataset.giftThresholdPdm, 10);
-  const enableShowGiftPrice = progressContainer.dataset.enableShowGiftPrice === 'true';
   const copyFreeShipping = progressContainer.dataset.copyFreeShipping;
   const copyProductGift = progressContainer.dataset.copyProductGift;
   const copyCongrats = progressContainer.dataset.copyCongrats;
@@ -1282,10 +1281,10 @@ function updateSiteWideGamification (cartTotal) {
 
   // Calculate progress percentage
   let progressPercentage = (cartTotal / threshold) * 100;
+  let progressPercentageFreeShipping = 0;
 
-  // Conditions similar to Liquid logic to adjust progress percentage
   if (enableFreeShipping && cartTotal < freeShippingThreshold) {
-    const progressPercentageFreeShipping = (cartTotal / freeShippingThreshold) * 100;
+    progressPercentageFreeShipping = (cartTotal / freeShippingThreshold) * 100;
     if (progressPercentage > progressPercentageFreeShipping) {
       progressPercentage = 20;
     }
@@ -1302,14 +1301,14 @@ function updateSiteWideGamification (cartTotal) {
   const progressContainerMessage = progressContainer.querySelector('.progress-container__message');
   if (progressContainerMessage) {
     if (enableFreeShipping && differenceFreeShipping > 0 && cartTotal >= 0) {
-      const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(2);
-      progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>${remainingAmountMoney}</i>`);
+      const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(0);
+      progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>$${remainingAmountMoney}</i>`);
     } else if (enableProductGift && differenceFreeGift > 0) {
-      const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(2);
-      let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>${remainingGiftAmountMoney}</i>`);
-      if (enableShowGiftPrice && !isNaN(giftProductVariantPrice)) {
-        const productGiftPriceFormatted = (giftProductVariantPrice / 100).toFixed(2);
-        message = message.replace("&product-price&", `${productGiftPriceFormatted}`);
+      const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(0);
+      let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>$${remainingGiftAmountMoney}</i>`);
+      if (!isNaN(giftProductVariantPrice)) {
+        const productGiftPriceFormatted = (giftProductVariantPrice / 100).toFixed(0);
+        message = message.replace("&product-price&", `$${productGiftPriceFormatted}`);
         message = message.replace("&product-title&", giftProductTitle);
       } else {
         message = message.replace("&product-price&", "");
@@ -1335,8 +1334,10 @@ function updateSiteWideGamification (cartTotal) {
     // Update milestone classes and styles
     if (differenceFreeGift <= 0) {
       milestonesContainer.classList.add('background-green');
+      progressBar.classList.remove('hidden');
     } else {
       milestonesContainer.classList.remove('background-green');
+      progressBar.classList.add('hidden');
     }
 
     // First Milestone - Free Shipping
@@ -1365,16 +1366,21 @@ function updateSiteWideGamification (cartTotal) {
     const firstMilestoneIconEmpty = firstMilestone.querySelector('.icon-empty-car');
     const firstMilestoneIconFull = firstMilestone.querySelector('.icon-full-car');
     const firstMilestoneIconCheck = firstMilestone.querySelector('.icon-check__first-milestone');
+    const firstMilestoneProgressBarWrapper = firstMilestone.querySelector('.progress-bar-wrapper');
+    const firstMilestoneProgressBarWrapperBar = firstMilestone.querySelector('.progress-bar-wrapper__bar');
 
-    if (firstMilestoneIconEmpty && firstMilestoneIconFull && firstMilestoneIconCheck) {
+    if (firstMilestoneIconEmpty && firstMilestoneIconFull && firstMilestoneIconCheck && firstMilestoneProgressBarWrapper && firstMilestoneProgressBarWrapperBar) {
       if (differenceFreeShipping <= 0 && cartTotal >= 0) {
         firstMilestoneIconEmpty.classList.add('hidden');
         firstMilestoneIconFull.classList.remove('hidden');
         firstMilestoneIconCheck.classList.remove('hidden');
+        firstMilestoneProgressBarWrapper.classList.add('hidden');
       } else {
         firstMilestoneIconEmpty.classList.remove('hidden');
         firstMilestoneIconFull.classList.add('hidden');
         firstMilestoneIconCheck.classList.add('hidden');
+        firstMilestoneProgressBarWrapper.classList.remove('hidden');
+        firstMilestoneProgressBarWrapperBar.style.width = progressPercentageFreeShipping + '%';
       }
     }
 
@@ -1382,16 +1388,19 @@ function updateSiteWideGamification (cartTotal) {
     const secondMilestoneIconGradient = secondMilestone.querySelector('.icon-empty-gradient');
     const secondMilestoneIconFull = secondMilestone.querySelector('.icon-full-pillow');
     const secondMilestoneIconCheck = secondMilestone.querySelector('.icon-check__second-milestone');
+    const secondMilestoneProgressBarWrapper = secondMilestone.querySelector('.progress-bar-wrapper');
+    const secondMilestoneProgressBarWrapperBar = secondMilestone.querySelector('.progress-bar-wrapper__bar');
 
     const bothThresholdUncompleted = differenceFreeShipping > 0 && differenceFreeGift > 0;
-    const bothThresholdCompleted = differenceFreeShipping < 0 && differenceFreeGift < 0;
+    const bothThresholdCompleted = differenceFreeShipping <= 0 && differenceFreeGift <= 0;
 
-    if (secondMilestoneIconEmpty && secondMilestoneIconGradient && secondMilestoneIconFull && secondMilestoneIconCheck) {
+    if (secondMilestoneIconEmpty && secondMilestoneIconGradient && secondMilestoneIconFull && secondMilestoneIconCheck && secondMilestoneProgressBarWrapper && secondMilestoneProgressBarWrapperBar) {
       if (bothThresholdCompleted) {
         secondMilestoneIconEmpty.classList.add('hidden');
         secondMilestoneIconGradient.classList.add('hidden');
         secondMilestoneIconFull.classList.remove('hidden');
         secondMilestoneIconCheck.classList.remove('hidden');
+        secondMilestoneProgressBarWrapper.classList.add('hidden');
       } else if (bothThresholdUncompleted) {
         secondMilestoneIconEmpty.classList.remove('hidden');
         secondMilestoneIconGradient.classList.add('hidden');
@@ -1402,6 +1411,12 @@ function updateSiteWideGamification (cartTotal) {
         secondMilestoneIconGradient.classList.remove('hidden');
         secondMilestoneIconFull.classList.add('hidden');
         secondMilestoneIconCheck.classList.add('hidden');
+        secondMilestoneProgressBarWrapper.classList.remove('hidden');
+      }
+      if (differenceFreeShipping <= 0) {
+        secondMilestoneProgressBarWrapperBar.style.width = progressPercentage + '%';
+      } else {
+        secondMilestoneProgressBarWrapperBar.style.width = 0;
       }
     }
   }
