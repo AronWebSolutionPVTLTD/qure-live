@@ -39,7 +39,7 @@
 
 {% if enable_free_shipping or enable_product_gift %}
   <div 
-    class="progress-container pdm-gamification" 
+    class="progress-container pdm-gamification {% unless settings.enable_site_wide_timer %}add-spacing{% endunless %}" 
     data-enable-free-shipping="{{ enable_free_shipping }}"
     data-free-shipping-threshold="{{ free_shipping_threshold }}"
     data-enable-product-gift="{{ enable_product_gift }}"
@@ -52,6 +52,7 @@
     data-gift-product-variant-price="{{ gift_product.selected_or_first_available_variant.price }}"
     data-cart-total="{{ cartTotal }}"
     data-threshold="{{ threshold }}"
+    data-currency-symbol="{{ free_shipping_threshold | money_without_trailing_zeros }}"
   >
     <div class="progress-container__message" 
       data-enable_free_shipping="{{ enable_free_shipping }}" 
@@ -98,8 +99,8 @@
             {{ 'site_gamification.free_shipping.label' | t }}
           </div>
           <div class="milestone-icon {% if difference_free_shipping <= 0 and cartTotal > 0 %} backgound-black {% endif %}">
-            <div class="icon-empty-car {% if difference_free_shipping <= 0 and cartTotal > 0 %}hidden{% endif %}">{% render 'pdm_icons', icon: 'empty-car' %}</div>
-            <div class="icon-full-car {% if difference_free_shipping > 0 %}hidden{% endif %}">{% render 'pdm_icons', icon: 'full-car' %}</div>
+            <div class="milestone-icon__container icon-empty-car {% if difference_free_shipping <= 0 and cartTotal > 0 %}hidden{% endif %}">{% render 'pdm_icons', icon: 'empty-car' %}</div>
+            <div class="milestone-icon__container icon-full-car {% if difference_free_shipping > 0 %}hidden{% endif %}">{% render 'pdm_icons', icon: 'full-car' %}</div>
           </div>
         </div>
         <div class="progress-bar__bar {% if difference_free_gift > 0 %}hidden{% endif %}" style="width: {{ progress_percentage }}%;"></div>
@@ -120,13 +121,13 @@
             {% assign both_threshold_cumpleted = true %}
           {% endif %}
           <div class="milestone-icon {% if difference_free_gift <= 0 %} backgound-black {% endif %}">
-            <div class="icon-empty-pillow {% if difference_free_shipping <= 0 or difference_free_shipping <= 0 and difference_free_gift <= 0  %}hidden{% endif %}">
+            <div class="milestone-icon__container icon-empty-pillow {% if difference_free_shipping <= 0 or difference_free_shipping <= 0 and difference_free_gift <= 0  %}hidden{% endif %}">
               {{ settingsGamification.icon_product_gift_clean | image_url: width: settingsGamification.icon_gift_width, height: settingsGamification.icon_gift_height | image_tag }}
             </div>
-            <div class="icon-empty-gradient {% if both_threshold_umcumpleted or both_threshold_cumpleted %}hidden{% endif %}">
+            <div class="milestone-icon__container icon-empty-gradient {% if both_threshold_umcumpleted or both_threshold_cumpleted %}hidden{% endif %}">
               {{ settingsGamification.icon_product_gift_gradient | image_url: width: settingsGamification.icon_gift_width, height: settingsGamification.icon_gift_height | image_tag }}
             </div>
-            <div class="icon-full-pillow {% if difference_free_shipping > 0 or difference_free_gift > 0 %}hidden{% endif %}">
+            <div class="milestone-icon__container icon-full-pillow {% if difference_free_shipping > 0 or difference_free_gift > 0 %}hidden{% endif %}">
               {{ settingsGamification.icon_product_gift_full | image_url: width: settingsGamification.icon_gift_width, height: settingsGamification.icon_gift_height | image_tag }}
             </div>
           </div>

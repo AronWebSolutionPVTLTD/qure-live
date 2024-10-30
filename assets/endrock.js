@@ -1274,6 +1274,7 @@ function updateSiteWideGamification (cartTotal) {
   const giftProductTitle = progressContainer.dataset.giftProductTitle;
   const giftProductVariantPrice = parseInt(progressContainer.dataset.giftProductVariantPrice, 10);
   const threshold = parseInt(progressContainer.dataset.threshold, 10);
+  const currencySymbol = progressContainer.dataset.currencySymbol;
 
   // Calculate differences
   const differenceFreeShipping = freeShippingThreshold - cartTotal;
@@ -1302,13 +1303,13 @@ function updateSiteWideGamification (cartTotal) {
   if (progressContainerMessage) {
     if (enableFreeShipping && differenceFreeShipping > 0 && cartTotal >= 0) {
       const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(0);
-      progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>$${remainingAmountMoney}</i>`);
+      progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingAmountMoney)}</i>`);
     } else if (enableProductGift && differenceFreeGift > 0) {
       const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(0);
-      let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>$${remainingGiftAmountMoney}</i>`);
+      let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingGiftAmountMoney)}</i>`);
       if (!isNaN(giftProductVariantPrice)) {
         const productGiftPriceFormatted = (giftProductVariantPrice / 100).toFixed(0);
-        message = message.replace("&product-price&", `$${productGiftPriceFormatted}`);
+        message = message.replace("&product-price&", `${currencySymbol.replace(/[0-9]+/, productGiftPriceFormatted)}`);
         message = message.replace("&product-title&", giftProductTitle);
       } else {
         message = message.replace("&product-price&", "");
