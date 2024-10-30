@@ -208,6 +208,40 @@
     });
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function updateVariant(variantId) {
+            const selectedVariant = window.productVariants.find(
+                (variant) => variant.id == variantId
+            );
+
+            if (selectedVariant) {
+                const titleElement = document.querySelector("h1.title-xl");
+                if (titleElement) {
+                    titleElement.textContent += " - " + selectedVariant.title;
+                }
+
+                setTimeout(() => {
+                    const swiperInstance = document.querySelector(".swiper.bf-bundle_slider").swiper;
+                    if (swiperInstance && selectedVariant.featured_image && selectedVariant.featured_image.position) {
+                        const slideIndex = selectedVariant.featured_image.position - 1;
+                        swiperInstance.slideTo(slideIndex);
+                    }
+                }, 1500);
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialVariantId = urlParams.get("variant");
+
+        if (initialVariantId) {
+            updateVariant(initialVariantId);
+        }
+    });
+
+    window.productVariants = {{ product.variants | json }};
+</script>
+
 {% assign current_variant = product.selected_or_first_available_variant %}
 <script type="application/ld+json">
 {

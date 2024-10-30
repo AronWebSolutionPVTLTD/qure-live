@@ -13,6 +13,12 @@
     {% when 'product.sunil-led-mask-onyx' %}
         {% assign main_class = 'led_mask' %}
         <link rel="stylesheet" href="{{ 'product-led-mask.css' | asset_url }}">
+    {% when 'product.faucet-filter-pdp' %}
+        {% assign main_class = 'faucet_filter' %}
+        <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
+    {% when 'product.silk-pillowcase-pdp' %}
+        {% assign main_class = 'silk_pillowcase' %}
+        <link rel="stylesheet" href="{{ 'silk-pillowcase-pdp.css' | asset_url }}">
     {% when 'page.faucet-filter-pdp' %}
         {% assign main_class = 'faucet_filter' %}
         <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
@@ -135,6 +141,10 @@
     {% when 'page.sunil-q-urify-safety' %}
         {% assign main_class = 'homepage q-urify_safety' %}
         <link rel="stylesheet" href="{{ 'product-qure-safety.css' | asset_url }}">
+    {% when 'page.faucet-online-guide' %}
+        {% assign main_class = 'homepage q-urify_safety faucet_guide' %}
+        <link rel="stylesheet" href="{{ 'product-qure-safety.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'faucet-online-guide.css' | asset_url }}">
     {% when 'page.content-instructions' %}
         {% assign main_class = 'content_instructions' %}
         <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">

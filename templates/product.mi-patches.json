@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "product_landing_tetLcC": {
       "type": "product-landing",
@@ -30,7 +30,7 @@
           "type": "icons",
           "settings": {
             "image": "shopify://shop_images/dermatologist.svg",
-            "text": "Dermatologist Reviewed",
+            "text": "Dermatologist Approved",
             "image_second": "shopify://shop_images/free-shipping-ftr.svg",
             "text_second": "Free Shipping Over $100"
           }
@@ -87,10 +87,10 @@
         "heading": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
         "heading_mobile": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
         "product": "micro-infusion-targeted-patches",
-        "product_images_offset": 2,
+        "product_images_offset": 0,
         "product_images_limit": 7,
         "product_button_label": "Product",
-        "before_after_images_limit": 2,
+        "before_after_images_limit": 3,
         "before_after_button_label": "Before & After",
         "reserve": true,
         "selected_design": "new",
@@ -166,7 +166,7 @@
         "content_GiwwRp": {
           "type": "content",
           "settings": {
-            "text": "<h2>Serum-Enriched Micro-Darts for precise improvement</h2><p>[code_mobile]</p><p>These fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target & treat wrinkles.</strong></p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin,</strong> infusing serum for <strong>deeper delivery.</strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin - <strong>for deeper, better, faster results!</strong></p>",
+            "text": "<h2>Serum-Enriched Micro-Darts for precise improvement</h2><p>[code_mobile]</p><p>Fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target and treat wrinkles, under-eye puffiness and dark circles. </strong></p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin</strong>, infusing serum for <strong>deeper delivery</strong>. Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for deeper, better, faster results – <strong>yet gentle enough for sensitive skin! </strong></p>",
             "column_content": 0,
             "classname": "section_header mb_contents text-start mw-525 p-0"
           }
@@ -603,7 +603,7 @@
         "object_Pcbmim": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_188_2a078240-295d-4e92-a36f-2acb2c6b5c1f.png",
+            "image": "shopify://shop_images/Rectangle_188_e03b9b79-24ba-43b1-b2a1-0cf5dfb0c0b5.png",
             "heading": "Micro-Infusion Targeted Patches",
             "mob_text": "",
             "text": "",

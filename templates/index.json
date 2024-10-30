@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -47,18 +47,17 @@
         "slide_9wpXXH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/M.I_Patches_Mobile.png",
+            "image": "shopify://shop_images/Ellipse_78.png",
             "link_label": "Micro-Infusion Targeted Patches",
             "link_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
           }
         },
         "slide_9qAien": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/homepageslide-5.jpg",
-            "link_label": "Q-urify Water Filter",
-            "link_url": "https://www.qureskincare.com/products/q-urify-water-filter"
+            "image": "shopify://shop_images/Ellipse_81.png",
+            "link_label": "Faucet Filter",
+            "link_url": "shopify://products/faucet-filter"
           }
         },
         "slide_GReD48": {
@@ -67,6 +66,14 @@
             "image": "shopify://shop_images/homepageslide-6.jpg",
             "link_label": "Micro-Infusion Refill",
             "link_url": "https://www.qureskincare.com/pages/micro-infusion-refill"
+          }
+        },
+        "slide_hVri9x": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_81_6730773b-c0c0-4501-9bf1-740bf439e1fd.png",
+            "link_label": "Dermal Mist",
+            "link_url": "shopify://pages/dermal-mist"
           }
         }
       },
@@ -77,7 +84,8 @@
         "slide_aKL6kD",
         "slide_9wpXXH",
         "slide_9qAien",
-        "slide_GReD48"
+        "slide_GReD48",
+        "slide_hVri9x"
       ],
       "settings": {
       }
@@ -112,24 +120,57 @@
         "link_Pk3LH6": {
           "type": "link",
           "settings": {
-            "link_label": "Support Now",
-            "link_label_mobile": "Support Now",
+            "link_label": "Buy Now",
+            "link_label_mobile": "Buy Now",
             "link_url": "https://www.qureskincare.com/collections/best-sellers"
+          }
+        },
+        "product_7GFhjc": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro-Aging Bundles",
+            "subheading": "Line Refine Bundle Pro",
+            "text": "SAVE 44%",
+            "image": "shopify://shop_images/line_refine_bundle_sm.webp",
+            "product_url": "https://www.qureskincare.com/products/line-refine-bundle-advanced-1"
+          }
+        },
+        "product_nBnMkh": {
+          "type": "product",
+          "settings": {
+            "heading": "Acne Bundles",
+            "subheading": "Breakout Control Advanced",
+            "text": "SAVE 38%",
+            "image": "shopify://shop_images/acne_bundle.webp",
+            "product_url": ""
+          }
+        },
+        "product_UVjERT": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro-Aging Bundles",
+            "subheading": "Line Refine Bundle Pro",
+            "text": "SAVE 44%",
+            "image": "shopify://shop_images/acne_bundle_dd9a3e15-a74f-4bd1-902e-b5eb044a89fc.webp",
+            "product_url": ""
           }
         }
       },
       "block_order": [
-        "link_Pk3LH6"
+        "link_Pk3LH6",
+        "product_7GFhjc",
+        "product_nBnMkh",
+        "product_UVjERT"
       ],
       "disabled": true,
       "settings": {
-        "heading": "<p>STRONGER <strong>TOGETHER</strong></p>",
+        "heading": "Save up to 55% Off",
         "heading_mobile": "",
-        "subheading": "Join Us in the Fight Against Breast \\n Cancer",
+        "subheading": "<p><strong>Black Friday</strong> Bundles with top-rated products at <em>best prices.</em></p>",
         "subheading_mobile": "",
-        "text": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $2 from every order to the National Breast Cancer Foundation</p>",
-        "image": "shopify://shop_images/ribben_banner.webp",
-        "image_mobile": "shopify://shop_images/ribben_banner_mob.webp"
+        "text": "",
+        "image": "shopify://shop_images/bf_sale-desk.webp",
+        "image_mobile": "shopify://shop_images/bf_sale-mob.webp"
       }
     },
     "featuredin_extended_P7BNDN": {

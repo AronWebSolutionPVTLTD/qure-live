@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -804,6 +804,74 @@
       "type": "pdm_product-social-proof-data",
       "settings": {
       }
+    },
+    "testimonials_PirtRD": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_8UeqiP": {
+          "type": "testimonial",
+          "settings": {
+            "video_type": "video",
+            "video_link": "",
+            "wistia_id": "",
+            "badge_txt": "Subscriber/Views/Followers",
+            "title": "There have been studies to show that this will definitely work to help your products penetrate better...",
+            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+          }
+        },
+        "testimonial_7EEib8": {
+          "type": "testimonial",
+          "settings": {
+            "video_type": "youtube",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=1iXBgh7WPOY",
+            "wistia_id": "",
+            "badge_txt": "Subscriber/Views/Followers",
+            "title": "I’ve liked using this in between my in-office treatments. It’s convenient and you get all the benefits of micro-needling treatment from the comfort of your home...",
+            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+          }
+        },
+        "testimonial_nYdfcn": {
+          "type": "testimonial",
+          "settings": {
+            "video_type": "wistia",
+            "video_link": "",
+            "wistia_id": "yuqb3gno7g",
+            "badge_txt": "Subscriber/Views/Followers",
+            "title": "“Qure's anti-ageing treatment gets down deep into your skin to stimulate collagen & makes a big difference in skin texture, decreasing fine lines & wrinkles",
+            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+          }
+        },
+        "testimonial_MM7nad": {
+          "type": "testimonial",
+          "settings": {
+            "video_type": "video",
+            "video_link": "",
+            "wistia_id": "",
+            "badge_txt": "Subscriber/Views/Followers",
+            "title": "You'll see a kind of dewy glowy look after you use it but within a couple of days your skin really looks quite amazing.",
+            "client_details": "<strong>Dr Mona Patel,</strong> Internal Medicine"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_8UeqiP",
+        "testimonial_7EEib8",
+        "testimonial_nYdfcn",
+        "testimonial_MM7nad"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_autoplay": false,
+        "enable_loop": false,
+        "slide_on_desktop": 3,
+        "slide_on_tablet": 2,
+        "slide_on_mobile": 1,
+        "space_between_slides": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "trusted_bl trustedVerified"
+      }
     }
   },
   "order": [
@@ -822,6 +890,7 @@
     "faq_bWmm3Y",
     "heading_VUdyGT",
     "1707655019e95add8f",
-    "pdm_product_social_proof_data_PUKidk"
+    "pdm_product_social_proof_data_PUKidk",
+    "testimonials_PirtRD"
   ]
 }
