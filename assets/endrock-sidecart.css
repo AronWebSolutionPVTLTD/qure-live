@@ -991,7 +991,7 @@
 @media screen and (max-width: 1081px) {
   .announcement_bar.site-gamification-active {
     height: auto;
-    padding: 0;
+    padding: 8px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1003,9 +1003,6 @@
     align-items: center;
     gap: 8px;
   }
-  .announcement_bar.site-gamification-active .progress-container.pdm-gamification.add-spacing { 
-    padding: 4px 0 5px;
-  } 
   .announcement_bar.site-gamification-active .progress-container.pdm-gamification .progress-container__message { 
     margin-right: 0;
   } 
