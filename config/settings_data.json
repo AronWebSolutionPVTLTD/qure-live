@@ -183,14 +183,26 @@
               "disable": false
             }
           },
+          "upsell_bR4pCx": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/dermal-mist",
+              "upsell_product_first": "q-rejuvalight-pro-facewear",
+              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_second": "face-serum",
+              "upsell_product_second_description": "Plump, smooth & brighten in just one step",
+              "upsell_product_third": "micro-infusion-1-month-bundle-1x-b-g-serum-1x-e-g-f-serum",
+              "upsell_product_thid_description": "Reveal smoother, radiant skin"
+            }
+          },
           "upsell_8Karyz": {
             "type": "upsell",
             "settings": {
               "page_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
               "upsell_product_first": "neck-decolletage-led",
               "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
-              "upsell_product_second": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
-              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_second": "dermal-mist",
+              "upsell_product_second_description": "Purifies and refreshes",
               "upsell_product_third": "face-serum",
               "upsell_product_thid_description": "Boost your LED light therapy results"
             }
@@ -231,6 +243,7 @@
         },
         "block_order": [
           "gift_ccQgi4",
+          "upsell_bR4pCx",
           "upsell_8Karyz",
           "upsell_DQMajg",
           "upsell_a74n8t",

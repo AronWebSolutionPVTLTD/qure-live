@@ -45,6 +45,13 @@ async function main() {
             document.getElementById('confidence-booster-bundle').style.display = 'none';
             document.getElementById('youthify-or-glow-set').style.display = 'none';
         }
+        if(window.location.href.includes('exclusive-black-friday'))
+        {
+            document.getElementById('line-refine-bundle-advanced-1').style.display = 'none';
+            document.getElementById('filter-family-bundle').style.display = 'none';
+            document.getElementById('breakout-control-pro-1').style.display = 'none';
+            document.getElementById('breakout-control-starter').style.display = 'none';
+        }
         else if(window.location.href.includes('best-sellers'))
         {
             document.getElementById('q-urify-water-filter').style.display = 'none';
