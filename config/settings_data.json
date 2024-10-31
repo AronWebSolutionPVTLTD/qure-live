@@ -186,12 +186,13 @@
         "blocks": {
           "gift_ccQgi4": {
             "type": "gift",
+            "disabled": true,
             "settings": {
               "product": "pink-headband-pouch-breast-cancer-awareness-month",
               "price_limit": "0",
               "quantity": "1",
               "discount": "FREEHEADBAND",
-              "disable": false
+              "disable": true
             }
           },
           "upsell_bR4pCx": {
