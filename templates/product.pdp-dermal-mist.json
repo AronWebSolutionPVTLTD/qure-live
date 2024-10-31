@@ -432,6 +432,36 @@
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }
+    },
+    "heading_gcGk9w": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>"
+      }
+    },
+    "17303964104bda0932": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_3nURCk": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_3nURCk"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -441,6 +471,8 @@
     "capsule_dropdowns_JnKRb9",
     "compare_tLe6Fj",
     "benefits_slider_G6Lxbd",
-    "faq_UUdrDJ"
+    "faq_UUdrDJ",
+    "heading_gcGk9w",
+    "17303964104bda0932"
   ]
 }
