@@ -47,10 +47,11 @@ async function main() {
         }
         if(window.location.href.includes('exclusive-black-friday'))
         {
-            document.getElementById('line-refine-bundle-advanced-1').style.display = 'none';
-            document.getElementById('filter-family-bundle').style.display = 'none';
-            document.getElementById('breakout-control-pro-1').style.display = 'none';
-            document.getElementById('breakout-control-starter').style.display = 'none';
+            document.querySelectorAll('.hide_us').forEach(element => {
+                element.style.display = 'none';
+            });
+
+            //swiper2.update();
         }
         else if(window.location.href.includes('best-sellers'))
         {
