@@ -32,9 +32,9 @@
     ],
     "show_order_by_receive_by": true,
     "today_text": "Order today",
-    "start_time_order": "2024-10-05T23:00",
-    "end_time_order": "2024-10-06T23:00",
-    "show_order_by_receive_by_us": true,
+    "start_time_order": "2024-10-30T23:00",
+    "end_time_order": "2024-11-04T23:59",
+    "show_order_by_receive_by_us": false,
     "enable_corner_treatment_bfcm": false,
     "promotion": "promotion",
     "sections": {
@@ -258,10 +258,10 @@
           "upsell_product_third": "face-serum",
           "upsell_product_third_description": "Plump, smooth & brighten in just one step",
           "sidecart_timer_old_enable": false,
-          "sidecart_timer_new_enable": false,
-          "start_date": "08-15-2024 12:00",
-          "finish_date": "09-03-2024 23:59",
-          "label_ends": "Labor Day Sales Ends In:",
+          "sidecart_timer_new_enable": true,
+          "start_date": "10-30-2024 20:00",
+          "finish_date": "11-04-2024 03:00",
+          "label_ends": "Early Black Friday Sale Ends In:",
           "label_days": "DAYS",
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
@@ -277,11 +277,14 @@
           "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
           "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Full-Size Serum worth</strong> &product-price&</p>",
           "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
-          "show_urgency_note": false,
+          "show_urgency_note": true,
           "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
           "urgency_note_label_single": "Checkout now!",
           "urgency_note_product_list": [
-            "ageless-glow-bundle"
+            "breakout-control-pro-1",
+            "fade-firm-bundle-pro",
+            "line-refine-bundle-pro",
+            "micro-infusion-limited-edition-bundle"
           ]
         }
       },
