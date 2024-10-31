@@ -41,11 +41,11 @@ async function main() {
     if (['US'].includes(countryCode)) {
         if(window.location.href.includes('exclusive-holiday-bundle-deal'))
         {
-            document.getElementById('skin-ssentials-set-doctorly-choice').style.display = 'none';
-            document.getElementById('confidence-booster-bundle').style.display = 'none';
-            document.getElementById('youthify-or-glow-set').style.display = 'none';
+            document.querySelectorAll('.hide_us').forEach(element => {
+                element.style.display = 'none';
+            });
         }
-        if(window.location.href.includes('exclusive-black-friday'))
+        else if(window.location.href.includes('exclusive-black-friday'))
         {
             document.querySelectorAll('.hide_us').forEach(element => {
                 element.style.display = 'none';
