@@ -13,9 +13,18 @@
       "type": "temp-page-faucet-filter-pdp",
       "settings": {
       }
+    },
+    "heading_gRQNbU": {
+      "type": "heading",
+      "disabled": true,
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Our customer reviews</h2>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "heading_gRQNbU"
   ]
 }
