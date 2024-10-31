@@ -44,6 +44,21 @@ async function main() {
             document.querySelectorAll('.hide_us').forEach(element => {
                 element.style.display = 'none';
             });
+
+            setTimeout(() => {
+                const swiperInstanceMain = document.querySelector('.bfs_mb_sl2').swiper;
+                const swiperInstanceThumbs = document.querySelector('.bfs_mb_sl').swiper;
+    
+                if(swiperInstanceMain != undefined)
+                {
+                    swiperInstanceMain.removeSlide([1, 7, 8, 10]);
+                }
+    
+                if(swiperInstanceThumbs != undefined)
+                {
+                    swiperInstanceThumbs.removeSlide([1, 7, 8, 10]);
+                }
+            }, 1500)
         }
         else if(window.location.href.includes('exclusive-black-friday'))
         {
@@ -51,7 +66,20 @@ async function main() {
                 element.style.display = 'none';
             });
 
-            //swiper2.update();
+            setTimeout(() => {
+                const swiperInstanceMain = document.querySelector('.bfs_mb_sl2').swiper;
+                const swiperInstanceThumbs = document.querySelector('.bfs_mb_sl').swiper;
+    
+                if(swiperInstanceMain != undefined)
+                {
+                    swiperInstanceMain.removeSlide([1, 7, 8, 10]);
+                }
+    
+                if(swiperInstanceThumbs != undefined)
+                {
+                    swiperInstanceThumbs.removeSlide([1, 7, 8, 10]);
+                }
+            }, 1500)
         }
         else if(window.location.href.includes('best-sellers'))
         {
