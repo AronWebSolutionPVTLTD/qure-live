@@ -396,19 +396,6 @@
             "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
             "client_details": "<strong>Dr Hunter, </strong>NHS & Aesthetics Doctor"
           }
-        },
-        "testimonial_GfkxXA": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/alexis.png",
-            "video_type": "youtube",
-            "video_link": "",
-            "youtube_link": "https://youtu.be/ZMGm5PmWzF0?t=649",
-            "wistia_id": "",
-            "badge_txt": "Subscriber/Views/Followers",
-            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens</strong>,  Board-Certified Dermatologist"
-          }
         }
       },
       "block_order": [
@@ -418,8 +405,7 @@
         "testimonial_FayfUe",
         "testimonial_PKTtDU",
         "testimonial_epJ3rN",
-        "testimonial_PjwcFL",
-        "testimonial_GfkxXA"
+        "testimonial_PjwcFL"
       ],
       "settings": {
         "enable_autoplay": false,
