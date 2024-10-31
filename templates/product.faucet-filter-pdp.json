@@ -20,6 +20,13 @@
         "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n$(\"#pills-home-tab\").trigger('click');\n})\n</script>"
       }
     },
+    "heading_mfgDbT": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>"
+      }
+    },
     "17303984563a00ef11": {
       "type": "apps",
       "blocks": {
@@ -46,6 +53,7 @@
   "order": [
     "main",
     "liquid_N9DGCe",
+    "heading_mfgDbT",
     "17303984563a00ef11"
   ]
 }
