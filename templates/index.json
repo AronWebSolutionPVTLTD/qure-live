@@ -75,6 +75,14 @@
             "link_label": "Dermal Mist",
             "link_url": "shopify://pages/dermal-mist"
           }
+        },
+        "slide_tNrDjD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_80.png",
+            "link_label": "Silk Pillowcase",
+            "link_url": "shopify://products/silk-pillowcase"
+          }
         }
       },
       "block_order": [
@@ -85,7 +93,8 @@
         "slide_9wpXXH",
         "slide_9qAien",
         "slide_GReD48",
-        "slide_hVri9x"
+        "slide_hVri9x",
+        "slide_tNrDjD"
       ],
       "settings": {
       }
