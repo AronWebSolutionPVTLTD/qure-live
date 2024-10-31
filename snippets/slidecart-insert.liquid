@@ -128,6 +128,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500);
     }
 
+    const customEvent = new CustomEvent('cartUpdated', {
+      detail: {
+        message: 'cart updated', 
+        time: new Date()
+      }
+    });
+    document.dispatchEvent(customEvent);
     {% comment %} urgency note  
       Subscribes to cart actions to manage urgency products, setting a timeout to remove them after 30 minutes.
     {% endcomment %}
@@ -167,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			startCartTimer(15 * 60);
 		}
      // new sidecart timer 
-      initSidecarTimer();
+     initSidecarTimer();
 
     	initUpsellSwiper();
 

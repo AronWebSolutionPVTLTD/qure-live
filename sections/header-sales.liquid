@@ -13,34 +13,45 @@
 <script src="{{ '__app_countdown.js' | asset_url }}"></script>
 
 <div class="wrapper header-wrapperBlock home-default-wrapper mi-landing-page">
-    {% for block in section.blocks %}
-        {% if block.type == 'announcement' %}
-             <!-- -- announcement bar start -- -->
+    {% if settings.enable_site_gamification %}
+        <div class="announcement_bar site-gamification-active">
+            {% render 'pdm_site-wide-gamification', settingsGamification: settings, cartTotal: cart.items_subtotal_price  %}
+            {% if settings.enable_site_wide_timer %}
+                <div class="announcement_bar__timer">
+                    {% render 'pdm_site-wide-timer' %}
+                </div>
+            {% endif %}
+        </div>
+    {% else %}
+        {% for block in section.blocks %}
+            {% if block.type == 'announcement' %}
+                <!-- -- announcement bar start -- -->
 
-             {%- assign timer_unix = block.settings.timer | date: '%s' -%}
-             {%- assign timer_next_unix = block.settings.timer_next | times: 86400 -%}
-             {%- assign timer_next = timer_unix | plus: timer_next_unix | date: "%Y-%m-%dT%H:%M:%S" -%}
-             
-             <div class="announcement_bar py-1 textRed">
-                <div class="bfBundle__content">
-                    <div class="bfCountdown countdown_ti1mer countdown_timer_with_zone" data-target-date="{{ block.settings.timer }}" data-target-date-next="{{ timer_next }}" data-target-time-zone="America/Los_Angeles">
-                        <div class="countdown_hdr">
-                            <p>{{ block.settings.heading }}</p>
-                        </div>
-                        <div class="countdown_block">
-                            <span class="d-flex align-items-center theTimer" id="headerTimer">
-                                <span data-name="days" id="days">00</span><span class="dots">:</span>
-                                <span data-name="hours" id="hours">00</span> <span class="dots">:</span>
-                                <span data-name="mins" id="minutes">00</span> <span class="dots">:</span>
-                                <span data-name="secs" id="seconds">00</span>
-                            </span>
+                {%- assign timer_unix = block.settings.timer | date: '%s' -%}
+                {%- assign timer_next_unix = block.settings.timer_next | times: 86400 -%}
+                {%- assign timer_next = timer_unix | plus: timer_next_unix | date: "%Y-%m-%dT%H:%M:%S" -%}
+                
+                <div class="announcement_bar py-1 textRed">
+                    <div class="bfBundle__content">
+                        <div class="bfCountdown countdown_ti1mer countdown_timer_with_zone" data-target-date="{{ block.settings.timer }}" data-target-date-next="{{ timer_next }}" data-target-time-zone="America/Los_Angeles">
+                            <div class="countdown_hdr">
+                                <p>{{ block.settings.heading }}</p>
+                            </div>
+                            <div class="countdown_block">
+                                <span class="d-flex align-items-center theTimer" id="headerTimer">
+                                    <span data-name="days" id="days">00</span><span class="dots">:</span>
+                                    <span data-name="hours" id="hours">00</span> <span class="dots">:</span>
+                                    <span data-name="mins" id="minutes">00</span> <span class="dots">:</span>
+                                    <span data-name="secs" id="seconds">00</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- -- announcement bar end -- -->           
-        {% endif %}
-    {% endfor %}
+                <!-- -- announcement bar end -- -->           
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 
     <div id="shopify-section-header" class="shopify-section site-header">
         <div class="header-wrapper">
