@@ -448,6 +448,19 @@
             "title": "\"...safe for generally all skin tones and types to perform at home without any risk of infection or trauma.\"",
             "client_details": "<strong>Dr Prasanthi,</strong>  General Practitioner & Cosmetic Doctor"
           }
+        },
+        "testimonial_4LEMPb": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/alexis.png",
+            "video_type": "video",
+            "video_link": "",
+            "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
+            "wistia_id": "",
+            "badge_txt": "53k Followers",
+            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
+            "client_details": "<strong>Dr Alexis Stephens,</strong>  Board-Certified Dermatologist"
+          }
         }
       },
       "block_order": [
@@ -455,7 +468,8 @@
         "testimonial_be7XRp",
         "testimonial_G9GFj9",
         "testimonial_NBUAU8",
-        "testimonial_6bYEdV"
+        "testimonial_6bYEdV",
+        "testimonial_4LEMPb"
       ],
       "settings": {
         "enable_autoplay": false,
