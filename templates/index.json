@@ -114,6 +114,7 @@
       "block_order": [
         "link_GirQqh"
       ],
+      "disabled": true,
       "settings": {
         "heading": "STRONGER TOGETHER",
         "heading_mobile": "STRONGER TOGETHER",
@@ -237,7 +238,6 @@
         "product_4ArLn3",
         "product_BA8d6X"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Save up to 55% Off",
         "heading_mobile": "",
