@@ -69,9 +69,9 @@
           "banner_jrcxU4": {
             "type": "banner",
             "settings": {
-              "image": "shopify://shop_images/header_drop2.webp",
-              "button_label": "Discover our [Best Selling] Products",
-              "button_url": "shopify://collections/best-sellers"
+              "image": "shopify://shop_images/NAVIGATION2_banner.png",
+              "button_label": "Discover our [Black Friday] Bundles",
+              "button_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
             }
           },
           "banner_CiNYWN": {
