@@ -801,8 +801,7 @@
                                         <div class="bfs_tbx_limited">Limited Edition
                                         </div>
                                         <div class="bfs_tbx_title">
-                                            Micro-Infusion Limited Edition 3 month <span>(For Wrinkles &
-                                                Dark Spots)</span>
+                                            Micro-Infusion 3 Month Bundle <span>(For Wrinkles)</span>
                                         </div>
                                     </div>
                                     <div class="popup-content">
@@ -932,13 +931,12 @@
                             aria-labelledby="pills-includedS6-tab">
                             <div class="bfs_bf_item_tabContent">
                                 <div class="bfs_tabContent_bx text-start">
-                                    <img src="https://qureskincaredns.com/new/assets/bfs_3-serum.webp" alt="" class="img-fluid">
+                                    <img src="https://qureskincaredns.com/new/assets/bfs_serumY.webp" alt="" class="img-fluid">
                                     <div class="bfs_tbx_info">
                                         <div class="bfs_tbx_limited">Limited Edition
                                         </div>
                                         <div class="bfs_tbx_title">
-                                            Micro-Infusion 3 Month Bundle <span>(For Wrinkles & Dark
-                                                Spots)</span>
+                                            Micro-Infusion 3 Month Bundle <span>(For Dark Spots)</span>
                                         </div>
                                     </div>
                                     <div class="popup-content">
@@ -1349,7 +1347,7 @@
                     <h6>Select treatment type:</h6>
                     <div class="tmt_type_grid">
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v1" value="Wrinkles">
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v1" value="Wrinkles" checked>
                             <label class="tmt_type_label form-check-label" for="type_p1-v1">Wrinkles</label>
                         </div>
                         <div class="form-check">
@@ -1357,14 +1355,14 @@
                             <label class="tmt_type_label form-check-label" for="type_p1-v2">Dark Spots</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v3" value="Wrinkles + Dark Spots" checked>
+                            <input class="form-check-input type_radio" type="radio" name="type_d1" id="type_p1-v3" value="Wrinkles + Dark Spots">
                             <label class="tmt_type_label form-check-label" for="type_p1-v3">Wrinkles + Dark Spots</label>
                         </div>
                     </div>
                 </div>
             {% endcapture %}
 
-            {% render 'temp-bf-sales-v2-bundles-bundle', product: all_products['micro-infusion-limited-edition-bundle'], bundleId: 'b2-s4-bundle', bundlePercent: '30', recommended: recommended, included: included, treatment: treatment, class: 'type-varient', media_limit: 3 %}
+            {% render 'temp-bf-sales-v2-bundles-bundle', product: all_products['micro-infusion-limited-edition-bundle'], bundleId: 'b2-s4-bundle', default_variant: '45991849787631', bundlePercent: '30', recommended: recommended, included: included, treatment: treatment, class: 'type-varient', media_limit: 3 %}
 
             {% comment %} next product {% endcomment %}
             
