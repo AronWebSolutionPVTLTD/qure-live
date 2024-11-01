@@ -48,6 +48,7 @@
         },
         "timer_abVU3e": {
           "type": "timer",
+          "disabled": true,
           "settings": {
             "heading": "Halloween Limited Time Offer! 👻",
             "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>SPOOKY50</strong></p>",
