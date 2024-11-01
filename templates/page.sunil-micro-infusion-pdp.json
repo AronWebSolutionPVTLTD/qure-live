@@ -453,7 +453,7 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/alexis.png",
-            "video_type": "video",
+            "video_type": "youtube",
             "video_link": "",
             "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
             "wistia_id": "",
