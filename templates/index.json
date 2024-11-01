@@ -596,7 +596,7 @@
         "product_WHecMQ": {
           "type": "product",
           "settings": {
-            "pd_img": "shopify://shop_images/Wrinkles_956f4ea1-c9a7-41bc-984d-317509276b13.png",
+            "pd_img": "shopify://shop_images/fav_pdt1.webp",
             "pd_name": "Micro-Infusion Facial System",
             "from": true,
             "price": "$99",
@@ -635,7 +635,7 @@
         "product_3hFb8X": {
           "type": "product",
           "settings": {
-            "pd_img": "shopify://shop_images/MI_Targeted_Patches_box.png",
+            "pd_img": "shopify://shop_images/fav_pdt4.webp",
             "pd_name": "Micro-Infusion Targeted Patches",
             "from": false,
             "price": "$79",
