@@ -93,6 +93,23 @@ async function main() {
         {
             document.getElementById('q-urify-water-filter').style.display = 'none';
         }
+        /* */
+        else if(window.location.href.includes('breakout-control-pro-1'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('breakout-control-starter'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('filter-family-bundle'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('line-refine-bundle-advanced-1'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
         else
         {
             window.location = 'https://www.qureskincare.com/collections/best-sellers';
