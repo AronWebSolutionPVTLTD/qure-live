@@ -527,6 +527,9 @@
         "object_ztcPKz",
         "object_rkVQek"
       ],
+      "custom_css": [
+        ".targetSkin .swiper-slide:nth-of-type(4) {margin-top: -10px;}"
+      ],
       "settings": {
         "heading": "Meet our board of advisors",
         "heading_mobile": "Board of advisors",
