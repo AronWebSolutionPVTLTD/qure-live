@@ -167,6 +167,7 @@
         },
         "product_PEPLML": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Advanced",
@@ -207,6 +208,7 @@
         },
         "product_4ArLn3": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "Acne Bundles",
             "subheading": "Breakout Control Pro",
