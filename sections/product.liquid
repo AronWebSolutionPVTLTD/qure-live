@@ -218,7 +218,10 @@
             if (selectedVariant) {
                 const titleElement = document.querySelector("h1.title-xl");
                 if (titleElement) {
-                    titleElement.textContent += " - " + selectedVariant.title;
+                    if(selectedVariant.title != 'Default Title')
+                    {
+                        titleElement.textContent += " - " + selectedVariant.title;
+                    }
                 }
 
                 setTimeout(() => {
