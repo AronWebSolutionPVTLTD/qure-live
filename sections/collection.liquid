@@ -48,7 +48,7 @@
 }
 </style>
 
-<div class="collectio-banner">
+<div class="collectio-banner"{% if section.settings.link_url != blank %} onclick="location.href='{{ section.settings.link_url }}';" style="cursor: pointer"{% endif %}>
 
     {% if section.settings.image != blank %}
         <picture>
@@ -138,6 +138,11 @@
                 "type": "image_picker",
                 "id": "image_mobile",
                 "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link.url.label"
             }
         ],
         "blocks": [

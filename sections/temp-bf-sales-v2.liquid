@@ -395,6 +395,42 @@
 </div>
 <!-- -- press slider end -- -->
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper_press = new Swiper('.app_press_sl_img', {
+      spaceBetween: 20,
+      slidesPerView: 2.9,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          touchRatio: 0,
+        },
+      },
+    });
+    var swiper_press2 = new Swiper('.app_press_sl_content', {
+      spaceBetween: 10,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      thumbs: {
+        swiper: swiper_press,
+      },
+    });
+  });
+</script>
+
 <!-- -- top rated product start -- -->
 <div class="top_rated section" id="result_section">
     <div class="container">
@@ -2773,8 +2809,8 @@
                     }
 
                     // Set the third variant (varient-3) as the default
-                    if (radioButtons[2]) {
-                        radioButtons[2].checked = true;  // Set third radio button as checked
+                    if (radioButtons[0]) {
+                        radioButtons[0].checked = true;  // Set third radio button as checked
                     }
 
                     function updateVariantClass() {

@@ -39,6 +39,7 @@
         },
         "timer_abVU3e": {
           "type": "timer",
+          "disabled": true,
           "settings": {
             "heading": "Halloween Limited Time Offer! 👻",
             "text": "<p>Get <em><strong>$50 OFF<\/strong><\/em><strong> <\/strong>with code: <strong>SPOOKY50<\/strong><\/p>",
@@ -387,19 +388,6 @@
             "title": "I have been using this mask with the anti-breakout settings, which has been fantastic to help clear up my complexion in only two weeks.",
             "client_details": "<strong>Dr Hunter, <\/strong>NHS & Aesthetics Doctor"
           }
-        },
-        "testimonial_GfkxXA": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/alexis.png",
-            "video_type": "youtube",
-            "video_link": "",
-            "youtube_link": "https:\/\/youtu.be\/ZMGm5PmWzF0?t=649",
-            "wistia_id": "",
-            "badge_txt": "Subscriber\/Views\/Followers",
-            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens<\/strong>,  Board-Certified Dermatologist"
-          }
         }
       },
       "block_order": [
@@ -409,8 +397,7 @@
         "testimonial_FayfUe",
         "testimonial_PKTtDU",
         "testimonial_epJ3rN",
-        "testimonial_PjwcFL",
-        "testimonial_GfkxXA"
+        "testimonial_PjwcFL"
       ],
       "settings": {
         "enable_autoplay": false,
@@ -613,6 +600,18 @@
             "client": "Aimee",
             "code": ""
           }
+        },
+        "result_jtGKYb": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/Group_129K9.png",
+            "heading": "Amazing products!",
+            "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the micro infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "image_country": "shopify://shop_images/Mask_Grokkup.png",
+            "text_country": "Colombia",
+            "client": "Ana L",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -627,7 +626,8 @@
         "result_GAd3YG",
         "result_U4khQD",
         "result_W8bKNg",
-        "result_TkKNU8"
+        "result_TkKNU8",
+        "result_jtGKYb"
       ],
       "settings": {
         "classname": "mi_landing_result",

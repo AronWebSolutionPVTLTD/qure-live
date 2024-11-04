@@ -17,7 +17,7 @@
             <div class="event_content-main">
                 <div class="row">
                     <div class="col-lg-5 px-0">
-                        <div class="banner_img">
+                        <div class="banner_img"{% if section.settings.link_url != blank %} onclick="location.href='{{ section.settings.link_url }}';" style="cursor: pointer"{% endif %}>
                             {% if section.settings.image %}
                                 <img src="{{ section.settings.image | img_url: 'master' }}" class="w-100 d-md-block d-none" alt="desktop banner">
                             {% endif %}
@@ -158,6 +158,11 @@
                 "type": "image_picker",
                 "id": "image_mobile",
                 "label": "t:common.image_mobile.label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "t:common.link.url.label"
             }
         ],
         "blocks": [
