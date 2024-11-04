@@ -457,7 +457,7 @@
             "wistia_id": "",
             "badge_txt": "155K Followers",
             "title": "\"I’ve liked using this in between my in-office treatments. It’s convenient and you get all the benefits of micro-needling treatment from the comfort of your home...\"",
-            "client_details": "<strong>Dr Brown,</strong> Certified Dermatologist"
+            "client_details": "<strong>Dr Brown,<\/strong> Certified Dermatologist"
           }
         },
         "testimonial_be7XRp": {
@@ -509,33 +509,20 @@
             "wistia_id": "47prunzk1h",
             "badge_txt": "3,694 Followers",
             "title": "\"...safe for generally all skin tones and types to perform at home without any risk of infection or trauma.\"",
-            "client_details": "<strong>Dr Prasanthi,</strong>  General Practitioner & Cosmetic Doctor"
+            "client_details": "<strong>Dr Prasanthi,<\/strong>  General Practitioner & Cosmetic Doctor"
           }
         },
         "testimonial_4LEMPb": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/alexis.png",
+            "image": "shopify:\/\/shop_images\/alexis.png",
             "video_type": "youtube",
             "video_link": "",
-            "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
+            "youtube_link": "https:\/\/www.youtube.com\/watch?v=ZMGm5PmWzF0",
             "wistia_id": "",
             "badge_txt": "53k Followers",
             "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens,</strong>  Board-Certified Dermatologist"
-          }
-        },
-        "testimonial_4LEMPb": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/alexis.png",
-            "video_type": "youtube",
-            "video_link": "",
-            "youtube_link": "https://www.youtube.com/watch?v=ZMGm5PmWzF0",
-            "wistia_id": "",
-            "badge_txt": "53k Followers",
-            "title": "You can get a Clinical treatment at home safely and conveniently... It is particularly beneficial for those with melanin rich Skin",
-            "client_details": "<strong>Dr Alexis Stephens,</strong>  Board-Certified Dermatologist"
+            "client_details": "<strong>Dr Alexis Stephens,<\/strong>  Board-Certified Dermatologist"
           }
         }
       },

@@ -38,7 +38,7 @@
         "slide_9wpXXH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Ellipse_78.png",
+            "image": "shopify:\/\/shop_images\/Ellipse_78.png",
             "link_label": "Micro-Infusion Targeted Patches",
             "link_url": "https:\/\/www.qureskincare.com\/products\/micro-infusion-targeted-patches"
           }
@@ -64,23 +64,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Ellipse_81_6730773b-c0c0-4501-9bf1-740bf439e1fd.png",
             "link_label": "Dermal Mist",
-            "link_url": "shopify://pages/dermal-mist"
+            "link_url": "shopify:\/\/pages\/dermal-mist"
           }
         },
         "slide_tNrDjD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Ellipse_80.png",
+            "image": "shopify:\/\/shop_images\/Ellipse_80.png",
             "link_label": "Silk Pillowcase",
-            "link_url": "shopify://products/silk-pillowcase"
-          }
-        },
-        "slide_tNrDjD": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Ellipse_80.png",
-            "link_label": "Silk Pillowcase",
-            "link_url": "shopify://products/silk-pillowcase"
+            "link_url": "shopify:\/\/products\/silk-pillowcase"
           }
         }
       },
@@ -131,7 +123,7 @@
           "settings": {
             "link_label": "Buy Now",
             "link_label_mobile": "Buy Now",
-            "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/exclusive-holiday-bundle-deal"
           }
         },
         "product_7GFhjc": {
@@ -140,8 +132,8 @@
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Pro",
             "text": "SAVE 47%",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_bc74a392-b7c0-4214-aaad-f0f156a5c5d8.png",
-            "product_url": "shopify://products/line-refine-bundle-pro"
+            "image": "shopify:\/\/shop_images\/Line_Refine_Bundle_Pro_bc74a392-b7c0-4214-aaad-f0f156a5c5d8.png",
+            "product_url": "shopify:\/\/products\/line-refine-bundle-pro"
           }
         },
         "product_UVjERT": {
@@ -150,8 +142,8 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Pro",
             "text": "SAVE 55%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Pro_c2710f45-f483-4611-be22-360c62723de6.png",
-            "product_url": "shopify://products/fade-firm-bundle-pro"
+            "image": "shopify:\/\/shop_images\/Fade_Firm_Bundle_Pro_c2710f45-f483-4611-be22-360c62723de6.png",
+            "product_url": "shopify:\/\/products\/fade-firm-bundle-pro"
           }
         },
         "product_nBnMkh": {
@@ -160,8 +152,8 @@
             "heading": "Acne Bundles",
             "subheading": "Breakout Control Advanced",
             "text": "SAVE 33%",
-            "image": "shopify://shop_images/Breakout_Control_Advanced_7232df65-e888-4e24-bb23-99b6576cc5b2.png",
-            "product_url": "shopify://products/breakout-control-advanced"
+            "image": "shopify:\/\/shop_images\/Breakout_Control_Advanced_7232df65-e888-4e24-bb23-99b6576cc5b2.png",
+            "product_url": "shopify:\/\/products\/breakout-control-advanced"
           }
         },
         "product_PEPLML": {
@@ -171,8 +163,8 @@
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Advanced",
             "text": "SAVE 55%",
-            "image": "shopify://shop_images/RefineBundle2_bb90801f-564e-4272-80d6-d975c04c470f.png",
-            "product_url": "shopify://products/line-refine-bundle-advanced-1"
+            "image": "shopify:\/\/shop_images\/RefineBundle2_bb90801f-564e-4272-80d6-d975c04c470f.png",
+            "product_url": "shopify:\/\/products\/line-refine-bundle-advanced-1"
           }
         },
         "product_yLQ7At": {
@@ -181,8 +173,8 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Advanced",
             "text": "SAVE 43%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Advance.png",
-            "product_url": "shopify://products/fade-firm-bundle-advance"
+            "image": "shopify:\/\/shop_images\/Fade_Firm_Bundle_Advance.png",
+            "product_url": "shopify:\/\/products\/fade-firm-bundle-advance"
           }
         },
         "product_KCNhid": {
@@ -191,8 +183,8 @@
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Essentials",
             "text": "save 32%",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Essentials_420763d9-bde6-4b81-a7f2-771d23f771d3.png",
-            "product_url": "shopify://products/line-refine-bundle-essentials"
+            "image": "shopify:\/\/shop_images\/Line_Refine_Bundle_Essentials_420763d9-bde6-4b81-a7f2-771d23f771d3.png",
+            "product_url": "shopify:\/\/products\/line-refine-bundle-essentials"
           }
         },
         "product_dYxiCN": {
@@ -201,8 +193,8 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Essentials",
             "text": "SAVE 55%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Essentials_7c085238-4ca2-445a-abcb-7ab2a9d7ad8d.png",
-            "product_url": "shopify://products/fade-firm-bundle-essentials"
+            "image": "shopify:\/\/shop_images\/Fade_Firm_Bundle_Essentials_7c085238-4ca2-445a-abcb-7ab2a9d7ad8d.png",
+            "product_url": "shopify:\/\/products\/fade-firm-bundle-essentials"
           }
         },
         "product_4ArLn3": {
@@ -212,8 +204,8 @@
             "heading": "Acne Bundles",
             "subheading": "Breakout Control Pro",
             "text": "SAVE 40%",
-            "image": "shopify://shop_images/Breakoutcontrol2_747da223-e22b-457a-b300-a8ada35feaa6.png",
-            "product_url": "shopify://products/breakout-control-pro-1"
+            "image": "shopify:\/\/shop_images\/Breakoutcontrol2_747da223-e22b-457a-b300-a8ada35feaa6.png",
+            "product_url": "shopify:\/\/products\/breakout-control-pro-1"
           }
         },
         "product_BA8d6X": {
@@ -222,8 +214,8 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Micro-Infusion Limited Edition Bundle",
             "text": "SAVE 45%",
-            "image": "shopify://shop_images/Micro-Infusion_Limited_Edition_Bundle_ef0d58d6-84ea-4cb6-be5c-b012bf600186.png",
-            "product_url": "shopify://products/micro-infusion-limited-edition-bundle"
+            "image": "shopify:\/\/shop_images\/Micro-Infusion_Limited_Edition_Bundle_ef0d58d6-84ea-4cb6-be5c-b012bf600186.png",
+            "product_url": "shopify:\/\/products\/micro-infusion-limited-edition-bundle"
           }
         }
       },
@@ -245,9 +237,9 @@
         "subheading": "<p><strong>Black Friday<\/strong> Bundles with top-rated products at <em>best prices.<\/em><\/p>",
         "subheading_mobile": "",
         "text": "",
-        "image": "shopify://shop_images/bf_sale-desk.webp",
-        "image_mobile": "shopify://shop_images/bf_sale-mob.webp",
-        "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+        "image": "shopify:\/\/shop_images\/bf_sale-desk.webp",
+        "image_mobile": "shopify:\/\/shop_images\/bf_sale-mob.webp",
+        "link_url": "https:\/\/www.qureskincare.com\/pages\/exclusive-holiday-bundle-deal"
       }
     },
     "featuredin_extended_P7BNDN": {

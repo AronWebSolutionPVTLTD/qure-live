@@ -109,6 +109,46 @@
         "custom_class": "bg-lightGrey"
       }
     },
+    "image_text_2_np96td": {
+      "type": "image-text-2",
+      "blocks": {
+        "image_QzCDfm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/faucet_flter-pd.webp"
+          }
+        },
+        "text_tBjmfC": {
+          "type": "text",
+          "settings": {
+            "heading": "360° Nozzle for Precise Water Direction",
+            "text_content": "Our patent pending 360° nozzle offers precise and adjustable filtered water direction, making it suitable for all sink sizes.",
+            "img_1": "shopify:\/\/shop_images\/restart.svg",
+            "text_1": "Easy Toggle Options",
+            "img_2": "shopify:\/\/shop_images\/water_tap.svg",
+            "text_2": "99% Faucet Fit",
+            "img_3": "shopify:\/\/shop_images\/verfied_sheild.svg",
+            "text_3": "Lifetime Warranty"
+          }
+        },
+        "button_RNKQj4": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Shop Now",
+            "btn_url": "#faucet_filter"
+          }
+        }
+      },
+      "block_order": [
+        "image_QzCDfm",
+        "text_tBjmfC",
+        "button_RNKQj4"
+      ],
+      "settings": {
+        "background": "trasnparent",
+        "custom_class": "section"
+      }
+    },
     "reasons_Y4QGUa": {
       "type": "reasons",
       "blocks": {
@@ -160,7 +200,7 @@
       ],
       "settings": {
         "classname": "bg-transparent",
-        "heading": "",
+        "heading": "5 reasons why everyone istapping into a whole new side of skincare",
         "text": ""
       }
     },
@@ -220,51 +260,487 @@
         "text_reviewed": "Reviewed in"
       }
     },
-    "temp": {
-      "type": "temp-product-faucet-filter-pdp",
-      "settings": {
-      }
-    },
-    "liquid_N9DGCe": {
-      "type": "liquid",
-      "settings": {
-        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n$(\"#pills-home-tab\").trigger('click');\n})\n</script>"
-      }
-    },
-    "heading_mfgDbT": {
-      "type": "heading",
-      "settings": {
-        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
-        "heading_mobile": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>"
-      }
-    },
-    "17303984563a00ef11": {
-      "type": "apps",
+    "ingredients_list_kx7Yjh": {
+      "type": "ingredients-list",
       "blocks": {
-        "stamped_reviews_main_widget_zatTE6": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+        "column_7mEigp": {
+          "type": "column",
           "settings": {
-            "animation": true,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
+            "flag": "Known irritant",
+            "flag-color": "#f9c91d",
+            "i-heading": "Chlorine",
+            "i-text": "Traditionally added to kill bacteria. Chlorine can deplete the skin of the natural oils that hold moisture in, leading to dry and itchy skin.",
+            "i_icon": "shopify:\/\/shop_images\/rust.svg",
+            "ingredient1": "Rust",
+            "i_icon2": "shopify:\/\/shop_images\/Algae.svg",
+            "ingredient2": "Algae",
+            "ingredient_text": "Mud, rust and micro-contaminants in water can irritate sensitive skin."
+          }
+        },
+        "column_cBkfRK": {
+          "type": "column",
+          "settings": {
+            "flag": "Long-term damage!",
+            "flag-color": "#fa6f0b",
+            "i-heading": "Magnesium",
+            "i-text": "Magnesium can result in the formation of free radicals which damage healthy skin cells and break down collagen, resulting in fine lines and wrinkles.",
+            "i_icon": "shopify:\/\/shop_images\/Micro-plastics.svg",
+            "ingredient1": "Micro-plastics",
+            "i_icon2": "shopify:\/\/shop_images\/micro-organisms.svg",
+            "ingredient2": "Micro-organisms",
+            "ingredient_text": "Microplastics can cause micro-abrasions and damage sensitive skin."
+          }
+        },
+        "column_xrKbBE": {
+          "type": "column",
+          "settings": {
+            "flag": "Most harmful",
+            "flag-color": "#c92127",
+            "i-heading": "Calcium",
+            "i-text": "Calcium can irritate the skin, causing dry, scaly, pinkish patches. It can also clog pores, which can lead to blackheads, blemishes, and\/or rosacea.",
+            "i_icon": "shopify:\/\/shop_images\/lead-particles.svg",
+            "ingredient1": "Lead particles",
+            "i_icon2": "shopify:\/\/shop_images\/many-more.svg",
+            "ingredient2": "Many more",
+            "ingredient_text": "Hard water can have hard metals or excess Mg2+ and Ca2+ that can clog and irritate the skin."
+          }
+        },
+        "heading_c7QX6H": {
+          "type": "heading",
+          "settings": {
+            "heading2": "Perfect for"
+          }
+        },
+        "skin_image_hdTUgC": {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/acne_skin.webp",
+            "problem_text": "Acne prone skin"
+          }
+        },
+        "skin_image_FEFYdf": {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/rosacea.webp",
+            "problem_text": "Rosacea"
+          }
+        },
+        "skin_image_LCDYMx": {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/dry_skin.webp",
+            "problem_text": "Dry skin"
+          }
+        },
+        "skin_image_eXjAJL": {
+          "type": "skin_image",
+          "settings": {
+            "skin_problem": "shopify:\/\/shop_images\/sensitive_skin.webp",
+            "problem_text": "Sensitive skin"
           }
         }
       },
       "block_order": [
-        "stamped_reviews_main_widget_zatTE6"
+        "column_7mEigp",
+        "column_cBkfRK",
+        "column_xrKbBE",
+        "heading_c7QX6H",
+        "skin_image_hdTUgC",
+        "skin_image_FEFYdf",
+        "skin_image_LCDYMx",
+        "skin_image_eXjAJL"
       ],
       "settings": {
+        "heading": "It’s time to look toward your faucet, not (just) your ingredients list.",
+        "subtext": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. That water hardness is a contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis. <\/a>And not just from the well-known culprit chlorine – but also calcium and magnesium.<\/p>",
+        "custom_class": "section"
+      }
+    },
+    "text_with_video_MH3gBb": {
+      "type": "text-with-video",
+      "blocks": {
+        "video_X4Paye": {
+          "type": "video",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dr_shah_trusted.webp",
+            "video": "https:\/\/youtu.be\/QuJ3puVLKzU",
+            "title": "Dr Shah, MD",
+            "des": "Board certified dermatologist"
+          }
+        },
+        "text_content_VY38xY": {
+          "type": "text_content",
+          "settings": {
+            "trust_icon": "shopify:\/\/shop_images\/verified_design.svg",
+            "trust_des": "Trusted and recommended by world leading Dermatologists",
+            "title": "<strong>\"You wanna look for something<\/strong> that’s gonna reduce both calcium carbonate and chlorine <strong>from your water.\"<\/strong>",
+            "title_clr": "#000000",
+            "title_strong_clr": "#797d7c"
+          }
+        }
+      },
+      "block_order": [
+        "video_X4Paye",
+        "text_content_VY38xY"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "how_to_install_L9i7VN": {
+      "type": "how-to-install",
+      "blocks": {
+        "steps_zXYmDx": {
+          "type": "steps",
+          "settings": {
+            "step_img": "shopify:\/\/shop_images\/faucet_use_s_1.webp",
+            "text": "Remove faucet aerator. Simply attach and twist it off using the key for removal."
+          }
+        },
+        "steps_k9DFwB": {
+          "type": "steps",
+          "settings": {
+            "step_img": "shopify:\/\/shop_images\/faucet_use_s_2.webp",
+            "text": "Find the faucet thread accessory which best fits your faucet size."
+          }
+        },
+        "steps_PEhdKT": {
+          "type": "steps",
+          "settings": {
+            "step_img": "shopify:\/\/shop_images\/faucet_use_s_3.webp",
+            "text": "Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. Turn the toggle button to “Q” mark on the filter ans enjoy healthier, clearer skin!"
+          }
+        },
+        "video_aDjqQ8": {
+          "type": "video",
+          "settings": {
+            "wistia": "t0xzq5gdvm"
+          }
+        }
+      },
+      "block_order": [
+        "steps_zXYmDx",
+        "steps_k9DFwB",
+        "steps_PEhdKT",
+        "video_aDjqQ8"
+      ],
+      "settings": {
+        "heading": "How to install",
+        "custom_class": "section"
+      }
+    },
+    "compare_images_TNaVYJ": {
+      "type": "compare-images",
+      "blocks": {
+        "benefit_PgfEHx": {
+          "type": "benefit",
+          "settings": {
+            "benefit_head": "Carbon filter",
+            "benefit_text": "Removes up to 99.9% chlorine & contaminants"
+          }
+        },
+        "benefit_eUWRRg": {
+          "type": "benefit",
+          "settings": {
+            "benefit_head": "Ultra filter",
+            "benefit_text": "Reduces tiny particles"
+          }
+        },
+        "benefit_pBnLYF": {
+          "type": "benefit",
+          "settings": {
+            "benefit_head": "Descaler",
+            "benefit_text": "Reduces limescale buildup"
+          }
+        },
+        "benefit_4fAxDf": {
+          "type": "benefit",
+          "settings": {
+            "benefit_head": "Reduction layer",
+            "benefit_text": "Reduces heavy metals"
+          }
+        },
+        "icon_box_naFyDQ": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/descaling.svg",
+            "i_head": "ASP (descaling)",
+            "t_text": "Reduces limescale buildup, which, when left untreated, can dry out your skin.",
+            "sepration": 4
+          }
+        },
+        "icon_box_pt3fer": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/metal.svg",
+            "i_head": "Heavy metal reduction layer",
+            "t_text": "Targets heavy metals like lead.",
+            "sepration": 4
+          }
+        },
+        "icon_box_h3X8QJ": {
+          "type": "icon_box",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Ultrafilter.svg",
+            "i_head": "Ultrafilter",
+            "t_text": "A very fine filter (down to 0.01 microns), it removes tiny particles like sand and bacteria.",
+            "sepration": 4
+          }
+        },
+        "column_HrmwD7": {
+          "type": "column",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/other-water-filter.webp",
+            "image_2": "shopify:\/\/shop_images\/qure-faucet-filter.webp"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_PgfEHx",
+        "benefit_eUWRRg",
+        "benefit_pBnLYF",
+        "benefit_4fAxDf",
+        "icon_box_naFyDQ",
+        "icon_box_pt3fer",
+        "icon_box_h3X8QJ",
+        "column_HrmwD7"
+      ],
+      "settings": {
+        "heading": "4-Stage Advanced Filtration Technology",
+        "sub_text": "<p>Qure’s Faucet Filter uses an advanced carbon filter – the preferred and most effective method.<\/p>"
+      }
+    },
+    "videos_list_QVh9ma": {
+      "type": "videos-list",
+      "blocks": {
+        "wistia_MGPhdU": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "0gqtwwjamc",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_bCMbr7": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "cxcun6wr2a",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_zjEXdf": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "hizkyyq379",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_iEWkt6": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "l9467wmx0n",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_3CHHjp": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "kcdps5ford",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_H9t4Xz": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "wj0ao3l2s1",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        },
+        "wistia_NERwEP": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "zitq7o30sn",
+            "dr_name": "",
+            "board": "",
+            "desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "wistia_MGPhdU",
+        "wistia_bCMbr7",
+        "wistia_zjEXdf",
+        "wistia_iEWkt6",
+        "wistia_3CHHjp",
+        "wistia_H9t4Xz",
+        "wistia_NERwEP"
+      ],
+      "settings": {
+        "heading": "No (editing) filters were used in the making of these videos",
+        "classname": "section videosQure bg-lightGrey",
+        "btn": "",
+        "btn_url": "",
+        "desk_slide": 4,
+        "mob_slide": 1,
+        "slide_space": 20
+      }
+    },
+    "compare_zyD9zD": {
+      "type": "compare",
+      "blocks": {
+        "object_6kdQ6i": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qure-faucet-filter_302ecf46-a461-4d44-8fab-bb5dafd7da82.webp",
+            "heading": "Qure Faucet Filter",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "correctCircle",
+            "list": "<ul><li>Reduces chlorine<\/li><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><li>Made with advanced filtration<\/li><li>Lifetime warranty<\/li><li>Patented 360° nozzle<\/li><li>Fits 99% of faucets<\/li><\/ul>"
+          }
+        },
+        "object_jU88dw": {
+          "type": "object",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/other-filter.webp",
+            "heading": "Alternative Filters",
+            "mob_text": "",
+            "text": "",
+            "price": "",
+            "style": "incorrectCircle",
+            "list": "<ul><li>Reduces chlorine<\/li><li>Reduces calcium<\/li><li>Reduces magnesium<\/li><li>Standard filtration<\/li><li>ULimited or no warranty<\/li><li>Static nozzle<\/li><li>Incompatible fits<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "object_6kdQ6i",
+        "object_jU88dw"
+      ],
+      "custom_css": [
+        ".beauty_skincare .bs_grid div.bs_item:nth-child(3) h4 {opacity: 0.5;}"
+      ],
+      "settings": {
+        "classname": "beauty_skincare section bg-white",
+        "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
+        "heading_reduced": "",
+        "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.<\/p>",
+        "text_reduced": "",
+        "design": true
+      }
+    },
+    "faq_yDJwaT": {
+      "type": "faq",
+      "blocks": {
+        "object_7iPEVn": {
+          "type": "object",
+          "settings": {
+            "heading": "How does tap water harm my skin?",
+            "text": "<p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is like a protective shield against outside threats. But the stuff in tap water can harm it, leading to:<\/p><ul><li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils, leaving it dry and damaged.<\/li><li>Skin Irritation: It might also cause skin irritation, making it sensitive and red.<\/li><li>Premature Aging: The chemicals in tap water can even speed up the aging process, causing wrinkles and fine lines.<\/li><\/ul>",
+            "code": ""
+          }
+        },
+        "object_qz9ppC": {
+          "type": "object",
+          "settings": {
+            "heading": "What does it filter in the water?",
+            "text": "<p>The Qure Faucet Filter improves your tap water by reducing skin irritants that make your tap water “hard” – like chlorine, magnesium, calcium, heavy metals, microorganisms and more.<\/p>",
+            "code": ""
+          }
+        },
+        "object_GaPGc8": {
+          "type": "object",
+          "settings": {
+            "heading": "What skin types can benefit from Q-urify Water Filter?",
+            "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. By reducing irritants and softening the water, it helps maintain skin hydration and minimizes redness, leaving your skin balanced and healthy.<\/p>",
+            "code": ""
+          }
+        },
+        "object_tpzc3R": {
+          "type": "object",
+          "settings": {
+            "heading": "Where can I buy replacement filters?",
+            "text": "<p>Replacement filters can be purchased on our site for 3 months of pure water. We also offer convenient subscription plans so you never have to worry about running out—just set it and forget it, and we’ll take care of the rest.<\/p>",
+            "code": ""
+          }
+        },
+        "object_H87TPT": {
+          "type": "object",
+          "settings": {
+            "heading": "Will it fit my faucet?",
+            "text": "<p>It’s compatible with almost every circular removable aerator! Each Qure Faucet Filter kit comes with a set of adaptors to help fit different faucet sizes. Please note that it will NOT fit faucets that are square or oval shaped, pull out, hand-held, spray-style, or faucets with a sensor.<\/p>",
+            "code": "<div class=\"faq_img_wrap\">\n                                            <img src=\"{{ 'qurify_faq_1.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_2.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_3.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_4.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_5.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_6.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                            <img src=\"{{ 'qurify_faq_7.webp' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                        <\/div>"
+          }
+        },
+        "object_KFFqgz": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I turn OFF the filtered water? ",
+            "text": "<p>Yes! The Qure Faucet Filter has the option of switching off filtered water. You can turn on and off the purified\/tap water by switching the toggle button to “Q” for purified water, and to the tap symbol for unfiltered water. <\/p>",
+            "code": ""
+          }
+        },
+        "object_QiH47Y": {
+          "type": "object",
+          "settings": {
+            "heading": "What’s the difference between ‘hard water’ and ‘soft water’?",
+            "text": "<p>Hard water is water that contains a high quantity of dissolved minerals (like calcium and magnesium). Where soft water has been treated, so that the only ion remaining is sodium. When rainwater falls, it is naturally soft.<\/p><p>However, as water makes its way through the ground and into our waterways, it picks up minerals like chalk, lime, calcium and magnesium and becomes hard water. Hard water is to blame for dishes with spots, dingy looking clothes, and residue and soap scums in bathrooms. Soap and cleansers are also less effective with hard water due to its reaction to the magnesium and calcium, which makes the lather not as rich and bubbly and leaves hair feeling sticky and dull.<\/p>",
+            "code": ""
+          }
+        },
+        "object_8bWTad": {
+          "type": "object",
+          "settings": {
+            "heading": "What’s included?",
+            "text": "",
+            "code": "<div class=\"container\">\n    <div class=\"chest_pdp_ftr1\">\n        <div class=\"cp_ftr_wrapper p-0\">\n            <div class=\"cp_item\">\n                <img src=\"{{ 'faucet_filter.svg' | asset_url }}\" alt=\"\">\n                <p>Qure Faucet Filter Device with a 360° nozzle<\/p>\n            <\/div>\n            <div class=\"cp_item\">\n                <img src=\"{{ 'qurify_faucet.svg' | asset_url }}\" alt=\"\">\n                <p>Multiple adapters to match various faucet types<\/p>\n            <\/div>\n            <div class=\"cp_item\">\n                <img src=\"{{ 'qurify_user-manual.svg' | asset_url }}\" alt=\"\">\n                <p>Step-by-step user manual + QR code with video guide<\/p>\n            <\/div>\n            <div class=\"cp_item\">\n                <img src=\"{{ 'qurify_all-in-one.svg' | asset_url }}\" alt=\"\">\n                <p>All-in-one tools for installation and secure attachment\n                <\/p>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "object_7iPEVn",
+        "object_qz9ppC",
+        "object_GaPGc8",
+        "object_tpzc3R",
+        "object_H87TPT",
+        "object_KFFqgz",
+        "object_QiH47Y",
+        "object_8bWTad"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "The answers to your questions",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     }
   },
   "order": [
     "main",
-    "liquid_N9DGCe",
-    "heading_mfgDbT",
-    "17303984563a00ef11"
+    "custom_qurify_filter_lp_featuredin_JkK7Ch",
+    "image_text_2_np96td",
+    "reasons_Y4QGUa",
+    "results_B6nDgh",
+    "ingredients_list_kx7Yjh",
+    "text_with_video_MH3gBb",
+    "how_to_install_L9i7VN",
+    "compare_images_TNaVYJ",
+    "videos_list_QVh9ma",
+    "compare_zyD9zD",
+    "faq_yDJwaT"
   ]
 }

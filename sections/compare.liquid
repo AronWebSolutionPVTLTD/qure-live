@@ -33,9 +33,9 @@
                         <div class="bs_img">
                             <img class="img-fluid beauty_img" src="{{ block.settings.image | img_url: '600x' }}" alt="">
                         </div>
-                        <div class="bs_content">
-                            <h4 class="d-block d-md-none">{{ block.settings.mob_text }}</h4>
-                            <h4 class="d-none d-md-block">{{ title | replace: '\n', '&nbsp;' }}</h4>
+                        <div class="bs_content {% if section.settings.design %}mw-268 mx-auto{% endif %}">
+                            <h4 class="d-block d-md-none {% if section.settings.design %}border-0{% endif %}">{{ block.settings.mob_text }}</h4>
+                            <h4 class="d-none d-md-block {% if section.settings.design %}border-0{% endif %}">{{ title | replace: '\n', '&nbsp;' }}</h4>
                             {% if price != blank %}
                                 <div class="bs_price pb-0">
                                     <h3>
@@ -60,7 +60,7 @@
                                 </div>
                             {% endif %}
                         </div> {% endcomment %}
-                        <div class="bs_feature {{ block.settings.style }}">
+                        <div class="bs_feature {% if section.settings.design %}mw-268 mx-auto{% endif %} {{ block.settings.style }}">
                             {% capture list %}
                                 {{ 
                                     block.settings.list
@@ -121,6 +121,12 @@
                 "type": "richtext",
                 "id": "text_reduced",
                 "label": "Text Reduced"
+            },
+            {
+                "type": "checkbox",
+                "id": "design",
+                "label": "t:common.checkbox.design",
+                "default": false
             }
         ],
         "blocks": [

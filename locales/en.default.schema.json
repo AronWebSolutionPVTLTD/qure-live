@@ -101,11 +101,14 @@
     "collapsed": {
       "label": "Collapsed"
     },
-    "flag":{
+    "step": {
+      "label": "Step"
+    },
+    "flag": {
       "text": "Flag",
       "color": "Flag Color"
     },
-    "ingredient":{
+    "ingredient": {
       "image": "Ingredient Image",
       "text": "Ingredient Name"
     },
@@ -137,7 +140,8 @@
       "loop": "Enable loop",
       "autoplay": "Enable autoplay",
       "show": "Show",
-      "grey": "Grey"
+      "grey": "Grey",
+      "design": "New Design"
     },
     "dropdown": {
       "design": "Dropdown design"
@@ -274,6 +278,8 @@
       "label": "Image",
       "with": "With image",
       "without": "Without image",
+      "first": "First Image",
+      "second": "Second Image",
       "large": {
         "label": "Image large"
       },
@@ -321,9 +327,6 @@
     },
     "list": {
       "label": "List"
-    },
-    "step": {
-      "label": "Step"
     },
     "result": {
       "label": "Result"
@@ -1325,7 +1328,8 @@
       "name": "Featured Product"
     },
     "img_txt": {
-      "name": "Image & Text"
+      "name": "Image & Text",
+      "second": "Image & Text 2"
     },
     "how_to_use": {
       "name": "How to Use",
@@ -1400,6 +1404,9 @@
     },
     "image_comapre": {
       "label": "Compare Images"
+    },
+    "how-install": {
+      "label": "How To Install"
     }
   }
 }

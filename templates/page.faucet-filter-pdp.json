@@ -8,15 +8,15 @@
     "heading_cLanw9": {
       "type": "heading",
       "settings": {
-        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
-        "heading_mobile": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>"
+        "heading": "<h2>Real reviews, real results<\/h2><h2>from people just like you.<\/h2>",
+        "heading_mobile": "<h2>Real reviews, real results<\/h2><h2>from people just like you.<\/h2>"
       }
     },
     "1730397329882c7d0d": {
       "type": "apps",
       "blocks": {
         "stamped_reviews_main_widget_CL9kcC": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "type": "shopify:\/\/apps\/stamped-reviews\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
             "take_questions": 2,
             "animation": true,

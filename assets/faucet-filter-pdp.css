@@ -457,6 +457,9 @@
     height: 14px;
     width: 14px;
 }
+.faucet_filter .bs_feature.incorrectCircle ul li:first-child:before {
+    content: url(../assets/correct_circle.svg);
+}
 @media(max-width: 767px) {
     .subscribe_save_wrapper .subscribeInfo .subscribeInfoDesc{
         font-size: 10px;
