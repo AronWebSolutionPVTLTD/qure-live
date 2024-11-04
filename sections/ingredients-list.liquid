@@ -1,4 +1,4 @@
-<div class="ingredients_list">
+<div class="ingredients_list {{ section.settings.custom_class }}">
   <div class="container">
     <div class="section_header text-center ms-0 m-md-auto">
       {% if section.settings.heading != blank %}
@@ -74,34 +74,29 @@
         {% endfor %}
       </div>
     </div>
+    {% for block in section.blocks %}
+    {% if block.settings.heading2 != blank %}
     <div class="section_header text-start py-5 text-md-center ms-0 m-md-auto">
-      <h6 class="n_sub-heading">Perfect for</h6>
+      <h6 class="n_sub-heading">{{ block.settings.heading2 }}</h6>
     </div>
+    {% endif %}
+    {% endfor %}
     <div class="skin_problems mw-932">
+      {% for block in section.blocks %}
+      {% case block.type %}
+      {% when 'skin_image' %}
       <div class="problem_inner">
-        <img src="https://qureskincaredns.com/new/assets/acne_skin.webp" class="img-fluid" alt="">
+        {% if block.settings.skin_problem != blank %}
+        <img src="{{ block.settings.skin_problem | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.skin_problem.alt }}">
+        {% endif %}
+        {% if block.settings.problem_text != blank %}
         <div class="pt-4">
-          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Acne prone skin</p>
+          <p><img src="{{ 'correct_circle.svg' | asset_url }}" alt="">{{ block.settings.problem_text }}</p>
         </div>
+        {% endif %}
       </div>
-      <div class="problem_inner">
-        <img src="https://qureskincaredns.com/new/assets/rosacea.webp" class="img-fluid" alt="">
-        <div class="pt-4">
-          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Rosacea</p>
-        </div>
-      </div>
-      <div class="problem_inner">
-        <img src="https://qureskincaredns.com/new/assets/dry_skin.webp" class="img-fluid" alt="">
-        <div class="pt-4">
-          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Dry skin</p>
-        </div>
-      </div>
-      <div class="problem_inner">
-        <img src="https://qureskincaredns.com/new/assets/sensitive_skin.webp" class="img-fluid" alt="">
-        <div class="pt-4">
-          <p><img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">Sensitive skin</p>
-        </div>
-      </div>
+      {% endcase %}
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -119,6 +114,11 @@
       "type": "richtext",
       "id": "subtext",
       "label": "t:common.text.label"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_class",
+      "label": "t:common.classname.custom"
     }
   ],
   "blocks": [
@@ -173,6 +173,35 @@
             "label": "t:common.text.content"
         }
       ]
+    },
+    {
+        "type": "heading",
+        "name": "t:common.heading.label",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading2",
+            "label": "t:common.heading.label"
+          }
+        ]
+    },
+    {
+        "type": "skin_image",
+        "name": "t:common.image.label",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "skin_problem",
+            "label": "t:common.skin.problem"
+          },
+          {
+            "type": "text",
+            "id": "problem_text",
+            "label": "t:common.text.label"
+          }
+        ]
     }
   ],
   "presets": [

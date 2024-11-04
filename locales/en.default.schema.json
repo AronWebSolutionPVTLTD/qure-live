@@ -110,7 +110,8 @@
       "text": "Ingredient Name"
     },
     "text_icon": {
-      "label": "Heading with Icon"
+      "label": "Heading with Icon",
+      "text_icon": "Text & Icon"
     },
     "mark": "Mark",
     "testimonial": {
@@ -121,7 +122,8 @@
       "tab": "Tab"
     },
     "skin": {
-      "concerns": "Skin Concerns"
+      "concerns": "Skin Concerns",
+      "problem": "Skin Image"
     },
     "font": {
       "size": "Font size",
@@ -1387,6 +1389,9 @@
     },
     "ingredient-list": {
       "label": "Ingredient List"
+    },
+    "image_comapre": {
+      "label": "Compare Images"
     }
   }
 }

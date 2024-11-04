@@ -1,0 +1,172 @@
+<div class="advanced-filtration section">
+    <div class="container">
+        <div class="section_header text-center ms-0 m-md-auto">
+            {% if section.settings.heading != blank %}
+            <h2 class="title-lg">
+                {{ section.settings.heading }}
+            </h2>
+            {% endif %}
+            {% if section.settings.sub_text != blank %}
+            {{ section.settings.sub_text }}
+            {% endif %}
+        </div>
+        <div class="mw-970">
+            <div class="row gy-3">
+                {% for block in section.blocks %}
+                {% case block.type %}
+                {% when 'icon_box' %}
+                <div class="col-md-{{ block.settings.sepration }}">
+                    <div class="filter_benefit text-center">
+                        {% if section.settings.icon != blank %}
+                        <img src="{{ block.settings.icon | img_url: '36x' }}" alt="{{ block.settings.icon.alt }}" class="pb-md-3">
+                        {% endif %}
+                        <div class="text-md-center text-start">
+                            {% if section.settings.i_head != blank %}
+                                <h6>{{ block.settings.i_head }}</h6>
+                            {% endif %}
+                            {% if section.settings.t_text != blank %}
+                            <p>{{ block.settings.t_text }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endcase %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="filter_comparsion section">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <div class="comparsion">
+                        <div class="comparsion_inner">
+                            <div class="image-container">
+                                <img class="image-before slider-image" src="https://qureskincaredns.com/new/assets/other-water-filter.webp"
+                                    alt="color photo" />
+                                <img class="image-after slider-image" src="https://qureskincaredns.com/new/assets/qure-faucet-filter.png"
+                                    alt="black and white" />
+                            </div>
+                            <!-- step="10" -->
+                            <input type="range" min="0" max="100" value="50"
+                                aria-label="Percentage of before photo shown" class="slider" />
+                            <div class="slider-line" aria-hidden="true"></div>
+                            <div class="slider-button" aria-hidden="true">
+                                <img src="https://qureskincaredns.com/new/assets/slider_arrows.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row gy-3">
+                        <div class="col-12 pb-1">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 col-6">
+                                    <div class="filter_info">
+                                        <h5 class="mb-0">1</h5>
+                                        <p>Carbon filter</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <p>Removes up to 99.9% chlorine & contaminants</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-1">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 col-6">
+                                    <div class="filter_info">
+                                        <h5 class="mb-0">2</h5>
+                                        <p>Ultra filter</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <p>Reduces tiny particles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-1">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 col-6">
+                                    <div class="filter_info">
+                                        <h5 class="mb-0">3</h5>
+                                        <p>Descaler</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <p>Reduces limescale buildup</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 col-6">
+                                    <div class="filter_info">
+                                        <h5 class="mb-0">4</h5>
+                                        <p>Reduction layer</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <p>Reduces heavy metals</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "t:sections.image_comapre.label",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "t:common.heading.label"
+        },
+        {
+            "type": "richtext",
+            "id": "sub_text",
+            "label": "t:common.text.label"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "icon_box",
+            "name": "t:common.text_icon.text_icon",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "t:common.icon.label"
+                },
+                {
+                    "type": "text",
+                    "id": "i_head",
+                    "label": "t:common.heading.label"
+                },
+                {
+                    "type": "textarea",
+                    "id": "t_text",
+                    "label": "t:common.text.label"
+                },
+                {
+                    "type": "range",
+                    "id": "sepration",
+                    "label": "t:progressBlock.column.partition",
+                    "max": 6,
+                    "min": 2,
+                    "step": 1,
+                    "default": 4
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "t:sections.image_comapre.label"
+        }
+    ]
+}
+{% endschema %}
