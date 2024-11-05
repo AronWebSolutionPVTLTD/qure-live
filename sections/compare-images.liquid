@@ -44,7 +44,7 @@
           {% for block in section.blocks %}
             {% if block.type == 'column' %}
               <div class="comparsion">
-                <div class="comparsion_inner">
+                <div class="comparsion_inner" data-block-id="{{ block.id }}">
                   <div class="image-container">
                     {% if block.settings.image_1 != blank %}
                       <img
@@ -61,7 +61,6 @@
                       >
                     {% endif %}
                   </div>
-                  <!-- step="10" -->
                   <input
                     type="range"
                     min="0"
@@ -69,6 +68,7 @@
                     value="50"
                     aria-label="Percentage of before photo shown"
                     class="slider"
+                    data-block-id="{{ block.id }}"
                   >
                   <div class="slider-line" aria-hidden="true"></div>
                   <div class="slider-button" aria-hidden="true">
@@ -110,6 +110,19 @@
   </div>
 </div>
 
+<script>
+  // Select all slider elements
+  document.querySelectorAll('.slider').forEach(slider => {
+    slider.addEventListener('input', (e) => {
+      const blockId = e.target.getAttribute('data-block-id');
+      const container = document.querySelector(`.comparsion_inner[data-block-id="${blockId}"]`);
+      
+      if (container) {
+        container.style.setProperty('--position', `${e.target.value}%`);
+      }
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "t:sections.image_comapre.label",

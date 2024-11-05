@@ -57,68 +57,78 @@
         "text_label_real_result_3": "Dermatologist"
       }
     },
-    "custom_qurify_filter_lp_featuredin_JkK7Ch": {
-      "type": "custom-qurify-filter-lp-featuredin",
+    "featuredin_FdCAV8": {
+      "type": "featuredin",
       "blocks": {
-        "image_ckfeCa": {
+        "image_ihwtKK": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vogue2.svg"
+            "image": "shopify:\/\/shop_images\/vogue2.svg",
+            "mobile_hide": false
           }
         },
-        "image_AXVEwp": {
+        "image_JDqYpT": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/women_health.svg"
+            "image": "shopify:\/\/shop_images\/women_health.svg",
+            "mobile_hide": false
           }
         },
-        "image_hJgEp3": {
+        "image_Q9GFwm": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cosmopolitan2.svg"
+            "image": "shopify:\/\/shop_images\/cosmopolitan2.svg",
+            "mobile_hide": false
           }
         },
-        "image_KdrD9r": {
+        "image_Acynq8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/elle2.svg"
+            "image": "shopify:\/\/shop_images\/elle2.svg",
+            "mobile_hide": false
           }
         },
-        "image_jcQxk9": {
+        "image_JyUGwR": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/marie.svg"
+            "image": "shopify:\/\/shop_images\/marie.svg",
+            "mobile_hide": false
           }
         },
-        "image_KQnz33": {
+        "image_7zHHgK": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/grazia2.svg"
+            "image": "shopify:\/\/shop_images\/grazia2.svg",
+            "mobile_hide": false
           }
         }
       },
       "block_order": [
-        "image_ckfeCa",
-        "image_AXVEwp",
-        "image_hJgEp3",
-        "image_KdrD9r",
-        "image_jcQxk9",
-        "image_KQnz33"
+        "image_ihwtKK",
+        "image_JDqYpT",
+        "image_Q9GFwm",
+        "image_Acynq8",
+        "image_JyUGwR",
+        "image_7zHHgK"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.press_bl .ps_wrapper .ps_item:nth-child(2), .press_bl .ps_wrapper .ps_item:nth-child(3) {display: none; }}"
       ],
       "settings": {
-        "custom_class": "bg-lightGrey"
+        "heading": "",
+        "custom_cls": "bg-lightGrey"
       }
     },
-    "image_text_2_np96td": {
+    "image_text_2_rn78Ab": {
       "type": "image-text-2",
       "blocks": {
-        "image_QzCDfm": {
+        "image_FM83kj": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/faucet_flter-pd.webp"
           }
         },
-        "text_tBjmfC": {
+        "text_ARNPxF": {
           "type": "text",
           "settings": {
             "heading": "360° Nozzle for Precise Water Direction",
@@ -126,23 +136,15 @@
             "img_1": "shopify:\/\/shop_images\/restart.svg",
             "text_1": "Easy Toggle Options",
             "img_2": "shopify:\/\/shop_images\/water_tap.svg",
-            "text_2": "99% Faucet Fit",
+            "text_2": "99% Faucet Fit",
             "img_3": "shopify:\/\/shop_images\/verfied_sheild.svg",
             "text_3": "Lifetime Warranty"
-          }
-        },
-        "button_RNKQj4": {
-          "type": "button",
-          "settings": {
-            "btn_text": "Shop Now",
-            "btn_url": "#faucet_filter"
           }
         }
       },
       "block_order": [
-        "image_QzCDfm",
-        "text_tBjmfC",
-        "button_RNKQj4"
+        "image_FM83kj",
+        "text_ARNPxF"
       ],
       "settings": {
         "background": "trasnparent",
@@ -196,11 +198,11 @@
         "icon_dVq99K"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.reasons .rs_item {margin: 0; width: calc(50% - 20px); height: auto; } .reasons .reasons_wrapper {gap: 20px; }}"
+        "@media (max-width: 767px) {.reasons .rs_item {margin: 0; width: calc(50% - 20px); height: auto; } .reasons .reasons_wrapper {gap: 20px; } .section_header h2 br {display: none; } .section_header h2 {text-align: center; }}"
       ],
       "settings": {
         "classname": "bg-transparent",
-        "heading": "5 reasons why everyone istapping into a whole new side of skincare",
+        "heading": "5 reasons why everyone is  tapping  into a whole new side of skincare",
         "text": ""
       }
     },
@@ -214,7 +216,7 @@
             "heading": "Source of my unclear skin",
             "text": "<p>“I didn’t realize how big impact water has on our skin... I almost got used to my skin never getting better than mediocre, but this Water Filter is a game changer in my skincare routine.”<\/p>",
             "see-more": "",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "image_country": "shopify:\/\/shop_images\/australia_f_35e9b6f0-d77f-4184-afaf-224d96562185.webp",
             "text_country": "Australia",
             "client": "Kim L.",
             "code": ""
@@ -225,9 +227,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/results_hanna_a9a19b3e-4b75-442b-93b7-665aee9538d4.webp",
             "heading": "Hydrated more than ever",
-            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I used. <\/p>",
+            "text": "<p>“I never had any major issues with skin before I moved. Then I started to get irritation and my makeup would look cakey cause my skin was always so dry no matter what moisturiser I <\/p><p>used. <\/p>",
             "see-more": "I didn’t change anything in my skincare routine except filtered water. I’m never washing my face with anything less than Q-urified water because my skin is so much better.”",
-            "image_country": "shopify:\/\/shop_images\/america_f.webp",
+            "image_country": "shopify:\/\/shop_images\/england_f_03ba570c-9a33-4213-9712-9e5ff8ab08a6.webp",
             "text_country": "United States",
             "client": "Hanna",
             "code": ""
@@ -240,7 +242,7 @@
             "heading": "Acne and dryness gone",
             "text": "<p>“My skin has cleared up so much thanks to Qure! I use the LED mask and water filter daily and it’s cleared up my acne, and my complexion so much smoother and less red! My skin feels soft and hydrated. I can actually walk out of the house without makeup now. THANK YOU QURE!!!”<\/p>",
             "see-more": "",
-            "image_country": "shopify:\/\/shop_images\/australia_f.webp",
+            "image_country": "shopify:\/\/shop_images\/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Josie",
             "code": ""
@@ -254,7 +256,7 @@
       ],
       "settings": {
         "classname": "mi_landing_result",
-        "heading": "Results you‘ll see with your own eyes",
+        "heading": "The results are crystal clear",
         "heading_reduced": "",
         "text_verified_customer": "Verified customer",
         "text_reviewed": "Reviewed in"
@@ -274,7 +276,8 @@
             "ingredient1": "Rust",
             "i_icon2": "shopify:\/\/shop_images\/Algae.svg",
             "ingredient2": "Algae",
-            "ingredient_text": "Mud, rust and micro-contaminants in water can irritate sensitive skin."
+            "ingredient_text": "Mud, rust and micro-contaminants in water can irritate sensitive skin.",
+            "column_class": ""
           }
         },
         "column_cBkfRK": {
@@ -288,7 +291,8 @@
             "ingredient1": "Micro-plastics",
             "i_icon2": "shopify:\/\/shop_images\/micro-organisms.svg",
             "ingredient2": "Micro-organisms",
-            "ingredient_text": "Microplastics can cause micro-abrasions and damage sensitive skin."
+            "ingredient_text": "Microplastics can cause micro-abrasions and damage sensitive skin.",
+            "column_class": "pt-5 pt-md-0"
           }
         },
         "column_xrKbBE": {
@@ -302,7 +306,8 @@
             "ingredient1": "Lead particles",
             "i_icon2": "shopify:\/\/shop_images\/many-more.svg",
             "ingredient2": "Many more",
-            "ingredient_text": "Hard water can have hard metals or excess Mg2+ and Ca2+ that can clog and irritate the skin."
+            "ingredient_text": "Hard water can have hard metals or excess Mg2+ and Ca2+ that can clog and irritate the skin.",
+            "column_class": "pt-5 pt-md-0"
           }
         },
         "heading_c7QX6H": {
@@ -350,10 +355,59 @@
         "skin_image_LCDYMx",
         "skin_image_eXjAJL"
       ],
+      "custom_css": [
+        ".section_header p a {text-decoration: underline;}",
+        ".ingredients_img img {min-height: 49px;}"
+      ],
       "settings": {
         "heading": "It’s time to look toward your faucet, not (just) your ingredients list.",
         "subtext": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. That water hardness is a contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment, <\/a>including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema <\/a>and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis. <\/a>And not just from the well-known culprit chlorine – but also calcium and magnesium.<\/p>",
-        "custom_class": "section"
+        "custom_class": "section pt-md-2"
+      }
+    },
+    "icons_list_KDdcxw": {
+      "type": "icons-list",
+      "blocks": {
+        "icon_NmXymh": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/free-shipping-ftr.svg",
+            "text": "<p>Free Shipping<\/p><p>Orders Over $100<\/p>"
+          }
+        },
+        "icon_hphXzi": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buy-now-ftr.svg",
+            "text": "<p>Buy Now,<\/p><p>Pay Later<\/p>"
+          }
+        },
+        "icon_egkgfL": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/derma-ftr.svg",
+            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
+          }
+        },
+        "icon_8HKE7A": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/science-ftr.svg",
+            "text": "<p>Proven Results,<\/p><p>Backed by science<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_NmXymh",
+        "icon_hphXzi",
+        "icon_egkgfL",
+        "icon_8HKE7A"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.featured_promotion {display: none; }}"
+      ],
+      "settings": {
+        "background": "bg-grey"
       }
     },
     "text_with_video_MH3gBb": {
@@ -384,7 +438,7 @@
         "text_content_VY38xY"
       ],
       "settings": {
-        "padding_top": 0,
+        "padding_top": 80,
         "padding_bottom": 0
       }
     },
@@ -587,8 +641,13 @@
         "wistia_H9t4Xz",
         "wistia_NERwEP"
       ],
+      "custom_css": [
+        ".section_header {padding-bottom: 0;}",
+        "@media (max-width: 767px) {.section_header h2 br {display: none; }}"
+      ],
       "settings": {
-        "heading": "No (editing) filters were used in the making of these videos",
+        "heading": "No (editing) filters were used in the  making of these videos",
+        "sub_heading": "The people, the reviews, and the Qure Filter? All 100% real.",
         "classname": "section videosQure bg-lightGrey",
         "btn": "",
         "btn_url": "",
@@ -634,9 +693,9 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
-        "heading": "The beauty of clinical results from home - without the ‘clinical’ costs",
+        "heading": "More effective and safer than other filters",
         "heading_reduced": "",
-        "text": "<p>It’s like going to a clinic, minus the on-going costs, the time commitment, the overpromises, the upselling and the hassle.<\/p>",
+        "text": "<p>Other filtration systems focus on just chlorine removal, but calcium and magnesium are the true skin-barrier disruptors. With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin…<\/p>",
         "text_reduced": "",
         "design": true
       }
@@ -731,11 +790,12 @@
   },
   "order": [
     "main",
-    "custom_qurify_filter_lp_featuredin_JkK7Ch",
-    "image_text_2_np96td",
+    "featuredin_FdCAV8",
+    "image_text_2_rn78Ab",
     "reasons_Y4QGUa",
     "results_B6nDgh",
     "ingredients_list_kx7Yjh",
+    "icons_list_KDdcxw",
     "text_with_video_MH3gBb",
     "how_to_install_L9i7VN",
     "compare_images_TNaVYJ",

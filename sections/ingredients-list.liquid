@@ -15,7 +15,7 @@
         {% for block in section.blocks %}
           {% case block.type %}
             {% when 'column' %}
-              <div class="col-md-4 col-sm-6">
+              <div class="col-md-4 col-sm-6 {{ block.settings.column_class }}">
                 <div class="ingredient">
                   {% if block.settings.flag != blank %}
                     <div class="ingredient_flag" style="background: {{ block.settings.flag-color }};">
@@ -175,6 +175,11 @@
           "type": "textarea",
           "id": "ingredient_text",
           "label": "t:common.text.content"
+        },
+        {
+          "type": "textarea",
+          "id": "column_class",
+          "label": "t:common.classname.custom"
         }
       ]
     },
