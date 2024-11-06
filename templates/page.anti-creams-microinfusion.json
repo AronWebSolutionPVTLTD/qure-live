@@ -435,8 +435,8 @@
         "option_WGKQBQ": {
           "type": "option",
           "settings": {
-            "heading": "Tripeptide-1 Peptide",
-            "text": "<p>Proven to stimulate the production of dermal protein, slowing the skin's ageing process. Helps the skin retain water and restore elasticity, and reduces appearance of wrinkles</p>",
+            "heading": "Copper Peptide GHK-Cu",
+            "text": "<p>Known for its powerful anti-aging properties. This switch boosts collagen production and skin healing and gives the serum its distinctive blue hue.</p>",
             "image": "shopify://shop_images/pi_acetyl.webp"
           }
         },
@@ -912,7 +912,7 @@
           "settings": {
             "tab_txt": "Prepare",
             "tab_desc": "<p>Twist open the chamber of the device and fill with one ampule of serum.<br/>Twist on needle head with lid to close it tight.</p><p>Leave the device upside down for 1-2 minutes.<br/>During this time, wash your face and make sure your hands are clean.</p>",
-            "image": "shopify://shop_images/howUse_pdp1_387b2099-6238-4408-9c2b-b3b29434ebcd.webp"
+            "image": "shopify://shop_images/6_ea9ed242-a7b5-4cdc-941b-ad54c7da2260.png"
           }
         },
         "tab_yTEcfK": {
@@ -920,7 +920,7 @@
           "settings": {
             "tab_txt": "Treatment",
             "tab_desc": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!</p><p>Start at the centre of the face and work your way outward to cover the full face. Perform 2/3 passes. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.</p>",
-            "image": "shopify://shop_images/howUse_pdp2_73e56928-7e88-4c5b-8fdc-aba1351e1d7c.webp"
+            "image": "shopify://shop_images/1a_3.png"
           }
         },
         "tab_QqVtHE": {
@@ -928,7 +928,7 @@
           "settings": {
             "tab_txt": "Aftercare",
             "tab_desc": "<p>Once treatment is completed, place lid back on the needle head.</p><p>Twist the lid off and dispose safely.</p><p>Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
-            "image": "shopify://shop_images/howUse_pdp10_20d762ae-f0cf-449c-a7ca-243e4cc8e508.webp"
+            "image": "shopify://shop_images/1a_4tt.png"
           }
         },
         "tab_gUbBCP": {
@@ -936,7 +936,7 @@
           "settings": {
             "tab_txt": "Storage",
             "tab_desc": "<p>Once treatment is completed, place lid back on the needle head.</p><p>Twist the lid off and dispose safely.</p><p>Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
-            "image": "shopify://shop_images/howUse_pdp3_7060393a-a5fb-49b5-b2dc-cf9dd1a269e7.webp"
+            "image": "shopify://shop_images/image_storage.png"
           }
         },
         "wistia_HJKH8h": {
@@ -954,7 +954,7 @@
         "wistia_HJKH8h"
       ],
       "settings": {
-        "heading": "How to use Qure’s Micro-Infusion System"
+        "heading": "How to use"
       }
     },
     "anti-creams-microinfusion-page-break": {
