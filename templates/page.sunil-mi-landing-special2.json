@@ -1473,6 +1473,69 @@
         "column_image": 6,
         "column_content": 6
       }
+    },
+    "compare_products_Cnaxxx": {
+      "type": "compare-products",
+      "blocks": {
+        "column_eBQjAC": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/Group_18806.png",
+            "pd_name": "<h4><strong>Qure</strong><br/>Micro-Infusion System</h4>",
+            "point5": "As little as 1-2 days",
+            "mark1": "tick",
+            "point6": "Tailored to your skin needs",
+            "mark2": "tick",
+            "point7": "Minimal downtime & Virtually Painless",
+            "mark3": "tick",
+            "point8": "Less than $20 per treatment",
+            "mark4": "tick"
+          }
+        },
+        "column_Hi8Jjq": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/compare_cs_1.png",
+            "pd_name": "<h4>Micro-Infusion<br/><strong>Clinic </strong>Treatment</h4>",
+            "point5": "As little as 1-2 days",
+            "mark1": "tick",
+            "point6": "Tailored to your skin needs",
+            "mark2": "tick",
+            "point7": "Minimal downtime & Virtually Painless",
+            "mark3": "tick",
+            "point8": "Around $300 per treatment",
+            "mark4": "cross"
+          }
+        },
+        "column_YGzGme": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/compare_cs_2.png",
+            "pd_name": "<h4>Derma Roller<br/>At-Home Treatment</h4>",
+            "point5": "A few days to see results",
+            "mark1": "cross",
+            "point6": "Not customised to skin",
+            "mark2": "cross",
+            "point7": "Potential side effects",
+            "mark3": "cross",
+            "point8": "$10 per treatment",
+            "mark4": "tick"
+          }
+        }
+      },
+      "block_order": [
+        "column_eBQjAC",
+        "column_Hi8Jjq",
+        "column_YGzGme"
+      ],
+      "settings": {
+        "heading": "Give yourself a “Clinic Quality” glow up without the “Clinical Prices”",
+        "heading2": "Let’s Compare",
+        "point1": "Results in",
+        "point2": "Customized",
+        "point3": "Skin Safe",
+        "point4": "Cost"
+      }
     }
   },
   "order": [
@@ -1499,6 +1562,7 @@
     "compare_box_p4B7wy",
     "faq_ABfhyg",
     "social_zwVAqW",
-    "two_column_box_LCKkjE"
+    "two_column_box_LCKkjE",
+    "compare_products_Cnaxxx"
   ]
 }
