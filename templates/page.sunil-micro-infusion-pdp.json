@@ -842,9 +842,7 @@
         "wistia_9NFNhM": {
           "type": "wistia",
           "settings": {
-            "wistia_id": "8ymvdqzx92",
-            "image": "shopify://shop_images/Group_1000004099_47e048f2-9bd3-4da4-803e-6ddc12489866.png",
-            "video": "shopify://files/videos/MICRO INFUSION_fin.mp4"
+            "wistia_id": "8ymvdqzx92"
           }
         }
       },
