@@ -99,14 +99,14 @@
         "media_BGGnJg": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp-product-5.webp",
+            "image": "shopify://shop_images/Rectangle_1g98_2x_bd58bf5f-2f7b-456a-b68f-d0b336830253.png",
             "wistia_id": ""
           }
         },
         "media_ewbVL3": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mi_refill-product-1.webp",
+            "image": "shopify://shop_images/Frame_114g28.png",
             "wistia_id": ""
           }
         },
@@ -150,7 +150,7 @@
           "settings": {
             "image": "shopify://shop_images/see_work.png",
             "image_mobile": "shopify://shop_images/see_work_mob.webp",
-            "video": "shopify://files/videos/Qure Micro-infusing Applicate (Music).mp4",
+            "video": "shopify://files/videos/MICRO INFUSION_fin.mp4",
             "video_label": "Click To Watch"
           }
         }
