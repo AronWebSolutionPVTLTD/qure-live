@@ -819,7 +819,7 @@
           "settings": {
             "tab_txt": "Prepare",
             "tab_desc": "<p>Twist open the chamber of the device and fill with one ampule of serum.  Twist on needle head with lid to close it tight.<br/>Leave the device upside down for 1-2 minutes.  During this time, wash your face and make sure your hands are clean.</p>",
-            "image": "shopify://shop_images/howUse_pdp1.webp"
+            "image": "shopify://shop_images/6_ea9ed242-a7b5-4cdc-941b-ad54c7da2260.png"
           }
         },
         "tab_UzUCKk": {
@@ -827,7 +827,7 @@
           "settings": {
             "tab_txt": "Treatment",
             "tab_desc": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!<br/>Start at the centre of the face and work your way outward to cover the full face. Perform 2/3 passes. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.</p>",
-            "image": "shopify://shop_images/howUse_pdp2.webp"
+            "image": "shopify://shop_images/1a_3.png"
           }
         },
         "tab_kkmNwF": {
@@ -835,13 +835,15 @@
           "settings": {
             "tab_txt": "Aftercare",
             "tab_desc": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely.<br/>Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
-            "image": "shopify://shop_images/howUse_pdp3.webp"
+            "image": "shopify://shop_images/1a_4tt.png"
           }
         },
         "wistia_9NFNhM": {
           "type": "wistia",
           "settings": {
-            "wistia_id": "i4a51d8k7u"
+            "wistia_id": "",
+            "image": "shopify://shop_images/Group_1000004099_47e048f2-9bd3-4da4-803e-6ddc12489866.png",
+            "video": "shopify://files/videos/MICRO INFUSION_fin.mp4"
           }
         }
       },
