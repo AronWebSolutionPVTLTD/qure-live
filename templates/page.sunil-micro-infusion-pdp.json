@@ -994,7 +994,7 @@
           "type": "Serum",
           "settings": {
             "background": "bg-yellow",
-            "pd_img": "shopify://shop_images/u_serum_1.webp",
+            "pd_img": "shopify://shop_images/serhum.png",
             "name": "Rejuvenating Serum",
             "serum_type": "Dark Spots & Uneven Skin Tone",
             "benefit1": "Brightens  discolouration",
