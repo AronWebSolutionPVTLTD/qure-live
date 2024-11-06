@@ -421,18 +421,17 @@
 }
 
 .my-floating-cart form.my-cart .custom_upsell > div .upsell_main{
-  height: 236px;
-  max-height: 236px;
+  height: 320px;
+  max-height: 320px;
 }
-
 
 .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image .upsell_content{
   height: 100%;
 }
 
 .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image .upsell_content .upsell_content-text{
-  height: 89px;
-  max-height: 89px;
+  height: 110px;
+  max-height: 110px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -493,8 +492,8 @@
   }
 
   .my-floating-cart form.my-cart .custom_upsell > div .upsell_main{
-    height: 288px;
-    max-height: 288px;
+    height: 320px;
+    max-height: 320px;
   }
 
   .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image .upsell_content{
@@ -517,8 +516,8 @@
   }
   
   .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image .upsell_content .upsell_content-text{
-    height: 78px;
-    max-height: 78px;
+    height: 110px;
+    max-height: 110px;
     display: flex;
     flex-direction: column;
     gap: 6px;
