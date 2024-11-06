@@ -719,8 +719,72 @@
         "btn_url": ""
       }
     },
+    "compare_products_Ugcftq": {
+      "type": "compare-products",
+      "blocks": {
+        "column_DBc3WB": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/Group_18806.png",
+            "pd_name": "<h4><strong>Qure</strong><br/>Micro-Infusion System</h4>",
+            "point5": "As little as 1-2 days",
+            "mark1": "tick",
+            "point6": "Tailored to your skin needs",
+            "mark2": "tick",
+            "point7": "Minimal downtime & Virtually Painless",
+            "mark3": "tick",
+            "point8": "Less than $20 per treatment",
+            "mark4": "tick"
+          }
+        },
+        "column_RRwDJ9": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/compare_cs_1.png",
+            "pd_name": "<h4>Micro-Infusion<br/><strong>Clinic </strong>Treatment</h4>",
+            "point5": "As little as 1-2 days",
+            "mark1": "tick",
+            "point6": "Tailored to your skin needs",
+            "mark2": "tick",
+            "point7": "Minimal downtime & Virtually Painless",
+            "mark3": "tick",
+            "point8": "Around $300 per treatment",
+            "mark4": "cross"
+          }
+        },
+        "column_h33y6Q": {
+          "type": "column",
+          "settings": {
+            "pd_image": "shopify://shop_images/compare_cs_2.png",
+            "pd_name": "<h4>Derma Roller<br/>At-Home Treatment</h4>",
+            "point5": "A few days to see results",
+            "mark1": "cross",
+            "point6": "Not customised to skin",
+            "mark2": "cross",
+            "point7": "Potential side effects",
+            "mark3": "cross",
+            "point8": "$10 per treatment",
+            "mark4": "tick"
+          }
+        }
+      },
+      "block_order": [
+        "column_DBc3WB",
+        "column_RRwDJ9",
+        "column_h33y6Q"
+      ],
+      "settings": {
+        "heading": "Give yourself a “Clinic Quality” glow up without the “Clinical Prices”",
+        "heading2": "Let’s Compare",
+        "point1": "Results in",
+        "point2": "Customized",
+        "point3": "Skin Safe",
+        "point4": "Cost"
+      }
+    },
     "liquid_9GnXBn": {
       "type": "liquid",
+      "disabled": true,
       "settings": {
         "code": "<!-- Difference table with slider start-->\n        <div class=\"compare_section section bg-yellow\">\n            <div class=\"container\">\n                <div class=\"section_header text-start text-md-center mw-500\">\n                    <h2 class=\"title-lg\">\n                        Skip the in-clinic visits and <br>get glowing results from home\n                    </h2>\n                </div>\n                <div class=\"compare_listRow\">\n                    <div class=\"compare_listHeadings\">\n                        <div class=\"compare_listHeader\">\n                            <div class=\"compare__img\"></div>\n                        </div>\n                        <div class=\"compare__titleBlock\">\n                            <h4 class=\"compare__title\"><strong>Let’s Compare</strong></h4>\n                        </div>\n                        <div class=\"compare_listitems\">\n                            <div class=\"compare_listBlock\">Results in</div>\n                            <div class=\"compare_listBlock\">Customized</div>\n                            <div class=\"compare_listBlock active\">Skin Safe</div>\n                            <div class=\"compare_listBlock\">Cost</div>\n                        </div>\n                    </div>\n                    <div class=\"compare_list_column\">\n                        <div class=\"swiper-container compare-slider twa__swiper\" id=\"twa__swiper-compareSlider\"\n                            data-section-id=\"compareSlider\" data-autoplay=\"false\" data-loop=\"true\"\n                            data-centerslide=\"false\" data-mobile=\"1\" data-tablet=\"2\" data-desktop=\"2\" data-spacing=\"0\"\n                            data-arrowleft=\"compareSlider-swiper-prev\" data-arrowright=\"compareSlider-swiper-next\">\n                            <div class=\"swiper-wrapper\">\n                                <!-- slide start -->\n                                <div class=\"swiper-slide\">\n                                    <div class=\"compare_list_elements active\">\n                                        <div class=\"compare_listHeader\">\n                                            <div class=\"compare__img\"><img src=\"{{ 'compare_micro.webp' | asset_url }}\" alt=\"\"\n                                                    class=\"img-fluid d-block mx-auto\"></div>\n                                        </div>\n                                        <div class=\"compareTxt__element\">\n                                            <div class=\"compare__titleBlock\">\n                                                <h4 class=\"compare__title text-center\"><strong>Qure</strong><br />\n                                                    Micro-Infusion System</h4>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>As little as 1-2 days</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Tailored to your skin needs</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Minimal downtime & Virtually Painless</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Less than $20 per treatment</h5>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"swiper-slide\">\n                                    <div class=\"compare_list_elements\">\n                                        <div class=\"compare_listHeader\">\n                                            <div class=\"compare__img\"><img src=\"{{ 'compare_cs_1.png' | asset_url }}\" alt=\"\"\n                                                    class=\"img-fluid d-block mx-auto\"></div>\n\n                                        </div>\n                                        <div class=\"compareTxt__element\">\n                                            <div class=\"compare__titleBlock\">\n                                                <h4 class=\"compare__title text-center\">Micro-Infusion\n                                                    <br /><strong>Clinic</strong> Treatment\n                                                </h4>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>As little as 1-2 days</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Tailored to your skin needs</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'tick_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Minimal downtime & Virtually Painless</h5>\n                                            </div>\n                                            <div class=\"compare_list_Block\">\n                                                <div class=\"compare_list_icon\">\n                                                    <img src=\"{{ 'cross_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                                                </div>\n                                                <h5>Around $300 per treatment</h5>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"swiper-pagination\"></div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- Difference table with slider end-->"
       }
@@ -1241,6 +1305,7 @@
     "two_column_box_f67akQ",
     "trusted_qGtbnC",
     "videos_list_9mL4h8",
+    "compare_products_Ugcftq",
     "liquid_9GnXBn",
     "compare_rGUQ9y",
     "guide_xibEe6",
