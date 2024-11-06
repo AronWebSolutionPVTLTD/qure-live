@@ -772,13 +772,13 @@
           "type": "video",
           "settings": {
             "image": "shopify://shop_images/demo-men.webp",
-            "video": "shopify://files/videos/Qure Micro-infusing Applicate (Music).mp4"
+            "video": "shopify://files/videos/MICRO INFUSION_fin.mp4"
           }
         },
         "object_hkPUHC": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp_step1_aaa00f01-0535-41a0-92e5-8395ca15e96b.webp",
+            "image": "shopify://shop_images/6_ea9ed242-a7b5-4cdc-941b-ad54c7da2260.png",
             "text": "<p>Twist open the chamber of the device and fill with one ampule of serum. Twist on needle head with lid to close it tight.</p>",
             "step": "STEP"
           }
@@ -786,7 +786,7 @@
         "object_hP3C9q": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp_step2.webp",
+            "image": "shopify://shop_images/ima2ge.png",
             "text": "<p>Leave the device upside down for 1-2 minutes. During this time, wash your face and make sure your hands are clean.</p>",
             "step": "STEP"
           }
@@ -794,7 +794,7 @@
         "object_QnrbNQ": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp_step3.webp",
+            "image": "shopify://shop_images/ima3ge.png",
             "text": "<p>Once the serum has had enough time to make its way into the needles, you can take off the lid and start micro-infusing!</p>",
             "step": "STEP"
           }
@@ -802,7 +802,7 @@
         "object_THFDbC": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp_step4_men.webp",
+            "image": "shopify://shop_images/Rectangle_4181.png",
             "text": "<p>Start at the centre of the face and work your way outward to cover the full face. Take any leftover serum from the device and pat it onto your face and neck to leave on overnight.</p>",
             "step": "STEP"
           }
@@ -810,7 +810,7 @@
         "object_tMTm7n": {
           "type": "object",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp_step5_f85c08be-1937-47f5-81e4-084b716d6352.webp",
+            "image": "shopify://shop_images/image_60_dedfee5f-b121-4ba5-8877-80a91392cdf8.png",
             "text": "<p>Once treatment is completed, place lid back on the needle head. Twist the lid off and dispose safely. Open a new sterile needle head and put it on the device ready for your next treatment.</p>",
             "step": "STEP"
           }
