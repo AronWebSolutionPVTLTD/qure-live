@@ -148,10 +148,10 @@
         "video_GAjMEW": {
           "type": "video",
           "settings": {
-            "image": "shopify://shop_images/see_work.png",
-            "image_mobile": "shopify://shop_images/see_work_mob.webp",
+            "image": "shopify://shop_images/Group_1865.png",
+            "image_mobile": "shopify://shop_images/Grocup_1865.png",
             "video": "shopify://files/videos/MICRO INFUSION_fin.mp4",
-            "video_label": "Click To Watch"
+            "video_label": "See How It Works"
           }
         }
       },
