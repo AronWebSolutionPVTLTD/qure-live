@@ -112,7 +112,7 @@
         "media_iX9UgP": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Frame_114g28.png",
+            "image": "shopify://shop_images/Rectangle_375.png",
             "wistia_id": ""
           }
         },
@@ -533,7 +533,8 @@
         "image_HGqFfY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/img1-transformed.jpg",
+            "image": "shopify://shop_images/Group_1000003895.png",
+            "image_mobile": "shopify://shop_images/Group_100000v3903.png",
             "classname": "mw-mob-100 pt-4"
           }
         },
@@ -1282,9 +1283,7 @@
         "image_fFdePg",
         "code_fXbXkm"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "classname": "imageText joinMicro",
         "column_image": 6,
