@@ -36,8 +36,8 @@
     },
     "main": {
       "type": "temp-page-micro-infusion-faq-page-second",
-      "settings": {
-      }
+      "disabled": true,
+      "settings": {}
     },
     "two_column_box_PDB6Vm": {
       "type": "two-column-box",
@@ -72,7 +72,6 @@
         "content_NBW9R8",
         "image_ahLEwD"
       ],
-      "disabled": true,
       "custom_css": [
         ".faq_title h1 {font-size: 45px; letter-spacing: 0.36px; line-height: 55px;}",
         ".faq_sub h5 {font-size: 24px; font-weight: 400; line-height: 39px; letter-spacing: 0.3px;}",
@@ -108,7 +107,6 @@
         "content_FWJRzx",
         "content_6p66aP"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -139,7 +137,6 @@
         "content_hYU3L6",
         "content_BFxnaf"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light pt-5",
         "column_image": 6,
@@ -175,7 +172,6 @@
         "option_ypREtU",
         "option_JFE37P"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.stamping_skin-gif {padding-bottom: 40px; }}"
       ],
@@ -201,7 +197,6 @@
       "block_order": [
         "content_9nC84W"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light section pt-0",
         "column_image": 6,
@@ -232,7 +227,6 @@
         "content_CCLQXk",
         "content_VwQ8UA"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -293,7 +287,6 @@
         "steps_j3JHym",
         "steps_6fwQwn"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.stamping_content-main > .swiper.Swiper_image {overflow: unset; }}"
       ],
@@ -336,7 +329,6 @@
         "image_9caNcq",
         "content_CBz9Lw"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light",
         "column_image": 10,
@@ -376,7 +368,6 @@
         "content_xaamYe",
         "content_n8zyBU"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -416,7 +407,6 @@
         "content_dLPeAa",
         "content_P9NBhw"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -455,7 +445,6 @@
         "image_nWBFP3",
         "content_L9wmUd"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 6,
@@ -486,7 +475,6 @@
         "content_EN7NXD",
         "content_KfpUeD"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light",
         "column_image": 6,
@@ -517,7 +505,6 @@
         "content_YDeVer",
         "content_zPaetw"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light py-4",
         "column_image": 6,
@@ -558,7 +545,6 @@
         "content_X6c9MC",
         "content_8m84xq"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Try it Yourself And Enjoy Simple Skincare Created To Support Real Women Look And Feel Their Best.",
         "text": "<p>If you're tired of dealing with fine lines, dark spots, and dull skin, the Qure Micro-Infusion System is here to help.<br/><br/>Getting started is simple:</p>",
@@ -581,7 +567,6 @@
       "block_order": [
         "content_dfH8Un"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light d-none d-md-block",
         "column_image": 6,
@@ -612,7 +597,6 @@
         "content_rpAr6E",
         "content_mCh8Ji"
       ],
-      "disabled": true,
       "settings": {
         "classname": "technology_light section_header mw-100",
         "column_image": 10,
@@ -647,7 +631,6 @@
         "about_wYz6Xb",
         "button_mrJ4bc"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Take Charge Of Your Skincare With Qure.  <br>  Limited Time Offer:",
         "custom_class": "mw-932 text-md-left ms-0"
@@ -655,7 +638,6 @@
     },
     "liquid_n8qCEc": {
       "type": "liquid",
-      "disabled": true,
       "settings": {
         "code": "{% render 'serums-months-image-form-v2' with section_id: section.id %}"
       }
@@ -818,7 +800,6 @@
         "result_LhjGpR",
         "button_bpVTqh"
       ],
-      "disabled": true,
       "custom_css": [
         ".get_confident-btn a {padding: 18px 0 !important;}",
         "@media (max-width: 767px) {.get_confident-btn a {padding: 3px 0 !important; line-height: normal; border-radius: 50px; } .original-copy {display: none; } .reduced-copy {display: block !important; }}"
@@ -833,7 +814,6 @@
     },
     "liquid_BLXdGe": {
       "type": "liquid",
-      "disabled": true,
       "settings": {
         "code": "<div class=\"offering_period_bl mw-855 mb-5\">\n            <div class=\"container\">\n                <div class=\"offering_period bg-grey\">\n                    <p><strong>As of 07/30/24:</strong></p>\n                    <p>\n                        To celebrate more women saying no to the hype and yes to simple skincare that works, we're\n                        offering a\n                        limited-time discount of up to 43% for this month only.</p>\n                </div>\n            </div>\n        </div>"
       }
