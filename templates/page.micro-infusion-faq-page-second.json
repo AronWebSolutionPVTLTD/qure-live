@@ -632,7 +632,7 @@
         "button_mrJ4bc"
       ],
       "settings": {
-        "heading": "Take Charge Of Your Skincare With Qure.  <br>  Limited Time Offer:",
+        "heading": "Take Charge Of Your Skincare With Qure.    Limited Time Offer:",
         "custom_class": "mw-932 text-md-left ms-0"
       }
     },
@@ -817,6 +817,15 @@
       "settings": {
         "code": "<div class=\"offering_period_bl mw-855 mb-5\">\n            <div class=\"container\">\n                <div class=\"offering_period bg-grey\">\n                    <p><strong>As of 07/30/24:</strong></p>\n                    <p>\n                        To celebrate more women saying no to the hype and yes to simple skincare that works, we're\n                        offering a\n                        limited-time discount of up to 43% for this month only.</p>\n                </div>\n            </div>\n        </div>"
       }
+    },
+    "anti_creams_microinfusion_page_stamping_EykDgH": {
+      "type": "anti-creams-microinfusion-page-stamping",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "custom_class": "mw-680",
+        "custom_class2": ""
+      }
     }
   },
   "order": [
@@ -839,6 +848,7 @@
     "two_column_box_Nq3cng",
     "two_column_box_aXR9ji",
     "limited_offer_product_7EUw9a",
+    "anti_creams_microinfusion_page_stamping_EykDgH",
     "liquid_n8qCEc",
     "results_gqEBLE",
     "liquid_BLXdGe"
