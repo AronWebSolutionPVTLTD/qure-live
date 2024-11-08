@@ -18,12 +18,14 @@
                         <p class="pb-3">Choose serums:</p>
                         <div class="step_content step_serum serum_image">
                             <div class="serumBlock {{ section_id }}_productTypeObject">
-                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating">
-                                <label class="serum_prd" for="mBanner_rejuvenating">
-                                    <div class="serum_img product_type" data-product-type="2">
-                                        <img src="{{ 'reju.webp' | asset_url }}" alt="" class="img-fluid">
+                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating-hydra" checked>
+                                <label class="serum_prd" for="mBanner_rejuvenating-hydra">
+                                    <div class="serum_img product_type" data-product-type="1">
+                                        <img src="{{ 'reju_hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
                                     </div>
-                                    <h4 class="serum_ttl flex-row gap-1"><span>For</span>Dark Spots</h4>
+                                    <h4 class="serum_ttl d-block pt-md-3 pt-2"><span>For</span>
+                                        Dark Spots <br>+ Wrinkles
+                                    </h4>
                                 </label>
                             </div>
                             <div class="serumBlock {{ section_id }}_productTypeObject mt-0">
@@ -35,15 +37,13 @@
                                     <h4 class="serum_ttl flex-row gap-1"><span>For</span>Wrinkles</h4>
                                 </label>
                             </div>
-                            <div class="serumBlock {{ section_id }}_productTypeObject mt-0">
-                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating-hydra" checked>
-                                <label class="serum_prd" for="mBanner_rejuvenating-hydra">
-                                    <div class="serum_img product_type" data-product-type="1">
-                                        <img src="{{ 'reju_hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
+                            <div class="serumBlock {{ section_id }}_productTypeObject">
+                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating">
+                                <label class="serum_prd" for="mBanner_rejuvenating">
+                                    <div class="serum_img product_type" data-product-type="2">
+                                        <img src="{{ 'reju.webp' | asset_url }}" alt="" class="img-fluid">
                                     </div>
-                                    <h4 class="serum_ttl d-block pt-md-3 pt-2"><span>For</span>
-                                        Dark Spots <br>+ Wrinkles
-                                    </h4>
+                                    <h4 class="serum_ttl flex-row gap-1"><span>For</span>Dark Spots</h4>
                                 </label>
                             </div>
                         </div>
