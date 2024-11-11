@@ -20,13 +20,13 @@
                             <h1 class="title-xl d-md-none">Get clearer skin, on tap, with Qure Faucet Filter</h1>
                         </div>
 
-                        <div class="price_wrap">
+                        {% comment %} <div class="price_wrap">
                             <div class="price">
                                 <div class="new_price">
                                     {{ product.price | money_without_trailing_zeros }}
                                 </div>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
 
                         <div class="mask_select_clr mt-4">
                             <h5>Select color:</h5>
@@ -95,7 +95,6 @@
                                 </ul>
                             </div>
                             <div class="subscribe_save_wrapper without_subscription mt-2">
-                                <!--
                                 <div class="subscribeTopInfo">
                                     <p>MOST POPULAR CHOICE</p>
                                 </div>
@@ -120,9 +119,7 @@
 
                                     </div>
                                 </div>
-                                -->
                                 <div class="subscriptionType active" data-subscription="no-subscription">
-                                    <!--
                                     <div class="noSubscription">
                                         <div class="noSubscriptionText">
                                             One time purchase
@@ -131,7 +128,6 @@
                                             $129
                                         </div>
                                     </div>
-                                    -->
 
                                     {% if product.variants.first.available %}
                                         <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
@@ -150,7 +146,7 @@
                                 </div>
 
                                 <form method="post" action="/cart/add" accept-charset="UTF-8" id="SubscriptionForm" class="shopify-product-form buy-form-{{ product.id }}" enctype="multipart/form-data" data-form-id="{{ product.id }}">
-                                    <input type="hidden" name="selling_plan" value="6180143343">
+                                    <input type="hidden" name="selling_plan" value="6190465263">
                                     <button type="submit" class="btn btn-lg btn-primary with_subscription buy_btn" onclick="setEventProductHandler('{{ product.handle | escape }}')" name="Submit" value="Submit">
                                         Subscribe Now
                                     </button>
