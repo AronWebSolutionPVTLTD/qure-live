@@ -67,12 +67,45 @@
     },
     "main": {
       "type": "temp-exclusive-holiday-bundle-deal",
+      "settings": {}
+    },
+    "faq_XgNVYJ": {
+      "type": "faq",
+      "blocks": {
+        "object_yP9pmA": {
+          "type": "object",
+          "settings": {
+            "heading": "When can I expect to receive my Qure package?",
+            "text": "<p>We aim to ship your package as quickly as possible. Shipping times vary by location:</p><ul><li><strong>United States:</strong> 8-14 business days</li><li><strong>Canada:</strong> 4-6 business days</li><li><strong>UK & Europe:</strong> 8-14 business days</li><li><strong>Australia:</strong> 8-14 business days</li></ul>",
+            "code": ""
+          }
+        },
+        "object_fkedKp": {
+          "type": "object",
+          "settings": {
+            "heading": "Where does Qure ship?",
+            "text": "<p>We ship worldwide via FedEx, USPS, or DHL.</p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_yP9pmA",
+        "object_fkedKp"
+      ],
       "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "The answers to your questions",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
       }
     }
   },
   "order": [
     "header_sales",
-    "main"
+    "main",
+    "faq_XgNVYJ"
   ]
 }
