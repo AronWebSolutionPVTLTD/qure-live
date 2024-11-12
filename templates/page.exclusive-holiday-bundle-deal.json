@@ -87,11 +87,47 @@
             "text": "<p>We ship worldwide via FedEx, USPS, or DHL.</p>",
             "code": ""
           }
+        },
+        "object_N7CUPa": {
+          "type": "object",
+          "settings": {
+            "heading": "When will my order ship?",
+            "text": "<p>Processing takes 1-3 business days. You’ll receive an email with tracking info once your package ships.</p>",
+            "code": ""
+          }
+        },
+        "object_DxnHRi": {
+          "type": "object",
+          "settings": {
+            "heading": "Do I need to pay for taxes and duties?",
+            "text": "<p>If you’re in the US, Canada, or Australia, you don’t need to worry about duties. For other countries, you may be liable to pay local taxes and duties on receipt of your order. We recommend contacting your local customs department to find out more.</p>",
+            "code": ""
+          }
+        },
+        "object_VbMGr7": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I update or cancel my order?",
+            "text": "<p>You have a 60-minute window after placing your order to request cancellation or adjustments. If your order hasn’t shipped yet, email us at<a href=\"mailto:support@qureskincare.com\">support@qureskincare.com</a>ASAP, and we’ll do our best to assist.</p>",
+            "code": ""
+          }
+        },
+        "object_MM4RV9": {
+          "type": "object",
+          "settings": {
+            "heading": "What is SecureShip?",
+            "text": "<p>SecureShip is our optional protection plan that covers lost or damaged items during transit, giving you peace of mind when shopping. We highly recommend adding it to your order to ensure a hassle-free experience if anything unexpected happens. Without SecureShip, we won’t be able to cover claims for lost or damaged items, so it’s a great way to protect your purchase.</p>",
+            "code": ""
+          }
         }
       },
       "block_order": [
         "object_yP9pmA",
-        "object_fkedKp"
+        "object_fkedKp",
+        "object_N7CUPa",
+        "object_DxnHRi",
+        "object_VbMGr7",
+        "object_MM4RV9"
       ],
       "settings": {
         "background": "bg_yellow",
