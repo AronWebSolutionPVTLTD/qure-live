@@ -27,6 +27,7 @@
         },
         "supply_CTrVRQ": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Next batch ships 11th November 2024:",
             "heading_mobile": "Next batch ships 11th November 2024:",
@@ -55,7 +56,7 @@
         "product_button_label": "Product",
         "before_after_images_limit": 0,
         "before_after_button_label": "Before & After",
-        "reserve": true,
+        "reserve": false,
         "underbutton_text_left": "Dermatologist Reviewed",
         "underbutton_text_right": "Free Shipping Over US$100",
         "selected_design": "old",
@@ -460,8 +461,7 @@
       "block_order": [
         "stamped_reviews_main_widget_3nURCk"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
