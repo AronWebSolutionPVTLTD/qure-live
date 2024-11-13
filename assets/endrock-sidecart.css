@@ -420,9 +420,11 @@
   padding: 14px 20px 30px;
 }
 
-.my-floating-cart form.my-cart .custom_upsell > div .upsell_main{
-  height: 320px;
-  max-height: 320px;
+@media screen and (min-width: 768px) {
+  .my-floating-cart form.my-cart .custom_upsell > div .upsell_main{
+    height: 320px;
+    max-height: 320px;
+  }
 }
 
 .my-floating-cart form.my-cart .custom_upsell > div .upsell_main .upsell_image .upsell_content{
