@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "favicon": "shopify://shop_images/qure.png",
@@ -32,6 +32,21 @@
     ],
     "show_order_by_receive_by": true,
     "today_text": "Order today",
+    "start_time_order": "2024-10-30T23:00",
+    "end_time_order": "2024-11-04T23:59",
+    "show_order_by_receive_by_us": false,
+    "enable_corner_treatment_bfcm": false,
+    "enable_site_gamification": true,
+    "enable_free_shipping_treshold": true,
+    "enable_product_gift": true,
+    "product_free_gift": "silk-pillowcase",
+    "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
+    "icon_product_gift_clean": "shopify://shop_images/site_gamification_pillow_empty.svg",
+    "icon_product_gift_gradient": "shopify://shop_images/site_gamification_pillow_gradient.svg",
+    "icon_product_gift_full": "shopify://shop_images/site_gamification_pillow_full.svg",
+    "enable_site_wide_timer": true,
+    "start_date": "10-18-2024 12:00",
+    "finish_date": "11-04-2024 03:00",
     "promotion": "promotion",
     "sections": {
       "header": {
@@ -40,9 +55,9 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>FREE </strong>World-Wide Shipping Over $100</p>",
+              "heading": "<p><strong>Get $50 OFF on the Q-Rejuvalight Mask with the code: SPOOKY50</strong></p>",
               "button_label": "SHOP NOW",
-              "button_url": "shopify://collections/best-sellers"
+              "button_url": "shopify://products/q-rejuvalight-pro-facewear"
             }
           },
           "tab_3Wyyea": {
@@ -54,9 +69,9 @@
           "banner_jrcxU4": {
             "type": "banner",
             "settings": {
-              "image": "shopify://shop_images/header_drop2.webp",
-              "button_label": "Discover our [Best Selling] Products",
-              "button_url": "shopify://collections/best-sellers"
+              "image": "shopify://shop_images/Frame_1000004364.png",
+              "button_label": "Save up to 55% on [Black Friday] Bundles",
+              "button_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
             }
           },
           "banner_CiNYWN": {
@@ -171,12 +186,25 @@
         "blocks": {
           "gift_ccQgi4": {
             "type": "gift",
+            "disabled": true,
             "settings": {
               "product": "pink-headband-pouch-breast-cancer-awareness-month",
               "price_limit": "0",
               "quantity": "1",
               "discount": "FREEHEADBAND",
-              "disable": false
+              "disable": true
+            }
+          },
+          "upsell_bR4pCx": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/dermal-mist",
+              "upsell_product_first": "faucet-filter",
+              "upsell_product_first_description": "Reduces pore-clogging contaminants",
+              "upsell_product_second": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
+              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
           },
           "upsell_8Karyz": {
@@ -185,8 +213,8 @@
               "page_url": "https://www.qureskincare.com/products/q-rejuvalight-pro-facewear",
               "upsell_product_first": "neck-decolletage-led",
               "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
-              "upsell_product_second": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
-              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_second": "dermal-mist",
+              "upsell_product_second_description": "Purifies and refreshes",
               "upsell_product_third": "face-serum",
               "upsell_product_thid_description": "Boost your LED light therapy results"
             }
@@ -197,10 +225,10 @@
               "page_url": "https://www.qureskincare.com/products/neck-decolletage-led",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
               "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
-              "upsell_product_second": "face-serum",
-              "upsell_product_second_description": "Plump, smooth & brighten in just one step",
-              "upsell_product_third": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
-              "upsell_product_thid_description": "Reveal smoother, radiant skin"
+              "upsell_product_second": "micro-infusion-1-month-bundle-2x-e-g-f-serum",
+              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
           },
           "upsell_a74n8t": {
@@ -209,17 +237,29 @@
               "page_url": "https://www.qureskincare.com/products/face-serum",
               "upsell_product_first": "q-rejuvalight-pro-facewear",
               "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
-              "upsell_product_second": "neck-decolletage-led",
-              "upsell_product_second_description": "Plump, smooth & brighten in just one step",
-              "upsell_product_third": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
-              "upsell_product_thid_description": "Reveal smoother, radiant skin"
+              "upsell_product_second": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+              "upsell_product_second_description": "Reveal smoother, radiant skin",
+              "upsell_product_third": "neck-decolletage-led",
+              "upsell_product_thid_description": "Evens skin tone and boosts firmness"
+            }
+          },
+          "upsell_ej4ULU": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches",
+              "upsell_product_first": "micro-infusion-1-month-bundle-2x-beta-glucan-serum",
+              "upsell_product_first_description": "Reveal smoother, radiant skin",
+              "upsell_product_second": "dermal-mist",
+              "upsell_product_second_description": "Purifies and refreshes",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
           },
           "trustpilot_a3exnp": {
             "type": "trustpilot",
             "settings": {
-              "text_area_first": "<p>Excellent <b>4.4</b></p>",
-              "starts": "shopify://shop_images/stars-4.5_1.svg",
+              "text_area_first": "<p>Excellent <b>4.5</b></p>",
+              "starts": "shopify://shop_images/stars-4.5_2.svg",
               "second_text_content": "reviews on",
               "logo": "shopify://shop_images/logo_truspilot.svg"
             }
@@ -227,9 +267,11 @@
         },
         "block_order": [
           "gift_ccQgi4",
+          "upsell_bR4pCx",
           "upsell_8Karyz",
           "upsell_DQMajg",
           "upsell_a74n8t",
+          "upsell_ej4ULU",
           "trustpilot_a3exnp"
         ],
         "settings": {
@@ -241,21 +283,34 @@
           "upsell_product_third": "face-serum",
           "upsell_product_third_description": "Plump, smooth & brighten in just one step",
           "sidecart_timer_old_enable": false,
-          "sidecart_timer_new_enable": false,
-          "start_date": "08-15-2024 12:00",
-          "finish_date": "09-03-2024 23:59",
-          "label_ends": "Labor Day Sales Ends In:",
+          "sidecart_timer_new_enable": true,
+          "start_date": "10-30-2024 20:00",
+          "finish_date": "11-04-2024 03:00",
+          "label_ends": "Early Black Friday Sale Ends In:",
           "label_days": "DAYS",
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
           "label_seconds": "SECONDS",
           "enable_free_shipping_treshold": true,
           "enable_product_gift": true,
-          "product_free_gift": "face-serum",
+          "product_free_gift": "silk-pillowcase",
+          "icon_product_gift_clean": "shopify://shop_images/Vector.svg",
+          "icon_product_gift_full": "shopify://shop_images/Vector_1_dc2b4cda-33fe-4597-8230-931c4ab65f69.svg",
+          "icon_gift_width": 18,
+          "icon_gift_height": 26,
           "enable_show_gift_price": true,
           "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
-          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Full-Size Serum worth</strong> &product-price&</p>",
-          "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>"
+          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Silk Pillowcase worth</strong> &product-price&</p>",
+          "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
+          "show_urgency_note": true,
+          "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
+          "urgency_note_label_single": "Checkout now!",
+          "urgency_note_product_list": [
+            "breakout-control-pro-1",
+            "fade-firm-bundle-pro",
+            "line-refine-bundle-pro",
+            "micro-infusion-limited-edition-bundle"
+          ]
         }
       },
       "footer-landing": {

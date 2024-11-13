@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -47,18 +47,17 @@
         "slide_9wpXXH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/M.I_Patches_Mobile.png",
+            "image": "shopify://shop_images/Ellipse_78.png",
             "link_label": "Micro-Infusion Targeted Patches",
             "link_url": "https://www.qureskincare.com/products/micro-infusion-targeted-patches"
           }
         },
         "slide_9qAien": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/homepageslide-5.jpg",
-            "link_label": "Q-urify Water Filter",
-            "link_url": "https://www.qureskincare.com/products/q-urify-water-filter"
+            "image": "shopify://shop_images/Ellipse_81.png",
+            "link_label": "Faucet Filter",
+            "link_url": "shopify://products/faucet-filter"
           }
         },
         "slide_GReD48": {
@@ -67,6 +66,22 @@
             "image": "shopify://shop_images/homepageslide-6.jpg",
             "link_label": "Micro-Infusion Refill",
             "link_url": "https://www.qureskincare.com/pages/micro-infusion-refill"
+          }
+        },
+        "slide_hVri9x": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_81_6730773b-c0c0-4501-9bf1-740bf439e1fd.png",
+            "link_label": "Dermal Mist",
+            "link_url": "shopify://pages/dermal-mist"
+          }
+        },
+        "slide_tNrDjD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_80.png",
+            "link_label": "Silk Pillowcase",
+            "link_url": "shopify://products/silk-pillowcase"
           }
         }
       },
@@ -77,7 +92,9 @@
         "slide_aKL6kD",
         "slide_9wpXXH",
         "slide_9qAien",
-        "slide_GReD48"
+        "slide_GReD48",
+        "slide_hVri9x",
+        "slide_tNrDjD"
       ],
       "settings": {
       }
@@ -97,6 +114,7 @@
       "block_order": [
         "link_GirQqh"
       ],
+      "disabled": true,
       "settings": {
         "heading": "STRONGER TOGETHER",
         "heading_mobile": "STRONGER TOGETHER",
@@ -112,24 +130,125 @@
         "link_Pk3LH6": {
           "type": "link",
           "settings": {
-            "link_label": "Support Now",
-            "link_label_mobile": "Support Now",
-            "link_url": "https://www.qureskincare.com/collections/best-sellers"
+            "link_label": "Buy Now",
+            "link_label_mobile": "Buy Now",
+            "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
+          }
+        },
+        "product_7GFhjc": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro-Aging Bundles",
+            "subheading": "Line Refine Bundle Pro",
+            "text": "SAVE 47%",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_bc74a392-b7c0-4214-aaad-f0f156a5c5d8.png",
+            "product_url": "shopify://products/line-refine-bundle-pro"
+          }
+        },
+        "product_UVjERT": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro Aging & Dark Spots Bundles",
+            "subheading": "Fade & Firm Bundle Pro",
+            "text": "SAVE 55%",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Pro_c2710f45-f483-4611-be22-360c62723de6.png",
+            "product_url": "shopify://products/fade-firm-bundle-pro"
+          }
+        },
+        "product_nBnMkh": {
+          "type": "product",
+          "settings": {
+            "heading": "Acne Bundles",
+            "subheading": "Breakout Control Advanced",
+            "text": "SAVE 33%",
+            "image": "shopify://shop_images/Breakout_Control_Advanced_7232df65-e888-4e24-bb23-99b6576cc5b2.png",
+            "product_url": "shopify://products/breakout-control-advanced"
+          }
+        },
+        "product_PEPLML": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "heading": "Pro-Aging Bundles",
+            "subheading": "Line Refine Bundle Advanced",
+            "text": "SAVE 55%",
+            "image": "shopify://shop_images/RefineBundle2_bb90801f-564e-4272-80d6-d975c04c470f.png",
+            "product_url": "shopify://products/line-refine-bundle-advanced-1"
+          }
+        },
+        "product_yLQ7At": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro Aging & Dark Spots Bundles",
+            "subheading": "Fade & Firm Bundle Advanced",
+            "text": "SAVE 43%",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Advance.png",
+            "product_url": "shopify://products/fade-firm-bundle-advance"
+          }
+        },
+        "product_KCNhid": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro-Aging Bundles",
+            "subheading": "Line Refine Bundle Essentials",
+            "text": "save 32%",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Essentials_420763d9-bde6-4b81-a7f2-771d23f771d3.png",
+            "product_url": "shopify://products/line-refine-bundle-essentials"
+          }
+        },
+        "product_dYxiCN": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro Aging & Dark Spots Bundles",
+            "subheading": "Fade & Firm Bundle Essentials",
+            "text": "SAVE 55%",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Essentials_7c085238-4ca2-445a-abcb-7ab2a9d7ad8d.png",
+            "product_url": "shopify://products/fade-firm-bundle-essentials"
+          }
+        },
+        "product_4ArLn3": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "heading": "Acne Bundles",
+            "subheading": "Breakout Control Pro",
+            "text": "SAVE 40%",
+            "image": "shopify://shop_images/Breakoutcontrol2_747da223-e22b-457a-b300-a8ada35feaa6.png",
+            "product_url": "shopify://products/breakout-control-pro-1"
+          }
+        },
+        "product_BA8d6X": {
+          "type": "product",
+          "settings": {
+            "heading": "Pro Aging & Dark Spots Bundles",
+            "subheading": "Micro-Infusion Limited Edition Bundle",
+            "text": "SAVE 45%",
+            "image": "shopify://shop_images/Micro-Infusion_Limited_Edition_Bundle_ef0d58d6-84ea-4cb6-be5c-b012bf600186.png",
+            "product_url": "shopify://products/micro-infusion-limited-edition-bundle"
           }
         }
       },
       "block_order": [
-        "link_Pk3LH6"
+        "link_Pk3LH6",
+        "product_7GFhjc",
+        "product_UVjERT",
+        "product_nBnMkh",
+        "product_PEPLML",
+        "product_yLQ7At",
+        "product_KCNhid",
+        "product_dYxiCN",
+        "product_4ArLn3",
+        "product_BA8d6X"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "<p>STRONGER <strong>TOGETHER</strong></p>",
+        "heading": "Save up to 55% Off",
         "heading_mobile": "",
-        "subheading": "Join Us in the Fight Against Breast \\n Cancer",
+        "subheading": "<p><strong>Black Friday</strong> Bundles with top-rated products at <em>best prices.</em></p>",
         "subheading_mobile": "",
-        "text": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $2 from every order to the National Breast Cancer Foundation</p>",
-        "image": "shopify://shop_images/ribben_banner.webp",
-        "image_mobile": "shopify://shop_images/ribben_banner_mob.webp"
+        "text": "",
+        "image": "shopify://shop_images/bf_sale-desk.webp",
+        "image_mobile": "shopify://shop_images/bf_sale-mob.webp",
+        "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
       }
     },
     "featuredin_extended_P7BNDN": {
@@ -408,6 +527,9 @@
         "object_ztcPKz",
         "object_rkVQek"
       ],
+      "custom_css": [
+        ".targetSkin .swiper-slide:nth-of-type(4) .text-white {margin-top: -10px;}"
+      ],
       "settings": {
         "heading": "Meet our board of advisors",
         "heading_mobile": "Board of advisors",
@@ -479,7 +601,7 @@
         "product_WHecMQ": {
           "type": "product",
           "settings": {
-            "pd_img": "shopify://shop_images/fav_pdt1.webp",
+            "pd_img": "shopify://shop_images/MI_new.png",
             "pd_name": "Micro-Infusion Facial System",
             "from": true,
             "price": "$99",
@@ -518,7 +640,7 @@
         "product_3hFb8X": {
           "type": "product",
           "settings": {
-            "pd_img": "shopify://shop_images/fav_pdt4.webp",
+            "pd_img": "shopify://shop_images/MITP.png",
             "pd_name": "Micro-Infusion Targeted Patches",
             "from": false,
             "price": "$79",

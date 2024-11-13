@@ -41,9 +41,45 @@ async function main() {
     if (['US'].includes(countryCode)) {
         if(window.location.href.includes('exclusive-holiday-bundle-deal'))
         {
-            document.getElementById('skin-ssentials-set-doctorly-choice').style.display = 'none';
-            document.getElementById('confidence-booster-bundle').style.display = 'none';
-            document.getElementById('youthify-or-glow-set').style.display = 'none';
+            document.querySelectorAll('.hide_us').forEach(element => {
+                element.style.display = 'none';
+            });
+
+            setTimeout(() => {
+                const swiperInstanceMain = document.querySelector('.bfs_mb_sl2').swiper;
+                const swiperInstanceThumbs = document.querySelector('.bfs_mb_sl').swiper;
+    
+                if(swiperInstanceMain != undefined)
+                {
+                    swiperInstanceMain.removeSlide([1, 7, 8, 10]);
+                }
+    
+                if(swiperInstanceThumbs != undefined)
+                {
+                    swiperInstanceThumbs.removeSlide([1, 7, 8, 10]);
+                }
+            }, 1500)
+        }
+        else if(window.location.href.includes('exclusive-black-friday'))
+        {
+            document.querySelectorAll('.hide_us').forEach(element => {
+                element.style.display = 'none';
+            });
+
+            setTimeout(() => {
+                const swiperInstanceMain = document.querySelector('.bfs_mb_sl2').swiper;
+                const swiperInstanceThumbs = document.querySelector('.bfs_mb_sl').swiper;
+    
+                if(swiperInstanceMain != undefined)
+                {
+                    swiperInstanceMain.removeSlide([1, 7, 8, 10]);
+                }
+    
+                if(swiperInstanceThumbs != undefined)
+                {
+                    swiperInstanceThumbs.removeSlide([1, 7, 8, 10]);
+                }
+            }, 1500)
         }
         else if(window.location.href.includes('best-sellers'))
         {
@@ -56,6 +92,23 @@ async function main() {
         else if(window.location.href.includes('fine-line-wrinkles'))
         {
             document.getElementById('q-urify-water-filter').style.display = 'none';
+        }
+        /* */
+        else if(window.location.href.includes('breakout-control-pro-1'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('breakout-control-starter'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('filter-family-bundle'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
+        }
+        else if(window.location.href.includes('line-refine-bundle-advanced-1'))
+        {
+            window.location = 'https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal';
         }
         else
         {

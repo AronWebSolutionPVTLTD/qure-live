@@ -107,6 +107,9 @@
       "full": "Full",
       "half": "Contain"
     },
+    "collapsed": {
+      "label": "Collapsed"
+    },
     "text_icon": {
       "label": "Heading with Icon"
     },
@@ -131,7 +134,9 @@
       "from": "From",
       "verified": "Verified Customer",
       "loop": "Enable loop",
-      "autoplay": "Enable autoplay"
+      "autoplay": "Enable autoplay",
+      "show": "Show",
+      "grey": "Grey"
     },
     "dropdown": {
       "design": "Dropdown design"
@@ -268,6 +273,9 @@
       "label": "Image",
       "with": "With image",
       "without": "Without image",
+      "large": {
+        "label": "Image large"
+      },
       "hide": {
         "mobile": {
           "label": "Hide on mobile",
@@ -373,13 +381,25 @@
       "label": "Content"
     },
     "style": {
-      "label": "Style"
+      "label": "Style",
+      "default": {
+        "label": "default"
+      },
+      "grey": {
+        "label": "grey"
+      },
+      "image": {
+        "label": "image"
+      }
     },
     "media": {
       "label": "Media"
     },
     "percent": {
       "label": "Percent"
+    },
+    "date": {
+      "label": "Date"
     },
     "classname": {
       "label": "CSS classname",
@@ -468,6 +488,9 @@
     "rating": {
       "label": "Rating",
       "stars": "Stars"
+    },
+    "description": {
+      "label": "Description"
     },
     "code": {
       "label": "Code"
@@ -737,6 +760,20 @@
           "name": "Link",
           "settings": {
           }
+        }
+      }
+    },
+    "bf-early-access": {
+      "name": "BF Early Access",
+      "settings": {
+        "password": {
+          "label": "Password"
+        },
+        "password_wrong": {
+          "label": "Wrong password text"
+        },
+        "destination_url": {
+          "label": "Destination page"
         }
       }
     },
@@ -1056,6 +1093,21 @@
       "blocks": {
       }
     },
+    "guide-header": {
+      "name": "Guide header",
+      "settings": {
+      }
+    },
+    "guide-columns": {
+      "name": "Guide columns",
+      "settings": {
+      },
+      "blocks": {
+        "header": {
+          "label": "Header"
+        }
+      }
+    },
     "guide": {
       "name": "Guide",
       "settings": {
@@ -1235,6 +1287,14 @@
         }
       }
     },
+    "side_gamification": {
+      "name": "Side Gamification",
+      "settings": {
+        "enable_site_gamification": {
+          "label": "Enable Site Wide Gamification"
+        }
+      }
+    },
     "footer-landing": {
       "name": "Footer landing",
       "settings": {
@@ -1308,6 +1368,9 @@
     },
     "founder": {
       "label": "Qure Founder"
+    },
+    "founder-v2": {
+      "label": "Qure Founder V2"
     },
     "skin-care": {
       "label": "Skin Care Steps"

@@ -1042,6 +1042,7 @@
     bottom: 20px;
     padding-top: 0px;
 }
+
 .refill_slider_new .refill_s_tab_content .swiper.dot_pagination .swiper-pagination {
     bottom: 0px;
 }
@@ -1269,6 +1270,12 @@
     background: #c7e7dc;
 }
 
+.subscribe_save_wrapper .subscribeInfo p {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
 .subscribe_save_wrapper .subscribePrice p {
     font-size: 18px;
     line-height: 18px;
@@ -1299,12 +1306,6 @@
 }
 
 .subscribe_save_wrapper.without_subscription .subscribeInfo h6 {
-    font-weight: 400;
-}
-
-.subscribe_save_wrapper .subscribeInfo p {
-    font-size: 11px;
-    line-height: 16px;
     font-weight: 400;
 }
 
@@ -1411,20 +1412,7 @@
     max-height: 550px !important;
 }
 
-@media (max-width: 490px) {
-    .subscription_bx .serum_prd {
-        min-height: 40px;
-    }
 
-    .subscription_bx .serum_ttl {
-        font-size: 10px;
-    }
-
-    .refill_s_tab ul {
-        grid-template-columns: 1fr 1fr;
-        padding: 0 20px;
-    }
-}
 
 @media(max-width:767px) {
     .refill_s_tab {
@@ -1641,7 +1629,20 @@
         width: 40px;
     }
 }
+@media (max-width: 490px) {
+    .subscription_bx .serum_prd {
+        min-height: 40px;
+    }
 
+    .subscription_bx .serum_ttl {
+        font-size: 10px;
+    }
+
+    .refill_s_tab ul {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+}
 
 @media(min-width:768px) {
 
@@ -3150,9 +3151,11 @@
     font-size: 14px;
     color: inherit;
 }
-.technology_light #accordionTechnology .accordion-header{
+
+.technology_light #accordionTechnology .accordion-header {
     border-radius: 20px !important;
 }
+
 .unique_c_item .u_item_expandable {
     padding: 0px 0px 0;
     border-radius: 20px;
@@ -6781,9 +6784,11 @@ p.title_mob {
     background: #C7E7DC;
     border: 1px solid #C7E7DC;
 }
+
 .planBlock input:checked+.monthly_plans .plan_prc.sale_price {
     font-weight: 700;
 }
+
 .planBlock .monthly_plans .plan_hdr {
     display: flex;
     align-items: center;
@@ -6796,7 +6801,8 @@ p.title_mob {
     margin: 0;
 }
 
-.planBlock .monthly_plans .plan_hdr .saved_price {
+.planBlock .monthly_plans .plan_hdr .saved_price,
+.planBlock .monthly_plans .saved_price {
     display: block;
     border-radius: 15.873px;
     background: #008763;
@@ -6806,6 +6812,7 @@ p.title_mob {
     font-weight: 500;
     padding: 1px 4px;
     margin-left: 8px;
+    max-width: fit-content;
 }
 
 .planBlock .monthly_plans .plan_des {
@@ -6950,7 +6957,7 @@ p.title_mob {
     .btn.btn-atc {
         font-size: 18px;
         line-height: 20px;
-        padding: 8px 23px;
+        padding: 15px 23px;
     }
 
     .supply_steps .step_block {
@@ -7117,16 +7124,24 @@ p.title_mob {
 }
 
 .supply-detail.supply-detail-without-counter .planBlock .monthly_plans {
+    /* display: block; */
+    border-radius: 20px;
+}
+
+.supply-detail.supply-detail-without-counter .planBlock .monthly_plans_wrap {
     display: grid;
     grid-template-columns: 1fr 90px;
-    padding: 12px 14px;
-    height: 70px;
+    /* padding: 12px 14px;
+    height: 70px; */
 }
 
 .supply-detail.supply-detail-without-counter .planBlock .plan_choosed {
-    position: absolute;
+    /* position: absolute;
     top: -23px;
-    right: 7%;
+    right: 7%; */
+    text-align: left;
+    left: 25px;
+    position: relative;
 }
 
 .supply-detail.supply-detail-without-counter .planBlock .monthly_plans .plan_hdr .saved_price {
@@ -7305,7 +7320,7 @@ p.title_mob {
     margin-bottom: 30px;
 }
 
-.compare__titleBlock .compare__title, .compare__titleBlock .compare__title h4 {
+.compare__titleBlock .compare__title {
     font-family: 'Canela Light';
     font-size: 20px;
     font-style: normal;
@@ -7410,18 +7425,7 @@ p.title_mob {
 .compare_listHeader>.compare__img img {
     width: 151px;
 }
-.skincare_slider_n .skin_item_n_tag .sn_tag {
-    background-color: #c7e7dc;
-    border-radius: 30px;
-    padding: 2px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-left: 21px;
-}
-.skincare_slider_n .skin_item_n_tag p {
-    text-align: center;
-    margin: 12px 0;
-}
+
 @media(max-width:767px) {
     .compare_section {
         overflow-x: hidden;
@@ -8137,28 +8141,32 @@ p.title_mob {
     border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     margin-bottom: 10px;
     column-gap: 20px;
 }
 
-.best_seller_info .special_deal_btn {
+.best_seller_info .special_deal_btn a span {
     background-color: #C92127;
-    padding: 10px 16px;
-    border-radius: 30px;
-    width: 100%;
-    text-align: center;
+    padding: 10px 14px 10px;
+    margin-left: 14px;
+    letter-spacing: 0.308px;
+}
+.best_seller_info .special_deal_btn a {
+    background-color: #000;
+    color: #fff;
+    line-height: 20.558px;
+    letter-spacing: 0.308px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    padding-left: 21px;
 }
 
 .best_seller_info .special_deal_btn img {
     margin-left: 5px;
-}
-
-.best_seller_info .special_deal_btn a {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    color: #fff !important;
 }
 
 .special_deals>img {
@@ -8869,6 +8877,38 @@ p.title_mob {
     line-height: 12px;
 }
 
+.upgrade_routine .save_tag {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13.601px;
+    letter-spacing: 0.09px;
+    border-radius: 30px;
+    background: #C4121A;
+    color: #fff;
+    padding: 1px 6px;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.upgrade_routine .ur_price_old {
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: line-through;
+}
+
+.black_friday .upgrade_routine .ur_price_btn {
+    margin-top: 0;
+    gap:4px;
+}
+
+.black_friday .upgrade_routine .ur_btn {
+    margin-top: 10px;
+}
+.black_friday .upgrade_routine .ur_price{
+    font-size: 14px;
+}
 @media(max-width:991px) {
     .upgrade_routine .ur_item_grid {
         grid-template-columns: 1fr;
@@ -8887,6 +8927,9 @@ p.title_mob {
     .upgrade_routine {
         margin-top: 30px;
         margin-bottom: 10px;
+    }
+    .black_friday .upgrade_routine .ur_btn {
+        margin-top: 0px;
     }
 }
 
@@ -9539,6 +9582,41 @@ p.title_mob {
     .qure_MI_ftr_wrap {
         padding-top: 0;
     }
+
+    .section__header .des p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .pmtBlock .pmt_plans .price .pmt_prc+.pmt_prc {
+        font-size: 18px;
+    }
+
+    .pmtBlock .price .pmt_prc.pay_today {
+        font-size: 18px;
+    }
+
+    .pmtBlock .pmt_plans .pmt_des {
+        font-size: 10px;
+    }
 }
 
 /* ====== qure_MI_ftr end =============== */
+
+@media(max-width: 460px){
+    .best_seller_info .special_deal_btn a span {
+        padding: 6px 0px 5px 5px;
+        margin-left: 5px;
+    }
+    .best_seller_info .special_deal_btn a {
+        padding-left: 6px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .best_seller_info .special_deal_btn img {
+        margin-left: 0;
+    }
+    .bundle_pdp .buy_btn {
+        padding: 15px;
+    }
+}
