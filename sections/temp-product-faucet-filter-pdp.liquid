@@ -5,16 +5,21 @@
             <div class="col-md-6 order-2 order-md-1">
                 <div class="w-100" id="faucet_filter">
                     <div class="refill_info pt-0 pt-md-3">
-                        <div class="refill_review mb-2">
-                            <div class="star_gp">
-                                <img src="https://qureskincaredns.com/new/assets/star4.8.svg" alt="">
+                        {% if product.metafields.reviews.rating_count.value > 0 %}
+                            {% render 'product-rating', rating_value: product.metafields.reviews.rating.value, rating_count: product.metafields.reviews.rating_count.value %}
+                        {% else %}
+                            <div class="refill_review mb-2">
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/star4.8.svg" alt="">
+                                </div>
+                                <a href="#stamped-main-widget" class="text-dark">
+                                    <p class="text-sm fw-normal" style="text-decoration: none;">4.7/5 Rated by
+                                        Customers
+                                    </p>
+                                </a>
                             </div>
-                            <a href="#review_section" class="text-dark">
-                                <p class="text-sm fw-normal" style="text-decoration: none;">4.7/5 Rated by
-                                    Customers
-                                </p>
-                            </a>
-                        </div>
+                        {% endif %}
+
                         <div class="section_header text-start">
                             <h1 class="title-xl d-none d-md-block">Get clearer skin, on tap, with Qure Faucet Filter</h1>
                             <h1 class="title-xl d-md-none">Get clearer skin, on tap, with Qure Faucet Filter</h1>
