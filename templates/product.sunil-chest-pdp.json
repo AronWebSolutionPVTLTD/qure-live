@@ -62,8 +62,8 @@
         "timer_fNiV3b"
       ],
       "settings": {
-        "heading": "Combat Signs of Aging with Neck & Décolletage LED Therapy",
-        "heading_mobile": "Combat Signs of Aging with Neck & Décolletage LED Therapy",
+        "heading": "Combat signs of aging with Neck & Décolletage LED Therapy",
+        "heading_mobile": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 2,
@@ -793,13 +793,11 @@
       "block_order": [
         "stamped_product_reviews_ugc_main_widget_rcjLar"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "pdm_product_social_proof_data_dFhMMf": {
       "type": "pdm_product-social-proof-data",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

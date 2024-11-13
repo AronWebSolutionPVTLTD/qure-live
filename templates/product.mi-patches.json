@@ -56,6 +56,7 @@
         },
         "supply_eayXMU": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Next batch ships 10th November                                    2024:",
             "heading_mobile": "Next batch ships 10/11:",
@@ -84,15 +85,15 @@
         ".ss_list .list p {padding: 10px 0 10px 0px;}"
       ],
       "settings": {
-        "heading": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
-        "heading_mobile": "Smooth, firm and plump stubborn areas with Micro- Infusion Targeted Patches",
+        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "heading_mobile": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
         "product": "micro-infusion-targeted-patches",
         "product_images_offset": 0,
         "product_images_limit": 7,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
         "before_after_button_label": "Before & After",
-        "reserve": true,
+        "reserve": false,
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
@@ -841,8 +842,7 @@
       "block_order": [
         "stamped_reviews_main_widget_hBTpJD"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
