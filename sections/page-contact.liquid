@@ -112,6 +112,19 @@
                     <option value="website">Website</option>
                 </select>
             </div>
+            <div class="qure_input mb-4" id="product_select_container" style="display: none;">
+                <select id="ContactFormProduct" name="contact[product]" class="form-select qure_input_field" aria-label="Product selection">
+                    <option selected>Product</option>
+                    <option value="face_serum">All-In-One Face Serum</option>
+                    <option value="facial_system">Micro-Infusion Facial System</option>
+                    <option value="patches">Micro-Infusion Target Patches</option>
+                    <option value="neck_decolletage">Neck & Decolletage</option>
+                    <option value="pro_facewear">Q-Rejuvalight Pro Facewear</option>
+                    <option value="water_filter">Faucet Water Filter</option>
+                    <option value="dermal_mist">Dermal mist</option>
+                    <option value="silk_pillowcase">Silk Pillowcase</option>
+                </select>
+            </div>
             <div class="qure_input">
                 <label for="ContactFormMessage" class="form-label qure_input_label"></label>
                 <textarea 
@@ -142,6 +155,18 @@
     </div>
 </div>
 
+
+<script>
+    // JavaScript to toggle the visibility of the second select field
+    document.getElementById('ContactFormAbout').addEventListener('change', function () {
+        var productSelectContainer = document.getElementById('product_select_container');
+        if (this.value === 'product') {
+            productSelectContainer.style.display = 'block';
+        } else {
+            productSelectContainer.style.display = 'none';
+        }
+    });
+</script>
 
 
 {% schema %}
