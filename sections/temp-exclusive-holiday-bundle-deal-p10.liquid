@@ -1,0 +1,303 @@
+<!-- -- result tab section - learn more start -- -->
+<div class="result_tabs section" id="skin_promise">
+    <div class="container">
+        <div class="section_header mw-630 mx-auto text-center paddingB mb-4">
+            <h2 class="title-lg">Learn more about Qure’s products</h2>
+        </div>
+        <div class="rt_wrap">
+            <ul class="nav nav-pills mb-0 rt_wrap_header" id="rtLM-pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rtLM-pills-1-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-1" type="button" role="tab" aria-controls="rtLM-pills-1"
+                        aria-selected="true">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_mask.svg" alt="" class="img-fluid">
+                            <h6>Q-Rejuvalight
+                                <span>Pro Facewear</span>
+                            </h6>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="rtLM-pills-2-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-2" type="button" role="tab" aria-controls="rtLM-pills-2"
+                        aria-selected="false">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_mi.svg" alt="" class="img-fluid">
+                            <h6>Micro-Infusion <span>Facial System</span></h6>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rtLM-pills-3-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-3" type="button" role="tab" aria-controls="rtLM-pills-3"
+                        aria-selected="false">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_all.svg" alt="" class="img-fluid">
+                            <h6>All-In-One
+                                <span>Face Serum</span>
+                            </h6>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rtLM-pills-4-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-4" type="button" role="tab" aria-controls="rtLM-pills-4"
+                        aria-selected="false">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_mi_patches.svg" alt="" class="img-fluid">
+                            <h6>Micro-Infusion <span>Targeted Patches</span></h6>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rtLM-pills-5-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-5" type="button" role="tab" aria-controls="rtLM-pills-5"
+                        aria-selected="false">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_neck.svg" alt="" class="img-fluid">
+                            <h6>Neck & Décolletage <span>LED Device</span></h6>
+                        </div>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rtLM-pills-6-tab" data-bs-toggle="pill"
+                        data-bs-target="#rtLM-pills-6" type="button" role="tab" aria-controls="rtLM-pills-6"
+                        aria-selected="false">
+                        <div class="rt_item_tab">
+                            <img src="https://qureskincaredns.com/new/assets/lm_faucet.svg" alt="" class="img-fluid">
+                            <h6>Faucet & Shower <span>Filters</span></h6>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content rt_wrap_inner" id="rtLM-pills-tabContent">
+                {% comment %} {% include 'temp-ehbd-tab1' %} {% endcomment %}
+                {% comment %} {% include 'temp-ehbd-tab2' %} {% endcomment %}
+            </div>
+            <div class="bfs_main_banner bfBundle__content mw-512 mx-auto mt-5">
+                <a href="#bf-bundles" class="btn btn-bfBundle mt-0 mw-100 fw-normal">Shop &amp; <b>SAVE UP TO
+                        55%</b> <img src="https://qureskincaredns.com/new/assets/arrow-up-white1.svg" class="img-fluid ms-3"></a>
+                <div class="ss_list p-0 ">
+                    <ul>
+                        <li>Free World-Wide Shipping</li>
+                        <li>Easy Returns within 30 Days</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -- result tab section - learn more end -- -->
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script>
+    //document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper(".bfs_mb_sl", {
+            spaceBetween: 8,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                768: {
+                    spaceBetween: 8,
+                    slidesPerView: 6,
+                },
+
+            },
+        });
+        var swiper2 = new Swiper(".bfs_mb_sl2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+
+        var TwaSettingsSwiper = {
+            init: function () {
+                this.TwaSettingsCarousel();
+            },
+            TwaSettingsCarousel: function () {
+                document.querySelectorAll(".twa__swiper_thumbs").forEach(e => {
+                    this.TwaCarousel(e);
+                });
+            },
+            TwaCarousel: function (e) {
+                var t = e?.dataset.autoplay === "true",
+                    n = e.dataset.loop === "true",
+                    w = e?.dataset.rows ? e?.dataset.row : 1,
+                    pgm = e?.dataset.spgmobile ? e?.dataset.spgmobile : 1,
+                    pgt = e?.dataset.spgtablet ? e?.dataset.spgtablet : 1,
+                    pgd = e?.dataset.spgdesktop ? e?.dataset.spgdesktop : 1,
+                    i = e?.dataset.desktop ? e?.dataset.desktop : 4,
+                    s = e?.dataset.tablet ? e?.dataset.tablet : 2,
+                    r = e?.dataset.mobile ? e?.dataset.mobile : 1,
+                    a = e?.dataset.autoplaySpeed ? e?.dataset.autoplaySpeed : 3000,
+                    c = e?.dataset.speed ? e?.dataset.speed : 400,
+                    l = e?.dataset.effect ? e?.dataset.effect : "slide",
+                    d = e?.dataset.sectionId,
+                    u = e?.dataset.row ? e?.dataset.row : 1,
+                    ut = e?.dataset.rowtablet ? e?.dataset.rowtablet : 1,
+                    um = e?.dataset.rowmobile ? e?.dataset.rowmobile : 1,
+                    p = window.innerWidth,
+                    m = e?.dataset.spacing ? e?.dataset.spacing : 0;
+                var cs = e.dataset.centerslide === "true",
+                    desktop = parseInt(pgd),
+                    tablet = parseInt(pgt),
+                    mobile = parseInt(pgm),
+                    al = e?.dataset.arrowleft ? e?.dataset.arrowleft : "custom-prev",
+                    ar = e?.dataset.arrowright ? e?.dataset.arrowright : "custom-next";
+                m = Number(m);
+                a = Number(a);
+                c = Number(c);
+                p <= 767 ? m >= 15 && (m = 15) : p <= 1199 && m >= 30 && (m = 30);
+                var mainSwiperSelector = "#twa__swiper_thumbs-" + d;
+                var thumbSwiperSelector = "#twa__thumb-" + d;
+                // Initialize Thumbnail Swiper
+                var thumbnailSwiper = new Swiper(thumbSwiperSelector, {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    watchSlidesProgress: true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 4
+                        },
+                        1024: {
+                            slidesPerView: 4
+                        }
+                    }
+                });
+                // Initialize Main Swiper with Thumbnail control
+                new Swiper(mainSwiperSelector, {
+                    slidesPerView: r,
+                    spaceBetween: m,
+                    centeredSlides: cs,
+                    autoplay: t ? { delay: a } : false,
+                    loop: n,
+                    effect: l,
+                    speed: c,
+                    watchSlidesProgress: true,
+                    thumbs: {
+                        swiper: thumbnailSwiper
+                    },
+                    navigation: {
+                        nextEl: `.${ar}`,  // Use unique class name here
+                        prevEl: `.${al}`   // Use unique class name here
+                    },
+                    pagination: {
+                        clickable: true,
+                        el: e.querySelector(".swiper-pagination")
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: s,
+                            grid: {
+                                rows: ut
+                            }
+                        },
+                        1450: {
+                            slidesPerView: i,
+                            grid: {
+                                rows: u
+                            }
+                        }
+                    }
+                });
+            }
+        };
+        // Initialize Swipers
+        TwaSettingsSwiper.init();
+
+        function initializeVariantToggle(parentClass, radioClass) {
+            // Ensure that the DOM is fully loaded before running the script
+            document.addEventListener('DOMContentLoaded', function () {
+                const parentDivs = document.querySelectorAll(`.${parentClass}`);
+
+                parentDivs.forEach(parentDiv => {
+                    const radioButtons = parentDiv.querySelectorAll(`.${radioClass}`);
+
+                    if (radioButtons.length === 0) {
+                        console.error(`No radio buttons with class "${radioClass}" found inside parent class "${parentClass}".`);
+                        return;
+                    }
+
+                    // Set the third variant (varient-3) as the default
+                    if (radioButtons[0]) {
+                        radioButtons[0].checked = true;  // Set third radio button as checked
+                    }
+
+                    function updateVariantClass() {
+                        // Remove existing classes
+                        parentDiv.classList.remove('varient-1', 'varient-2', 'varient-3');
+
+                        // Add class based on checked radio
+                        radioButtons.forEach((radioButton, index) => {
+                            if (radioButton.checked) {
+                                parentDiv.classList.add(`varient-${index + 1}`);
+                            }
+                        });
+                    }
+
+                    // Add event listeners to each radio button
+                    radioButtons.forEach(radioButton => {
+                        radioButton.addEventListener('click', updateVariantClass);
+                    });
+
+                    // Trigger the function on page load to set the default class
+                    updateVariantClass();
+                });
+            });
+        }
+
+        // Initialize for all sets of elements based on classes
+        initializeVariantToggle('type-varient', 'type_radio');
+
+
+        // Select all the color selectors
+        document.querySelectorAll('.colorSelectorFaucet').forEach(function (selectElement) {
+            selectElement.addEventListener('change', function () {
+                // Find the closest .bfs_tabContent_bx parent
+                var parentBox = selectElement.closest('.bfs_tabContent_bx');
+                // Select the image within that parent
+                var showerImage = parentBox.querySelector('.faucetImage');
+
+                // Update the image source based on the selected value
+                if (this.value == "1") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_faucet.webp"; // White option
+                } else if (this.value == "2") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_faucet_b.webp"; // Black option
+                }
+            });
+        });
+
+        // Select all the color selectors
+        document.querySelectorAll('.colorSelector').forEach(function (selectElement) {
+            selectElement.addEventListener('change', function () {
+                // Find the closest .bfs_tabContent_bx parent
+                var parentBox = selectElement.closest('.bfs_tabContent_bx');
+                // Select the image within that parent
+                var showerImage = parentBox.querySelector('.showerImage');
+
+                // Update the image source based on the selected value
+                if (this.value == "1") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_shower_f.webp"; // White option
+                } else if (this.value == "2") {
+                    showerImage.src = "https://qureskincaredns.com/new/assets/bfs_shower_f_b.webp"; // Black option
+                }
+            });
+        });
+
+        const swiperWrappers = document.querySelectorAll('.thumbsSlider_wrap .swiper-wrapper');
+        swiperWrappers.forEach(wrapper => {
+            if (wrapper.children.length < 4) {
+                wrapper.style.justifyContent = 'center';
+            }
+        });
+    //})
+</script>
