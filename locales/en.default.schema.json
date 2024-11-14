@@ -110,6 +110,9 @@
     "collapsed": {
       "label": "Collapsed"
     },
+    "banner": {
+      "label": "Banner"
+    },
     "text_icon": {
       "label": "Heading with Icon"
     },
