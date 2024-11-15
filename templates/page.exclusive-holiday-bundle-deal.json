@@ -65,9 +65,145 @@
         "button_url": "#bf-bundles"
       }
     },
-    "p1": {
-      "type": "temp-exclusive-holiday-bundle-deal-p1",
-      "settings": {}
+    "header": {
+      "type": "exclusive-holiday-bundle-deal-header",
+      "blocks": {
+        "link_Xz3LeQ": {
+          "type": "link",
+          "settings": {
+            "link_label": "Shop & SAVE UP TO 55%",
+            "link_label_mobile": "Shop & SAVE UP TO 55%",
+            "link_url": "#bf-bundles"
+          }
+        },
+        "product_YzAr6q": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Pro",
+            "discount": 47,
+            "image": "shopify://shop_images/bf_mh_1.webp",
+            "product_url": "#b1-s1-bundle"
+          }
+        },
+        "product_iEprpi": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Advanced",
+            "discount": 55,
+            "image": "shopify://shop_images/bf_mh_2.webp",
+            "product_url": "#b1-s2-bundle"
+          }
+        },
+        "product_QVwGAe": {
+          "type": "product",
+          "settings": {
+            "heading": "Line Refine Bundle Essentials",
+            "discount": 32,
+            "image": "shopify://shop_images/bf_mh_3.webp",
+            "product_url": "#b1-s3-bundle"
+          }
+        },
+        "product_exRwKt": {
+          "type": "product",
+          "settings": {
+            "heading": "Fade & Firm Bundle Pro",
+            "discount": 55,
+            "image": "shopify://shop_images/bf_mh_4.webp",
+            "product_url": "#b2-s1-bundle"
+          }
+        },
+        "product_AKXwNe": {
+          "type": "product",
+          "settings": {
+            "heading": "Dade & Firm Bundle Advanced",
+            "discount": 43,
+            "image": "shopify://shop_images/bf_mh_5.webp",
+            "product_url": "#b2-s2-bundle"
+          }
+        },
+        "product_rep6dJ": {
+          "type": "product",
+          "settings": {
+            "heading": "Fade & Firm Bundle Essentials",
+            "discount": 55,
+            "image": "shopify://shop_images/bf_mh_6.webp",
+            "product_url": "#b2-s3-bundle"
+          }
+        },
+        "product_D8AA7r": {
+          "type": "product",
+          "settings": {
+            "heading": "Micro-Infustion Limited Edition Bundle",
+            "discount": 45,
+            "image": "shopify://shop_images/bf_mh_7.webp",
+            "product_url": "#b2-s4-bundle"
+          }
+        },
+        "product_VXCeRt": {
+          "type": "product",
+          "settings": {
+            "heading": "Filter Family Bundle",
+            "discount": 52,
+            "image": "shopify://shop_images/bf_mh_8.webp",
+            "product_url": "#b2-s5-bundle"
+          }
+        },
+        "product_EkTrHA": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Pro",
+            "discount": 40,
+            "image": "shopify://shop_images/bf_mh_9.webp",
+            "product_url": "#b3-s1-bundle"
+          }
+        },
+        "product_3EW9Y4": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Advanced",
+            "discount": 33,
+            "image": "shopify://shop_images/bf_mh_10.webp",
+            "product_url": "#b3-s2-bundle"
+          }
+        },
+        "product_MxRW8i": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Starter",
+            "discount": 52,
+            "image": "shopify://shop_images/bf_mh_11.webp",
+            "product_url": "#b3-s3-bundle"
+          }
+        },
+        "product_LgpibG": {
+          "type": "product",
+          "settings": {
+            "heading": "Breakout Control Essentials",
+            "discount": 30,
+            "image": "shopify://shop_images/bf_mh_12.webp",
+            "product_url": "#b3-s4-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "link_Xz3LeQ",
+        "product_YzAr6q",
+        "product_iEprpi",
+        "product_QVwGAe",
+        "product_exRwKt",
+        "product_AKXwNe",
+        "product_rep6dJ",
+        "product_D8AA7r",
+        "product_VXCeRt",
+        "product_EkTrHA",
+        "product_3EW9Y4",
+        "product_MxRW8i",
+        "product_LgpibG"
+      ],
+      "settings": {
+        "heading": "Save Up to 55% on \\n Certified Skincare Solutions",
+        "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals </strong>and <strong>scientific studies </strong>that prove; Qure’s skincare <strong>works.</strong></p>"
+      }
     },
     "icons_list": {
       "type": "icons-list",
@@ -192,12 +328,120 @@
         "slider_type": "five_slides"
       }
     },
-    "p4": {
-      "type": "temp-exclusive-holiday-bundle-deal-p4",
-      "settings": {}
+    "before-after": {
+      "type": "exclusive-holiday-bundle-deal-before-after",
+      "blocks": {
+        "icon_wb7PPj": {
+          "type": "icon",
+          "settings": {
+            "heading": "One-time investment",
+            "image": "shopify://shop_images/investment.svg"
+          }
+        },
+        "icon_8RMchx": {
+          "type": "icon",
+          "settings": {
+            "heading": "Incredibly convenient",
+            "image": "shopify://shop_images/convenient.svg"
+          }
+        },
+        "icon_6EgyHw": {
+          "type": "icon",
+          "settings": {
+            "heading": "Customized approach",
+            "image": "shopify://shop_images/customized.svg"
+          }
+        },
+        "icon_fNt3y4": {
+          "type": "icon",
+          "settings": {
+            "heading": "Better results",
+            "image": "shopify://shop_images/results.svg"
+          }
+        },
+        "object_iinakB": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item3_before.webp",
+            "after_text": "After 1 treatment",
+            "after_image": "shopify://shop_images/tr_item3_after.webp"
+          }
+        },
+        "object_rKT6dw": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item1_before.webp",
+            "after_text": "After 6 treatment",
+            "after_image": "shopify://shop_images/tr_item1_after.webp"
+          }
+        },
+        "object_H9wTAE": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item2_before.webp",
+            "after_text": "After 2 treatment",
+            "after_image": "shopify://shop_images/tr_item2_after.webp"
+          }
+        },
+        "object_7QbjiT": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item4_before.webp",
+            "after_text": "After 1 treatment",
+            "after_image": "shopify://shop_images/tr_item4_after.webp"
+          }
+        },
+        "object_9cTrHQ": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item5_before.webp",
+            "after_text": "After 6 treatment",
+            "after_image": "shopify://shop_images/tr_item5_after.webp"
+          }
+        },
+        "object_XYAjAV": {
+          "type": "object",
+          "settings": {
+            "before_text": "Before",
+            "before_image": "shopify://shop_images/tr_item6_before.webp",
+            "after_text": "After Qure",
+            "after_image": "shopify://shop_images/tr_item6_after.webp"
+          }
+        },
+        "link_fCqURh": {
+          "type": "link",
+          "settings": {
+            "link_label": "See Our Reviews",
+            "link_label_mobile": "See Our Reviews",
+            "link_url": "#bf_reviews"
+          }
+        }
+      },
+      "block_order": [
+        "icon_wb7PPj",
+        "icon_8RMchx",
+        "icon_6EgyHw",
+        "icon_fNt3y4",
+        "object_iinakB",
+        "object_rKT6dw",
+        "object_H9wTAE",
+        "object_7QbjiT",
+        "object_9cTrHQ",
+        "object_XYAjAV",
+        "link_fCqURh"
+      ],
+      "settings": {
+        "heading": "200,000+ CONFIDENT customers",
+        "text": "<p>Top-rated products at <em>best prices.</em></p>"
+      }
     },
-    "p5": {
-      "type": "temp-exclusive-holiday-bundle-deal-p5",
+    "bundles": {
+      "type": "exclusive-holiday-bundle-deal-bundles",
       "settings": {}
     },
     "icons_list_second": {
@@ -496,11 +740,11 @@
   },
   "order": [
     "header_sales",
-    "p1",
+    "header",
     "icons_list",
     "featuredin_extended",
-    "p4",
-    "p5",
+    "before-after",
+    "bundles",
     "icons_list_second",
     "p7",
     "text_with_video",
