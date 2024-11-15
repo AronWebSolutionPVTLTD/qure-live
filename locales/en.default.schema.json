@@ -780,6 +780,12 @@
         }
       }
     },
+    "exclusive-holiday-bundle-deal-header": {
+      "name": "Header"
+    },
+    "exclusive-holiday-bundle-deal-before-after": {
+      "name": "Before After"
+    },
     "main-banner-promotion": {
       "name": "Main banner promo",
       "settings": {
