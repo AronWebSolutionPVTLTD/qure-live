@@ -96,8 +96,7 @@
         "slide_hVri9x",
         "slide_tNrDjD"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "promotion_main_banner_48gkNr": {
       "type": "promotion-main-banner",
@@ -105,23 +104,33 @@
         "link_GirQqh": {
           "type": "link",
           "settings": {
-            "link_label": "Support now",
-            "link_label_mobile": "Support now",
+            "link_label": "Shop Now",
+            "link_label_mobile": "Shop Now",
             "link_url": "shopify://collections/best-sellers"
+          }
+        },
+        "product_BANXY7": {
+          "type": "product",
+          "settings": {
+            "heading": "<p><strong>Save up to 55% off</strong> on Black Friday Bundles.</p>",
+            "image": "shopify://shop_images/bf-bundle-sm.webp",
+            "product_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
           }
         }
       },
       "block_order": [
-        "link_GirQqh"
+        "link_GirQqh",
+        "product_BANXY7"
       ],
       "disabled": true,
       "settings": {
-        "heading": "STRONGER TOGETHER",
-        "heading_mobile": "STRONGER TOGETHER",
+        "heading": "21% Off Sitewide",
+        "heading_mobile": "",
         "heading_tag": "h1",
-        "subheading": "<p>Join Us in the Fight Against Breast Cancer</p>",
-        "subheading_mobile": "<p>Join Us in the Fight Against Breast \\n  Cancer</p>",
-        "text": "<p>*To support breast cancer research to prevent, detect, stop and treat breast cancer, Qure will donate $2 from every order to the National Breast Cancer Foundation.</p>"
+        "subheading": "<p>Top-rated products at <em>best prices</em> this Black Friday</p>",
+        "subheading_mobile": "",
+        "text": "",
+        "wistia_id": "xz6kx4xrh8"
       }
     },
     "promotion_main_banner_second_jCUkqh": {
