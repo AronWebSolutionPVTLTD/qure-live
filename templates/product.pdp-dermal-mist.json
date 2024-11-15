@@ -22,7 +22,7 @@
         "list_azYRbY": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Gently purifies to reduce impurities without stripping or drying out the skin.</li><li>Helps reduce bacteria that can cause breakouts.</li><li>Versatile and safe for use on your face, body, and even devices.</li></ul>"
+            "text": "<ul><li>Gently purifies to reduce impurities without stripping or drying out the skin.</li><li>Helps reduce bacteria that can cause breakouts.</li><li>Dermatologically tested, versatile and safe for use on your face, body, and even devices.</li></ul>"
           }
         },
         "supply_CTrVRQ": {
@@ -57,7 +57,7 @@
         "before_after_images_limit": 0,
         "before_after_button_label": "Before & After",
         "reserve": false,
-        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_left": "Dermatologist Approved",
         "underbutton_text_right": "Free Shipping Over US$100",
         "selected_design": "old",
         "text_label_real_result_1": "",
@@ -145,7 +145,7 @@
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/Soothes.svg",
-            "text": "<p><strong>Soothes Redness and Irritation:</strong></p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.</p>",
+            "text": "<p><strong>Soothes Redness and Irritation:</strong></p><p>Hypochlorous Acid calms your skin, providing relief from everyday stressors and is safe for those prone to allergies or sensitive skin.</p>",
             "iconMob": "shopify://shop_images/Soothes.svg",
             "textMob": "<p><strong>It Soothes Redness And Irritation:</strong></p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.</p>"
           }
@@ -154,7 +154,7 @@
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/Dry-skin.svg",
-            "text": "<p><strong>Doesn’t Dry Out Skin:</strong></p><p>Alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.</p>",
+            "text": "<p><strong>Doesn’t Dry Out Skin:</strong></p><p>Our alcohol-free formula is designed to be gentle and kind to skin, leaving it comfortable and not dry.</p>",
             "iconMob": "shopify://shop_images/Dry-skin.svg",
             "textMob": "<p><strong>It Doesn’t Dry You Out:</strong></p><p>The alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.</p>"
           }
