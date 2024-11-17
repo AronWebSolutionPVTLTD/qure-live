@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_sales": {
       "type": "header-sales",
@@ -48,7 +48,7 @@
           "type": "navigation-link",
           "settings": {
             "link_label": "FAQs",
-            "link_url": "#faqs",
+            "link_url": "#faq_section",
             "image": "shopify://shop_images/header_4.webp"
           }
         }
