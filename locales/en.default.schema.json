@@ -219,6 +219,9 @@
       "info": "Info Heading",
       "mobile": {
         "label": "Heading for mobile"
+      },
+      "seo_heading": {
+        "label": "Seo Heading"
       }
     },
     "announcement": {

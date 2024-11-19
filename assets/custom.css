@@ -338,3 +338,7 @@ body[class~="page.sunil-mi-landing-special2"]
 div.ur_btn {
         cursor: pointer;
 }
+.seo_heading {
+        font-size: 18px;
+        padding-top: 20px;
+}

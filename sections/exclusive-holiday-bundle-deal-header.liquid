@@ -8,9 +8,14 @@
                         <p class="bfs_tag_bf">BLACK FRIDAY</p>
                         <p class="bfs_tag_sale">SALE</p>
                     </div>
+
+                    {% if section.settings.seo_heading != blank %}
+                        <h1 class="seo_heading">{{ section.settings.seo_heading }}</h1>
+                    {% endif %}
+
                     <div class="section_header mw-100 text-center text-md-start pb-0">
                         {% if section.settings.heading != blank %}
-                            <h1 class="title-xl mb-4 mb-md-3">{{ section.settings.heading |  replace: '\n', '<br />' }}</h1>
+                            <h2 class="title-xl mb-4 mb-md-3">{{ section.settings.heading |  replace: '\n', '<br />' }}</h2>
                         {% endif %}
 
                         {% if section.settings.text != blank %}
@@ -336,6 +341,11 @@
         "name": "t:sections.exclusive-holiday-bundle-deal-header.name",
         "class": "section-exclusive-holiday-bundle-deal-header",
         "settings": [
+            {
+                "type": "text",
+                "id": "seo_heading",
+                "label": "t:common.heading.seo_heading.label"
+            },
             {
                 "type": "text",
                 "id": "heading",

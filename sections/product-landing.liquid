@@ -69,9 +69,13 @@
                         {%- endfor -%}
                     {% endif %}
 
+                    {% if section.settings.seo_heading != blank %}
+                        <h1 class="seo_heading">{{ section.settings.seo_heading }}</h1>
+                    {% endif %}
+
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
-                            <h1 id="page-{{ page.handle | escape }}" class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h1>
+                            <h2 id="page-{{ page.handle | escape }}" class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
                         {% endif %}
                         {% if section.settings.heading_mobile != blank %}
                             <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
@@ -514,6 +518,11 @@
         "name": "t:sections.product-landing.name",
         "class": "section-product-landing",
         "settings": [
+            {
+                "type": "text",
+                "id": "seo_heading",
+                "label": "t:common.heading.seo_heading.label"
+            },
             {
                 "type": "text",
                 "id": "heading",
