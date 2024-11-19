@@ -185,6 +185,7 @@
         "blocks": {
           "saving_FbLdxK": {
             "type": "saving",
+            "disabled": true,
             "settings": {
               "text": "Black Friday Savings",
               "color": "#C4121A"
