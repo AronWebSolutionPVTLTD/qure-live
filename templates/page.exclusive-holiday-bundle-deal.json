@@ -73,7 +73,7 @@
           "settings": {
             "heading": "BLACK FRIDAY",
             "text": "SALE",
-            "color": "#C4121A"
+            "color": "#c4121a"
           }
         },
         "link_Xz3LeQ": {
@@ -458,7 +458,7 @@
           "settings": {
             "heading": "BLACK FRIDAY",
             "text": "SALE",
-            "color": "#C4121A"
+            "color": "#c4121a"
           }
         },
         "object_pBAeDi": {
@@ -1466,14 +1466,14 @@
         "icon_E3nayg": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/science-ftr-lg.svg",
+            "image": "shopify://shop_images/s_q_3_1.png",
             "text": "<p>Science-Backed,</p><p>Dermatologist Approved</p>"
           }
         },
         "icon_PKBzbi": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/derma-ft-lg.svg",
+            "image": "shopify://shop_images/derma-ft-lg_1.png",
             "text": "<p>Safe & Easy to</p><p>Use Devices</p>"
           }
         },
@@ -1487,7 +1487,7 @@
         "icon_PncCDy": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/treat-skin-lg.svg",
+            "image": "shopify://shop_images/treat-skin-lg_1.png",
             "text": "<p>Treat Multiple</p><p>Skin Concerns</p>"
           }
         }
