@@ -68,6 +68,14 @@
     "header": {
       "type": "exclusive-holiday-bundle-deal-header",
       "blocks": {
+        "badge_bNNHbU": {
+          "type": "badge",
+          "settings": {
+            "heading": "BLACK FRIDAY",
+            "text": "SALE",
+            "color": "#C4121A"
+          }
+        },
         "link_Xz3LeQ": {
           "type": "link",
           "settings": {
@@ -186,6 +194,7 @@
         }
       },
       "block_order": [
+        "badge_bNNHbU",
         "link_Xz3LeQ",
         "product_YzAr6q",
         "product_iEprpi",
@@ -201,6 +210,7 @@
         "product_LgpibG"
       ],
       "settings": {
+        "seo_heading": "",
         "heading": "Save Up to 55% on \\n Certified Skincare Solutions",
         "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals </strong>and <strong>scientific studies </strong>that prove; Qure’s skincare <strong>works.</strong></p>"
       }
@@ -443,6 +453,14 @@
     "bundles-header": {
       "type": "exclusive-holiday-bundle-deal-bundles-header",
       "blocks": {
+        "badge_TwBcgj": {
+          "type": "badge",
+          "settings": {
+            "heading": "BLACK FRIDAY",
+            "text": "SALE",
+            "color": "#C4121A"
+          }
+        },
         "object_pBAeDi": {
           "type": "object",
           "settings": {
@@ -469,6 +487,7 @@
         }
       },
       "block_order": [
+        "badge_TwBcgj",
         "object_pBAeDi",
         "object_kbrVPD",
         "object_MU6PFN"
