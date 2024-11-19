@@ -101,6 +101,9 @@
     }
   },
   "common": {
+    "saving": {
+      "label": "saving"
+    },
     "badge": {
       "label": "Badge"
     },
