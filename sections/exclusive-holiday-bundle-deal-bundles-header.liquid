@@ -6,10 +6,14 @@
                 <img src="https://qureskincaredns.com/new/assets/bfs_reviews.webp" alt="" class="img-fluid">
                 <p><strong>5000+ customers</strong> recently purchased a bundle</p>
             </div>
-            <div class="bfs_tag mt-3 mb-md-2 mx-auto">
-                <p class="bfs_tag_bf">BLACK FRIDAY</p>
-                <p class="bfs_tag_sale">SALE</p>
-            </div>
+            {%- for block in section.blocks -%}
+                {% if block.type == 'badge' %}
+                    <div class="bfs_tag mt-3 mb-md-2 mx-auto">
+                        <p class="bfs_tag_bf">{{ block.settings.heading }}</p>
+                        <p class="bfs_tag_sale" style="color: {{ block.settings.color }}">{{ block.settings.text }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
             <div class="bf-bundles_title text-center mb-2 mb-md-3">
                 {% if section.settings.heading != blank %}
                     <h3>{{ section.settings.heading }}</h3>
@@ -137,6 +141,31 @@
             }
         ],
         "blocks": [
+            {
+                "type": "badge",
+                "name": "t:common.badge.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "t:common.heading.label",
+                        "default": "BLACK FRIDAY"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label",
+                        "default": "SALE"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color",
+                        "label":"t:common.color.label",
+                        "default":"#C4121A"
+                    }
+                ]
+            },
             {
                 "type": "object",
                 "name": "t:common.object.label",

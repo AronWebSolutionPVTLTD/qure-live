@@ -101,6 +101,12 @@
     }
   },
   "common": {
+    "badge": {
+      "label": "Badge"
+    },
+    "color": {
+      "label": "Color"
+    },
     "read_more": "Read More Content",
     "container": {
       "size": "Section Width",
