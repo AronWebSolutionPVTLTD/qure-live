@@ -183,6 +183,13 @@
       "slidecart": {
         "type": "slidecart",
         "blocks": {
+          "saving_FbLdxK": {
+            "type": "saving",
+            "settings": {
+              "text": "Black Friday Savings",
+              "color": "#C4121A"
+            }
+          },
           "gift_ccQgi4": {
             "type": "gift",
             "disabled": true,
@@ -265,6 +272,7 @@
           }
         },
         "block_order": [
+          "saving_FbLdxK",
           "gift_ccQgi4",
           "upsell_bR4pCx",
           "upsell_8Karyz",
