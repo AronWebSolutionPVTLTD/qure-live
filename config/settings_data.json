@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "show_bf_price": true,
     "favicon": "shopify://shop_images/qure.png",
     "social_instagram_link": "https://www.instagram.com/qureskincare/",
     "social_facebook_link": "https://www.facebook.com/Qureskincare/",
@@ -188,7 +189,7 @@
             "disabled": true,
             "settings": {
               "text": "Black Friday Savings",
-              "color": "#C4121A"
+              "color": "#c4121a"
             }
           },
           "gift_ccQgi4": {
