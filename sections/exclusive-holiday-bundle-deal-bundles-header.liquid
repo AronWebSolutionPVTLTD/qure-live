@@ -10,7 +10,7 @@
                 {% if block.type == 'badge' %}
                     <div class="bfs_tag mt-3 mb-md-2 mx-auto">
                         <p class="bfs_tag_bf">{{ block.settings.heading }}</p>
-                        <p class="bfs_tag_sale" style="color: {{ block.settings.color }}">{{ block.settings.text }}</p>
+                        <p class="bfs_tag_sale" style="background-color: {{ block.settings.color }}">{{ block.settings.text }}</p>
                     </div>
                 {% endif %}
             {% endfor %}
