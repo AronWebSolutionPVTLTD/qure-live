@@ -102,9 +102,13 @@
                         or page.handle == 'qure-microinfusion-offer-fr' 
                         or page.handle == 'qure-microinfusion-offer-es'
                     %}
-                        <div class="product-price">
-                            {% render 'pdm_product-price' subscribe_count: 1, section: section, landing:true %}
-                        </div>
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: product %}
+                        {% else %}
+                            <div class="product-price">
+                                {% render 'pdm_product-price' subscribe_count: 1, section: section, landing:true %}
+                            </div>
+                        {% endif %}
                     {% endunless %}
 
                     {% if button_count %}

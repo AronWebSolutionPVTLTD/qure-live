@@ -9,11 +9,17 @@
                             <p class="silk_heading pt-0">Pure Silk Pillowcase</p>
                             <h1 class="title-xl mb-0">Minimize Formation of Wrinkles Whilst You Sleep</h1>
                         </div>
-                        <div class="price_wrap">
-                            <div class="price">
-                                <div class="new_price fw-bold">{{ product.price | money_without_trailing_zeros }}</div>
+
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: product %}
+                        {% else %}
+                            <div class="price_wrap">
+                                <div class="price">
+                                    <div class="new_price fw-bold">{{ product.price | money_without_trailing_zeros }}</div>
+                                </div>
                             </div>
-                        </div>
+                        {% endif %}
+
                         <div class="mw-421">
                             <div class="ss_list pb-4 pt-0">
                                 <ul>

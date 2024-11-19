@@ -81,16 +81,20 @@
                             <h2 class="title-xl d-md-none">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
                         {% endif %}
                     </div>
-                    
-                    {% unless page.handle == 'qure-micro-infusion-landing-page-affiliate' %}
-                        <div class="price_wrap">
-                            <div class="price">
-                                <div class="new_price">
-                                    {% render 'pdm_product-price' subscribe_count: subscribe_count, section: section %}
+
+                    {% if settings.show_bf_price == true %}
+                        {% render 'bf-price-displaying', product: product %}
+                    {% else %}
+                        {% unless page.handle == 'qure-micro-infusion-landing-page-affiliate' %}
+                            <div class="price_wrap">
+                                <div class="price">
+                                    <div class="new_price">
+                                        {% render 'pdm_product-price' subscribe_count: subscribe_count, section: section %}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {% endunless %}
+                        {% endunless %}
+                    {% endif %}
 
                     {% render 'product-led-mask' %}
 

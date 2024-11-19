@@ -33,6 +33,10 @@
                             </div>
                         </div> {% endcomment %}
 
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: blank %}
+                        {% endif %}
+
                         <div class="mask_select_clr mt-4">
                             <h5>Select color:</h5>
                             <div class="clr_options">
@@ -99,6 +103,7 @@
                                         your skin will drink up.</li>
                                 </ul>
                             </div>
+
                             <div class="subscribe_save_wrapper without_subscription mt-2">
                                 <div class="subscribeTopInfo">
                                     <p>MOST POPULAR CHOICE</p>

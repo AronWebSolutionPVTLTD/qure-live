@@ -8,6 +8,10 @@
         });
     </script>
 
+    {% if settings.show_bf_price == true %}
+        {% render 'bf-price-displaying', product: product %}
+    {% endif %}
+
     <div class="mw-402">
 
     <div class="serum_bl">
@@ -49,6 +53,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="supply_steps month_plan_steps mt-4">
                     <div class="step_block">
                         <p class="pb-3">Choose supply:</p>
