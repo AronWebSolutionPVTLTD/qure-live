@@ -38,10 +38,11 @@
         "before_and_after_MpiVzf": {
           "type": "before_and_after",
           "settings": {
-            "image_new_section_1": "shopify://shop_images/before_and_after_-_patch.png",
+            "image_new_section_1": "shopify://shop_images/before_and_after_-_patches.png",
             "image_new_section_text_1": "",
             "image_new_section_2": "shopify://shop_images/before_and_after_-_eye_patch.png",
             "image_new_section_text_2": "",
+            "image_new_section_3": "shopify://shop_images/before_and_after_-_patch.png",
             "image_new_section_text_3": "",
             "image_new_section_text_4": "",
             "image_new_section_text_5": "",
