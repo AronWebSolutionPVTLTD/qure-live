@@ -115,7 +115,8 @@
                                                 <div class="d-flex justify-content-between">
                                                     <h6>Subscribe & save 30%</h6>
                                                     <div class="subscribePrice">
-                                                        <p><span>$129</span>$90.30</p>
+                                                        {% assign discount_percentage = product.price | times: 0.7 | money_without_trailing_zeros %}
+                                                        <p><span>{{ product.price |  money_without_trailing_zeros }}</span>{{ discount_percentage }}</p>
                                                     </div>
                                                 </div>
 
@@ -135,7 +136,7 @@
                                             One time purchase
                                         </div>
                                         <div class="noSubscriptionPrice">
-                                            $129
+                                            {{ product.price |  money_without_trailing_zeros }}
                                         </div>
                                     </div>
 
