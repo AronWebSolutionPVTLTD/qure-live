@@ -103,8 +103,8 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/header_drop2.webp",
-              "button_label": "Discover our [Best Selling] Products",
-              "button_url": "shopify://collections/best-sellers"
+              "button_label": "Shipping & Exchanges",
+              "button_url": "shopify://pages/faq-orders-shipping"
             }
           }
         },
