@@ -530,7 +530,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-pro",
-            "percent": 32,
+            "percent": 28,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
@@ -666,7 +666,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-essentials",
-            "percent": 39,
+            "percent": 38,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -787,7 +787,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-pro",
-            "percent": 32,
+            "percent": 31,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -923,7 +923,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-essentials",
-            "percent": 36,
+            "percent": 34,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -981,7 +981,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-limited-edition-bundle",
-            "percent": 27,
+            "percent": 24,
             "default_variant_id": 45991849787631,
             "media_limit": 3,
             "hide_us": false,
@@ -1041,7 +1041,7 @@
           "type": "product",
           "settings": {
             "product": "filter-family-bundle",
-            "percent": 34,
+            "percent": 31,
             "default_variant_id": 45909771124975,
             "media_limit": 0,
             "hide_us": true,
@@ -1176,7 +1176,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-pro-1",
-            "percent": 20,
+            "percent": 24,
             "default_variant_id": 45970548883695,
             "media_limit": 0,
             "hide_us": true,
@@ -1255,7 +1255,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-advanced",
-            "percent": 38,
+            "percent": 33,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -1313,7 +1313,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-starter",
-            "percent": 22,
+            "percent": 23,
             "default_variant_id": 45909844787439,
             "media_limit": 0,
             "hide_us": true,
@@ -1372,7 +1372,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-essentials",
-            "percent": 30,
+            "percent": 32,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
