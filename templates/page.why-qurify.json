@@ -48,8 +48,7 @@
     },
     "main": {
       "type": "temp-why-qurify",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

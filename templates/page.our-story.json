@@ -1,19 +1,8 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "banner_xBMFyj": {
       "type": "banner",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "heading": "We're rethinking skincare",
         "text": "<p>Bringing you clinical-grade technologies and products for DIY skin therapies, in the comfort of your own home, and at a price everyone can afford.<\/p>",

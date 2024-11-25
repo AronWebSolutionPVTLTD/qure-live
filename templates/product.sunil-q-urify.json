@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "order": [
     "main",
@@ -182,9 +173,7 @@
         "content_eWtXM9",
         "code_yDHdYe"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "classname": "imageText new_side p-0 pt-md-5",
         "column_image": 6,
@@ -392,9 +381,7 @@
         "object_jWtKpX",
         "object_beMBx9"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "classname": "beauty_skincare section bg-white beauty_ftrs_center",
         "heading": "More effective and safer than other filters",
@@ -582,8 +569,7 @@
         "icon_mQJhED",
         "icon_b4iEDD"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "guide_7WfJ8X": {
       "type": "guide",
@@ -755,8 +741,7 @@
     },
     "pdm_product_social_proof_data_4iretp": {
       "type": "pdm_product-social-proof-data",
-      "settings": {
-      }
+      "settings": {}
     }
   }
 }

@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "header_landing_LLnaTx": {
@@ -193,8 +184,7 @@
       "custom_css": [
         ".press_bl {background-color: rgb(251 251 251) !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "clinicallyproven": {
       "type": "custom-qurify-filter-lp-clinicallyproven",
@@ -263,8 +253,7 @@
       "custom_css": [
         ".trusted_bl_lp {background-color: rgb(251 251 251) !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "slider": {
       "type": "custom-qurify-filter-slider",
@@ -933,8 +922,7 @@
       "custom_css": [
         ".featured_promotion {background-color: transparent !important;}"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "faq_inpriy": {
       "type": "faq",
