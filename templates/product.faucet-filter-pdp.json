@@ -9,6 +9,9 @@
  */
  {
   "sections": {
+    "temp-product-faucet-filter-pdp":{
+      "type": "temp-product-faucet-filter-pdp"
+    },
     "featuredin_FdCAV8": {
       "type": "featuredin",
       "blocks": {
@@ -741,6 +744,7 @@
     }
   },
   "order": [
+    "temp-product-faucet-filter-pdp",
     "featuredin_FdCAV8",
     "image_text_2_rn78Ab",
     "reasons_Y4QGUa",
