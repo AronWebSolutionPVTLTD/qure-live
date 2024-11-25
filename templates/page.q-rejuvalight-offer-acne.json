@@ -298,19 +298,6 @@
             "verified": true
           }
         },
-        "slide_pU3mTj": {
-          "type": "Slide",
-          "settings": {
-            "heading": "IT REALLY WORKS!!",
-            "product": "",
-            "text": "<p>I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.</p>",
-            "image": "shopify://shop_images/results_teresa_3a620dd8-7320-41da-b19d-4202f4097626.webp",
-            "image_country": "shopify://shop_images/USA_07.png",
-            "client": "Teresa S.",
-            "concerns": "Dark spots, discoloration",
-            "verified": true
-          }
-        },
         "slide_6JbRPj": {
           "type": "Slide",
           "settings": {
@@ -407,7 +394,6 @@
       "block_order": [
         "slide_f6CjxA",
         "slide_CPEePW",
-        "slide_pU3mTj",
         "slide_6JbRPj",
         "slide_ytEe6x",
         "slide_UaaMCL",
