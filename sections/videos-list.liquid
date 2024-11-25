@@ -16,6 +16,9 @@
                     {{ section.settings.heading }}
                 </h2>
             {% endif %}
+            {% if section.settings.sub_heading != blank %}
+            <p>{{ section.settings.sub_heading }}</p>
+            {% endif %}
 
         </div>
         <div class="videoInfo">
@@ -28,10 +31,10 @@
                 data-autoplay="false" 
                 data-loop="false" 
                 data-centerslide="false" 
-                data-mobile="1.7" 
+                data-mobile="{{ section.settings.mob_slide }}" 
                 data-tablet="6" 
-                data-desktop="6" 
-                data-spacing="10"
+                data-desktop="{{ section.settings.desk_slide }}" 
+                data-spacing="{{ section.settings.slide_space }}"
                 data-arrowleft="qureSlider-swiper-prev" 
                 data-arrowright="qureSlider-swiper-next">
                 {% if section.blocks.size > 0 %}
@@ -155,6 +158,11 @@
                 "label": "t:common.heading.label"
             },
             {
+                "type": "textarea",
+                "id": "sub_heading",
+                "label": "t:common.text.content"
+            },
+            {
                 "type": "text",
                 "id": "classname",
                 "label": "t:common.classname.label",
@@ -169,13 +177,40 @@
                 "type": "url",
                 "id": "btn_url",
                 "label": "t:common.button.url.label"
+            },
+            {
+                "type": "range",
+                "id": "desk_slide",
+                "label": "t:sections.slider.settings.desktop",
+                "default": 6,
+                "max": 6,
+                "min": 1,
+                "step": 1
+            },
+            {
+                "type": "range",
+                "id": "mob_slide",
+                "label": "t:sections.slider.settings.mobile",
+                "default": 1.7,
+                "max": 2,
+                "min": 1,
+                "step": 0.1
+            },
+            {
+                "type": "range",
+                "id": "slide_space",
+                "label": "t:sections.slider.space_between",
+                "default": 10,
+                "max": 20,
+                "min": 2,
+                "step": 2
             }
         ],
         "blocks": [
             {
                 "type": "wistia",
                 "name": "t:common.wistia.label",
-                "limit": 6,
+                "limit": 8,
                 "settings": [
                     {
                         "type": "text",

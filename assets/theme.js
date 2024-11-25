@@ -1622,3 +1622,14 @@ document.addEventListener('DOMContentLoaded', function () {
         $(this).addClass('current').siblings().removeClass('current');
     });
 });
+
+$(document).ready(function () {
+    $('.read-more2').click(function () {
+        $(this).prev().slideToggle();
+        if ($(this).text() === "See Less") {
+            $(this).text("See More");
+        } else {
+            $(this).text("See Less");
+        }
+    });
+});
