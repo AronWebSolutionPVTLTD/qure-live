@@ -69,9 +69,13 @@
                         {%- endfor -%}
                     {% endif %}
 
+                    {% if section.settings.seo_heading != blank %}
+                        <h1 class="seo_heading">{{ section.settings.seo_heading }}</h1>
+                    {% endif %}
+
                     <div class="section_header text-start ms-0">
                         {% if section.settings.heading != blank %}
-                            <h1 id="page-{{ page.handle | escape }}" class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h1>
+                            <h2 id="page-{{ page.handle | escape }}" class="title-xl d-none d-md-block">{{ section.settings.heading | replace: '\n', '<br />' }}</h2>
                         {% endif %}
                         {% if section.settings.heading_mobile != blank %}
                             <h2 class="title-xl d-md-none">{{ section.settings.heading_mobile | replace: '\n', '<br />' }}</h2>
@@ -98,9 +102,13 @@
                         or page.handle == 'qure-microinfusion-offer-fr' 
                         or page.handle == 'qure-microinfusion-offer-es'
                     %}
-                        <div class="product-price">
-                            {% render 'pdm_product-price' subscribe_count: 1, section: section, landing:true %}
-                        </div>
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: product %}
+                        {% else %}
+                            <div class="product-price">
+                                {% render 'pdm_product-price' subscribe_count: 1, section: section, landing:true %}
+                            </div>
+                        {% endif %}
                     {% endunless %}
 
                     {% if button_count %}
@@ -162,6 +170,12 @@
                                     {% endif %}
                                 {%- endfor -%}
                             </div>
+
+                            {% if product.variants.first.available %}
+                                <a class="btn btn-lg btn-primary buy_btn" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>{% if section.settings.reserve == true %}Reserve now{% else %}Buy Now{% endif %}</a>
+                            {% else %}
+                                <a class="btn btn-lg btn-primary buy_btn" href="#">{% if section.settings.reserve == true %}Reserve now{% else %}Sold Out{% endif %}</a>
+                            {% endif %}
                         {% endif %}
 
                         {% if section.settings.product != blank %}
@@ -253,12 +267,14 @@
 
                     {% endif %}
 
-                    {% if liquid_count %}
-                        {%- for block in section.blocks -%}
-                            {% if block.type == 'liquid' %}
-                                {{ block.settings.code }}
-                            {% endif %}
-                        {%- endfor -%}
+                    {% if supply_count == 0 %}
+                        {% if liquid_count %}
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'liquid' %}
+                                    {{ block.settings.code }}
+                                {% endif %}
+                            {%- endfor -%}
+                        {% endif %}
                     {% endif %}
                 </div>
             </div>
@@ -506,6 +522,11 @@
         "name": "t:sections.product-landing.name",
         "class": "section-product-landing",
         "settings": [
+            {
+                "type": "text",
+                "id": "seo_heading",
+                "label": "t:common.heading.seo_heading.label"
+            },
             {
                 "type": "text",
                 "id": "heading",

@@ -151,7 +151,7 @@
                 {{ block.settings.code }}
             {% endif %}
         </div>
-            <button data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:{{ block.settings.percent }}%">
+            <button data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:30%">
                 <div class="stock_left">{{ block.settings.percent }}%<div>of stock left</div>
                 </div>
                 {% if preorder != blank %}

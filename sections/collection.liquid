@@ -136,7 +136,7 @@
             </style>
 
             <div class="bf_sale-banners">
-                <div class="discount_banner">
+                <div class="discount_banner"{% if block.settings.link_url != blank %} onclick="location.href='{{ block.settings.link_url }}';" style="cursor: pointer"{% endif %}>
                     <div class="container-fluid px-0">
                         <div class="row mx-0">
                             <div class="col-lg-7 col-7 px-0">
@@ -319,6 +319,11 @@
                         "type": "text",
                         "id": "wistia_id_mobile",
                         "label": "t:common.wistia.id.mobile"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
                     }
                 ]
 		    }

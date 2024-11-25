@@ -50,6 +50,7 @@
         "supply_CTrVRQ"
       ],
       "settings": {
+        "seo_heading": "",
         "heading": "Cleanse your skin with \\n Hypochlorous Acid Spray Dermal Mist",
         "heading_mobile": "Cleanse your skin with \\n Hypochlorous Acid \\n Spray Dermal Mist",
         "product_images_limit": 3,
@@ -163,7 +164,7 @@
           "type": "content",
           "settings": {
             "icon": "shopify://shop_images/spray.svg",
-            "text": "<p><strong>Super Versatile:</strong></p><p>Gentle and skin-safe, this mist refreshes your face, body, and even cleans devices—perfect for daily use.</p>",
+            "text": "<p><strong>Super Versatile:</strong></p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.</p>",
             "iconMob": "shopify://shop_images/spray.svg",
             "textMob": "<p><strong>It’s Super Versatile:</strong></p><p>From your face and body to your devices, this mist fits effortlessly into different parts of your day.</p>"
           }

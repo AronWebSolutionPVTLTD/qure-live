@@ -68,6 +68,14 @@
     "header": {
       "type": "exclusive-holiday-bundle-deal-header",
       "blocks": {
+        "badge_bNNHbU": {
+          "type": "badge",
+          "settings": {
+            "heading": "BLACK FRIDAY",
+            "text": "SALE",
+            "color": "#c4121a"
+          }
+        },
         "link_Xz3LeQ": {
           "type": "link",
           "settings": {
@@ -186,6 +194,7 @@
         }
       },
       "block_order": [
+        "badge_bNNHbU",
         "link_Xz3LeQ",
         "product_YzAr6q",
         "product_iEprpi",
@@ -201,6 +210,7 @@
         "product_LgpibG"
       ],
       "settings": {
+        "seo_heading": "",
         "heading": "Save Up to 55% on \\n Certified Skincare Solutions",
         "text": "<p>Backed by the most respected peer-reviewed <strong>Dermatologist Journals </strong>and <strong>scientific studies </strong>that prove; Qure’s skincare <strong>works.</strong></p>"
       }
@@ -443,6 +453,14 @@
     "bundles-header": {
       "type": "exclusive-holiday-bundle-deal-bundles-header",
       "blocks": {
+        "badge_TwBcgj": {
+          "type": "badge",
+          "settings": {
+            "heading": "BLACK FRIDAY",
+            "text": "SALE",
+            "color": "#c4121a"
+          }
+        },
         "object_pBAeDi": {
           "type": "object",
           "settings": {
@@ -469,6 +487,7 @@
         }
       },
       "block_order": [
+        "badge_TwBcgj",
         "object_pBAeDi",
         "object_kbrVPD",
         "object_MU6PFN"
@@ -511,7 +530,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-pro",
-            "percent": 30,
+            "percent": 28,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
@@ -589,7 +608,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-advanced-1",
-            "percent": 30,
+            "percent": 41,
             "media_limit": 0,
             "hide_us": true,
             "recommended_heading": "",
@@ -647,7 +666,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-essentials",
-            "percent": 30,
+            "percent": 38,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -768,15 +787,14 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-pro",
-            "percent": 30,
+            "percent": 31,
             "media_limit": 0,
             "hide_us": false,
-            "recommended_heading": "<p><strong>Dr Shah, MD</strong> Certified Dermatologist</p>",
-            "recommended_text": "<p>\"I recommend this treatment to so many of my patients who are looking for a glowing, fresh looking complexion\"</p>",
-            "recommended_image": "shopify://shop_images/cl_shah.webp",
-            "is_top_rated": true,
-            "is_preorder": false,
-            "preorder_text": "",
+            "recommended_heading": "",
+            "recommended_text": "",
+            "is_top_rated": false,
+            "is_preorder": true,
+            "preorder_text": "SHIPS MID DECEMBER",
             "classname": "",
             "code": ""
           }
@@ -846,12 +864,13 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-advance",
-            "percent": 30,
+            "percent": 23,
             "media_limit": 0,
             "hide_us": false,
-            "recommended_heading": "",
-            "recommended_text": "",
-            "is_top_rated": false,
+            "recommended_heading": "<p><strong>Dr. Prem Tripathi, </strong>Certified Plastic Surgeon</p>",
+            "recommended_text": "<p>“I’ve noticed improvements in pore size, texture and complexion. Qure delivered!”</p>",
+            "recommended_image": "shopify://shop_images/advisor_4.webp",
+            "is_top_rated": true,
             "is_preorder": false,
             "preorder_text": "",
             "classname": "",
@@ -904,7 +923,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-essentials",
-            "percent": 30,
+            "percent": 34,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -962,13 +981,13 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-limited-edition-bundle",
-            "percent": 30,
+            "percent": 24,
             "default_variant_id": 45991849787631,
             "media_limit": 3,
             "hide_us": false,
-            "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
-            "recommended_text": "<p>\"I recommend this treatment to so many of my patients who are looking for a glowing, fresh looking complexion\"</p>",
-            "recommended_image": "shopify://shop_images/cl_shah.webp",
+            "recommended_heading": "<p><strong>Dr Alexis Stephens</strong>, Certified Dermatologist</p>",
+            "recommended_text": "<p>“Get a Clinical treatment at home safely and conveniently. It is particularly beneficial for those with melanin-rich skin.”</p>",
+            "recommended_image": "shopify://shop_images/advisor_3.webp",
             "is_top_rated": false,
             "is_preorder": false,
             "preorder_text": "",
@@ -1022,7 +1041,7 @@
           "type": "product",
           "settings": {
             "product": "filter-family-bundle",
-            "percent": 30,
+            "percent": 31,
             "default_variant_id": 45909771124975,
             "media_limit": 0,
             "hide_us": true,
@@ -1157,12 +1176,13 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-pro-1",
-            "percent": 30,
+            "percent": 24,
             "default_variant_id": 45970548883695,
             "media_limit": 0,
             "hide_us": true,
-            "recommended_heading": "",
-            "recommended_text": "",
+            "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
+            "recommended_text": "<p>“The blue light treatment targets and kills bacteria in the skin so it’s very good for inflammatory acne..”</p>",
+            "recommended_image": "shopify://shop_images/advisor_1.webp",
             "is_top_rated": false,
             "is_preorder": false,
             "preorder_text": "",
@@ -1235,7 +1255,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-advanced",
-            "percent": 30,
+            "percent": 33,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -1293,7 +1313,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-starter",
-            "percent": 30,
+            "percent": 23,
             "default_variant_id": 45909844787439,
             "media_limit": 0,
             "hide_us": true,
@@ -1352,7 +1372,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-essentials",
-            "percent": 30,
+            "percent": 32,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -1447,14 +1467,14 @@
         "icon_E3nayg": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/science-ftr-lg.svg",
+            "image": "shopify://shop_images/s_q_3_1.png",
             "text": "<p>Science-Backed,</p><p>Dermatologist Approved</p>"
           }
         },
         "icon_PKBzbi": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/derma-ft-lg.svg",
+            "image": "shopify://shop_images/derma-ft-lg_1.png",
             "text": "<p>Safe & Easy to</p><p>Use Devices</p>"
           }
         },
@@ -1468,7 +1488,7 @@
         "icon_PncCDy": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/treat-skin-lg.svg",
+            "image": "shopify://shop_images/treat-skin-lg_1.png",
             "text": "<p>Treat Multiple</p><p>Skin Concerns</p>"
           }
         }

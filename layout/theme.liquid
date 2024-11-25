@@ -236,6 +236,14 @@
     <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
     <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
 
+
+    <script>
+        window.ALBSS = {
+          event_key: '225c861d-87c1-4b64-956f-d963e2cab43b'
+        };
+    </script>
+    <script src="https://c.albss.com/p/l/loader.iife.js" async></script>
+
     {% section 'slidecart' %}
 
     {% render 'gdpr' %} 
@@ -251,7 +259,7 @@
   
     <!-- hide launcher on the above page -->
 
-    {% comment %} {% include 'info' %} {% endcomment %}
+    {% include 'info' %}
 
 </body>
 </html>

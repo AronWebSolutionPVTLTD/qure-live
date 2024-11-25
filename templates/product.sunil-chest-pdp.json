@@ -52,6 +52,23 @@
             "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>GLOWON50</strong></p>",
             "timer": "2024-09-30T23:59:59"
           }
+        },
+        "supply_xAX9bT": {
+          "type": "supply",
+          "settings": {
+            "heading": "Next batch ships 19th December                                    2024:",
+            "heading_mobile": "Next batch ships 10/11:",
+            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "November 15th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "December 19th",
+            "second_option_text": "56% Reserved",
+            "second_option_percent": 56,
+            "third_option_date": "January 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0
+          }
         }
       },
       "block_order": [
@@ -59,16 +76,18 @@
         "list_azYRbY",
         "before_and_after_d9ReDz",
         "video_before_and_after_dPc77J",
-        "timer_fNiV3b"
+        "timer_fNiV3b",
+        "supply_xAX9bT"
       ],
       "settings": {
+        "seo_heading": "",
         "heading": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "heading_mobile": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false,
+        "reserve": true,
         "underbutton_text_left": "Dermatologist Reviewed",
         "underbutton_text_right": "Free Shipping Over $100",
         "selected_design": "new",

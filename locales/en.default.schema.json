@@ -92,6 +92,15 @@
     }
   },
   "common": {
+    "saving": {
+      "label": "saving"
+    },
+    "badge": {
+      "label": "Badge"
+    },
+    "color": {
+      "label": "Color"
+    },
     "read_more": "Read More Content",
     "container": {
       "size": "Section Width",
@@ -221,6 +230,9 @@
       "info": "Info Heading",
       "mobile": {
         "label": "Heading for mobile"
+      },
+      "seo_heading": {
+        "label": "Seo Heading"
       }
     },
     "announcement": {
