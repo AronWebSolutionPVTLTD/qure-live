@@ -80,6 +80,7 @@
         "free_gift_EC9AgX"
       ],
       "settings": {
+        "seo_heading": "",
         "heading": "Repair & rejuvenate your skin with our Light Therapy Mask",
         "heading_mobile": "Repair & rejuvenate your skin with our Light Therapy Mask",
         "product_images_limit": 5,
@@ -467,6 +468,7 @@
       "blocks": {
         "result_LwfFir": {
           "type": "result",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/results_teresa.webp",
             "heading": "IT REALLY WORKS!!",
