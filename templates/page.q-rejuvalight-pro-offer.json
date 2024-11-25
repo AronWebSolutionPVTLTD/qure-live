@@ -286,19 +286,6 @@
     "results_slider_RTd6ad": {
       "type": "results-slider",
       "blocks": {
-        "slide_pU3mTj": {
-          "type": "Slide",
-          "settings": {
-            "heading": "IT REALLY WORKS!!",
-            "product": "",
-            "text": "<p>I was very skeptical when my husband bought this mask for me. But after 6mo the results are amazing!! I’ve tried numerous serums for my sun spots but nothing worked until I used this mask. Definitely worth the money.</p>",
-            "image": "shopify://shop_images/results_teresa_3a620dd8-7320-41da-b19d-4202f4097626.webp",
-            "image_country": "shopify://shop_images/USA_07.png",
-            "client": "Teresa S.",
-            "concerns": "Dark spots, discoloration",
-            "verified": true
-          }
-        },
         "slide_f6CjxA": {
           "type": "Slide",
           "settings": {
@@ -418,7 +405,6 @@
         }
       },
       "block_order": [
-        "slide_pU3mTj",
         "slide_f6CjxA",
         "slide_36nkwc",
         "slide_R3C6JP",
@@ -433,80 +419,6 @@
         "heading": "Thousands are out-glowing their insecurities",
         "rating_text": "4.7/5 Based on 48,847 Users",
         "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg"
-      }
-    },
-    "featured_product_pEjkiL": {
-      "type": "featured-product",
-      "blocks": {
-        "product_images_mBWBRf": {
-          "type": "product_images",
-          "settings": {
-            "pd_image_1": "shopify://shop_images/led_large_1.webp",
-            "pd_image_2": "shopify://shop_images/led_large_2.webp",
-            "pd_image_3": "shopify://shop_images/led_large_3.webp",
-            "pd_image_4": "shopify://shop_images/led_large_4.webp"
-          }
-        },
-        "subheading_PeqaGP": {
-          "type": "subheading",
-          "settings": {
-            "badge_text": "IN A STUDY...",
-            "text": "97% customer satisfaction rate"
-          }
-        },
-        "heading_i8NCVD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Q-Rejuvalight Pro LED Mask",
-            "des": "<p>Repair and rejuvenate your skin—and boost your self-esteem—with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.</p>"
-          }
-        },
-        "product_benefits_jpWz4R": {
-          "type": "product_benefits",
-          "settings": {
-            "benefits": "<ul><li>Customizable treatment on 5 facial areas for your specific skin concerns</li><li>3-minute daily treatments with convenient, hands-free operation</li><li>Compatible app to track, plan and schedule your treatmentssss</li></ul>"
-          }
-        },
-        "button_mxBJWm": {
-          "type": "button",
-          "settings": {
-            "btn_text": "SAVE $50 use code: BF50",
-            "w_icon": "shopify://shop_images/money-sm.svg",
-            "warranty": "FREE 1-Year Warranty",
-            "d_icon": "shopify://shop_images/derma-sm.svg",
-            "recomand": "Dermatologist-Recommended",
-            "instalment": 4,
-            "payment_1": "shopify://shop_images/klarna_054e202f-ce52-442b-aae1-b5a683e1e822.svg",
-            "payment_3": "shopify://shop_images/Afterpay_1.svg"
-          }
-        }
-      },
-      "block_order": [
-        "product_images_mBWBRf",
-        "subheading_PeqaGP",
-        "heading_i8NCVD",
-        "product_benefits_jpWz4R",
-        "button_mxBJWm"
-      ],
-      "settings": {
-        "product": "q-rejuvalight-pro-facewear",
-        "pd_video": "https://www.youtube.com/watch?v=X9KXJPv6rno",
-        "video_txt": "See it in video"
-      }
-    },
-    "featured_product_2_YjNQXn": {
-      "type": "featured-product-2",
-      "settings": {
-        "bg_image": "shopify://shop_images/led_neck_bundle.webp",
-        "product": "neck-decolletage-led",
-        "product_name": "Neck & Decolletage LED Device",
-        "abt_product": "<p>Perfect combination to the Q-Rejuvalight Pro LED mask for the ultimate skin rejuvenation experience.</p>",
-        "benefits": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines, reduce appearance of wrinkles and boost firmness</li><li>Fade dark spots and repair sun-damaged skin for an even-toned complexion</li></ul>",
-        "btn_txt": "Bundle & SAVE",
-        "rating_text": "97% customer satisfaction rate",
-        "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "m_benefits": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines & wrinkles</li><li>Evens skin tone & smooths texture</li></ul>",
-        "image_mobile": "shopify://shop_images/led_neck_bundle_mob.webp"
       }
     },
     "how_to_use_tmBGpa": {
@@ -646,6 +558,80 @@
         "classname": "section videosQure",
         "btn": "",
         "btn_url": ""
+      }
+    },
+    "featured_product_pEjkiL": {
+      "type": "featured-product",
+      "blocks": {
+        "product_images_mBWBRf": {
+          "type": "product_images",
+          "settings": {
+            "pd_image_1": "shopify://shop_images/led_large_1.webp",
+            "pd_image_2": "shopify://shop_images/led_large_2.webp",
+            "pd_image_3": "shopify://shop_images/led_large_3.webp",
+            "pd_image_4": "shopify://shop_images/led_large_4.webp"
+          }
+        },
+        "subheading_PeqaGP": {
+          "type": "subheading",
+          "settings": {
+            "badge_text": "IN A STUDY...",
+            "text": "97% customer satisfaction rate"
+          }
+        },
+        "heading_i8NCVD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Q-Rejuvalight Pro LED Mask",
+            "des": "<p>Repair and rejuvenate your skin—and boost your self-esteem—with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.</p>"
+          }
+        },
+        "product_benefits_jpWz4R": {
+          "type": "product_benefits",
+          "settings": {
+            "benefits": "<ul><li>Customizable treatment on 5 facial areas for your specific skin concerns</li><li>3-minute daily treatments with convenient, hands-free operation</li><li>Compatible app to track, plan and schedule your treatmentssss</li></ul>"
+          }
+        },
+        "button_mxBJWm": {
+          "type": "button",
+          "settings": {
+            "btn_text": "SAVE $50 use code: BF50",
+            "w_icon": "shopify://shop_images/money-sm.svg",
+            "warranty": "FREE 1-Year Warranty",
+            "d_icon": "shopify://shop_images/derma-sm.svg",
+            "recomand": "Dermatologist-Recommended",
+            "instalment": 4,
+            "payment_1": "shopify://shop_images/klarna_054e202f-ce52-442b-aae1-b5a683e1e822.svg",
+            "payment_3": "shopify://shop_images/Afterpay_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "product_images_mBWBRf",
+        "subheading_PeqaGP",
+        "heading_i8NCVD",
+        "product_benefits_jpWz4R",
+        "button_mxBJWm"
+      ],
+      "settings": {
+        "product": "q-rejuvalight-pro-facewear",
+        "pd_video": "https://www.youtube.com/watch?v=X9KXJPv6rno",
+        "video_txt": "See it in video"
+      }
+    },
+    "featured_product_2_YjNQXn": {
+      "type": "featured-product-2",
+      "settings": {
+        "bg_image": "shopify://shop_images/led_neck_bundle.webp",
+        "product": "neck-decolletage-led",
+        "product_name": "Neck & Decolletage LED Device",
+        "abt_product": "<p>Perfect combination to the Q-Rejuvalight Pro LED mask for the ultimate skin rejuvenation experience.</p>",
+        "benefits": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines, reduce appearance of wrinkles and boost firmness</li><li>Fade dark spots and repair sun-damaged skin for an even-toned complexion</li></ul>",
+        "btn_txt": "Bundle & SAVE",
+        "rating_text": "97% customer satisfaction rate",
+        "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
+        "m_benefits": "<ul><li>Treat beyond the face for an all-over youthful appearance</li><li>Smooth fine lines & wrinkles</li><li>Evens skin tone & smooths texture</li></ul>",
+        "image_mobile": "shopify://shop_images/led_neck_bundle_mob.webp"
       }
     },
     "image_text_jBxiPm": {
@@ -804,11 +790,11 @@
     "uses_w3CMA7",
     "progress_blocks_d8f7qn",
     "results_slider_RTd6ad",
-    "featured_product_pEjkiL",
-    "featured_product_2_YjNQXn",
     "how_to_use_tmBGpa",
     "services_slider_ctkatz",
     "videos_list_niD9zY",
+    "featured_product_pEjkiL",
+    "featured_product_2_YjNQXn",
     "image_text_jBxiPm",
     "compare_8hnCcH",
     "faq_4akixC"

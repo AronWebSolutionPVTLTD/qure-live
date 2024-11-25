@@ -20,9 +20,11 @@
                             </div>
                         {% endif %}
 
+                        <h1 class="seo_heading">Qure Faucet Filter</h1>
+
                         <div class="section_header text-start">
-                            <h1 class="title-xl d-none d-md-block">Get clearer skin, on tap, with Qure Faucet Filter</h1>
-                            <h1 class="title-xl d-md-none">Get clearer skin, on tap, with Qure Faucet Filter</h1>
+                            <h2 class="title-xl d-none d-md-block">Get clearer skin, on tap, with Qure Faucet Filter</h2>
+                            <h2 class="title-xl d-md-none">Get clearer skin, on tap, with Qure Faucet Filter</h2>
                         </div>
 
                         {% comment %} <div class="price_wrap">
@@ -32,6 +34,10 @@
                                 </div>
                             </div>
                         </div> {% endcomment %}
+
+                        {% if settings.show_bf_price == true %}
+                            {% render 'bf-price-displaying', product: blank %}
+                        {% endif %}
 
                         <div class="mask_select_clr mt-4">
                             <h5>Select color:</h5>
@@ -99,6 +105,7 @@
                                         your skin will drink up.</li>
                                 </ul>
                             </div>
+
                             <div class="subscribe_save_wrapper without_subscription mt-2">
                                 <div class="subscribeTopInfo">
                                     <p>MOST POPULAR CHOICE</p>
@@ -110,7 +117,8 @@
                                                 <div class="d-flex justify-content-between">
                                                     <h6>Subscribe & save 30%</h6>
                                                     <div class="subscribePrice">
-                                                        <p><span>$129</span>$90.30</p>
+                                                        {% assign discount_percentage = product.price | times: 0.7 | money_without_trailing_zeros %}
+                                                        <p><span>{{ product.price |  money_without_trailing_zeros }}</span>{{ discount_percentage }}</p>
                                                     </div>
                                                 </div>
 
@@ -130,7 +138,7 @@
                                             One time purchase
                                         </div>
                                         <div class="noSubscriptionPrice">
-                                            $129
+                                            {{ product.price |  money_without_trailing_zeros }}
                                         </div>
                                     </div>
 
@@ -187,15 +195,15 @@
                                     data-arrowleft="productSlider-swiper-prev"
                                     data-arrowright="productSlider-swiper-next">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide video_popup">
+                                        <div class="swiper-slide video_popup pe-none">
                                             <div class="wistia_responsive_padding" style="position:relative;">
                                                 <div class="wistia_responsive_wrapper"
                                                     style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                                    <div class="wistia_embed wistia_async_ljh3hlps5u seo=false videoFoam=true"
+                                                    <div class="wistia_embed wistia_async_tev066z6pv seo=false videoFoam=true"
                                                         style="height:100%;position:relative;width:100%">
                                                         <div class="wistia_swatch"
                                                             style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                                                            <img src="https://fast.wistia.com/embed/medias/ljh3hlps5u/swatch"
+                                                            <img src="https://fast.wistia.com/embed/medias/tev066z6pv/swatch"
                                                                 style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
                                                                 alt="" aria-hidden="true"
                                                                 onload="this.parentNode.style.opacity=1;" />
@@ -355,7 +363,7 @@
 <!-- -- main banner end -- -->
 
 <!-- -- press slider start -- -->
-<div class="press_bl bg-lightGrey mt-4">
+{% comment %} <div class="press_bl bg-lightGrey mt-4">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12">
@@ -383,31 +391,15 @@
         </div>
 
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- press slider end -- -->
 
 <!-- -- image with text start -- -->
-<div class="imageText section qure_MI_ftr_wrap">
+{% comment %} <div class="imageText section qure_MI_ftr_wrap">
     <div class="container">
         <div class="hollywood_skin mt-0">
             <div class="row align-items-center">
                 <div class="col-12 col-md-5">
-                    <!-- <div class="it_img pb-3 pb-md-0 mw-mob-100">
-                        <div class="wistia_responsive_padding d-none d-md-block" style="position:relative;">
-                            <div class="wistia_responsive_wrapper"
-                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                <div class="wistia_embed wistia_async_a1pykz2tp0 seo=false videoFoam=true"
-                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
-                            </div>
-                        </div>
-                        <div class="wistia_responsive_padding d-block d-md-none" style="position:relative;">
-                            <div class="wistia_responsive_wrapper"
-                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                <div class="wistia_embed wistia_async_6ffu0xdg6l seo=false videoFoam=true"
-                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div> -->
                     <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd.webp" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-md-7">
@@ -444,11 +436,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- image with text end -- -->
 
 <!-- -- 6 reasons section start -- -->
-<div class="reasons section bg-transparent pb-md-0" id="reasons_section">
+{% comment %} <div class="reasons section bg-transparent pb-md-0" id="reasons_section">
     <div class="container">
         <div class="row">
             <div class="section_header text-center mb-3">
@@ -511,11 +503,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- 6 reasons section end -- -->
 
 <!-- -- result section start -- -->
-<div class="result_s section mi_landing_result" id="result_section">
+{% comment %} <div class="result_s section mi_landing_result" id="result_section">
     <div class="container">
         <div class="section_header text-center ms-0 mb-md-4 m-md-auto">
             <h2 class="title-lg">
@@ -646,11 +638,11 @@
 
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- result section end -- -->
 
 <!-- -- ingredients list start -- -->
-<div class="ingredients_list">
+{% comment %} <div class="ingredients_list">
     <div class="container">
         <div class="section_header text-center ms-0 m-md-auto">
             <h2 class="title-lg">
@@ -803,11 +795,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- ingredients list end -- -->
 
 <!-- -- featured promotion start -- -->
-<div class="featured_promotion my-5 bg-lightGrey d-none d-md-block">
+{% comment %} <div class="featured_promotion my-5 bg-lightGrey d-none d-md-block">
     <div class="container">
         <div class="fp-wrapper">
             <div class="fp_item">
@@ -853,11 +845,11 @@
 
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- featured promotion end -- -->
 
 <!-- -- trusted section start -- -->
-<div class="trusted_bl section pb-0 trustedVerified">
+{% comment %} <div class="trusted_bl section pb-0 trustedVerified">
     <div class="section">
         <div class="container">
             <div class="row align-items-center">
@@ -868,20 +860,19 @@
                                     alt="">
                                 <p>Trusted and recommended by world leading Dermatologists</p>
                             </div>
-                            <h2 class="title-lg"><span style="color: #797D7C;">"You wanna look for
-                                    something</span>
-                                that’s gonna reduce both calcium carbonate and chlorine<span
-                                    style="color: #797D7C;"> from your water."</span></h2>
+                            <h2 class="title-lg">"Harsh water<span style="color: #797D7C;"> can definitely
+                                    damage your skin on daily basis and it</span> impacts everything you are
+                                doing with your skincare"</h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2">
                     <div class="trusted_cl_m mb-2 mb-md-0">
-                        <img src="https://qureskincaredns.com/new/assets/dr_shah_trusted.webp" alt="" class="img-fluid t_m_img">
+                        <img src="https://qureskincaredns.com/new/assets/dr.maxfield.webp?rnd=1" alt="" class="img-fluid t_m_img">
                         <div class="play_btn trustedVerified_Play">
                             <div>
-                                <h5>Dr Shah, MD</h5>
-                                <h6> Board certified dermatologist</h6>
+                                <h5>Dr Maxfield, MD</h5>
+                                <h6>Board certified dermatologist</h6>
                             </div>
                             <a class="popup-youtube"
                                 href="https://www.youtube.com/watch?v=QuJ3puVLKzU"><span><img
@@ -927,7 +918,8 @@
                                     </div>
                                     <img src="https://qureskincaredns.com/new/assets/faucet_use_s_2.webp" alt="" class="img-fluid">
                                     <div class="step_text">
-                                        <p>Find the faucet thread accessory which best fits your faucet size. </p>
+                                        <p>Find the faucet thread accessory which best fits your faucet size.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -938,7 +930,9 @@
                                     </div>
                                     <img src="https://qureskincaredns.com/new/assets/faucet_use_s_3.webp" alt="" class="img-fluid">
                                     <div class="step_text">
-                                        <p>Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. Turn the toggle button to “Q” mark on the filter ans enjoy healthier, clearer skin!</p>
+                                        <p>Clip Qure Faucet Filter onto the faucet. Once you hear it click it is
+                                            installed. Turn the toggle button to “Q” mark on the filter ans
+                                            enjoy healthier, clearer skin!</p>
                                     </div>
                                 </div>
                             </div>
@@ -968,7 +962,8 @@
                                     <div class="step_cards">
                                         <img src="https://qureskincaredns.com/new/assets/faucet_use_s_1.webp" alt="" class="img-fluid">
                                         <div class="step_text">
-                                            <p>Remove faucet aerator. Simply attach and twist it off using the key for removal.</p>
+                                            <p>Remove faucet aerator. Simply attach and twist it off using the
+                                                key for removal.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -977,7 +972,8 @@
                                     <div class="step_cards">
                                         <img src="https://qureskincaredns.com/new/assets/faucet_use_s_2.webp" alt="" class="img-fluid">
                                         <div class="step_text">
-                                            <p>Find the faucet thread accessory which best fits your faucet size.</p>
+                                            <p>Find the faucet thread accessory which best fits your faucet
+                                                size.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -986,7 +982,9 @@
                                     <div class="step_cards">
                                         <img src="https://qureskincaredns.com/new/assets/faucet_use_s_3.webp" alt="" class="img-fluid">
                                         <div class="step_text">
-                                            <p>Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. Turn the toggle button to “Q” mark on the filter ans enjoy healthier, clearer skin!</p>
+                                            <p>Clip Qure Faucet Filter onto the faucet. Once you hear it click
+                                                it is installed. Turn the toggle button to “Q” mark on the
+                                                filter ans enjoy healthier, clearer skin!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1000,11 +998,11 @@
                                     <div class="wistia_responsive_padding" style="position:relative;">
                                         <div class="wistia_responsive_wrapper"
                                             style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                            <div class="wistia_embed wistia_async_t0xzq5gdvm seo=false videoFoam=true"
+                                            <div class="wistia_embed wistia_async_ejhd901ecq seo=false videoFoam=true"
                                                 style="height:100%;position:relative;width:100%">
                                                 <div class="wistia_swatch"
                                                     style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                                                    <img src="https://fast.wistia.com/embed/medias/t0xzq5gdvm/swatch"
+                                                    <img src="https://fast.wistia.com/embed/medias/ejhd901ecq/swatch"
                                                         style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
                                                         alt="" aria-hidden="true"
                                                         onload="this.parentNode.style.opacity=1;" />
@@ -1020,11 +1018,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- trusted section end -- -->
 
 <!-- -- advanced filtration start -- -->
-<div class="advanced-filtration section">
+{% comment %} <div class="advanced-filtration section">
     <div class="container">
         <div class="section_header text-center ms-0 m-md-auto">
             <h2 class="title-lg">
@@ -1145,11 +1143,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- advanced filtration end -- -->
 
 <!-- Video blocks -->
-<div class="section videosQure bg-lightGrey">
+{% comment %} <div class="section videosQure bg-lightGrey">
     <div class="container">
         <div class="section_header text-center mb-3 mw-630 pb-0">
             <h2 class="title-lg">
@@ -1305,11 +1303,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- Video blocks end-->
 
 <!-- -- beauty clinical start -- -->
-<div class="beauty_skincare section bg-white">
+{% comment %} <div class="beauty_skincare section bg-white">
     <div class="container">
         <div class="section_header text-center mb-3">
             <h2 class="title-lg paddingB">
@@ -1371,11 +1369,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- -- beauty clinical start -- -->
 
 <!-- -- faq start -- -->
-<div class="faq bg_yellow py-75">
+{% comment %} <div class="faq bg_yellow py-75">
     <div class="container">
         <div class="section_header text-center mb-3">
             <h2 class="title-lg">
@@ -1590,7 +1588,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- --faq end -- -->
 
 <script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>

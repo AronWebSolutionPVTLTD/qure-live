@@ -6,7 +6,7 @@
                 <div class="fp_item">
                     {% if block.settings.image != blank %}
                         <div class="fp_icon">
-                            <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.image.alt | escape }}">
+                            <img src="{{ block.settings.image | img_url: '150x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid">
                         </div>
                     {% endif %}
                     {% if block.settings.text != blank %}
@@ -45,7 +45,7 @@
                         "label": "Yellow"
                     },
                     {
-                        "value": "trasnparent",
+                        "value": "bg-transparent",
                         "label": "Transparent"
                     }
                 ]

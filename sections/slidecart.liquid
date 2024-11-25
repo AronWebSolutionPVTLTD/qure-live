@@ -8,6 +8,14 @@
 {% assign price_check=cart.items_subtotal_price | divided_by: 100 %}
 {% assign shipping_charge =  1000 %}
 
+{% assign custom_saving = blank %}
+
+{%- for block in section.blocks -%}
+    {% if block.type == 'saving' %}
+        {%- assign custom_saving = block -%}
+    {% endif %}
+{% endfor %}
+
 {% render "slidecart-insurance" %}
 
 <link rel="stylesheet" href="{{ 'drawer-mb.css' | asset_url }}">
@@ -390,7 +398,11 @@
 						{% if cart.item_count > 0  %}
 							{%- if total_cart_compare_price > 0 -%}
 								{% if savings %}
-									<p class="drawer_savings">You're saving</p>
+									{% if custom_saving != blank %}
+										<p class="drawer_savings" style="color: {{ custom_saving.settings.color }}">{{ custom_saving.settings.text }}</p>
+									{% else %}
+										<p class="drawer_savings">You're saving</p>
+									{% endif %}
 								{% endif %}
 							{%- endif -%}
 						{% endif %}
@@ -821,6 +833,25 @@
 					}
 				]
 			},
+			{
+                "type": "saving",
+                "name": "t:common.saving.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "t:common.text.label",
+                        "default": "Black Friday Savings"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color",
+                        "label":"t:common.color.label",
+                        "default":"#C4121A"
+                    }
+                ]
+            },
 			{
 				"name": "trustpilot",
 				"type": "trustpilot",

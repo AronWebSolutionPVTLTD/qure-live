@@ -52,6 +52,23 @@
             "text": "<p>Get <em><strong>$50 OFF</strong></em><strong> </strong>with code: <strong>GLOWON50</strong></p>",
             "timer": "2024-09-30T23:59:59"
           }
+        },
+        "supply_xAX9bT": {
+          "type": "supply",
+          "settings": {
+            "heading": "Next batch ships 19th December                                    2024:",
+            "heading_mobile": "Next batch ships 10/11:",
+            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "November 15th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "December 19th",
+            "second_option_text": "56% Reserved",
+            "second_option_percent": 56,
+            "third_option_date": "January 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0
+          }
         }
       },
       "block_order": [
@@ -59,16 +76,18 @@
         "list_azYRbY",
         "before_and_after_d9ReDz",
         "video_before_and_after_dPc77J",
-        "timer_fNiV3b"
+        "timer_fNiV3b",
+        "supply_xAX9bT"
       ],
       "settings": {
+        "seo_heading": "Red Light Neck & Chest Mask",
         "heading": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "heading_mobile": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": false,
+        "reserve": true,
         "underbutton_text_left": "Dermatologist Reviewed",
         "underbutton_text_right": "Free Shipping Over $100",
         "selected_design": "new",
@@ -415,6 +434,7 @@
             "image": "shopify://shop_images/results_claudia.webp",
             "heading": "Healthier-looking glow",
             "text": "<p>“I was shocked seeing my before and after photos!! I didn’t realise how much my skin improved. I feel so much more confident wearing open tops now. My skin looks much more even, less red and all round healthier. Happy I invested into this device and would definitely recommend it to everyone :)”<br/>                                    </p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "Claudia",
@@ -427,6 +447,7 @@
             "image": "shopify://shop_images/results_sophia.webp",
             "heading": "From sun damage to this",
             "text": "<p>“After years damage from the strong Aussie sun I wanted to try LED therapy to help rejuvenate and repair my decollate area as I read lots of positive reviews on it. I’m so glad I did because after using it daily, I've witnessed this transformation!!! Skin is firmer, sunspots have faded and texture is so much smoother!! ”                     </p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/australia_f_35e9b6f0-d77f-4184-afaf-224d96562185.webp",
             "text_country": "Australia",
             "client": "Sophia. N",
@@ -439,6 +460,7 @@
             "image": "shopify://shop_images/results_marry.webp",
             "heading": "Outstanding",
             "text": "<p>“I’m so impressed with the results! I noticed a difference after a few weeks however when comparing photos I am so surprised at how much younger the skin on my neck and chest looks. Wrinkles have significantly reduced, sun spots are lighter and my skin looks and feels more rejuvenated. Device is easy to use, I love that I can clip the controller to my robe and multitask around the house whilst the treatment is on.\"                                    </p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Mary R.M.",
@@ -451,6 +473,7 @@
             "image": "shopify://shop_images/results_josie1.webp",
             "heading": "Stubborn inflammation",
             "text": "<p>“After struggling with acne and the stubborn pigmentation it left behind, I'm thrilled with the results I've seen after using Qure LED chest device. My skin is clearer, and the pigmentation has significantly faded. The most important, I don’t have to cover my neck and chest with foundations and concealers anymore”                      </p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Josie",
@@ -633,7 +656,8 @@
         "heading": "Hello beautiful skin, goodbye clinical costs",
         "heading_reduced": "",
         "text": "<p>Are you ready to enjoy the same technology used in clinics, without the price tag or hassle?</p><p>Get that professional-looking result from the comfort of your own home – for a fraction of what you’d pay elsewhere.</p>",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "faq_UUdrDJ": {

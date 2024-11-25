@@ -11,6 +11,22 @@
   "sections": {
     "main": {
       "type": "collection",
+      "blocks": {
+        "banner_MmtDKQ": {
+          "type": "banner",
+          "settings": {
+            "heading": "BLACK FRIDAY SALE",
+            "subheading": "21% Off",
+            "text": "SITEWIDE",
+            "wistia_id": "7dqki9g4sz",
+            "wistia_id_mobile": "o6in7qx104",
+            "link_url": "shopify://collections/fine-line-wrinkles"
+          }
+        }
+      },
+      "block_order": [
+        "banner_MmtDKQ"
+      ],
       "settings": {
         "heading": "",
         "heading_mobile": "",
@@ -102,8 +118,7 @@
         "doctor_card_mikzkG",
         "brand_card_ynEhKC"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "results_NPPBwQ": {
       "type": "results",

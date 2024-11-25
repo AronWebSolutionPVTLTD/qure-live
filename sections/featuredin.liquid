@@ -8,7 +8,7 @@
 {%- endfor -%}
 
 <!-- -- press slider start -- -->
-<div class="press_bl">
+<div class="press_bl {{ section.settings.custom_cls }}">
     <div class="container">
         <div class="row align-items-center">
             {% if heading_count > 0 %}
@@ -94,6 +94,11 @@
       "type": "text",
       "id": "heading",
       "label": "t:common.heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_cls",
+      "label": "t:common.classname.custom"
     }
   ],
   "blocks": [

@@ -1,5 +1,5 @@
 <!-- -- result section start -- -->
-<div class="result_s section {{ section.settings.classname }}" id="result_section">
+<div class="result_s section {{ section.settings.classname }} cc" id="result_section">
     <div class="container">
         <div class="section_header text-start text-md-center ms-0 m-md-auto mw-100">
             {% if section.settings.heading != blank %}
@@ -21,7 +21,7 @@
                         {% case block.type %}
                             {% when 'result' %}
                                 <div class="swiper-slide">
-                                    <div class="result_item{% if block.settings.code != blank %} result_item_info_with_fixed{% endif %}">
+                                    <div class="result_item{% if block.settings.code != blank %} result_item_info_with_fixed{% endif %} {% if block.settings.see-more != blank %} h-100 {% endif %}">
                                         {% if block.settings.image != blank %}
                                             <div class="result_img_m">
                                                 <img class="img-fluid" src="{{ block.settings.image | img_url: '450x' }}" alt="{{ block.settings.image.alt | escape }}">
@@ -61,6 +61,13 @@
                                                 {% if block.settings.text != blank %}
                                                     {{ block.settings.text }}
                                                 {% endif %}
+                                                {% if block.settings.see-more != blank %}
+                                                <div class="read-more-content2">
+                                                    <p class="nomargin">{{ block.settings.see-more }}</p>
+                                                </div>
+                                                <a href="javascript:void(0);" class="read-more2 text-black" title="Read More">See
+                                                More</a>
+                                                {% endif %}
                                             </div>
                                         </div>
                                         {% if block.settings.code != blank %}
@@ -93,6 +100,21 @@
     </div>
 </div>
 <!-- -- result section end -- -->
+{% style %}
+.read-more-content2 {
+    display: none;
+    padding-top: 22px;
+}
+.read-more2 {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    text-decoration-line: underline;
+    color: #000;
+}
+{% endstyle %}
 
 
 {% schema %}
@@ -148,6 +170,11 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "see-more",
+                        "label": "t:common.read_more"
                     },
                     {
                         "type": "image_picker",

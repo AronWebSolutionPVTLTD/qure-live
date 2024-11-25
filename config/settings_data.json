@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "show_bf_price": true,
     "favicon": "shopify://shop_images/qure.png",
     "social_instagram_link": "https://www.instagram.com/qureskincare/",
     "social_facebook_link": "https://www.facebook.com/Qureskincare/",
@@ -35,7 +36,7 @@
     "start_time_order": "2024-10-30T23:00",
     "end_time_order": "2024-11-04T23:59",
     "show_order_by_receive_by_us": false,
-    "enable_corner_treatment_bfcm": false,
+    "enable_corner_treatment_bfcm": true,
     "enable_site_gamification": true,
     "enable_free_shipping_treshold": true,
     "enable_product_gift": true,
@@ -45,7 +46,7 @@
     "icon_product_gift_gradient": "shopify://shop_images/site_gamification_pillow_gradient.svg",
     "icon_product_gift_full": "shopify://shop_images/site_gamification_pillow_full.svg",
     "enable_site_wide_timer": true,
-    "start_date": "11-20-2024 20:00",
+    "start_date": "11-20-2024 22:00",
     "finish_date": "12-02-2024 11:59",
     "promotion": "promotion",
     "sections": {
@@ -102,8 +103,8 @@
             "type": "banner",
             "settings": {
               "image": "shopify://shop_images/header_drop2.webp",
-              "button_label": "Discover our [Best Selling] Products",
-              "button_url": "shopify://collections/best-sellers"
+              "button_label": "Shipping & Exchanges",
+              "button_url": "shopify://pages/faq-orders-shipping"
             }
           }
         },
@@ -116,8 +117,7 @@
           "banner_jibKaz",
           "banner_pe7PzR"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "newsletter": {
         "type": "newsletter",
@@ -184,6 +184,13 @@
       "slidecart": {
         "type": "slidecart",
         "blocks": {
+          "saving_FbLdxK": {
+            "type": "saving",
+            "settings": {
+              "text": "Black Friday Savings",
+              "color": "#c4121a"
+            }
+          },
           "gift_ccQgi4": {
             "type": "gift",
             "disabled": true,
@@ -266,6 +273,7 @@
           }
         },
         "block_order": [
+          "saving_FbLdxK",
           "gift_ccQgi4",
           "upsell_bR4pCx",
           "upsell_8Karyz",
@@ -286,7 +294,7 @@
           "sidecart_timer_new_enable": true,
           "start_date": "11-20-2024 20:00",
           "finish_date": "12-02-2024 11:59",
-          "label_ends": "Early Black Friday Sale Ends In:",
+          "label_ends": "Black Friday Sale Ends In:",
           "label_days": "DAYS",
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
@@ -323,56 +331,46 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "8218531531362863771": {
         "type": "shopify://apps/kite-free-gift-discounts/blocks/app-embed/2c7302c4-455d-4078-a829-48563ba26089",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "1291562577487733835": {
         "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "11945366711752539959": {
         "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "2728461494843721857": {
         "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "471852632697159186": {
         "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
   "presets": {
-    "Default": {
-    }
+    "Default": {}
   }
 }
