@@ -50,9 +50,9 @@
         "supply_CTrVRQ"
       ],
       "settings": {
-        "seo_heading": "",
-        "heading": "Cleanse your skin with \\n Hypochlorous Acid Spray Dermal Mist",
-        "heading_mobile": "Cleanse your skin with \\n Hypochlorous Acid \\n Spray Dermal Mist",
+        "seo_heading": "Hypochlorous Acid Spray Dermal Mist",
+        "heading": "Cleanse, calm, and clear your skin with Dermal Mist",
+        "heading_mobile": "Cleanse, calm, and clear your skin with Dermal Mist",
         "product_images_limit": 3,
         "product_button_label": "Product",
         "before_after_images_limit": 0,
@@ -277,7 +277,8 @@
         "heading": "A mist that does more than refresh",
         "heading_reduced": "",
         "text": "",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "benefits_slider_G6Lxbd": {
