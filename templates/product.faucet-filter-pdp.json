@@ -7,11 +7,108 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
-    "temp-product-faucet-filter-pdp": {
-      "type": "temp-product-faucet-filter-pdp",
-      "settings": {}
+    "main": {
+      "type": "product-extended",
+      "blocks": {
+        "rating_6FYizY": {
+          "type": "rating",
+          "settings": {
+            "image": "shopify://shop_images/star-half_fill.svg",
+            "text": "<p>5/5 Rated by Customers</p>"
+          }
+        },
+        "list_EVK9TV": {
+          "type": "list",
+          "settings": {
+            "text": "<ul><li>Advanced water filter aids in reducing irritants for clearer, hydrated skin.</li><li>Reduces pore-clogging contaminants and prevents pre-mature aging without any extra steps in your routine.</li><li>Optimizes skincare effectiveness, and provides the most purified cleanse your skin will drink up.</li></ul>"
+          }
+        },
+        "variant_3yKhQx": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/water-fIlter-white.webp",
+            "variant_id": 45852978348271
+          }
+        },
+        "variant_8RVKyP": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/water-fIlter-black.webp",
+            "variant_id": 45852978315503
+          }
+        },
+        "before_and_after_KfYL7X": {
+          "type": "before_and_after",
+          "settings": {
+            "image_new_section_1": "shopify://shop_images/faucet_flter-result-1n.webp",
+            "image_new_section_text_1": "image 1",
+            "image_new_section_2": "shopify://shop_images/faucet_flter-result-2n.webp",
+            "image_new_section_text_2": "image 2",
+            "image_new_section_text_3": "image 3",
+            "image_new_section_text_4": "",
+            "image_new_section_text_5": "",
+            "image_new_section_text_6": ""
+          }
+        },
+        "video_before_and_after_kUMR9A": {
+          "type": "video_before_and_after",
+          "settings": {
+            "video_wistia_id": "mldew3t0p6"
+          }
+        },
+        "list_reduced_yep6j9": {
+          "type": "list_reduced",
+          "settings": {
+            "text": "<ul><li><strong>Treats acne</strong>, fine lines, wrinkles, and dark spots</li><li>Adaptable to <strong>your unique skin concerns</strong></li><li><strong>Quick 3-minute</strong>, wireless, daily treatment</li><li><strong>FDA-cleared</strong></li></ul>"
+          }
+        },
+        "subscribe_tnLCRQ": {
+          "type": "subscribe",
+          "settings": {
+            "heading": "Subscribe & save 30%",
+            "text": "<p>3 month replacement filter delivers every 90 days for just $31.50. Skip or cancel anytime. <a href=\"https://www.qureskincare.com/pages/subscriptions\" target=\"_blank\">See more details</a></p>",
+            "plan": "6190465263",
+            "discount": 30
+          }
+        }
+      },
+      "block_order": [
+        "rating_6FYizY",
+        "list_EVK9TV",
+        "variant_3yKhQx",
+        "variant_8RVKyP",
+        "before_and_after_KfYL7X",
+        "video_before_and_after_kUMR9A",
+        "list_reduced_yep6j9",
+        "subscribe_tnLCRQ"
+      ],
+      "settings": {
+        "seo_heading": "Qure Faucet Filter",
+        "heading": "Get clearer skin, on tap, with Qure Faucet Filter",
+        "heading_mobile": "Get clearer skin, on tap, with Qure Faucet Filter",
+        "wistia_id": "tev066z6pv",
+        "product_images_limit": 6,
+        "product_button_label": "Product",
+        "before_after_images_limit": 2,
+        "before_after_button_label": "Before & After",
+        "reserve": false,
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "selected_design": "new",
+        "text_label_real_result_1": "Product",
+        "text_label_real_result_2": "Real Results",
+        "text_label_real_result_3": "Dermatologist"
+      }
+    },
+    "liquid_FrGCjn": {
+      "type": "liquid",
+      "settings": {
+        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    setTimeout(() => { $(\"#productButton\").trigger('click') }, 1500);\n});\n\n</script>"
+      }
     },
     "featuredin_FdCAV8": {
       "type": "featuredin",
@@ -745,7 +842,8 @@
     }
   },
   "order": [
-    "temp-product-faucet-filter-pdp",
+    "main",
+    "liquid_FrGCjn",
     "featuredin_FdCAV8",
     "image_text_2_rn78Ab",
     "reasons_Y4QGUa",

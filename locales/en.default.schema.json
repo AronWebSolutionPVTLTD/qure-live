@@ -101,6 +101,12 @@
     }
   },
   "common": {
+    "variant": {
+      "label": "Variant"
+    },
+    "variant_id": {
+      "label": "variant_id"
+    },
     "saving": {
       "label": "saving"
     },
