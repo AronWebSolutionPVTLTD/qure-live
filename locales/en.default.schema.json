@@ -131,7 +131,8 @@
     },
     "tab": {
       "name": "Tab Name",
-      "tab": "Tab"
+      "tab": "Tab",
+      "image": "Tab Image"
     },
     "skin": {
       "concerns": "Skin Concerns",
@@ -341,7 +342,8 @@
       "label": "People choise"
     },
     "list": {
-      "label": "List"
+      "label": "List",
+      "featured": "Feature List"
     },
     "result": {
       "label": "Result"
@@ -1321,7 +1323,8 @@
       "label": "How to use steps"
     },
     "limited-offer": {
-      "label": "Limited Offer Product"
+      "label": "Limited Offer Product",
+      "text": "Free Offer Text"
     },
     "money-back": {
       "label": "Money Back Guarantee"
@@ -1347,6 +1350,15 @@
     },
     "product_science": {
       "label": "Product Science"
+    },
+    "pd_tabs": {
+      "label": "Product Images & Text"
+    },
+    "five_reasons": {
+      "label": "Five Reasons Love"
+    },
+    "what_is_Included": {
+      "label": "What's Included"
     }
   }
 }
