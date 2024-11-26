@@ -258,8 +258,48 @@
     },
     "liquid_dHhCqQ": {
       "type": "liquid",
+      "disabled": true,
       "settings": {
-        "code": "<!-- --- technology sources start -- -->\n        <div class=\"technolgy_source section\">\n            <div class=\"container\">\n                <div class=\"section_header mw-750 text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Technology that delivers anti-aging ingredients directly to the\n                        source\n                    </h2>\n                    <p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly\n                        penetrates\n                        the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum\n                            potential.</strong> The patches\n                        begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as\n                            little as\n                            two\n                            hours.</strong></p>\n                </div>\n                <div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech4.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER</h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.</p>\n                        </div>\n                    </div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    </div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech2.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE</h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.</p>\n                        </div>\n                    </div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    </div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech5.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT</h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- --- technology sources end -- -->"
+        "code": "<!-- --- technology sources start -- -->\n        <div class=\"technolgy_source section\">\n            <div class=\"container\">\n                <div class=\"section_header mw-750 text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Technology that delivers anti-aging ingredients directly to the\n                        source\n                    <\/h2>\n                    <p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly\n                        penetrates\n                        the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum\n                            potential.<\/strong> The patches\n                        begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as\n                            little as\n                            two\n                            hours.<\/strong><\/p>\n                <\/div>\n                <div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech4.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER<\/h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.<\/p>\n                        <\/div>\n                    <\/div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    <\/div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech2.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE<\/h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.<\/p>\n                        <\/div>\n                    <\/div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    <\/div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech5.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT<\/h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.<\/p>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n        <!-- --- technology sources end -- -->"
+      }
+    },
+    "product_science_pzmLn7": {
+      "type": "product-science",
+      "blocks": {
+        "column_qeFJKM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patches_tech4.webp",
+            "title": "DELIVER",
+            "pd_text": "<p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into the skin for deeper delivery.<\/p>"
+          }
+        },
+        "column_bi3tmi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patches_tech2.webp",
+            "title": "DISSOLVE",
+            "pd_text": "<p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb into the skin.<\/p>"
+          }
+        },
+        "column_t9G3RJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/patches_tech5.webp",
+            "title": "PROTECT",
+            "pd_text": "<p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients and delivering fast, visible results.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_qeFJKM",
+        "column_bi3tmi",
+        "column_t9G3RJ"
+      ],
+      "settings": {
+        "heading": "Technology that delivers anti-aging ingredients directly to the source",
+        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential. <\/strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.<\/strong><\/p>",
+        "custom_class": "section"
       }
     },
     "results_pkwNpm": {
@@ -868,6 +908,7 @@
     "two_column_box_LbCXBk",
     "confidence_slider_Wgjdzg",
     "liquid_dHhCqQ",
+    "product_science_pzmLn7",
     "results_pkwNpm",
     "videos_RDmhf8",
     "two_column_box_cGgxCb",
