@@ -197,7 +197,7 @@
         ".beauty_skincare .bs_grid div.bs_item:nth-child(3) h4 {opacity: 0.5;}"
       ],
       "settings": {
-        "classname": "beauty_skincare section bg-white",
+        "classname": "beauty_skincare beauty_skincare-new section bg-white",
         "heading": "The case against cotton",
         "heading_reduced": "",
         "text": "<p>Your cotton pillowcase has a lot to answer for as they are holding back your advanced skincare routine. Cotton is a highly absorbent fabric! So while you take time every night to remove your makeup and put on your most powerful and effective skincare, cotton can suck it in, leading to clogged pores, breakouts, and puffy eyes from the product migration<\/p>",
