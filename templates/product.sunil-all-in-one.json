@@ -65,8 +65,9 @@
         "video_before_and_after_QXnPdD"
       ],
       "settings": {
-        "heading": "Anti-Aging All-In-One Face Serum",
-        "heading_mobile": "Anti-Aging All-In-One Face Serum",
+        "seo_heading": "Anti-Aging & All-In-One Serum",
+        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "heading_mobile": "Embrace ageless confidence with All-In-One Face Serum",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
@@ -136,7 +137,8 @@
       ],
       "custom_css": [],
       "settings": {
-        "heading": ""
+        "heading": "",
+        "custom_cls": ""
       }
     },
     "two_column_box_TyH4EK": {
@@ -383,6 +385,7 @@
             "image": "shopify://shop_images/results_chery.webp",
             "heading": "I SEE A DIFFERENCE!!",
             "text": "<p>\"I SEE A DIFFERENCE!! This product is a keeper. I’ve been using it for 2 weeks now and there is definitely a big difference in my skin!! I noticed my sun spots have lighten, especially on the backs of my hands. Facial redness and discolorations have lessened! Very happy with this serum.\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Cheryl T.",
@@ -395,6 +398,7 @@
             "image": "shopify://shop_images/White.png",
             "heading": "The best serum!!",
             "text": "<p>“I can't believe it! In just 2 months of using this serum, the results on my skin are absolutely amazing. I no longer have to rely on heavy makeup and concealer to cover up any imperfections. This serum has truly worked wonders for me!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/hk-flag.png",
             "text_country": "Hong Kong",
             "client": "White C.",
@@ -407,6 +411,7 @@
             "image": "shopify://shop_images/Elizabeth_e05bd0ad-8f29-43f7-8f84-9deaf17f4d33.png",
             "heading": "Feels like heaven",
             "text": "<p>\"Feels like heaven. Sad the bottle won’t last 😒\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Elizabeth R.",
@@ -419,6 +424,7 @@
             "image": "shopify://shop_images/B_A1.png",
             "heading": "All in for All in one face serum",
             "text": "<p>“I purchased this as part of my nightly routine as a few dark spots and some fine lines showing up. After using it consistently now for 6-8 weeks, I can honestly say the darker spots are lighter. My skin feels smooth and I see less fine lines! I will continue on this journey in hopes to see even more benefits like brighter, plump skin!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Johanna Young",
@@ -432,6 +438,7 @@
             "image": "shopify://shop_images/results_jessica.webp",
             "heading": "Best experience",
             "text": "<p>\"Best experience. I got an excellent costumer service, they have been very attentive to my questions and the quality of the items they sell. I give them a 100/100 , My skin had a small breakout, enlarged pores and was tired, with just one micro-infusion treatment it changed radically in 3 days, I will buy it again”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Jessica R.",
@@ -444,6 +451,7 @@
             "image": "shopify://shop_images/irina_k_desktop.png",
             "heading": "Amazing Serum!",
             "text": "<p>“I am 52, tried many different brands. This one does the job! I love multiple product in it so this way you truly have all in one serum!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "Unites States",
             "client": "Irina K.",
@@ -456,6 +464,7 @@
             "image": "shopify://shop_images/results_bethany.webp",
             "heading": "Changed my life!",
             "text": "<p>\"This product has changed my life! My skin feels brighter, clearer and way more even! I’ll use this for the rest of my life!\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/canada_f.svg",
             "text_country": "Canada",
             "client": "Bethany N.",
@@ -468,6 +477,7 @@
             "image": "shopify://shop_images/results_vanessa.webp",
             "heading": "My cystic acne is gone.",
             "text": "<p>\"So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Vanessa B.",
@@ -480,6 +490,7 @@
             "image": "shopify://shop_images/results_ebony.webp",
             "heading": "I love this serum",
             "text": "<p>“I rarely have the guts to try new skincare as I just hate wasting my money on products I don't like and haven't gotten to sample before. But I got recommended this from a girlfriend of mine and was so happy I took on her recommendation because i LOVE this serum. It's the perfect everyday serum that you can actually notice a difference in your skin with!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
             "client": "Ebony",
@@ -492,6 +503,7 @@
             "image": "shopify://shop_images/results_lena.webp",
             "heading": "My skin feels tight",
             "text": "<p>\"I tried this serum after trying all the others. I have found the fountain of youth! It started minimizing fine lines from the first use. My skin feels tight, but, not too tight. My face is softer than it has been in 20 years. I will not be using any serums on my face except QURE. I am thrilled with the results!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Lena A.",
@@ -504,6 +516,7 @@
             "image": "shopify://shop_images/results_tina.webp",
             "heading": "I  look fresher",
             "text": "<p>\"I am only 2 weeks in on using this product, my skin feels softer, hydrated and glowing. Friends have asked me what do I use on my face as I look fresher.</p><p>I tell them Qure All in One Face Serum. I have give them your website to order their choice of products from your company 😁👍.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Tina C.",
@@ -516,6 +529,7 @@
             "image": "shopify://shop_images/results_dona.webp",
             "heading": "Love your serum!",
             "text": "<p>\"Love your serum! It goes on easily, feels good, and did make my old skin look and feel better.</p><p>Wish it had been around when I was in my 30’s. I might have taken care of my skin. Since my late 60’s I’ve tried other brands. All were a bit disappointing and I saw few results. After two weeks using Qure I actually thought my old skin looked better.\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_89e25711-f730-4521-8931-83b3307204af.png",
             "text_country": "United States",
             "client": "Dona S.",
@@ -528,6 +542,7 @@
             "image": "shopify://shop_images/Group_129K9.png",
             "heading": "Amazing products!",
             "text": "<p>“I'm so happy, l've been using the products for 2 months and they have made such a difference in my skin. I had tried a lot of products before but with just one bottle of the serum, staying consistent with the Mask, and doing a few treatments of the micro infusion for scaring. l've seen a huge change in my skin.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/Mask_Grokkup.png",
             "text_country": "Colombia",
             "client": "Ana L",
@@ -690,9 +705,13 @@
       ],
       "settings": {
         "heading": "Confident skin starts here. Just ask the internet.",
+        "sub_heading": "",
         "classname": "section videosQure",
         "btn": "",
-        "btn_url": ""
+        "btn_url": "",
+        "desk_slide": 6,
+        "mob_slide": 1.7,
+        "slide_space": 10
       }
     },
     "faq_bWmm3Y": {
