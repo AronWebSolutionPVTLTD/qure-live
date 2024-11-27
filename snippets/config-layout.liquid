@@ -229,7 +229,7 @@
         {% assign main_class = 'blogs' %}
         <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
     {% when 'article' %}
-        {% assign main_class = 'blogs article_blog' %}
+        {% assign main_class = 'blogs article_blog article_blog-new' %}
         <link rel="stylesheet" href="{{ 'blogs.css' | asset_url }}">
     {% when 'cart' %}
         {% assign main_class = 'shopping_cart' %}
