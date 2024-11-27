@@ -24,20 +24,21 @@
                                     {% case block.type %}
                                     {% when 'tabs' %}
                                     <button 
-                                        class="nav-link {% if forloop.first %}active{% endif %}" 
+                                        class="nav-link {% if forloop.index == 2 %}active{% endif %}" 
                                         id="pd_{{ random_number }}_{{ block.id }}" 
                                         data-bs-toggle="pill" 
                                         data-bs-target="#collapse_{{ random_number }}_{{ block.id }}" 
                                         type="button" 
                                         role="tab" 
                                         aria-controls="collapse_{{ random_number }}_{{ block.id }}" 
-                                        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+                                        aria-selected="{% if forloop.index == 2 %}true{% else %}false{% endif %}">
                                         {% if block.settings.sm_image != blank %}
                                         <img src="{{ block.settings.sm_image | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.sm_image.alt }}">
                                         {% endif %}
                                     </button>
                                     {% endcase %}
                                 {% endfor %}
+                                
                             </div>
                         </div>
                         <div>

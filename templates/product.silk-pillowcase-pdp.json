@@ -92,7 +92,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/feather.svg",
             "p_head": "Silk reduces skin friction!",
-            "desk": "Silk creates significantly less friction than its cotton counterpart, which can reduce stretching and tugging on your delicate facial skin all night long. Translation? Minimizing those pesky sleep creases over time. As skin loses elasticity with age, these creases can become more pronounced – especially if you are a side or stomach sleeper\n\nGentle on hair, too, it can stop strands from being twisted and damaged throughout the night. This means less inflammatory stress on your skin, and less stress on your hair. Win, win."
+            "desk": "Silk creates significantly less friction than its cotton counterpart, which can reduce stretching and tugging on your delicate facial skin all night long. Translation? Minimizing those pesky sleep creases over time. As skin loses elasticity with age, these creases can become more pronounced – especially if you are a side or stomach sleeper\n<br><br>\nGentle on hair, too, it can stop strands from being twisted and damaged throughout the night. This means less inflammatory stress on your skin, and less stress on your hair. Win, win."
           }
         }
       },
@@ -169,7 +169,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/silk_cover.webp",
             "heading": "Silk",
-            "mob_text": "",
+            "mob_text": "Silk",
             "text": "",
             "price": "",
             "style": "correctCircle",
@@ -181,7 +181,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cotton-cover.webp",
             "heading": "Cotton",
-            "mob_text": "",
+            "mob_text": "Cotton",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
@@ -194,10 +194,12 @@
         "object_6yBr68"
       ],
       "custom_css": [
-        ".beauty_skincare .bs_grid div.bs_item:nth-child(3) h4 {opacity: 0.5;}"
+        ".beauty_skincare .bs_grid div.bs_item:nth-child(3) h4 {opacity: 0.5;}",
+        ".beauty_skincare .bs_grid .wrongCircle {opacity: 0.5;}"
       ],
       "settings": {
         "classname": "beauty_skincare beauty_skincare-new section bg-white",
+        "sub_head": "YA' SNOOZE, YA' LOSE",
         "heading": "The case against cotton",
         "heading_reduced": "",
         "text": "<p>Your cotton pillowcase has a lot to answer for as they are holding back your advanced skincare routine. Cotton is a highly absorbent fabric! So while you take time every night to remove your makeup and put on your most powerful and effective skincare, cotton can suck it in, leading to clogged pores, breakouts, and puffy eyes from the product migration<\/p>",
@@ -263,7 +265,7 @@
       "settings": {
         "background": "bg-lightGrey",
         "classname": "bg-light",
-        "heading": "FAQs Are Our Love Language",
+        "heading": "FAQs <br> Are Our Love Language",
         "text": "",
         "button_label": "",
         "button_hide_label": ""
