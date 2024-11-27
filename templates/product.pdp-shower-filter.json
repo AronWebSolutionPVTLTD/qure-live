@@ -10,11 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "product",
-      "settings": {
-        "reserve": false,
-        "show_bf_prices": true
-      }
+      "type": "temp-product-shower-filter"
     }
   },
   "order": [
