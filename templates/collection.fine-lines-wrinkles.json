@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "collection",
@@ -22,10 +22,20 @@
             "wistia_id_mobile": "o6in7qx104",
             "link_url": "shopify://collections/best-sellers"
           }
+        },
+        "banner_holiday_EEUPJR": {
+          "type": "banner_holiday",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Exclusive <strong>Holiday</strong> Bundles</p>",
+            "link_url": "shopify://collections/best-sellers",
+            "link_label": "Save up to 55% Off"
+          }
         }
       },
       "block_order": [
-        "banner_cX4xRD"
+        "banner_cX4xRD",
+        "banner_holiday_EEUPJR"
       ],
       "settings": {
         "heading": "",
