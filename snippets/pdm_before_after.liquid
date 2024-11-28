@@ -36,7 +36,7 @@
                 }}
               </div>
             {% endif %}
-            {%- if block.settings.video_wistia_id -%}
+            {%- if block.settings.video_wistia_id != blank -%}
               <div class="wistia_responsive_padding" style="position:relative;">
                 <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
                   <div
