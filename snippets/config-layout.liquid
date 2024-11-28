@@ -164,6 +164,10 @@
         {% assign main_class = 'content_instructions content_instructions_patches' %}
         <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.all-in-content-guide' %}
+        {% assign main_class = 'content_instructions' %}
+        <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
     {% when 'page.q-rejuvalight-pro-guide' %}
         {% assign main_class = 'content_instructions content_instructions_pro' %}
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
