@@ -153,16 +153,6 @@
             "button_label": "Product Information"
           }
         },
-        "description_6WtF8b": {
-          "type": "description",
-          "settings": {
-            "classname": "",
-            "heading": "Product Details",
-            "image": "shopify://shop_images/search.svg",
-            "content": "<ul><li>80 self-dissolving micro-darts in each patch that melt into the skin for deeper ingredient delivery</li><li>Stay comfortably for 2-6 hours, or overnight for best results</li><li>Continually works to give a rejuvenated look to your skin</li></ul><p><br/><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">Learn more about Micro-Infusion Targeted Patches &gt;</a></p>",
-            "wistia_id": ""
-          }
-        },
         "description_BNpxL3": {
           "type": "description",
           "settings": {
@@ -263,7 +253,6 @@
         "description_tVQDHe",
         "description_cpREQp",
         "header_LhpN6x",
-        "description_6WtF8b",
         "description_BNpxL3",
         "description_GE3PNL",
         "header_AwT6ji",
