@@ -4,193 +4,179 @@
 	{%- case block.type -%}
         {%- when 'banner' -%}
             {%- assign banner_count = banner_count | plus: 1 -%}
+        {%- when 'banner_holiday' -%}
+            {%- assign banner_count = banner_count | plus: 1 -%}
     {%- endcase -%}
 {%- endfor -%}
 
 <style>
-/* specical for desktop */
-@media only screen and (min-width:769px){
-    /*
-    .collectio-banner picture {
-        min-height: 240px;
-    }   
-    */
-}
-.collectio-banner .heading {
-    position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: .3px;
-    color: rgb(0 0 0 / 80%);
-}
-.collectio-banner .heading {
-    position: absolute;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: .3px;
-    color: rgb(0 0 0 / 80%);
-}
-/* special for mobile */
-@media (max-width: 768px) {
-    .collectio-banner picture {
-        min-height: 150px;
+    /* specical for desktop */
+    @media only screen and (min-width:769px){
+        /*
+        .collectio-banner picture {
+            min-height: 240px;
+        }   
+        */
     }
     .collectio-banner .heading {
-        font-size: 18px;
-        line-height: 24px;
-        width: 176px;
+        position: absolute;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: .3px;
+        color: rgb(0 0 0 / 80%);
     }
-    .d-block p {
-        font-size: 10px !important;
+    .collectio-banner .heading {
+        position: absolute;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: .3px;
+        color: rgb(0 0 0 / 80%);
     }
-    .d-block p strong {
-        font-weight:800 !important;
+    /* special for mobile */
+    @media (max-width: 768px) {
+        .collectio-banner picture {
+            min-height: 150px;
+        }
+        .collectio-banner .heading {
+            font-size: 18px;
+            line-height: 24px;
+            width: 176px;
+        }
+        .d-block p {
+            font-size: 10px !important;
+        }
+        .d-block p strong {
+            font-weight:800 !important;
+        }
     }
-}
 </style>
 
 {% if banner_count > 0 %}
     {%- for block in section.blocks -%}
-        {% if block.type == 'banner' %}
+        {% case block.type %}
+            {% when 'banner' %}
+                <link rel="stylesheet" href="{{ 'collection-banner-bf.css' | asset_url }}">
 
-            <style>
-                .bf_sale-banners .collection_banner h1 {
-                    font-family: "Canela light";
-                }
-                .collection_text{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                }
-
-                .discount_banner .collection_text h6 {
-                    color: #F10000;
-                    font-size: 17.941px;
-                    font-weight: 700;
-                    line-height: 35.659px;
-                    letter-spacing: 0.418px;
-                    text-transform: uppercase;
-                    margin-bottom: 0;
-                }
-                .discount_banner .collection_text h1 {
-                    font-size: 71px;
-                    font-weight: 500;
-                    line-height: 90.655px;
-                    letter-spacing: 0.711px;
-                    color: #fff;
-                    margin-bottom: 0;
-                }
-                .discount_banner {
-                    background-color: #000;
-                }
-                .discount_banner .collection_text p {
-                    font-size: 14px;
-                    font-weight: 300;
-                    line-height: 32.357px;
-                    letter-spacing: 1.54px;
-                    color: #fff;
-                }
-                .discount_banner .collection_img .w-chrome.notranslate{
-                    height: 100% !important;
-                }
-
-                @media(max-width:767px) {
-                    .bf_sale-banners .collection_banner h1 {
-                        font-family: "Canela light";
-                        font-size: 24px;
-                        line-height: 32px;
-                        letter-spacing: 0.24px;
-                    }
-                    .collection_banner .btn_black {
-                        font-size: 11px;
-                        padding: 6px 19px;
-                        width: 100%;
-                    }
-                    .bf_sale-banners .collection_banner h1 strong {
-                        display: block;
-                    }
-
-                    .discount_banner .collection_text h1{
-                        font-size: 43px;
-                        line-height: 55.422px;
-                        letter-spacing: 0.434px;
-                        margin-bottom: 20px;
-                    }
-                    .discount_banner .collection_text h6{
-                        font-size: 10px;
-                        line-height: 19.876px;
-                        letter-spacing: 0.233px;
-                    }
-                    .discount_banner .collection_text p{
-                        font-size: 12px;
-                        font-weight: 300;
-                        line-height: 32.357px;
-                    }
-                }                
-            </style>
-
-            <div class="bf_sale-banners">
-                <div class="discount_banner"{% if block.settings.link_url != blank %} onclick="location.href='{{ block.settings.link_url }}';" style="cursor: pointer"{% endif %}>
-                    <div class="container-fluid px-0">
-                        <div class="row mx-0">
-                            <div class="col-lg-7 col-7 px-0">
-                                <div class="collection_text text-center">
-                                    <div>
-                                        {% if block.settings.heading != blank %}
-                                            <h6>{{ block.settings.heading }}</h6>
-                                        {% endif %}
-                                        {% if block.settings.subheading != blank %}
-                                            <h1>{{ block.settings.subheading }}</h1>
-                                        {% endif %}
-                                        {% if block.settings.text != blank %}
-                                            <p>{{ block.settings.text }}</p>
-                                        {% endif %}
+                <div class="bf_sale-banners">
+                    <div class="discount_banner"{% if block.settings.link_url != blank %} onclick="location.href='{{ block.settings.link_url }}';" style="cursor: pointer"{% endif %}>
+                        <div class="container-fluid px-0">
+                            <div class="row mx-0">
+                                <div class="col-lg-7 col-7 px-0">
+                                    <div class="collection_text text-center">
+                                        <div>
+                                            {% if block.settings.heading != blank %}
+                                                <h6>{{ block.settings.heading }}</h6>
+                                            {% endif %}
+                                            {% if block.settings.subheading != blank %}
+                                                <h1>{{ block.settings.subheading }}</h1>
+                                            {% endif %}
+                                            {% if block.settings.text != blank %}
+                                                <p>{{ block.settings.text }}</p>
+                                            {% endif %}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-5 px-0">
-                                {% if block.settings.wistia_id != blank %}
-                                    <div class="collection_img pe-none d-lg-block d-none">
-                                        <div class="wistia_responsive_padding" style="position:relative;">
-                                            <div class="wistia_responsive_wrapper"
-                                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                                <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
-                                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                <div class="col-lg-5 col-5 px-0">
+                                    {% if block.settings.wistia_id != blank %}
+                                        <div class="collection_img pe-none d-lg-block d-none">
+                                            <div class="wistia_responsive_padding" style="position:relative;">
+                                                <div class="wistia_responsive_wrapper"
+                                                    style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                    <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true"
+                                                        style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <script src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}.jsonp" async></script>
-                                {% endif %}
-
-                                {% if block.settings.wistia_id_mobile != blank %}
-                                    <div class="collection_img pe-none d-lg-none">
-                                        <div class="wistia_responsive_padding" style="position:relative;">
-                                            <div class="wistia_responsive_wrapper"
-                                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                                <div class="wistia_embed wistia_async_{{ block.settings.wistia_id_mobile }} seo=false videoFoam=true"
-                                                    style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                        <script src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}.jsonp" async></script>
+                                    {% endif %}
+    
+                                    {% if block.settings.wistia_id_mobile != blank %}
+                                        <div class="collection_img pe-none d-lg-none">
+                                            <div class="wistia_responsive_padding" style="position:relative;">
+                                                <div class="wistia_responsive_wrapper"
+                                                    style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                    <div class="wistia_embed wistia_async_{{ block.settings.wistia_id_mobile }} seo=false videoFoam=true"
+                                                        style="height:100%;position:relative;width:100%">&nbsp;</div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <script src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id_mobile }}.jsonp" async></script>
-                                {% endif %}
+                                        <script src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id_mobile }}.jsonp" async></script>
+                                    {% endif %}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
             
-            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script> 
-        {% endif %}
+                {% when 'banner_holiday' %}
+                    <link rel="stylesheet" href="{{ 'collection-banner-holiday.css' | asset_url }}">
+
+                    <div class="bf_sale-banners">
+                        <div class="collection_banner position-relative">
+                            <div class="container-fluid px-0">
+                                <div class="collection_grid d-lg-grid d-none">
+                                    <div>
+                                        <img src="https://qureskincaredns.com/new/assets/collection_b1.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="banner_text">
+                                        <div>
+                                            {% if block.settings.heading != blank %}
+                                                <h1>
+                                                    {{ block.settings.heading 
+                                                        | replace: '<p>', '' 
+                                                        | replace: '</p>', '' 
+                                                    }}
+                                                </h1>
+                                            {% endif %}
+
+                                            {% if block.settings.link_url != blank %}
+                                                <a href="{{ block.settings.link_url }}" class="btn_black btn mb-0 mt-3" aria-label="Support now">{{ block.settings.link_label }}</a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="https://qureskincaredns.com/new/assets/collection_b2.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="d-lg-none">
+                                    <img src="https://qureskincaredns.com/new/assets/collection_b-mob.webp" class="img-fluid" alt="">
+                                    <div class="bfBundle__bannerBlock">
+                                        <div class="container">
+                                        <div class="row justify-content-end">
+                                            <div class="col-6">
+                                                <div class="banner_bf-text text-center pt-0 ps-2">
+                                                    {% if block.settings.heading != blank %}
+                                                        <h1>
+                                                            {{ block.settings.heading 
+                                                                | replace: '<p>', '' 
+                                                                | replace: '</p>', '' 
+                                                            }}
+                                                        </h1>
+                                                    {% endif %}
+
+                                                    {% if block.settings.link_url != blank %}
+                                                        <a href="{{ block.settings.link_url }}" class="btn_black btn mt-2 mb-0 px-3 px-md-4 w-auto" aria-label="Support now">{{ block.settings.link_label }}</a>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        {% endcase %}
     {% endfor %}
 {% else %}
     <div class="collectio-banner"{% if section.settings.link_url != blank %} onclick="location.href='{{ section.settings.link_url }}';" style="cursor: pointer"{% endif %}>
@@ -293,6 +279,28 @@
             }
         ],
         "blocks": [
+            {
+                "type": "banner_holiday",
+                "name": "t:common.banner_holiday.label",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "heading",
+                        "label": "t:common.heading.label"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "t:common.link.url.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "link_label",
+                        "label": "t:common.link.label"
+                    }
+                ]
+		    },
             {
                 "type": "banner",
                 "name": "t:common.banner.label",

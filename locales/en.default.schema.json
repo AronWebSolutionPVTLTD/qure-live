@@ -101,6 +101,9 @@
     }
   },
   "common": {
+    "banner_holiday": {
+      "label": "Holiday banner"
+    },
     "variant": {
       "label": "Variant"
     },

@@ -1,0 +1,74 @@
+.bf_sale-banners .collection_banner h1 {
+    font-family: "Canela light";
+}
+.collection_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.discount_banner .collection_text h6 {
+    color: #F10000;
+    font-size: 17.941px;
+    font-weight: 700;
+    line-height: 35.659px;
+    letter-spacing: 0.418px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.discount_banner .collection_text h1 {
+    font-size: 71px;
+    font-weight: 500;
+    line-height: 90.655px;
+    letter-spacing: 0.711px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.discount_banner {
+    background-color: #000;
+}
+.discount_banner .collection_text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32.357px;
+    letter-spacing: 1.54px;
+    color: #fff;
+}
+.discount_banner .collection_img .w-chrome.notranslate{
+    height: 100% !important;
+}
+
+@media(max-width:767px) {
+    .bf_sale-banners .collection_banner h1 {
+        font-family: "Canela light";
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.24px;
+    }
+    .collection_banner .btn_black {
+        font-size: 11px;
+        padding: 6px 19px;
+        width: 100%;
+    }
+    .bf_sale-banners .collection_banner h1 strong {
+        display: block;
+    }
+
+    .discount_banner .collection_text h1{
+        font-size: 43px;
+        line-height: 55.422px;
+        letter-spacing: 0.434px;
+        margin-bottom: 20px;
+    }
+    .discount_banner .collection_text h6{
+        font-size: 10px;
+        line-height: 19.876px;
+        letter-spacing: 0.233px;
+    }
+    .discount_banner .collection_text p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 32.357px;
+    }
+}
