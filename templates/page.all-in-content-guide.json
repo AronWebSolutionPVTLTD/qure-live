@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "header_landing_pFmaRH": {
       "type": "header-landing-simple",
@@ -66,6 +66,9 @@
     },
     "qure_founder_LkfQUT": {
       "type": "qure-founder",
+      "custom_css": [
+        "@media(max-width:767px) {.qure_founder_info {display: none; }}"
+      ],
       "settings": {
         "heading": "“Qure has an amazing serum… it has retinol and Bakuchiol, which is an awesome dynamic complimenting ingredient, amazing antioxidants, Argireline, vitamin C. It can really help simplify and consolidate steps!”",
         "sub_heading": "<p>- <strong>Dr. Luke Maxfield, MD</strong>,Board certified dermatologist</p>",
@@ -267,6 +270,9 @@
         "video_H9fmrV",
         "video_dpGpUm",
         "video_6gLP6V"
+      ],
+      "custom_css": [
+        "#target_block_desktop_2 .ac_desc_grid {grid-template-columns: 1fr 1fr; position: relative;}"
       ],
       "settings": {
         "heading": "All you need to know before you start creating your amazing content"
