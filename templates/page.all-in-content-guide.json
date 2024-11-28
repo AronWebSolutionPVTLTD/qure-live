@@ -209,6 +209,13 @@
             "wistia_id": "1tmoavwrap"
           }
         },
+        "video_ArWaTK": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/mi_system33.webp",
+            "wistia_id": "xk91sh74w9"
+          }
+        },
         "heading_fUcJta": {
           "type": "heading",
           "settings": {
@@ -253,6 +260,7 @@
         "video_4Jjjcm",
         "video_iHceHC",
         "video_DmtewU",
+        "video_ArWaTK",
         "heading_fUcJta",
         "video_H9fmrV",
         "video_dpGpUm",
