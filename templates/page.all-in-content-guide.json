@@ -80,7 +80,7 @@
           "settings": {
             "heading": "STEP 1",
             "text": "Merge Qure into your creatives",
-            "image": "shopify://shop_images/ac_pro4.webp",
+            "image": "shopify://shop_images/ac_step7.webp",
             "button_label": "Content Requirements"
           }
         },
@@ -158,8 +158,8 @@
           "type": "header",
           "settings": {
             "heading": "STEP 2",
-            "text": "Get to know Micro-Infusion Targeted Patches",
-            "image": "shopify://shop_images/ac_pro5.webp",
+            "text": "Get to know All-In-One Face Serum",
+            "image": "shopify://shop_images/ac_step8.webp",
             "button_label": "Product Information"
           }
         },
@@ -198,7 +198,7 @@
           "settings": {
             "heading": "STEP 3",
             "text": "Get inspired by other content creators",
-            "image": "shopify://shop_images/ac_pro6.webp",
+            "image": "shopify://shop_images/ac_step9.webp",
             "button_label": "Inspiring Content"
           }
         },
