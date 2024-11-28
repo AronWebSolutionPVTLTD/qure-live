@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "header_landing_pFmaRH": {
@@ -42,8 +42,7 @@
         "navigation_link_DgYaFx",
         "navigation_link_3X4mrf"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "section1": {
       "type": "guide-header",
@@ -60,9 +59,9 @@
         "button_LUpm3B"
       ],
       "settings": {
-        "heading": "Micro-Infusion Targeted Patches Creative Content Guide",
-        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Our creative guide will help you showcase the magic of the Qure Micro-Infusion Targeted Patches. Let's create stunning, engaging content that highlights how this game-changing product transforms skincare routines!</p>",
-        "wistia_id": "0gi4vtjhzc"
+        "heading": "All-In-One Face Serum Creative Content Guide",
+        "text": "<p>Hey skincare enthusiasts!</p><p>Ready to take your content to the next level?</p><p>Unlock the full potential of the All-In-One Face Serum with our creative content guide. This brief will help you craft engaging content that showcases how the science-backed ingredients transform skincare routines for radiant, glowing skin.</p>",
+        "wistia_id": "xy0i3qbm8p"
       }
     },
     "qure_founder_LkfQUT": {
@@ -100,38 +99,47 @@
         "collapsed_aNzhwA": {
           "type": "collapsed",
           "settings": {
+            "show": true,
+            "style": "default",
             "heading": "Deeper Delivery",
             "content": "<ul><li>Self-dissolving micro-darts infuse serum below the skin's surface for enhanced absorption and faster results.</li></ul>",
-            "show": true
+            "code": ""
           }
         },
         "collapsed_aNzhwB": {
           "type": "collapsed",
           "settings": {
+            "show": false,
+            "style": "default",
             "heading": "Quick Application",
             "content": "<ul><li>Patches self-dissolve in as little as two hours, providing powerful results quickly.</li></ul>",
-            "show": false
+            "code": ""
           }
         },
         "collapsed_aNzhwC": {
           "type": "collapsed",
           "settings": {
+            "show": false,
+            "style": "default",
             "heading": "Target Multiple Concerns",
             "content": "<ul><li>Effectively treats fine lines, wrinkles, dark circles, puffiness, and under-eye bags. </li></ul>",
-            "show": false
+            "code": ""
           }
         },
         "collapsed_aNzhwD": {
           "type": "collapsed",
           "settings": {
+            "show": false,
+            "style": "default",
             "heading": "Versatile Treatment",
             "content": "<ul><li>Ultimate all-in-one patches that contain <strong>science backed,</strong> age-defying ingredients such as <strong>retinol, caffeine, niacinamide, licorice, and peptides</strong> for brighter-looking, smoother-feeling skin.</li></ul>",
-            "show": false
+            "code": ""
           }
         },
         "description_tVQDHe": {
           "type": "description",
           "settings": {
+            "classname": "",
             "heading": "Creative Direction",
             "image": "shopify://shop_images/direction.svg",
             "content": "<ul><li>High quality, bright lighting and high-resolution imagery/videography to be supplied. No obvious filters.</li><li>Micro-Infusion Targeted Patches to be the feature of the post. The background must be clean and bright.</li><li>When wearing the product, please do not wear any make-up, or no visible/noticeable makeup.</li><li>Before and after imaging to showcase the results, if possible</li></ul>",
@@ -141,6 +149,7 @@
         "description_cpREQp": {
           "type": "description",
           "settings": {
+            "classname": "",
             "heading": "Inclusion",
             "image": "shopify://shop_images/inclusion.svg",
             "content": "<ul><li>Tag and mention @qureskincare, #qureskincare, #microinfusion, #eyepatches, #targetedpatches, #skincare, #skincaretips, #skincarehacks, #qurepatches for a chance to be featured on Qure Skincare social media pages.</li><li>Please include your affiliate link or link provided by Qure in Instagram stories and in captions of YouTube videos. If can’t be placed in BIO then please include in linktr.ee or similar.</li></ul>",
@@ -159,6 +168,7 @@
         "description_6WtF8b": {
           "type": "description",
           "settings": {
+            "classname": "",
             "heading": "Product Details",
             "image": "shopify://shop_images/search.svg",
             "content": "<ul><li>80 self-dissolving micro-darts in each patch that melt into the skin for deeper ingredient delivery</li><li>Stay comfortably for 2-6 hours, or overnight for best results</li><li>Continually works to give a rejuvenated look to your skin</li></ul><p><br/><a href=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\" title=\"https://www.qureskincare.com/products/micro-infusion-targeted-patches\">Learn more about Micro-Infusion Targeted Patches &gt;</a></p>",
@@ -168,6 +178,7 @@
         "description_BNpxL3": {
           "type": "description",
           "settings": {
+            "classname": "",
             "heading": "Usage Instructions",
             "image": "shopify://shop_images/usage_dir.svg",
             "content": "<ul><li>After cleansing, simply peel off the adhesive strips.</li><li>Gently press for 5-10 seconds. The micro-cones dissolve the concentrated serum directly into the skin!</li><li>Wear for at least two hours. For best results, leave them on overnight!</li></ul>",
