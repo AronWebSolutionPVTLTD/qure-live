@@ -669,7 +669,7 @@
       "settings": {
         "heading": "Best Sellers",
         "btn": "Shop All Best-Sellers",
-        "btn_url": ""
+        "btn_url": "shopify://collections/best-sellers"
       }
     },
     "icons_list_iPVXgA": {
@@ -938,10 +938,12 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Hello make up free days, goodbye clinical costs",
         "heading_reduced": "",
         "text": "",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "tile_JERe9p": {
