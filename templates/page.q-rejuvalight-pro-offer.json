@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "header_landing_LTnaTx": {
       "type": "header-landing",
@@ -555,10 +555,19 @@
       ],
       "settings": {
         "heading": "Dermatologist Tried, Tested, & Approved",
+        "sub_heading": "",
         "classname": "section videosQure",
         "btn": "",
-        "btn_url": ""
+        "btn_url": "",
+        "desk_slide": 6,
+        "mob_slide": 1.7,
+        "slide_space": 10
       }
+    },
+    "offer": {
+      "type": "custom-q-rejuvalight-pro-offer",
+      "disabled": true,
+      "settings": {}
     },
     "featured_product_pEjkiL": {
       "type": "featured-product",
@@ -680,10 +689,12 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Clinical Results Without The Clinical Price Tag",
         "heading_reduced": "",
         "text": "<p>Buy it once, reap the benefits forever.</p>",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "faq_4akixC": {
@@ -793,6 +804,7 @@
     "how_to_use_tmBGpa",
     "services_slider_ctkatz",
     "videos_list_niD9zY",
+    "offer",
     "featured_product_pEjkiL",
     "featured_product_2_YjNQXn",
     "image_text_jBxiPm",
