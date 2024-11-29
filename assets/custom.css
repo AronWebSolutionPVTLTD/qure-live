@@ -335,6 +335,12 @@ body[class~="page.sunil-mi-landing-special2"]
                 display: none !important;
         }
 }
+body[class~="page.all-in-content-guide"] {
+        #shopify-section-newsletter {
+                display: none;
+        }
+}
+
 div.ur_btn {
         cursor: pointer;
 }
