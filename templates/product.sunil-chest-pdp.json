@@ -41,7 +41,8 @@
         "video_before_and_after_dPc77J": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify://files/videos/Neck edit_b34038da-2489-4c95-af0a-0a486968f588.mov"
+            "video_new_section": "shopify://files/videos/Neck edit_b34038da-2489-4c95-af0a-0a486968f588.mov",
+            "video_wistia_id": ""
           }
         },
         "timer_fNiV3b": {
@@ -63,8 +64,8 @@
             "first_option_text": "SOLD OUT",
             "first_option_percent": 100,
             "second_option_date": "December 19th",
-            "second_option_text": "56% Reserved",
-            "second_option_percent": 56,
+            "second_option_text": "61% Reserved",
+            "second_option_percent": 61,
             "third_option_date": "January 30th",
             "third_option_text": "In Production",
             "third_option_percent": 0
@@ -83,6 +84,7 @@
         "seo_heading": "Red Light Neck & Chest Mask",
         "heading": "Combat signs of aging with Neck & Décolletage LED Therapy",
         "heading_mobile": "Combat signs of aging with Neck & Décolletage LED Therapy",
+        "wistia_id": "",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 2,
@@ -653,6 +655,7 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Hello beautiful skin, goodbye clinical costs",
         "heading_reduced": "",
         "text": "<p>Are you ready to enjoy the same technology used in clinics, without the price tag or hassle?</p><p>Get that professional-looking result from the comfort of your own home – for a fraction of what you’d pay elsewhere.</p>",
