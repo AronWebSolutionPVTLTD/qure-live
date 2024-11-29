@@ -742,7 +742,7 @@
     right: 0;
     bottom: -10px;
     content: '';
-    width: 194px;
+    width: 125px;
     height: 9px;
     background-image: url(../assets/red-line.svg);
     background-repeat: no-repeat;
@@ -760,7 +760,7 @@
 .bf_sale-banners .btn_black {
     background-color: #000;
     color: #fff;
-    padding: 10px 64px;
+    padding: 10px 45px;
     border-radius: 30px;
     font-weight: 600;
     letter-spacing: .167px;
@@ -770,16 +770,23 @@
     width: auto;
     text-align: center;
 }
-
+.bf_sale-banners .main_banner2 .btn_black{
+    background-color: #fff;
+    color: #000;
+}
 .bf_sale-banners .main_banner {
     background-color: #F1F4F5;
+}
+.bf_sale-banners .main_banner2 {
+    background-color: #000;
 }
 
 .main_banner .newCycle {
     margin-left: 22px;
 }
 
-.main_banner .bf_sale-slider .newCycleSlider .swiper-slide .new-slide {
+.main_banner .bf_sale-slider .newCycleSlider .swiper-slide .new-slide, 
+.holiday_banner .bf_sale-slider .swiper-slide .new-slide {
     width: 100%;
     min-height: 110px;
     padding: 9px 7px;
@@ -794,13 +801,26 @@
     box-shadow: 0px 3.922px 3.922px rgba(0, 0, 0, 0.12);
     margin-bottom: 8px;
 }
-
+.main_banner2 .bf_sale-slider .anotherSlider .swiper-slide .new-slide{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 8px;
+    background: rgba(241, 244, 245, 0.80);
+    padding: 12px 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 471px;
+}
+.main_banner2 .bf_sale-slider{
+    padding-top: 60px;
+}
 .main_banner .new_content {
     text-align: left;
 }
 
-.main_banner .bf_sale-slider .new_content .new-header {
-    font-family: "Canela Web";
+.main_banner .bf_sale-slider .new_content .new-header,
+.holiday_banner .bf_sale-slider .new_content .new-header {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -808,12 +828,19 @@
     letter-spacing: 0.233px;
     margin-bottom: 0;
 }
-
+.main_banner2 .bf_sale-slider .new_content .new-header{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.124px;
+}
 .main_banner .newCycleSlider .swiper-arrow:after {
     display: none;
 }
 
-.main_banner .bf_sale-slider .new_img {
+.main_banner .bf_sale-slider .new_img,
+.holiday_banner .bf_sale-slider .new_img {
     text-align: center;
     background: #fff;
     height: 100%;
@@ -822,7 +849,8 @@
     align-items: center;
 }
 
-.main_banner .event_content-main .event_pd-content {
+.main_banner .event_content-main .event_pd-content,
+.main_banner2 .event_content-main .event_pd-content {
     max-width: 606px;
     width: 100%;
     margin: 0 auto;
@@ -840,19 +868,32 @@
     box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
 }
 
-.main_banner .bf_sale-slider {
+.main_banner .bf_sale-slider,
+.holiday_banner .bf_sale-slider{
     position: relative;
     margin-top: 35px;
 }
-
-.main_banner .bf_sale-slider .swiper-button-prev {
+.holiday_banner .bundle_slider-main {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.main_banner .bf_sale-slider .swiper-button-prev,
+.holiday_banner .bf_sale-slider .swiper-button-prev {
     left: -60px;
 }
 
-.main_banner .bf_sale-slider .swiper-button-next {
+.main_banner .bf_sale-slider .swiper-button-next,
+.holiday_banner .bf_sale-slider .swiper-button-next {
     right: -60px;
 }
-
+.holiday_banner .bf_sale-slider .swiper-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 3.284px 0px rgba(0, 0, 0, 0.25);
+}
 .main_banner .bf_sale-slider .new_content span {
     color: #F10000;
     font-family: Poppins;
@@ -862,8 +903,18 @@
     letter-spacing: 0.233px;
     text-transform: uppercase;
 }
-
-.main_banner .bf_sale-slider .new_content .new-header span {
+.holiday_banner .bf_sale-slider .new_content .discount_badge {
+    border-radius: 50px;
+    background: #C92127;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.163px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1px 9px;
+}
+.main_banner .bf_sale-slider .new_content .new-header span,
+.holiday_banner .bf_sale-slider .new_content .new-header span {
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -883,8 +934,96 @@
     justify-content: center;
     height: 100%;
 }
+.collection_banner .collection_grid {
+    grid-template-columns: 30% 38% 30%;
+    justify-content: space-between;
+}
+.collection_banner .collection_grid .banner_text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* <!--21% Discount Banner--> */
+.discount_banner .collection_text h6 {
+    color: #F10000;
+    font-size: 17.941px;
+    font-weight: 700;
+    line-height: 35.659px;
+    letter-spacing: 0.418px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.discount_banner .collection_text h1 {
+    font-size: 71px;
+    font-weight: 500;
+    line-height: 90.655px;
+    letter-spacing: 0.711px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.discount_banner {
+    background-color: #000;
+}
+.discount_banner .collection_text p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32.357px;
+    letter-spacing: 1.54px;
+    color: #fff;
+}
+.main_banner2 .bf_sale-slider .new_content a {
+    font-size: 12px;
+    line-height: 16.733px;
+    letter-spacing: 0.251px;
+    font-weight: 500;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.main_banner2 .banner_bf-text p {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+    padding-top: 10px;
+}
+.bf_sale-banners .main_banner2 .btn_black {
+    padding: 10px 57px;
+}
 /* <----Banners CSS End-------> */
-
+.holiday_banner{
+    position: relative;
+}
+.holiday_banner .banner_bf-text h5{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.holiday_banner .banner_bf-text p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10.733px;
+    letter-spacing: 0.12px;
+    padding-bottom: 10px;
+}
+.bfBundle__bannerBlock {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.discount_banner .collection_img .w-chrome.notranslate{
+    height: 100% !important;
+}
+.holiday_banner .bg_banner{
+    width: 100vw;
+    object-fit: cover;
+}
 @media(max-width:991px) {
     .main_banner .bf_sale-slider .swiper-button {
         bottom: 0;
@@ -907,10 +1046,10 @@
 }
 .banner_bf-text {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
     max-width: 300px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 .bf_sale-banners .red-line:after {
     bottom: -8px;
@@ -918,10 +1057,12 @@
     height: 10px;
     background-size: contain;
 }
-.main_banner .bf_sale-slider .swiper-button-prev {
+.main_banner .bf_sale-slider .swiper-button-prev,
+.holiday_banner .bf_sale-slider .swiper-button-prev{
     left: 20px;
 }
-.main_banner .bf_sale-slider .swiper-button-next {
+.main_banner .bf_sale-slider .swiper-button-next,
+.holiday_banner .bf_sale-slider .swiper-button-next {
     right: 20px;
 }
 .main_banner .bf_sale-slider {
@@ -1002,5 +1143,75 @@
         font-size: 11px;
         line-height: 16.494px;
         letter-spacing: 0.11px;
+    }
+    .discount_banner .collection_text h1{
+        font-size: 43px;
+        line-height: 55.422px;
+        letter-spacing: 0.434px;
+        margin-bottom: 20px;
+    }
+    .discount_banner .collection_text h6{
+        font-size: 10px;
+        line-height: 19.876px;
+        letter-spacing: 0.233px;
+    }
+    .discount_banner .collection_text p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 32.357px;
+    }
+    .bf_sale-banners h1 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        letter-spacing: 0.28px;
+    }
+    .bf_sale-banners h1 br{
+        display: none;
+    }
+    .bf_sale-banners .main_banner2 .banner_bf-text h5 {
+        margin: 10px 0px 16px;
+        padding: 0 25px;
+    }
+    .main_banner2 .banner_bf-text p {
+        font-size: 10px;
+    }
+    .main_banner2 .bf_sale-slider {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    .bf_sale-banners .main_banner2 .btn_black {
+        padding: 10px 50px;
+    }
+    .main_banner2 .bf_sale-slider .new_content .new-header{
+        font-size: 12px;
+    }
+    .main_banner2 .bf_sale-slider .new_content a{
+        font-size: 11px;
+    }
+    .holiday_banner .event_pd-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100% - 20px);
+    }
+    .holiday_banner .banner_bf-text h5 {
+        margin: 19px 0;
+    }
+    .holiday_banner .btn_black {
+        max-width: 100%;
+    }
+    .holiday_banner .bundle_slider-main {
+        max-width: 100%;
+    }
+    .holiday_banner .container,
+    .holiday_banner .bfBundle_inner-content{
+        height: 100%;
+    }
+    .holiday_banner .bfBundle_inner-content .dots_pegi {
+        margin: 0 0 -35px;
+        padding-bottom: 5px;
+        padding-top: 10px;
     }
 }

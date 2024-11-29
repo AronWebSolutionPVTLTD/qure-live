@@ -453,6 +453,9 @@
       "info": "Use the following settings if you want to use hosted video",
       "type": "Video type",
       "choose": "Choose video",
+      "mobile": {
+        "label": "Mobile video"
+      },
       "youtube": {
         "settings": "Youtube settings",
         "link": "Add youtube link"

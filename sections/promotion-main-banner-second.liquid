@@ -7,86 +7,269 @@
     {%- endcase -%}
 {%- endfor -%}
 
-
 <link rel="stylesheet" href="{{ 'homepage_promo_second.css' | asset_url }}">
 
 <!-- -- main banner start -- -->
 <div class="bf_sale-banners">
-    <div class="main_banner">
-        <div class="container-fluid">
-            <div class="event_content-main">
-                <div class="row">
-                    <div class="col-lg-5 px-0">
-                        <div class="banner_img"{% if section.settings.link_url != blank %} onclick="location.href='{{ section.settings.link_url }}';" style="cursor: pointer"{% endif %}>
-                            {% if section.settings.image %}
-                                <img src="{{ section.settings.image | img_url: 'master' }}" class="w-100 d-md-block d-none" alt="desktop banner">
+    <div class="holiday_banner">
+        <div>
+            {% if section.settings.video != blank %}
+                {% if section.settings.video.sources[1].url != blank %}
+                    {% assign video_source_url = section.settings.video.sources[1].url %}
+                {% else %}
+                    {% assign video_source_url = section.settings.video.sources[0].url %}
+                {% endif %}
+
+                <!-- Desktop video (visible on large screens) -->
+                <video class="bg_banner d-lg-block d-none" autoplay muted loop playsinline style="height: 645px;">
+                    <source src="{{ video_source_url }}" type="video/webm">
+                </video>
+            {% endif %}
+
+
+            {% if section.settings.video_mobile != blank %}
+                {% if section.settings.video_mobile.sources[1].url != blank %}
+                    {% assign video_mobile_source_url = section.settings.video_mobile.sources[1].url %}
+                {% else %}
+                    {% assign video_mobile_source_url = section.settings.video_mobile.sources[0].url %}
+                {% endif %}
+
+                <!-- Mobile video (visible on small screens) -->
+                <video class="bg_banner d-lg-none" autoplay muted loop playsinline style="height: 342px;">
+                    <source src="{{ video_mobile_source_url }}" type="video/webm">
+                </video>
+            {% endif %}
+        </div>
+
+        <div class="bfBundle__bannerBlock">
+            <div class="container">
+                <div class="bfBundle_inner-content">
+                    <div class="event_pd-content">
+                        <div class="banner_bf-text text-center mw-100">
+                            {% if section.settings.heading != blank %}
+                                <h1 class="mb-0">{{ section.settings.heading |  replace:  '\n', '<br />'  }}</h1>
                             {% endif %}
-                            {% if section.settings.image_mobile %}
-                                <img src="{{ section.settings.image_mobile | img_url: '720x' }}" class="w-100 d-md-none" alt="mobile banner">
+                            {% if section.settings.subheading != blank %}
+                                <h5>
+                                    {{ section.settings.subheading 
+                                    |  replace: '<p>', '' |  replace: '</p>', '' 
+                                    }}
+                                </h5>
                             {% endif %}
+                            {%- for block in section.blocks -%}
+                                {% if block.type == 'link' %}
+                                    <a href="{{ block.settings.link_url }}" class="btn_black btn" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                                {% endif %}
+                            {%- endfor -%}
                         </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="event_pd-content">
-                            <div class="banner_bf-text">
-                                {% if section.settings.heading != blank %}
-                                    <h1 class="mb-0">{{ section.settings.heading }}</h1>
-                                {% endif %}
+                        <div class="bundle_slider-main">
+                            <div class="bf_sale-slider pt-md-0">
+                                <div class="swiper holiday_bundle dot_pagination">
+                                    <div class="swiper-wrapper">
+                                        {%- for block in section.blocks -%}
+                                            {% if block.type == 'product' %}
 
-                                {% if section.settings.subheading != blank %}
-                                    <h5>
-                                        {{ section.settings.subheading 
-                                        |  replace: '<p>', '' |  replace: '</p>', '' 
-                                        |  replace: '<em>', '<span class="red-line">' |  replace: '</em>', '</span>' 
-                                        }}
-                                    </h5>
-                                {% endif %}
-
-                                {%- for block in section.blocks -%}
-                                    {% if block.type == 'link' %}
-                                        <a href="{{ block.settings.link_url }}" class="btn_black btn" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
-                                    {% endif %}
-                                {%- endfor -%}
-                            </div>
-
-                            {% if product_count > 0 %}
-                                <div class="bf_sale-slider">
-                                    <div class="swiper newCycleSlider dot_pagination">
-                                        <div class="swiper-wrapper">
-                                            {%- for block in section.blocks -%}
-                                                {% if block.type == 'product' %}
-                                                    <div class="swiper-slide"{% if block.settings.product_url != blank %} onclick="location.href='{{ block.settings.product_url }}';"{% endif %}>
-                                                        <div class="new-slide">
-                                                            {% if block.settings.image != blank %}
-                                                                <div class="new_img">
-                                                                    <img src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
-                                                                </div>
-                                                            {% endif %}
-                                                            <div class="new_content">
-                                                                {% if block.settings.text != blank %}
-                                                                    <span>{{ block.settings.text }}</span>
-                                                                {% endif %}
-                                                                <h4 class="new-header"><span>{{ block.settings.heading }}</span>{{ block.settings.subheading }}</h4>
+                                                <div class="swiper-slide"{% if block.settings.product_url != blank %} onclick="location.href='{{ block.settings.product_url }}';"{% endif %}>
+                                                    <div class="new-slide">
+                                                        {% if block.settings.image != blank %}
+                                                            <div class="new_img">
+                                                                <img src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
                                                             </div>
+                                                        {% endif %}
+                                                        <div class="new_content">
+                                                            {% if block.settings.text != blank %}
+                                                                <span class="discount_badge">{{ block.settings.text }}</span>
+                                                            {% endif %}
+                                                            <h4 class="new-header"><span>{{ block.settings.heading }}</span>{{ block.settings.subheading }}</h4>
                                                         </div>
                                                     </div>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
-                                        <div class="swiper-pagination d-block d-lg-none"></div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
                                     </div>
-                                    <div class="new-arrow swiper-button-prev swiper-button"></div>
-                                    <div class="new-arrow  swiper-button-next swiper-button"></div>
+                                    <div class="pagination_navigation d-md-none dots_pegi">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
                                 </div>
-                            {% endif %}
+                                <div
+                                    class="holiday_bundle-swiper-prev swiper-button-prev swiper-button d-md-flex d-none">
+                                </div>
+                                <div
+                                    class="holiday_bundle-swiper-next  swiper-button-next swiper-button d-md-flex d-none">
+                                </div>
+
+                                <div class="pagination_navigation d-md-none">
+                                    <div class="holiday_bundle-swiper-prev swiper-button-prev swiper-button">
+                                    </div>
+                                    <div class="holiday_bundle-swiper-next  swiper-button-next swiper-button">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper2 = new Swiper(".holiday_bundle", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".holiday_bundle-swiper-next",
+                prevEl: ".holiday_bundle-swiper-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+
+        // Adjust video height on page load and window resize
+        function adjustVideoHeight() {
+        const screenWidth = window.innerWidth;
+        
+        // Desktop video height adjustment
+        const desktopVideo = document.querySelector('.d-lg-block');
+        if (desktopVideo) {
+            if (screenWidth >= 1920) {
+            desktopVideo.style.height = '645px';
+            } else if (screenWidth <= 1024) {
+            desktopVideo.style.height = '342px';
+            } else {
+            // Interpolate height between 1920px and 1024px screen width
+            const minScreen = 1024;
+            const maxScreen = 1920;
+            const minHeight = 342;
+            const maxHeight = 645;
+        
+            const interpolatedHeight = minHeight + ((screenWidth - minScreen) / (maxScreen - minScreen)) * (maxHeight - minHeight);
+            desktopVideo.style.height = `${interpolatedHeight}px`;
+            }
+        }
+    
+        // Mobile video height adjustment
+        const mobileVideo = document.querySelector('.d-lg-none');
+        if (mobileVideo) {
+            if (screenWidth <= 1024) {
+            // Adjust mobile video height based on screen height (375px to 1024px)
+            const minHeight = 620;
+            const maxHeight = 1690;
+            const minScreenHeight = 375;
+            const maxScreenHeight = 1024;
+    
+            const interpolatedHeight = minHeight + ((screenWidth - minScreenHeight) / (maxScreenHeight - minScreenHeight)) * (maxHeight - minHeight);
+            mobileVideo.style.height = `${interpolatedHeight}px`;
+            }
+        }
+        }
+
+        adjustVideoHeight();
+    });
+    window.addEventListener('resize', adjustVideoHeight);
+</script>
+
+
+{% comment %} 
+
+    <link rel="stylesheet" href="{{ 'homepage_promo_second.css' | asset_url }}">
+
+    <!-- -- main banner start -- -->
+    <div class="bf_sale-banners">
+        <div class="main_banner">
+            <div class="container-fluid">
+                <div class="event_content-main">
+                    <div class="row">
+                        <div class="col-lg-5 px-0">
+                            <div class="banner_img"{% if section.settings.link_url != blank %} onclick="location.href='{{ section.settings.link_url }}';" style="cursor: pointer"{% endif %}>
+                                {% if section.settings.image %}
+                                    <img src="{{ section.settings.image | img_url: 'master' }}" class="w-100 d-md-block d-none" alt="desktop banner">
+                                {% endif %}
+                                {% if section.settings.image_mobile %}
+                                    <img src="{{ section.settings.image_mobile | img_url: '720x' }}" class="w-100 d-md-none" alt="mobile banner">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="event_pd-content">
+                                <div class="banner_bf-text">
+                                    {% if section.settings.heading != blank %}
+                                        <h1 class="mb-0">{{ section.settings.heading }}</h1>
+                                    {% endif %}
+
+                                    {% if section.settings.subheading != blank %}
+                                        <h5>
+                                            {{ section.settings.subheading 
+                                            |  replace: '<p>', '' |  replace: '</p>', '' 
+                                            |  replace: '<em>', '<span class="red-line">' |  replace: '</em>', '</span>' 
+                                            }}
+                                        </h5>
+                                    {% endif %}
+
+                                    {%- for block in section.blocks -%}
+                                        {% if block.type == 'link' %}
+                                            <a href="{{ block.settings.link_url }}" class="btn_black btn" aria-label="{{ block.settings.link_label | escape }}">{{ block.settings.link_label }}</a>
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </div>
+
+                                {% if product_count > 0 %}
+                                    <div class="bf_sale-slider">
+                                        <div class="swiper newCycleSlider dot_pagination">
+                                            <div class="swiper-wrapper">
+                                                {%- for block in section.blocks -%}
+                                                    {% if block.type == 'product' %}
+                                                        <div class="swiper-slide"{% if block.settings.product_url != blank %} onclick="location.href='{{ block.settings.product_url }}';"{% endif %}>
+                                                            <div class="new-slide">
+                                                                {% if block.settings.image != blank %}
+                                                                    <div class="new_img">
+                                                                        <img src="{{ block.settings.image | img_url: '540x' }}" alt="{{ block.settings.image.alt | escape }}" class="img-fluid" />
+                                                                    </div>
+                                                                {% endif %}
+                                                                <div class="new_content">
+                                                                    {% if block.settings.text != blank %}
+                                                                        <span>{{ block.settings.text }}</span>
+                                                                    {% endif %}
+                                                                    <h4 class="new-header"><span>{{ block.settings.heading }}</span>{{ block.settings.subheading }}</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                            <div class="swiper-pagination d-block d-lg-none"></div>
+                                        </div>
+                                        <div class="new-arrow swiper-button-prev swiper-button"></div>
+                                        <div class="new-arrow  swiper-button-next swiper-button"></div>
+                                    </div>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- -- main banner end -- -->
+    <!-- -- main banner end -- -->
+ 
+{% endcomment %}
 
 {% if product_count > 0 %}
     <script>
@@ -150,14 +333,14 @@
                 "label": "t:common.text.label"
             },
             {
-                "type": "image_picker",
-                "id": "image",
-                "label": "t:common.image.label"
+                "type": "video",
+                "id": "video",
+                "label": "t:common.video.label"
             },
             {
-                "type": "image_picker",
-                "id": "image_mobile",
-                "label": "t:common.image_mobile.label"
+                "type": "video",
+                "id": "video_mobile",
+                "label": "t:common.video.mobile.label"
             },
             {
                 "type": "url",
