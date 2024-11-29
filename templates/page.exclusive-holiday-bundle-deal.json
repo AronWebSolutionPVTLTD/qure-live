@@ -884,7 +884,7 @@
             "is_limited": false,
             "image": "shopify://shop_images/bfs_mask.webp",
             "text": "",
-            "count": "58 left",
+            "count": "91 left",
             "hide_variants": false,
             "code": ""
           }
@@ -1675,10 +1675,12 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Hello make up free days, goodbye clinical costs",
         "heading_reduced": "",
         "text": "",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "p10": {
