@@ -9,7 +9,7 @@
             {%- for block in section.blocks -%}
                 {% if block.type == 'badge' %}
                     <div class="bfs_tag mt-3 mb-md-2 mx-auto">
-                        <p class="bfs_tag_bf">{{ block.settings.heading }}</p>
+                        <p class="bfs_tag_bf" style="background-color: {{ block.settings.color_main }}">{{ block.settings.heading }}</p>
                         <p class="bfs_tag_sale" style="background-color: {{ block.settings.color }}">{{ block.settings.text }}</p>
                     </div>
                 {% endif %}
@@ -157,6 +157,12 @@
                         "id": "text",
                         "label": "t:common.text.label",
                         "default": "SALE"
+                    },
+                    {
+                        "type":"color",
+                        "id":"color_main",
+                        "label":"t:common.color.label",
+                        "default":"#000000"
                     },
                     {
                         "type":"color",
