@@ -530,7 +530,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-pro",
-            "percent": 28,
+            "percent": 26,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
@@ -608,7 +608,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-advanced-1",
-            "percent": 41,
+            "percent": 35,
             "media_limit": 0,
             "hide_us": true,
             "recommended_heading": "",
@@ -666,7 +666,7 @@
           "type": "product",
           "settings": {
             "product": "line-refine-bundle-essentials",
-            "percent": 38,
+            "percent": 37,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -787,7 +787,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-pro",
-            "percent": 31,
+            "percent": 28,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -864,7 +864,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-advance",
-            "percent": 23,
+            "percent": 21,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "<p><strong>Dr. Prem Tripathi, </strong>Certified Plastic Surgeon</p>",
@@ -923,7 +923,7 @@
           "type": "product",
           "settings": {
             "product": "fade-firm-bundle-essentials",
-            "percent": 34,
+            "percent": 27,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
@@ -981,7 +981,7 @@
           "type": "product",
           "settings": {
             "product": "micro-infusion-limited-edition-bundle",
-            "percent": 24,
+            "percent": 22,
             "default_variant_id": 45991849787631,
             "media_limit": 3,
             "hide_us": false,
@@ -1041,7 +1041,7 @@
           "type": "product",
           "settings": {
             "product": "filter-family-bundle",
-            "percent": 31,
+            "percent": 28,
             "default_variant_id": 45909771124975,
             "media_limit": 0,
             "hide_us": true,
@@ -1176,7 +1176,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-pro-1",
-            "percent": 24,
+            "percent": 27,
             "default_variant_id": 45970548883695,
             "media_limit": 0,
             "hide_us": true,
@@ -1254,7 +1254,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-advanced",
-            "percent": 33,
+            "percent": 31,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "<p><strong>Dr Shah, MD </strong>Certified Dermatologist</p>",
@@ -1313,7 +1313,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-starter",
-            "percent": 23,
+            "percent": 28,
             "default_variant_id": 45909844787439,
             "media_limit": 0,
             "hide_us": true,
@@ -1372,7 +1372,7 @@
           "type": "product",
           "settings": {
             "product": "breakout-control-essentials",
-            "percent": 32,
+            "percent": 29,
             "media_limit": 0,
             "hide_us": false,
             "recommended_heading": "",
