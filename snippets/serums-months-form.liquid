@@ -1,6 +1,16 @@
-{% if section_id == blank %}
+{% if section == blank %}
     <p>Please provide section_id property to use this snippet</p>
 {% else %}
+    {% assign section_id = section.id %}
+
+    {%- assign supply_for_refill = 0 -%}
+
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'supply_for_refill' -%}
+                {%- assign supply_for_refill = block -%}
+        {%- endcase -%}
+    {%- endfor -%}
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -22,8 +32,8 @@
                         <p class="pb-3">Choose serums:</p>
                         <div class="step_content step_serum serum_image">
                             <div class="serumBlock {{ section_id }}_productTypeObject">
-                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating-hydra" checked>
-                                <label class="serum_prd" for="mBanner_rejuvenating-hydra">
+                                <input type="radio" name="mBanner_serum" id="option_for_wrinkles_darkspots" checked>
+                                <label class="serum_prd" for="option_for_wrinkles_darkspots">
                                     <div class="serum_img product_type" data-product-type="1">
                                         <img src="{{ 'reju_hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
                                     </div>
@@ -33,8 +43,8 @@
                                 </label>
                             </div>
                             <div class="serumBlock {{ section_id }}_productTypeObject mt-0">
-                                <input type="radio" name="mBanner_serum" id="mBanner_hydra-soothing">
-                                <label class="serum_prd" for="mBanner_hydra-soothing">
+                                <input type="radio" name="mBanner_serum" id="option_for_wrinkles">
+                                <label class="serum_prd" for="option_for_wrinkles">
                                     <div class="serum_img product_type" data-product-type="3">
                                         <img src="{{ 'hydra_blue.webp' | asset_url }}" alt="" class="img-fluid">
                                     </div>
@@ -42,8 +52,8 @@
                                 </label>
                             </div>
                             <div class="serumBlock {{ section_id }}_productTypeObject">
-                                <input type="radio" name="mBanner_serum" id="mBanner_rejuvenating">
-                                <label class="serum_prd" for="mBanner_rejuvenating">
+                                <input type="radio" name="mBanner_serum" id="option_for_darkspots">
+                                <label class="serum_prd" for="option_for_darkspots">
                                     <div class="serum_img product_type" data-product-type="2">
                                         <img src="{{ 'dark_spots.webp' | asset_url }}" alt="" class="img-fluid">
                                     </div>
@@ -123,6 +133,90 @@
                         </div>
                     </div>
                 </div>
+
+                {% if supply_for_refill != blank %}
+                    <div class="next_batch_bl next_batch_highlight mt-4">
+                        {% if supply_for_refill.settings.heading != blank %}
+                            <h6 class="d-none d-md-block">{{ supply_for_refill.settings.heading }}</h6>
+                        {% endif %}
+
+                        {% if supply_for_refill.settings.heading_mobile != blank %}
+                            <h6 class="d-md-none">{{ supply_for_refill.settings.heading_mobile }}</h6>
+                        {% endif %}
+                        
+                        {% if supply_for_refill.settings.text != blank %}
+                            {{ supply_for_refill.settings.text }}
+                        {% endif %}
+
+                        <div class="batch_h batch_h_fade mt-3 mt-md-4">
+                            <div class="batch_h_month">{{ supply_for_refill.settings.first_option_date }}</div>
+                            <div class="batch_h_info sold_out_h" style="--bgPercent:{{ supply_for_refill.settings.first_option_percent }}%;">
+                                <span>{{ supply_for_refill.settings.first_option_text }}</span></div>
+                        </div>
+                        <div class="batch_h my-2">
+                            <div class="batch_h_month">{{ supply_for_refill.settings.second_option_date }}</div>
+                            <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.second_option_percent }}%;">{{ supply_for_refill.settings.second_option_text }}</div>
+                        </div>
+                        <div class="batch_h batch_h_fade">
+                            <div class="batch_h_month">{{ supply_for_refill.settings.third_option_date }}</div>
+                            <div class="batch_h_info" style="--bgPercent:{{ supply_for_refill.settings.third_option_percent }}%;"><span>{{ supply_for_refill.settings.third_option_text }}</span></div>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const serumOptions = document.querySelectorAll('input[name="mBanner_serum"]');
+                            const supplySteps = document.querySelector(".supply_steps.month_plan_steps");
+                            const nextBatchBl = document.querySelector(".next_batch_bl");
+                            const buyButton = document.querySelector(".buy_btn");
+                            const buyButtonSoldout = document.querySelector(".buy_btn_soldout");
+                            let isOptionForWrinklesDarkSpots = false;
+                            let isOptionForWrinkles = false;
+                            let isOptionForDarkSpots = false;
+                
+                            const handleSerumChange = () => {
+                                let selectedSerum = document.querySelector('input[name="mBanner_serum"]:checked');
+
+                                if(selectedSerum)
+                                {
+                                    {% if supply_for_refill.settings.option_wrinkles_darkspots %}
+                                        let isOptionForWrinklesDarkSpots = selectedSerum.id === "option_for_wrinkles_darkspots";
+                                    {% endif %}
+
+                                    {% if supply_for_refill.settings.option_wrinkles %}
+                                        let isOptionForWrinkles = selectedSerum.id === "option_for_wrinkles";
+                                    {% endif %}
+
+                                    {% if supply_for_refill.settings.option_darkspots %}
+                                        let isOptionForDarkSpots = selectedSerum.id === "option_for_darkspots";
+                                    {% endif %}
+
+                                    toogleBuySection(isOptionForWrinklesDarkSpots || isOptionForWrinkles || isOptionForDarkSpots);
+                                }
+                            };
+
+                            const toogleBuySection = (is_target) => {
+                                if (is_target === true) {
+                                    nextBatchBl.style.display = "block";
+                                    supplySteps.style.display = "none";
+                                    buyButton.style.display = "none";
+                                    buyButtonSoldout.style.display = "block";
+                                } else {
+                                    nextBatchBl.style.display = "none";
+                                    supplySteps.style.display = "block";
+                                    buyButton.style.display = "block";
+                                    buyButtonSoldout.style.display = "none";
+                                }
+                            }
+                
+                            serumOptions.forEach((option) => {
+                                option.addEventListener("change", handleSerumChange);
+                            });
+                
+                            handleSerumChange();
+                        });
+                    </script>
+                {% endif %}
             </div>
         </div>
 
@@ -132,9 +226,12 @@
     {% assign discount_percentage = product.price | times: 1.0 | divided_by: product.compare_at_price | minus: 1 | abs | times: 100 | ceil %}
     {% assign divided_price = product.price | divided_by: 4 %}
     {% render 'pdm_orderby' %}
+    
     <a class="btn btn-lg btn-primary buy_btn mt-3 {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>Buy Now <span
             class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
     </a>
+
+    <a class="btn btn-lg btn-primary buy_btn mt-3 buy_btn_soldout" href="#" style="display: none">Sold Out</a>
 
     <div class="payment_method">
         <p>OR 4 monthly payments of <span class="payment_price">{{ divided_price | money_without_trailing_zeros }}</span> with</p>
