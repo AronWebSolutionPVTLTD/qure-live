@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "product-landing",
@@ -97,7 +97,7 @@
             "third_option_text": "In Production",
             "third_option_percent": 0,
             "option_wrinkles_darkspots": false,
-            "option_wrinkles": false,
+            "option_wrinkles": true,
             "option_darkspots": false
           }
         }
