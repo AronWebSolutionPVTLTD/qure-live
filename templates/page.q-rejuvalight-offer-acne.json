@@ -54,7 +54,7 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "SHOP BLACK FRIDAY SALE",
+        "button_label": "SHOP HOLIDAY SALE",
         "button_url": "#shop"
       }
     },
@@ -617,9 +617,13 @@
       ],
       "settings": {
         "heading": "Dermatologist Tried, Tested, & Approved",
+        "sub_heading": "",
         "classname": "section videosQure",
         "btn": "",
-        "btn_url": ""
+        "btn_url": "",
+        "desk_slide": 6,
+        "mob_slide": 1.7,
+        "slide_space": 10
       }
     },
     "image_text_jBxiPm": {
@@ -668,10 +672,12 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Clinical Results Without The Clinical Price Tag",
         "heading_reduced": "",
         "text": "<p>Buy it once, reap the benefits forever.</p>",
-        "text_reduced": ""
+        "text_reduced": "",
+        "design": false
       }
     },
     "faq_4akixC": {
