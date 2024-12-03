@@ -111,6 +111,7 @@
         },
         "product_BANXY7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "<p><strong>Save up to 55% off</strong> on Black Friday Bundles.</p>",
             "image": "shopify://shop_images/bf-bundle-sm.webp",
@@ -248,7 +249,6 @@
         "product_4ArLn3",
         "product_BA8d6X"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Rediscover Your Confidence \\n This Holiday",
         "heading_mobile": "",
