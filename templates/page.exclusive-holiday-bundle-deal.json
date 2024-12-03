@@ -71,10 +71,10 @@
         "badge_bNNHbU": {
           "type": "badge",
           "settings": {
-            "heading": "BLACK FRIDAY",
-            "text": "SALE",
-            "color_main": "#000000",
-            "color": "#c4121a"
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
           }
         },
         "link_Xz3LeQ": {
@@ -457,10 +457,10 @@
         "badge_TwBcgj": {
           "type": "badge",
           "settings": {
-            "heading": "BLACK FRIDAY",
-            "text": "SALE",
-            "color_main": "#000000",
-            "color": "#c4121a"
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
           }
         },
         "object_pBAeDi": {
