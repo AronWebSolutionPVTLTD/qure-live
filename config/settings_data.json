@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "show_bf_price": true,
+    "show_bf_price": false,
     "favicon": "shopify://shop_images/qure.png",
     "social_instagram_link": "https://www.instagram.com/qureskincare/",
     "social_facebook_link": "https://www.facebook.com/Qureskincare/",
@@ -36,7 +36,7 @@
     "start_time_order": "2024-10-30T23:00",
     "end_time_order": "2024-11-04T23:59",
     "show_order_by_receive_by_us": false,
-    "enable_corner_treatment_bfcm": true,
+    "enable_corner_treatment_bfcm": false,
     "enable_site_gamification": true,
     "enable_free_shipping_treshold": true,
     "enable_product_gift": true,
