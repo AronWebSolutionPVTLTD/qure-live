@@ -34,7 +34,7 @@
           "type": "navigation-link",
           "settings": {
             "link_label": "SPECIAL OFFER",
-            "link_url": "#special_offer",
+            "link_url": "#shop",
             "image": "shopify://shop_images/header_specialOffer.webp"
           }
         },
