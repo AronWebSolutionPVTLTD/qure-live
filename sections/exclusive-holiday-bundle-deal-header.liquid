@@ -251,49 +251,33 @@
         // Initialize Swipers
         TwaSettingsSwiper.init();
 
-        function initializeVariantToggle(parentClass, radioClass) {
-            // Ensure that the DOM is fully loaded before running the script
-            document.addEventListener('DOMContentLoaded', function () {
-                const parentDivs = document.querySelectorAll(`.${parentClass}`);
+        function initializeVariantToggle() {
+            const bundleBlock = document.getElementById("micro-infusion-limited-edition-bundle");
 
-                parentDivs.forEach(parentDiv => {
-                    const radioButtons = parentDiv.querySelectorAll(`.${radioClass}`);
+            if (bundleBlock) {
+                const radioInputs = bundleBlock.querySelectorAll("input.type_radio");
+                const imageElement = bundleBlock.querySelector(".imageFaucet");
+                const titleElement = bundleBlock.querySelector(".bfs_tbx_title");
 
-                    if (radioButtons.length === 0) {
-                        console.error(`No radio buttons with class "${radioClass}" found inside parent class "${parentClass}".`);
-                        return;
-                    }
-
-                    // Set the third variant (varient-3) as the default
-                    if (radioButtons[0]) {
-                        radioButtons[0].checked = true;  // Set third radio button as checked
-                    }
-
-                    function updateVariantClass() {
-                        // Remove existing classes
-                        parentDiv.classList.remove('varient-1', 'varient-2', 'varient-3');
-
-                        // Add class based on checked radio
-                        radioButtons.forEach((radioButton, index) => {
-                            if (radioButton.checked) {
-                                parentDiv.classList.add(`varient-${index + 1}`);
+                radioInputs.forEach(input => {
+                    input.addEventListener("click", function () {
+                        if (imageElement && titleElement) {
+                            if (this.id === "type_p1-v1") {
+                                imageElement.src = "https://qureskincaredns.com/new/assets/bfs_blue-serum.webp";
+                                titleElement.textContent = "Micro-Infusion 3 Month (for Wrinkles)";
+                            } else if (this.id === "type_p1-v2") {
+                                imageElement.src = "https://qureskincaredns.com/new/assets/bfs_serumY.webp";
+                                titleElement.textContent = "Micro-Infusion 3 Month (for Dark Sports)";
                             }
-                        });
-                    }
-
-                    // Add event listeners to each radio button
-                    radioButtons.forEach(radioButton => {
-                        radioButton.addEventListener('click', updateVariantClass);
+                        }
                     });
-
-                    // Trigger the function on page load to set the default class
-                    updateVariantClass();
                 });
-            });
-        }
+            }
+        };
 
-        // Initialize for all sets of elements based on classes
-        initializeVariantToggle('type-varient', 'type_radio');
+
+        // // Initialize for all sets of elements based on classes
+        initializeVariantToggle();
 
 
         // Select all the color selectors
