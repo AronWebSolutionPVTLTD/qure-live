@@ -34,10 +34,15 @@
                     {% assign video_mobile_source_url = section.settings.video_mobile.sources[0].url %}
                 {% endif %}
 
-                <!-- Mobile video (visible on small screens) -->
                 <video class="bg_banner d-lg-none" autoplay muted loop playsinline style="height: 342px;">
-                    <source src="{{ video_mobile_source_url }}" type="video/webm">
+                    <source src="https://qureskincaredns.com/new/assets/homepage_holiday-mob.webm" type="video/webm">
+                    <!-- aaaaqqqq [ {{ video_mobile_source_url }} ] -->
                 </video>
+
+                <!-- Mobile video (visible on small screens) -->
+                {% comment %} <video class="bg_banner d-lg-none" autoplay muted loop playsinline style="height: 342px;">
+                    <source src="{{ video_mobile_source_url }}" type="video/webm">
+                </video> {% endcomment %}
             {% endif %}
         </div>
 
@@ -182,7 +187,7 @@
     }
     
     // Adjust video height on page load and window resize
-    window.addEventListener('DOMContentLoaded', adjustVideoHeight);
+    window.addEventListener('load', adjustVideoHeight);
     window.addEventListener('resize', adjustVideoHeight);
 </script>
 
