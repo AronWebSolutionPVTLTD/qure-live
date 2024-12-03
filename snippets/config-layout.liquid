@@ -163,6 +163,9 @@
     {% when 'page.loyalty-program' %}
         {% assign main_class = 'loyalty_program' %}
         <link rel="stylesheet" href="{{ 'loyalty-program.css' | asset_url }}">
+    {% when 'page.reviews' %}
+        {% assign main_class = 'review_and-results' %}
+        <link rel="stylesheet" href="{{ 'reviews-and-results.css' | asset_url }}">
     {% when 'page.patches-content-guide' %}
         {% assign main_class = 'content_instructions content_instructions_patches' %}
         <link rel="stylesheet" href="{{ 'content-instructions.css' | asset_url }}">
