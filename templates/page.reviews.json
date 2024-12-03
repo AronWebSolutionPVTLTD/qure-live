@@ -10,11 +10,24 @@
 {
   "sections": {
     "main": {
-      "type": "temp-page-loyalty-program",
+      "type": "page",
+      "custom_css": [
+        ".subscriptions_header {display:none}"
+      ],
+      "settings": {}
+    },
+    "17115385750c73305f": {
+      "type": "apps",
+      "settings": {}
+    },
+    "1723811635f4799cbc": {
+      "type": "apps",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "17115385750c73305f",
+    "1723811635f4799cbc"
   ]
 }
