@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -252,12 +252,12 @@
       "settings": {
         "heading": "Rediscover Your Confidence \\n This Holiday",
         "heading_mobile": "",
-        "subheading": "<p><strong>Save up to 55%</strong> Off on Exclusive Holiday <strong>Bundles</strong></p>",
+        "subheading": "<p><strong>Save up to 55%</strong> on Exclusive Holiday <strong>Bundles</strong></p>",
         "subheading_mobile": "",
         "text": "",
         "video": "shopify://files/videos/homepage_holiday.webm",
         "video_mobile": "shopify://files/videos/homepage_holiday-mob.webm",
-        "link_url": "https://www.qureskincare.com/collections/best-sellers"
+        "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
       }
     },
     "featuredin_extended_P7BNDN": {
