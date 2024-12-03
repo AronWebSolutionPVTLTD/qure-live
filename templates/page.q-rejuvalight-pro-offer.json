@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_LTnaTx": {
       "type": "header-landing",
@@ -54,7 +54,7 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "SHOP BLACK FRIDAY OFFER",
+        "button_label": "SHOP HOLIDAY SALE",
         "button_url": "#shop"
       }
     },
@@ -566,7 +566,6 @@
     },
     "offer": {
       "type": "custom-q-rejuvalight-pro-offer",
-      "disabled": true,
       "settings": {}
     },
     "featured_product_pEjkiL": {
@@ -622,6 +621,7 @@
         "product_benefits_jpWz4R",
         "button_mxBJWm"
       ],
+      "disabled": true,
       "settings": {
         "product": "q-rejuvalight-pro-facewear",
         "pd_video": "https://www.youtube.com/watch?v=X9KXJPv6rno",
@@ -630,6 +630,7 @@
     },
     "featured_product_2_YjNQXn": {
       "type": "featured-product-2",
+      "disabled": true,
       "settings": {
         "bg_image": "shopify://shop_images/led_neck_bundle.webp",
         "product": "neck-decolletage-led",
