@@ -141,19 +141,19 @@
                 }
             }
         });
+    });
 
-        // Adjust video height on page load and window resize
-        function adjustVideoHeight() {
+    function adjustVideoHeight() {
         const screenWidth = window.innerWidth;
         
         // Desktop video height adjustment
         const desktopVideo = document.querySelector('.d-lg-block');
         if (desktopVideo) {
-            if (screenWidth >= 1920) {
+        if (screenWidth >= 1920) {
             desktopVideo.style.height = '645px';
-            } else if (screenWidth <= 1024) {
+        } else if (screenWidth <= 1024) {
             desktopVideo.style.height = '342px';
-            } else {
+        } else {
             // Interpolate height between 1920px and 1024px screen width
             const minScreen = 1024;
             const maxScreen = 1920;
@@ -162,13 +162,13 @@
         
             const interpolatedHeight = minHeight + ((screenWidth - minScreen) / (maxScreen - minScreen)) * (maxHeight - minHeight);
             desktopVideo.style.height = `${interpolatedHeight}px`;
-            }
+        }
         }
     
         // Mobile video height adjustment
         const mobileVideo = document.querySelector('.d-lg-none');
         if (mobileVideo) {
-            if (screenWidth <= 1024) {
+        if (screenWidth <= 1024) {
             // Adjust mobile video height based on screen height (375px to 1024px)
             const minHeight = 620;
             const maxHeight = 1690;
@@ -177,12 +177,12 @@
     
             const interpolatedHeight = minHeight + ((screenWidth - minScreenHeight) / (maxScreenHeight - minScreenHeight)) * (maxHeight - minHeight);
             mobileVideo.style.height = `${interpolatedHeight}px`;
-            }
         }
         }
-
-        adjustVideoHeight();
-    });
+    }
+    
+    // Adjust video height on page load and window resize
+    window.addEventListener('DOMContentLoaded', adjustVideoHeight);
     window.addEventListener('resize', adjustVideoHeight);
 </script>
 
