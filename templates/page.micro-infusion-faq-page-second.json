@@ -30,7 +30,7 @@
         ".nav__item.cart_btn,.nav__item.header_gift_btn {display: none !important;}"
       ],
       "settings": {
-        "button_label": "BLACK FRIDAY SAVE 50%",
+        "button_label": "HOLIDAY OFFER SAVE 50%",
         "button_url": "#productSubscription"
       }
     },
@@ -636,6 +636,15 @@
         "custom_class": "mw-932 text-md-left ms-0"
       }
     },
+    "anti_creams_microinfusion_page_stamping_EykDgH": {
+      "type": "anti-creams-microinfusion-page-stamping",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "custom_class": "mw-680",
+        "custom_class2": ""
+      }
+    },
     "liquid_n8qCEc": {
       "type": "liquid",
       "settings": {
@@ -651,6 +660,7 @@
             "image": "shopify://shop_images/results_glorija_fr.webp",
             "heading": "Best natural glow",
             "text": "<p>“I was hesitant at first as I didn’t know how much it would hurt but to my surprise it was pretty painless. The 2nd day after the treatment, my skin has the best natural glow! I was also happy to to see how much my pigmentation had lightened after 3rd treatment :) I switch between the serums depending on how my skin is before the treatment.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/australia_f_35e9b6f0-d77f-4184-afaf-224d96562185.webp",
             "text_country": "Australia",
             "client": "Glorija",
@@ -663,6 +673,7 @@
             "image": "shopify://shop_images/results_ellie_fr.webp",
             "heading": "My skin returned to life!",
             "text": "<p>“I just turned 57 years. My skin was extremely dry and while using this product my skin RETURNED to LIFE! I am so impressed with it! My Coworkers ask me what I use in my skin.. and I tell them. Product easy to use and the needles are better that using a pen for microneedling. This is an amazing product that you will not regret in purchasing it. I really see the change in my skin. Outstanding job QURE!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Ellie V.",
@@ -675,6 +686,7 @@
             "image": "shopify://shop_images/results_mona.webp",
             "heading": "Fade after just two treatments",
             "text": "<p>“I personally think my products absorbed better, my skin looks a bit brighter and that larger acne scar on my right cheek has started to fade after just TWO treatments!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Mona P.",
@@ -687,6 +699,7 @@
             "image": "shopify://shop_images/ela_o.png",
             "heading": "Shocked at the results",
             "text": "<p>“Shocked at the results after just one treatment!<br/>I’m not one to usually leave reviews... but I was shocked at how my skin looked the morning after<br/><br/>my first treatment!<br/>Texture was soooo much smoother, my skin looked clear, glowy and healthy. The system was so easy to use and I can’t wait until my next treatment.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Ela O.",
@@ -699,6 +712,7 @@
             "image": "shopify://shop_images/ann.png",
             "heading": "I LOVE the results",
             "text": "<p>“I heard about micro-infusion in clinics but couldn’t afford to fork out hundreds of dollars for a treatment. So when I saw this online I jumped at buying it instantly. Yes, it doesn’t stamp in botox and filler BUT personally I LOVE the results and how easy it is to use myself at home. <br/>It works great for my skin, I have noticed my skin texture is much smoother and brighter.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/australia_f.webp",
             "text_country": "Australia",
             "client": "Ann",
@@ -711,6 +725,7 @@
             "image": "shopify://shop_images/chelsea.png",
             "heading": "Amazing results!",
             "text": "<p>\"Amazing results. I am just in shock at how great my skin is looking. This stuff has been amazing for hyperpigmentation and also some hormonal cystic acne. I will be continuing to support this business because it has brought the skin I know back. I was at my wits end with a hormonal breakout and bad hyperpigmentation.\"</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/america_f.webp",
             "text_country": "United States",
             "client": "Chelsea J.",
@@ -723,6 +738,7 @@
             "image": "shopify://shop_images/jess.png",
             "heading": "IT REALLY WORKS!!",
             "text": "<p>“I committed to the 3 month saver bundle and after 6 treatments (2 weeks apart) I’m SO happy with the results!!! My pores are smaller and I have mainly noticed a difference in my skin texture. My skin goes a little red straight after the treatment but that quickly goes away. It’s a little uncomfortable when I do it on my forehead but it’s fine everywhere else. Totally worth it!!!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Jess",
@@ -735,6 +751,7 @@
             "image": "shopify://shop_images/andrea.png",
             "heading": "Absolutely love it!",
             "text": "<p>“I have used many topicals to help with post acne marks. This micro-infusion system has given me the most consistent results. Absolutely love it!”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Andrea A.",
@@ -747,6 +764,7 @@
             "image": "shopify://shop_images/priya.png",
             "heading": "Plumper, more hydrated!",
             "text": "<p>“After the first use of EGF, my skin was plumper, more hydrated and skin tone improved radically, literally the next day. Love this product, will definitely be purchasing more as its really helped smooth out the fine lines also”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/uk.png",
             "text_country": "United Kingdom",
             "client": "Priya P.",
@@ -759,6 +777,7 @@
             "image": "shopify://shop_images/results_andrea-g.webp",
             "heading": "Definitely be re-ordering",
             "text": "<p>“Still a newbie but so far so great! I have dermarolled for more than a decade -still do with .25 at least one a week. I’ve avoided getting a pen because there’s so much involved- but the Qure system is just awesome. So easy and user friendly and my skin loves the serum! Doing my third treatment Saturday and will definitely be re-ordering 🤗</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Andrea G.",
@@ -771,6 +790,7 @@
             "image": "shopify://shop_images/ramandeep.png",
             "heading": "I definitely see a difference",
             "text": "<p>“I have done 2 treatments - 1 for rejuvenating and 2 for hydration with 3 week gap in between treatments. I definitely see a difference in before and after pictures. I am sure I need 4-8 more treatments but this did make a difference.”</p>",
+            "see-more": "",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "Michigan",
             "client": "Ramandeep",
@@ -816,15 +836,6 @@
       "type": "liquid",
       "settings": {
         "code": "<div class=\"offering_period_bl mw-855 mb-5\">\n            <div class=\"container\">\n                <div class=\"offering_period bg-grey\">\n                    <p><strong>As of 07/30/24:</strong></p>\n                    <p>\n                        To celebrate more women saying no to the hype and yes to simple skincare that works, we're\n                        offering a\n                        limited-time discount of up to 43% for this month only.</p>\n                </div>\n            </div>\n        </div>"
-      }
-    },
-    "anti_creams_microinfusion_page_stamping_EykDgH": {
-      "type": "anti-creams-microinfusion-page-stamping",
-      "settings": {
-        "heading": "",
-        "text": "",
-        "custom_class": "mw-680",
-        "custom_class2": ""
       }
     }
   },
