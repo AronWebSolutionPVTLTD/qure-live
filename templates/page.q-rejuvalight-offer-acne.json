@@ -410,8 +410,61 @@
     },
     "offer": {
       "type": "custom-q-rejuvalight-pro-offer",
-      "custom_css": [],
-      "settings": {}
+      "blocks": {
+        "image_RKqxEU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-1.webp"
+          }
+        },
+        "image_aweG7D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-2.webp"
+          }
+        },
+        "image_dhBen9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-3.webp"
+          }
+        },
+        "video_ymcEbU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/doctors_mob.webp",
+            "wistia_id": "9jj4apywvn"
+          }
+        },
+        "image_yt68z6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-4.webp"
+          }
+        },
+        "image_kXHQJw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_RKqxEU",
+        "image_aweG7D",
+        "image_dhBen9",
+        "video_ymcEbU",
+        "image_yt68z6",
+        "image_kXHQJw"
+      ],
+      "settings": {
+        "heading": "Q-Rejuvalight Pro LED Mask",
+        "subheading": "Repair and rejuvenate your skin—and boost your self-esteem—with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.",
+        "text": "<ul><li>Customizable treatment on 5 facial areas for your specific skin concerns</li><li>3-minute daily treatments with convenient, hands-free operation</li><li>Compatible app to track, plan and schedule your treatments</li></ul>",
+        "price": "$379",
+        "button_label": "SEE IT IN ACTION",
+        "button_url": "https://www.youtube.com/watch?v=X9KXJPv6rno"
+      }
     },
     "featured_product_pEjkiL": {
       "type": "featured-product",
