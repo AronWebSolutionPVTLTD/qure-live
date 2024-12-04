@@ -12,9 +12,39 @@
     "main": {
       "type": "temp-page-loyalty-program",
       "settings": {}
+    },
+    "17333325327bc1f4c8": {
+      "type": "apps",
+      "blocks": {
+        "stamped_loyalty_referrals_page_earnings_c7HNiL": {
+          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-earnings/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_title": "Ways to Earn Points"
+          }
+        },
+        "stamped_loyalty_referrals_page_referral_n6N7Ky": {
+          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-referral/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "settings": {
+            "label_subtitle": "",
+            "label_title": "Refer a Friend",
+            "label_description": "Give your friend {0} off on their first skin-vestment and get {1} Qoins for each member you introduce to the Skin I-Q Club.",
+            "label_button": "Start referring now",
+            "label_send": "Send",
+            "label_email_customer": "Enter your email address:",
+            "label_email_friend": "Enter your friend's email address:",
+            "label_thank_you": "Your referral has been sent to your friend, thank you!"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_loyalty_referrals_page_earnings_c7HNiL",
+        "stamped_loyalty_referrals_page_referral_n6N7Ky"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "17333325327bc1f4c8"
   ]
 }
