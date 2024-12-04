@@ -402,6 +402,19 @@
             "concerns": "Acne",
             "verified": true
           }
+        },
+        "slide_Yn9aAP": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Best Investment in my skin",
+            "product": "",
+            "text": "<p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
+            "image": "shopify://shop_images/Group_1299_f3874fc3-3157-48c1-b479-be960ef088b4.png",
+            "image_country": "shopify://shop_images/uk.png",
+            "client": "Saskia Z.",
+            "concerns": "Acne",
+            "verified": true
+          }
         }
       },
       "block_order": [
@@ -413,7 +426,8 @@
         "slide_ytEe6x",
         "slide_CPEePW",
         "slide_mNAa9k",
-        "slide_HUCC4N"
+        "slide_HUCC4N",
+        "slide_Yn9aAP"
       ],
       "settings": {
         "heading": "Thousands are out-glowing their insecurities",
