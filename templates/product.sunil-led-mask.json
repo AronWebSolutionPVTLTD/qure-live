@@ -638,6 +638,19 @@
             "client": "Ana L",
             "code": ""
           }
+        },
+        "result_H93Rhe": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/Group_1299_f3874fc3-3157-48c1-b479-be960ef088b4.png",
+            "heading": "Best Investment in my skin",
+            "text": "<p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
+            "see-more": "",
+            "image_country": "shopify://shop_images/uk.png",
+            "text_country": "United Kingdom",
+            "client": "Saskia Z.",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -653,7 +666,8 @@
         "result_U4khQD",
         "result_W8bKNg",
         "result_TkKNU8",
-        "result_jtGKYb"
+        "result_jtGKYb",
+        "result_H93Rhe"
       ],
       "settings": {
         "classname": "mi_landing_result",
