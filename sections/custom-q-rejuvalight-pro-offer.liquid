@@ -149,7 +149,7 @@
                                                                     more with just three minutes of use a day.
                                                                 </p>
                                                             </div>
-                                                            <p class="price_txt">$379</p>
+                                                            <p class="price_txt">{{ 379 | times: 100 | money_without_trailing_zeros }}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -176,10 +176,10 @@
                                                             </div>
                                                             <p class="price_txt">
                                                                 <span class="fw-bold">+</span><span
-                                                                    class="discounted-price price_txt">$99</span>
-                                                                <span class="original-price">$299</span>
+                                                                    class="discounted-price price_txt">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
+                                                                <span class="original-price">{{ 299 | times: 100 | money_without_trailing_zeros }}</span>
                                                             </p>
-                                                            <p class="save_txt">Save $200 on bundle</p>
+                                                            <p class="save_txt">Save {{ 200 | times: 100 | money_without_trailing_zeros }} on bundle</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -215,9 +215,9 @@
                                                         <p>
                                                             <span class="fw-bold">+</span><span
                                                                 id="extended-warranty-price"
-                                                                class="discounted-price price_txt">$49</span>
+                                                                class="discounted-price price_txt">{{ 49 | times: 100 | money_without_trailing_zeros }}</span>
                                                             <span id="extended-warranty-mrp"
-                                                                class="original-price">$99</span>
+                                                                class="original-price">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
                                                         </p>
                                                         <p id="extended-warranty-savings" class="save_txt"></p>
                                                     </div>
@@ -230,10 +230,10 @@
                                     <div class="total-section">
                                         <p>
                                             Total:
-                                            <span class="original-price" id="original-total-price">$777</span>
-                                            <span id="total-price">$527</span>
+                                            <span class="original-price" id="original-total-price">{{ 777 | times: 100 | money_without_trailing_zeros }}</span>
+                                            <span id="total-price">{{ 527 | times: 100 | money_without_trailing_zeros }}</span>
                                         </p>
-                                        <p class="savings">You Save: <span id="savings">$250</span></p>
+                                        <p class="savings">You Save: <span id="savings">{{ 250 | times: 100 | money_without_trailing_zeros }}</span></p>
                                     </div>
 
 
@@ -278,6 +278,7 @@
     // Default selections
     let selectedProduct = 'mask-only';
     let selectedWarranty = 'one-year';
+    let currentCurrency = "{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}";
 
     // Update Total, Original Price, Savings, and Installments
     function updateTotal() {
@@ -297,13 +298,13 @@
         const totalDiscount = product.discount + warranty.discount;
 
         // Update DOM elements
-        document.getElementById('total-price').innerText = `$${totalPrice}`;
-        document.getElementById('savings').innerText = `$${totalDiscount}`;
-        document.getElementById('original-total-price').innerText = `$${originalTotalPrice}`; // Update original total price
+        document.getElementById('total-price').innerText = currentCurrency + `${totalPrice}`;
+        document.getElementById('savings').innerText = currentCurrency + `${totalDiscount}`;
+        document.getElementById('original-total-price').innerText = currentCurrency + `${originalTotalPrice}`; // Update original total price
 
         // Update installment price
         const installmentAmount = (totalPrice / 4).toFixed(2);
-        document.querySelector('.instalments').innerText = `$${installmentAmount}`;
+        document.querySelector('.instalments').innerText = currentCurrency + `${installmentAmount}`;
     }
 
     // Handle product selection
@@ -338,15 +339,15 @@
         const warrantyPrice = warrantyPrices['extended'][selectedProduct];
 
         // Update displayed discounted price
-        document.getElementById('extended-warranty-price').innerText = `$${warrantyPrice.price}`;
+        document.getElementById('extended-warranty-price').innerText = currentCurrency + `${warrantyPrice.price}`;
 
         // Update displayed original price dynamically
-        document.getElementById('extended-warranty-mrp').innerText = `$${warrantyPrice.originalPrice}`;
+        document.getElementById('extended-warranty-mrp').innerText = currentCurrency + `${warrantyPrice.originalPrice}`;
 
         // Update savings text
         const savingsText = selectedProduct === 'mask-only'
-            ? 'Save $10'
-            : 'Save $50';
+            ? 'Save {{ 10 | times: 100 | money_without_trailing_zeros }}'
+            : 'Save {{ 50 | times: 100 | money_without_trailing_zeros }}';
 
         const mobileSuffix = window.innerWidth > 768 ? ' Limited Time Deal' : ''; // Add text only for desktop
         document.getElementById('extended-warranty-savings').innerText = savingsText + mobileSuffix;
@@ -468,11 +469,6 @@
                 "type": "richtext",
                 "id": "text",
                 "label": "t:common.text.label"
-            },
-            {
-                "type": "text",
-                "id": "price",
-                "label": "t:common.price.label"
             },
             {
                 "type": "text",
