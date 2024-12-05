@@ -177,7 +177,6 @@
     <script src="{{ '__app_serums-months-form.js' | asset_url }}"></script>
 
     <script src="{{ '__app_serums-refill-form.js' | asset_url }}"></script>
-    <script async type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
 
     <script defer type="text/javascript">
         /* order by: states info */
@@ -243,9 +242,12 @@
     <script type="text/javascript" src="https://s.skimresources.com/js/200448X1678823.skimlinks.js"></script>
     <script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=4c00ac67-4d68-4b44-95c1-190a7b67b92a"></script>
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4a846202-05f3-48b3-a077-4d4a2eacbe6a"> </script>
-    <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
-    <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
 
+    {% comment %} 
+        <script async type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+        <script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-s0D9tf0qd11g0kyfeoSf23o9h0Ts3b', sId: '198244' }); }</script>
+        <script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script> 
+    {% endcomment %}
 
     <script>
         window.ALBSS = {
@@ -269,7 +271,7 @@
   
     <!-- hide launcher on the above page -->
 
-    {% include 'info' %}
+    {% comment %} {% include 'info' %} {% endcomment %}
 
 </body>
 </html>
