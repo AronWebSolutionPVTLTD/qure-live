@@ -1,5 +1,5 @@
 .chest_pdp .refill_bl .refill_info {
-    max-width: 455px;
+    max-width: 472px;
 }
 
 .chest_pdp .reasons {
@@ -83,7 +83,12 @@
 .chest_pdp .technology_light .accordion-item p {
     padding: 0;
 }
-
+.chest_pdp .app_press_sl_img1 .swiper-slide{
+    opacity: 0.4;
+}
+.chest_pdp .app_press_sl_img1 .swiper-slide-thumb-active {
+    opacity: 1;
+}
 .technology_light .u_item_question,
 .technology_light .accordion-header {
     border-radius: 20px;
@@ -103,11 +108,11 @@
     margin: 0 auto;
 }
 
-.chest_pdp .app_press_sl_img .swiper-slide {
+.chest_pdp .app_press_sl_img1 .swiper-slide {
     pointer-events: none;
 }
 
-.chest_pdp .app_press_sl_img .swiper-slide {
+.chest_pdp .app_press_sl_img1 .swiper-slide {
     pointer-events: none;
 }
 
@@ -123,7 +128,6 @@
     padding: 40px 0 56px 0;
     background-color: #D9D9D91A;
 }
-
 /* -- Chest pdp feature end -- */
 @media(max-width:991px) and (min-width:768px) {
     .chest_pdp .reasons_wrapper {
@@ -139,7 +143,6 @@
 
     .chest_pdp .reasons_wrapper .rs_item {
         max-width: 202px;
-        margin: 0 auto;
     }
 }
 

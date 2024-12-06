@@ -18,11 +18,21 @@
 {%- assign product_r = all_products[incoming_var] -%}
 
 {% if product_r != blank %}
+    <div class="reviews_section section" style="padding-bottom:0px;">
+        <div class="container">
+            <div class="section_header text-center mb-3">
+                <div class="title-lg d-none d-md-block"><h2>Real reviews, real results</h2><h2>from people just like you.</h2></div> 
+                <div class="title-lg d-block d-md-none"><h2>Real reviews, real results<br>from people just like you.</h2></div>
+            </div>
+        </div>
+    </div>
     <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product_r.id }}" data-url="{{ shop.url }}{{ product_r.url }}"></div>
 {% endif %}
 
 
 {% comment %} The example hot to use it: https://www.qureskincare.com/products/q-rejuvalight-pro-facewear?pr=face-serum {% endcomment %}
+
+{% comment %}
 <!--
 <div id="ajax-product-reviews"></div>
 
@@ -46,5 +56,4 @@
     }
 </script>
 -->
-
-{% comment %} PS: All others stamped sections should be turned off on the page {% endcomment %}
+{% endcomment %}

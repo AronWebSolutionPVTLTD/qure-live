@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -111,6 +111,7 @@
         },
         "product_BANXY7": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "<p><strong>Save up to 55% off</strong> on Black Friday Bundles.</p>",
             "image": "shopify://shop_images/bf-bundle-sm.webp",
@@ -122,6 +123,7 @@
         "link_GirQqh",
         "product_BANXY7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "21% Off Sitewide",
         "heading_mobile": "",
@@ -140,7 +142,7 @@
           "settings": {
             "link_label": "Save Up To 55%",
             "link_label_mobile": "Save Up To 55%",
-            "link_url": "https://www.qureskincare.com/collections/best-sellers"
+            "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
           }
         },
         "product_7GFhjc": {
@@ -230,7 +232,7 @@
           "settings": {
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Micro-Infusion Limited Edition Bundle",
-            "text": "SAVE 45%",
+            "text": "SAVE 52%",
             "image": "shopify://shop_images/Micro-Infusion_Limited_Edition_Bundle_ef0d58d6-84ea-4cb6-be5c-b012bf600186.png",
             "product_url": "shopify://products/micro-infusion-limited-edition-bundle"
           }
@@ -248,16 +250,15 @@
         "product_4ArLn3",
         "product_BA8d6X"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Rediscover Your Confidence \\n This Holiday",
         "heading_mobile": "",
-        "subheading": "<p><strong>Save up to 55%</strong> Off on Exclusive Holiday <strong>Bundles</strong></p>",
+        "subheading": "<p><strong>Save up to 55%</strong> on Exclusive Holiday <strong>Bundles</strong></p>",
         "subheading_mobile": "",
         "text": "",
         "video": "shopify://files/videos/homepage_holiday.webm",
         "video_mobile": "shopify://files/videos/homepage_holiday-mob.webm",
-        "link_url": "https://www.qureskincare.com/collections/best-sellers"
+        "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
       }
     },
     "featuredin_extended_P7BNDN": {

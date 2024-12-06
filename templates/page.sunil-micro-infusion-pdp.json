@@ -29,7 +29,7 @@
         "liquid_6AqWXk": {
           "type": "liquid",
           "settings": {
-            "code": "{% render 'serums-months-form' with section_id: section.id %}"
+            "code": "{% render 'serums-months-form' with section: section %}"
           }
         },
         "product_in_page_x33rFD": {
@@ -80,6 +80,26 @@
           "settings": {
             "video_new_section": "shopify://files/videos/dr_tripathi.mov"
           }
+        },
+        "supply_for_refill_VM6N4V": {
+          "type": "supply_for_refill",
+          "settings": {
+            "heading": "Next batch ships 26th of December 2024:",
+            "heading_mobile": "Next batch ships 12/26:",
+            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "December 5th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "January 10th",
+            "second_option_text": "81% Reserved",
+            "second_option_percent": 81,
+            "third_option_date": "January 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0,
+            "option_wrinkles_darkspots": false,
+            "option_wrinkles": false,
+            "option_darkspots": false
+          }
         }
       },
       "block_order": [
@@ -88,7 +108,8 @@
         "liquid_6AqWXk",
         "product_in_page_x33rFD",
         "before_and_after_i7mAeJ",
-        "video_before_and_after_ww3Xa3"
+        "video_before_and_after_ww3Xa3",
+        "supply_for_refill_VM6N4V"
       ],
       "settings": {
         "seo_heading": "Micro Infusion Facial System - An Alternative To Derma Rollers",
@@ -933,6 +954,7 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "Typically more effective and safer than other at-home needling devices",
         "heading_reduced": "",
         "text": "<p>Unlike at-home needle roller devices, Micro-infusion requires little to <strong>no downtime, </strong>is<br/> <strong>virtually painless,</strong>and minimizes risk of infection and irritation.</p>",

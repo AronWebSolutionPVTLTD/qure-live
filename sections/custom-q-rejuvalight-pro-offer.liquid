@@ -6,50 +6,36 @@
                 <div class="col-md-6">
                     <div class="d-md-block d-none">
                         <div class="row gy-4 pe-md-3">
-                            <div class="col-md-12">
-                                <div>
-                                    <img src="https://qureskincaredns.com/new/assets/pd_bundle-1.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <img src="https://qureskincaredns.com/new/assets/pd_bundle-2.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <img src="https://qureskincaredns.com/new/assets/pd_bundle-3.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="videosQure_exernal">
-                                    <div class="wistia_responsive_padding" style="position:relative;">
-                                        <div class="wistia_responsive_wrapper"
-                                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                            <div class="wistia_embed wistia_async_9jj4apywvn seo=false videoFoam=true  h-100 rounded"
-                                                style="height:100%;position:relative;width:100%;display:flex;align-items:center;">
-                                                <div class="wistia_swatch"
-                                                    style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                                                    <img src="https://fast.wistia.com/embed/medias/9jj4apywvn/swatch"
-                                                        style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
-                                                        alt="" aria-hidden="true"
-                                                        onload="this.parentNode.style.opacity=1;" />
+                            {%- for block in section.blocks -%}
+                                {% case block.type %}
+                                    {% when 'image' %}
+                                        <div class="{% if forloop.index == 1 %}col-md-12{% else %}col-6{% endif %}">
+                                            <div>
+                                                <img src="{{ block.settings.image | img_url: '720x' }}" class="img-fluid" alt="image{{ forloop.index }}">
+                                            </div>
+                                        </div>
+                                    {% when 'video' %}
+                                        <div class="col-md-12">
+                                            <div class="videosQure_exernal">
+                                                <div class="wistia_responsive_padding" style="position:relative;">
+                                                    <div class="wistia_responsive_wrapper"
+                                                        style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                        <div class="wistia_embed wistia_async_{{ block.settings.wistia_id }} seo=false videoFoam=true  h-100 rounded"
+                                                            style="height:100%;position:relative;width:100%;display:flex;align-items:center;">
+                                                            <div class="wistia_swatch"
+                                                                style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                                <img src="https://fast.wistia.com/embed/medias/{{ block.settings.wistia_id }}/swatch"
+                                                                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                                    alt="" aria-hidden="true"
+                                                                    onload="this.parentNode.style.opacity=1;" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <img src="https://qureskincaredns.com/new/assets/pd_bundle-4.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div>
-                                    <img src="https://qureskincaredns.com/new/assets/pd_bundle-5.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
+                                {% endcase %}
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="row d-md-none">
@@ -61,44 +47,34 @@
                                     data-desktop="1" data-spacing="10" data-arrowleft="pd_bundle-swiper-prev"
                                     data-arrowright="pd_bundle-swiper-next">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="https://qureskincaredns.com/new/assets/pd_bundle-1.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="https://qureskincaredns.com/new/assets/pd_bundle-2.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="https://qureskincaredns.com/new/assets/pd_bundle-3.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="banner_img position-relative">
-                                                <img src="https://qureskincaredns.com/new/assets/doctors_mob.webp" alt=""
-                                                    class="img-fluid tab_img">
-                                                <a
-                                                    class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0">
-                                                    <div class="wistia_responsive_padding"
-                                                        style="position:relative;">
-                                                        <div class="wistia_responsive_wrapper"
-                                                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                                                            <span
-                                                                class="wistia_embed wistia_async_9jj4apywvn popover=true videoFoam=true"
-                                                                style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                                        {%- for block in section.blocks -%}
+                                            {% case block.type %}
+                                                {% when 'image' %}
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ block.settings.image | img_url: '720x' }}" class="img-fluid" alt="image_mobile_{{ forloop.index }}">
+                                                    </div>   
+                                                {% when 'video' %}
+                                                    <div class="swiper-slide">
+                                                        <div class="banner_img position-relative">
+                                                            {% if block.settings.image != blank %}
+                                                                <img src="{{ block.settings.image | img_url: '720x' }}" alt="" class="img-fluid tab_img">
+                                                            {% endif %}
+                                                            <a class="popup-youtube position-absolute top-0 bottom-0 start-0 end-0">
+                                                                <div class="wistia_responsive_padding" style="position:relative;">
+                                                                    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                                        <span
+                                                                            class="wistia_embed wistia_async_{{ block.settings.wistia_id }} popover=true videoFoam=true"
+                                                                            style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                                                                    </div>
+                                                                    <span class="d-flex justify-content-center h-100 align-items-center p-2">
+                                                                        <img src="https://qureskincaredns.com/new/assets/trusted_play_sm.svg" alt="" class="w-auto">
+                                                                    </span>
+                                                                </div>
+                                                            </a>
                                                         </div>
-                                                        <span
-                                                            class="d-flex justify-content-center h-100 align-items-center p-2"><img
-                                                                src="https://qureskincaredns.com/new/assets/trusted_play_sm.svg" alt=""
-                                                                class="w-auto">
-                                                        </span>
                                                     </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="https://qureskincaredns.com/new/assets/pd_bundle-4.webp" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="https://qureskincaredns.com/new/assets/pd_bundle-5.webp" class="img-fluid" alt="">
-                                        </div>
+                                            {% endcase %}
+                                        {% endfor %}
                                     </div>
                                     <div class="pagination_navigation mx-4">
                                         <div class="swiper-pagination"></div>
@@ -127,32 +103,31 @@
                                             </p>
                                         </a>
                                     </div>
-                                    <h2 class="title-lg">Q-Rejuvalight Pro LED Mask</h2>
-                                    <p>Repair and rejuvenate your skin—and boost your self-esteem—with our
-                                        FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark
-                                        spots.
-                                    </p>
+                                    {% if section.settings.heading != blank %}
+                                        <h2 class="title-lg">{{ section.settings.heading }}</h2>
+                                    {% endif %}
+                                    {% if section.settings.subheading != blank %}
+                                        <p>{{ section.settings.subheading }}</p>
+                                    {% endif %}
                                     <div class="price_wrap justify-content-between">
-                                        <div class="price align-items-center">
-                                            <div class="new_price">$379</div>
+                                        {% if section.settings.price != blank %}
+                                            <div class="price align-items-center">
+                                                <div class="new_price">{{ section.settings.price }}</div>
+                                            </div>
+                                        {% endif %}
+
+                                        {% if section.settings.button_label != blank %}
+                                            <a class="see_action d-flex justify-content-center popup-youtube" href="{{ section.settings.button_url }}">
+                                                <p><span><img src="https://qureskincaredns.com/new/assets/play_circle-green.svg" alt="{{ section.settings.button_label | escape }}" class="img-fluid">{{ section.settings.button_label }}</p>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+
+                                    {% if section.settings.text != blank %}
+                                        <div class="bs_feature correctCircle ps-0">
+                                            {{ section.settings.text |  replace: '<ul>', '<ul class="rightCircle">' }}
                                         </div>
-                                        <a class="see_action d-flex justify-content-center popup-youtube"
-                                            href="https://www.youtube.com/watch?v=X9KXJPv6rno">
-                                            <p><span>
-                                                    <img src="https://qureskincaredns.com/new/assets/play_circle-green.svg" alt=""
-                                                        class="img-fluid">See
-                                                    it in action</p>
-                                        </a>
-                                    </div>
-                                    <div class="bs_feature correctCircle ps-0">
-                                        <ul class="rightCircle">
-                                            <li>Customizable treatment on 5 facial areas for your specific skin
-                                                concerns</li>
-                                            <li>3-minute daily treatments with convenient, hands-free operation
-                                            </li>
-                                            <li>Compatible app to track, plan and schedule your treatments</li>
-                                        </ul>
-                                    </div>
+                                    {% endif %}
                                 </div>
                                 <div class="product-section">
                                     <!-- Product Selection Section -->
@@ -174,7 +149,7 @@
                                                                     more with just three minutes of use a day.
                                                                 </p>
                                                             </div>
-                                                            <p class="price_txt">$379</p>
+                                                            <p class="price_txt">{{ 379 | times: 100 | money_without_trailing_zeros }}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -201,10 +176,10 @@
                                                             </div>
                                                             <p class="price_txt">
                                                                 <span class="fw-bold">+</span><span
-                                                                    class="discounted-price price_txt">$99</span>
-                                                                <span class="original-price">$299</span>
+                                                                    class="discounted-price price_txt">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
+                                                                <span class="original-price">{{ 299 | times: 100 | money_without_trailing_zeros }}</span>
                                                             </p>
-                                                            <p class="save_txt">Save $200 on bundle</p>
+                                                            <p class="save_txt">Save {{ 200 | times: 100 | money_without_trailing_zeros }} on bundle</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -240,9 +215,9 @@
                                                         <p>
                                                             <span class="fw-bold">+</span><span
                                                                 id="extended-warranty-price"
-                                                                class="discounted-price price_txt">$49</span>
+                                                                class="discounted-price price_txt">{{ 49 | times: 100 | money_without_trailing_zeros }}</span>
                                                             <span id="extended-warranty-mrp"
-                                                                class="original-price">$99</span>
+                                                                class="original-price">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
                                                         </p>
                                                         <p id="extended-warranty-savings" class="save_txt"></p>
                                                     </div>
@@ -255,10 +230,10 @@
                                     <div class="total-section">
                                         <p>
                                             Total:
-                                            <span class="original-price" id="original-total-price">$777</span>
-                                            <span id="total-price">$527</span>
+                                            <span class="original-price" id="original-total-price">{{ 777 | times: 100 | money_without_trailing_zeros }}</span>
+                                            <span id="total-price">{{ 527 | times: 100 | money_without_trailing_zeros }}</span>
                                         </p>
-                                        <p class="savings">You Save: <span id="savings">$250</span></p>
+                                        <p class="savings">You Save: <span id="savings">{{ 250 | times: 100 | money_without_trailing_zeros }}</span></p>
                                     </div>
 
 
@@ -276,7 +251,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -304,6 +278,7 @@
     // Default selections
     let selectedProduct = 'mask-only';
     let selectedWarranty = 'one-year';
+    let currentCurrency = "{{ shop.money_with_currency_format | remove: ' ' | split: '' | first }}";
 
     // Update Total, Original Price, Savings, and Installments
     function updateTotal() {
@@ -323,13 +298,13 @@
         const totalDiscount = product.discount + warranty.discount;
 
         // Update DOM elements
-        document.getElementById('total-price').innerText = `$${totalPrice}`;
-        document.getElementById('savings').innerText = `$${totalDiscount}`;
-        document.getElementById('original-total-price').innerText = `$${originalTotalPrice}`; // Update original total price
+        document.getElementById('total-price').innerText = currentCurrency + `${totalPrice}`;
+        document.getElementById('savings').innerText = currentCurrency + `${totalDiscount}`;
+        document.getElementById('original-total-price').innerText = currentCurrency + `${originalTotalPrice}`; // Update original total price
 
         // Update installment price
         const installmentAmount = (totalPrice / 4).toFixed(2);
-        document.querySelector('.instalments').innerText = `$${installmentAmount}`;
+        document.querySelector('.instalments').innerText = currentCurrency + `${installmentAmount}`;
     }
 
     // Handle product selection
@@ -364,15 +339,15 @@
         const warrantyPrice = warrantyPrices['extended'][selectedProduct];
 
         // Update displayed discounted price
-        document.getElementById('extended-warranty-price').innerText = `$${warrantyPrice.price}`;
+        document.getElementById('extended-warranty-price').innerText = currentCurrency + `${warrantyPrice.price}`;
 
         // Update displayed original price dynamically
-        document.getElementById('extended-warranty-mrp').innerText = `$${warrantyPrice.originalPrice}`;
+        document.getElementById('extended-warranty-mrp').innerText = currentCurrency + `${warrantyPrice.originalPrice}`;
 
         // Update savings text
         const savingsText = selectedProduct === 'mask-only'
-            ? 'Save $10'
-            : 'Save $50';
+            ? 'Save {{ 10 | times: 100 | money_without_trailing_zeros }}'
+            : 'Save {{ 50 | times: 100 | money_without_trailing_zeros }}';
 
         const mobileSuffix = window.innerWidth > 768 ? ' Limited Time Deal' : ''; // Add text only for desktop
         document.getElementById('extended-warranty-savings').innerText = savingsText + mobileSuffix;
@@ -480,7 +455,64 @@
         "name": "Offer",
         "class": "section-offer",
         "settings": [
-
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "t:common.heading.label"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "t:common.subheading.label"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "t:common.text.label"
+            },
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "t:common.button.label",
+                "info": "t:common.button.info"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "t:common.button.url.label"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "limit": 5,
+                "name": "t:common.image.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    }
+                ]
+		    },
+            {
+                "type": "video",
+                "limit": 1,
+                "name": "t:common.video.label",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wistia_id",
+                        "label": "t:common.wistia.id.label"
+                    }
+                ]
+		    },
         ]
     }
 {% endschema %}

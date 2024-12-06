@@ -400,6 +400,9 @@
     "supply": {
       "label": "Supply"
     },
+    "supply_for_refill": {
+      "label": "Supply for refill"
+    },
     "reserve": {
       "label": "Reserve"
     },

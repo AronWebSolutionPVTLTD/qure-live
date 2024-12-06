@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_landing_LTnaTx": {
       "type": "header-landing",
@@ -54,7 +54,7 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "SHOP BLACK FRIDAY OFFER",
+        "button_label": "SHOP HOLIDAY SALE",
         "button_url": "#shop"
       }
     },
@@ -99,8 +99,8 @@
         "desc": "<ul><li>FDA-cleared at-home LED mask</li><li>Treat acne, fine lines, wrinkles & more</li><li>Customize, track & schedule treatments with app</li><li>Quick & convenient 3-minute wireless treatments</li></ul>",
         "rating_text": "43,893+ Happy Customers",
         "stars": "shopify://shop_images/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "btn_txt": "Transform My Skin",
-        "btn_url": "#special_offer",
+        "btn_txt": "Save Up To $250",
+        "btn_url": "#shop",
         "d_icon": "shopify://shop_images/derma-sm.svg",
         "recomand": "Dermatologist-Reviewed"
       }
@@ -402,6 +402,19 @@
             "concerns": "Acne",
             "verified": true
           }
+        },
+        "slide_Yn9aAP": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Best Investment in my skin",
+            "product": "",
+            "text": "<p>“It has been amazing, so easy to use for a start. And I am already noticing massive improvements, the texture of my skin has gone from rough and bumpy to silky smooth and I have stopped breaking out since using the blue light feature. I love it, couldn’t recommend it highly enough!”</p>",
+            "image": "shopify://shop_images/Group_1299_f3874fc3-3157-48c1-b479-be960ef088b4.png",
+            "image_country": "shopify://shop_images/uk.png",
+            "client": "Saskia Z.",
+            "concerns": "Acne",
+            "verified": true
+          }
         }
       },
       "block_order": [
@@ -413,7 +426,8 @@
         "slide_ytEe6x",
         "slide_CPEePW",
         "slide_mNAa9k",
-        "slide_HUCC4N"
+        "slide_HUCC4N",
+        "slide_Yn9aAP"
       ],
       "settings": {
         "heading": "Thousands are out-glowing their insecurities",
@@ -471,7 +485,7 @@
         "wistia_HJKH8h"
       ],
       "settings": {
-        "heading": "Get Compliment-Worthy Skin"
+        "heading": "How To Use & Get Compliment-Worthy Skin"
       }
     },
     "services_slider_ctkatz": {
@@ -566,8 +580,61 @@
     },
     "offer": {
       "type": "custom-q-rejuvalight-pro-offer",
-      "disabled": true,
-      "settings": {}
+      "blocks": {
+        "image_RKqxEU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-1.webp"
+          }
+        },
+        "image_aweG7D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-2.webp"
+          }
+        },
+        "image_dhBen9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-3.webp"
+          }
+        },
+        "video_ymcEbU": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/doctors_mob.webp",
+            "wistia_id": "9jj4apywvn"
+          }
+        },
+        "image_yt68z6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-4.webp"
+          }
+        },
+        "image_kXHQJw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pd_bundle-5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_RKqxEU",
+        "image_aweG7D",
+        "image_dhBen9",
+        "video_ymcEbU",
+        "image_yt68z6",
+        "image_kXHQJw"
+      ],
+      "settings": {
+        "heading": "Q-Rejuvalight Pro LED Mask",
+        "subheading": "Repair and rejuvenate your skin—and boost your self-esteem—with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.",
+        "text": "<ul><li>Customizable treatment on 5 facial areas for your specific skin concerns</li><li>3-minute daily treatments with convenient, hands-free operation</li><li>Compatible app to track, plan and schedule your treatments</li></ul>",
+        "price": "$379",
+        "button_label": "SEE IT IN ACTION",
+        "button_url": "https://www.youtube.com/watch?v=X9KXJPv6rno"
+      }
     },
     "featured_product_pEjkiL": {
       "type": "featured-product",
@@ -622,6 +689,7 @@
         "product_benefits_jpWz4R",
         "button_mxBJWm"
       ],
+      "disabled": true,
       "settings": {
         "product": "q-rejuvalight-pro-facewear",
         "pd_video": "https://www.youtube.com/watch?v=X9KXJPv6rno",
@@ -630,6 +698,7 @@
     },
     "featured_product_2_YjNQXn": {
       "type": "featured-product-2",
+      "disabled": true,
       "settings": {
         "bg_image": "shopify://shop_images/led_neck_bundle.webp",
         "product": "neck-decolletage-led",

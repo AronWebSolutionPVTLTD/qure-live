@@ -7,7 +7,7 @@
         data-arrowleft="blogSliderSkincare-swiper-prev"
         data-arrowright="blogSliderSkincare-swiper-next">
         <div class="swiper-wrapper">
-            {% for article in blogs[blog_handle].articles %}
+            {% for article in blogs[blog_handle].articles limit: 10 %}
                 <div class="swiper-slide">
                     <div class="blog_wrap">
                         <div class="blog_img">

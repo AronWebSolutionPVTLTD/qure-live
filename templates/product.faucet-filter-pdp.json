@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "product-extended",
@@ -746,6 +746,7 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "More effective and safer than other filters",
         "heading_reduced": "",
         "text": "<p>Other filtration systems focus on just chlorine removal, but calcium and magnesium are the true skin-barrier disruptors. With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin…</p>",
@@ -775,7 +776,7 @@
         "object_GaPGc8": {
           "type": "object",
           "settings": {
-            "heading": "What skin types can benefit from Q-urify Water Filter?",
+            "heading": "What skin types can benefit from Qure Faucet Filter?",
             "text": "<p>Every skin type! Especially helpful for anyone experiencing sensitive skin, premature aging, dry skin, and acne. By reducing irritants and softening the water, it helps maintain skin hydration and minimizes redness, leaving your skin balanced and healthy.</p>",
             "code": ""
           }

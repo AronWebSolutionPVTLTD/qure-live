@@ -71,10 +71,10 @@
         "badge_bNNHbU": {
           "type": "badge",
           "settings": {
-            "heading": "BLACK FRIDAY",
-            "text": "SALE",
-            "color_main": "#000000",
-            "color": "#c4121a"
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
           }
         },
         "link_Xz3LeQ": {
@@ -143,7 +143,7 @@
           "type": "product",
           "settings": {
             "heading": "Micro-Infustion Limited Edition Bundle",
-            "discount": 45,
+            "discount": 52,
             "image": "shopify://shop_images/bf_mh_7.webp",
             "product_url": "#micro-infusion-limited-edition-bundle"
           }
@@ -457,10 +457,10 @@
         "badge_TwBcgj": {
           "type": "badge",
           "settings": {
-            "heading": "BLACK FRIDAY",
-            "text": "SALE",
-            "color_main": "#000000",
-            "color": "#c4121a"
+            "heading": "HOLIDAY",
+            "text": "BUNDLES",
+            "color_main": "#c4121a",
+            "color": "#0a0a0a"
           }
         },
         "object_pBAeDi": {
@@ -1263,7 +1263,7 @@
             "recommended_text": "",
             "is_top_rated": true,
             "is_preorder": true,
-            "preorder_text": "",
+            "preorder_text": "SHIPS LATE DECEMBER",
             "classname": "",
             "code": ""
           }
