@@ -30,7 +30,7 @@
               <h2 class="title-lg">{{ section.settings.heading }}</h2>
             {% endif %}
           </div>
-          <div thumbsSlider="" class="swiper howUse_slider-{{ random_number }}">
+          <div thumbsSlider="" class="swiper howUse_slider" id="howUse_slider-{{ random_number }}">
             <div class="swiper-wrapper">
               {% for block in section.blocks %}
                 <div class="swiper-slide">
@@ -72,7 +72,7 @@
   <!-- -- how to use end -- -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var swiperThumbs = new Swiper('.howUse_slider-{{ random_number }}', {
+      var swiperThumbs = new Swiper('#howUse_slider-{{ random_number }}', {
         spaceBetween: 0,
         slidesPerView: 3,
         // freeMode: true,
