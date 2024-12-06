@@ -511,6 +511,16 @@
                 {% else %}
                     {% render 'pdm_cross-sell', cross-sell-products: page.metafields.custom.cross_sell.value, visibility: "desktop" %}
                 {% endif %}
+
+                {% if page.handle == 'qure-microinfusion-offer'
+                  or page.handle == 'qure-micro-infusion-landing-page-affiliate'
+                %}
+                  {% assign show_jump_to  = section.settings.enable_jump_to_section %}
+                  {% if show_jump_to %}
+                    {% render 'pdm_jump_to_section', section_data: section %}
+                  {% endif %}
+                {% endif %}
+                
             </div>
         </div>
     </div>
@@ -635,6 +645,22 @@
                 "id": "text_label_real_result_3",
                 "label": "label text real result button 3",
                 "default": "Dermatologist"
+            },
+            {
+              "type": "header",
+              "content": "Jump to section"
+            },
+            {
+              "type": "checkbox",
+              "id": "enable_jump_to_section",
+              "label": "Enable jump to section",
+              "default": true
+            },
+            {
+              "type": "text",
+              "id": "text_jump_to_section",
+              "label": "Title for jump to section",
+              "default": "Jump To"
             }
         ],
         "blocks": [
@@ -1235,7 +1261,24 @@
                         "default": 0
                     }
                 ]
-		    }        
+		    },
+        {
+          "type": "jump_to_section",
+          "name": "Jump to section",
+          "limit": 8,
+          "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+              "type": "text",
+              "id": "section_id",
+              "label": "Section ID"
+            }
+          ]
+        }        
         ],
         "presets": [
           {
