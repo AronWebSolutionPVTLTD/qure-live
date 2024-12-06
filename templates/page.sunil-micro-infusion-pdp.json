@@ -1040,7 +1040,7 @@
           "settings": {
             "background": "bg-yellow",
             "pd_img": "shopify://shop_images/serhum.png",
-            "name": "Rejuvenating Serum",
+            "name": "",
             "serum_type": "Dark Spots & Uneven Skin Tone",
             "benefit1": "Brightens  discolouration",
             "icon1": "shopify://shop_images/brightens-even-skin-tone_1.png",
@@ -1070,7 +1070,7 @@
           "settings": {
             "background": "bg-grey",
             "pd_img": "shopify://shop_images/serum4x.png",
-            "name": "Hydra-Soothing Serum",
+            "name": "",
             "serum_type": "Fine Lines & Wrinkles",
             "benefit1": "Reduces the look of  fine lines & wrinkles",
             "icon1": "shopify://shop_images/unique_plump_fine.svg",
