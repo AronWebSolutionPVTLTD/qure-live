@@ -2454,3 +2454,66 @@ body[data-confidence-test][class~="page.sunil-mi-landing-special2"] .pdm-section
 
 }
 /* end confidence slider */
+
+/* start pdp carousel image */
+  .before-after-carousel-container {
+    display: none;
+  }
+
+  body[data-pdp-carousel] {
+    .before-after-container, 
+    .slider-old-design { 
+      display: none;
+    }
+    .before-after-carousel-container.show {
+      display: block;
+      padding: 16px 0 24px;    
+    }
+    .before-after-carousel-container .swiper-products-carousel { 
+      height: 496px;
+      width: 560px;
+    }
+    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .before-after-carousel-container .swiper-products-carousel .wistia_responsive_wrapper .wistia_embed { 
+      display: flex;
+      align-items: center;
+    }
+    .before-after-carousel-container .swiper-products-thumbs {
+      padding: 0 40px;
+      position: relative;
+      margin-top: 16px;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-slide { 
+      opacity: 0.3;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-slide.swiper-slide-thumb-active { 
+      opacity: 1;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container { 
+      position: static;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .banner-popup-link, 
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .popup-youtube { 
+      aspect-ratio: 1/1 !important;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .banner-popup-link .thumb-image, 
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .popup-youtube .thumb-image { 
+      height: 64px !important;
+      object-fit: cover;
+    }
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-button-prev { 
+      left: 0;
+    } 
+    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-button-next { 
+      right: 0;
+    } 
+
+  }
+/* end pdp carousel image */

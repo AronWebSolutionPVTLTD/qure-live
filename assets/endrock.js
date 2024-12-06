@@ -1145,6 +1145,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('cartUpdated', event => {
     setTimeout(updateSideWideGamification, 2000);
   });
+
+  // pdp-carousel-image
+  initPDPCarouselImage();
 });
 
 
@@ -1425,3 +1428,21 @@ function updateSiteWideGamification (cartTotal) {
   }
 }
     
+function initPDPCarouselImage () {
+  let swiperProductsThumbs = new Swiper(".swiper-products-thumbs__container", {
+    spaceBetween: 10,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  let swiperProductsCarousel = new Swiper(".swiper-products-carousel", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiperProductsThumbs,
+    },
+  });
+}
