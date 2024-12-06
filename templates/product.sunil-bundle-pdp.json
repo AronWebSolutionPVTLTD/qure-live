@@ -22,13 +22,12 @@
         "preorder_P3zKE8": {
           "type": "preorder",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "button_FhkPj8": {
           "type": "button",
           "settings": {
-            "button_label": "BLACK FRIDAY DEALS",
+            "button_label": "HOLIDAY BUNDLES",
             "button_url": "shopify://pages/exclusive-holiday-bundle-deal"
           }
         }
@@ -39,12 +38,13 @@
         "button_FhkPj8"
       ],
       "settings": {
+        "reserve": false,
+        "show_bf_prices": false
       }
     },
     "pdm_product_social_proof_data_Vn6dfc": {
       "type": "pdm_product-social-proof-data",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
