@@ -100,60 +100,7 @@
                     {% endif %}
 
                     {% if variant_count > 0 %}
-                        <div class="mask_select_clr mt-4">
-                            <h5>Select color:</h5>
-                            <div class="clr_options">
-                                {% assign variant_num = 1 %}
-                                {%- for block in section.blocks -%}
-                                    {% if block.type == 'variant' %}
-                                        <div class="form-check p-0">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault{{ variant_num }}" value="{{ block.settings.variant_id }}"{% if variant_num == 1 %} checked{% endif %}>
-                                            <label class="form-check-label" for="flexRadioDefault{{ variant_num }}">
-                                                {% if block.settings.image != blank %}
-                                                    <img src="{{ block.settings.image | img_url: '250x' }}" alt="{{ block.settings.heading | escape }}">
-                                                {% endif %}
-                                                <h6>{{ block.settings.heading }}</h6>
-                                            </label>
-                                        </div>
-                                        {%- assign variant_num = variant_num | plus: 1 -%} 
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function () {
-                                const clrOptionsInputs = document.querySelectorAll('.clr_options .form-check-input');
-                                const buyButton = document.querySelector('.without_subscription.buy_btn');
-                                const subscriptionForm = document.getElementById('SubscriptionForm');
-
-                                clrOptionsInputs.forEach(input => {
-                                    input.addEventListener('click', function () {
-                                        const variantId = input.value;
-
-                                        if (subscriptionForm) {
-                                            const variantIdInput = subscriptionForm.querySelector('input[name="id"]');
-
-                                            if (variantIdInput) variantIdInput.value = variantId;
-                                        }
-
-                                        if (buyButton) {
-                                            const currentHref = new URL(buyButton.href);
-                                            if (currentHref.searchParams.has('id')) {
-
-                                                const newUrl = new URL(window.location.href);
-                                                newUrl.searchParams.set('variant', variantId);
-                                                history.replaceState(null, '', newUrl.toString());
-
-                                                currentHref.searchParams.set('id', variantId);
-                                                buyButton.href = currentHref.toString();
-                                            }
-                                        }
-                                    });
-                                });
-                            });
-                        </script>
-
+                        {% render 'product-extended-variants' %}
                     {% endif %}
 
                     <div class="mw-452">

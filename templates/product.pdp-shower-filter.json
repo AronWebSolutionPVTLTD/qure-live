@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "product-extended",
@@ -41,12 +41,30 @@
             "third_option_text": "In Production",
             "third_option_percent": 0
           }
+        },
+        "variant_7PWWak": {
+          "type": "variant",
+          "settings": {
+            "heading": "White",
+            "image": "shopify://shop_images/filter-white.webp",
+            "variant_id": 45909763522799
+          }
+        },
+        "variant_7nqQxD": {
+          "type": "variant",
+          "settings": {
+            "heading": "Black",
+            "image": "shopify://shop_images/filter_black.webp",
+            "variant_id": 45909763490031
+          }
         }
       },
       "block_order": [
         "rating_KDB67x",
         "list_azYRbY",
-        "supply_CTrVRQ"
+        "supply_CTrVRQ",
+        "variant_7PWWak",
+        "variant_7nqQxD"
       ],
       "settings": {
         "seo_heading": "SHOWER FILTER",
