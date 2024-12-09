@@ -281,7 +281,7 @@
               "upsell_product_second": "shower-filter",
               "upsell_product_second_description": "Optimizes skincare effectiveness.",
               "upsell_product_third": "face-serum",
-              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
           },
           "upsell_MBrVMA": {
@@ -319,6 +319,18 @@
               "upsell_product_third": "dermal-mist",
               "upsell_product_thid_description": "Purifies and refreshes"
             }
+          },
+          "upsell_pDFytd": {
+            "type": "upsell",
+            "settings": {
+              "page_url": "https://qureskincare.com/products/shower-filter",
+              "upsell_product_first": "q-rejuvalight-pro-facewear",
+              "upsell_product_first_description": "Rejuvenate skin where the first signs of aging show",
+              "upsell_product_second": "dermal-mist",
+              "upsell_product_second_description": "Purifies and refreshes",
+              "upsell_product_third": "face-serum",
+              "upsell_product_thid_description": "Plump, smooth & brighten in just one step."
+            }
           }
         },
         "block_order": [
@@ -333,7 +345,8 @@
           "upsell_UiGexh",
           "upsell_MBrVMA",
           "upsell_zaLtWh",
-          "upsell_qRXtDN"
+          "upsell_qRXtDN",
+          "upsell_pDFytd"
         ],
         "settings": {
           "upsell_heading": "Achieve your skin goals faster",
