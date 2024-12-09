@@ -2,12 +2,12 @@
   This snippet is used to create a jump to section in the product description
 
   Usage: 
-  {% render 'pdm_jump_to', section_data: section %}
+  {% render 'pdm_jump_to_section', section_data: section, class:'' %}
 {%- endcomment -%}
 
 {% assign title_jump_to = section_data.settings.text_jump_to_section %}
 {% if title_jump_to!= blank %}
-  <div class="jump_to_section">
+  <div class="jump_to_section {{ class }}">
     <h3 class="jump_to_section__head">
       {{ title_jump_to }}
     </h3>

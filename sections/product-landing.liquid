@@ -267,6 +267,15 @@
 
                     {% endif %}
 
+                    {% if page.handle == 'qure-microinfusion-offer'
+                      or page.handle == 'qure-micro-infusion-landing-page-affiliate'
+                    %}
+                      {% assign show_jump_to  = section.settings.enable_jump_to_section %}
+                      {% if show_jump_to %}
+                        {% render 'pdm_jump_to_section', section_data: section, class: 'mobile' %}
+                      {% endif %}
+                    {% endif %}
+
                     {% if supply_count == 0 %}
                         {% if liquid_count %}
                             {%- for block in section.blocks -%}
@@ -517,7 +526,7 @@
                 %}
                   {% assign show_jump_to  = section.settings.enable_jump_to_section %}
                   {% if show_jump_to %}
-                    {% render 'pdm_jump_to_section', section_data: section %}
+                    {% render 'pdm_jump_to_section', section_data: section, class: 'desktop' %}
                   {% endif %}
                 {% endif %}
                 

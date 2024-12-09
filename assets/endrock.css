@@ -2460,8 +2460,24 @@ body[data-confidence-test][class~="page.sunil-mi-landing-special2"] .pdm-section
   display: none;
 }
 
-body[data-jump-to] .jump_to_section {
+body[data-jump-to] .jump_to_section.mobile {
   display: flex;
+}
+
+body[data-jump-to] .jump_to_section.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body[data-jump-to] .jump_to_section.mobile {
+  display: none;
+  }
+  body[data-jump-to] .jump_to_section.desktop {
+    display: flex;
+  }
+}
+
+body[data-jump-to] .jump_to_section {
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
