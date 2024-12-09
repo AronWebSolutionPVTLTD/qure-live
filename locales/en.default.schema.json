@@ -824,8 +824,14 @@
             "limited": {
               "label": "Limited edition"
             },
+            "hide": {
+              "label": "Hide"
+            },
             "hide_variants": {
               "label": "Hide variants"
+            },
+            "type": {
+              "label": "Type"
             },
             "ingredients": {
               "label": "Ingredients"
