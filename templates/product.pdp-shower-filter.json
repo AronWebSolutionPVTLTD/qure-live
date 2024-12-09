@@ -7,8 +7,14 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
+    "liquid_7eJk8K": {
+      "type": "liquid",
+      "settings": {
+        "code": "<div id=\"shower_filter\"></div>"
+      }
+    },
     "main": {
       "type": "product-extended",
       "blocks": {
@@ -90,6 +96,7 @@
     }
   },
   "order": [
+    "liquid_7eJk8K",
     "main",
     "second"
   ]
