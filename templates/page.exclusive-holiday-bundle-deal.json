@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "header_sales": {
       "type": "header-sales",
@@ -1097,7 +1097,7 @@
             "recommended_text": "",
             "is_top_rated": false,
             "is_preorder": true,
-            "preorder_text": "SHIPS MID DECEMBER",
+            "preorder_text": "SHIPS LATE JANUARY",
             "classname": "",
             "code": ""
           }
@@ -1383,7 +1383,7 @@
             "recommended_text": "",
             "is_top_rated": false,
             "is_preorder": true,
-            "preorder_text": "SHIPS MID DECEMBER",
+            "preorder_text": "SHIPS LATE JANUARY",
             "classname": "",
             "code": ""
           }
