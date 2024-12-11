@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -17,11 +8,11 @@
       "type": "apps",
       "blocks": {
         "stamped_loyalty_referrals_page_summary_AKHFNP": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-summary/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-summary\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_greeting_anonymous": "Hello there,",
             "label_greeting_customer": "Hello {0},",
-            "label_greeting_description": "As a member, you’ll get closer to earning exclusive rewards everytime you shop.",
+            "label_greeting_description": "Get more from your skincare routine with Qure. Shop your favorite products and earn rewards like exclusive discounts and free products. The more you interact, the more you earn.\n\nIt’s time to drown out all the noise, forget all the hype and start listening to your skin.\n\nWith our Loyalty Qoins, you’ll keep earning rewards every time you shop with Qure.\n\nCreate an account and start collecting Qoins to help you on your way to confident, radiant skin.",
             "label_signup": "Create your account",
             "label_signin": "Login here",
             "label_redeem": "Redeem Now",
@@ -29,14 +20,14 @@
           }
         },
         "stamped_loyalty_referrals_page_spendings_BFy4qR": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-spendings/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-spendings\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_title": "What do I get?",
             "label_description": ""
           }
         },
         "stamped_loyalty_referrals_page_how_it_works_6gNM6M": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-how-it-works/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-how-it-works\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_title": "How it Works",
             "label_step_title_one": "Create Your Account",
@@ -48,19 +39,19 @@
           }
         },
         "stamped_loyalty_referrals_vip_tiers_4FwJ9K": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/vip-tiers/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/vip-tiers\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_title": "Club tiers & rewards"
           }
         },
         "stamped_loyalty_referrals_page_earnings_c7HNiL": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-earnings/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-earnings\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
-            "label_title": "Ways to Earn Points"
+            "label_title": "Ways to earn Qure Qoins"
           }
         },
         "stamped_loyalty_referrals_page_referral_n6N7Ky": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/page-referral/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/page-referral\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_subtitle": "",
             "label_title": "Refer a Friend",
@@ -73,7 +64,7 @@
           }
         },
         "stamped_loyalty_referrals_rewards_activities_Xr8YHK": {
-          "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-activities/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+          "type": "shopify:\/\/apps\/stamped-loyalty-referrals\/blocks\/rewards-activities\/93b8fd18-14d4-464f-a49a-0093afb7e10a",
           "settings": {
             "label_title": "",
             "label_activity": "",
