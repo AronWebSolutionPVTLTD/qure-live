@@ -15,8 +15,8 @@
         "rating_6FYizY": {
           "type": "rating",
           "settings": {
-            "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>4.5 /5 Rated by Customers</p>"
+            "image": "shopify://shop_images/results_star-full.svg",
+            "text": "<p>5 /5 Rated by Customers</p>"
           }
         },
         "list_EVK9TV": {
