@@ -1,3 +1,86 @@
+/* -- Black Friday Nov 2024 css start -- */
+.black_friday .price_wrap h6 {
+    color: #C4121A;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.black_friday .price_wrap h6 span{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    color: #000;
+}
+.black_friday .price_wrap .new_price span {
+    margin-right: 4px;
+}
+.black_friday .bf_discount,
+.black_friday .planBlock .monthly_plans .bf_discount {
+    height: fit-content;
+    padding: 4px 11px;
+    background: #C4121A;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+.black_friday .bf_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.black_friday .price_BF:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #C4121A;
+    transform: rotate(8deg);
+}
+.black_friday .sale_price{
+    font-weight: 700;
+}
+.black_friday .price_BF {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
+}
+.black_friday .bf_price_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.black_friday .bf_price .black_friday-text {
+    color: #C4121A;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+    margin-bottom: 0;
+}
+@media(max-width:767px) {
+    .black_friday .bf_discount {
+        font-size: 11px;
+        padding: 3px 11px;
+    }
+    .black_friday .price_wrap h6 {
+        font-size: 12px;
+    }
+    .black_friday .refill_bl .price .new_price {
+        font-size: 20px;
+    }
+    .black_friday .bf_price .black_friday-text {
+        font-size: 11px;
+    }
+}
+/* -- Black Friday Nov 2024 css End -- */
 /* -- common css for star gp start --  */
 @media (max-width: 767px) {
     .star_gp svg {
@@ -3088,7 +3171,8 @@
     font-weight: 300;
     font-family: 'Canela Light';
     letter-spacing: 0.16px;
-    margin-bottom: 20px;
+    padding: 10px 0;
+    margin-bottom: 0;
 }
 
 .unique_c_item .u_item_wrapper .u_item_header p {
@@ -6731,7 +6815,7 @@ p.title_mob {
 .supply_steps .step_block input:checked+.serum_prd .serum_ttl {
     background: #C7E7DC;
     border-color: #C7E7DC;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* Monthly plan */
@@ -6765,6 +6849,7 @@ p.title_mob {
     padding: 2px 25px;
     border-radius: 14px 14px 0 0;
     font-size: 10px;
+    vertical-align: text-bottom;
 }
 
 .planBlock .monthly_plans {
@@ -6952,7 +7037,6 @@ p.title_mob {
     position: absolute;
     right: 20px;
 }
-
 @media(max-width:767px) {
     .btn.btn-atc {
         font-size: 18px;
@@ -6975,7 +7059,7 @@ p.title_mob {
     }
 
     .planBlock .monthly_plans .price {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .planBlock .monthly_plans .price .plan_prc+.plan_prc {
@@ -8885,7 +8969,7 @@ p.title_mob {
     border-radius: 30px;
     background: #C4121A;
     color: #fff;
-    padding: 1px 6px;
+    padding: 2px 6px 1px;
     max-width: fit-content;
     margin-bottom: 10px;
 }
@@ -8919,7 +9003,7 @@ p.title_mob {
     }
 
     .upgrade_routine .ur_heading {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 24px;
         letter-spacing: 0.5px;
     }
@@ -9508,7 +9592,16 @@ p.title_mob {
 .surgeon_video .w-css-reset img {
     object-fit: cover !important;
 }
-
+.product_title{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px; 
+    letter-spacing: 0.14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
 @media(min-width:767px) {
     .qure_MI_ftr_wrap .it_img .wistia_responsive_padding .wistia_embed>div {
         border-radius: 20px !important;
@@ -9598,6 +9691,18 @@ p.title_mob {
 
     .pmtBlock .pmt_plans .pmt_des {
         font-size: 10px;
+    }
+    .upgrade_routine .ur_item{
+        gap: 8px;
+    }
+    .upgrade_routine .ur_btn {
+        padding: 8px 20px;
+    }
+    
+    .product_title {
+        font-size: 12px;
+        line-height: 28px;
+        padding-bottom: 5px;
     }
 }
 
