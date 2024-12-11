@@ -523,6 +523,9 @@
 [data-element-id="3"] .stamped-rewards-widget-how-it-works{
     padding: 30px 0 60px !important;
 }
+[data-element-id="5"] [data-campaign-id="c39f42f6-f4c2-491d-91a9-9ebb6bc7d327"] .stamped-rewards-widget-campaign-title {
+    padding: 0 24px !important;
+}
 @media(max-width: 1199px){
     [data-element-id="5"] .stamped-rewards-widget-item {
         width: 20%!important;
@@ -669,6 +672,7 @@
     }
     [data-element-id="5"] .stamped-rewards-widget-campaign-title {
         font-size: 11px!important;
+        padding: 0 13px !important;
     }
     [data-element-id="5"] .stamped-rewards-widget-campaign-value {
         font-size: 10px;
@@ -708,6 +712,9 @@
     [data-element-id="5"] i:before{
         width: 40px;
         height: 40px;
+    }
+    [data-element-id="5"] [data-campaign-id=c39f42f6-f4c2-491d-91a9-9ebb6bc7d327] .stamped-rewards-widget-campaign-title {
+        padding: 0 25px!important;
     }
     /* ...... Stamp.io CSS ....... */
 }
