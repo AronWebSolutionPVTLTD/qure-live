@@ -124,10 +124,10 @@
 .app_press_sl_img_three .swiper-slide {
     pointer-events: none;
   }
-  .app_press_sl_img22 .swiper-slide {
+  .app_press_sl_img .swiper-slide {
     opacity: 0.4;
   }
-  .app_press_sl_img22 .swiper-slide-thumb-active {
+  .app_press_sl_img .swiper-slide-thumb-active {
     opacity: 1;
   }
 @media(max-width:767px) {
