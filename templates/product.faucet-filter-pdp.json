@@ -16,7 +16,7 @@
           "type": "rating",
           "settings": {
             "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>5/5 Rated by Customers</p>"
+            "text": "<p>4.5 /5 Rated by Customers</p>"
           }
         },
         "list_EVK9TV": {
@@ -516,7 +516,7 @@
           "type": "steps",
           "settings": {
             "step_img": "shopify://shop_images/faucet_use_s_3.webp",
-            "text": "Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. Turn the toggle button to “Q” mark on the filter ans enjoy healthier, clearer skin!"
+            "text": "Clip Qure Faucet Filter onto the faucet. Once you hear it click it is installed. Turn the toggle button to “Q” mark on the filter and enjoy healthier, clearer skin!"
           }
         },
         "video_aDjqQ8": {

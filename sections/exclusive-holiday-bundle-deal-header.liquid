@@ -251,34 +251,6 @@
         // Initialize Swipers
         TwaSettingsSwiper.init();
 
-        function initializeVariantToggle() {
-            const bundleBlock = document.getElementById("micro-infusion-limited-edition-bundle");
-
-            if (bundleBlock) {
-                const radioInputs = bundleBlock.querySelectorAll("input.type_radio");
-                const imageElement = bundleBlock.querySelector(".imageFaucet");
-                const titleElement = bundleBlock.querySelector(".bfs_tbx_title");
-
-                radioInputs.forEach(input => {
-                    input.addEventListener("click", function () {
-                        if (imageElement && titleElement) {
-                            if (this.id === "type_p1-v1") {
-                                imageElement.src = "https://qureskincaredns.com/new/assets/bfs_blue-serum.webp";
-                                titleElement.textContent = "Micro-Infusion 3 Month (for Wrinkles)";
-                            } else if (this.id === "type_p1-v2") {
-                                imageElement.src = "https://qureskincaredns.com/new/assets/bfs_serumY.webp";
-                                titleElement.textContent = "Micro-Infusion 3 Month (for Dark Sports)";
-                            }
-                        }
-                    });
-                });
-            }
-        };
-
-
-        // // Initialize for all sets of elements based on classes
-        initializeVariantToggle();
-
 
         // Select all the color selectors
         document.querySelectorAll('.colorSelectorFaucet').forEach(function (selectElement) {
