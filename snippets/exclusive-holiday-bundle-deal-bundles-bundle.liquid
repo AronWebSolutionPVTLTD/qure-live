@@ -1,5 +1,3 @@
-
-
 {% if block.settings.product != blank %}
 
     {% assign product = block.settings.product %}
@@ -69,7 +67,91 @@
         {% endcapture %}
     {% endif %}
 
-    <div class="bfs_bf_item{% if block.settings.classname != blank %} {{ block.settings.classname }}{% endif %}{% if block.settings.hide_us %} hide_us{% endif %}" id="{{ bundleId }}">
+    {% assign is_types = false %}
+
+    {% for __id in children %}
+        {% unless is_type %}
+            {% assign __block = section.blocks | where: "id", __id | first %}
+            {% if __block %}
+                {% if __block.type == 'include' and __block.settings.type != blank %}
+                    {% assign is_types = true %}
+                {% endif %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %} 
+
+    {% if is_types == true %}
+        {% capture types %}
+            <div class="tmt_type">
+                <h6>Select treatment type:</h6>
+                <div class="tmt_type_grid">
+                    {% assign is_type_count = 1 %}
+                    {% for __id in children %}
+                        {% assign __block = section.blocks | where: "id", __id | first %}
+                        {% if __block %}
+                            {% if __block.type == 'include' and __block.settings.type != blank %}
+                                <div class="form-check">
+                                    <input class="form-check-input type_radio" type="radio" name="type_d1" id="{{ __id }}" value="{{ __block.settings.type }}"{% if is_type_count == 1 %}checked{% endif %}>
+                                    <label class="tmt_type_label form-check-label" for="{{ __id }}">{{ __block.settings.type }}</label>
+                                </div>
+                                {%- assign is_type_count = is_type_count | plus: 1 -%}
+    
+                                {% if __block.settings.text != blank %}
+                                    <div 
+                                        id="{{ __id }}_settings"
+                                        {% if __block.settings.heading != blank %}data-title="{{ __block.settings.heading | escape }}"{% endif %}
+                                        {% if __block.settings.image != blank %}data-image="{{ __block.settings.image | img_url: '200x' }}"{% endif %}
+                                        style="display:none">
+                                        {{ __block.settings.text }}
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %} 
+                </div>
+            </div>
+    
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function {{ bundleId |  replace: '-', '_'  }}_types() {
+                        var bundleBlock = document.getElementById("{{ bundleId }}");
+    
+                        if (bundleBlock) {
+                            var radioInputs = bundleBlock.querySelectorAll("input.type_radio");
+                            var imageElement = bundleBlock.querySelector(".imageFaucet");
+                            var titleElement = bundleBlock.querySelector(".bfs_tbx_title");
+                            var modalElement = bundleBlock.querySelector(".modal-body");
+    
+                            radioInputs.forEach(input => {
+                                input.addEventListener("click", function () {
+                                    var sourceElement = document.getElementById(this.id + '_settings');
+                                    
+                                    if(imageElement)
+                                    {
+                                        titleElement.textContent = sourceElement.getAttribute('data-title')
+                                    }
+    
+                                    if(titleElement)
+                                    {
+                                        imageElement.src = sourceElement.getAttribute('data-image');
+                                    }
+    
+                                    if(modalElement)
+                                    {
+                                        modalElement.innerHTML = sourceElement.innerHTML;
+                                    }
+                                });
+                            });
+                        }
+                    };
+    
+                    {{ bundleId |  replace: '-', '_'  }}_types();
+                });
+            </script>       
+        {% endcapture %}     
+    {% endif %}
+
+    <div class="bfs_bf_item{% if is_types == true %} type-varient{% endif %}{% if block.settings.classname != blank %} {{ block.settings.classname }}{% endif %}{% if block.settings.hide_us %} hide_us{% endif %}" id="{{ bundleId }}">
         <div class="bfs_bf_item_slider">
             <div class="swiper twa__swiper_thumbs" data-section-id="{{ bundleId }}" data-autoplay="false"
                 data-loop="false" data-speed="500" data-mobile="1" data-tablet="1"
@@ -147,9 +229,7 @@
                     <img src="{{ 'bfs_pm.svg' | asset_url }}" alt="">
                 </div>
             </div>
-            {% if block.settings.code != blank %}
-                {{ block.settings.code }}
-            {% endif %}
+            {{ types }}
         </div>
             <button data-ajax-cart-request-button="{{ routes.cart_add_url }}?id={{ product_variant }}&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" class="bfs_bf_item_buyBtn{% if product_variant_available == false and preorder == blank %} soldout{% endif %}" style="--bgPercent:30%">
                 <div class="stock_left">{{ block.settings.percent }}%<div>of stock left</div>
@@ -192,7 +272,7 @@
                                                 {% assign target = 'Shower' %}
                                             {% endif %}
 
-                                            <div class="bfs_tabContent_bx text-start">
+                                            <div class="bfs_tabContent_bx text-start"{% if __block.settings.hide %} style="display:none;"{% endif %}>
                                                 {% if __block.settings.image != blank %}
                                                     <img src="{{ __block.settings.image | img_url: '200x' }}" alt="{{ __block.settings.image.alt | escape }}" class="img-fluid image{{ target }}">
                                                 {% endif %}

@@ -143,9 +143,9 @@
                                                                 alt="Mask Only">
                                                         </div>
                                                         <div class="product_txt">
-                                                            <h6>Mask Only</h6>
+                                                            <h6>Q-Rejuvalight Pro LED Mask</h6>
                                                             <div class="pd_detali-txt">
-                                                                <p>Target blemishes, fine lines and wrinkles and
+                                                                <p>Target breakouts, fine lines and wrinkles and
                                                                     more with just three minutes of use a day.
                                                                 </p>
                                                             </div>
@@ -167,17 +167,16 @@
                                                                 class="img-fluid" alt="Mask + Decolletage">
                                                         </div>
                                                         <div class="product_txt">
-                                                            <h6>Mask + Decolletage LED Device</h6>
+                                                            <h6>LED Mask + Decolletage LED Device</h6>
                                                             <div class="pd_detali-txt">
-                                                                <p>Perfect combination for the ultimate
-                                                                    rejuvenation experience. Treat beyond the
-                                                                    face for an all-over youthful appearance.
-                                                                </p>
+                                                                <p>Perfect combination for the ultimate skin
+                                                                    rejuvenation. Treat wrinkles, dark spots and
+                                                                    sagging skin beyond the face.</p>
                                                             </div>
                                                             <p class="price_txt">
                                                                 <span class="fw-bold">+</span><span
                                                                     class="discounted-price price_txt">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
-                                                                <span class="original-price">{{ 299 | times: 100 | money_without_trailing_zeros }}</span>
+                                                                <span class="original-price">+{{ 299 | times: 100 | money_without_trailing_zeros }}</span>
                                                             </p>
                                                             <p class="save_txt">Save {{ 200 | times: 100 | money_without_trailing_zeros }} on bundle</p>
                                                         </div>
@@ -210,14 +209,15 @@
                                                             <img src="https://qureskincaredns.com/new/assets/2-year.svg" class="img-fluid"
                                                                 alt="2 Year Warranty">
                                                         </div>
-                                                        <h6>Extended warranty<br class="d-md-none"> (2 Years
-                                                            total)</h6>
+                                                        <h6>Extended warranty<br class="d-md-none"> (2 Years total)</h6>
                                                         <p>
-                                                            <span class="fw-bold">+</span><span
-                                                                id="extended-warranty-price"
+                                                            <span class="fw-bold">+</span>
+                                                            <span id="extended-warranty-price"
                                                                 class="discounted-price price_txt">{{ 49 | times: 100 | money_without_trailing_zeros }}</span>
+
                                                             <span id="extended-warranty-mrp"
-                                                                class="original-price">{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
+                                                                class="original-price"><span
+                                                                    class="fw-bold">+</span>{{ 99 | times: 100 | money_without_trailing_zeros }}</span>
                                                         </p>
                                                         <p id="extended-warranty-savings" class="save_txt"></p>
                                                     </div>
@@ -238,7 +238,7 @@
 
 
                                     <!-- Buy Now Button -->
-                                    <button class="buy-now" id="buy-now-button">Buy now</button>
+                                    <button class="buy-now" id="buy-now-button">Buy Now & Save</button>
 
                                     <!-- Payment Methods -->
                                     <div class="payment_method">
@@ -305,6 +305,17 @@
         // Update installment price
         const installmentAmount = (totalPrice / 4).toFixed(2);
         document.querySelector('.instalments').innerText = currentCurrency + `${installmentAmount}`;
+
+        // Update button text dynamically
+        const button = document.querySelector('.buy-now'); // Replace with the actual button class or ID
+        if (button) {
+            // If no savings (1-year warranty with default pricing), set button to "Buy Now"
+            if (totalDiscount === 0) {
+                button.innerText = `Buy Now`;
+            } else {
+                button.innerText = `Buy Now & Save $${totalDiscount}`;
+            }
+        }
     }
 
     // Handle product selection
@@ -357,8 +368,8 @@
     window.addEventListener('resize', updateWarrantyPricing);
     
     document.addEventListener('DOMContentLoaded', function() {
-        __selectProduct('mask-only'); // Preselect default product
-        __selectWarranty('one-year'); // Preselect default warranty
+        __selectProduct('mask-decolletage'); // Preselect default product
+        __selectWarranty('extended'); // Preselect default warranty
 
 
         document.getElementById('one-year').addEventListener('click', function() {
