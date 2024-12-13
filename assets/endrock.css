@@ -2454,3 +2454,8 @@ body[data-confidence-test][class~="page.sunil-mi-landing-special2"] .pdm-section
 
 }
 /* end confidence slider */
+/* test reorder landing */
+body[class~="page.sunil-mi-landing-special2-reorder"] .test-reorder-landing{
+  display: none;
+}
+/* end test reorder landing */
