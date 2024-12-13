@@ -288,8 +288,7 @@
 }
 .stamped-rewards-widget-btn-sign-in {
     width: max-content;
-    margin: 0 auto;
-    margin-bottom: 20px !important;
+    margin: 20px auto 20px !important;
 }
 .stamped-rewards-widget-btn-sign-in:after {
     content: "Already a member?";
@@ -330,6 +329,7 @@
     height: 146px !important;
     margin: 0 !important;
     box-shadow: 0 0 4px #0000001f;
+    border-radius: 8px;
 }
 [data-campaign-id="861e0892-65bb-4049-8016-cafd56543859"] .stamped-rewards-widget-campaign-image,
 [data-campaign-id="2705dca1-37c2-4152-8187-124b33f31de3"] .stamped-rewards-widget-campaign-image,
@@ -338,25 +338,25 @@
     display: none;
 }
 
-[data-element-id="2"] .stamped-rewards-widget-item-content{
-    background-position: center;
+[data-element-id="2"] .stamped-rewards-widget-item-content {
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: calc(100% + 10px) calc(100% + 10px);
+    background-size: contain;
     border: unset!important;
-    min-height: 100% !important;
+    min-height: 100%!important;
     height: 100%;
 }
 [data-campaign-id="861e0892-65bb-4049-8016-cafd56543859"] .stamped-rewards-widget-item-content {
-    background-image: url(https://qureskincaredns.com/new/assets/reward_voucher.webp);
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/gift-card.webp?v=1734064288);
 }
 [data-campaign-id="2705dca1-37c2-4152-8187-124b33f31de3"] .stamped-rewards-widget-item-content{
-    background-image: url(https://qureskincaredns.com/new/assets/reward_1month-bundle.webp);
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/mi.webp?v=1734064288);
 }
 [data-campaign-id="6fa88008-c468-4d46-ad07-b65e7c32e0d3"] .stamped-rewards-widget-item-content{
-    background-image: url(https://qureskincaredns.com/new/assets/reward_target-patches.webp);
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/mi-patches.webp?v=1734064288);
 }
 [data-campaign-id="24c740fa-eaa9-4ebe-b083-3caf5d3ffd6b"] .stamped-rewards-widget-item-content{
-    background-image: url(https://qureskincaredns.com/new/assets/reward_face-serum.webp);
+    background-image: url(https://cdn.shopify.com/s/files/1/0441/1431/3365/files/face-serum.webp?v=1734064288);
 }
 [data-widget-type="rewards-spendings-v2"] .stamped-rewards-widget-campaign-title {
     font-weight: 400 !important;
