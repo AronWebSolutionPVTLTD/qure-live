@@ -1,18 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "liquid_7eJk8K": {
       "type": "liquid",
       "settings": {
-        "code": "<div id=\"shower_filter\"></div>"
+        "code": "<div id=\"shower_filter\"><\/div>"
       }
     },
     "main": {
@@ -21,22 +12,22 @@
         "rating_KDB67x": {
           "type": "rating",
           "settings": {
-            "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>97% customer satisfaction rate</p>"
+            "image": "shopify:\/\/shop_images\/star-half_fill.svg",
+            "text": "<p>97% customer satisfaction rate<\/p>"
           }
         },
         "list_azYRbY": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Triple-filter showerhead for the purest head-to-toe hydration.</li><li>Reduces chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin.</li><li>Reduces limescale buildup which can dry out skin & hair, for smoother & softer skin and tresses.</li></ul>"
+            "text": "<ul><li>Triple-filter showerhead for the purest head-to-toe hydration.<\/li><li>Reduces chlorine, heavy metals & contaminants that irritate the skin, for an overall more hydrated, clearer skin.<\/li><li>Reduces limescale buildup which can dry out skin & hair, for smoother & softer skin and tresses.<\/li><\/ul>"
           }
         },
         "supply_CTrVRQ": {
           "type": "supply",
           "settings": {
             "heading": "Next batch ships 28th of January 2025:",
-            "heading_mobile": "Next batch ships 01/28:",
-            "text": "<p>Order now and secure yours from the next shipment.</p>",
+            "heading_mobile": "Next batch ships 01\/28:",
+            "text": "<p>Order now and secure yours from the next shipment.<\/p>",
             "first_option_date": "November 20th",
             "first_option_text": "SOLD OUT",
             "first_option_percent": 100,
@@ -52,7 +43,7 @@
           "type": "variant",
           "settings": {
             "heading": "White",
-            "image": "shopify://shop_images/filter-white.webp",
+            "image": "shopify:\/\/shop_images\/filter-white.webp",
             "variant_id": 45909763522799
           }
         },
@@ -60,7 +51,7 @@
           "type": "variant",
           "settings": {
             "heading": "Black",
-            "image": "shopify://shop_images/filter_black.webp",
+            "image": "shopify:\/\/shop_images\/filter_black.webp",
             "variant_id": 45909763490031
           }
         }
@@ -90,6 +81,180 @@
         "text_label_real_result_3": ""
       }
     },
+    "featuredin_YJ3yeb": {
+      "type": "featuredin",
+      "blocks": {
+        "image_c3FWFc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_8Te4Rq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/women_health.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_frfjkQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmopolitan2.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_QDy9h3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle2.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_kQ6HDG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marie.svg",
+            "mobile_hide": false
+          }
+        },
+        "image_pw3fwC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/grazia2.svg",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "image_c3FWFc",
+        "image_8Te4Rq",
+        "image_frfjkQ",
+        "image_QDy9h3",
+        "image_kQ6HDG",
+        "image_pw3fwC"
+      ],
+      "settings": {
+        "heading": "",
+        "custom_cls": "bg-lightGrey"
+      }
+    },
+    "ingredients_list_CeyRbT": {
+      "type": "ingredients-list",
+      "blocks": {
+        "column_4BC8yn": {
+          "type": "column",
+          "settings": {
+            "flag": "Hiding in Plain Sight!",
+            "flag-color": "#f9c91d",
+            "i-heading": "Limescale",
+            "i-text": "Mineral buildup seeps into your water and sits on your skin. This leaves it feeling itchy and prevents your moisturizer from soaking in properly!",
+            "i_icon": "shopify:\/\/shop_images\/rust.svg",
+            "ingredient1": "Rust",
+            "i_icon2": "shopify:\/\/shop_images\/many-more.svg",
+            "ingredient2": "Many more",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        },
+        "column_djJznd": {
+          "type": "column",
+          "settings": {
+            "flag": "Hidden Hazards!",
+            "flag-color": "#fa6f0b",
+            "i-heading": "Heavy metals",
+            "i-text": "These can disrupt the skin’s natural barrier and moisture balance, making it more prone to irritation, eczema, psoriasis, and breakouts.",
+            "i_icon": "shopify:\/\/shop_images\/lead-particles.svg",
+            "ingredient1": "Lead particles",
+            "i_icon2": "shopify:\/\/shop_images\/micro-organisms.svg",
+            "ingredient2": "Micro-organisms",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        },
+        "column_hz3fHT": {
+          "type": "column",
+          "settings": {
+            "flag": "The Water Wrecker!",
+            "flag-color": "#c92127",
+            "i-heading": "Chlorine",
+            "i-text": "This chemical strips your skin of its natural oils which causes dry skin and flare-ups. It’s also behind dandruff and hair breakage!",
+            "i_icon": "shopify:\/\/shop_images\/Micro-plastics.svg",
+            "ingredient1": "Micro-plastics",
+            "i_icon2": "shopify:\/\/shop_images\/Copper.svg",
+            "ingredient2": "Copper",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4BC8yn",
+        "column_djJznd",
+        "column_hz3fHT"
+      ],
+      "settings": {
+        "heading": "Do you know what’s lurking in your shower?It’s time to get the truth flowing",
+        "subtext": "<p>Your shower should be a sanctuary, but it’s actually the source of frustration for many. Chlorine, heavy metals and other impurities found in “hard water” rain down on you with every drop – draining the life from your skin and hair.<\/p>",
+        "custom_class": "section"
+      }
+    },
+    "shower_filter_benefits_BhWC4w": {
+      "type": "shower-filter-benefits",
+      "blocks": {
+        "list_item_7rA4zk": {
+          "type": "list_item",
+          "settings": {
+            "list_point": "Fewer breakouts"
+          }
+        },
+        "list_item_HbpLR6": {
+          "type": "list_item",
+          "settings": {
+            "list_point": "Happier, hydrated skin"
+          }
+        },
+        "list_item_nBLGJW": {
+          "type": "list_item",
+          "settings": {
+            "list_point": "Less redness & irritation"
+          }
+        },
+        "list_item_LX3RVf": {
+          "type": "list_item",
+          "settings": {
+            "list_point": "Shiner hair with less frizz"
+          }
+        },
+        "list_item_rHc4gg": {
+          "type": "list_item",
+          "settings": {
+            "list_point": "Less green hues on dyed hair"
+          }
+        },
+        "image_VDfYHY": {
+          "type": "image",
+          "settings": {
+            "img_txt": "By optimizing your shower, you can start (or finish) every day with a cleanse you can see and feel. Soon you’ll be saying h-2-oooooh!",
+            "desktop_image": "shopify:\/\/shop_images\/shower_bath.webp",
+            "mobile_image": "shopify:\/\/shop_images\/shower_bath-mob.webp"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_7rA4zk",
+        "list_item_HbpLR6",
+        "list_item_nBLGJW",
+        "list_item_LX3RVf",
+        "list_item_rHc4gg",
+        "image_VDfYHY"
+      ],
+      "settings": {
+        "heading": "Break Free from the Filth with the Qure Shower Filter",
+        "paragraph": "At Qure, we believe great skin starts at the source – and that’s the water you use every day. The Qure Shower Filter\nhelps remove sneaky chemicals and minerals that live in your water and linger on your skin."
+      }
+    },
     "second": {
       "type": "temp-product-shower-filter",
       "settings": {}
@@ -98,6 +263,9 @@
   "order": [
     "liquid_7eJk8K",
     "main",
+    "featuredin_YJ3yeb",
+    "ingredients_list_CeyRbT",
+    "shower_filter_benefits_BhWC4w",
     "second"
   ]
 }
