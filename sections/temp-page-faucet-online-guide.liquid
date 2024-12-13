@@ -781,3 +781,14 @@
 
 <script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
 <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+    const stepMatch = hash.match(/#step(\d+)/);
+    if (stepMatch) {
+        const stepNumber = stepMatch[1];
+        Safety(event, 'step' + stepNumber);
+    }
+});
+</script>
