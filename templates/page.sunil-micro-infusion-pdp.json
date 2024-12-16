@@ -125,7 +125,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Plastic Surgeon"
+        "text_label_real_result_3": "Plastic Surgeon",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "custom_qurify_filter_lp_featuredin_iXk4TL": {
@@ -260,7 +262,8 @@
         "column": 5,
         "padding_top": 60,
         "padding_bottom": 60,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "confidence_slider_gTU9GE": {
@@ -712,8 +715,8 @@
           "settings": {
             "image": "shopify://shop_images/Petrina.png",
             "heading": "Rejuvenating Micro Infusion System",
-            "text": "<p>\"I’m thrilled with the Qure Rejuvenating Micro Infusion System! After just three months of use, I’ve seen a noticeable reduction in fine lines on my forehead and a significant improvement in the depth of a deep scar on my face. The results have been so impressive that I’ve already purchased a refill to continue the treatment for another three months. Highly recommend this product for anyone looking to enhance their skin’s appearance.\"</p>",
-            "see-more": "",
+            "text": "<p>\"I’m thrilled with the Qure Rejuvenating Micro Infusion System! After just three months of use, I’ve seen a noticeable reduction in fine lines on my forehead and a significant improvement in the depth of a deep scar on my face. </p>",
+            "see-more": "The results have been so impressive that I’ve already purchased a refill to continue the treatment for another three months. Highly recommend this product for anyone looking to enhance their skin’s appearance.\"",
             "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
             "text_country": "United States",
             "client": "Petrina Y.",
