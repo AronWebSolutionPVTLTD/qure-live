@@ -328,7 +328,7 @@
             {% comment %} component-original {% endcomment %}
             <div class="col-md-6  order-1 order-md-2">
                 {% if new_design == false %}
-                <div class="refill_slider mw-mob-100 pt-md-5 slider-old-design">
+                <div class="refill_slider mw-mob-100 pt-md-5 {% if product.handle != "shower-filter" %}slider-old-design{% endif %}">
                     <div {% if section.settings.before_after_images_limit > 0 %}class="refill_s_tab_content"{% endif %}>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
