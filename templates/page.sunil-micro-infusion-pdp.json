@@ -125,7 +125,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Plastic Surgeon"
+        "text_label_real_result_3": "Plastic Surgeon",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "custom_qurify_filter_lp_featuredin_iXk4TL": {
@@ -260,7 +262,8 @@
         "column": 5,
         "padding_top": 60,
         "padding_bottom": 60,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "confidence_slider_gTU9GE": {

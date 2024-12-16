@@ -17,7 +17,7 @@
                             </a>
                         </div>
                         <div class="section_header text-start mw-100">
-                            <h1 class="silk_heading">ANTI-AGING & ALL-IN-ONE SERUM</h1>
+                            <h1 class="silk_heading">Micro-Infusion Dart Patches</h1>
                             <h2 class="title-xl mb-0">Smooth, firm and plump stubborn areas with Micro-Infusion
                                 Targeted Patches</h2>
                         </div>
@@ -215,7 +215,7 @@
 <!-- -- press slider app out start -- -->
 <div class="app_press section">
     <div class="container">
-        <div class="press_bl py-2 mw-100">
+        <div class="press_bl py-2">
             <div class="p_bl_header text-center p-0">
                 <p>FEATURED IN</p>
             </div>
@@ -229,64 +229,13 @@
                                 the focal point of your face."
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="app_subhheading">
-                                "Treatment time is only three minutes—among the fastest of all devices."
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_subhheading">
-                                "A multi-use LED mask with five different light setting options to plump smooth and rejuvenate all skin types."
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_subhheading">
-                                “The combination of colors allows you to customize which lights are used, maximizing its benefits to help your skin...”
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_subhheading">
-                                “The Qure mask is the FIRST mask in the world that adapts to your skin!...There is an app that reminds you of the treatments too.”
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_subhheading">
-                                “Q-Rejuvalight Pro harnesses the power of lights from blue to infrared to
-                                address nearly every skincare concern you could imagine.”
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div thumbsSlider="" class="swiper app_press_sl_img">
                     <div class="swiper-wrapper justify-content-center">
                         <div class="swiper-slide">
                             <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/vogue2.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/women-health.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/elle.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/cosmopolitan.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/grazia.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="app_press_info">
-                                <img src="https://qureskincaredns.com/new/assets/gq.svg" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/vogue-black.svg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -1933,89 +1882,66 @@
 <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 
 <script>
-    fetch('./_include_newsletter.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("include_newsletter").innerHTML = data;
-        });
-
-    fetch('./_include_contact.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("include_contact").innerHTML = data;
-        });
-
-    fetch('./_include_footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("include_footer").innerHTML = data;
-        });
-
-    fetch('./_include_slidecart.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("include_slidecart").innerHTML = data;
-        });     
-</script>
-<script>// app press slider
-    var swiper_press = new Swiper(".app_press_sl_img", {
-        spaceBetween: 20,
-        slidesPerView: 2.9,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        breakpoints: {
-            640: {
-                slidesPerView: 3.5,
-                spaceBetween: 20,
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper_press = new Swiper(".app_press_sl_img", {
+            spaceBetween: 20,
+            slidesPerView: 2.9,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
             },
-            768: {
-                slidesPerView: 6,
-                spaceBetween: 20,
-                touchRatio: 0
-            }
-        },
-    });
-    var swiper_press2 = new Swiper(".app_press_sl_content", {
-        spaceBetween: 10,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        thumbs: {
-            swiper: swiper_press,
-        },
-    });
-    $('.thumbs img').click(function () {
-        $('.largeImage').attr('src', $(this).attr('src').replace('thumb', 'large'));
-        $(this).addClass('current').siblings().removeClass('current');
-    });
-</script>
-<script>
-    var swiper = new Swiper(".bfs_mb_sl", {
-        spaceBetween: 8,
-        slidesPerView: 4.4,
-        freeMode: true,
-        watchSlidesProgress: true,
-        breakpoints: {
-            768: {
-                spaceBetween: 12,
-                slidesPerView: 6.5,
+            loop: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 6,
+                    spaceBetween: 20,
+                    touchRatio: 0
+                }
             },
+        });
+        var swiper_press2 = new Swiper(".app_press_sl_content", {
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            thumbs: {
+                swiper: swiper_press,
+            },
+        });
+        
+        $('.thumbs img').click(function () {
+            $('.largeImage').attr('src', $(this).attr('src').replace('thumb', 'large'));
+            $(this).addClass('current').siblings().removeClass('current');
+        });
 
-        },
-    });
-    var swiper2 = new Swiper(".bfs_mb_sl2", {
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".thumb-next",
-            prevEl: ".thumb-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
+        var swiper = new Swiper(".bfs_mb_sl", {
+            spaceBetween: 8,
+            slidesPerView: 4.4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                768: {
+                    spaceBetween: 12,
+                    slidesPerView: 6.5,
+                },
+
+            },
+        });
+        var swiper2 = new Swiper(".bfs_mb_sl2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".thumb-next",
+                prevEl: ".thumb-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
     });
 </script>
