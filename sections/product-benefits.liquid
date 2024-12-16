@@ -2,18 +2,23 @@
 <div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
   <div class="container">
     <div class="row">
-      {% for block in section.blocks %}
-        {% if block.settings.image != blank %}
-          <div class="col-12 col-md-6">
-            <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+      <div class="col-12 col-md-6">
+        <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+          {% for block in section.blocks %}
+            {% if block.type == 'heading' %}
               <div class="header d-md-none d-block pb-3">
                 <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
               </div>
+            {% endif %}
+          {% endfor %}
+          {% for block in section.blocks %}
+            {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
       <div class="col-12 col-md-6">
         <div class="p-0 pt-0 pt-md-0">
           {% for block in section.blocks %}

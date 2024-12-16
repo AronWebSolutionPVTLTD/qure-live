@@ -12,7 +12,7 @@
   }
 {%- endstyle -%}
 <!-- -- single step start -- -->
-<div class="single_step {% if section.settings.show_comment == true %}technology_light {% endif %} section-{{ section.id }}-padding {{ section.settings.background }}">
+<div class="single_step {% if section.settings.show_comment == true %}technology_light {% endif %} section-{{ section.id }}-padding {{ section.settings.background }} {{ section.settings.custom_class }}">
   <div class="container">
     {%- if section.settings.heading != blank -%}
       <div class="section_header d-md-none {% if section.settings.hide_on_mob == true %} d-block {% else %}d-none {% endif %} text-center">
@@ -270,6 +270,11 @@
       "id": "show_comment",
       "label": "t:common.comment.show",
       "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "custom_class",
+      "label": "t:common.classname.custom"
     }
   ],
   "max_blocks": 2,
