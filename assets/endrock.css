@@ -2456,128 +2456,6 @@ body[data-confidence-test][class~="page.sunil-mi-landing-special2"] .pdm-section
 /* end confidence slider */
 
 /* start pdp carousel image */
-  /* .before-after-carousel-container {
-    display: none;
-  }
-
-  body[data-pdp-carousel] {
-    .before-after-container, 
-    .slider-old-design { 
-      display: none;
-    }
-    .before-after-carousel-container.show {
-      display: block;
-      padding: 16px 0 24px;    
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper {
-      width: 550px !important;
-      display: flex;
-      align-items: end;
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .video-container { 
-      width: 100%;
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .video-container .swiper-products-carousel__video { 
-      width: 100%;
-      height: 100%;
-      position: relative;
-      border-radius: 16px;
-      object-fit: cover;
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper.reduce-video-size .swiper-slide .video-container .swiper-products-carousel__video { 
-      height: auto;
-    } 
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image-container {
-      width: 100%;
-      height: 100%;
-    }
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image,
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .banner_img,
-    .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .img-fluid {
-      border-radius: 8px;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .before-after-carousel-container .swiper-products-carousel .wistia_responsive_wrapper .wistia_embed { 
-      display: flex;
-      align-items: center;
-    }
-    .before-after-carousel-container .swiper-products-thumbs {
-      padding: 0 40px;
-      position: relative;
-      margin-top: 16px;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-slide { 
-      opacity: 0.3;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-slide.swiper-slide-active { 
-      opacity: 1;
-      border: 1px solid #000;
-      border-radius: 8px;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container { 
-      position: static;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide { 
-      width: 64px !important;
-      height: 64px !important;
-      display: flex;
-      align-items: center;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .banner-popup-link, 
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .popup-youtube { 
-      width: 100%;
-      height: 100%;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .swiper-products-carousel__thumb-image, 
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide .popup-youtube .swiper-products-carousel__thumb-image { 
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-button-prev { 
-      left: 0;
-    } 
-    .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-button-next { 
-      right: 0;
-    } 
-
-    @media(max-width:767px) {
-      .before-after-carousel-container.show {
-        padding: 8px 0;    
-      }
-      .before-after-carousel-container .swiper-products-carousel .swiper-wrapper {
-        width: 343px !important;
-        height: 296px !important; 
-      }
-      .before-after-carousel-container .swiper-products-thumbs .swiper-products-thumbs__container .swiper-slide { 
-        width: 56px !important;
-        height: 56px !important;
-      }
-      .before-after-carousel-container .swiper-products-thumbs {
-        margin-top: 8px;
-        padding: 0 30px;
-      }
-    }
-  } */
-/* end pdp carousel image */
-
-
-
-
 
 .before-after-carousel-container {
   display: none;
@@ -2591,9 +2469,12 @@ body[data-pdp-carousel] {
   .before-after-carousel-container.show {
     display: block;
     padding: 16px 0 24px;    
+    position: relative;
   }
   .before-after-carousel-container .swiper-products-carousel .swiper-wrapper {
     width: 550px !important;
+    height: 463px !important;
+    max-height: 496px !important;
     display: flex;
     align-items: end;
   }
@@ -2621,7 +2502,8 @@ body[data-pdp-carousel] {
   .before-after-carousel-container .swiper-products-carousel .swiper-wrapper.reduce-video-size .swiper-slide .video-container .swiper-products-carousel__video { 
     height: auto;
   } 
-  .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image-container {
+  .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image-container,
+  .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .popup-youtube {
     width: 100%;
     height: 100%;
   }
@@ -2631,29 +2513,27 @@ body[data-pdp-carousel] {
     border-radius: 8px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: unset;
   }
   .before-after-carousel-container .swiper-products-carousel .wistia_responsive_wrapper .wistia_embed { 
     display: flex;
     align-items: center;
   }
   .before-after-carousel-container .swiper-products-thumbs__container {
-    padding: 0 40px;
     position: relative;
     margin-top: 16px;
+    max-width: calc(100% - 80px);
+    overflow-x: hidden; 
+    margin: 16px auto 0;
   }
   .before-after-carousel-container .swiper-products-thumbs__container .swiper-slide { 
     opacity: 0.3;
   }
-  /* .before-after-carousel-container .swiper-products-thumbs__container .swiper-slide.swiper-slide-active {  */
     .before-after-carousel-container .swiper-products-thumbs__container .swiper-slide.swiper-slide-thumb-active { 
     opacity: 1;
     border: 1px solid #000;
     border-radius: 8px;
   }
-  /* .before-after-carousel-container .swiper-products-thumbs__container  { 
-    position: static;
-  } */
   .before-after-carousel-container .swiper-products-thumbs__container .swiper-slide { 
     width: 64px !important;
     height: 64px !important;
@@ -2672,12 +2552,22 @@ body[data-pdp-carousel] {
     object-fit: cover;
     border-radius: 8px;
   }
-  .before-after-carousel-container .swiper-products-thumbs__container .swiper-button-prev { 
-    left: 0;
+  .before-after-carousel-container .swiper-products-thumbs-prev { 
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    z-index: 99;
   } 
-  .before-after-carousel-container .swiper-products-thumbs__container .swiper-button-next { 
-    right: 0;
+  .before-after-carousel-container .swiper-products-thumbs-next { 
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    z-index: 99;
   } 
+  .before-after-carousel-container .swiper-products-thumbs-prev.swiper-button-disabled, 
+  .before-after-carousel-container .swiper-products-thumbs-next.swiper-button-disabled { 
+    opacity: 0.5;
+  }
 
   @media(max-width:767px) {
     .before-after-carousel-container.show {
@@ -2693,7 +2583,19 @@ body[data-pdp-carousel] {
     }
     .before-after-carousel-container .swiper-products-thumbs__container {
       margin-top: 8px;
-      padding: 0 30px;
+      max-width: calc(100% - 60px);
+
     }
+    .before-after-carousel-container .swiper-products-thumbs-prev { 
+      bottom: 25px;
+      left: 5px;
+    } 
+    .before-after-carousel-container .swiper-products-thumbs-next { 
+      position: absolute;
+      bottom: 25px;
+      right: 5px;
+    } 
   }
 }
+
+/* end pdp carousel image */

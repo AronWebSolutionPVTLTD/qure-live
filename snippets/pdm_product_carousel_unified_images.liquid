@@ -106,8 +106,6 @@
 </div>
 
 {% comment %} thumbnails  {% endcomment %}
-{% comment %} <div class="swiper-products-thumbs"> {% endcomment %}
-
 <div thumbsSlider="" class="swiper swiper-products-thumbs__container">
   <div class="swiper-wrapper">
     {% for media in metaobject.image_or_video.value %}
@@ -133,9 +131,11 @@
     {% endif %}
   </div>
   
-  <!-- navigation buttons -->
-  <div class="swiper-button-next swiper-products-thumbs-next"></div>
-  <div class="swiper-button-prev swiper-products-thumbs-prev"></div>
 </div>
-
-{% comment %} </div>  {% endcomment %}
+<!-- navigation buttons -->
+<div class="swiper-products-thumbs-next">
+  {% render 'pdm_icons', icon: 'arrow-right-black' %}  
+</div>
+<div class="swiper-products-thumbs-prev">
+  {% render 'pdm_icons', icon: 'arrow-left-black' %}  
+</div>

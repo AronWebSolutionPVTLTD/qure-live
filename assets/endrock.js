@@ -1428,7 +1428,6 @@ function updateSiteWideGamification (cartTotal) {
   }
 }
     
-//  juan
 function initPDPCarouselImage () {
   const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
   const productMediaContainer = document.querySelector('.swiper-products-carousel');
@@ -1437,9 +1436,8 @@ function initPDPCarouselImage () {
 
   let thumbSlider = new Swiper(productThumbsContainer, {
     spaceBetween: 8,
-    slidesPerView: 4,
+    slidesPerView: 4.3,
     slidesPerGroup: 1,
-    freeMode: true,
     watchSlidesProgress: true,
     mousewheel: {
       forceToAxis: true,
@@ -1447,7 +1445,7 @@ function initPDPCarouselImage () {
     breakpoints: {
       767: {
         spaceBetween: 12,
-        slidesPerView: 6,
+        slidesPerView: 6.3,
         slidesPerGroup: 1,
       },
     },
@@ -1468,114 +1466,3 @@ function initPDPCarouselImage () {
     },
   });
 }
-    
-//  pili link
-// function initPDPCarouselImage () {
-//   const productMediaSlider = document.querySelector('.swiper-products-carousel');
-//   const productMediaThumbnails = document.querySelector('.swiper-products-thumbs__container');
-
-//   if (!productMediaSlider || !productMediaThumbnails) return;
-
-//   const mainSlider = new Swiper(productMediaSlider, {
-//     slidesPerView: 1,
-//     loop: false,
-//     spaceBetween: 10,
-//     navigation: {
-//       nextEl: '.swiper-products-carousel-next',
-//       prevEl: '.swiper-products-carousel-prev',
-//     },
-//   });
-
-//   const thumbnailSlider = new Swiper(productMediaThumbnails, {
-//     slidesPerView: 6.3,
-//     spaceBetween: 10,
-//     slidesPerGroup: 1,
-//     loop: false,
-//     slideToClickedSlide: true,
-//     watchSlidesVisibility: true,
-//     watchSlidesProgress: true,
-//     navigation: {
-//       nextEl: '.swiper-products-thumbs-next',
-//       prevEl: '.swiper-products-thumbs-prev',
-//     }
-//   });
-
-
-//   // Link the sliders
-//   mainSlider.on('slideChange', () => {
-//     thumbnailSlider.slideTo(mainSlider.realIndex);
-//   });
-
-//   thumbnailSlider.on('click', (swiper) => {
-//     const clickedIndex = swiper.clickedIndex;
-//     mainSlider.slideTo(clickedIndex);
-//   });
-// }
-
-
-/*  paul */ 
-// s12 principal
-// s1 thumbnail
-// function initPDPCarouselImage () { 
-//   // const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
-//   // const productMediaContainer = document.querySelector('.swiper-products-carousel');
-
-//   // console.log('CRO => ', {productThumbsContainer, productMediaContainer});
-  
-//   // if (!productThumbsContainer || !productMediaContainer) return;
-  
-//   var swiper = new Swiper(".swiper-products-thumbs__container", {
-//     spaceBetween: 8,
-//     slidesPerView: 4.4,
-//     // freeMode: true,
-//     slidesPerGroup: 1,
-//     watchSlidesProgress: true,
-//     breakpoints: {
-//         768: {
-//             spaceBetween: 0,
-//             slidesPerView: 6.3,
-//         },
-
-//     },
-  
-// });
-// var swiper2 = new Swiper(".swiper-products-carousel", {
-//     spaceBetween: 10,
-//     thumbs: {
-//         swiper: swiper,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-products-thumbs-next",
-//       prevEl: ".swiper-products-thumbs-prev",
-//   },
-// });
-// }
-
-
-
-
-
-
-// PAUL SCRIPT 
-// var swiper = new Swiper(".thumb-gallery", {
-//   spaceBetween: 8,
-//   slidesPerView: 4.4,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-//   breakpoints: {
-//       768: {
-//           spaceBetween: 0,
-//           slidesPerView: 6.3,
-//       },
-//   },
-// });
-// var swiper2 = new Swiper(".main-gallery", {
-//   spaceBetween: 10,
-//   navigation: {
-//       nextEl: ".thumb-next",
-//       prevEl: ".thumb-prev",
-//   },
-//   thumbs: {
-//       swiper: swiper,
-//   },
-// });
