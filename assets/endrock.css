@@ -2473,7 +2473,6 @@ body[data-pdp-carousel] .before-after-carousel-container.show {
 body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper {
   width: 550px !important;
   height: 463px !important;
-  max-height: 496px !important;
   display: flex;
   align-items: end;
 }
@@ -2596,6 +2595,7 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-thumbs
 }
 
 /* end pdp carousel image */
+
 /* start jump to section Test */
 .jump_to_section {
   display: none;
