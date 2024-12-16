@@ -95,14 +95,14 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/women_health.svg",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_frfjkQ": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/cosmopolitan2.svg",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_QDy9h3": {
@@ -170,7 +170,7 @@
             "i_icon2": "shopify:\/\/shop_images\/micro-organisms.svg",
             "ingredient2": "Micro-organisms",
             "ingredient_text": "",
-            "column_class": ""
+            "column_class": "pt-5 pt-md-0"
           }
         },
         "column_hz3fHT": {
@@ -185,7 +185,7 @@
             "i_icon2": "shopify:\/\/shop_images\/Copper.svg",
             "ingredient2": "Copper",
             "ingredient_text": "",
-            "column_class": ""
+            "column_class": "pt-5 pt-md-0"
           }
         }
       },
@@ -261,7 +261,7 @@
         "image_EiyTwy": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dr_sahh-2.webp",
+            "image": "shopify:\/\/shop_images\/Frame_3594.webp",
             "custom_img": "",
             "order_mob": false,
             "color1": "#000000",
@@ -496,7 +496,8 @@
         "title": "Triple the Water Pressure Options",
         "description": "Adjust until you find the perfect pressure.",
         "button_text": "Shop Now",
-        "button_link": ""
+        "button_link": "",
+        "custom_class": "mt-md-0 mt-5"
       }
     },
     "results_FbRcfY": {
@@ -575,7 +576,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/shower_s1.svg",
             "text": "<p><strong>Step 1:<br\/><\/strong>Unscrew your old shower head by hand, or use the wrench (included) for a more secure grip if needed.<\/p>",
-            "iconMob": "shopify:\/\/shop_images\/bacteria.svg",
+            "iconMob": "shopify:\/\/shop_images\/shower_s1.svg",
             "textMob": "<p><strong>It Cleanses Beyond The Surface:<\/strong><\/p><p>Dermal Mist works to remove impurities and bacteria, helping to prevent irritation and breakouts.<\/p>"
           }
         },
@@ -584,7 +585,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/shower_s2.svg",
             "text": "<p><strong>Step 2:<br\/><\/strong>Wrap the plumber tape (included) around the shower pipe.<\/p>",
-            "iconMob": "shopify:\/\/shop_images\/Soothes.svg",
+            "iconMob": "shopify:\/\/shop_images\/shower_s2.svg",
             "textMob": "<p><strong>It Soothes Redness And Irritation:<\/strong><\/p><p>Hypochlorous acid helps to calm your skin, providing relief from everyday stressors.<\/p>"
           }
         },
@@ -593,7 +594,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/shower_s3.svg",
             "text": "<p><strong>Step 3:<br\/><\/strong>Twist the Qure Shower Filter onto the pipe and tighten it securely with the wrench.<\/p>",
-            "iconMob": "shopify:\/\/shop_images\/Dry-skin.svg",
+            "iconMob": "shopify:\/\/shop_images\/shower_s3.svg",
             "textMob": "<p><strong>It Doesn’t Dry You Out:<\/strong><\/p><p>The alcohol-free formula is designed to be gentle, leaving your skin comfortable, not tight or dry.<\/p>"
           }
         },
@@ -614,6 +615,9 @@
         "content_Xb68nV",
         "content_Etccnt",
         "content_8EyDRi"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.new_side .header {padding: 0; }}"
       ],
       "settings": {
         "background": "bg_clr_transparent"
