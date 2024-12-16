@@ -1,4 +1,4 @@
-<div class="before-after-carousel-container {% if product.handle != "all-in-one-face-serum-3-month-bundle" and product.handle != "all-in-one-face-serum-6-month-bundle" %}show{% endif %}">
+<div class="before-after-carousel-container {% if product.handle != "all-in-one-face-serum-3-month-bundle" and product.handle != "all-in-one-face-serum-6-month-bundle" and product.handle != "shower-filter"%}show{% endif %}">
   {% if template.name == 'product' %}
     {% assign product_metaobject = product.metafields.custom.carousel_media.value %}
     {% render 'pdm_product_carousel_unified_images', metaobject: product_metaobject %}

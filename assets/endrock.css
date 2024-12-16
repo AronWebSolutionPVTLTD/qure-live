@@ -2517,6 +2517,10 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carous
   max-width: fit-content;
   margin: 0 auto;
 }
+body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image-container.margin-auto .swiper-products-carousel__image {
+  margin: auto;
+  height: auto !important;
+}
 body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .wistia_responsive_wrapper .wistia_embed { 
   display: flex;
   align-items: center;
