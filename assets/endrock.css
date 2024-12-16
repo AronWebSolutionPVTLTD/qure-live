@@ -2592,6 +2592,16 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-thumbs
     bottom: 25px;
     right: 5px;
   } 
+  body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .swiper-products-carousel__image,
+  body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .banner_img,
+  body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper .swiper-slide .img-fluid {
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body[data-pdp-carousel] .before-after-carousel-container .swiper-products-carousel .swiper-wrapper {
+    height: unset !important;
+  }
 }
 
 /* end pdp carousel image */
