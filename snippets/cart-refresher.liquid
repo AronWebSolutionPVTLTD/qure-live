@@ -33,6 +33,7 @@
             
                     if (newSlidecartNode) {
                       slidecartContainer.replaceWith(newSlidecartNode);
+                      updateSiteWideGamification();
                       console.log('Slide cart replaced successfully');
                     } else {
                       console.error('New slide cart node not found');
