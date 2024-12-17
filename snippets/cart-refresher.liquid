@@ -1,11 +1,9 @@
 <script>
 
-  document.addEventListener("liquid-ajax-cart:request-end", function(event) {
-    const {requestState, cart, previousCart, sections} = event.detail;
-  
-    // Print out all the available event data
-    console.log({requestState, cart, previousCart, sections});
-  });
+document.addEventListener("liquid-ajax-cart:queue-end", function() {
+  console.log("A queue of requests is finished");
+  console.log("The current cart state is: ", window.liquidAjaxCart.cart);
+});
   
   const observer = new MutationObserver((mutationsList, observerInstance) => {
       // Check if liquidAjaxCart is available in the global scope
