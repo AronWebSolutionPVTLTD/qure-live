@@ -5,23 +5,22 @@
           try {
             // Subscribe to ajax request callbacks
             liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
- subscribeToResult(() => {
-        // Get the current cart state
-        const cartState = liquidAjaxCart.getCartState();
-        const itemCount = cartState.cart.item_count;
-
-        // Find the cart count element
-        const cartCountElement = document.querySelector('.nav__cart-count');
-
-        if (cartCountElement) {
-            // Show or hide the cart count element based on item count
-            if (itemCount > 0) {
-                cartCountElement.classList.remove('hidden'); // Remove hidden class
-            } else {
-                cartCountElement.classList.add('hidden'); // Add hidden class
-            }
-        }
-    });
+               subscribeToResult(() => {
+                // Get the current cart state
+                const cartState = liquidAjaxCart.getCartState();
+                const itemCount = cartState.cart.item_count;
+                // Find the cart count element
+                const cartCountElement = document.querySelector('.nav__cart-count');
+        
+                if (cartCountElement) {
+                  // Show or hide the cart count element based on item count
+                  if (itemCount > 0) {
+                      cartCountElement.classList.remove('hidden'); // Remove hidden class
+                  } else {
+                      cartCountElement.classList.add('hidden'); // Add hidden class
+                  }
+                }
+              });
             });
             
             // Fetch a new cart to refresh it
