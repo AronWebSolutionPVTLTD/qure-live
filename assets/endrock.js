@@ -1145,6 +1145,11 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('cartUpdated', event => {
     setTimeout(updateSideWideGamification, 2000);
   });
+
+  // frontrow-health 
+  const frontrowHealthContainer = document.querySelector('.frontrow-health-container');
+  const trustedSection = document.querySelector('.trustedVerified');
+  initFrontrowHealth(frontrowHealthContainer, trustedSection);
 });
 
 
@@ -1425,3 +1430,15 @@ function updateSiteWideGamification (cartTotal) {
   }
 }
     
+function initFrontrowHealth (frontrowContainer, trustedSection) {
+  if (!frontrowContainer || !trustedSection) return;
+
+  const { link:seeMoreLink} = frontrowContainer.dataset;
+  if (seeMoreLink) return;
+  
+  const seeMoreElement = frontrowContainer.querySelector('.frontrow-health-container__content-link');
+  seeMoreElement.addEventListener('click', e => {
+    e.preventDefault();
+    trustedSection.scrollIntoView({behavior: 'smooth'});
+  });
+}
