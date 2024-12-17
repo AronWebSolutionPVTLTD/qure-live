@@ -1435,6 +1435,7 @@ function initPDPCarouselImage () {
   if (!productThumbsContainer || !productMediaContainer) return;
 
   let thumbSlider = new Swiper(productThumbsContainer, {
+    loop: true,
     spaceBetween: 8,
     slidesPerView: 4.3,
     slidesPerGroup: 1,
@@ -1449,10 +1450,11 @@ function initPDPCarouselImage () {
         slidesPerGroup: 1,
       },
     },
- 
   });
 
   let mainSlider = new Swiper(productMediaContainer, {
+    loop: true,
+    freeMode: true,
     slidesPerView: 1,
     mousewheel: {
       forceToAxis: true,
