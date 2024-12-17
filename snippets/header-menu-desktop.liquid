@@ -221,7 +221,7 @@
                 <img src="{{ 'login.svg' | asset_url }}" class="fa fa-user nav__icon" alt="navigation">
             </a>
         </li>
-        <li class="nav__item cart_btn" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;" data-bs-toggle="offcanvas" href="#cartCanvas" role="button" aria-controls="cartCanvas">
+        <li class="nav__item cart_btn hidden" data-ajax-cart-toggle-class-button="js-my-cart-open" style="cursor:pointer;" data-bs-toggle="offcanvas" href="#cartCanvas" role="button" aria-controls="cartCanvas">
             <a href="{{ routes.cart_url }}" class="nav__url">
                 <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
                 <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">{{ cart.item_count }}</span>
