@@ -3,8 +3,7 @@
       // Check if liquidAjaxCart is available in the global scope
       if (typeof liquidAjaxCart === 'function') {
           try {
-            refreshCartFunc(); // Execute the function
-            liquidAjaxCart.cartRequestUpdate()      
+            liquidAjaxCart.cartRequestUpdate()    
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
