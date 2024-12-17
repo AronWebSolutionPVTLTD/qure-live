@@ -1,7 +1,7 @@
 <script>
   const observer = new MutationObserver((mutationsList, observerInstance) => {
       // Check if liquidAjaxCart is available in the global scope
-      if (liquidAjaxCart) {
+      if (typeof liquidAjaxCart !== 'undefined') {
           try {
             // Fetch a new cart to refresh it
             liquidAjaxCart.cartRequestGet()
