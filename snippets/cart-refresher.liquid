@@ -3,6 +3,7 @@
       // Check if liquidAjaxCart is available in the global scope
       if (liquidAjaxCart) {
           try {
+
             liquidAjaxCart.cartRequestUpdate()    
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
