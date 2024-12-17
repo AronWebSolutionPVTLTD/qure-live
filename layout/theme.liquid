@@ -7,7 +7,6 @@
 {% endif %}
 
 <head>
-    {% render 'cart-refresher' %}
   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +25,9 @@
 
     <link rel="preload" href="{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}" as="script" fetchpriority="high">
 
+    {% comment %} Edgemesh Performance: Stale cart refresher {% endcomment %}
+    {% render 'cart-refresher' %}
+  
     {% capture seo_title %}
       {{ page_title }}
       {% if current_tags %}
@@ -96,16 +98,6 @@
     {% render 'header-scripts' %}
     {% comment %} add swiper  {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Edgemesh Client Begin -->
-    <script type="application/javascript">
-        EDGEMESH = {
-            lite: true
-        }
-    </script>
-    <script async type="application/javascript" src="https://static.edgeme.sh/client.js"></script>
-    <!-- Edgemesh Client End -->
-
 </head>
 
 <body class="{{ template }}">
