@@ -33,7 +33,21 @@
             
                     if (newSlidecartNode) {
                       slidecartContainer.replaceWith(newSlidecartNode);
-                      setTimeout(()=>{updateSiteWideGamification()},5000)
+                      // new sidecart timer 
+                      const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
+                      initSidecarTimer(sidecartTimerContainer);
+                     
+                      // sitewide timer (header) 
+                      const siteWideTimerContainer = document.querySelector('.announcement_bar.site-gamification-active .sidecart-timer-container');
+                      initSidecarTimer(siteWideTimerContainer);
+
+                      const customEvent = new CustomEvent('cartUpdated', {
+                        detail: {
+                          message: 'cart updated', 
+                          time: new Date()
+                        }
+                      });
+                      document.dispatchEvent(customEvent);
                       console.log('Slide cart replaced successfully');
                     } else {
                       console.error('New slide cart node not found');
