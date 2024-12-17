@@ -5,13 +5,7 @@
           try {
             // Subscribe to ajax request callbacks
             liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
-              subscribeToResult(()=>{
-                // Find the cart count element and remove the 'hidden' class
-                const cartCountElement = document.querySelector('.nav__cart-count');
-                if (cartCountElement) {
-                    cartCountElement.classList.remove('hidden');
-                }
-              })
+           
 
               return requestState
             });
