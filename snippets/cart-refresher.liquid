@@ -1,14 +1,11 @@
 <script>
 
-  document.addEventListener('liquid-ajax-cart:request-end', function (event) {
-    console.log('Cart state updated:', event.detail.cart);
-    myCustomFunction(event.detail.cart);
-});
-
-function myCustomFunction(cart) {
-    // Your code here - this function runs after cart fetch/update
-    console.log('Custom function triggered with cart data:', cart);
-}
+  document.addEventListener("liquid-ajax-cart:request-end", function(event) {
+    const {requestState, cart, previousCart, sections} = event.detail;
+  
+    // Print out all the available event data
+    console.log({requestState, cart, previousCart, sections});
+  });
   
   const observer = new MutationObserver((mutationsList, observerInstance) => {
       // Check if liquidAjaxCart is available in the global scope
