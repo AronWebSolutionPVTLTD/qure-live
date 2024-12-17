@@ -1454,7 +1454,6 @@ function initPDPCarouselImage () {
 
   let mainSlider = new Swiper(productMediaContainer, {
     loop: true,
-    freeMode: true,
     slidesPerView: 1,
     mousewheel: {
       forceToAxis: true,
