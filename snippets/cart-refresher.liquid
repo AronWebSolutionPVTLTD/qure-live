@@ -1,42 +1,23 @@
 <script>
-  
   const observer = new MutationObserver((mutationsList, observerInstance) => {
       // Check if liquidAjaxCart is available in the global scope
       if (typeof liquidAjaxCart !== 'undefined') {
           try {
-  function updateSlideCart() {
-  fetch(`${window.Shopify.routes.root}?sections=slidecart`)
-      .then(res => res.json())
-      .then(response => {
-        const slidecartHTML = response['slidecart']; // Use the section ID
-        const slidecartContainer = document.querySelector('#shopify-section-slidecart');
-  
-        if (slidecartContainer && slidecartHTML) {
-          slidecartContainer.innerHTML = slidecartHTML;
-          console.log('Slide cart updated successfully');
-        } else {
-          console.error('Slide cart container or section HTML not found');
-        }
-      })
-      .catch(error => console.error('Error updating slide cart:', error));
-  }
-  updateSlideCart();
-            
-            // // Subscribe to ajax request callbacks
-            // liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
-            //   subscribeToResult(()=>{
-            //     // Find the cart count element and remove the 'hidden' class
-            //     const cartCountElement = document.querySelector('.nav__cart-count');
-            //     if (cartCountElement) {
-            //         cartCountElement.classList.remove('hidden');
-            //     }
-            //   })
+            // Subscribe to ajax request callbacks
+            liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
+              subscribeToResult(()=>{
+                // Find the cart count element and remove the 'hidden' class
+                const cartCountElement = document.querySelector('.nav__cart-count');
+                if (cartCountElement) {
+                    cartCountElement.classList.remove('hidden');
+                }
+              })
 
-            //   return requestState
-            // });
+              return requestState
+            });
             
-            // // Fetch a new cart to refresh it
-            // liquidAjaxCart.cartRequestUpdate()
+            // Fetch a new cart to refresh it
+            liquidAjaxCart.cartRequestUpdate()
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
