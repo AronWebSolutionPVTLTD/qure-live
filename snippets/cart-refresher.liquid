@@ -16,9 +16,29 @@
               return requestState
             });
 
+            // Function to fetch and replace the slide cart section
+function updateSlideCart() {
+  fetch(`${window.Shopify.routes.root}?sections=slidecart`)
+    .then(res => res.json())
+    .then(response => {
+      const slidecartHTML = response['slidecart']; // Use the section ID
+      const slidecartContainer = document.querySelector('#shopify-section-slidecart');
+
+      if (slidecartContainer && slidecartHTML) {
+        slidecartContainer.innerHTML = slidecartHTML;
+        console.log('Slide cart updated successfully');
+      } else {
+        console.error('Slide cart container or section HTML not found');
+      }
+    })
+    .catch(error => console.error('Error updating slide cart:', error));
+}
+
+// Example usage: Call the function after adding/removing an item
+updateSlideCart();
             
             // // Fetch a new cart to refresh it
-            // liquidAjaxCart.cartRequestGet()
+            liquidAjaxCart.cartRequestGet()
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
