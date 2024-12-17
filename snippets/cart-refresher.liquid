@@ -1,35 +1,18 @@
 <script>
-  const observer = new MutationObserver((mutationsList, observerInstance) => {
-      // Check if liquidAjaxCart is available in the global scope
-      if (typeof liquidAjaxCart !== 'undefined') {
-        console.log({liquidAjaxCart})
-          try {
-            // Fetch a new cart to refresh it
-            liquidAjaxCart.cartRequestGet()
-            
-            // Find the cart count element and remove the 'hidden' class
-            const cartCountElement = document.querySelector('.nav__cart-count');
-            if (cartCountElement) {
-                cartCountElement.classList.remove('hidden');
-            }
-            
-          } catch (error) {
-              console.error('Error locating liquidAjaxCart:', error);
-          }
-          // Stop observing once we find and execute the function
-          observerInstance.disconnect();
+  document.addEventListener("liquid-ajax-cart:init", ()=>{
+   try {
+      // Fetch a new cart to refresh it
+      liquidAjaxCart.cartRequestGet()
+      
+      // Find the cart count element and remove the 'hidden' class
+      const cartCountElement = document.querySelector('.nav__cart-count');
+      if (cartCountElement) {
+          cartCountElement.classList.remove('hidden');
       }
+      
+    } catch (error) {
+        console.error('Error locating liquidAjaxCart:', error);
+    }
   });
-  
-  // Observe the entire document for changes in child nodes
-  observer.observe(document, {
-      childList: true, // Observe changes in child nodes
-      subtree: true,   // Observe changes in all child elements
-  });
-  
-  // Timeout to stop observing after a certain period
-  setTimeout(() => {
-      observer.disconnect();
-      console.warn('Stopped observing: liquidAjaxCart did not become available in time.');
-  }, 10000); // Stop after 10 seconds
+
 </script>
