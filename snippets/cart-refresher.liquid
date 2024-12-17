@@ -6,14 +6,13 @@
           try {
             // Fetch a new cart to refresh it
             liquidAjaxCart.cartRequestGet()
-              .then(() => {
-                console.log("testestes")
-                  // Find the cart count element and remove the 'hidden' class
-                  const cartCountElement = document.querySelector('.nav__cart-count');
-                  if (cartCountElement) {
-                      cartCountElement.classList.remove('hidden');
-                  }
-              });
+            
+            // Find the cart count element and remove the 'hidden' class
+            const cartCountElement = document.querySelector('.nav__cart-count');
+            if (cartCountElement) {
+                cartCountElement.classList.remove('hidden');
+            }
+            
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
