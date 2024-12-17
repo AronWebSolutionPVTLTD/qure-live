@@ -3,7 +3,15 @@
       // Check if liquidAjaxCart is available in the global scope
       if (liquidAjaxCart) {
           try {
-            liquidAjaxCart.cartRequestGet() // Fetch a new cart to refresh it  
+            // Fetch a new cart to refresh it
+            liquidAjaxCart.cartRequestGet()
+              .then(() => {
+                  // Find the cart count element and remove the 'hidden' class
+                  const cartCountElement = document.querySelector('.nav__cart-count');
+                  if (cartCountElement) {
+                      cartCountElement.classList.remove('hidden');
+                  }
+              });
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
