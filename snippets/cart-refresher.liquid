@@ -3,12 +3,7 @@
       // Check if liquidAjaxCart is available in the global scope
       if (typeof liquidAjaxCart !== 'undefined') {
           try {
-            // Subscribe to ajax request callbacks
-            liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
-           
 
-              return requestState
-            });
             
             // Fetch a new cart to refresh it
             liquidAjaxCart.cartRequestGet()
