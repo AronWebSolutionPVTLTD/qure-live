@@ -48,6 +48,11 @@
                         }
                       });
                       document.dispatchEvent(customEvent);
+
+                      const cartCountElement = document.querySelector('.nav__cart-count');
+                      if (cartCountElement) {
+                          cartCountElement.classList.remove('hidden');
+                      }
                       console.log('Slide cart replaced successfully');
                     } else {
                       console.error('New slide cart node not found');
@@ -63,7 +68,7 @@
             updateSlideCart();
             
             // // Fetch a new cart to refresh it
-            liquidAjaxCart.cartRequestGet()
+            // liquidAjaxCart.cartRequestGet()
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
