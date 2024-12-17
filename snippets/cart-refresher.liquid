@@ -1,4 +1,15 @@
-<script>  
+<script>
+
+  document.addEventListener('cart:updated', function (event) {
+    console.log('Cart state updated:', event.detail.cart);
+    myCustomFunction(event.detail.cart);
+});
+
+function myCustomFunction(cart) {
+    // Your code here - this function runs after cart fetch/update
+    console.log('Custom function triggered with cart data:', cart);
+}
+  
   const observer = new MutationObserver((mutationsList, observerInstance) => {
       // Check if liquidAjaxCart is available in the global scope
       if (typeof liquidAjaxCart !== 'undefined') {
