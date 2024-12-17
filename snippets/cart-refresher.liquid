@@ -3,18 +3,6 @@
       // Check if liquidAjaxCart is available in the global scope
       if (typeof liquidAjaxCart !== 'undefined') {
           try {
-            // Subscribe to ajax request callbacks
-            liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
-              subscribeToResult(()=>{
-                // Find the cart count element and remove the 'hidden' class
-                const cartCountElement = document.querySelector('.nav__cart-count');
-                if (cartCountElement) {
-                    cartCountElement.classList.remove('hidden');
-                }
-              })
-
-              return requestState
-            });
 
             // Function to fetch and replace the slide cart section
             function updateSlideCart() {
@@ -67,8 +55,6 @@
             // Example usage: Call the function after adding/removing an item
             updateSlideCart();
             
-            // // Fetch a new cart to refresh it
-            // liquidAjaxCart.cartRequestGet()
           } catch (error) {
               console.error('Error locating liquidAjaxCart:', error);
           }
