@@ -1,5 +1,9 @@
 <script>
-
+  
+  const observer = new MutationObserver((mutationsList, observerInstance) => {
+      // Check if liquidAjaxCart is available in the global scope
+      if (typeof liquidAjaxCart !== 'undefined') {
+          try {
   function updateSlideCart() {
   fetch(`${window.Shopify.routes.root}?sections=slidecart`)
       .then(res => res.json())
@@ -17,11 +21,7 @@
       .catch(error => console.error('Error updating slide cart:', error));
   }
   updateSlideCart();
-  
-  const observer = new MutationObserver((mutationsList, observerInstance) => {
-      // Check if liquidAjaxCart is available in the global scope
-      if (typeof liquidAjaxCart !== 'undefined') {
-          try {
+            
             // // Subscribe to ajax request callbacks
             // liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
             //   subscribeToResult(()=>{
