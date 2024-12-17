@@ -1,0 +1,27 @@
+<script>
+  const observer = new MutationObserver((mutationsList, observerInstance) => {
+      // Check if liquidAjaxCart is available in the global scope
+      if (typeof liquidAjaxCart === 'function') {
+          try {
+            refreshCartFunc(); // Execute the function
+            liquidAjaxCart.cartRequestUpdate()      
+          } catch (error) {
+              console.error('Error locating liquidAjaxCart:', error);
+          }
+          // Stop observing once we find and execute the function
+          observerInstance.disconnect();
+      }
+  });
+  
+  // Observe the entire document for changes in child nodes
+  observer.observe(document, {
+      childList: true, // Observe changes in child nodes
+      subtree: true,   // Observe changes in all child elements
+  });
+  
+  // Timeout to stop observing after a certain period
+  setTimeout(() => {
+      observer.disconnect();
+      console.warn('Stopped observing: liquidAjaxCart did not become available in time.');
+  }, 10000); // Stop after 10 seconds
+</script>
