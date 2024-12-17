@@ -1,6 +1,6 @@
 <script>
 
-  document.addEventListener('cart:updated', function (event) {
+  document.addEventListener('liquid-ajax-cart:request-end', function (event) {
     console.log('Cart state updated:', event.detail.cart);
     myCustomFunction(event.detail.cart);
 });
