@@ -1049,7 +1049,7 @@
             "text": "<h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
             "count": "",
             "hide": true,
-            "hide_variants": false,
+            "hide_variants": true,
             "code": ""
           }
         },
