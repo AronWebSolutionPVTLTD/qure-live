@@ -243,6 +243,7 @@
     },
     "heading": {
       "label": "Heading",
+      "right": "Right Heading",
       "info": "Info Heading",
       "mobile": {
         "label": "Heading for mobile"
