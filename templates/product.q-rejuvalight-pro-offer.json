@@ -579,8 +579,8 @@
         "heading": "Dermatologist Tried, Tested, & Approved",
         "sub_heading": "",
         "classname": "section videosQure videosQure_dropdown",
-        "btn": "",
-        "btn_url": "",
+        "btn": "Transform My Skin",
+        "btn_url": "#shop",
         "desk_slide": 4,
         "mob_slide": 1.7,
         "slide_space": 10
