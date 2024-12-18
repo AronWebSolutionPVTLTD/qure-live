@@ -1041,6 +1041,7 @@
         },
         "include_3UkLee": {
           "type": "include",
+          "disabled": true,
           "settings": {
             "heading": "Micro-Infusion 3 Month (for Dark spots)",
             "is_limited": false,
