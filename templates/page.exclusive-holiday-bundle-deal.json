@@ -875,7 +875,7 @@
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_mi_sm.svg",
-            "text": "<h5>Micro-Infusion 3 month (For Dark Spots)</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase refills via our website.</li></ul>"
+            "text": "<h5>Micro-Infusion 3 month Bundle (For Dark Spots)</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight. </li><li>Easily purchase refills via our website.</li></ul>"
           }
         },
         "bundle_KekEX9": {
@@ -965,7 +965,7 @@
           "type": "include",
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (For Dark Spots)",
-            "is_limited": true,
+            "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_serumY.webp",
             "text": "<h5>Serum Concentrate for Dark Spots</h5><p>Niacinamide, Epidermal Growth Factor (EGF), Tranexamic Acid, Tripeptide-1 Peptide</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, TRANEXAMIC ACID, NIACINAMIDE, PANTHENOL, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, TRIPEPTIDE-1, XANTHAN GUM, ALLANTOIN, SH-OLIGOPEPTIDE-1.</p>",
@@ -993,7 +993,7 @@
           "type": "how-to-use",
           "settings": {
             "image": "shopify://shop_images/bfs_mi_sm.svg",
-            "text": "<h5>Micro-Infusion Limited Edition 3 month</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li><li>Easily purchase refills via our website.</li></ul>"
+            "text": "<h5>Micro-Infusion 3 month Bundle</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li><li>Easily purchase refills via our website.</li></ul>"
           }
         },
         "how_to_use_HcyFAf": {
