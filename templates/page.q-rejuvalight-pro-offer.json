@@ -580,7 +580,7 @@
         "sub_heading": "",
         "classname": "section videosQure videosQure_dropdown",
         "btn": "Transform My Skin",
-        "btn_url": "",
+        "btn_url": "#shop",
         "desk_slide": 4,
         "mob_slide": 1.7,
         "slide_space": 10
