@@ -225,7 +225,7 @@
             <a href="{{ routes.cart_url }}" class="nav__url">
                 <img src="{{ 'cart.svg' | asset_url }}" class="fa fa-shopping-cart nav__icon cart-mb-icon" alt="navigation">
                 {% comment %} Edgemesh Performance: Made the cart count hidden by default to work with cart-refresher {% endcomment %}
-                  <span class="nav__cart-count hidden" data-ajax-cart-bind-state="cart.item_count">
+                  <span class="nav__cart-count" data-ajax-cart-bind-state="cart.item_count">
                     <dynamic>
                       {{ cart.item_count }}
                     </dynamic>
