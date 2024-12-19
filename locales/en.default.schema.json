@@ -245,6 +245,7 @@
       "label": "Heading",
       "right": "Right Heading",
       "info": "Info Heading",
+      "size": "Heading Size",
       "mobile": {
         "label": "Heading for mobile"
       },
