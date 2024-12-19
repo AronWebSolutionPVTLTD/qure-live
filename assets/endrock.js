@@ -1145,6 +1145,9 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('cartUpdated', event => {
     setTimeout(updateSideWideGamification, 2000);
   });
+
+  // pdp-carousel-image
+  initPDPCarouselImage();
 });
 
 
@@ -1424,4 +1427,49 @@ function updateSiteWideGamification (cartTotal) {
     }
   }
 }
-    
+
+/**
+ * Initializes the Product Detail Page (PDP) carousel images.
+ * This function sets up two synchronized Swiper sliders: one for product media (main slider)
+ * and one for product thumbnails (thumbnail slider), including mousewheel navigation and responsive settings.
+ */
+
+function initPDPCarouselImage () {
+  const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
+  const productMediaContainer = document.querySelector('.swiper-products-carousel');
+
+  if (!productThumbsContainer || !productMediaContainer) return;
+
+  let thumbSlider = new Swiper(productThumbsContainer, {
+    loop: true,
+    spaceBetween: 8,
+    slidesPerView: 4.3,
+    slidesPerGroup: 1,
+    watchSlidesProgress: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      767: {
+        spaceBetween: 12,
+        slidesPerView: 6.3,
+        slidesPerGroup: 1,
+      },
+    },
+  });
+
+  let mainSlider = new Swiper(productMediaContainer, {
+    loop: true,
+    slidesPerView: 1,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    thumbs: {
+      swiper: thumbSlider,
+    },
+    navigation: {
+      nextEl: ".swiper-products-thumbs-next",
+      prevEl: ".swiper-products-thumbs-prev",
+    },
+  });
+}

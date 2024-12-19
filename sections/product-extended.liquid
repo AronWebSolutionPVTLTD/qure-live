@@ -328,7 +328,7 @@
             {% comment %} component-original {% endcomment %}
             <div class="col-md-6  order-1 order-md-2">
                 {% if new_design == false %}
-                <div class="refill_slider mw-mob-100 pt-md-5">
+                <div class="refill_slider mw-mob-100 pt-md-5 slider-old-design">
                     <div {% if section.settings.before_after_images_limit > 0 %}class="refill_s_tab_content"{% endif %}>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -469,10 +469,14 @@
                         </div>
                     {% endif %}
                 </div>
+                {% comment %} pdp caroulsel redesign {% endcomment %}
+                {% render 'pdm_before_after_carousel', settings: section.settings%}
                 {% endif %}
                 {% comment %} end component original {% endcomment %}
                 {% if new_design == true %}
                     {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
+                     {% comment %} pdp caroulsel redesign {% endcomment %}
+                    {% render 'pdm_before_after_carousel', settings: section.settings%}
                 {% endif %}
                 {% render 'pdm_cross-sell', cross-sell-products: product.metafields.custom.cross_sell.value, visibility: "desktop" %}
             </div>
