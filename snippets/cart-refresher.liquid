@@ -30,11 +30,6 @@ function updateSlideCart() {
             }
           });
           document.dispatchEvent(customEvent);
-  
-          const cartCountElement = document.querySelector('.nav__cart-count');
-          if (cartCountElement) {
-              cartCountElement.classList.remove('hidden');
-          }
         }
       }
     })
