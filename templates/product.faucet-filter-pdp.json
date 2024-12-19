@@ -15,8 +15,8 @@
         "rating_6FYizY": {
           "type": "rating",
           "settings": {
-            "image": "shopify://shop_images/star-half_fill.svg",
-            "text": "<p>4.5 /5 Rated by Customers</p>"
+            "image": "shopify://shop_images/results_star-full.svg",
+            "text": "<p>5 /5 Rated by Customers</p>"
           }
         },
         "list_EVK9TV": {
@@ -754,6 +754,35 @@
         "design": true
       }
     },
+    "heading_PCjAm4": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Our customer reviews</h2>"
+      }
+    },
+    "1733924064a3e08ceb": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_qePiXd": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": false,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_qePiXd"
+      ],
+      "settings": {}
+    },
     "faq_yDJwaT": {
       "type": "faq",
       "blocks": {
@@ -856,6 +885,8 @@
     "compare_images_TNaVYJ",
     "videos_list_QVh9ma",
     "compare_zyD9zD",
+    "heading_PCjAm4",
+    "1733924064a3e08ceb",
     "faq_yDJwaT"
   ]
 }

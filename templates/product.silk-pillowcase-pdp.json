@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "product-extended",
@@ -276,7 +276,7 @@
         "background": "trasnparent",
         "sub_heading": "WHAT’S INCLUDED",
         "title": "Meet Your New Bedtime Beau",
-        "free_offer": "<p><strong>FREE </strong>with every purchase $500 or over</p>",
+        "free_offer": "<p><strong>FREE </strong>with every purchase $300 or over</p>",
         "feature_list": "<ul><li>50 x 70 cm pillowcase</li><li>Naturally hypoallergenic</li><li>Long-fiber mulberry silk</li><li>Superior softness and breathability</li><li>Subtle, elegant sheen</li></ul>",
         "btn_text": "Get Your Pillowcase",
         "button_link": "",

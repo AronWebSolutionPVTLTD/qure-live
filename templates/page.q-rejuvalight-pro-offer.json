@@ -415,6 +415,13 @@
             "concerns": "Acne",
             "verified": true
           }
+        },
+        "button_ULCmrg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Transform My Skin",
+            "button_url": "#shop"
+          }
         }
       },
       "block_order": [
@@ -427,7 +434,8 @@
         "slide_CPEePW",
         "slide_mNAa9k",
         "slide_HUCC4N",
-        "slide_Yn9aAP"
+        "slide_Yn9aAP",
+        "button_ULCmrg"
       ],
       "settings": {
         "heading": "Thousands are out-glowing their insecurities",
@@ -508,54 +516,54 @@
           "type": "wistia",
           "settings": {
             "wistia_id": "j0mvc1o853",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Maxfield",
+            "board": "Double Board-Certified Dermatologists",
+            "desc": "<p>\"This is one of my faves from @qureskincare. It’s a high quality mask and personalizable\"</p>"
           }
         },
         "wistia_hGAhbA": {
           "type": "wistia",
           "settings": {
             "wistia_id": "ltv3wi7ayy",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Zeitany",
+            "board": "Board-Certified Dermatologists",
+            "desc": "<p>“It’s the only LED mask on the market that pairs with an app and is<br/>                                                    customizable”</p>"
           }
         },
         "wistia_zenznC": {
           "type": "wistia",
           "settings": {
             "wistia_id": "lwu2n3u6uc",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Prem",
+            "board": "Board-Certified Dermatologists",
+            "desc": "<p>\"Qure has a fully customized mask which has 5 clinical-grade<br/>                                                    wavelength for anti-ageing, hyperpigmentation and acne...\"</p>"
           }
         },
         "wistia_Ni4zAL": {
           "type": "wistia",
           "settings": {
             "wistia_id": "3aru3yqv0d",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Henry",
+            "board": "Medical Doctor",
+            "desc": "<p>\"I like this one because it allows you to customize your treatment... This is a great skin care investment\"</p>"
           }
         },
         "wistia_DNpHDQ": {
           "type": "wistia",
           "settings": {
             "wistia_id": "clfa0z9apd",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Too",
+            "board": "Medical Doctor",
+            "desc": "<p>“Qure’s LED mask combines red lights and blue lights, meaning it can benefit EVERYONE”</p>"
           }
         },
         "wistia_b3CVhx": {
           "type": "wistia",
           "settings": {
             "wistia_id": "wumkizwy48",
-            "dr_name": "",
-            "board": "",
-            "desc": ""
+            "dr_name": "Dr Hunter",
+            "board": "NHS & Aesthetics Doctor",
+            "desc": "<p>“The Qure mask is FDA cleared... This means you can reap the benefits of light therapy at home. Previously, this was something only offered in clinics.”</p>"
           }
         }
       },
@@ -570,10 +578,10 @@
       "settings": {
         "heading": "Dermatologist Tried, Tested, & Approved",
         "sub_heading": "",
-        "classname": "section videosQure",
-        "btn": "",
-        "btn_url": "",
-        "desk_slide": 6,
+        "classname": "section videosQure videosQure_dropdown",
+        "btn": "Transform My Skin",
+        "btn_url": "#shop",
+        "desk_slide": 4,
         "mob_slide": 1.7,
         "slide_space": 10
       }
@@ -631,7 +639,6 @@
         "heading": "Q-Rejuvalight Pro LED Mask",
         "subheading": "Repair and rejuvenate your skin—and boost your self-esteem—with our FDA-cleared LED mask that treats acne, fine lines, wrinkles and dark spots.",
         "text": "<ul><li>Customizable treatment on 5 facial areas for your specific skin concerns</li><li>3-minute daily treatments with convenient, hands-free operation</li><li>Compatible app to track, plan and schedule your treatments</li></ul>",
-        "price": "$379",
         "button_label": "SEE IT IN ACTION",
         "button_url": "https://www.youtube.com/watch?v=X9KXJPv6rno"
       }
@@ -721,7 +728,8 @@
         "column": 6,
         "padding_top": 0,
         "padding_bottom": 0,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "compare_8hnCcH": {
