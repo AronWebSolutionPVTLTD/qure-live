@@ -1,3 +1,12 @@
+{% comment %}
+  This snippet render the main and thumbnail product sliders 
+  Accepts:
+  - metaobject: { metaobject } - metaobject with all the product images
+  Usage:
+  {% render 'pdm_product_carousel_unified_images', 
+   metaobject: product_metaobject %}
+{% endcomment %}
+
 {% liquid 
   for wistia_index in metaobject.wistia_index_for_video_list.value
     assign wistia_found = false

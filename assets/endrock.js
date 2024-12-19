@@ -1427,7 +1427,13 @@ function updateSiteWideGamification (cartTotal) {
     }
   }
 }
-    
+
+/**
+ * Initializes the Product Detail Page (PDP) carousel images.
+ * This function sets up two synchronized Swiper sliders: one for product media (main slider)
+ * and one for product thumbnails (thumbnail slider), including mousewheel navigation and responsive settings.
+ */
+
 function initPDPCarouselImage () {
   const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
   const productMediaContainer = document.querySelector('.swiper-products-carousel');
