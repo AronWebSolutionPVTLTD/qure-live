@@ -1439,6 +1439,11 @@ function initFrontrowHealth (frontrowContainer, trustedSection) {
   const seeMoreElement = frontrowContainer.querySelector('.frontrow-health-container__content-link');
   seeMoreElement.addEventListener('click', e => {
     e.preventDefault();
-    trustedSection.scrollIntoView({behavior: 'smooth'});
+    const trustedSectionPositon = trustedSection.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: trustedSectionPositon - 100,
+      behavior: 'smooth'
+    });
   });
 }

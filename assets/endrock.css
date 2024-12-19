@@ -2545,7 +2545,7 @@ body[data-jump-to] .jump_to_section__body-link-text {
   display: none;
 }
 body[data-frontrow-health] .frontrow-health-container {
-  min-width: 320x;
+  min-width: 320px;
   display: flex;
   padding: 8px 24px; 
   border-radius: 4px; 
@@ -2613,6 +2613,9 @@ body[data-frontrow-health] .frontrow-health-container .frontrow-health-container
   color: #000;
 }
 /* section: product-landing */
+body[data-frontrow-health] .section-product-landing .frontrow-health-container { 
+  margin-bottom: 24px;
+}
 body[data-frontrow-health] .section-product-landing .frontrow-health-container .frontrow-health-container__content { 
   display: flex;
   flex-direction: column;
