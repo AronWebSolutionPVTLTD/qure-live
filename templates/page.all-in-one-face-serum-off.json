@@ -86,15 +86,23 @@
         "slider_GkDwyk",
         "slider_yUaFxQ"
       ],
+      "custom_css": [
+        ".refill_bl.tabSlider .refill_review {justify-content: start !important;}"
+      ],
       "settings": {
         "display_type": "slider",
-        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "seo_heading": "",
+        "heading": "Embrace ageless confidence with<br> All-In-One Face Serum",
+        "heading_size": "title-xl",
         "desc": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.<\/li><li>Save money buying multiple skincare products to treat various concerns.<\/li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.<\/li><\/ul>",
         "rating_text": "4.7\/5 Rated by Customers",
         "stars": "shopify:\/\/shop_images\/star4.8.svg",
         "btn_txt": "SAVE UP TO 38%",
         "btn_url": "#choose_bundle",
-        "recomand": "Dermatologist Approved"
+        "recomand": "",
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "order_mob": true
       }
     },
     "featuredin_Xdfftn": {
