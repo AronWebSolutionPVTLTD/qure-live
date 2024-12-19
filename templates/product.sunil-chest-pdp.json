@@ -56,6 +56,7 @@
         },
         "supply_xAX9bT": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Next batch ships 19th of December                                    2024:",
             "heading_mobile": "Next batch ships 12/19:",
@@ -89,7 +90,7 @@
         "product_button_label": "Product",
         "before_after_images_limit": 2,
         "before_after_button_label": "Before & After",
-        "reserve": true,
+        "reserve": false,
         "underbutton_text_left": "Dermatologist Reviewed",
         "underbutton_text_right": "Free Shipping Over $100",
         "selected_design": "new",
@@ -197,7 +198,8 @@
         "column": 6,
         "padding_top": 60,
         "padding_bottom": 60,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "reasons_myniQ7": {
@@ -536,7 +538,8 @@
         "column": 6,
         "padding_top": 0,
         "padding_bottom": 0,
-        "show_comment": true
+        "show_comment": true,
+        "custom_class": ""
       }
     },
     "how_to_use_2_j76wte": {
