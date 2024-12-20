@@ -189,7 +189,7 @@
                 
             {% elsif section.settings.display_type == 'slider' %}
                     <div class="bfs_mb_slider pt-md-4">
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper bfs_mb_sl2">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper sl2-{{ random_number }}">
                             <div class="swiper-wrapper">
                                 {% for block in section.blocks %}
                                 {% if block.type == 'slider' %}
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                         <div class="thumbsSlider_wrap mt-3">
-                            <div thumbsSlider="" class="swiper bfs_mb_sl pagination_navigation1">
+                            <div thumbsSlider="" class="swiper sl-{{ random_number }} pagination_navigation1">
                                 <div class="swiper-wrapper">
                                     {% for block in section.blocks %}
                                     {% if block.type == 'slider' %}
@@ -243,12 +243,12 @@
                                     {% endfor %}
                                 </div>
                             </div>
-                            <div class="thumb-next swiper-button-next swiper-button"></div>
-                            <div class="thumb-prev swiper-button-prev swiper-button"></div>
+                            <div class="thumb-next-{{ random_number }} swiper-button-next swiper-button"></div>
+                            <div class="thumb-prev-{{ random_number }} swiper-button-prev swiper-button"></div>
                         </div>
                         <div class="bfs_mb_btn d-block d-md-none justify-content-between mw-499 bfBundle__content">
                             <div class="d-none d-md-block bfs_mb_btn_img">
-                                <img src="https://qureskincaredns.com/new/assets/q_uses_1.webp" alt="" class="img-fluid">
+                                <img src="{{ 'q_uses_1.webp' | asset_url }}" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@
 </div>
 <!-- -- main banner end -- -->
 <script>
-    var swiper = new Swiper(".bfs_mb_sl", {
+    var swiper = new Swiper(".sl-{{ random_number }}", {
         spaceBetween: 8,
         slidesPerView: 4.4,
         freeMode: true,
@@ -272,11 +272,11 @@
 
         },
     });
-    var swiper2 = new Swiper(".bfs_mb_sl2", {
+    var swiper2 = new Swiper(".sl2-{{ random_number }}", {
         spaceBetween: 10,
         navigation: {
-            nextEl: ".thumb-next",
-            prevEl: ".thumb-prev",
+            nextEl: ".thumb-next-{{ random_number }}",
+            prevEl: ".thumb-prev-{{ random_number }}",
         },
         thumbs: {
             swiper: swiper,
@@ -291,15 +291,15 @@
         {
             "type": "select",
             "id": "display_type",
-            "label": "Display Type",
+            "label": "t:common.display.type",
             "options": [
               {
                 "value": "tab",
-                "label": "Tabs"
+                "label": "t:common.display.tabs"
               },
               {
                 "value": "slider",
-                "label": "Slider"
+                "label": "t:common.display.slider"
               }
             ],
             "default": "tab"
@@ -321,11 +321,11 @@
             "options": [
               {
                 "value": "title-lg",
-                "label": "Large Title"
+                "label": "t:common.title.size.large"
               },
               {
                 "value": "title-xl",
-                "label": "Extra Large Title"
+                "label": "t:common.title.size.xl"
               }
             ],
             "default": "title-lg"
@@ -419,12 +419,12 @@
         },
         {
             "type": "slider",
-            "name": "Single Slider",
+            "name": "t:common.display.single_slide",
             "settings": [
                 {
                     "type": "image_picker",
                     "id": "s_image",
-                    "label": "Image"
+                    "label": "t:common.image.label"
                 },
                 {
                     "type": "text",
@@ -434,7 +434,7 @@
                 {
                     "type": "image_picker",
                     "id": "thumbnail",
-                    "label": "Thumbnail"
+                    "label": "t:common.display.thumb"
                 }
             ]
         }

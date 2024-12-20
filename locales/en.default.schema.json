@@ -97,6 +97,13 @@
       "image": "Nozzle Image",
       "text": "Nozzle Text"
     },
+    "display":{
+      "type": "Display Type",
+      "tabs": "Tabs",
+      "slider": "Slider",
+      "thumb": "Thumbnail",
+      "single_slide": "Single Slide"
+    },
     "banner_holiday": {
       "label": "Holiday banner"
     },
@@ -175,7 +182,11 @@
       "label": "Blog"
     },
     "title": {
-      "label": "Title"
+      "label": "Title",
+      "size":{
+       "large": "Large",
+       "xl": "Extra Large"
+      }
     },
     "percentage": {
       "label": "Percentage"
