@@ -2539,3 +2539,319 @@ body[data-jump-to] .jump_to_section__body-link-text {
   line-height: 24px;
 }
 /* End jump to section Test */
+
+
+/* test upsell popup */
+
+.popupsell-main {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupsell-wrapper{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #DBEFE8 -3.91%, #FFF 51.05%), #FFF;
+}
+
+.popupsell-card{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.popupsell-card.active{
+  display: flex;
+}
+
+.popupsell-card-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.popupsell-card-title h2{
+  color: #000;
+  font-family: 'Canela Web';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 31.2px */
+  margin: 0;
+  text-align: center;
+}
+
+.popupsell-card-title p{
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  color: #000;
+}
+
+.popupsell-card-content{
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.popupsell-card-content-product{
+  background-color: #FFF;
+  border-radius: 16px 16px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.popupsell-card-content-product .popupsell-card-content-product-image{
+  width: 112px;
+  height: 113px;
+}
+
+.popupsell-card-content-product .popupsell-card-content-product-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popupsell-card-content-product-info{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.popupsell-card-content-product-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+
+.popupsell-card-content-product-info h3{
+  color: #000;
+  font-family: "Canela Web";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.popupsell-card-content-product-info-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.popupsell-card-content-product-info-price-amount{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.popupsell-card-content-product-info-price-amount__full{
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.14px;
+  text-decoration: line-through;
+}
+
+.popupsell-card-content-product-info-price-amount__discount{
+  color: #C4121A;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: 0.18px;
+}
+
+.popupsell-card-content-product-info-price-offer{
+  display: flex;
+  padding: 0px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 40px;
+  background: #C4121A;
+}
+
+.popupsell-card-content-product-info-price-offer p {
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 240% */
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.popupsell-card-content-valueprops{
+  background: #F6F7F8;
+  border-radius: 0 0 16px 16px;
+  padding: 12px 16px 16px;
+}
+
+.popupsell-card-content-valueprops-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #D7D9D9;
+}
+
+.popupsell-card-content-valueprops-info p{
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 218.182% */
+  letter-spacing: 0.22px;
+}
+
+
+.popupsell-card-content-valueprops-info ul li{
+  color:#000;
+  font-family: 'Poppins';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 218.182% */
+}
+
+.popupsell-card-content-valueprops-footer{
+  padding-top: 8px;
+}
+
+.popupsell-card-content-valueprops-footer p{
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+}
+
+.popupsell-card-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.popupsell-card-buttons .popupUpsellButtons{
+  display: flex;
+  width: 227px;
+  height: 40px;
+  padding: 0px 30px 0px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-color: #000;
+  background-color: #000;
+  border-radius: 24px;
+}
+
+.popupsell-card-buttons .popupUpsellButtons p{
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
+.popupsell-card-buttons .popupUpNoThanks{
+  border: none;
+  background-color: transparent;
+}
+
+.popupsell-card-buttons .popupUpNoThanks p{
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 650px) {
+
+  .popupsell-wrapper{
+    padding: 56px 88px;
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .popupsell-card{
+    gap: 32px;
+    padding: 0;
+  }
+
+  .popupsell-card-content-product-info{
+    gap: 16px;
+  }
+  
+  .popupsell-card-content-product-info h3{
+    font-size: 20px;
+    line-height: 120%; /* 24px */
+  }
+
+  .popupsell-card-content-product-info-wrapper{
+    padding: 0;
+  }
+
+  .popupsell-card-content-product-info-price-offer{
+    padding: 0px 16px;
+  }
+
+  .popupsell-card-content-product-info-price-offer p {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 24px; /* 218.182% */
+    letter-spacing: 0.22px;
+  }
+
+  .popupsell-card-content-valueprops-info p{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+  }
+
+  .popupsell-card-content-valueprops-info ul li{
+    font-size: 12px;
+  }
+
+  .popupsell-card-content-valueprops-footer p{
+    font-size: 12px;
+    line-height: 140%; /* 16.8px */
+  }
+
+}
+/* end test upsell popup */
