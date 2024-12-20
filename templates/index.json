@@ -229,6 +229,7 @@
         },
         "product_BA8d6X": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Micro-Infusion Limited Edition Bundle",
