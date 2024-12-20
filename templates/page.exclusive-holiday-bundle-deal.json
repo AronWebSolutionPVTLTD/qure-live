@@ -141,6 +141,7 @@
         },
         "product_D8AA7r": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "Micro-Infustion Limited Edition Bundle",
             "discount": 52,
@@ -577,7 +578,7 @@
           "type": "include",
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (for Wrinkles)",
-            "is_limited": true,
+            "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_blue-serum.webp",
             "text": "<h5>Serum concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM</p>",
@@ -632,7 +633,7 @@
           "type": "include",
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (for Wrinkles)",
-            "is_limited": true,
+            "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_blue-serum_ca9c2e68-113a-475e-8d4b-2ad73f5e8a5e.webp",
             "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM</p>",
@@ -917,7 +918,7 @@
           "type": "include",
           "settings": {
             "heading": "Micro-Infusion 3 Month Bundle (For Wrinkles)",
-            "is_limited": true,
+            "is_limited": false,
             "type": "",
             "image": "shopify://shop_images/bfs_blue-serum_ca9c2e68-113a-475e-8d4b-2ad73f5e8a5e.webp",
             "text": "<h5>Serum Concentrate for Wrinkles</h5><p>Niacinamide, Copper Peptide GHK-Cu, Beta Glucan, Sodium Hyaluronate</p><p>INCI: ROSA DAMASCENA FLOWER WATER, PROPANEDIOL, GLYCERIN, PANTHENOL, NIACINAMIDE, MYROTHAMNUS FLABELLIFOLIA LEAF/STEM EXTRACT, WATER, BUTYLENE GLYCOL, HYDROXYACETOPHENONE, COPPER TRIPEPTIDE-1, BETA-GLUCAN, CHRYSANTHELLUM INDICUM EXTRACT, ETHYLHEXYLGLYCERIN, SODIUM HYALURONATE, ALLANTOIN, XANTHAN GUM.</p>",
@@ -1009,6 +1010,7 @@
         },
         "product_EFMaH4": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "micro-infusion-limited-edition-bundle",
             "percent": 22,
