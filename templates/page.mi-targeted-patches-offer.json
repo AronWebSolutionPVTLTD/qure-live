@@ -1,10 +1,53 @@
 {
   "sections": {
+    "banner_tab_slider_eQCYBf": {
+      "type": "banner-tab-slider",
+      "blocks": {
+        "slider_DWFetL": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-3.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-1.webp"
+          }
+        },
+        "slider_6VraGr": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-4.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_DWFetL",
+        "slider_6VraGr"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_type": "slider",
+        "seo_heading": "Micro-Infusion Dart Patches",
+        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "heading_size": "title-xl",
+        "desc": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles<\/strong>, under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed<\/strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul>",
+        "rating_text": "4.7\/5 Rated by Customers",
+        "stars": "shopify:\/\/shop_images\/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
+        "btn_txt": "SAVE UP TO 38%",
+        "btn_url": "#choose_bundle",
+        "recomand": "",
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "order_mob": true
+      }
+    },
     "main": {
-      "type": "temp-page-mi-targeted-patches-offer"
+      "type": "temp-page-mi-targeted-patches-offer",
+      "settings": {}
     }
   },
   "order": [
+    "banner_tab_slider_eQCYBf",
     "main"
   ]
 }

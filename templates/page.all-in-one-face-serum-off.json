@@ -87,12 +87,13 @@
         "slider_yUaFxQ"
       ],
       "custom_css": [
-        ".refill_bl.tabSlider .refill_review {justify-content: start !important;}"
+        ".refill_bl.tabSlider .refill_review {justify-content: start !important;}",
+        ".refill_bl.tabSlider .refill_info .refill_review p {text-decoration: none;}"
       ],
       "settings": {
         "display_type": "slider",
-        "seo_heading": "",
-        "heading": "Embrace ageless confidence with All-In-One Face Serum",
+        "seo_heading": "ANTI-AGING & ALL-IN-ONE SERUM",
+        "heading": "Embrace ageless confidence with <br>All-In-One Face Serum",
         "heading_size": "title-xl",
         "desc": "<ul><li>Helps reduce the appearance of fine lines and dark spots, for smoother, firmer feeling skin.<\/li><li>Save money buying multiple skincare products to treat various concerns.<\/li><li>Argireline® Peptides, Retinol, Bakuchiol, Niacinamide, Vit C, Vit E, Ferulic Acid.<\/li><\/ul>",
         "rating_text": "4.7\/5 Rated by Customers",
@@ -100,7 +101,7 @@
         "btn_txt": "SAVE UP TO 38%",
         "btn_url": "#choose_bundle",
         "recomand": "",
-        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_left": "Dermatologist Approved",
         "underbutton_text_right": "Free Shipping Over $100",
         "order_mob": true
       }
@@ -112,7 +113,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/cosmopolitan.svg",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_8MCLNX": {
@@ -126,7 +127,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/bazaar_889503c3-d4d6-4eb0-b7be-dd1212b56c58.png",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_kn7TJe": {
@@ -140,7 +141,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/glamour.svg",
-            "mobile_hide": false
+            "mobile_hide": true
           }
         },
         "image_XTY4T4": {
@@ -167,11 +168,13 @@
     "heading_fxhCWM": {
       "type": "heading",
       "custom_css": [
-        ".section_header {padding-bottom: 0;}"
+        ".section_header {padding-bottom: 0;}",
+        ".section_header p {font-weight: normal;}",
+        "@media (max-width: 767px) {.section_header {text-align: start !important; }}"
       ],
       "settings": {
         "heading": "<h2>Everything you need in one serum<\/h2><p>Our unique blend of active ingredients help to brighten, plump, and smooth the look of skin effortlessly, addressing various concerns in just one step. Free from fragrance, parabens, and PEG, it offers a streamlined and pure skincare.<\/p>",
-        "heading_mobile": ""
+        "heading_mobile": "<h2>Everything you need in one serum<\/h2><p>Unique blend of active ingredients work together to brighten, plump and smooth skin.<\/p><p>Treat various skin concerns in just one step.<\/p><p>Fragrance, Paraben & PEG Free.<\/p>"
       }
     },
     "before_after_box_EK6wT3": {
@@ -180,7 +183,7 @@
         "object_3RRxn9": {
           "type": "object",
           "settings": {
-            "heading": "<p><strong>Bethany <\/strong>(Vitamin B3 Derivative)<\/p>",
+            "heading": "<p><strong>Niacinamide<\/strong> <strong> <\/strong>(Vitamin B3 Derivative)<\/p>",
             "text": "<p>All star ingredient that helps to clarify and even skin tone, minimize enlarged pores, reduce acne and redness.<\/p>",
             "feedback": "<p><strong>…100% of subjects <\/strong>reported significant improvement in fine lines, radiance, acne breakouts and smoothness.<\/p>",
             "popup_content": "<p>A 12-week clinical study demonstrated a 21% improvement in fine lines along with a 14% skin tone clarity and 15% radiance improvement. Improvements were reported as early as 2 weeks. Subjects reported no stinging, itching, dryness, or tingling after 10 weeks.<\/p><p><strong>In another Clinical Trial…<\/strong><\/p><p>Subjects experienced significantly lowered oil production after 2 and 4 weeks of application with reduced clogged pores and acne breakouts.<\/p><p>References: J Drugs Dermatol 2016 Jul 1;15(7):863-8 combined with 0.5% retinol. Int J Dermatol. 1995 Jun;34(6):434-7. doi: 10.1111\/j.1365-4362.1995.tb04449.x.<\/p>"
@@ -211,10 +214,13 @@
         "object_APNw94"
       ],
       "custom_css": [
-        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}"
+        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}",
+        ".skincare_right .accordion-body p {font-size: 11px; line-height: 16px; font-weight: 300;}",
+        ".col-md-6 > .skin_item_header {display: none;}",
+        "@media (max-width: 767px) {.skin_item {padding: 0; } .col-md-6 > .skin_item_header {display: block; }}"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Uneven Skin Texture",
         "r_heading": "Uneven Skin Texture",
         "text": "<p>Clarify and even skin tone, minimise enlarged pores, strengthen skin’s barrier, reduce breakouts.<\/p>",
         "image": "shopify:\/\/shop_images\/bethany_skincare.webp",
@@ -279,10 +285,13 @@
         "object_VhyUkm"
       ],
       "custom_css": [
-        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}"
+        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}",
+        ".skincare_right .accordion-body p {font-size: 11px; line-height: 16px; font-weight: 300;}",
+        ".col-md-6 > .skin_item_header {display: none;}",
+        "@media (max-width: 767px) {.skin_item {padding: 0; } .col-md-6 > .skin_item_header {display: block; }}"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Fine Lines and Wrinkles",
         "r_heading": "Fine Lines and Wrinkles",
         "text": "<p>Deeply hydrate skin to make fine lines less visible and boost the moisture of your skin!<\/p>",
         "image": "shopify:\/\/shop_images\/shannon_skincare.webp",
@@ -314,7 +323,7 @@
         "object_WBFref": {
           "type": "object",
           "settings": {
-            "heading": "<p><strong>Retinol <\/strong>(Vitamin A)<\/p>",
+            "heading": "<p><strong>Actiwhite™ <\/strong>(Vitamin A)<\/p>",
             "text": "<p>Encourages new cells to the surface to help reduce the visibility of wrinkles and age spots, and smooth skin texture.<\/p>",
             "feedback": "<p><strong>…Reduction of facial wrinkles by up to 63.74%<\/strong>was experienced by<strong>100% of subjects,<\/strong>from induction of collagen production.<\/p>",
             "popup_content": "<p>Topical retinol improves fine wrinkles associated with natural aging. Significant induction of increased collagen production, retinol-treated aged skin offers greater skin matrix synthesis and improved appearance. Facial wrinkles were reduced by 63.74% at the cheeks and 38.74% in the eye areas after 12 weeks of treatment.<\/p><p><strong>About the clinical trial<\/strong><\/p><p>Clinical trial was conducted and included subjects between the ages of 35 and 55. A retinol formulation was applied for 12 weeks on the participants. The efficacy and results in improving skin appearance was assessed using digital image-based wrinkle analysis after 12 weeks of retinol application.<\/p><p>Reference: Rong Kong, PhD,1 Yilei Cui, PhD,2 Gary J. Fisher, PhD,2 Xiaojuan Wang, BS,3 Yinbei Chen, MS,3. Journal of Cosmetic Dermatology (2015).<\/p>"
@@ -327,10 +336,13 @@
         "object_WBFref"
       ],
       "custom_css": [
-        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}"
+        ".skincare_right .accordion-item p {padding: 0; font-size: 13px;}",
+        ".skincare_right .accordion-body p {font-size: 11px; line-height: 16px; font-weight: 300;}",
+        ".col-md-6 > .skin_item_header {display: none;}",
+        "@media (max-width: 767px) {.skin_item {padding: 0; } .col-md-6 > .skin_item_header {display: block; }}"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Dark Spots and Discolouration",
         "r_heading": "Dark Spots and Discolouration",
         "text": "<p>Even skin tone for a more radiant complexion. Reduce the appearance of dark spots and help to prevent discolouration with continued use.<\/p>",
         "image": "shopify:\/\/shop_images\/Elizabeth_skincare.webp",
@@ -353,8 +365,8 @@
           "type": "object",
           "settings": {
             "heading": "How to use",
-            "text": "<ul><li>After cleansing, apply 1-2 pumps onto already cleansed face and neck.<\/li><li>Use every second day during the first week of use whilst your skin builds tolerance.<\/li><li>Then use daily for best results.<\/li><li><strong>PATCH TEST:<\/strong> Apply a small amount of the product on a discreet area of your skin, such as the inner forearm. Wait 24 hours before applying the serum to a larger area. Refrain from using the serum and consult a dermatologist if any adverse reactions occur, such as redness, irritation, or itching.<\/li><li>Apply 1-2 pumps<br\/>with your ring finger<\/li><li>Simple one step<br\/>routine in the evening<\/li><\/ul>",
-            "code": ""
+            "text": "<ul><li>After cleansing, apply 1-2 pumps onto already cleansed face and neck.<\/li><li>Use every second day during the first week of use whilst your skin builds tolerance.<\/li><li>Then use daily for best results.<br\/><br\/><\/li><li><strong>PATCH TEST:<\/strong> Apply a small amount of the product on a discreet area of your skin, such as the inner forearm. Wait 24 hours before applying the serum to a larger area. Refrain from using the serum and consult a dermatologist if any adverse reactions occur, such as redness, irritation, or itching.<\/li><\/ul>",
+            "code": "<div class=\"accordion_icon_list pt-3\">\n                                    <ul>\n                                        <li>\n                                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/skincare_skin55_1.svg\" alt=\"\">\n                                            <p>Apply 1-2 pumps <br>with your ring finger\n                                            <\/p>\n                                        <\/li>\n                                        <li>\n                                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/skincare_skin55_2.svg\" alt=\"\">\n                                            <p>Simple one step<br> routine in the evening<\/p>\n                                        <\/li>\n                                    <\/ul>\n                                <\/div>"
           }
         }
       },
@@ -363,7 +375,8 @@
         "object_EcjYEK"
       ],
       "custom_css": [
-        ".accordionTechnologyWrapper {padding-top: 0;}"
+        ".accordionTechnologyWrapper {padding-top: 0;}",
+        "@media (max-width: 767px) {.accordionTechnologyWrapper > #accordionTechnology {grid-template-columns: 1fr; gap: 0; }}"
       ],
       "settings": {}
     },
@@ -375,7 +388,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/results_ebony.webp",
             "heading": "I love this serum",
-            "text": "<p>“I rarely have the guts to try new skincare as I just hate wasting my money on products I don't like and haven't gotten to sample before. <br\/>But I got recommended this from a girlfriend of mine and was so happy I took on her recommendation because i LOVE this serum. It's the perfect everyday serum that you can actually notice a difference in your skin with!”<\/p>",
+            "text": "<p>“I rarely have the guts to try new skincare as I just hate wasting my money on products I don't like and haven't gotten to sample before. But I got recommended this from a girlfriend of mine and was so happy I took on her recommendation because i LOVE this serum. It's the perfect everyday serum that you can actually notice a difference in your skin with!”<\/p>",
             "see-more": "",
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "text_country": "Australia",
@@ -388,7 +401,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/results_vanessa_adb4e75a-c0f9-4bf9-b630-3d1af87e3e9b.webp",
             "heading": "My cystic acne is gone.",
-            "text": "<p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. <br\/>My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”<\/p>",
+            "text": "<p>“So far loving it! Had a little purging the first day using it but when it settled down, boy was it good. My cystic acne is gone. I still have some hyperpigmentation and little surface pimples that I get occasionally but no where near the pain I experienced with cystic acne.”<\/p>",
             "see-more": "",
             "image_country": "shopify:\/\/shop_images\/australia_f.webp",
             "text_country": "Australia",
@@ -529,7 +542,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/trusted_shah-max.webp",
             "video": "https:\/\/www.youtube.com\/watch?v=PJt57LcFEQk",
-            "title": "Dr Shah, MD",
+            "title": "Dr Shah & Dr Maxfield,",
             "des": "Board certified dermatologist"
           }
         },
@@ -578,7 +591,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/derma-ftr.svg",
-            "text": "<p>Dermatologist<\/p><p>Reviewed & Approved<\/p>"
+            "text": "<p>Dermatologist Tested<\/p><p>& Approved<\/p>"
           }
         },
         "icon_PgF87f": {
@@ -656,13 +669,13 @@
         "video_pE4QpH"
       ],
       "settings": {
-        "heading": "Confident skin starts here. <br> Just ask the internet.",
+        "heading": "Confident skin starts here.  Just ask the internet.",
         "sub_heading": "",
         "classname": "section videosQure",
         "btn": "",
         "btn_url": "",
         "desk_slide": 6,
-        "mob_slide": 1.7,
+        "mob_slide": 2,
         "slide_space": 18
       }
     },
