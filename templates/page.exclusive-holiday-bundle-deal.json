@@ -90,7 +90,7 @@
           "settings": {
             "heading": "Line Refine Bundle Pro",
             "discount": 47,
-            "image": "shopify://shop_images/bf_mh_1.webp",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_NEW.png",
             "product_url": "#line-refine-bundle-pro"
           }
         },
@@ -99,7 +99,7 @@
           "settings": {
             "heading": "Line Refine Bundle Advanced",
             "discount": 55,
-            "image": "shopify://shop_images/bf_mh_2.webp",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Advanced_NEW.png",
             "product_url": "#line-refine-bundle-advanced-1"
           }
         },
@@ -124,9 +124,9 @@
         "product_AKXwNe": {
           "type": "product",
           "settings": {
-            "heading": "Dade & Firm Bundle Advanced",
+            "heading": "Fade & Firm Bundle Advanced",
             "discount": 43,
-            "image": "shopify://shop_images/bf_mh_5.webp",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_NEW.png",
             "product_url": "#fade-firm-bundle-advance"
           }
         },
