@@ -73,7 +73,7 @@
           "banner_jrcxU4": {
             "type": "banner",
             "settings": {
-              "image": "shopify://shop_images/header_drop2.webp",
+              "image": "shopify://shop_images/Navigation.png",
               "button_label": "Save up to 55% on [Holiday Bundles]",
               "button_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
             }
