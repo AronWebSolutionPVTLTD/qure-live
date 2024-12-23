@@ -2569,7 +2569,6 @@ body[data-frontrow-health] .frontrow-health-container .frontrow-health-container
   align-items: center; 
   justify-content: center; 
   border-radius: 100px; 
-  margin-left: 5px;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -2615,10 +2614,12 @@ body[data-frontrow-health] .frontrow-health-container .frontrow-health-container
 /* section: product-landing */
 body[data-frontrow-health] .section-product-landing .frontrow-health-container { 
   margin-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body[data-frontrow-health] .section-product-landing .frontrow-health-container .frontrow-health-container__content { 
-  display: flex;
-  flex-direction: column;
+  display: inline;
+  margin-left: 8px;
 }
 body[data-frontrow-health] .section-product-landing .frontrow-health-container .frontrow-health-container__content .frontrow-health-container__content-heading,
 body[data-frontrow-health] .section-product-landing .frontrow-health-container .frontrow-health-container__content .frontrow-health-container__content-description {
