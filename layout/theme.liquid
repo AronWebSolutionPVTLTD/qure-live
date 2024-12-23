@@ -24,9 +24,6 @@
     <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" /> 
 
     <link rel="preload" href="{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}" as="script" fetchpriority="high">
-
-    {% comment %} Edgemesh Performance: Stale cart refresher {% endcomment %}
-    {% render 'cart-refresher' %}
   
     {% capture seo_title %}
       {{ page_title }}
@@ -101,6 +98,9 @@
 </head>
 
 <body class="{{ template }}">
+
+    {% comment %} Edgemesh Performance: Stale cart refresher {% endcomment %}
+    {% render 'cart-refresher' %}
 
     <!-- Google Tag Manager (noscript) -- BV -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
