@@ -151,7 +151,7 @@
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Pro",
             "text": "SAVE 47%",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_bc74a392-b7c0-4214-aaad-f0f156a5c5d8.png",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_w_dermalmist.png",
             "product_url": "shopify://products/line-refine-bundle-pro"
           }
         },
@@ -161,7 +161,7 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Pro",
             "text": "SAVE 55%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Pro_c2710f45-f483-4611-be22-360c62723de6.png",
+            "image": "shopify://shop_images/Fade_FirmBundlePro-wo-dermalmist.png",
             "product_url": "shopify://products/fade-firm-bundle-pro"
           }
         },
@@ -192,7 +192,7 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Advanced",
             "text": "SAVE 43%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Advance.png",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_wo_dm.png",
             "product_url": "shopify://products/fade-firm-bundle-advance"
           }
         },
@@ -212,7 +212,7 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Essentials",
             "text": "SAVE 55%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Essentials_7c085238-4ca2-445a-abcb-7ab2a9d7ad8d.png",
+            "image": "shopify://shop_images/Fade_FirmBundleEssentials-wo-dermalmist-2_30f4ee36-d53d-45ba-a3c1-cbdf57aae073.png",
             "product_url": "shopify://products/fade-firm-bundle-essentials"
           }
         },
@@ -229,6 +229,7 @@
         },
         "product_BA8d6X": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Micro-Infusion Limited Edition Bundle",
