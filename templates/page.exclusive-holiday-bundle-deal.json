@@ -1029,6 +1029,7 @@
         },
         "include_tgp4T4": {
           "type": "include",
+          "disabled": true,
           "settings": {
             "heading": "Micro-Infusion 3 Month (for Wrinkles)",
             "is_limited": true,
@@ -1058,6 +1059,7 @@
         },
         "include_w47PPq": {
           "type": "include",
+          "disabled": true,
           "settings": {
             "heading": "Dermal Mist (15ml)",
             "is_limited": false,
@@ -1072,6 +1074,7 @@
         },
         "how_to_use_FgpHYK": {
           "type": "how-to-use",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/bfs_mi_sm.svg",
             "text": "<h5>Micro-Infusion Limited Edition 3 Month</h5><ul><li>Use at night, once every 2 weeks.</li><li>5 minute treatment, complete 2-3 passes and leave serum on overnight.</li></ul>"
@@ -1079,6 +1082,7 @@
         },
         "how_to_use_jqyVqL": {
           "type": "how-to-use",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/bfs-dermal-mist-sm.svg",
             "text": "<h5>Dermal Mist (15ml)</h5><ul><li>Spray directly on dry skin, body and face. Allow skin to air dry—no rinsing needed. Use before Micro-Infusion to reduce impurities and bacteria.</li></ul>"
