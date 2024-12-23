@@ -4,7 +4,7 @@ function updateSlideCart() {
     const slidecartContainer = document.querySelector('#shopify-section-slidecart');
     
     if (slidecartContainer) {
-      fetch(`${(window as any).Shopify.routes.root}?sections=slidecart`)
+      fetch(`${window.Shopify.routes.root}?sections=slidecart`)
         .then(res => res.json())
         .then(response => {
           const slidecartHTML = response['slidecart'];
@@ -26,11 +26,11 @@ function updateSlideCart() {
               slidecartContainer.replaceWith(newSlidecartNode);
               // new sidecart timer 
               const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
-              (window as any).initSidecarTimer(sidecartTimerContainer);
+              initSidecarTimer(sidecartTimerContainer);
              
               // sitewide timer (header) 
               const siteWideTimerContainer = document.querySelector('.announcement_bar.site-gamification-active .sidecart-timer-container');
-              (window as any).initSidecarTimer(siteWideTimerContainer);
+              initSidecarTimer(siteWideTimerContainer);
       
               const customEvent = new CustomEvent('cartUpdated', {
                 detail: {
