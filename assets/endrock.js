@@ -1427,176 +1427,170 @@ function updateSiteWideGamification (cartTotal) {
 
 /* test upsell popup */
 
-const openPopupUpsell = document.querySelector("#openPopupUpsell");
-const closePopupUpsell = document.querySelector("#closePopupUpsell")
-const popupUpsell = document.querySelector("#popupUpsell");
+document.addEventListener('DOMContentLoaded', () => {
 
-const serumOfferContainer = document.querySelector('.supply-detail.offer_active1');
-// const serumOfferLabel = document.querySelectorAll('.serum_prd');
-const serumOfferLabel = document.querySelectorAll('.step_content.step_serum');
-const popupUpsellButtons = document.querySelectorAll('.popupUpsellButtons');
+  const openPopupUpsell = document.querySelector("#openPopupUpsell");
+  const closePopupUpsell = document.querySelector("#closePopupUpsell")
+  const popupUpsell = document.querySelector("#popupUpsell");
+  const popupUpsellWrapper = document.querySelector('.popupsell-wrapper');
+  const serumOfferContainer = document.querySelector('.supply-detail.offer_active1');
+  const serumOfferLabel = document.querySelectorAll('.step_content.step_serum');
+  const popupUpsellButtons = document.querySelectorAll('.popupUpsellButtons');
+  const popupUpsellNothanks = document.querySelectorAll('.popupUpsellNoThanks');
 
-// serumOfferContainer.addEventListener('change', (event) => {
-//   const target = event.target;
-//   console.log('target', target);
-// });
-
-// serumOfferLabel.forEach((label) => {
-//   label.addEventListener('click', (event) => {
-//     console.log('event', event);
-//   });
-// });
-
-
-/*
-const productsIdlink = {
-  "dark-spots + wrinkles": [43216489513199,45951933022447,45951935217903],
-  "dark-spots": [43216457203951,45951954419951,45951948947695],
-  "wrinkles": [43216483942639,45951928860911,45951945474287]
-};
-
-const productsIdUpsell = {
-  "dark-spots + wrinkles": 8015038873839,
-  "dark-spots": 8015049621743,
-  "wrinkles": 8015039496431,
-};
-
-  let category = null;
-  for (const [key, ids] of Object.entries(productsIdlink)) {
-    if (ids.includes(Number(productId))) {
-      category = key;
-      break;
-    }
-  }
-
-  if (category) {
-    const upsellProductId = productsIdUpsell[category];
-    console.log('upsellProductId', upsellProductId);
-    const upsellElement = document.querySelector(`.popupsell-card[data-product-id="${upsellProductId}"]`);
-    if (upsellElement) {
-      upsellElement.classList.add('active');
-    }
-
-  }
-  */
-const dataInformationUpsell = [
-  {
-    id: 8015038873839,
-    name: "dark-spots + wrinkles",
-    products: [43216489513199,45951933022447,45951935217903]
-  },
-  {
-    id: 8015049621743,
-    name: "dark-spots",
-    products: [43216457203951,45951954419951,45951948947695]
-  },
-  {
-    id: 8015039496431,
-    name: "wrinkles",
-    products: [43216483942639,45951928860911,45951945474287]
-  },
-
-]
-
-function processLinkAnchor() {
-  let linkAnchorLandingProcces = document.querySelector('.step_content .btn-atc.submit_btn');
-  if(linkAnchorLandingProcces){
-    const href = linkAnchorLandingProcces.getAttribute('href');
-    const productId = href.match(/id=(\d+)/)[1];
-    console.log('productId', productId);
-    return Number(productId);
-  } else {
-    return null;
-  }
- 
-}
-
-const handleUpsellElement = (dataInformation) => {
-
-  const productId = processLinkAnchor();
-  if (!productId) return;
-
-  const {name, id} = dataInformation.find(item => item.products.includes(productId)) ?? {};
-
-  console.log(`${name} - ${id}`);
-
-  const allUpsellElements = document.querySelectorAll('.popupsell-card.active');
-  allUpsellElements.forEach((element) => element.classList.remove('active'));
-   
-  const upsellElement = document.querySelector(`.popupsell-card[data-product-id="${id}"]`);
-  upsellElement?.classList.add('active');
-}
-
-const addToCartUpsell = async (productId) => {
-  let formData = {
-    'items': [{
-     'id': productId,
-     'quantity': 1
-     }]
-   };;
-
-  console.log(formData);
-
-  const response = await fetch('/cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
+  const dataInformationUpsell = [
+    {
+      id: 8015038873839,
+      name: "dark-spots + wrinkles",
+      products: [43216489513199,45951933022447,45951935217903]
     },
-    body: JSON.stringify(formData)
-  });
+    {
+      id: 8015049621743,
+      name: "dark-spots",
+      products: [43216457203951,45951954419951,45951948947695]
+    },
+    {
+      id: 8015039496431,
+      name: "wrinkles",
+      products: [43216483942639,45951928860911,45951945474287]
+    },
 
-  const data = await response.json();
-  console.log(data);
+  ]
 
-  if (response.ok) {
-    console.log('Product added to cart');
+  function processLinkAnchor() {
     let linkAnchorLandingProcces = document.querySelector('.step_content .btn-atc.submit_btn');
-    console.log('linkAnchorLandingProcces', linkAnchorLandingProcces);
-    linkAnchorLandingProcces.click();
-    popupUpsell.style.display = 'none';
-  } else {
-    console.error('Error adding product to cart');
+    if(linkAnchorLandingProcces){
+      const href = linkAnchorLandingProcces.getAttribute('href');
+      const productId = href.match(/id=(\d+)/)[1];
+      // console.log('productId', productId);
+      return Number(productId);
+    } else {
+      return null;
+    }
+  
   }
 
-};
+  const handleUpsellElement = (dataInformation) => {
+    const productId = processLinkAnchor();
+    if (!productId) return;
 
-popupUpsellButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const target = event.target;
-    console.log('target', target.dataset.productId);
-    addToCartUpsell(Number(target.dataset.productId));
+    const {name, id} = dataInformation.find(item => item.products.includes(productId)) ?? {};
+    // console.log(`${name} - ${id}`);
+
+    const allUpsellElements = document.querySelectorAll('.popupsell-card.active');
+    allUpsellElements.forEach((element) => element.classList.remove('active'));
+    
+    const upsellElement = document.querySelector(`.popupsell-card[data-product-id="${id}"]`);
+    upsellElement?.classList.add('active');
+  }
+
+  const addToCartUpsell = async (productId) => {
+    let formData = {
+      'items': [{
+      'id': productId,
+      'quantity': 1
+      }]
+    };;
+
+    // console.log(formData);
+
+    const response = await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const data = await response.json();
+    console.log(data);
+
+    if (response.ok) {
+      // console.log('Product added to cart');
+      // console.log('linkAnchorLandingProcces', linkAnchorLandingProcces);
+      let linkAnchorLandingProcces = document.querySelector('.step_content .btn-atc.submit_btn');
+      linkAnchorLandingProcces.click();
+
+      // document.body.classList.remove('not-scrollable');
+      // window.scrollTo(0, scrollPosition);
+      popupUpsell.style.display = 'none';
+
+    } else {
+      console.error('Error adding product to cart');
+    }
+
+  };
+
+  popupUpsellButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const target = event.target.closest('[data-product-id]'); // Encuentra el botón más cercano
+      let productId = null;
+
+      if (!target || !target.dataset.productId) {
+        productId = 43821069435119; // ID predeterminado
+      } else {
+        productId = Number(target.dataset.productId);
+      }
+
+      // console.log('target', target ? target.dataset.productId : 'No target found');
+      // console.log('productId', productId);
+      
+      addToCartUpsell(productId);
+    });
   });
-});
 
-
-// processLinkAnchor();
-handleUpsellElement(dataInformationUpsell);
-
-serumOfferContainer.addEventListener('change', (event) => {
-  const target = event.target;
-  // console.log('target', target);
-  // processLinkAnchor();
   handleUpsellElement(dataInformationUpsell);
-});
 
-serumOfferLabel.forEach((container) => {
-  container.addEventListener('click', (event) => {
-    // console.log('event', event);
-    console.log('click', event);
+  const closePopup = () => {
+    const linkAnchorLandingProcess = document.querySelector('.step_content .btn-atc.submit_btn');
+    if (linkAnchorLandingProcess) {
+      linkAnchorLandingProcess.click();
+
+    }
+    // document.body.classList.remove('not-scrollable');
+    // window.scrollTo(0, scrollPosition);
+    popupUpsell.style.display = 'none';
+  };
+
+
+  serumOfferContainer.addEventListener('change', (event) => {
+    // const target = event.target;
+    // console.log('target', target);
     // processLinkAnchor();
     handleUpsellElement(dataInformationUpsell);
   });
+
+  serumOfferLabel.forEach((container) => {
+    container.addEventListener('click', () => {
+      // console.log('event', event);
+      // console.log('click', event);
+      // processLinkAnchor();
+      handleUpsellElement(dataInformationUpsell);
+    });
+  });
+
+  let scrollPosition = 0;
+
+  openPopupUpsell.addEventListener('click', () =>{
+    // scrollPosition = window.scrollY;
+    // document.documentElement.style.setProperty('--scroll-y', `-${scrollPosition}px`);
+    // document.body.classList.add('not-scrollable');
+    popupUpsell.style.display = 'flex';
+  })
+
+  closePopupUpsell.addEventListener('click', closePopup);
+
+  popupUpsellNothanks.forEach((button) => {
+    button.addEventListener('click', closePopup);
+  });
+
+  popupUpsell.addEventListener('click', (e) => {
+    if (!popupUpsellWrapper.contains(e.target)) {
+      // console.log('click');
+      closePopup();
+    }
+  });
+
 });
-
-
-
-openPopupUpsell.addEventListener('click', () =>{
-  popupUpsell.style.display = 'flex';
-})
-
-closePopupUpsell.addEventListener('click', () =>{
-  popupUpsell.style.display = 'none';
-})
-
 
 /* end test upsell popup */

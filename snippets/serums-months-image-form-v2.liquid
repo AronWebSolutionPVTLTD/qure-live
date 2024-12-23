@@ -319,7 +319,8 @@
 
                                 {% render 'pdm-popup-upsell-landing' %}
 
-                                <div class="step_content mb-3 pt-0">
+                                <div class="step_content mb-3 pt-0 upsell_popup_anchor_hover">
+                                    <button id="openPopupUpsell" class="upsell_popup_btn"></button>
                                     <a class="btn btn-atc submit_btn {{ section_id }}_productButtonObject" href="{{ routes.cart_add_url }}?id={{ product.variants.first.id }}&quantity=1" data-ajax-cart-request-button>
                                         <span class="btn_value">Buy Now & SAVE 50%</span>
                                     </a>

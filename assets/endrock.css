@@ -2542,6 +2542,34 @@ body[data-jump-to] .jump_to_section__body-link-text {
 
 
 /* test upsell popup */
+.upsell_popup_btn{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  border: none;
+  background-color: transparent;
+}
+
+/* body.not-scrollable {
+  position: fixed;
+  top: var(--scroll-y);
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+} */
+
+.upsell_popup_anchor_hover{
+  position: relative;
+}
+
+body[data-upsell-test] .upsell_popup_btn{
+  display: block;
+}
 
 .popupsell-main {
   display: none;
@@ -2563,14 +2591,23 @@ body[data-jump-to] .jump_to_section__body-link-text {
   align-items: center;
   border-radius: 8px;
   background: linear-gradient(180deg, #DBEFE8 -3.91%, #FFF 51.05%), #FFF;
+  position: relative;
 }
+
+.popupsell-close-wrapper{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
 
 .popupsell-card{
   display: none;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 0 16px;
+  padding: 40px 16px;
 }
 
 .popupsell-card.active{
@@ -2786,12 +2823,14 @@ body[data-jump-to] .jump_to_section__body-link-text {
   text-transform: uppercase;
 }
 
-.popupsell-card-buttons .popupUpNoThanks{
+.popupsell-card-buttons .popupUpsellNoThanks{
   border: none;
   background-color: transparent;
+  width: 100%;
+  height: 100%;
 }
 
-.popupsell-card-buttons .popupUpNoThanks p{
+.popupsell-card-buttons .popupUpsellNoThanks p{
   color: #000;
   font-family: 'Poppins';
   font-size: 13px;
@@ -2799,6 +2838,8 @@ body[data-jump-to] .jump_to_section__body-link-text {
   font-weight: 400;
   line-height: 20px; /* 153.846% */
   text-decoration: underline;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 650px) {
@@ -2824,7 +2865,7 @@ body[data-jump-to] .jump_to_section__body-link-text {
   }
 
   .popupsell-card-content-product-info-wrapper{
-    padding: 0;
+    padding: 0 16px;
   }
 
   .popupsell-card-content-product-info-price-offer{
