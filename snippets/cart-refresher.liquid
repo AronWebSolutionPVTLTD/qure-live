@@ -1,13 +1,10 @@
 <script>
-  // function updateSlideCart() {
-  // Create mutation observer to wait for slidecart element
-  const observer = new MutationObserver((mutations, obs) => {
+function updateSlideCart(): Promise<void> {
+  return new Promise((resolve, reject) => {
     const slidecartContainer = document.querySelector('#shopify-section-slidecart');
     
     if (slidecartContainer) {
-      obs.disconnect(); // Stop observing once element is found
-      
-      fetch(`${window.Shopify.routes.root}?sections=slidecart`)
+      fetch(`${(window as any).Shopify.routes.root}?sections=slidecart`)
         .then(res => res.json())
         .then(response => {
           const slidecartHTML = response['slidecart'];
@@ -23,11 +20,11 @@
               slidecartContainer.replaceWith(newSlidecartNode);
               // new sidecart timer 
               const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
-              initSidecarTimer(sidecartTimerContainer);
+              (window as any).initSidecarTimer(sidecartTimerContainer);
              
               // sitewide timer (header) 
               const siteWideTimerContainer = document.querySelector('.announcement_bar.site-gamification-active .sidecart-timer-container');
-              initSidecarTimer(siteWideTimerContainer);
+              (window as any).initSidecarTimer(siteWideTimerContainer);
       
               const customEvent = new CustomEvent('cartUpdated', {
                 detail: {
@@ -36,18 +33,34 @@
                 }
               });
               document.dispatchEvent(customEvent);
+              resolve();
             }
           }
         })
-        .catch(error => console.error('Error updating slide cart:', error));
+        .catch(error => {
+          console.error('Error updating slide cart:', error);
+          reject(error);
+        });
+    } else {
+      reject(new Error('Slidecart container not found'));
     }
   });
+}
 
-  // Start observing the document for changes
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
+// Create mutation observer to wait for slidecart element
+const slidecartObserver = new MutationObserver((mutations, obs) => {
+  const slidecartContainer = document.querySelector('#shopify-section-slidecart');
+  if (slidecartContainer) {
+    obs.disconnect(); // Stop observing once element is found
+    updateSlideCart();
+  }
+});
+
+// Start observing the document for changes
+slidecartObserver.observe(document.body, {
+  childList: true,
+  subtree: true
+});
 // }
 // function updateSlideCart() {
 //   fetch(`${window.Shopify.routes.root}?sections=slidecart`)
