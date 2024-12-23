@@ -9,6 +9,12 @@ function updateSlideCart(): Promise<void> {
         .then(response => {
           const slidecartHTML = response['slidecart'];
       
+              console.log("??????")
+              console.log("??????")
+              console.log("??????")
+              console.log("??????")
+              console.log("??????")
+              console.log("??????")
           if (slidecartHTML) {
             // Create a new temporary container to hold the new HTML
             const tempContainer = document.createElement('div');
@@ -33,12 +39,6 @@ function updateSlideCart(): Promise<void> {
                 }
               });
               document.dispatchEvent(customEvent);
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
               resolve();
             }
           }
