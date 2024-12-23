@@ -9,12 +9,6 @@ function updateSlideCart() {
         .then(response => {
           const slidecartHTML = response['slidecart'];
       
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
-              console.log("??????")
           if (slidecartHTML) {
             // Create a new temporary container to hold the new HTML
             const tempContainer = document.createElement('div');
@@ -53,100 +47,16 @@ function updateSlideCart() {
   });
 }
 
-// Create mutation observer to wait for slidecart element
 const slidecartObserver = new MutationObserver((mutations, obs) => {
   const slidecartContainer = document.querySelector('#shopify-section-slidecart');
   if (slidecartContainer) {
-    obs.disconnect(); // Stop observing once element is found
+    obs.disconnect();
     updateSlideCart();
   }
 });
 
-// Start observing the document for changes
 slidecartObserver.observe(document.body, {
   childList: true,
   subtree: true
 });
-// }
-// function updateSlideCart() {
-//   fetch(`${window.Shopify.routes.root}?sections=slidecart`)
-//     .then(res => res.json())
-//     .then(response => {
-//       const slidecartHTML = response['slidecart']; // Use the section ID
-//       const slidecartContainer = document.querySelector('#shopify-section-slidecart');
-  
-//       if (slidecartContainer && slidecartHTML) {
-//         // Create a new temporary container to hold the new HTML
-//         const tempContainer = document.createElement('div');
-//         tempContainer.innerHTML = slidecartHTML;
-  
-//         const newSlidecartNode = tempContainer.firstElementChild;
-  
-//         if (newSlidecartNode) {
-//           slidecartContainer.replaceWith(newSlidecartNode);
-//           // new sidecart timer 
-//           const sidecartTimerContainer = document.querySelector('.slide_cart .sidecart-timer-container');
-//           initSidecarTimer(sidecartTimerContainer);
-         
-//           // sitewide timer (header) 
-//           const siteWideTimerContainer = document.querySelector('.announcement_bar.site-gamification-active .sidecart-timer-container');
-//           initSidecarTimer(siteWideTimerContainer);
-  
-//           const customEvent = new CustomEvent('cartUpdated', {
-//             detail: {
-//               message: 'cart updated', 
-//               time: new Date()
-//             }
-//           });
-//           document.dispatchEvent(customEvent);
-//         }
-//       }
-//     })
-//     .catch(error => console.error('Error updating slide cart:', error));
-// }
-  // const observer = new MutationObserver((mutationsList, observerInstance) => {
-  //     // Check if liquidAjaxCart is available in the global scope
-  //     if (typeof liquidAjaxCart !== 'undefined') {
-  //         try {
-  //           // Subscribe to ajax request callbacks
-  //           liquidAjaxCart.subscribeToCartAjaxRequests((requestState, subscribeToResult)=>{
-  //             subscribeToResult(() => {
-  //               // Get the current cart state
-  //               const cartState = liquidAjaxCart.getCartState();
-  //               const itemCount = cartState.cart.item_count;
-  //               // Find the cart count element
-  //               const cartCountElement = document.querySelector('.nav__cart-count');
-                
-  //               if (cartCountElement) {
-  //                 // Show or hide the cart count element based on item count
-  //                 if (itemCount > 0) {
-  //                     cartCountElement.classList.remove('hidden'); // Remove hidden class
-  //                 } else {
-  //                     cartCountElement.classList.add('hidden'); // Add hidden class
-  //                 }
-  //               }
-  //             });
-  //           });
-            
-  //           // Fetch a new cart to refresh it
-  //           liquidAjaxCart.cartRequestUpdate()
-  //         } catch (error) {
-  //             console.error('Error locating liquidAjaxCart:', error);
-  //         }
-  //         // Stop observing once we find and execute the function
-  //         observerInstance.disconnect();
-  //     }
-  // });
-  
-  // // Observe the entire document for changes in child nodes
-  // observer.observe(document, {
-  //     childList: true, // Observe changes in child nodes
-  //     subtree: true,   // Observe changes in all child elements
-  // });
-  
-  // // Timeout to stop observing after a certain period
-  // setTimeout(() => {
-  //     observer.disconnect();
-  //     console.warn('Stopped observing: liquidAjaxCart did not become available in time.');
-  // }, 10000); // Stop after 10 seconds
 </script>
