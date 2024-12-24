@@ -83,6 +83,14 @@
             "link_label": "Silk Pillowcase",
             "link_url": "shopify://products/silk-pillowcase"
           }
+        },
+        "slide_xdAzha": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_tt81.png",
+            "link_label": "Shower Filter",
+            "link_url": "https://qureskincare.com/products/shower-filter"
+          }
         }
       },
       "block_order": [
@@ -94,7 +102,8 @@
         "slide_9qAien",
         "slide_GReD48",
         "slide_hVri9x",
-        "slide_tNrDjD"
+        "slide_tNrDjD",
+        "slide_xdAzha"
       ],
       "settings": {}
     },
