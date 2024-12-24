@@ -502,8 +502,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/shower_filter.webp",
-        "title": "Triple the Water Pressure Options",
-        "description": "Adjust until you find the perfect pressure.",
+        "title": "Adjust the flow to what suits you best.",
+        "description": "Choose between three water flow settings put the perfect shower in your hands.",
         "button_text": "Shop Now",
         "button_link": "",
         "custom_class": "mt-md-0 mt-5"
