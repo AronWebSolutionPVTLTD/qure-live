@@ -53,7 +53,8 @@
         "video_before_and_after_QXnPdD": {
           "type": "video_before_and_after",
           "settings": {
-            "video_new_section": "shopify://files/videos/Serum edit.mov"
+            "video_new_section": "shopify://files/videos/Serum edit.mov",
+            "video_wistia_id": ""
           }
         }
       },
@@ -68,6 +69,7 @@
         "seo_heading": "Anti-Aging & All-In-One Serum",
         "heading": "Embrace ageless confidence with All-In-One Face Serum",
         "heading_mobile": "Embrace ageless confidence with All-In-One Face Serum",
+        "wistia_id": "",
         "product_images_limit": 5,
         "product_button_label": "Product",
         "before_after_images_limit": 3,
@@ -579,7 +581,7 @@
         "video_xLP3b6": {
           "type": "video",
           "settings": {
-            "image": "shopify://shop_images/Derm_face_serum_a31a922f-fb18-4bb2-9ab3-477c15d1ed90.png",
+            "image": "shopify://shop_images/Rectangle_1_b5f8a216-7cce-4747-b842-69fc2f2b6a0c.png",
             "video": "https://www.youtube.com/watch?v=PJt57LcFEQk",
             "title": "Dr Shah & Dr Maxfield,",
             "des": "Board certified dermatologists"
