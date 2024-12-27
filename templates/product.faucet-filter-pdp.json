@@ -22,7 +22,7 @@
         "list_EVK9TV": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Advanced water filter aids in reducing irritants for clearer, hydrated skin.</li><li>Reduces pore-clogging contaminants and prevents pre-mature aging without any extra steps in your routine.</li><li>Optimizes skincare effectiveness, and provides the most purified cleanse your skin will drink up.</li></ul>"
+            "text": "<ul><li>Advanced water filter reduces up to 99% of irritants for clearer, hydrated skin.</li><li>Reduces pore-clogging contaminants and prevents pre-mature aging without any extra steps in your routine.</li><li>Optimizes skincare effectiveness, and provides the most purified cleanse your skin will drink up.</li></ul>"
           }
         },
         "variant_3yKhQx": {
@@ -218,7 +218,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify://shop_images/mi_pdp-reason11.svg",
-            "text": "<p>Reduces appearance of wrinkles and prevents premature ageing</p>"
+            "text": "<p>Reduces appearance of wrinkles and prevents premature aging</p>"
           }
         },
         "icon_W4LDVM": {
@@ -480,7 +480,7 @@
           "settings": {
             "trust_icon": "shopify://shop_images/verified_design.svg",
             "trust_des": "Trusted and recommended by world leading Dermatologists",
-            "title": "<strong>\"You wanna look for something</strong> that’s gonna reduce both calcium carbonate and chlorine <strong>from your water.\"</strong>",
+            "title": "\"Harsh water <strong>can definitely damage your skin on daily basis and it</strong> impacts everything you are doing with your skincare\"",
             "title_clr": "#000000",
             "title_strong_clr": "#797d7c"
           }
@@ -709,28 +709,6 @@
         "slide_space": 20
       }
     },
-    "1733924064a3e08ceb": {
-      "type": "apps",
-      "blocks": {
-        "stamped_reviews_main_widget_qePiXd": {
-          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "take_questions": 2,
-            "animation": false,
-            "tags_exclude": "",
-            "tags_include": "",
-            "search": "",
-            "linkify": true,
-            "use_metafields": false,
-            "sku_tagtype": "sku"
-          }
-        }
-      },
-      "block_order": [
-        "stamped_reviews_main_widget_qePiXd"
-      ],
-      "settings": {}
-    },
     "compare_zyD9zD": {
       "type": "compare",
       "blocks": {
@@ -774,13 +752,6 @@
         "text": "<p>Other filtration systems focus on just chlorine removal, but calcium and magnesium are the true skin-barrier disruptors. With the Qure Faucet Filter, you get the best science-backed, dermatologist-approved solution to filtered water at home for better skin…</p>",
         "text_reduced": "",
         "design": true
-      }
-    },
-    "heading_PCjAm4": {
-      "type": "heading",
-      "settings": {
-        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
-        "heading_mobile": "<h2>Our customer reviews</h2>"
       }
     },
     "faq_yDJwaT": {
@@ -869,6 +840,35 @@
         "button_label": "Show More Questions",
         "button_hide_label": "Hide More Questions"
       }
+    },
+    "heading_PCjAm4": {
+      "type": "heading",
+      "settings": {
+        "heading": "<h2>Real reviews, real results</h2><h2>from people just like you.</h2>",
+        "heading_mobile": "<h2>Our customer reviews</h2>"
+      }
+    },
+    "1733924064a3e08ceb": {
+      "type": "apps",
+      "blocks": {
+        "stamped_reviews_main_widget_qePiXd": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "take_questions": 2,
+            "animation": false,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_qePiXd"
+      ],
+      "settings": {}
     }
   },
   "order": [

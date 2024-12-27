@@ -132,6 +132,11 @@
         <link rel="stylesheet" href="{{ 'product-mi-landing.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'qure-microinfusion-offer-men.css' | asset_url }}">
         <link rel="stylesheet" href="{{ 'affiliate.css' | asset_url }}">
+    {% when 'page.derm-reviews' %}
+        {% assign main_class = 'review_and-results derma_review' %}
+        <link rel="stylesheet" href="{{ 'return.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'mi-patches-pdp.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'reviews-and-results.css' | asset_url }}">
     {% when 'page.faq-new' %}
         {% assign main_class = 'faqs' %}
         <link rel="stylesheet" href="{{ 'faq-page.css' | asset_url }}">

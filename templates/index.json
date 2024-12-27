@@ -31,7 +31,7 @@
         "slide_iQgE8e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/homepageslide-3.jpg",
+            "image": "shopify://shop_images/Ellipse_78_d067490c-3b6b-41d2-8191-9bd1618f636b.png",
             "link_label": "Neck & Décolletage LED",
             "link_url": "https://www.qureskincare.com/products/neck-decolletage-led"
           }
@@ -83,6 +83,14 @@
             "link_label": "Silk Pillowcase",
             "link_url": "shopify://products/silk-pillowcase"
           }
+        },
+        "slide_xdAzha": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_tt81.png",
+            "link_label": "Shower Filter",
+            "link_url": "https://qureskincare.com/products/shower-filter"
+          }
         }
       },
       "block_order": [
@@ -94,7 +102,8 @@
         "slide_9qAien",
         "slide_GReD48",
         "slide_hVri9x",
-        "slide_tNrDjD"
+        "slide_tNrDjD",
+        "slide_xdAzha"
       ],
       "settings": {}
     },

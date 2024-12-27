@@ -204,7 +204,7 @@
         "column_hz3fHT"
       ],
       "settings": {
-        "heading": "Do you know what’s lurking in your shower?It’s time to get the truth flowing",
+        "heading": "Do you know what’s lurking in your shower? It’s time to get the truth flowing",
         "subtext": "<p>Your shower should be a sanctuary, but it’s actually the source of frustration for many. Chlorine, heavy metals and other impurities found in “hard water” rain down on you with every drop – draining the life from your skin and hair.</p>",
         "custom_class": "section"
       }
@@ -316,21 +316,21 @@
           "type": "accordion",
           "settings": {
             "accordion_title": "KDF Layer",
-            "accordion_content": "Reduces harmful heavy metals."
+            "accordion_content": "Reduces harmful heavy metals"
           }
         },
         "accordion_Tg7crR": {
           "type": "accordion",
           "settings": {
-            "accordion_title": "KDF Layer",
-            "accordion_content": "Reduces harmful heavy metals."
+            "accordion_title": "Carbon Fiber Layer",
+            "accordion_content": "Removes up to 99% of chlorine & contaminants"
           }
         },
         "accordion_UNKhKF": {
           "type": "accordion",
           "settings": {
-            "accordion_title": "KDF Layer",
-            "accordion_content": "Reduces harmful heavy metals."
+            "accordion_title": "FOF Descaling",
+            "accordion_content": "Reduces hard water mineral buildup"
           }
         },
         "benefit_fKxNtb": {
@@ -502,8 +502,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/shower_filter.webp",
-        "title": "Triple the Water Pressure Options",
-        "description": "Adjust until you find the perfect pressure.",
+        "title": "Adjust the flow to what suits you best.",
+        "description": "Transform your shower with our rotatable filter and three customizable water flow settings, giving you the perfect angle and flow for every preference.",
         "button_text": "Shop Now",
         "button_link": "",
         "custom_class": "mt-md-0 mt-5"
