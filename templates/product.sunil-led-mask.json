@@ -755,7 +755,6 @@
         },
         "icon_MFAAy9": {
           "type": "icon",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/led_icon_b6.svg",
             "text": "<p>Promote a healthy, glowing complexion</p>"

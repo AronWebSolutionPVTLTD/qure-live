@@ -1,44 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "banner_tab_slider_eQCYBf": {
-      "type": "banner-tab-slider",
+    "header_landing": {
+      "type": "header-landing",
       "blocks": {
-        "slider_DWFetL": {
-          "type": "slider",
+        "announcement_QmXGJK": {
+          "type": "announcement",
           "settings": {
-            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-3.webp",
-            "wistia_id": "",
-            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-1.webp"
+            "heading": "SAVE UP TO 50% | Black Friday Offer",
+            "heading_mobile": "SAVE UP TO 50% | Black Friday Offer",
+            "color": "green",
+            "font_size_desktop": 14,
+            "font_size_mobile": 13
           }
         },
-        "slider_6VraGr": {
-          "type": "slider",
+        "navigation_link_97aJVY": {
+          "type": "navigation-link",
           "settings": {
-            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-4.webp",
-            "wistia_id": "",
-            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-2.webp"
+            "link_label": "BENEFITS",
+            "link_url": "#reasons_section",
+            "image": "shopify://shop_images/nav_1.png"
+          }
+        },
+        "navigation_link_CmRG9V": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "RESULTS",
+            "link_url": "#result_section",
+            "image": "shopify://shop_images/header_2.webp"
+          }
+        },
+        "navigation_link_wMtKmt": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQ'S",
+            "link_url": "#faq_section",
+            "image": "shopify://shop_images/header_4.webp"
           }
         }
       },
       "block_order": [
-        "slider_DWFetL",
-        "slider_6VraGr"
+        "announcement_QmXGJK",
+        "navigation_link_97aJVY",
+        "navigation_link_CmRG9V",
+        "navigation_link_wMtKmt"
       ],
-      "disabled": true,
       "settings": {
-        "display_type": "slider",
-        "seo_heading": "Micro-Infusion Dart Patches",
-        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
-        "heading_size": "title-xl",
-        "desc": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles<\/strong>, under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed<\/strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul>",
-        "rating_text": "4.7\/5 Rated by Customers",
-        "stars": "shopify:\/\/shop_images\/star-half_fill_d51f6801-2e35-487c-89d0-130f978da1e8.svg",
-        "btn_txt": "SAVE UP TO 38%",
-        "btn_url": "#choose_bundle",
-        "recomand": "",
-        "underbutton_text_left": "Dermatologist Reviewed",
-        "underbutton_text_right": "Free Shipping Over $100",
-        "order_mob": true
+        "button_label": "HOLIDAY OFFER SAVE 38%",
+        "button_url": "#choose_bundle"
       }
     },
     "main": {
@@ -47,7 +64,7 @@
     }
   },
   "order": [
-    "banner_tab_slider_eQCYBf",
+    "header_landing",
     "main"
   ]
 }
