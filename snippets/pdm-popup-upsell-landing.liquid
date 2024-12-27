@@ -6,8 +6,7 @@
     render 'pdm_landing-purchase-icons', icon: 'check-value'
   endcapture
 %}
-
-
+{% comment %} borrar cuando termine el QC {% endcomment %}
 <script>
   console.log('upsell_popup', {{ meta_data | json }});
 </script>
@@ -44,7 +43,7 @@
             </div>
             <div class="popupsell-card-content-product-info">
               <div class="popupsell-card-content-product-info-wrapper">
-                <h3>{{ data.product_title }}</h3>
+                <h3>{{ data.upsell_product_title }}</h3>
                 <div class="popupsell-card-content-product-info-price">
                   <div class="popupsell-card-content-product-info-price-amount">
                     <span class="popupsell-card-content-product-info-price-amount__full">
@@ -82,7 +81,7 @@
             data-product-id="{{ data_product.variants.first.id }}"
           >
             <p>
-            {{ data.upsell_text_button_1 }} {{ percentage_difference }}
+            {{ data.upsell_text_button_1 }} {{ percentage_difference }}%
             </p>
           </button>
           <button
