@@ -125,7 +125,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Plastic Surgeon"
+        "text_label_real_result_3": "Plastic Surgeon",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "custom_qurify_filter_lp_featuredin_iXk4TL": {
@@ -260,7 +262,8 @@
         "column": 5,
         "padding_top": 60,
         "padding_bottom": 60,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "confidence_slider_gTU9GE": {
@@ -535,6 +538,19 @@
             "code": ""
           }
         },
+        "result_jEQY3N": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/New_review.png",
+            "heading": "Great Purchase",
+            "text": "<p>“I've been struggling with skin issues like hyperpigmentation, breakouts, and recently, I've noticed my skin looking dull. I've tried countless skincare products, but nothing seemed to work long-term. Although a few products showed some promise, the results were never lasting.  Recently, I came across Qure on my feeds, but I was hesitant to try it because I thought it would be just another product that wouldn’t make a difference. However, I was pleasantly surprised! This is now my fourth vial, and I absolutely love the results.</p>",
+            "see-more": "I used to get microneedling treatments because I loved the results, but Qure Micro-Infusion offers a similar effect right at home, and it's much more affordable than professional microneedling sessions.   I highly recommend giving it a try; I'm 99.99% sure you'll love it just as much as I do.\nI don’t usually write product reviews, but this one truly deserves it!”",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "United States",
+            "client": "Jasmine K.",
+            "code": ""
+          }
+        },
         "result_FagUhT": {
           "type": "result",
           "settings": {
@@ -764,6 +780,7 @@
       "block_order": [
         "result_k44HbH",
         "result_XcNT6t",
+        "result_jEQY3N",
         "result_FagUhT",
         "result_NRGNyz",
         "result_BTCpkg",
