@@ -1327,7 +1327,7 @@ console.log('cartTotal', cartTotal);
       const congratsMessage = copyCongrats.replace("&product-title&", `<strong>${giftProductTitle}!</strong>`);
       progressContainerMessage.innerHTML = congratsMessage;
     } else {
-      progressContainerMessage.innerHTML = "<p>Congrats you have a  <strong> free Shipping </strong></p>";
+      progressContainerMessage.innerHTML = "<p>Congrats you have <strong> Free Shipping! </strong></p>";
     }
   }
 
