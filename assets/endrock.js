@@ -1261,7 +1261,6 @@ function updateSideWideGamification() {
  * engagement with rewards during the shopping process.
  */
 function updateSiteWideGamification (cartTotal) { 
-console.log('cartTotal', cartTotal);
 
   const progressContainer = document.querySelector('.progress-container.pdm-gamification');
 
