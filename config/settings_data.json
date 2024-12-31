@@ -411,7 +411,7 @@
       },
       "1291562577487733835": {
         "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       },
       "11945366711752539959": {
@@ -421,11 +421,6 @@
       },
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
-        "disabled": false,
-        "settings": {}
-      },
-      "2728461494843721857": {
-        "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
         "settings": {}
       },
