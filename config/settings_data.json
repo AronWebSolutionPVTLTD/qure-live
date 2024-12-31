@@ -45,6 +45,8 @@
     "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
     "icon_product_gift_gradient": "shopify://shop_images/Layer_1_1.svg",
     "icon_product_gift_full": "shopify://shop_images/Layer_1_0f98f0bb-ebbd-41bc-96dc-f905b2948e10.svg",
+    "icon_gift_width": 18,
+    "icon_gift_height": 18,
     "enable_site_wide_timer": true,
     "start_date": "11-20-2024 22:00",
     "finish_date": "12-02-2024 11:59",
