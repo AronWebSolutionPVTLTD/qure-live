@@ -54,12 +54,13 @@
         "navigation_link_wMtKmt"
       ],
       "settings": {
-        "button_label": "HOLIDAY OFFER SAVE 50%",
+        "button_label": "HOLIDAY OFFER SAVE 38%",
         "button_url": "#choose_bundle"
       }
     },
     "main": {
-      "type": "temp-page-all-in-one-face-serum-off"
+      "type": "temp-page-all-in-one-face-serum-off",
+      "settings": {}
     }
   },
   "order": [
