@@ -40,7 +40,7 @@
     "enable_site_gamification": true,
     "enable_free_shipping_treshold": true,
     "enable_product_gift": true,
-    "product_free_gift": "silk-pillowcase",
+    "product_free_gift": "face-serum",
     "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
     "icon_product_gift_clean": "shopify://shop_images/site_gamification_pillow_empty.svg",
     "icon_product_gift_gradient": "shopify://shop_images/site_gamification_pillow_gradient.svg",
@@ -421,11 +421,6 @@
       },
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
-        "disabled": false,
-        "settings": {}
-      },
-      "2728461494843721857": {
-        "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
         "settings": {}
       },
