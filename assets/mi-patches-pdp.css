@@ -55,8 +55,8 @@
 
 .patches_tech_grid {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    align-items: start;
     gap: 20px;
 }
 
@@ -85,8 +85,11 @@
 
 .patches_tech_item .patches_tech_content h6 {
     font-weight: 600;
+    font-size: 13px;
 }
-
+.patches_tech_item .patches_tech_content p{
+    font-size: 13px;
+}
 .patches_ingredients .pi_header {
     position: relative;
 }
@@ -259,6 +262,12 @@
     .skincare_slider_n .skin_item_n_tag .sn_tag,
     .skincare_slider_n .skin_item_n_tag p {
         font-size: 11px;
+    }
+    .mi-patches-pdf .refill_s_tab .nav-pills .nav-link {
+        padding: 0 14px;
+    }
+    .mi-patches-pdf .refill_s_tab ul{
+        gap: 5px;
     }
 }
 
