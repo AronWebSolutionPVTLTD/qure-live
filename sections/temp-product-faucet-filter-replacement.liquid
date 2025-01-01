@@ -23,20 +23,25 @@
                             <h2 class="title-xl d-md-none">Get clearer skin,<br> on tap, with Qure Faucet Filter
                             </h2>
                         </div>
+                        <div class="price_wrap">
+                            <div class="price">
+                                <div class="new_price">
+                                    {{ product.price | money_without_trailing_zeros }}
+                                </div>
+                            </div>
+                        </div>
                         <div class="mask_select_clr mt-4">
                             <h5>Select color:</h5>
                             <div class="clr_options">
                                 <div class="form-check p-0">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="45852989653231" id="flexRadioDefault1" checked>
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         <img src="https://qureskincaredns.com/new/assets/filter_replacement_white.webp" alt="">
                                         <h6>White</h6>
                                     </label>
                                 </div>
                                 <div class="form-check p-0 position-relative">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="45852989620463" id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         <img src="https://qureskincaredns.com/new/assets/filter_replacement_black.webp" alt="">
                                         <h6>Black</h6>
@@ -44,6 +49,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <script type="text/javascript" src="{{ 'product-extended-variants.js' | asset_url }}" defer="defer"></script>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                product_extended_variants();
+                            });
+                        </script>
+
                         <div class="mw-452">
                             <div class="ss_list py-4">
                                 <ul>
@@ -55,53 +68,64 @@
                                 </ul>
                             </div>
                             <div class="subscribe_save_wrapper without_subscription mt-2">
-                                <div class="subscribeTopInfo">
-                                    <p>MOST POPULAR CHOICE</p>
-                                </div>
-                                <div class="subscriptionType" data-subscription="subscription">
-                                    <div class="subscribe_save_bx d-block">
-                                        <div class="subscribeInfo">
-                                            <label class="form-check-label w-100" for="flexCheckDefault">
-                                                <div class="d-flex justify-content-between">
-                                                    <h6>Subscribe &amp; save 30%</h6>
-                                                    <div class="subscribePrice">
-                                                        <p><span>$50</span>$35</p>
+                                <!-- aaaaqqqq -->
+                                <!--
+                                    <div class="subscribeTopInfo">
+                                        <p>MOST POPULAR CHOICE</p>
+                                    </div>
+                                    <div class="subscriptionType" data-subscription="subscription">
+                                        <div class="subscribe_save_bx d-block">
+                                            <div class="subscribeInfo">
+                                                <label class="form-check-label w-100" for="flexCheckDefault">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h6>Subscribe &amp; save 30%</h6>
+                                                        <div class="subscribePrice">
+                                                            <p><span>$50</span>$35</p>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <p class="subscribeInfoDesc">Get a new replacement filter
-                                                    delivered every 90 days for just $35. Skip or cancel at any
-                                                    time.<a
-                                                        href="https://www.qureskincare.com/pages/subscriptions"
-                                                        target="_blank">See more details</a></p>
-                                            </label>
-                                        </div>
+                                                    <p class="subscribeInfoDesc">Get a new replacement filter
+                                                        delivered every 90 days for just $35. Skip or cancel at any
+                                                        time.<a
+                                                            href="https://www.qureskincare.com/pages/subscriptions"
+                                                            target="_blank">See more details</a></p>
+                                                </label>
+                                            </div>
 
-                                    </div>
-                                </div>
-                                <div class="subscriptionType active" data-subscription="no-subscription">
-                                    <div class="noSubscription">
-                                        <div class="noSubscriptionText">
-                                            One time purchase
-                                        </div>
-                                        <div class="noSubscriptionPrice">
-                                            $50
                                         </div>
                                     </div>
-                                    <a class="btn btn-lg btn-primary without_subscription buy_btn"
-                                        href="#productSubscription">Subscribe Now</a>
-                                    <div class="payment_method without_subscription">
-                                        <p>OR pay 4 monthly payments of $32.25 with</p>
-                                        <div class="pmt_img ps-2">
-                                            <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt="">
-                                            <img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""><img src="https://qureskincaredns.com/new/assets/afterpay.svg"
-                                                alt="">
+                                    <div class="subscriptionType active" data-subscription="no-subscription">
+                                        <div class="noSubscription">
+                                            <div class="noSubscriptionText">
+                                                One time purchase
+                                            </div>
+                                            <div class="noSubscriptionPrice">
+                                                $50
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-lg btn-primary without_subscription buy_btn"
+                                            href="#productSubscription">Subscribe Now</a>
+                                        <div class="payment_method without_subscription">
+                                            <p>OR pay 4 monthly payments of $32.25 with</p>
+                                            <div class="pmt_img ps-2">
+                                                <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt="">
+                                                <img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""><img src="https://qureskincaredns.com/new/assets/afterpay.svg"
+                                                    alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                               
                                 <a class="btn btn-lg btn-primary with_subscription buy_btn"
                                     href="#productSubscription">Subscribe Now
                                 </a>
+                                 -->
+
+                                {% if product.variants.first.available %}
+                                    <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id=45852989653231&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now</a>
+                                {% else %}
+                                    <a class="btn btn-lg btn-primary without_subscription buy_btn" href="#">Sold Out</a>
+                                {% endif %}
+
                                 <div class="shipping shipping_bg bg-transparent d-md-flex d-none">
                                     <div class="s_bx">
                                         <img src="https://qureskincaredns.com/new/assets/dermatologist.svg" alt="">
