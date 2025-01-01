@@ -19,6 +19,9 @@
     {% when 'product.faucet-filter-pdp' %}
         {% assign main_class = 'faucet_filter' %}
         <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
+    {% when 'product.faucet-filter-replacement' %}
+        {% assign main_class = 'faucet_filter black_friday faucet_replacment' %}
+        <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
     {% when 'product.silk-pillowcase-pdp' %}
         {% assign main_class = 'silk_pillowcase' %}
         <link rel="stylesheet" href="{{ 'silk-pillowcase-pdp.css' | asset_url }}">
