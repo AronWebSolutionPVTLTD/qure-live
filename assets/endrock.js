@@ -1264,6 +1264,7 @@ function updateSideWideGamification() {
  * engagement with rewards during the shopping process.
  */
 function updateSiteWideGamification (cartTotal) { 
+
   const progressContainer = document.querySelector('.progress-container.pdm-gamification');
 
   if (!progressContainer) return;
@@ -1280,6 +1281,7 @@ function updateSiteWideGamification (cartTotal) {
   const giftProductVariantPrice = parseInt(progressContainer.dataset.giftProductVariantPrice, 10);
   const threshold = parseInt(progressContainer.dataset.threshold, 10);
   const currencySymbol = progressContainer.dataset.currencySymbol;
+  const giftProduct = progressContainer.dataset.giftProduct;
 
   // Calculate differences
   const differenceFreeShipping = freeShippingThreshold - cartTotal;
@@ -1291,9 +1293,11 @@ function updateSiteWideGamification (cartTotal) {
 
   if (enableFreeShipping && cartTotal < freeShippingThreshold) {
     progressPercentageFreeShipping = (cartTotal / freeShippingThreshold) * 100;
+
     if (progressPercentage > progressPercentageFreeShipping) {
       progressPercentage = 20;
     }
+
   } else {
     if (threshold > cartTotal && progressPercentage > 80) {
       progressPercentage = 80;
@@ -1309,7 +1313,7 @@ function updateSiteWideGamification (cartTotal) {
     if (enableFreeShipping && differenceFreeShipping > 0 && cartTotal >= 0) {
       const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(0);
       progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingAmountMoney)}</i>`);
-    } else if (enableProductGift && differenceFreeGift > 0) {
+    } else if (enableProductGift && giftProduct.available && differenceFreeGift > 0) {
       const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(0);
       let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingGiftAmountMoney)}</i>`);
       if (!isNaN(giftProductVariantPrice)) {
@@ -1321,9 +1325,11 @@ function updateSiteWideGamification (cartTotal) {
         message = message.replace("&product-title&", giftProductTitle);
       }
       progressContainerMessage.innerHTML = message;
-    } else if (enableProductGift && differenceFreeGift <= 0) {
+    } else if (enableProductGift && giftProduct.available && differenceFreeGift <= 0) {
       const congratsMessage = copyCongrats.replace("&product-title&", `<strong>${giftProductTitle}!</strong>`);
       progressContainerMessage.innerHTML = congratsMessage;
+    } else {
+      progressContainerMessage.innerHTML = "<p>Congrats you have <strong> Free Shipping! </strong></p>";
     }
   }
 
@@ -1333,7 +1339,7 @@ function updateSiteWideGamification (cartTotal) {
   const secondMilestone = progressContainer.querySelector('.second-milestone');
   const progressBar = progressContainer.querySelector('.progress-bar__bar');
 
-  if (milestonesContainer && firstMilestone && secondMilestone && progressBar) {
+  if (milestonesContainer && firstMilestone && progressBar) {
     // Update progress bar width
     progressBar.style.width = `${progressPercentage}%`;
 
@@ -1356,6 +1362,7 @@ function updateSiteWideGamification (cartTotal) {
     }
 
     // Second Milestone - Free Gift
+    if (secondMilestone)  {
     if (differenceFreeGift <= 0) {
       secondMilestone.classList.add('reach-threshold');
       secondMilestone.classList.remove('gradient');
@@ -1366,6 +1373,7 @@ function updateSiteWideGamification (cartTotal) {
       } else {
         secondMilestone.classList.remove('gradient');
       }
+    }
     }
 
     // Update milestone icons based on thresholds
@@ -1390,13 +1398,14 @@ function updateSiteWideGamification (cartTotal) {
       }
     }
 
+  if (secondMilestone) {
     const secondMilestoneIconEmpty = secondMilestone.querySelector('.icon-empty-pillow');
     const secondMilestoneIconGradient = secondMilestone.querySelector('.icon-empty-gradient');
     const secondMilestoneIconFull = secondMilestone.querySelector('.icon-full-pillow');
     const secondMilestoneIconCheck = secondMilestone.querySelector('.icon-check__second-milestone');
     const secondMilestoneProgressBarWrapper = secondMilestone.querySelector('.progress-bar-wrapper');
     const secondMilestoneProgressBarWrapperBar = secondMilestone.querySelector('.progress-bar-wrapper__bar');
-
+  
     const bothThresholdUncompleted = differenceFreeShipping > 0 && differenceFreeGift > 0;
     const bothThresholdCompleted = differenceFreeShipping <= 0 && differenceFreeGift <= 0;
 
@@ -1425,6 +1434,7 @@ function updateSiteWideGamification (cartTotal) {
         secondMilestoneProgressBarWrapperBar.style.width = 0;
       }
     }
+  }
   }
 }
 
