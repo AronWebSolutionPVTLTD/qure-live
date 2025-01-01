@@ -97,6 +97,13 @@
       "image": "Nozzle Image",
       "text": "Nozzle Text"
     },
+    "display":{
+      "type": "Display Type",
+      "tabs": "Tabs",
+      "slider": "Slider",
+      "thumb": "Thumbnail",
+      "single_slide": "Single Slide"
+    },
     "banner_holiday": {
       "label": "Holiday banner"
     },
@@ -175,7 +182,11 @@
       "label": "Blog"
     },
     "title": {
-      "label": "Title"
+      "label": "Title",
+      "size":{
+       "large": "Large",
+       "xl": "Extra Large"
+      }
     },
     "percentage": {
       "label": "Percentage"
@@ -243,7 +254,9 @@
     },
     "heading": {
       "label": "Heading",
+      "right": "Right Heading",
       "info": "Info Heading",
+      "size": "Heading Size",
       "mobile": {
         "label": "Heading for mobile"
       },
