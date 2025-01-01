@@ -10,8 +10,11 @@
 {
   "sections": {
     "main": {
-      "type": "temp-page-products-guide-page",
-      "settings": {}
+      "type": "product",
+      "settings": {
+        "reserve": false,
+        "show_bf_prices": true
+      }
     }
   },
   "order": [
