@@ -37,14 +37,16 @@
     "end_time_order": "2024-11-04T23:59",
     "show_order_by_receive_by_us": false,
     "enable_corner_treatment_bfcm": false,
-    "enable_site_gamification": true,
-    "enable_free_shipping_treshold": true,
-    "enable_product_gift": true,
-    "product_free_gift": "silk-pillowcase",
+    "enable_site_gamification": false,
+    "enable_free_shipping_treshold": false,
+    "enable_product_gift": false,
+    "product_free_gift": "face-serum",
     "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
-    "icon_product_gift_clean": "shopify://shop_images/site_gamification_pillow_empty.svg",
-    "icon_product_gift_gradient": "shopify://shop_images/site_gamification_pillow_gradient.svg",
-    "icon_product_gift_full": "shopify://shop_images/site_gamification_pillow_full.svg",
+    "icon_product_gift_clean": "shopify://shop_images/Gift-grey1.svg",
+    "icon_product_gift_gradient": "shopify://shop_images/Gift-grey2.svg",
+    "icon_product_gift_full": "shopify://shop_images/Gift-black.svg",
+    "icon_gift_width": 20,
+    "icon_gift_height": 20,
     "enable_site_wide_timer": true,
     "start_date": "11-20-2024 22:00",
     "finish_date": "12-02-2024 11:59",
@@ -56,9 +58,9 @@
           "announcement_TPxBgi": {
             "type": "announcement",
             "settings": {
-              "heading": "<p><strong>Get $50 OFF on the Q-Rejuvalight Mask with the code: SPOOKY50</strong></p>",
+              "heading": "<p><strong>FREE SHIPPING ON ALL ORDERS OVER $100</strong></p>",
               "button_label": "SHOP NOW",
-              "button_url": "shopify://products/q-rejuvalight-pro-facewear"
+              "button_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
             }
           },
           "tab_3Wyyea": {
@@ -279,7 +281,7 @@
               "upsell_product_first": "dermal-mist",
               "upsell_product_first_description": "Purifies and refreshes",
               "upsell_product_second": "shower-filter",
-              "upsell_product_second_description": "Optimizes skincare effectiveness.",
+              "upsell_product_second_description": "Reduces irritants in water for clearer, hydrated skin.",
               "upsell_product_third": "face-serum",
               "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
@@ -348,6 +350,7 @@
           "upsell_qRXtDN",
           "upsell_pDFytd"
         ],
+        "custom_css": [],
         "settings": {
           "upsell_heading": "Achieve your skin goals faster",
           "upsell_product_first": "q-rejuvalight-pro-facewear",
@@ -365,11 +368,11 @@
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
           "label_seconds": "SECONDS",
-          "enable_free_shipping_treshold": true,
-          "enable_product_gift": true,
-          "product_free_gift": "silk-pillowcase",
-          "icon_product_gift_clean": "shopify://shop_images/Vector.svg",
-          "icon_product_gift_full": "shopify://shop_images/Vector_1_dc2b4cda-33fe-4597-8230-931c4ab65f69.svg",
+          "enable_free_shipping_treshold": false,
+          "enable_product_gift": false,
+          "product_free_gift": "face-serum",
+          "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
+          "icon_product_gift_full": "shopify://shop_images/Layer_1_0f98f0bb-ebbd-41bc-96dc-f905b2948e10.svg",
           "icon_gift_width": 18,
           "icon_gift_height": 26,
           "enable_show_gift_price": true,
@@ -411,7 +414,7 @@
       },
       "1291562577487733835": {
         "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "11945366711752539959": {
@@ -421,11 +424,6 @@
       },
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
-        "disabled": false,
-        "settings": {}
-      },
-      "2728461494843721857": {
-        "type": "shopify://apps/amped-email-sms-popups/blocks/app-embed/d9d8f140-4443-4f6c-a16a-95357ecc2125",
         "disabled": false,
         "settings": {}
       },

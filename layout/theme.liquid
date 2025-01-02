@@ -7,6 +7,7 @@
 {% endif %}
 
 <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
@@ -23,7 +24,7 @@
     <meta name="msvalidate.01" content="E6D2CFAEB841C8D3C13C6473265B99B6" /> 
 
     <link rel="preload" href="{{ "liquid-ajax-cart-v1.11.1.js" | asset_url  }}" as="script" fetchpriority="high">
-
+  
     {% capture seo_title %}
       {{ page_title }}
       {% if current_tags %}
@@ -93,19 +94,12 @@
     {% render 'header-scripts' %}
     {% comment %} add swiper  {% endcomment %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Edgemesh Client Begin -->
-    <script type="application/javascript">
-        EDGEMESH = {
-            lite: true
-        }
-    </script>
-    <script async type="application/javascript" src="https://static.edgeme.sh/client.js"></script>
-    <!-- Edgemesh Client End -->
-
 </head>
 
 <body class="{{ template }}">
+
+    {% comment %} Edgemesh Performance: Stale cart refresher {% endcomment %}
+    {% render 'cart-refresher' %}
 
     <!-- Google Tag Manager (noscript) -- BV -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLP8CZF"
@@ -132,8 +126,8 @@
         
         if (document.querySelector('a[href="#faq_section"]')) {
             document.querySelector('a[href="#result_section"]').addEventListener('click', function(e) {
-                e.preventDefault();
                 if (!document.getElementById('result_section')) {
+                    e.preventDefault();
                     window.location = '/#result_section';
                 }
             });
@@ -141,13 +135,12 @@
 
         if (document.querySelector('a[href="#faq_section"]')) {
             document.querySelector('a[href="#faq_section"]').addEventListener('click', function(e) {
-                e.preventDefault();
                 if (!document.getElementById('faq_section')) {
+                    e.preventDefault();
                     window.location = '/pages/faqs';
                 }
             });            
         }
-
     </script>
 
     {% if product %}
