@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {% endif %}
       }
 
-      {% if enableProductGift and giftTresholdPdm != 0 and productGiftPdm != blank %}
+      {% if enableProductGift and productGiftPdm.available and giftTresholdPdm != 0 and productGiftPdm != blank %}
         productGiftPdm(cart,'{{ productGiftPdm.variants.first.id }}', {{ giftTresholdPdm }});
       {% endif %}
     }

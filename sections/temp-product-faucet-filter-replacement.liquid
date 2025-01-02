@@ -1,0 +1,964 @@
+
+<!-- -- main banner start -- -->
+<div class="refill_bl pt-0 tabSlider replacment">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="w-100" id="faucet_filter">
+                    <div class="refill_info pt-0 pt-md-3">
+                        <div class="refill_review mb-2">
+                            <div class="star_gp">
+                                <img src="https://qureskincaredns.com/new/assets/star4.8.svg" alt="">
+                            </div>
+                            <a href="#review_section" class="text-dark">
+                                <p class="text-sm fw-normal" style="text-decoration: none;">4.7/5 Rated by
+                                    Customers
+                                </p>
+                            </a>
+                        </div>
+                        <div class="section_header text-start">
+                            <!-- <h1 class="product_title">Qure Faucet Filter</h1> -->
+                            <h2 class="title-xl d-none d-md-block">Get clearer skin, on tap, with Qure Faucet
+                                Filter</h2>
+                            <h2 class="title-xl d-md-none">Get clearer skin,<br> on tap, with Qure Faucet Filter
+                            </h2>
+                        </div>
+                        <div class="price_wrap">
+                            <div class="price">
+                                <div class="new_price">
+                                    {{ product.price | money_without_trailing_zeros }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mask_select_clr mt-4">
+                            <h5>Select color:</h5>
+                            <div class="clr_options">
+                                <div class="form-check p-0">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="45852989653231" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <img src="https://qureskincaredns.com/new/assets/filter_replacement_white.webp" alt="">
+                                        <h6>White</h6>
+                                    </label>
+                                </div>
+                                <div class="form-check p-0 position-relative">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" value="45852989620463" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        <img src="https://qureskincaredns.com/new/assets/filter_replacement_black.webp" alt="">
+                                        <h6>Black</h6>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript" src="{{ 'product-extended-variants.js' | asset_url }}" defer="defer"></script>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                product_extended_variants();
+                            });
+                        </script>
+
+                        <div class="mw-452">
+                            <div class="ss_list py-4">
+                                <ul>
+                                    <li class="pb-md-2">Qure Faucet Filter replacement cartridge for 3 month supply of purified
+                                        tap water.</li>
+                                    <li class="pb-md-2">Reduces known skin irritants like chlorine, calcium and magnesium from
+                                        tap water.</li>
+                                    <li class="pb-md-2">Helps to keep redness, dryness, breakouts and irritation at bay.</li>
+                                </ul>
+                            </div>
+                            <div class="subscribe_save_wrapper without_subscription mt-2">
+                                <!-- aaaaqqqq -->
+                                <!--
+                                    <div class="subscribeTopInfo">
+                                        <p>MOST POPULAR CHOICE</p>
+                                    </div>
+                                    <div class="subscriptionType" data-subscription="subscription">
+                                        <div class="subscribe_save_bx d-block">
+                                            <div class="subscribeInfo">
+                                                <label class="form-check-label w-100" for="flexCheckDefault">
+                                                    <div class="d-flex justify-content-between">
+                                                        <h6>Subscribe &amp; save 30%</h6>
+                                                        <div class="subscribePrice">
+                                                            <p><span>$50</span>$35</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="subscribeInfoDesc">Get a new replacement filter
+                                                        delivered every 90 days for just $35. Skip or cancel at any
+                                                        time.<a
+                                                            href="https://www.qureskincare.com/pages/subscriptions"
+                                                            target="_blank">See more details</a></p>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="subscriptionType active" data-subscription="no-subscription">
+                                        <div class="noSubscription">
+                                            <div class="noSubscriptionText">
+                                                One time purchase
+                                            </div>
+                                            <div class="noSubscriptionPrice">
+                                                $50
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-lg btn-primary without_subscription buy_btn"
+                                            href="#productSubscription">Subscribe Now</a>
+                                        <div class="payment_method without_subscription">
+                                            <p>OR pay 4 monthly payments of $32.25 with</p>
+                                            <div class="pmt_img ps-2">
+                                                <img src="https://qureskincaredns.com/new/assets/klarna.svg" alt="">
+                                                <img src="https://qureskincaredns.com/new/assets/sezzle.svg" alt=""><img src="https://qureskincaredns.com/new/assets/afterpay.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                               
+                                <a class="btn btn-lg btn-primary with_subscription buy_btn"
+                                    href="#productSubscription">Subscribe Now
+                                </a>
+                                 -->
+
+                                {% if product.variants.first.available %}
+                                    <a class="btn btn-lg btn-primary without_subscription buy_btn" href="{{ routes.cart_add_url }}?id=45852989653231&quantity=1" onclick="setEventProductHandler('{{ product.handle | escape }}')" data-ajax-cart-request-button>Buy Now</a>
+                                {% else %}
+                                    <a class="btn btn-lg btn-primary without_subscription buy_btn" href="#">Sold Out</a>
+                                {% endif %}
+
+                                <div class="shipping shipping_bg bg-transparent d-md-flex d-none">
+                                    <div class="s_bx">
+                                        <img src="https://qureskincaredns.com/new/assets/dermatologist.svg" alt="">
+                                        <p>Dermatologist Approved</p>
+                                    </div>
+                                    <div class="s_bx">
+                                        <img src="https://qureskincaredns.com/new/assets/shipping.svg" alt="">
+                                        <p class="d-none d-md-block">Free Shipping Over $100</p>
+                                        <p class="d-block d-md-none">Free World-Wide Shipping Over $100</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6  order-1 order-md-2">
+                <div class="refill_slider refill_slider_3">
+                    <div class="refill_s_tab_content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade mw-mob-100 show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="swiper twa__swiper productSlider dot_pagination"
+                                    id="twa__swiper-productSlider" data-section-id="productSlider"
+                                    data-autoplay="false" data-loop="false" data-centerslide="false"
+                                    data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="10"
+                                    data-arrowleft="productSlider-swiper-prev"
+                                    data-arrowright="productSlider-swiper-next">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd8.webp"
+                                                class="img-fluid d-md-block d-none" alt="">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd2-mob.webp"
+                                                class="img-fluid d-md-none" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd9.webp"
+                                                class="img-fluid d-md-block d-none" alt="">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd3-mob.webp"
+                                                class="img-fluid d-md-none" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd3.webp"
+                                                class="img-fluid d-md-block d-none" alt="">
+                                            <img src="https://qureskincaredns.com/new/assets/faucet_flter-pd4-mob.webp"
+                                                class="img-fluid d-md-none" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="swiper twa__swiper realResultSlider dot_pagination"
+                                    id="twa__swiper-realResultSlider" data-section-id="realResultSlider"
+                                    data-autoplay="false" data-loop="false" data-centerslide="false"
+                                    data-mobile="1" data-tablet="1" data-desktop="1" data-spacing="10"
+                                    data-arrowleft="realResultSlider-swiper-prev"
+                                    data-arrowright="realResultSlider-swiper-next">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <picture id="image-id">
+                                                <source media="(min-width:1920px)"
+                                                    srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp"
+                                                    class="img-fluid tab_img" width="350" height="350">
+                                                <source media="(min-width:1600px)"
+                                                    srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp"
+                                                    class="img-fluid tab_img" width="350" height="350">
+                                                <source media="(min-width:1100px)"
+                                                    srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp"
+                                                    class="img-fluid tab_img" width="350" height="350">
+                                                <source media="(min-width:720px)"
+                                                    srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp"
+                                                    class="img-fluid tab_img" width="350" height="350">
+                                                <source media="(min-width:540px)"
+                                                    srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp"
+                                                    class="img-fluid tab_img" width="350" height="350">
+                                                <img src="https://qureskincaredns.com/new/assets/faucet_flter-result-1n.webp" alt=""
+                                                    class="img-fluid tab_img" width="100" height="100">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="banner-popup-link" id="popup-link">
+                                                <picture id="image-id">
+                                                    <source media="(min-width:1920px)"
+                                                        srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp"
+                                                        class="img-fluid tab_img" width="350" height="350">
+                                                    <source media="(min-width:1600px)"
+                                                        srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp"
+                                                        class="img-fluid tab_img" width="350" height="350">
+                                                    <source media="(min-width:1100px)"
+                                                        srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp"
+                                                        class="img-fluid tab_img" width="350" height="350">
+                                                    <source media="(min-width:720px)"
+                                                        srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp"
+                                                        class="img-fluid tab_img" width="350" height="350">
+                                                    <source media="(min-width:540px)"
+                                                        srcset="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp"
+                                                        class="img-fluid tab_img" width="350" height="350">
+                                                    <img src="https://qureskincaredns.com/new/assets/faucet_flter-result-2n.webp" alt=""
+                                                        class="img-fluid tab_img" width="100" height="100">
+                                                </picture>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-dermatologist" role="tabpanel"
+                                aria-labelledby="pills-dermatologist-tab">
+                                <div class="banner_img position-relative">
+                                    <img src="https://qureskincaredns.com/new/assets/led-lp-transparent.webp" alt=""
+                                        class="img-fluid tab_img d-none d-md-block">
+                                    <img src="https://qureskincaredns.com/new/assets/led-lp-transparentmob.webp" alt=""
+                                        class="img-fluid d-block d-md-none">
+                                    <a class="popup-youtube1 position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="wistia_responsive_padding" style="position:relative;">
+                                            <div class="wistia_responsive_wrapper"
+                                                style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                                <div class="wistia_embed wistia_async_mldew3t0p6 seo=false videoFoam=true  h-100 rounded"
+                                                    style="height:100%;position:relative;width:100%;display:flex;align-items:center;">
+                                                    <div class="wistia_swatch"
+                                                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                        <img src="https://fast.wistia.com/embed/medias/mldew3t0p6/swatch"
+                                                            style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                            alt="" aria-hidden="true"
+                                                            onload="this.parentNode.style.opacity=1;" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="refill_s_tab">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab"
+                                    aria-controls="pills-home" aria-selected="true">Product</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Real
+                                    Results</button>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-dermatologist-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dermatologist" type="button" role="tab"
+                                    aria-controls="pills-dermatologist"
+                                    aria-selected="true">Dermatologist</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- main banner end -- -->
+
+<!-- -- press slider start -- -->
+<div class="press_bl bg-lightGrey mt-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="ps_wrapper align-items-center">
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/vogue2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item d-none d-md-block">
+                        <img src="https://qureskincaredns.com/new/assets/women_health.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item d-none d-md-block">
+                        <img src="https://qureskincaredns.com/new/assets/cosmopolitan2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/elle2.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/marie.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ps_item">
+                        <img src="https://qureskincaredns.com/new/assets/grazia2.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- -- press slider end -- -->
+
+<!-- -- replacement info start -- -->
+<div class="replacement_info section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 m-md-auto mw-100">
+            <h2 class="title-lg">
+                Once you get clean water on tap, you’ll never go back
+            </h2>
+            <p>Filtered water for your skin is at its best when used consistently on the daily – so you’ll want
+                to replace your filter about once every three months. Once you get used to your skin feeling
+                cleaner, softer and more refreshed, you’ll never want to go back to tap water again.</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-md-center gap-3">
+            <div class="replacement_pill">
+                <img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">
+                <p>90-day supply</p>
+            </div>
+            <div class="replacement_pill">
+                <img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">
+                <p>Easy replacement</p>
+            </div>
+            <div class="replacement_pill">
+                <img src="https://qureskincaredns.com/new/assets/correct_circle.svg" alt="">
+                <p>Dermatologist tested</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- replacement info end -- -->
+
+<!-- -- result section start -- -->
+<div class="result_s section mi_landing_result" id="result_section">
+    <div class="container">
+        <div class="section_header text-md-center ms-0 mb-md-4 m-md-auto">
+            <h2 class="title-lg">
+                The results are crystal clear
+            </h2>
+        </div>
+        <div class="result_s_wrapper">
+            <div class="swiper dot_pagination result_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="result_item">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_kim_l.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/australia_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Kim L.</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Source of my unclear skin</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in Australia</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p>“I didn’t realize how big impact water has on our skin... I almost got
+                                        used to
+                                        my skin never getting better than mediocre, but this Water Filter is a
+                                        game changer in my skincare routine.”</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="result_item h-100">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_hanna.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/england_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Hanna</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Hydrated more than ever</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in United Kingdom</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p class="pb-0">“I never had any major issues with skin before I moved. Then
+                                        I started to
+                                        get irritation and my makeup would look cakey cause my skin was always
+                                        so dry no matter what moisturiser I used...</p>
+                                    <div class="read-more-content">
+                                        <p class="nomargin">I didn’t change anything in my skincare routine
+                                            except filtered water. I’m never washing my face with anything less
+                                            than Q-urified water because my skin is so much better.”</p>
+                                    </div>
+                                    <a href="javascript:void(0);" class="read-more" title="Read More">See
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="result_item">
+                            <div class="result_img_m">
+                                <img src="https://qureskincaredns.com/new/assets/results_josie.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="result_c_info">
+                                <div class="r_flag">
+                                    <div class="flag_img">
+                                        <img src="https://qureskincaredns.com/new/assets/america_f.webp" alt="" class="img-fluid">
+                                    </div>
+                                    <p class="r_c_name pe-2">Josie</p>
+                                </div>
+                                <div class="star_gp">
+                                    <img src="https://qureskincaredns.com/new/assets/results_star-full.svg" alt="">
+                                    <p>Acne and dryness gone</p>
+                                </div>
+                                <div class="reviewed">
+                                    <p>Reviewed in United States</p>
+                                </div>
+                                <div class="verified_img">
+                                    <img src="https://qureskincaredns.com/new/assets/verified.svg" alt="">
+                                    <p>Verified customer</p>
+                                </div>
+                            </div>
+                            <div class="result_item_info">
+                                <div class="result_content">
+                                    <p>“My skin has cleared up so much thanks to Qure! I use the LED mask and
+                                        water filter daily and it’s cleared up my acne, and my complexion so
+                                        much smoother and less red! My skin feels soft and hydrated. I can
+                                        actually walk out of the house without makeup now. THANK YOU QURE!!!”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_navigation">
+                    <div class="swiper-pagination"></div>
+                    <div class="qureSlider-swiper-prev swiper-button-prev swiper-button"></div>
+                    <div class="qureSlider-swiper-next  swiper-button-next swiper-button"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- -- result section end -- -->
+
+<!-- -- image with text start -- -->
+<div class="imageText section py-md-4 qure_MI_ftr_wrap">
+    <div class="container">
+        <div class="hollywood_skin mt-0">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7">
+                    <div class="it_info p-0 pe-md-5 pt-md-0 pt-3">
+                        <h2 class="title-lg mb-3">The proactive way to care for your skin</h2>
+                        <p class="fw-normal">Studies have shown that harsh residues like sodium lauryl sulfate
+                            (SLS), a common detergent found in many everyday cleansers, can irritate the skin
+                            and weaken its natural barrier. Hard water elements like chlorine, calcium, and
+                            magnesium affect the skin’s ability to wash away all those SLS deposits, leading to
+                            dryness and irritation.</p>
+                        <p class="fw-normal">Your Qure Faucet Filter works to reduce irritants like chlorine,
+                            calcium, and
+                            magnesium from your faucet water, minimizing dryness, redness, and tightness.
+                            Clinically proven to boost hydration and improve texture in just 4 weeks, it
+                            protects the skin and supports a smoother, softer complexion. You get the purest
+                            clean yet—making daily use the most proactive way to care for your skin!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 order-first order-md-0">
+                    <div class="mw-mob-100">
+                        <img src="https://qureskincaredns.com/new/assets/filter_facewash.webp" alt="" class="img-fluid d-md-block d-none">
+                        <img src="https://qureskincaredns.com/new/assets/filter_facewash-mob.webp" alt="" class="img-fluid d-md-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- image with text end -- -->
+
+<!-- -- 6 reasons section start -- -->
+<div class="reasons section bg-transparent pb-md-0" id="reasons_section">
+    <div class="container">
+        <div class="row">
+            <div class="section_header text-md-center mb-md-3">
+                <h2 class="title-lg d-none d-md-block">
+                    5 reasons why everyone is <br>tapping into a whole new side of
+                    skincare
+                </h2>
+                <h2 class="title-lg d-md-none">
+                    tapping into a whole new side of skincare
+                </h2>
+            </div>
+            <div class="reasons_wrapper">
+                <div class="rs_item-main">
+                    <div class="rs_item">
+                        <div class="r_use_img">
+                            <img src="https://qureskincaredns.com/new/assets/mi_pdp-reason7.svg" alt="">
+                        </div>
+                        <div class="rs_item_content">
+                            <p>Enhances the effectiveness of topical products with a clean skin base</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_item-main">
+                    <div class="rs_item">
+                        <div class="r_use_img">
+                            <img src="https://qureskincaredns.com/new/assets/mi_pdp-reason11.svg" alt="">
+                        </div>
+                        <div class="rs_item_content">
+                            <p>Reduces appearance of wrinkles and prevents premature ageing </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_item-main">
+                    <div class="rs_item">
+                        <div class="r_use_img">
+                            <img src="https://qureskincaredns.com/new/assets/mi_pdp-reason8.svg" alt="">
+                        </div>
+                        <div class="rs_item_content">
+                            <p>Boosts hydration and strengthens the skin barrier in 4 weeks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_item-main">
+                    <div class="rs_item">
+                        <div class="r_use_img">
+                            <img src="https://qureskincaredns.com/new/assets/mi_pdp-reason9.svg" alt="">
+                        </div>
+                        <div class="rs_item_content">
+                            <p>Reduces pore clogging contaminants for less breakouts and clearer skin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rs_item-main">
+                    <div class="rs_item">
+                        <div class="r_use_img">
+                            <img src="https://qureskincaredns.com/new/assets/mi_pdp-reason10.svg" alt="">
+                        </div>
+                        <div class="rs_item_content">
+                            <p>Reduces redness and irritation, safe for sensitive skin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- 6 reasons section end -- -->
+
+<!-- -- trusted section start -- -->
+<div class="trusted_bl section pb-0 trustedVerified">
+    <div class="section">
+        <div class="container">
+            <div class="section_header ms-0 pb-md-0 text-md-start text-center mw-100">
+                <h2 class="title-lg">
+                    How to replace your filter cartridge
+                </h2>
+            </div>
+            <div class="how_to-install pb-md-0 pb-4">
+                <div class="row align-items-end pb-md-4">
+                    <div class="col-lg-9 col-sm-7">
+                        <div class="row d-lg-flex d-none">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="step_cards">
+                                    <div class="step_flag">
+                                        <p>STEP 1</p>
+                                    </div>
+                                    <img src="https://qureskincaredns.com/new/assets/faucet_replacement-1.webp" alt="" class="img-fluid">
+                                    <div class="step_text">
+                                        <p>Turn off the faucet. Rotate the filter cartridge cover
+                                            counterclockwise to remove the old filter cartridge.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="step_cards">
+                                    <div class="step_flag">
+                                        <p>STEP 2</p>
+                                    </div>
+                                    <img src="https://qureskincaredns.com/new/assets/faucet_replacement-2.webp" alt="" class="img-fluid">
+                                    <div class="step_text">
+                                        <p>Peel off the seal from the new filter cartridge. Install the
+                                            cartridge into the faucet housing. Screw the filter cartridge cover
+                                            clockwise to secure it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="step_cards">
+                                    <div class="step_flag">
+                                        <p>STEP 3</p>
+                                    </div>
+                                    <img src="https://qureskincaredns.com/new/assets/faucet_replacement-3.webp" alt="" class="img-fluid">
+                                    <div class="step_text">
+                                        <p>Turn on the faucet and let raw water flow for 5 seconds, then switch
+                                            to purified water mode and let it run for 3 minutes before first
+                                            use.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps_tabs d-lg-none">
+                            <ul class="nav nav-tabs d-flex justify-content-center border-0" id="myTab"
+                                role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">STEP 1</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile" type="button" role="tab"
+                                        aria-controls="profile" aria-selected="false">STEP 2</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact" type="button" role="tab"
+                                        aria-controls="contact" aria-selected="false">STEP 3</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="step_cards">
+                                        <img src="https://qureskincaredns.com/new/assets/faucet_replacement-1.webp" alt="" class="img-fluid">
+                                        <div class="step_text">
+                                            <p>Turn off the faucet. Rotate the filter cartridge cover
+                                                counterclockwise to remove the old filter cartridge.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
+                                    <div class="step_cards">
+                                        <img src="https://qureskincaredns.com/new/assets/faucet_replacement-2.webp" alt="" class="img-fluid">
+                                        <div class="step_text">
+                                            <p>Peel off the seal from the new filter cartridge. Install the
+                                                cartridge into the faucet housing. Screw the filter cartridge
+                                                cover clockwise to secure it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel"
+                                    aria-labelledby="contact-tab">
+                                    <div class="step_cards">
+                                        <img src="https://qureskincaredns.com/new/assets/faucet_replacement-3.webp" alt="" class="img-fluid">
+                                        <div class="step_text">
+                                            <p>Turn on the faucet and let raw water flow for 5 seconds, then
+                                                switch to purified water mode and let it run for 3 minutes
+                                                before first use.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-5 order-first order-md-0">
+                        <div class="actVideo_block">
+                            <div class="ctmVideo__block">
+                                <div class="player">
+                                    <div class="wistia_responsive_padding" style="position:relative;">
+                                        <div class="wistia_responsive_wrapper"
+                                            style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                                            <div class="wistia_embed wistia_async_ejhd901ecq seo=false videoFoam=true"
+                                                style="height:100%;position:relative;width:100%">
+                                                <div class="wistia_swatch"
+                                                    style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                                    <img src="https://fast.wistia.com/embed/medias/ejhd901ecq/swatch"
+                                                        style="filter:blur(5px);height:100%;object-fit:contain;width:100%;"
+                                                        alt="" aria-hidden="true"
+                                                        onload="this.parentNode.style.opacity=1;" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -- trusted section end -- -->
+
+<!-- -- faq start -- -->
+<div class="faq bg_yellow py-75">
+    <div class="container">
+        <div class="section_header text-center mb-3">
+            <h2 class="title-lg">
+                The answers to your questions
+            </h2>
+        </div>
+        <div class="accordion" id="accFAQ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQOne" aria-expanded="true" aria-controls="accFAQOne">
+                        <div class="container">How does tap water harm my skin?</div>
+                    </button>
+
+                </h2>
+                <div id="accFAQOne" class="accordion-collapse collapse show" data-bs-parent="#accFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>Facial skin is more sensitive than your skin anywhere else. Your skin barrier is
+                                like a protective shield against outside threats. But the stuff in tap water can
+                                harm it, leading to:</p>
+                            <ul>
+                                <li>Dry and Damaged Skin: Tap water can strip away your skin's natural oils,
+                                    leaving it dry and damaged.</li>
+                                <li>Skin Irritation: It might also cause skin irritation, making it sensitive
+                                    and red.</li>
+                                <li>Premature Aging: The chemicals in tap water can even speed up the aging
+                                    process, causing wrinkles and fine lines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQTwo" aria-expanded="false" aria-controls="accFAQTwo">
+                        <div class="container">What does it filter in the water?</div>
+                    </button>
+                </h2>
+                <div id="accFAQTwo" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>The Qure Faucet Filter improves your tap water by reducing skin irritants that
+                                make your tap water “hard” – like chlorine, magnesium, calcium, heavy metals,
+                                microorganisms and more.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQThree" aria-expanded="false" aria-controls="accFAQThree">
+                        <div class="container">What skin types can benefit from Q-urify Water Filter?</div>
+                    </button>
+                </h2>
+                <div id="accFAQThree" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>Every skin type! Especially helpful for anyone experiencing sensitive skin,
+                                premature aging, dry skin, and acne. By reducing irritants and softening the
+                                water, it helps maintain skin hydration and minimizes redness, leaving your skin
+                                balanced and healthy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQFour" aria-expanded="false" aria-controls="accFAQFour">
+                        <div class="container">Where can I buy replacement filters?</div>
+                    </button>
+                </h2>
+                <div id="accFAQFour" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>Replacement filters can be purchased on our site for 3 months of pure water. We
+                                also offer convenient subscription plans so you never have to worry about
+                                running out—just set it and forget it, and we’ll take care of the rest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accFAQFive" aria-expanded="false" aria-controls="accFAQFive">
+                        <div class="container">Will it fit my faucet?</div>
+                    </button>
+                </h2>
+                <div id="accFAQFive" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <p>It’s compatible with almost every circular removable aerator! Each Qure Faucet
+                                Filter kit comes with a set of adaptors to help fit different faucet sizes.
+                                Please note that it will NOT fit faucets that are square or oval shaped, pull
+                                out, hand-held, spray-style, or faucets with a sensor.</p>
+                            <div class="faq_img_wrap mt-4">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_1.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_2.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_3.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_4.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_5.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_6.webp" alt="" class="img-fluid">
+                                <img src="https://qureskincaredns.com/new/assets/qurify_faq_7.webp" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article faq_expandable">
+                <div class="faq__wrapper">
+                    <div class="faq__hidden-div hidden">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#accFAQSix" aria-expanded="false"
+                                    aria-controls="accFAQSix">
+                                    <div class="container">Can I turn OFF the filtered water? </div>
+                                </button>
+                            </h2>
+                            <div id="accFAQSix" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <p>Yes! The Qure Faucet Filter has the option of switching off filtered
+                                            water. You can turn on and off the purified/tap water by switching
+                                            the toggle button to “Q” for purified water, and to the tap symbol
+                                            for unfiltered water. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#accFAQSeven"
+                                    aria-expanded="false" aria-controls="accFAQSeven">
+                                    <div class="container">What’s the difference between ‘hard water’ and ‘soft
+                                        water’?</div>
+                                </button>
+                            </h2>
+                            <div id="accFAQSeven" class="accordion-collapse collapse" data-bs-parent="#accFAQ">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <p>Hard water is water that contains a high quantity of dissolved
+                                            minerals (like calcium and magnesium). Where soft water has been
+                                            treated, so that the only ion remaining is sodium. When rainwater
+                                            falls, it is naturally soft.</p>
+                                        <p>However, as water makes its way through the ground and into our
+                                            waterways, it picks up minerals like chalk, lime, calcium and
+                                            magnesium and becomes hard water. Hard water is to blame for dishes
+                                            with spots, dingy looking clothes, and residue and soap scums in
+                                            bathrooms. Soap and cleansers are also less effective with hard
+                                            water due to its reaction to the magnesium and calcium, which makes
+                                            the lather not as rich and bubbly and leaves hair feeling sticky and
+                                            dull.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- new added start -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#accFAQSeven_2"
+                                    aria-expanded="false" aria-controls="accFAQSeven_2">
+                                    <div class="container">What’s included?</div>
+                                </button>
+                            </h2>
+                            <div id="accFAQSeven_2" class="accordion-collapse collapse"
+                                data-bs-parent="#accFAQ">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="chest_pdp_ftr1">
+                                            <div class="cp_ftr_wrapper p-0">
+                                                <div class="cp_item">
+                                                    <img src="https://qureskincaredns.com/new/assets/faucet_filter.svg" alt="">
+                                                    <p>Qure Faucet Filter Device with a 360° nozzle</p>
+                                                </div>
+                                                <div class="cp_item">
+                                                    <img src="https://qureskincaredns.com/new/assets/qurify_faucet.svg" alt="">
+                                                    <p>Multiple adapters to match various faucet types</p>
+                                                </div>
+                                                <div class="cp_item">
+                                                    <img src="https://qureskincaredns.com/new/assets/qurify_user-manual.svg" alt="">
+                                                    <p>Step-by-step user manual + QR code with video guide</p>
+                                                </div>
+                                                <div class="cp_item">
+                                                    <img src="https://qureskincaredns.com/new/assets/qurify_all-in-one.svg" alt="">
+                                                    <p>All-in-one tools for installation and secure attachment
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-ask">
+                            <a href="faq.html">Don’t see your question? Ask us</a>
+                        </div>
+                    </div>
+                    <div class="faq__accordion faq_ques">Show More Questions</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --faq end -- -->
+
+
+<script src="https://fast.wistia.com/embed/medias/3ahwzg8wjz.jsonp" async></script>
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $('.read-more').click(function () {
+            $(this).prev().slideToggle();
+            if (($(this).text()) == "See Less") {
+                $(this).text("See More");
+            } else {
+                $(this).text("See Less");
+            }
+        });
+
+        const container = document.querySelector('.comparsion_inner');
+        document.querySelector('.slider').addEventListener('input', (e) => {
+            container.style.setProperty('--position', `${e.target.value}%`);
+        })
+    });
+</script>
