@@ -126,8 +126,8 @@
         
         if (document.querySelector('a[href="#faq_section"]')) {
             document.querySelector('a[href="#result_section"]').addEventListener('click', function(e) {
-                e.preventDefault();
                 if (!document.getElementById('result_section')) {
+                    e.preventDefault();
                     window.location = '/#result_section';
                 }
             });
@@ -135,13 +135,12 @@
 
         if (document.querySelector('a[href="#faq_section"]')) {
             document.querySelector('a[href="#faq_section"]').addEventListener('click', function(e) {
-                e.preventDefault();
                 if (!document.getElementById('faq_section')) {
+                    e.preventDefault();
                     window.location = '/pages/faqs';
                 }
             });            
         }
-
     </script>
 
     {% if product %}

@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "main": {
+      "type": "temp-product-faucet-filter-replacement"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
