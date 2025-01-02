@@ -2615,28 +2615,25 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-thumbs
 /* end pdp carousel image */
 
 /* start jump to section Test */
-.jump_to_section {
-  display: none;
-}
 
-body[data-jump-to] .jump_to_section.mobile {
+.jump_to_section.mobile {
   display: flex;
 }
 
-body[data-jump-to] .jump_to_section.desktop {
+.jump_to_section.desktop {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  body[data-jump-to] .jump_to_section.mobile {
+  .jump_to_section.mobile {
   display: none;
   }
-  body[data-jump-to] .jump_to_section.desktop {
+  .jump_to_section.desktop {
     display: flex;
   }
 }
 
-body[data-jump-to] .jump_to_section {
+.jump_to_section {
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
