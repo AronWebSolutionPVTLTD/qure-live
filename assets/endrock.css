@@ -2615,42 +2615,24 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-thumbs
 /* end pdp carousel image */
 
 /* start jump to section Test */
-.jump_to_section {
-  display: none;
-}
 
-body[data-jump-to] .jump_to_section.mobile {
+.jump_to_section.mobile {
   display: flex;
 }
 
-body[data-jump-to] .jump_to_section.desktop {
+.jump_to_section.desktop {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  body[data-jump-to] .jump_to_section.mobile {
-  display: none;
-  }
-  body[data-jump-to] .jump_to_section.desktop {
-    display: flex;
-  }
-}
-
-body[data-jump-to] .jump_to_section {
+.jump_to_section {
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   padding-top: 24px;
-
-  @media screen and (min-width: 768px) {
-    gap: 16px;
-    padding-top: 16px;
-  }
-  
 }
 
-body[data-jump-to] .jump_to_section__head {
+.jump_to_section__head {
   color: #000;
   font-family: "Canela Web";
   font-size: 16px;
@@ -2661,20 +2643,16 @@ body[data-jump-to] .jump_to_section__head {
   margin: 0;
 }
 
-body[data-jump-to] .jump_to_section__body {
+.jump_to_section__body {
   display: flex;
   align-items: center;
   align-content: center;
   gap: 8px;
   align-self: stretch;
   flex-wrap: wrap;
-
-  @media screen and (min-width: 768px) {
-    gap: 16px;
-  }
 }
 
-body[data-jump-to] .jump_to_section__body-link {
+.jump_to_section__body-link {
   display: flex;
   height: 24px;
   padding: 6px 8px;
@@ -2689,12 +2667,32 @@ body[data-jump-to] .jump_to_section__body-link {
   -o-border-radius: 40px;
 }
 
-body[data-jump-to] .jump_to_section__body-link-text {
+.jump_to_section__body-link-text {
   color: #000;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .jump_to_section.mobile {
+    display: none;
+  }
+
+  .jump_to_section.desktop {
+    display: flex;
+  }
+
+  .jump_to_section__body {
+    gap: 16px;
+  }
+
+  .jump_to_section {
+    gap: 16px;
+    padding-top: 16px;
+  }
 }
 /* End jump to section Test */
