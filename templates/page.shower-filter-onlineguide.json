@@ -9,6 +9,39 @@
  */
 {
   "sections": {
+    "header": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_rVb3tp": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO INSTALL",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step6"
+          }
+        },
+        "navigation_link_B33K8Y": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO REPLACE FILTER",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step7"
+          }
+        },
+        "navigation_link_Qf3EYM": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQ",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step9"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_rVb3tp",
+        "navigation_link_B33K8Y",
+        "navigation_link_Qf3EYM"
+      ],
+      "settings": {
+      }
+    },
     "main": {
       "type": "page",
       "custom_css": [
@@ -26,8 +59,7 @@
     }
   },
   "order": [
-    "main",
-    "17115385750c73305f",
-    "1723811635f4799cbc"
+    "header",
+    "main"
   ]
 }
