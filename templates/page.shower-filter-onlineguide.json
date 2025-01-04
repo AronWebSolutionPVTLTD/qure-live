@@ -1,6 +1,6 @@
 {
   "sections": {
-    "header_landing_simple_LiMmPD": {
+    "header": {
       "type": "header-landing-simple",
       "blocks": {
         "navigation_link_rVb3tp": {
@@ -38,7 +38,7 @@
     }
   },
   "order": [
-    "header_landing_simple_LiMmPD",
+    "header",
     "main"
   ]
 }
