@@ -15,8 +15,8 @@
         "announcement_QmXGJK": {
           "type": "announcement",
           "settings": {
-            "heading": "SAVE UP TO 50% | Black Friday Offer",
-            "heading_mobile": "SAVE UP TO 50% | Black Friday Offer",
+            "heading": "SAVE UP TO 50% | Holiday Offer",
+            "heading_mobile": "SAVE UP TO 50% | Holiday Offer",
             "color": "green",
             "font_size_desktop": 14,
             "font_size_mobile": 13
