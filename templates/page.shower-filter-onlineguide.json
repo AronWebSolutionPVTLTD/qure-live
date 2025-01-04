@@ -1,33 +1,44 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "main": {
-      "type": "page",
-      "custom_css": [
-        ".subscriptions_header {display:none}"
+    "header_landing_simple_LiMmPD": {
+      "type": "header-landing-simple",
+      "blocks": {
+        "navigation_link_rVb3tp": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO INSTALL",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step6"
+          }
+        },
+        "navigation_link_B33K8Y": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "HOW TO REPLACE FILTER",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step7"
+          }
+        },
+        "navigation_link_Qf3EYM": {
+          "type": "navigation-link",
+          "settings": {
+            "link_label": "FAQ",
+            "link_url": "https:\/\/www.qureskincare.com\/pages\/shower-filter-online-guide#step9"
+          }
+        }
+      },
+      "block_order": [
+        "navigation_link_rVb3tp",
+        "navigation_link_B33K8Y",
+        "navigation_link_Qf3EYM"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
-    "17115385750c73305f": {
-      "type": "apps",
-      "settings": {}
-    },
-    "1723811635f4799cbc": {
-      "type": "apps",
-      "settings": {}
+    "main": {
+      "type": "temp-page-shower-filter-onlineguide"
     }
   },
   "order": [
-    "main",
-    "17115385750c73305f",
-    "1723811635f4799cbc"
+    "header_landing_simple_LiMmPD",
+    "main"
   ]
 }

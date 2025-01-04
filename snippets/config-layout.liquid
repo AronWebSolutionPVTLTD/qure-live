@@ -31,6 +31,10 @@
     {% when 'page.products-guide-page' %}
         {% assign main_class = 'product_guide' %}
         <link rel="stylesheet" href="{{ 'products-guide-page.css' | asset_url }}">
+    {% when 'page.shower-filter-onlineguide' %}
+        {% assign main_class = 'homepage q-urify_safety led_guide' %}
+        <link rel="stylesheet" href="{{ 'product-qure-safety.css' | asset_url }}">
+        <link rel="stylesheet" href="{{ 'shower-filter-online-guide.css' | asset_url }}">
     {% when 'page.faucet-filter-pdp' %}
         {% assign main_class = 'faucet_filter' %}
         <link rel="stylesheet" href="{{ 'faucet-filter-pdp.css' | asset_url }}">
