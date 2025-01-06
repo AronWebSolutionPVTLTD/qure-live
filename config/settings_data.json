@@ -412,11 +412,6 @@
         "disabled": true,
         "settings": {}
       },
-      "1291562577487733835": {
-        "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
-        "disabled": true,
-        "settings": {}
-      },
       "11945366711752539959": {
         "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
@@ -429,6 +424,11 @@
       },
       "471852632697159186": {
         "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+        "disabled": false,
+        "settings": {}
+      },
+      "1291562577487733835": {
+        "type": "shopify://apps/black-crow-ai-that-delivers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
         "disabled": false,
         "settings": {}
       }
