@@ -377,7 +377,7 @@
           "icon_gift_height": 26,
           "enable_show_gift_price": true,
           "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
-          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Face Serum</strong> &product-price&</p>",
+          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Face Serum </strong>worth &product-price&</p>",
           "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
           "show_urgency_note": true,
           "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
