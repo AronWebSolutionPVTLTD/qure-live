@@ -368,7 +368,7 @@
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
           "label_seconds": "SECONDS",
-          "enable_free_shipping_treshold": true,
+          "enable_free_shipping_treshold": false,
           "enable_product_gift": false,
           "product_free_gift": "face-serum",
           "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
