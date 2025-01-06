@@ -592,6 +592,7 @@
 
 .progress-container.pdm-gamification .progress-container__message > p strong{
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .progress-container.pdm-gamification .progress-bar-container {
