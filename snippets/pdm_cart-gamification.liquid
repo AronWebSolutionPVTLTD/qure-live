@@ -84,7 +84,7 @@
             {% assign textCongrats = "<strong>" | append:textProductTitle | append: "!</strong>" %}
             {{ copyCongrats |  replace: "&product-title&", textCongrats }}
           {% endif %}
-        {% else %}
+        {% elsif enableFreeShipping and differenceFreeShipping <= 0 %}
           <p>Congrats you have <strong> Free Shipping! </strong></p>
         {% endif %}
     </div>
