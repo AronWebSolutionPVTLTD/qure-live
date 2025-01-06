@@ -1719,8 +1719,9 @@
                                                 <p>FDA-cleared device that treats acne, fine lines, wrinkles and
                                                     dark spots.</p>
                                             </div>
+                                            {% assign product = all_products['q-rejuvalight-pro-facewear'] %}
                                             <div class="include_pd-price">
-                                                <h6>$379</h6>
+                                                <h6>{{ product.price | money_without_trailing_zeros }}</h6>
                                             </div>
                                         </div>
                                         <div class="include_wrap">
@@ -1741,7 +1742,8 @@
                                                     rejuvenation where the first signs of aging appear.</p>
                                             </div>
                                             <div class="include_pd-price">
-                                                <h6><del class="text-grey">$299</del> <span
+                                                {% assign product = all_products['neck-decolletage-led'] %}
+                                                <h6><del class="text-grey">{{ product.price | money_without_trailing_zeros }}</del> <span
                                                         class="green_txt">FREE</span></h6>
                                             </div>
                                         </div>
@@ -1749,10 +1751,10 @@
                                     <div class="include_checkout">
                                         <div class="row justify-content-between">
                                             <div class="col-auto">
-                                                <p class="green_txt">INSTANT SAVINGS: $299</p>
+                                                <p class="green_txt">INSTANT SAVINGS: {{ 299 | times: 100 | money_without_trailing_zeros }}</p>
                                             </div>
                                             <div class="col-auto">
-                                                <h6><del class="text-grey">$678</del> <span>$379</span></h6>
+                                                <h6><del class="text-grey">{{ 678 | times: 100 | money_without_trailing_zeros }}</del> <span>{{ 379 | times: 100 | money_without_trailing_zeros }}</span></h6>
                                             </div>
                                         </div>
                                         <div class="include_stock">
@@ -1774,7 +1776,7 @@
                                         </div>
                                     </div>
                                     <!-- Buy Now Button -->
-                                    <button class="buy-now" id="buy-now-button">Buy Now & Save $299</button>
+                                    <button class="buy-now" id="buy-now-button">Buy Now & Save {{ 299 | times: 100 | money_without_trailing_zeros }}</button>
 
                                     <!-- Payment Methods -->
                                     <div class="payment_method">
