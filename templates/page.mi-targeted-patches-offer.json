@@ -1,14 +1,9 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
+    "main": {
+      "type": "temp-page-mi-targeted-patches-offer",
+      "settings": {}
+    },
     "header_landing": {
       "type": "header-landing",
       "blocks": {
@@ -27,7 +22,7 @@
           "settings": {
             "link_label": "BENEFITS",
             "link_url": "#reasons_section",
-            "image": "shopify://shop_images/nav_1.png"
+            "image": "shopify:\/\/shop_images\/nav_1.png"
           }
         },
         "navigation_link_CmRG9V": {
@@ -35,7 +30,7 @@
           "settings": {
             "link_label": "RESULTS",
             "link_url": "#result_section",
-            "image": "shopify://shop_images/header_2.webp"
+            "image": "shopify:\/\/shop_images\/header_2.webp"
           }
         },
         "navigation_link_wMtKmt": {
@@ -43,7 +38,7 @@
           "settings": {
             "link_label": "FAQ'S",
             "link_url": "#faq_section",
-            "image": "shopify://shop_images/header_4.webp"
+            "image": "shopify:\/\/shop_images\/header_4.webp"
           }
         }
       },
@@ -58,13 +53,230 @@
         "button_url": "#choose_bundle"
       }
     },
-    "main": {
-      "type": "temp-page-mi-targeted-patches-offer",
-      "settings": {}
+    "banner_tab_slider_G3VCXj": {
+      "type": "banner-tab-slider",
+      "blocks": {
+        "slider_8zrYgx": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-3.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-1.webp"
+          }
+        },
+        "slider_HPtXnW": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-4.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-2.webp"
+          }
+        },
+        "slider_HdhfPT": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-5.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-3.webp"
+          }
+        },
+        "slider_TqJW3F": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-6.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-4.webp"
+          }
+        },
+        "slider_MWiq8Y": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-7.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-5.webp"
+          }
+        },
+        "slider_tkyhPn": {
+          "type": "slider",
+          "settings": {
+            "wistia_id": "pgid666e27",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-6.webp"
+          }
+        },
+        "slider_9YxKEW": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-8.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-7.webp"
+          }
+        },
+        "slider_ERmzEq": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-9.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-8.webp"
+          }
+        },
+        "slider_fReGJh": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-10.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mtp_thumb-9.webp"
+          }
+        },
+        "slider_mMBXPz": {
+          "type": "slider",
+          "settings": {
+            "s_image": "shopify:\/\/shop_images\/mi_refill-result-patches-11.webp",
+            "wistia_id": "",
+            "thumbnail": "shopify:\/\/shop_images\/mi_refill-result-patches-11.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slider_8zrYgx",
+        "slider_HPtXnW",
+        "slider_HdhfPT",
+        "slider_TqJW3F",
+        "slider_MWiq8Y",
+        "slider_tkyhPn",
+        "slider_9YxKEW",
+        "slider_ERmzEq",
+        "slider_fReGJh",
+        "slider_mMBXPz"
+      ],
+      "settings": {
+        "display_type": "slider",
+        "seo_heading": "Micro-Infusion Dart Patches",
+        "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
+        "heading_size": "title-lg",
+        "desc": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles<\/strong>, under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed<\/strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul>",
+        "rating_text": "4.7\/5 Rated by Customers",
+        "stars": "shopify:\/\/shop_images\/star4.8.svg",
+        "btn_txt": "SAVE UP TO 38%",
+        "btn_url": "",
+        "recomand": "",
+        "underbutton_text_left": "Dermatologist Reviewed",
+        "underbutton_text_right": "Free Shipping Over $100",
+        "order_mob": false
+      }
+    },
+    "featuredin_extended_mjJV3b": {
+      "type": "featuredin_extended",
+      "blocks": {
+        "text_TKq9Ug": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"This helps bring life and radiance to your eyes,the focal point of your face.\"<\/p>"
+          }
+        },
+        "image_XPFdHy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_TKq9Ug",
+        "image_XPFdHy"
+      ],
+      "custom_css": [
+        ".app_subhheading {max-width: 540px;}",
+        ".swiper-wrapper {justify-content: center !important;}"
+      ],
+      "settings": {
+        "heading": "FEATURED IN",
+        "slider_type": "five_slides"
+      }
+    },
+    "image_text_2_NriM6U": {
+      "type": "image-text-2",
+      "blocks": {
+        "wistia_XWfKhj": {
+          "type": "wistia",
+          "settings": {
+            "video": "f4cj3x9e99"
+          }
+        },
+        "text_Y4Xa8A": {
+          "type": "text",
+          "settings": {
+            "heading": "80 Serum-Enriched Micro-Darts for precise improvement",
+            "text_content": "",
+            "richtext_id": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target and treat wrinkles, under-eye puffiness and dark circles.<\/strong><\/p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin<\/strong>, infusing serum for <strong>deeper delivery.<\/strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for deeper, better, faster results <strong>– yet gentle enough for sensitive skin!<\/strong><\/p>",
+            "text_1": "",
+            "text_2": "",
+            "text_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "wistia_XWfKhj",
+        "text_Y4Xa8A"
+      ],
+      "custom_css": [
+        ".nozzel_benefit {padding: 0 !important;}"
+      ],
+      "settings": {
+        "background": "trasnparent",
+        "custom_class": "section"
+      }
+    },
+    "progress_blocks_6ReNwr": {
+      "type": "progress-blocks",
+      "blocks": {
+        "column_exHxR4": {
+          "type": "column",
+          "settings": {
+            "percent_text": "77",
+            "percent_bar": 77,
+            "toolip_hed": "<p>noticed continued improvement in<strong>wrinkle reduction.<\/strong><\/p>",
+            "toolip_desc": "",
+            "font_size": 12
+          }
+        },
+        "column_CaEprj": {
+          "type": "column",
+          "settings": {
+            "percent_text": "90",
+            "percent_bar": 90,
+            "toolip_hed": "<p>reported under eyes were visibly<strong>brighter.<\/strong><\/p>",
+            "toolip_desc": "",
+            "font_size": 12
+          }
+        },
+        "column_b3nxzD": {
+          "type": "column",
+          "settings": {
+            "percent_text": "87",
+            "percent_bar": 87,
+            "toolip_hed": "<p><strong>would recommend<\/strong>Micro-Infusion Targeted Patches to a friend.<\/p>",
+            "toolip_desc": "",
+            "font_size": 12
+          }
+        }
+      },
+      "block_order": [
+        "column_exHxR4",
+        "column_CaEprj",
+        "column_b3nxzD"
+      ],
+      "settings": {
+        "section_heading": "No promises, just results.",
+        "subheading": "<p>In an independent user study, participants' skin was measured and showed proven visible improvement after just one month.<\/p>"
+      }
     }
   },
   "order": [
+    "main",
     "header_landing",
-    "main"
+    "banner_tab_slider_G3VCXj",
+    "featuredin_extended_mjJV3b",
+    "image_text_2_NriM6U",
+    "progress_blocks_6ReNwr"
   ]
 }
