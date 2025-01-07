@@ -1441,16 +1441,19 @@ function updateSiteWideGamification (cartTotal) {
 /* test upsell popup */
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  // DOM elements for controlling the upsell popup
   const openPopupUpsell = document.querySelector("#openPopupUpsell");
   const closePopupUpsell = document.querySelector("#closePopupUpsell")
   const popupUpsell = document.querySelector("#popupUpsell");
   const popupUpsellWrapper = document.querySelector('.popupsell-wrapper');
+  // DOM elements related to serum offers
   const serumOfferContainer = document.querySelector('.supply-detail.offer_active1');
   const serumOfferLabel = document.querySelectorAll('.step_content.step_serum');
+  // Buttons within the upsell popup
   const popupUpsellButtons = document.querySelectorAll('.popupUpsellButtons');
   const popupUpsellNothanks = document.querySelectorAll('.popupUpsellNoThanks');
 
+    // Data for upsell logic, including product IDs and categories
   const dataInformationUpsell = [
     {
       id: 8015038873839,
@@ -1470,6 +1473,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ]
 
+  /**
+   * Extracts the product ID from the anchor element in the step content.
+   * @returns {number|null} The extracted product ID, or null if not found.
+   */
   function processLinkAnchor() {
     let linkAnchorLandingProcces = document.querySelector('.step_content .btn-atc.submit_btn');
     if(linkAnchorLandingProcces){
@@ -1483,20 +1490,32 @@ document.addEventListener('DOMContentLoaded', () => {
   
   }
 
+  /**
+   * Updates the active upsell element based on the product ID.
+   * @param {Array} dataInformation - The upsell data array.
+   */
+
   const handleUpsellElement = (dataInformation) => {
     const productId = processLinkAnchor();
     if (!productId) return;
 
+    // Find matching upsell data based on product ID
     const {name, id} = dataInformation.find(item => item.products.includes(productId)) ?? {};
     // console.log(`${name} - ${id}`);
 
+    // Remove 'active' class from all upsell elements
     const allUpsellElements = document.querySelectorAll('.popupsell-card.active');
     allUpsellElements.forEach((element) => element.classList.remove('active'));
-    
+
+    // Activate the corresponding upsell card
     const upsellElement = document.querySelector(`.popupsell-card[data-product-id="${id}"]`);
     upsellElement?.classList.add('active');
   }
 
+    /**
+   * Adds a product to the cart via AJAX.
+   * @param {number} productId - The ID of the product to add.
+   */
   const addToCartUpsell = async (productId) => {
     let formData = {
       'items': [{
@@ -1518,8 +1537,8 @@ document.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify(formData)
     });
 
-    const data = await response.json();
-    console.log(data);
+    // const data = await response.json();
+    // console.log(data);
 
     if (response.ok) {
       // console.log('Product added to cart');
@@ -1537,13 +1556,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   };
 
+  // Event listener for upsell buttons to add a product to the cart
   popupUpsellButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      const target = event.target.closest('[data-product-id]'); // Encuentra el botón más cercano
+      const target = event.target.closest('[data-product-id]'); // Find the closest element with the data-product-id attribute
       let productId = null;
 
       if (!target || !target.dataset.productId) {
-        productId = 43821069435119; // ID predeterminado
+        productId = 43821069435119; // ID of the default product
       } else {
         productId = Number(target.dataset.productId);
       }
@@ -1555,8 +1575,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Initial handling of the upsell element
   handleUpsellElement(dataInformationUpsell);
 
+  /**
+   * Closes the upsell popup and triggers the anchor button click if it exists.
+   */
   const closePopup = () => {
     const linkAnchorLandingProcess = document.querySelector('.step_content .btn-atc.submit_btn');
     if (linkAnchorLandingProcess) {
@@ -1568,7 +1592,7 @@ document.addEventListener('DOMContentLoaded', () => {
     popupUpsell.style.display = 'none';
   };
 
-
+  // Update upsell elements when the serum offer container changes
   serumOfferContainer.addEventListener('change', (event) => {
     // const target = event.target;
     // console.log('target', target);
@@ -1576,6 +1600,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleUpsellElement(dataInformationUpsell);
   });
 
+  // Update upsell elements when a serum offer label is clicked
   serumOfferLabel.forEach((container) => {
     container.addEventListener('click', () => {
       // console.log('event', event);
@@ -1585,8 +1610,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let scrollPosition = 0;
-
+  // let scrollPosition = 0;
+  // Open the upsell popup
   openPopupUpsell.addEventListener('click', () =>{
     // scrollPosition = window.scrollY;
     // document.documentElement.style.setProperty('--scroll-y', `-${scrollPosition}px`);
@@ -1596,10 +1621,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   closePopupUpsell.addEventListener('click', closePopup);
 
+  // Close the upsell popup when the close button or "no thanks" buttons are clicked
   popupUpsellNothanks.forEach((button) => {
     button.addEventListener('click', closePopup);
   });
 
+  // Close the upsell popup when clicking outside the wrapper
   popupUpsell.addEventListener('click', (e) => {
     if (!popupUpsellWrapper.contains(e.target)) {
       // console.log('click');
