@@ -21,11 +21,20 @@
 
   assign progress_percentage = cartTotal | times: 100 | divided_by: treshold
   assign progress_percentage_free_shipping = freeShippingTreshold | times: 100 | divided_by: treshold
+
   if enableFreeShipping and cartTotal < freeShippingTreshold
-    if progress_percentage >= progress_percentage_free_shipping
+
+    if enableProductGift and freeShippingTreshold > cartTotal and progress_percentage >= 20
       assign progress_percentage = 20
     endif
-    if enableProductGift and giftProduct.available == false or enableProductGift == false
+
+    assign has_product_gift = false
+
+    if enableProductGift and giftProduct.available == false
+      assign has_product_gift = true
+    endif
+
+    if has_product_gift or enableProductGift == false
       if progress_percentage >= 80 and cartTotal > 0 and cartTotal < freeShippingTreshold
         assign progress_percentage = 80
       endif
