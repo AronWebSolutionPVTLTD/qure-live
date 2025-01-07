@@ -110,7 +110,7 @@
         "text_49pB7c": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Changes you’ll see are positive ones, like plumper and more taut skin and an improved skin tone.</p>"
+            "text": "<p>\"Changes you’ll see are positive ones, like plumper and more taut skin and an improved skin tone.\"</p>"
           }
         },
         "image_MHDmTx": {
@@ -136,6 +136,18 @@
           "settings": {
             "text": "<p>\"Changes you’ll see are positive ones, like plumper and more taut skin and an improved skin tone.</p>"
           }
+        },
+        "image_4MVELB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Grazia-1_fa0b86d0-ae9a-454c-bbdd-7b475d0d0cdd.webp"
+          }
+        },
+        "text_YnDmgg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"It complements the face mask and targets areas that age first. I think it is more important for your first step for LED treatment.\"</p>"
+          }
         }
       },
       "block_order": [
@@ -144,7 +156,9 @@
         "image_MHDmTx",
         "text_tGWG9p",
         "image_zYixkn",
-        "text_GQ3CEw"
+        "text_GQ3CEw",
+        "image_4MVELB",
+        "text_YnDmgg"
       ],
       "settings": {
         "heading": "FEATURED IN",
