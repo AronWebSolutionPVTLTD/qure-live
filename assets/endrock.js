@@ -1500,8 +1500,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const addToCartUpsell = async (productId) => {
     let formData = {
       'items': [{
-      'id': productId,
-      'quantity': 1
+        'id': productId,
+        'quantity': 1,
+        "properties": {
+            "_popup_uspell": "true",
+          }
       }]
     };;
 
