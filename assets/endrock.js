@@ -1281,7 +1281,7 @@ function updateSiteWideGamification (cartTotal) {
   const giftProductVariantPrice = parseInt(progressContainer.dataset.giftProductVariantPrice, 10);
   const threshold = parseInt(progressContainer.dataset.threshold, 10);
   const currencySymbol = progressContainer.dataset.currencySymbol;
-  const giftProduct = progressContainer.dataset.giftProduct;
+  const giftProductIsAvailable = progressContainer.dataset.isAvailableGiftProduct;
 
   // Calculate differences
   const differenceFreeShipping = freeShippingThreshold - cartTotal;
@@ -1309,11 +1309,12 @@ function updateSiteWideGamification (cartTotal) {
 
   // Render progress message
   const progressContainerMessage = progressContainer.querySelector('.progress-container__message');
+
   if (progressContainerMessage) {
     if (enableFreeShipping && differenceFreeShipping > 0 && cartTotal >= 0) {
       const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(0);
       progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingAmountMoney)}</i>`);
-    } else if (enableProductGift && giftProduct.available && differenceFreeGift > 0) {
+    } else if (enableProductGift && giftProductIsAvailable && differenceFreeGift > 0) {
       const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(0);
       let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingGiftAmountMoney)}</i>`);
       if (!isNaN(giftProductVariantPrice)) {
@@ -1325,11 +1326,13 @@ function updateSiteWideGamification (cartTotal) {
         message = message.replace("&product-title&", giftProductTitle);
       }
       progressContainerMessage.innerHTML = message;
-    } else if (enableProductGift && giftProduct.available && differenceFreeGift <= 0) {
+    } else if (enableProductGift && giftProductIsAvailable && differenceFreeGift <= 0) {
       const congratsMessage = copyCongrats.replace("&product-title&", `<strong>${giftProductTitle}!</strong>`);
       progressContainerMessage.innerHTML = congratsMessage;
-    } else {
-      progressContainerMessage.innerHTML = "<p>Congrats you have <strong> Free Shipping! </strong></p>";
+    } else if ((!enableProductGift || !giftProductIsAvailable) &&
+        enableFreeShipping &&
+        cartTotal >= differenceFreeShipping){
+      progressContainerMessage.innerHTML = "<p>Congrats you have <strong> Free Shipping! js</strong></p>";
     }
   }
 
