@@ -49,10 +49,6 @@
         "button_url": "#choose_bundle"
       }
     },
-    "main": {
-      "type": "temp-page-mi-targeted-patches-offer",
-      "settings": {}
-    },
     "banner_tab_slider_G3VCXj": {
       "type": "banner-tab-slider",
       "blocks": {
@@ -477,6 +473,10 @@
         "text_verified_customer": "Verified customer",
         "text_reviewed": "Reviewed in"
       }
+    },
+    "main": {
+      "type": "temp-page-mi-targeted-patches-offer",
+      "settings": {}
     },
     "icons_list_hrRbkg": {
       "type": "icons-list",
@@ -919,13 +919,13 @@
   },
   "order": [
     "header_landing",
-    "main",
     "banner_tab_slider_G3VCXj",
     "featuredin_extended_mjJV3b",
     "image_text_2_NriM6U",
     "confidence_slider_ir7cWU",
     "product_science_8BYxLK",
     "results_KkTxAy",
+    "main",
     "icons_list_hrRbkg",
     "videos_list_CfJjwV",
     "two_column_box_bkFG8d",
