@@ -1,3 +1,21 @@
+{% comment %}
+  Render Upsell Popup Section to display recommended products with pricing details, discount offers, 
+  and call-to-action buttons for adding products to the cart.
+
+  Accepts:
+  - meta_data: {Array} - An array of upsell product objects fetched from a metafield.
+  - check_icon: {String} - A reusable checkmark icon rendered dynamically.
+
+  Functionality:
+  - Displays each product's image, title, pricing, and discount information.
+  - Includes value propositions and call-to-action buttons.
+  - Supports closing the popup with a close button.
+
+  Usage:
+  {% render 'pdm-popup-upsell-landing' %}
+{% endcomment %}
+
+
 {% liquid
   assign meta_data = page.metafields.custom.upsell_popup.value
 
