@@ -2711,15 +2711,6 @@ body[data-pdp-carousel] .before-after-carousel-container .swiper-products-thumbs
   background-color: transparent;
 }
 
-/* body.not-scrollable {
-  position: fixed;
-  top: var(--scroll-y);
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  width: 100%;
-} */
-
 .upsell_popup_anchor_hover{
   position: relative;
 }
@@ -2757,7 +2748,6 @@ body[data-upsell-test] .upsell_popup_btn{
   right: 8px;
   cursor: pointer;
 }
-
 
 .popupsell-card{
   display: none;

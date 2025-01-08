@@ -1456,7 +1456,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const popupUpsellButtons = document.querySelectorAll('.popupUpsellButtons');
   const popupUpsellNothanks = document.querySelectorAll('.popupUpsellNoThanks');
 
-    // Data for upsell logic, including product IDs and categories
+  // Data for upsell logic, including product IDs and categories
   const dataInformationUpsell = [
     {
       id: 8015038873839,
@@ -1473,7 +1473,6 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "wrinkles",
       products: [43216483942639,45951928860911,45951945474287]
     },
-
   ]
 
   /**
@@ -1485,7 +1484,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if(linkAnchorLandingProcces){
       const href = linkAnchorLandingProcces.getAttribute('href');
       const productId = href.match(/id=(\d+)/)[1];
-      // console.log('productId', productId);
       return Number(productId);
     } else {
       return null;
@@ -1504,7 +1502,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Find matching upsell data based on product ID
     const {name, id} = dataInformation.find(item => item.products.includes(productId)) ?? {};
-    // console.log(`${name} - ${id}`);
 
     // Remove 'active' class from all upsell elements
     const allUpsellElements = document.querySelectorAll('.popupsell-card.active');
@@ -1530,8 +1527,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }]
     };;
 
-    // console.log(formData);
-
     const response = await fetch('/cart/add.js', {
       method: 'POST',
       headers: {
@@ -1540,17 +1535,9 @@ document.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify(formData)
     });
 
-    // const data = await response.json();
-    // console.log(data);
-
     if (response.ok) {
-      // console.log('Product added to cart');
-      // console.log('linkAnchorLandingProcces', linkAnchorLandingProcces);
       let linkAnchorLandingProcces = document.querySelector('.step_content .btn-atc.submit_btn');
       linkAnchorLandingProcces.click();
-
-      // document.body.classList.remove('not-scrollable');
-      // window.scrollTo(0, scrollPosition);
       popupUpsell.style.display = 'none';
 
     } else {
@@ -1571,9 +1558,6 @@ document.addEventListener('DOMContentLoaded', () => {
         productId = Number(target.dataset.productId);
       }
 
-      // console.log('target', target ? target.dataset.productId : 'No target found');
-      // console.log('productId', productId);
-      
       addToCartUpsell(productId);
     });
   });
@@ -1588,37 +1572,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkAnchorLandingProcess = document.querySelector('.step_content .btn-atc.submit_btn');
     if (linkAnchorLandingProcess) {
       linkAnchorLandingProcess.click();
-
     }
-    // document.body.classList.remove('not-scrollable');
-    // window.scrollTo(0, scrollPosition);
     popupUpsell.style.display = 'none';
   };
 
   // Update upsell elements when the serum offer container changes
   serumOfferContainer.addEventListener('change', (event) => {
-    // const target = event.target;
-    // console.log('target', target);
-    // processLinkAnchor();
     handleUpsellElement(dataInformationUpsell);
   });
 
   // Update upsell elements when a serum offer label is clicked
   serumOfferLabel.forEach((container) => {
     container.addEventListener('click', () => {
-      // console.log('event', event);
-      // console.log('click', event);
-      // processLinkAnchor();
       handleUpsellElement(dataInformationUpsell);
     });
   });
 
-  // let scrollPosition = 0;
   // Open the upsell popup
   openPopupUpsell.addEventListener('click', () =>{
-    // scrollPosition = window.scrollY;
-    // document.documentElement.style.setProperty('--scroll-y', `-${scrollPosition}px`);
-    // document.body.classList.add('not-scrollable');
     popupUpsell.style.display = 'flex';
   })
 
@@ -1632,7 +1603,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Close the upsell popup when clicking outside the wrapper
   popupUpsell.addEventListener('click', (e) => {
     if (!popupUpsellWrapper.contains(e.target)) {
-      // console.log('click');
       closePopup();
     }
   });
