@@ -53,6 +53,7 @@
     data-cart-total="{{ cartTotal }}"
     data-threshold="{{ threshold }}"
     data-currency-symbol="{{ free_shipping_threshold | money_without_trailing_zeros }}"
+    data-is-available-gift-product='{{ gift_product.available }}'
   >
     <div class="progress-container__message" 
       data-enable_free_shipping="{{ enable_free_shipping }}" 
@@ -79,7 +80,7 @@
           {% assign text_congrats = "<strong>" | append:text_product_title | append: "!</strong>" %}
           {{ copy_congrats |  replace: "&product-title&", text_congrats }}
         {% endif %}
-      {% else %}
+      {% elsif enableFreeShipping and differenceFreeShipping <= 0 %}
         <p>Congrats you have <strong> Free Shipping! </strong></p>
       {% endif %}
     </div>

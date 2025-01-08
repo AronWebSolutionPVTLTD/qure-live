@@ -37,9 +37,9 @@
     "end_time_order": "2024-11-04T23:59",
     "show_order_by_receive_by_us": false,
     "enable_corner_treatment_bfcm": false,
-    "enable_site_gamification": false,
-    "enable_free_shipping_treshold": false,
-    "enable_product_gift": false,
+    "enable_site_gamification": true,
+    "enable_free_shipping_treshold": true,
+    "enable_product_gift": true,
     "product_free_gift": "face-serum",
     "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
     "icon_product_gift_clean": "shopify://shop_images/Gift-grey1.svg",
@@ -368,8 +368,8 @@
           "label_hours": "HOURS",
           "label_minutes": "MINUTES",
           "label_seconds": "SECONDS",
-          "enable_free_shipping_treshold": false,
-          "enable_product_gift": false,
+          "enable_free_shipping_treshold": true,
+          "enable_product_gift": true,
           "product_free_gift": "face-serum",
           "icon_product_gift_clean": "shopify://shop_images/Layer_1_1.svg",
           "icon_product_gift_full": "shopify://shop_images/Layer_1_0f98f0bb-ebbd-41bc-96dc-f905b2948e10.svg",
@@ -377,7 +377,7 @@
           "icon_gift_height": 26,
           "enable_show_gift_price": true,
           "copy_get_free_shipping": "<p>You are &price-left& away from <strong>Free Shipping!</strong></p>",
-          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Silk Pillowcase worth</strong> &product-price&</p>",
+          "copy_get_product_free": "<p>You’re &price-left& away from a <strong>FREE Face Serum </strong>worth &product-price&</p>",
           "copy_congrats": "<p>Congrats! You've unlocked your Free &product-title&</p>",
           "show_urgency_note": true,
           "urgency_note_content": "Due to high demand, [] $quantity_label only saved for 30 minutes.",
@@ -412,11 +412,6 @@
         "disabled": true,
         "settings": {}
       },
-      "1291562577487733835": {
-        "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
-        "disabled": true,
-        "settings": {}
-      },
       "11945366711752539959": {
         "type": "shopify://apps/zendesk/blocks/zendesk_web_widget/c0b417b1-b90b-4754-baaf-f55627e6acd4",
         "disabled": true,
@@ -429,6 +424,11 @@
       },
       "471852632697159186": {
         "type": "shopify://apps/stamped-loyalty-referrals/blocks/rewards-launcher/93b8fd18-14d4-464f-a49a-0093afb7e10a",
+        "disabled": false,
+        "settings": {}
+      },
+      "1291562577487733835": {
+        "type": "shopify://apps/black-crow-ai-that-delivers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
         "disabled": false,
         "settings": {}
       }
