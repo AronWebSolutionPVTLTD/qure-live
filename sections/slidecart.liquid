@@ -421,7 +421,7 @@
 						<div class="sub_total_og">
 							<p class="drawer__cart-subtotal-price-end" data-total_price="{% if subtotal_price_temp %}{{ subtotal_price_nocurrency_temp }}{% else %}{{ subtotal_price_nocurrency }}{% endif %}">
 								{% if total_cart_compare_price > cart.items_subtotal_price %}
-									<span class="drawer_original_price pe-1 money igHidden" style="text-decoration: line-through;color: #C4C4C4;">{{ total_cart_compare_price | money_without_trailing_zeros | remove:'USD' }}</span>
+									<span class="drawer_original_price pe-1 money" style="text-decoration: line-through;color: #C4C4C4;">{{ total_cart_compare_price | money_without_trailing_zeros | remove:'USD' }}</span>
 								{% endif %}
 								{%- if subtotal_price_temp -%}
 									<span class="money">{{ subtotal_price_temp }}</span>
