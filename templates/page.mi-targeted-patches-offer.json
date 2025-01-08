@@ -1,9 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "temp-page-mi-targeted-patches-offer",
-      "settings": {}
-    },
     "header_landing": {
       "type": "header-landing",
       "blocks": {
@@ -52,6 +48,10 @@
         "button_label": "HOLIDAY OFFER SAVE 38%",
         "button_url": "#choose_bundle"
       }
+    },
+    "main": {
+      "type": "temp-page-mi-targeted-patches-offer",
+      "settings": {}
     },
     "banner_tab_slider_G3VCXj": {
       "type": "banner-tab-slider",
@@ -627,31 +627,77 @@
         "slide_space": 10
       }
     },
+    "two_column_box_bkFG8d": {
+      "type": "two-column-box",
+      "blocks": {
+        "heading_XT6geW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Target specific areas to combat multiple concerns",
+            "text": "",
+            "code": "",
+            "classname": "section_header text-start text-md-center mw-100"
+          }
+        },
+        "image_t63tjY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/micro_grid-combat-patches_12efc9c2-5dc1-4d8c-9e23-bb08433a78b2.webp",
+            "classname": "mw-mob-100"
+          }
+        },
+        "content_UfttPf": {
+          "type": "content",
+          "settings": {
+            "text": "<p>[code]<\/p>",
+            "column_content": 0,
+            "classname": "it_info p-0 pt-0 pt-md-3"
+          }
+        },
+        "code_3X3NK4": {
+          "type": "code",
+          "settings": {
+            "code": "<div class=\"swiper ingredients_slider combat_slider\">\n    <div class=\"swiper-wrapper\">\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-fine_line.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Fine lines<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-wrinkles.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Wrinkles<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-dark_circle.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Dark circles<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item\">\n                <img src=\"{{ 'mi-patches-puffiness.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Puffiness<\/p>\n            <\/div>\n        <\/div>\n        <div class=\"swiper-slide\">\n            <div class=\"ingredients_item mw-100\">\n                <img src=\"{{ 'mi-patches-under-eys.svg' | asset_url }}\" alt=\"\" class=\"img-fluid\">\n                <p>Under-eye bags<\/p>\n            <\/div>\n        <\/div>\n    <\/div>\n    <div class=\"swiper-pagination\"><\/div>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XT6geW",
+        "image_t63tjY",
+        "content_UfttPf",
+        "code_3X3NK4"
+      ],
+      "settings": {
+        "classname": "technology_light pt-30 section",
+        "column_image": 6,
+        "column_content": 6
+      }
+    },
     "compare_eYNU3L": {
       "type": "compare",
       "blocks": {
         "object_Cg7rxf": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beauty_ledmask.webp",
-            "heading": "Q-Rejuvalight Pro LED Mask",
+            "image": "shopify:\/\/shop_images\/targeted-patches-blue.webp",
+            "heading": "Micro-Infusion Targeted Patches",
             "mob_text": "",
-            "text": "<h4>Micro-Infusion Targeted Patches<\/h4>",
-            "price": "$329",
+            "text": "",
+            "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>saves you time<\/li><li>comfort and privacy of your own home<\/li><li><strong>unlimited treatments<\/strong><\/li><li><strong>only 3 minutes daily<\/strong><\/li><li>no ongoing payments<\/li><\/ul>"
+            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery<\/strong><\/li><li><strong>Versatile<\/strong> (11 lines, crow’s feet, under eye, laugh lines)<\/li><li><strong>Stay<\/strong> comfortably for 2-6 hours, or <strong>overnight<\/strong> for best results<\/li><li><strong>Continually works<\/strong> to give a rejuvenated look to your skin<\/li><\/ul>"
           }
         },
         "object_kT7BfV": {
           "type": "object",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beauty_derma.webp",
-            "heading": "Derm\/ Clinic Treatments",
+            "image": "shopify:\/\/shop_images\/mi-eye-patches.webp",
+            "heading": "Alternative Eye Patches",
             "mob_text": "",
-            "text": "<p><strong>per 6 session treatment cost<\/strong><\/p>",
-            "price": "$300 - $900",
+            "text": "",
+            "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li><strong>time-consuming<\/strong> commute to clinic <\/li><li>when (if) you get an appointment<\/li><li><strong>limited treatments<\/strong><\/li><li>requires <strong>regular visits<\/strong><\/li><li>ongoing payments required<\/li><\/ul>"
+            "list": "<ul><li>Ingredients <strong>sit<\/strong> mostly <strong>on top of skin<\/strong><\/li><li>Created for <strong>eye area only<\/strong><\/li><li><strong>Slippery,<\/strong> move around on the face<\/li><li>Provides <strong>temporary results<\/strong><\/li><\/ul>"
           }
         }
       },
@@ -668,11 +714,212 @@
         "text_reduced": "",
         "design": false
       }
+    },
+    "ingredients_dropdown_7zxb7X": {
+      "type": "ingredients-dropdown",
+      "blocks": {
+        "left_column_xN3pjV": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Retinol",
+            "text_left": "A natural derivative of vitamin A, this hero ingredient speeds up the removal of old skin cells to reveal your best, most rejuvenated skin underneath.",
+            "image_left": "shopify:\/\/shop_images\/pi_retinol.webp"
+          }
+        },
+        "left_column_xfEQwV": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Niacinamide",
+            "text_left": "A type of vitamin B3, this powerhouse ingredient helps maintain skin health for a brighter, more even skin tone. It also helps smooth the look of wrinkles – especially when combined with retinol.",
+            "image_left": "shopify:\/\/shop_images\/pi_niacinamide.webp"
+          }
+        },
+        "left_column_PNRXyp": {
+          "type": "left_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_left": "Caffeine",
+            "text_left": "Caffeine works through micro-circulation, helping to fade the look of dark circles and under-eye bags – like a pick-me-up for the skin.",
+            "image_left": "shopify:\/\/shop_images\/pi_caffeine.webp"
+          }
+        },
+        "right_column_q3kHtw": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Acetyl Hexapeptide-8 Peptides ",
+            "text_right": "This safe, synthetic form of Botox visibly reduces the appearance of fine lines and wrinkles & boosts collagen production. It’s the first peptide designed to target expression lines.",
+            "image_right": "shopify:\/\/shop_images\/pi_acetyl.webp"
+          }
+        },
+        "right_column_MtfhLN": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Copper Peptides",
+            "text_right": "Copper peptides promote collagen and elastin production which helps plump and tighten the skin. They also serve as an antioxidant, working to protect the skin against further barrier damage.",
+            "image_right": "shopify:\/\/shop_images\/pi_copper.webp"
+          }
+        },
+        "right_column_xBgVGJ": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "Licorice",
+            "text_right": "Licorice boasts anti-inflammatory properties that work wonders in reducing puffiness and soothing irritated skin.",
+            "image_right": "shopify:\/\/shop_images\/pi_licorice.webp"
+          }
+        },
+        "right_column_BRzcGx": {
+          "type": "right_column",
+          "settings": {
+            "dropdown_design": "with_image",
+            "name_right": "All Ingredients",
+            "text_right": "Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin, Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil, Allantoin, Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica Extract,  Acetyl Hexapeptide-8, BHT.    \n<br>\nPlease note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites."
+          }
+        }
+      },
+      "block_order": [
+        "left_column_xN3pjV",
+        "left_column_xfEQwV",
+        "left_column_PNRXyp",
+        "right_column_q3kHtw",
+        "right_column_MtfhLN",
+        "right_column_xBgVGJ",
+        "right_column_BRzcGx"
+      ],
+      "settings": {
+        "heading": "Deeply replenishes the skin with these powerful, science-backed ingredients"
+      }
+    },
+    "how_to_use_wC7khU": {
+      "type": "how-to-use",
+      "blocks": {
+        "tab_PBUUDn": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Prepare",
+            "tab_desc": "<p>Wash and dry your face prior to use, removing all makeup.<\/p><p>Make sure your hands are clean.<\/p><p>Take the patch and simply peel off the adhesive strips.<\/p><p>Avoid touching the adhesive and the darts with your hands.<\/p>",
+            "image": "shopify:\/\/shop_images\/howUse_pdp7.webp"
+          }
+        },
+        "tab_pwMUJN": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Treatment",
+            "tab_desc": "<p>Apply the patch on a desired area (11 lines, Crow’s feet, under-eye area or smile lines) with adhesive side facing down.<\/p><p>Gently press for 5-10 seconds.<\/p><p>Use 1-2 times per week for at least two hours.<\/p><p>For best results, leave them on overnight!<\/p>",
+            "image": "shopify:\/\/shop_images\/howUse_pdp9.webp"
+          }
+        },
+        "tab_bWCRAy": {
+          "type": "Tab",
+          "settings": {
+            "tab_txt": "Aftercare",
+            "tab_desc": "<p>After the treatment (ideally in the morning) peel off the patches gently.<\/p><p>Wash your face and continue with your regular routine.<\/p>",
+            "image": "shopify:\/\/shop_images\/howUse_pdp8.webp"
+          }
+        },
+        "wistia_FDDfkR": {
+          "type": "wistia",
+          "settings": {
+            "wistia_id": "jzt419szoh"
+          }
+        }
+      },
+      "block_order": [
+        "tab_PBUUDn",
+        "tab_pwMUJN",
+        "tab_bWCRAy",
+        "wistia_FDDfkR"
+      ],
+      "settings": {
+        "heading": "How to use"
+      }
+    },
+    "faq_mw3Aqn": {
+      "type": "faq",
+      "blocks": {
+        "object_tJywiK": {
+          "type": "object",
+          "settings": {
+            "heading": "Is there any discomfort when using the patches?",
+            "text": "<p>None whatsoever! All you’ll feel is a slight prickly sensation as you apply the patches and press down the micro darts onto your skin. Our Micro-Infusion patches are designed to penetrate the skin deeply to deliver active ingredients without causing any pain, or downtime.<\/p>",
+            "code": ""
+          }
+        },
+        "object_kJeN8K": {
+          "type": "object",
+          "settings": {
+            "heading": "How many patches come per box?",
+            "text": "<p>There are 8 patches (pairs) per box. We recommend using 1-2 times per week so there is 1 month supply!<\/p>",
+            "code": ""
+          }
+        },
+        "object_hpxAyi": {
+          "type": "object",
+          "settings": {
+            "heading": "How long should I apply the patches for?",
+            "text": "<p>For optimal results, we suggest applying the patches for a minimum of 2 hours, but preferably overnight. Leaving the patches on whilst you sleep ensures that the serum has ample time to dissolve and penetrate into the skin, maximizing its effectiveness to give you the best results.<\/p><p>Use 1-2 times per week.<\/p>",
+            "code": ""
+          }
+        },
+        "object_TpK4in": {
+          "type": "object",
+          "settings": {
+            "heading": "Are they safe?",
+            "text": "<p>Absolutely! Each of our patches undergoes rigorous dermatologist approval and testing. Our Micro-Infusion patches are crafted in a state-of-the-art facility laboratory in South Korea, adhering to the highest standards of safety.<\/p><p>For individuals with sensitive skin, we advise conducting a patch test before using our Micro-Infusion patches. Avoid applying them on open wounds, cuts, irritated, or infected skin. If you experience any irritation or rash then discontinue usage immediately.<\/p>",
+            "code": ""
+          }
+        },
+        "object_qyFrVm": {
+          "type": "object",
+          "settings": {
+            "heading": "Can I use the patches whilst pregnant or breast-feeding?",
+            "text": "<p>Yes! Many pregnant women avoid  injectables, retinols, or any strong acids for anti-aging during this time, so many turn to Qure as a safer alternative. However we always recommend speaking with a medical professional for advice prior to use.<\/p>",
+            "code": ""
+          }
+        },
+        "object_CTTzyf": {
+          "type": "object",
+          "settings": {
+            "heading": "How are they packaged?",
+            "text": "<p>Each Micro-Infusion Targeted patch (2\/ pair) is packaged individually in a sealed container and then wrapped within a protective sealed foil pouch to prevent contamination and lock in moisture.<\/p>",
+            "code": ""
+          }
+        },
+        "object_zVnnDP": {
+          "type": "object",
+          "settings": {
+            "heading": "Are they suitable just for around the eyes only?",
+            "text": "<p>The best thing about our Micro-Infusion patches is that you can target different areas of concern. Whether it be under eyes, crows feet, smile lines or frown lines. <\/p>",
+            "code": ""
+          }
+        }
+      },
+      "block_order": [
+        "object_tJywiK",
+        "object_kJeN8K",
+        "object_hpxAyi",
+        "object_TpK4in",
+        "object_qyFrVm",
+        "object_CTTzyf",
+        "object_zVnnDP"
+      ],
+      "settings": {
+        "background": "bg_yellow",
+        "classname": "bg_yellow",
+        "heading": "Your burning questions, our glowing answers",
+        "text": "",
+        "button_label": "Show More Questions",
+        "button_hide_label": "Hide More Questions"
+      }
     }
   },
   "order": [
-    "main",
     "header_landing",
+    "main",
     "banner_tab_slider_G3VCXj",
     "featuredin_extended_mjJV3b",
     "image_text_2_NriM6U",
@@ -681,6 +928,10 @@
     "results_KkTxAy",
     "icons_list_hrRbkg",
     "videos_list_CfJjwV",
-    "compare_eYNU3L"
+    "two_column_box_bkFG8d",
+    "compare_eYNU3L",
+    "ingredients_dropdown_7zxb7X",
+    "how_to_use_wC7khU",
+    "faq_mw3Aqn"
   ]
 }
