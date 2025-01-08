@@ -217,7 +217,7 @@
                                                     <div class="plan_des">2 Micro-Infusion Treatments</div>
                                                 </div>
                                                 <div class="price">
-                                                    <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                                    <div class="plan_prc sale_price igPrice">{{ product.price | money_without_trailing_zeros }}</div>
                                                 </div>
                                             </label>
                                         </a>
@@ -303,7 +303,7 @@
                                             </div>
                                             <div class="price total_price">
                                                 <div class="pmt_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
-                                                <div class="pmt_prc sale_price igPrice">{{ product.price | money_without_trailing_zeros }}</div>
+                                                <div class="pmt_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
                                             </div>
                                         </label>
                                     </div>
