@@ -144,11 +144,14 @@
         "slider_fReGJh",
         "slider_mMBXPz"
       ],
+      "custom_css": [
+        ".refill_bl .refill_info {max-width: 550px;}"
+      ],
       "settings": {
         "display_type": "slider",
         "seo_heading": "Micro-Infusion Dart Patches",
         "heading": "Smooth, firm and plump stubborn areas with Micro-Infusion Targeted Patches",
-        "heading_size": "title-lg",
+        "heading_size": "title-xl",
         "desc": "<ul><li>Reduces appearance of <strong>fine lines<\/strong> and <strong>wrinkles<\/strong>, under-eye darkness, and puffiness.<\/li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface<\/strong> for faster results.<\/li><li><strong>Science backed<\/strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.<\/li><\/ul>",
         "rating_text": "4.7\/5 Rated by Customers",
         "stars": "shopify:\/\/shop_images\/star4.8.svg",
@@ -157,7 +160,7 @@
         "recomand": "",
         "underbutton_text_left": "Dermatologist Reviewed",
         "underbutton_text_right": "Free Shipping Over $100",
-        "order_mob": false
+        "order_mob": true
       }
     },
     "featuredin_extended_mjJV3b": {
@@ -186,40 +189,48 @@
       ],
       "settings": {
         "heading": "FEATURED IN",
-        "slider_type": "five_slides"
+        "slider_type": "five_slides",
+        "slide_per_view_desktop": 3,
+        "slide_per_view_mobile": 3
       }
     },
-    "image_text_2_NriM6U": {
-      "type": "image-text-2",
+    "image_text_QphRck": {
+      "type": "image-text",
       "blocks": {
-        "wistia_XWfKhj": {
+        "wistia_FDYHjn": {
           "type": "wistia",
           "settings": {
-            "video": "f4cj3x9e99"
+            "wistia": "f4cj3x9e99",
+            "wistia_m": "f4cj3x9e99"
           }
         },
-        "text_Y4Xa8A": {
+        "text_NUAcKN": {
           "type": "text",
           "settings": {
-            "heading": "80 Serum-Enriched Micro-Darts for precise improvement",
-            "text_content": "",
-            "richtext_id": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target and treat wrinkles, under-eye puffiness and dark circles.<\/strong><\/p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin<\/strong>, infusing serum for <strong>deeper delivery.<\/strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for deeper, better, faster results <strong>– yet gentle enough for sensitive skin!<\/strong><\/p>",
-            "text_1": "",
-            "text_2": "",
-            "text_3": ""
+            "text": "<p>Fast-acting patches feature 80 self-dissolving micro-darts designed to <strong>target and treat wrinkles, under-eye puffiness and dark circles.<\/strong><\/p><p>While traditional patches lay flat on the surface of the skin, these ultra thin micro-darts gently <strong>penetrate the skin<\/strong>, infusing serum for <strong>deeper delivery.<\/strong> Precise and powerful, they infuse serum where you need it most and fully absorb into the skin for deeper, better, faster results <strong>– yet gentle enough for sensitive skin!<\/strong><\/p>",
+            "btn_text": "",
+            "btn_url": "",
+            "custom_class": "",
+            "heading2": "",
+            "text2": "",
+            "heading3": "",
+            "text3": ""
           }
         }
       },
       "block_order": [
-        "wistia_XWfKhj",
-        "text_Y4Xa8A"
-      ],
-      "custom_css": [
-        ".nozzel_benefit {padding: 0 !important;}"
+        "wistia_FDYHjn",
+        "text_NUAcKN"
       ],
       "settings": {
-        "background": "trasnparent",
-        "custom_class": "section"
+        "background": "bg_clr_transparent",
+        "heading": "80 Serum-Enriched Micro-Darts for precise improvement",
+        "hide_on_mob": true,
+        "column": 6,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "confidence_slider_ir7cWU": {
@@ -228,21 +239,21 @@
         "option_EQVwQB": {
           "type": "option",
           "settings": {
-            "text": "<p>noticed continued improvement in<strong>wrinkle reduction.<\/strong><\/p>",
+            "text": "<p>noticed continued improvement in <strong>wrinkle reduction.<\/strong><\/p>",
             "percent_bar": 77
           }
         },
         "option_c9N4Dk": {
           "type": "option",
           "settings": {
-            "text": "<p>reported under eyes were visibly<strong>brighter.<\/strong><\/p>",
+            "text": "<p>reported under eyes were visibly <strong>brighter.<\/strong><\/p>",
             "percent_bar": 90
           }
         },
         "option_wyzHY6": {
           "type": "option",
           "settings": {
-            "text": "<p><strong>would recommend<\/strong>Micro-Infusion Targeted Patches to a friend.<\/p>",
+            "text": "<p><strong>would recommend <\/strong>Micro-Infusion Targeted Patches to a friend.<\/p>",
             "percent_bar": 87
           }
         },
@@ -316,7 +327,7 @@
       ],
       "settings": {
         "heading": "Technology that delivers anti-aging ingredients directly to the source",
-        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be<strong>absorbed at maximum potential.<\/strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in<strong>as little as two hours.<\/strong><\/p>",
+        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential.<\/strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.<\/strong><\/p>",
         "custom_class": ""
       }
     },
@@ -617,13 +628,13 @@
         "wistia_iFLMaU"
       ],
       "settings": {
-        "heading": "Confident skin starts here. Just ask the internet.",
+        "heading": "Confident skin starts here",
         "sub_heading": "",
         "classname": "section videosQure",
         "btn": "",
         "btn_url": "",
         "desk_slide": 6,
-        "mob_slide": 1.7,
+        "mob_slide": 2,
         "slide_space": 10
       }
     },
@@ -681,7 +692,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/targeted-patches-blue.webp",
             "heading": "Micro-Infusion Targeted Patches",
-            "mob_text": "",
+            "mob_text": "Micro-Infusion Targeted Patches",
             "text": "",
             "price": "",
             "style": "correctCircle",
@@ -693,7 +704,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mi-eye-patches.webp",
             "heading": "Alternative Eye Patches",
-            "mob_text": "",
+            "mob_text": "Alternative Eye Patches",
             "text": "",
             "price": "",
             "style": "incorrectCircle",
@@ -775,7 +786,7 @@
         "right_column_BRzcGx": {
           "type": "right_column",
           "settings": {
-            "dropdown_design": "with_image",
+            "dropdown_design": "without_image",
             "name_right": "All Ingredients",
             "text_right": "Sodium Hyaluronate, Caffeine, Copper-Tripeptide-1, Niacinamide, Cyclodextrin, Water, Glycine Soja (Soybean) Oil, Madecassoside, Macadamia Nut Oil, Allantoin, Retinol, Oil Soluble Licorice(Glycyrrhiza) Extract, Centella Asiatica Extract,  Acetyl Hexapeptide-8, BHT.    \n<br>\nPlease note that due to innovative updates and changing regulatory guidelines, the ingredient lists provided here may differ slightly from those on our packaging and distributor websites."
           }
@@ -921,7 +932,7 @@
     "header_landing",
     "banner_tab_slider_G3VCXj",
     "featuredin_extended_mjJV3b",
-    "image_text_2_NriM6U",
+    "image_text_QphRck",
     "confidence_slider_ir7cWU",
     "product_science_8BYxLK",
     "results_KkTxAy",
