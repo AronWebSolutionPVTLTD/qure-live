@@ -1146,10 +1146,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(updateSideWideGamification, 2000);
   });
 
-  // frontrow-health 
-  const frontrowHealthContainer = document.querySelector('.frontrow-health-container');
-  const trustedSection = document.querySelector('.trustedVerified');
-  initFrontrowHealth(frontrowHealthContainer, trustedSection);
+ 
+  // pdp-carousel-image
+  initPDPCarouselImage();
+
+   // frontrow-health 
+   const frontrowHealthContainer = document.querySelector('.frontrow-health-container');
+   const trustedSection = document.querySelector('.trustedVerified');
+   initFrontrowHealth(frontrowHealthContainer, trustedSection);
 });
 
 
@@ -1266,6 +1270,7 @@ function updateSideWideGamification() {
  * engagement with rewards during the shopping process.
  */
 function updateSiteWideGamification (cartTotal) { 
+
   const progressContainer = document.querySelector('.progress-container.pdm-gamification');
 
   if (!progressContainer) return;
@@ -1282,6 +1287,7 @@ function updateSiteWideGamification (cartTotal) {
   const giftProductVariantPrice = parseInt(progressContainer.dataset.giftProductVariantPrice, 10);
   const threshold = parseInt(progressContainer.dataset.threshold, 10);
   const currencySymbol = progressContainer.dataset.currencySymbol;
+  const giftProductIsAvailable = progressContainer.dataset.isAvailableGiftProduct;
 
   // Calculate differences
   const differenceFreeShipping = freeShippingThreshold - cartTotal;
@@ -1293,9 +1299,11 @@ function updateSiteWideGamification (cartTotal) {
 
   if (enableFreeShipping && cartTotal < freeShippingThreshold) {
     progressPercentageFreeShipping = (cartTotal / freeShippingThreshold) * 100;
+
     if (progressPercentage > progressPercentageFreeShipping) {
       progressPercentage = 20;
     }
+
   } else {
     if (threshold > cartTotal && progressPercentage > 80) {
       progressPercentage = 80;
@@ -1307,11 +1315,12 @@ function updateSiteWideGamification (cartTotal) {
 
   // Render progress message
   const progressContainerMessage = progressContainer.querySelector('.progress-container__message');
+
   if (progressContainerMessage) {
     if (enableFreeShipping && differenceFreeShipping > 0 && cartTotal >= 0) {
       const remainingAmountMoney = (differenceFreeShipping / 100).toFixed(0);
       progressContainerMessage.innerHTML = copyFreeShipping.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingAmountMoney)}</i>`);
-    } else if (enableProductGift && differenceFreeGift > 0) {
+    } else if (enableProductGift && giftProductIsAvailable && differenceFreeGift > 0) {
       const remainingGiftAmountMoney = (differenceFreeGift / 100).toFixed(0);
       let message = copyProductGift.replace("&price-left&", `<i class='money' style='font-style: normal;'>${currencySymbol.replace(/[0-9]+/, remainingGiftAmountMoney)}</i>`);
       if (!isNaN(giftProductVariantPrice)) {
@@ -1323,9 +1332,13 @@ function updateSiteWideGamification (cartTotal) {
         message = message.replace("&product-title&", giftProductTitle);
       }
       progressContainerMessage.innerHTML = message;
-    } else if (enableProductGift && differenceFreeGift <= 0) {
+    } else if (enableProductGift && giftProductIsAvailable && differenceFreeGift <= 0) {
       const congratsMessage = copyCongrats.replace("&product-title&", `<strong>${giftProductTitle}!</strong>`);
       progressContainerMessage.innerHTML = congratsMessage;
+    } else if ((!enableProductGift || !giftProductIsAvailable) &&
+        enableFreeShipping &&
+        cartTotal >= differenceFreeShipping){
+      progressContainerMessage.innerHTML = "<p>Congrats you have <strong> Free Shipping! js</strong></p>";
     }
   }
 
@@ -1335,7 +1348,7 @@ function updateSiteWideGamification (cartTotal) {
   const secondMilestone = progressContainer.querySelector('.second-milestone');
   const progressBar = progressContainer.querySelector('.progress-bar__bar');
 
-  if (milestonesContainer && firstMilestone && secondMilestone && progressBar) {
+  if (milestonesContainer && firstMilestone && progressBar) {
     // Update progress bar width
     progressBar.style.width = `${progressPercentage}%`;
 
@@ -1358,6 +1371,7 @@ function updateSiteWideGamification (cartTotal) {
     }
 
     // Second Milestone - Free Gift
+    if (secondMilestone)  {
     if (differenceFreeGift <= 0) {
       secondMilestone.classList.add('reach-threshold');
       secondMilestone.classList.remove('gradient');
@@ -1368,6 +1382,7 @@ function updateSiteWideGamification (cartTotal) {
       } else {
         secondMilestone.classList.remove('gradient');
       }
+    }
     }
 
     // Update milestone icons based on thresholds
@@ -1392,13 +1407,14 @@ function updateSiteWideGamification (cartTotal) {
       }
     }
 
+  if (secondMilestone) {
     const secondMilestoneIconEmpty = secondMilestone.querySelector('.icon-empty-pillow');
     const secondMilestoneIconGradient = secondMilestone.querySelector('.icon-empty-gradient');
     const secondMilestoneIconFull = secondMilestone.querySelector('.icon-full-pillow');
     const secondMilestoneIconCheck = secondMilestone.querySelector('.icon-check__second-milestone');
     const secondMilestoneProgressBarWrapper = secondMilestone.querySelector('.progress-bar-wrapper');
     const secondMilestoneProgressBarWrapperBar = secondMilestone.querySelector('.progress-bar-wrapper__bar');
-
+  
     const bothThresholdUncompleted = differenceFreeShipping > 0 && differenceFreeGift > 0;
     const bothThresholdCompleted = differenceFreeShipping <= 0 && differenceFreeGift <= 0;
 
@@ -1428,8 +1444,55 @@ function updateSiteWideGamification (cartTotal) {
       }
     }
   }
+  }
 }
     
+/**
+ * Initializes the Product Detail Page (PDP) carousel images.
+ * This function sets up two synchronized Swiper sliders: one for product media (main slider)
+ * and one for product thumbnails (thumbnail slider), including mousewheel navigation and responsive settings.
+ */
+
+function initPDPCarouselImage () {
+  const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
+  const productMediaContainer = document.querySelector('.swiper-products-carousel');
+
+  if (!productThumbsContainer || !productMediaContainer) return;
+
+  let thumbSlider = new Swiper(productThumbsContainer, {
+    loop: true,
+    spaceBetween: 8,
+    slidesPerView: 4.3,
+    slidesPerGroup: 1,
+    watchSlidesProgress: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      767: {
+        spaceBetween: 12,
+        slidesPerView: 6.3,
+        slidesPerGroup: 1,
+      },
+    },
+  });
+
+  let mainSlider = new Swiper(productMediaContainer, {
+    loop: true,
+    slidesPerView: 1,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    thumbs: {
+      swiper: thumbSlider,
+    },
+    navigation: {
+      nextEl: ".swiper-products-thumbs-next",
+      prevEl: ".swiper-products-thumbs-prev",
+    },
+  });
+}
+
 function initFrontrowHealth (frontrowContainer, trustedSection) {
   if (!frontrowContainer || !trustedSection) return;
 

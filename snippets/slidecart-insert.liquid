@@ -12,7 +12,9 @@
 	var __discount_applied = false;
 </script>
 
-<script type="application/json" data-ajax-cart-initial-state> {{ cart | json }} </script> 
+<dynamic>
+  <script type="application/json" data-ajax-cart-initial-state> {{ cart | json }} </script> 
+</dynamic>
 <script type="application/json" data-ajax-cart-configuration> { "addToCartCssClass": "js-my-cart-open" } </script>
 
 <!-- Swiper JS Add PDM By Samu3le-->
@@ -196,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {% endif %}
       }
 
-      {% if enableProductGift and giftTresholdPdm != 0 and productGiftPdm != blank %}
+      {% if enableProductGift and productGiftPdm.available and giftTresholdPdm != 0 and productGiftPdm != blank %}
         productGiftPdm(cart,'{{ productGiftPdm.variants.first.id }}', {{ giftTresholdPdm }});
       {% endif %}
     }

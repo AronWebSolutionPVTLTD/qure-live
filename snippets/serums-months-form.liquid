@@ -1,6 +1,9 @@
 {% if section == blank %}
     <p>Please provide section_id property to use this snippet</p>
 {% else %}
+
+    <link rel="stylesheet" href="{{ 'product_micro-infusion-pdp.css' | asset_url }}">
+
     {% assign section_id = section.id %}
 
     {%- assign supply_for_refill = 0 -%}
@@ -88,7 +91,7 @@
                                         </div>
                                         <div class="price">
                                             <div class="plan_prc regular_price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
-                                            <div class="plan_prc sale_price">{{ product.price | money_without_trailing_zeros }}</div>
+                                            <div class="plan_prc sale_price ">{{ product.price | money_without_trailing_zeros }}</div>
                                         </div>
                                     </label>
                                 </div>
@@ -198,7 +201,7 @@
                             const toogleBuySection = (is_target) => {
                                 if (is_target === true) {
                                     nextBatchBl.style.display = "block";
-                                    supplySteps.style.display = "none";
+                                    //supplySteps.style.display = "none";
                                     buyButton.style.display = "none";
                                     buyButtonSoldout.style.display = "block";
                                 } else {
@@ -231,7 +234,7 @@
             class="savedAmount">& SAVE {{ discount_percentage }}%</span><img src="{{ 'arrow_right.svg' | asset_url }}" alt="">
     </a>
 
-    <a class="btn btn-lg btn-primary buy_btn mt-3 buy_btn_soldout" href="#" style="display: none">Sold Out</a>
+    <a class="btn btn-lg btn-primary buy_btn mt-3 buy_btn_soldout" href="#" style="display: none">Reserved</a>
 
     <div class="payment_method">
         <p>OR 4 monthly payments of <span class="payment_price">{{ divided_price | money_without_trailing_zeros }}</span> with</p>

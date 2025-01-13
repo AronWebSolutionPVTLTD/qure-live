@@ -31,7 +31,7 @@
         "slide_iQgE8e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/homepageslide-3.jpg",
+            "image": "shopify://shop_images/Ellipse_78_d067490c-3b6b-41d2-8191-9bd1618f636b.png",
             "link_label": "Neck & Décolletage LED",
             "link_url": "https://www.qureskincare.com/products/neck-decolletage-led"
           }
@@ -83,6 +83,14 @@
             "link_label": "Silk Pillowcase",
             "link_url": "shopify://products/silk-pillowcase"
           }
+        },
+        "slide_xdAzha": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_tt81.png",
+            "link_label": "Shower Filter",
+            "link_url": "https://qureskincare.com/products/shower-filter"
+          }
         }
       },
       "block_order": [
@@ -94,7 +102,8 @@
         "slide_9qAien",
         "slide_GReD48",
         "slide_hVri9x",
-        "slide_tNrDjD"
+        "slide_tNrDjD",
+        "slide_xdAzha"
       ],
       "settings": {}
     },
@@ -151,7 +160,7 @@
             "heading": "Pro-Aging Bundles",
             "subheading": "Line Refine Bundle Pro",
             "text": "SAVE 47%",
-            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_w_dermalmist.png",
+            "image": "shopify://shop_images/Line_Refine_Bundle_Pro_f1b5a5e8-df9b-45f0-a57e-ee78f3b7a415.png",
             "product_url": "shopify://products/line-refine-bundle-pro"
           }
         },
@@ -192,7 +201,7 @@
             "heading": "Pro Aging & Dark Spots Bundles",
             "subheading": "Fade & Firm Bundle Advanced",
             "text": "SAVE 43%",
-            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced_wo_dm.png",
+            "image": "shopify://shop_images/Fade_Firm_Bundle_Advanced.png",
             "product_url": "shopify://products/fade-firm-bundle-advance"
           }
         },
