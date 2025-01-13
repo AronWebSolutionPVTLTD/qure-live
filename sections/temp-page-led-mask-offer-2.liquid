@@ -1757,7 +1757,7 @@
                                                 <h6><del class="text-grey">{{ 678 | times: 100 | money_without_trailing_zeros }}</del> <span>{{ 379 | times: 100 | money_without_trailing_zeros }}</span></h6>
                                             </div>
                                         </div>
-                                        <div class="include_stock">
+                                        {% comment %} <div class="include_stock">
                                             <p>Low Stock</p>
                                             <span>Due to high demand, this offer has limited
                                                 availability.</span>
@@ -1769,6 +1769,25 @@
                                                     <h6>83% SOLD</h6>
                                                 </div>
                                             </div>
+                                        </div> {% endcomment %}
+                                        <div class="next_batch_bl next_batch_highlight">
+                                            <h5 class="d-block d-md-block">Next batch ships January 25th:</h5>
+                                            <!-- <h5 class="d-md-none">Next batch ships 10/01:</h5> -->
+                                            <p>Due to high demand, this offer has limited availability.</p>
+                                            <div class="batch_h batch_h_fade mt-3 mt-md-4">
+                                                <div class="batch_h_month">December 2nd</div>
+                                                <div class="batch_h_info sold_out_h" style="--bgPercent:100%;"><span>SOLD
+                                                        OUT</span></div>
+                                            </div>
+                                            <div class="batch_h my-2">
+                                                <div class="batch_h_month fw-bold">January 25th</div>
+                                                <div class="batch_h_info" style="--bgPercent:81%;">48% Reserved</div>
+                                            </div>
+                                            <!-- <div class="batch_h batch_h_fade">
+                                                <div class="batch_h_month">January 30th</div>
+                                                <div class="batch_h_info" style="--bgPercent:0%;"><span>In
+                                                        Production</span></div>
+                                            </div> -->
                                         </div>
                                         <div class="order_today">
                                             <p>Order today to lock in your deal and get <strong
@@ -1776,7 +1795,7 @@
                                         </div>
                                     </div>
                                     <!-- Buy Now Button -->
-                                    <button class="buy-now" id="buy-now-button">Buy Now & Save {{ 299 | times: 100 | money_without_trailing_zeros }}</button>
+                                    <button class="buy-now" id="buy-now-button">Reserve Now & Save {{ 299 | times: 100 | money_without_trailing_zeros }}</button>
 
                                     <!-- Payment Methods -->
                                     <div class="payment_method">
