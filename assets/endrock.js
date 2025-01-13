@@ -1493,10 +1493,21 @@ function initPDPCarouselImage () {
   });
 }
 
+/**
+ * Initializes the functionality for the Frontrow Health section.
+ * This function sets up a smooth scroll behavior to a trusted section when the "see more" link is clicked.
+ * If the frontrow container or trusted section is not present, it safely exits without errors.
+ * Scrolls the viewport to 100px above the trusted section for better visibility.
+ *
+ * @param {HTMLElement} frontrowContainer - The container element for the Frontrow Health section.
+ * @param {HTMLElement} trustedSection - The target section to scroll to when the link is clicked.
+ */
+
 function initFrontrowHealth (frontrowContainer, trustedSection) {
   if (!frontrowContainer || !trustedSection) return;
 
   const { link:seeMoreLink} = frontrowContainer.dataset;
+  //if the feature has a link in the theme settings, exit the function
   if (seeMoreLink) return;
   
   const seeMoreElement = frontrowContainer.querySelector('.frontrow-health-container__content-link');
