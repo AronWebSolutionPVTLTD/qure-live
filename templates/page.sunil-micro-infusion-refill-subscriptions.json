@@ -85,7 +85,7 @@
         "liquid_a4mkYA": {
           "type": "liquid",
           "settings": {
-            "code": "{% render 'serums-refill-form' with section_id: section.id %}"
+            "code": "{% render 'serums-months-form' with section: section %}"
           }
         },
         "product_in_page_gkYdxK": {
@@ -134,6 +134,26 @@
           "settings": {
             "video_new_section": "shopify://files/videos/Micro infusion Refill edit.mov"
           }
+        },
+        "supply_for_refill_a4qUrk": {
+          "type": "supply_for_refill",
+          "settings": {
+            "heading": "Next batch ships 10th of February 2025:",
+            "heading_mobile": "Next batch ships 02/10:",
+            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "January 5th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "February 10th",
+            "second_option_text": "51% Reserved",
+            "second_option_percent": 51,
+            "third_option_date": "March 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0,
+            "option_wrinkles_darkspots": false,
+            "option_wrinkles": true,
+            "option_darkspots": false
+          }
         }
       },
       "block_order": [
@@ -150,7 +170,8 @@
         "liquid_a4mkYA",
         "product_in_page_gkYdxK",
         "before_and_after_jmNTNh",
-        "video_before_and_after_w4xCC8"
+        "video_before_and_after_w4xCC8",
+        "supply_for_refill_a4qUrk"
       ],
       "settings": {
         "seo_heading": "Microneedling Serum - Micro Infusion System Refill Kits",
