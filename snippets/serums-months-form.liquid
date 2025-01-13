@@ -1,6 +1,9 @@
 {% if section == blank %}
     <p>Please provide section_id property to use this snippet</p>
 {% else %}
+
+    <link rel="stylesheet" href="{{ 'product_micro-infusion-pdp.css' | asset_url }}">
+
     {% assign section_id = section.id %}
 
     {%- assign supply_for_refill = 0 -%}
