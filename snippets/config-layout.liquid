@@ -70,10 +70,10 @@
         <link rel="stylesheet" href="{{ 'offer-pages.css' | asset_url }}">
     {% when 'page.sunil-micro-infusion-pdp' %}
         {% assign main_class = 'mi_refill1 mi-pdp' %}
-        <link rel="stylesheet" href="{{ 'product_micro-infusion-pdp.css' | asset_url }}"> 
+ 
     {% when 'page.sunil-micro-infusion-refill-subscriptions' %}
-        {% assign main_class = 'mi_refill' %}
-        <link rel="stylesheet" href="{{ 'product_microinfusion-refill.css' | asset_url }}"> 
+        {% assign main_class = 'mi_refill mi-pdp' %}
+
     {% when 'page.sunil-bf-sales' %}
         {% assign main_class = 'bf_sale' %}
         <link rel="stylesheet" href="{{ 'product-bf-sales.css' | asset_url }}">
