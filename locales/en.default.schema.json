@@ -285,6 +285,12 @@
         "label": "Subheading for mobile"
       }
     },
+    "Product-guide": {
+      "label":"Product Guide"
+    },
+    "Block": {
+      "label":"Block"
+    },
     "recommended": {
       "label": "Recommended",
       "icon": "Recommended Icon"
