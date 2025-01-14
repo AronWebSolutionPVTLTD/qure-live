@@ -1,20 +1,67 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "temp-page-products-guide-page",
       "settings": {}
+    },
+    "product_guide_nCYXwd": {
+      "type": "product-guide",
+      "blocks": {
+        "block_gYgaxj": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify:\/\/shop_images\/product_guide-1.webp",
+            "micro_title": "Micro-Infusion Facial System",
+            "micro_desc": "<p>How To Use, Safety Treatment Protocols, etc..<\/p>",
+            "micro_prod_link": "",
+            "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
+          }
+        },
+        "block_wnBjje": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify:\/\/shop_images\/product_guide-2.webp",
+            "micro_title": "Micro-Infusion Facial System",
+            "micro_desc": "<p>Installation & Filter Replacement<\/p>",
+            "micro_prod_link": "",
+            "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
+          }
+        },
+        "block_BcNqPb": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify:\/\/shop_images\/product_guide-3.webp",
+            "micro_title": "Micro-Infusion Facial System",
+            "micro_desc": "<p>Set Up Guide, How To Use, Troubleshooting, etc..<\/p>",
+            "micro_prod_link": "",
+            "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
+          }
+        },
+        "block_Biz9FQ": {
+          "type": "Block",
+          "settings": {
+            "product_guide_img": "shopify:\/\/shop_images\/product_guide-4.webp",
+            "micro_title": "Micro-Infusion Facial System",
+            "micro_desc": "<p>Installation & Filter Replacement<\/p>",
+            "micro_prod_link": "",
+            "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_gYgaxj",
+        "block_wnBjje",
+        "block_BcNqPb",
+        "block_Biz9FQ"
+      ],
+      "settings": {
+        "heading_id": "User Manuals Made Easy!",
+        "small_heading_id": "Easy Video Guides for a Quick Start"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "product_guide_nCYXwd"
   ]
 }
