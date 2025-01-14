@@ -287,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const gift = cart.items.some(item => item.id === +(productId) && item.properties && item.properties['_required_validation']);
     const total_price = cart.total_price;
     if (total_price >= priceLimit && !gift && !hasAttemptedGiftAdd) {
-      console.log('entrando en add');
       hasAttemptedGiftAdd = true;
       hasAttemptedGiftRemove = false;
       cartRequestAdd({
@@ -303,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, {} )
 
     }else if (total_price < priceLimit && gift && !hasAttemptedGiftRemove) {
-      console.log('entrando en remove');
+
       hasAttemptedGiftRemove = true;
       hasAttemptedGiftAdd = false;
       const getGiftInCart = cart.items.find(item => item.id === +(productId) && item.properties['_required_validation']);
