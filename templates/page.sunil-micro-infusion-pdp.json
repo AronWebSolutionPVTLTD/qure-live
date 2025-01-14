@@ -84,8 +84,8 @@
         "supply_for_refill_VM6N4V": {
           "type": "supply_for_refill",
           "settings": {
-            "heading": "Next batch ships 10th of February 2025:",
-            "heading_mobile": "Next batch ships 02/10:",
+            "heading": "Next batch ships 15th of March 2025:",
+            "heading_mobile": "Next batch ships 03/15:",
             "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
             "first_option_date": "January 5th",
             "first_option_text": "Sold Out",
