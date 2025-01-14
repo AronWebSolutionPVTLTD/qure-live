@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   subscribeToCartAjaxRequests((myRequestCallback, subscribeToResult) => {
     if(myRequestCallback.requestType === 'add') {
       if(!window.event_product_handle) {
-        let atc_href = myRequestCallback?.info?.initiator?.getAttribute('href');
+        let atc_href = myRequestCallback.info.initiator.getAttribute('href');
         let atc_url = new URL(atc_href, window.location.origin);
         let atc_variant_id = atc_url.searchParams.get('id');
 
