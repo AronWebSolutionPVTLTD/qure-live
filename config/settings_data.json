@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "current": {
     "show_bf_price": false,
     "favicon": "shopify://shop_images/qure.png",
@@ -31,6 +31,10 @@
       "micro-infusion-3-month-bundle-6x-beta-glucan-serum",
       "micro-infusion-3-month-bundle"
     ],
+    "frontrow_health_image_1": "shopify://shop_images/frontrow-health1.png",
+    "frontrow_health_image_2": "shopify://shop_images/User_Image_1.png",
+    "frontrow_health_count_circle_color": "#c8e6dc",
+    "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
     "show_order_by_receive_by": true,
     "today_text": "Order today",
     "start_time_order": "2024-10-30T23:00",

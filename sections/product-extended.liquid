@@ -310,6 +310,11 @@
                             </div>
                         {% endif %}
 
+                        {% assign array_products_to_exclude = "dermal-mist, shower-filter, silk-pillowcase" | split: ", " %}
+                        {% unless array_products_to_exclude contains product.handle %}
+                            {% render 'pdm_pdp-frontrow-health' %}
+                        {% endunless %}
+
                         <div class="shipping shipping_bg bg-transparent mt-2">
                             <div class="s_bx">
                                 <img src="{{ 'dermatologist.svg' | asset_url }}" alt="">

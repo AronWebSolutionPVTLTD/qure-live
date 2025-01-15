@@ -1146,8 +1146,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(updateSideWideGamification, 2000);
   });
 
+ 
   // pdp-carousel-image
   initPDPCarouselImage();
+
+   // frontrow-health 
+   const frontrowHealthContainer = document.querySelector('.frontrow-health-container');
+   const trustedSection = document.querySelector('.trustedVerified');
+   initFrontrowHealth(frontrowHealthContainer, trustedSection);
 });
 
 
@@ -1441,8 +1447,85 @@ function updateSiteWideGamification (cartTotal) {
   }
 }
 
-/* test upsell popup */
 
+/**
+ * Initializes the Product Detail Page (PDP) carousel images.
+ * This function sets up two synchronized Swiper sliders: one for product media (main slider)
+ * and one for product thumbnails (thumbnail slider), including mousewheel navigation and responsive settings.
+ */
+
+function initPDPCarouselImage () {
+  const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
+  const productMediaContainer = document.querySelector('.swiper-products-carousel');
+
+  if (!productThumbsContainer || !productMediaContainer) return;
+
+  let thumbSlider = new Swiper(productThumbsContainer, {
+    loop: true,
+    spaceBetween: 8,
+    slidesPerView: 4.3,
+    slidesPerGroup: 1,
+    watchSlidesProgress: true,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    breakpoints: {
+      767: {
+        spaceBetween: 12,
+        slidesPerView: 6.3,
+        slidesPerGroup: 1,
+      },
+    },
+  });
+
+  let mainSlider = new Swiper(productMediaContainer, {
+    loop: true,
+    slidesPerView: 1,
+    mousewheel: {
+      forceToAxis: true,
+    },
+    thumbs: {
+      swiper: thumbSlider,
+    },
+    navigation: {
+      nextEl: ".swiper-products-thumbs-next",
+      prevEl: ".swiper-products-thumbs-prev",
+    },
+  });
+}
+
+
+/**
+ * Initializes the functionality for the Frontrow Health section.
+ * This function sets up a smooth scroll behavior to a trusted section when the "see more" link is clicked.
+ * If the frontrow container or trusted section is not present, it safely exits without errors.
+ * Scrolls the viewport to 100px above the trusted section for better visibility.
+ *
+ * @param {HTMLElement} frontrowContainer - The container element for the Frontrow Health section.
+ * @param {HTMLElement} trustedSection - The target section to scroll to when the link is clicked.
+ */
+
+function initFrontrowHealth (frontrowContainer, trustedSection) {
+  if (!frontrowContainer || !trustedSection) return;
+
+  const { link:seeMoreLink} = frontrowContainer.dataset;
+  //if the feature has a link in the theme settings, exit the function
+  if (seeMoreLink) return;
+  
+  const seeMoreElement = frontrowContainer.querySelector('.frontrow-health-container__content-link');
+  seeMoreElement.addEventListener('click', e => {
+    e.preventDefault();
+    const trustedSectionPositon = trustedSection.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: trustedSectionPositon - 100,
+      behavior: 'smooth'
+    });
+  });
+}
+
+
+/* test upsell popup */
 document.addEventListener('DOMContentLoaded', () => {
   // DOM elements for controlling the upsell popup
   const openPopupUpsell = document.querySelector("#openPopupUpsell");
@@ -1610,48 +1693,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* end test upsell popup */
-/**
- * Initializes the Product Detail Page (PDP) carousel images.
- * This function sets up two synchronized Swiper sliders: one for product media (main slider)
- * and one for product thumbnails (thumbnail slider), including mousewheel navigation and responsive settings.
- */
-
-function initPDPCarouselImage () {
-  const productThumbsContainer = document.querySelector('.swiper-products-thumbs__container');
-  const productMediaContainer = document.querySelector('.swiper-products-carousel');
-
-  if (!productThumbsContainer || !productMediaContainer) return;
-
-  let thumbSlider = new Swiper(productThumbsContainer, {
-    loop: true,
-    spaceBetween: 8,
-    slidesPerView: 4.3,
-    slidesPerGroup: 1,
-    watchSlidesProgress: true,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    breakpoints: {
-      767: {
-        spaceBetween: 12,
-        slidesPerView: 6.3,
-        slidesPerGroup: 1,
-      },
-    },
-  });
-
-  let mainSlider = new Swiper(productMediaContainer, {
-    loop: true,
-    slidesPerView: 1,
-    mousewheel: {
-      forceToAxis: true,
-    },
-    thumbs: {
-      swiper: thumbSlider,
-    },
-    navigation: {
-      nextEl: ".swiper-products-thumbs-next",
-      prevEl: ".swiper-products-thumbs-prev",
-    },
-  });
-}

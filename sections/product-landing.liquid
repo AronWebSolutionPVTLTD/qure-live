@@ -210,6 +210,8 @@
                                 </div>
                             </div> 
 
+                            {% render 'pdm_pdp-frontrow-health' %}
+
                             {% if icons_count > 0 %}
                                 {%- for block in section.blocks -%}
                                     {% if block.type == 'icons' %}
