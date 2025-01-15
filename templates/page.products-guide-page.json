@@ -4,10 +4,10 @@
       "type": "temp-page-products-guide-page",
       "settings": {}
     },
-    "product_guide_nCYXwd": {
+    "product_guide_y6fpLT": {
       "type": "product-guide",
       "blocks": {
-        "block_gYgaxj": {
+        "block_yVi68x": {
           "type": "Block",
           "settings": {
             "product_guide_img": "shopify:\/\/shop_images\/product_guide-1.webp",
@@ -17,7 +17,7 @@
             "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
           }
         },
-        "block_wnBjje": {
+        "block_VKPc3V": {
           "type": "Block",
           "settings": {
             "product_guide_img": "shopify:\/\/shop_images\/product_guide-2.webp",
@@ -27,7 +27,7 @@
             "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
           }
         },
-        "block_BcNqPb": {
+        "block_VEwRKX": {
           "type": "Block",
           "settings": {
             "product_guide_img": "shopify:\/\/shop_images\/product_guide-3.webp",
@@ -37,7 +37,7 @@
             "arrow_img": "shopify:\/\/shop_images\/arrow-next.png"
           }
         },
-        "block_Biz9FQ": {
+        "block_qdzPRU": {
           "type": "Block",
           "settings": {
             "product_guide_img": "shopify:\/\/shop_images\/product_guide-4.webp",
@@ -49,10 +49,10 @@
         }
       },
       "block_order": [
-        "block_gYgaxj",
-        "block_wnBjje",
-        "block_BcNqPb",
-        "block_Biz9FQ"
+        "block_yVi68x",
+        "block_VKPc3V",
+        "block_VEwRKX",
+        "block_qdzPRU"
       ],
       "settings": {
         "heading_id": "User Manuals Made Easy!",
@@ -62,6 +62,6 @@
   },
   "order": [
     "main",
-    "product_guide_nCYXwd"
+    "product_guide_y6fpLT"
   ]
 }
