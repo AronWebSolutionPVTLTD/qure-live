@@ -85,7 +85,7 @@
         "liquid_a4mkYA": {
           "type": "liquid",
           "settings": {
-            "code": "{% render 'serums-refill-form' with section: section %}"
+            "code": "{% render 'serums-months-form' with section: section %}"
           }
         },
         "product_in_page_gkYdxK": {
