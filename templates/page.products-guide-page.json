@@ -1,9 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "temp-page-products-guide-page",
-      "settings": {}
-    },
     "product_guide_y6fpLT": {
       "type": "product-guide",
       "blocks": {
@@ -61,7 +57,6 @@
     }
   },
   "order": [
-    "main",
     "product_guide_y6fpLT"
   ]
 }
