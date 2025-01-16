@@ -23,7 +23,7 @@
         "list_qEJGnV": {
           "type": "list",
           "settings": {
-            "text": "<ul><li>Reduces appearance of <strong>fine</strong> <strong>lines</strong> and <strong>wrinkles</strong>, under-eye darkness, and puffiness.</li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface</strong> for faster results.</li><li>Age-defying ingredients retinol, caffeine, niacinamide, and peptides.</li></ul><p><strong>16 PATCHES </strong>(8 pairs) / 1 month supply</p>"
+            "text": "<ul><li>Reduces appearance of <strong>fine</strong> <strong>lines</strong> and <strong>wrinkles</strong>, under-eye darkness, and puffiness.</li><li>Serum infused micro-darts dissolve into the skin to deliver active ingredients <strong>beyond the surface</strong> for faster results.</li><li><strong>Science backed</strong>, age-defying ingredients such as retinol, caffeine, niacinamide, and peptides.</li></ul><p><strong>16 PATCHES </strong>(8 pairs) / 1 month supply</p>"
           }
         },
         "icons_BdndQd": {
@@ -99,7 +99,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Dermatologist"
+        "text_label_real_result_3": "Dermatologist",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "featuredin_extended_kENYrm": {
@@ -131,12 +133,14 @@
         },
         "image_zYixkn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/cosmopolitan-black.svg"
           }
         },
         "text_GQ3CEw": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>\"Changes you’ll see are positive ones, like plumper and more taut skin and an improved skin tone.</p>"
           }
@@ -260,7 +264,7 @@
       "type": "liquid",
       "disabled": true,
       "settings": {
-        "code": "<!-- --- technology sources start -- -->\n        <div class=\"technolgy_source section\">\n            <div class=\"container\">\n                <div class=\"section_header mw-750 text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Technology that delivers anti-aging ingredients directly to the\n                        source\n                    <\/h2>\n                    <p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly\n                        penetrates\n                        the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum\n                            potential.<\/strong> The patches\n                        begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as\n                            little as\n                            two\n                            hours.<\/strong><\/p>\n                <\/div>\n                <div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech4.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER<\/h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.<\/p>\n                        <\/div>\n                    <\/div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    <\/div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech2.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE<\/h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.<\/p>\n                        <\/div>\n                    <\/div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    <\/div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https:\/\/qureskincaredns.com\/new\/assets\/patches_tech5.webp\" alt=\"\" class=\"img-fluid\">\n                        <\/div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT<\/h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.<\/p>\n                        <\/div>\n                    <\/div>\n                <\/div>\n            <\/div>\n        <\/div>\n        <!-- --- technology sources end -- -->"
+        "code": "<!-- --- technology sources start -- -->\n        <div class=\"technolgy_source section\">\n            <div class=\"container\">\n                <div class=\"section_header mw-750 text-md-center\">\n                    <h2 class=\"title-lg paddingB\">Technology that delivers anti-aging ingredients directly to the\n                        source\n                    </h2>\n                    <p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly\n                        penetrates\n                        the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum\n                            potential.</strong> The patches\n                        begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as\n                            little as\n                            two\n                            hours.</strong></p>\n                </div>\n                <div class=\"patches_tech_grid\">\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech4.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>1: DELIVER</h6>\n                            <p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into\n                                the\n                                skin for deeper delivery.</p>\n                        </div>\n                    </div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    </div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech2.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>2: DISSOLVE</h6>\n                            <p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb\n                                into the skin.</p>\n                        </div>\n                    </div>\n                    <!-- <div class=\"patches_tech_plus\">\n                        +\n                    </div> -->\n                    <div class=\"patches_tech_item\">\n                        <div class=\"patches_tech_img\">\n                            <img src=\"https://qureskincaredns.com/new/assets/patches_tech5.webp\" alt=\"\" class=\"img-fluid\">\n                        </div>\n                        <div class=\"patches_tech_content\">\n                            <h6>3: PROTECT</h6>\n                            <p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients\n                                and\n                                delivering fast, visible results.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <!-- --- technology sources end -- -->"
       }
     },
     "product_science_pzmLn7": {
@@ -269,25 +273,25 @@
         "column_qeFJKM": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patches_tech4.webp",
+            "image": "shopify://shop_images/patches_tech4.webp",
             "title": "DELIVER",
-            "pd_text": "<p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into the skin for deeper delivery.<\/p>"
+            "pd_text": "<p>80 micro-darts filled with powerful anti-aging and brightening ingredients melt into the skin for deeper delivery.</p>"
           }
         },
         "column_bi3tmi": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patches_tech2.webp",
+            "image": "shopify://shop_images/patches_tech2.webp",
             "title": "DISSOLVE",
-            "pd_text": "<p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb into the skin.<\/p>"
+            "pd_text": "<p>Automatically deliver a precise dose of ingredients, then the patches begin to absorb into the skin.</p>"
           }
         },
         "column_t9G3RJ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/patches_tech5.webp",
+            "image": "shopify://shop_images/patches_tech5.webp",
             "title": "PROTECT",
-            "pd_text": "<p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients and delivering fast, visible results.<\/p>"
+            "pd_text": "<p>Within 2 hours, they dissolve and seal an occlusive layer, locking in the ingredients and delivering fast, visible results.</p>"
           }
         }
       },
@@ -298,7 +302,7 @@
       ],
       "settings": {
         "heading": "Technology that delivers anti-aging ingredients directly to the source",
-        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential. <\/strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.<\/strong><\/p>",
+        "sub_text": "<p>As thin and gentle as a hair and as powerful as a needle, each micro-dart painlessly penetrates the skin to deliver the nutrients where they’ll be <strong>absorbed at maximum potential. </strong>The patches begin self-dissolving upon contact, so you get powerful, glowing results in <strong>as little as two hours.</strong></p>",
         "custom_class": "section"
       }
     },
@@ -649,7 +653,7 @@
             "text": "",
             "price": "",
             "style": "correctCircle",
-            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery</strong></li><li><strong>Versatile</strong> (11 lines, crow’s feet, under eye, laugh lines)</li><li><strong>Stay</strong> comfortably for 2-6 hours, or <strong>overnight</strong> for best results</li><li><strong>Continually works</strong> to give a rejuvenated look to your skin</li></ul>"
+            "list": "<ul><li>Micro-Darts melt into the skin for <strong>deeper ingredient delivery</strong></li><li><strong>Versatile</strong> (11 lines, crow’s feet, under eye, laugh lines)</li><li><strong>Stay</strong> comfortably for 2-6 hours, or <strong>overnight</strong> for best results</li><li><strong>Continually works</strong> to give a rejuvenated look to your skin</li><li><strong>Hypoallergenic</strong> & Gentle on Your Skin</li></ul>"
           }
         },
         "object_e4htz7": {
@@ -661,7 +665,7 @@
             "text": "",
             "price": "",
             "style": "incorrectCircle",
-            "list": "<ul><li>Ingredients <strong>sit</strong> mostly <strong>on top of skin</strong></li><li>Created for <strong>eye area only</strong></li><li><strong>Slippery</strong>, move around on the face</li><li>Provides <strong>temporary results</strong></li></ul>"
+            "list": "<ul><li>Ingredients <strong>sit</strong> mostly <strong>on top of skin</strong></li><li>Created for <strong>eye area only</strong></li><li><strong>Slippery</strong>, move around on the face</li><li>Provides <strong>temporary results</strong></li><li><strong>Allergy risk</strong> for sensitive skin</li></ul>"
           }
         }
       },
@@ -671,6 +675,7 @@
       ],
       "settings": {
         "classname": "beauty_skincare section bg-white",
+        "sub_head": "",
         "heading": "These are not your ordinary eye patches",
         "heading_reduced": "",
         "text": "",

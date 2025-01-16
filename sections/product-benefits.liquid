@@ -1,67 +1,147 @@
-<!-- -- image with text start -- -->
-<div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
-  <div class="container">
-    <div class="row">
-      {% for block in section.blocks %}
-        {% if block.settings.image != blank %}
-          <div class="col-12 col-md-6">
-            <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
-              <div class="header d-md-none d-block pb-3">
-                <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
-              </div>
-              <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+{% if request.path contains 'dermal-mist' %}
+  <!-- -- image with text start -- -->
+  <div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+                  {% for block in section.blocks %}
+                    {% if block.type == 'heading' %}
+                      <div class="header d-md-none d-block pb-3">
+                        <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                  {% for block in section.blocks %}
+                    {% if block.settings.image != blank %}
+                      <img src="{{ block.settings.image | img_url: 'master' }}" alt="" class="img-fluid">
+                    {% endif %}
+                  {% endfor %}
+                </div>
             </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-      <div class="col-12 col-md-6">
-        <div class="p-0 pt-0 pt-md-0">
-          {% for block in section.blocks %}
-            {% if block.settings.heading != blank %}
-              <div class="header d-md-block d-none">
-                <h2 class="title-lg mb-md-4">{{ block.settings.heading }}</h2>
-              </div>
-            {% endif %}
-          {% endfor %}
-          <div class="mw-100">
-            <ul class="d-md-block d-none">
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'content' %}
-                    <li class="d-flex align-items-start gap-4 pb-4">
-                      {% if block.settings.icon != blank %}
-                        <img class="pt-1" src="{{ block.settings.icon | img_url: '45x' }}" alt="">
-                      {% endif %}
-                      {% if block.settings.text != blank %}
-                        <div>
-                          {{ block.settings.text }}
-                        </div>
-                      {% endif %}
-                    </li>
-                {% endcase %}
-              {% endfor %}
-            </ul>
-            <ul class="d-md-none">
-              {% for block in section.blocks %}
-                <li class="d-flex align-items-start gap-1 pb-3">
-                  {% if block.settings.iconMob != blank %}
-                    <img src="{{ block.settings.iconMob | img_url: '28x' }}" width="28px" alt="">
-                  {% endif %}
-                  {% if block.settings.textMob != blank %}
-                    <div>
-                      {{ block.settings.textMob }}
+            <div class="col-12 col-md-6">
+                <div class="it_info p-0 pt-0 pt-md-0">
+                  {% for block in section.blocks %}
+                    {% if block.settings.heading != blank %}
+                      <div class="header d-md-block d-none">
+                        <h2 class="title-lg mb-md-4">{{ block.settings.heading }}</h2>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                    <div class="newside_list mw-100">
+                        <ul class="d-md-block d-none">
+                          {% for block in section.blocks %}
+                            {% case block.type %}
+                              {% when 'content' %}
+                                <li>
+                                  {% if block.settings.icon != blank %}
+                                    <img src="{{ block.settings.icon | img_url: '45x' }}" alt="">
+                                  {% endif %}
+                                  {% if block.settings.text != blank %}
+                                    <div>
+                                      {{ block.settings.text |  replace: '<p>', '<p class="fw-normal">' }}
+                                    </div>
+                                  {% endif %}
+                                </li>
+                            {% endcase %}
+                          {% endfor %}
+                        </ul>
+                        <ul class="d-md-none">
+                            {% for block in section.blocks %}
+                              {% case block.type %}
+                                {% when 'content' %}
+                                    <li>
+                                      {% if block.settings.iconMob != blank %}
+                                        <img src="{{ block.settings.iconMob | img_url: '28x' }}" width="28px" alt="">
+                                      {% endif %}
+                                      {% if block.settings.textMob != blank %}
+                                        <div>
+                                          {{ block.settings.textMob }}
+                                        </div>
+                                      {% endif %}
+                                    </li>
+                                {% endcase %}
+                            {% endfor %}
+                        </ul>
                     </div>
-                  {% endif %}
-                </li>
-              {% endfor %}
-            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- -- image with text end -- -->
+{% else %}
+  <!-- -- image with text start -- -->
+  <div class="imageText new_side section mt-md-4 {{ section.settings.background }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="it_img pb-3 pb-md-0 pe-0 pe-md-5 pt-md-3">
+            {% for block in section.blocks %}
+              {% if block.type == 'heading' %}
+                <div class="header d-md-none d-block pb-3">
+                  <h2 class="title-lg mb-md-4 text-capitalize">{{ block.settings.heading }}</h2>
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% for block in section.blocks %}
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="p-0 pt-0 pt-md-0">
+            {% for block in section.blocks %}
+              {% if block.settings.heading != blank %}
+                <div class="header d-md-block d-none">
+                  <h2 class="title-lg mb-md-4">{{ block.settings.heading }}</h2>
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="mw-100">
+              <ul class="d-md-block d-none">
+                {% for block in section.blocks %}
+                  {% case block.type %}
+                    {% when 'content' %}
+                      <li class="d-flex align-items-start gap-4 pb-4">
+                        {% if block.settings.icon != blank %}
+                          <img class="pt-1" src="{{ block.settings.icon | img_url: '45x' }}" alt="">
+                        {% endif %}
+                        {% if block.settings.text != blank %}
+                          <div>
+                            {{ block.settings.text }}
+                          </div>
+                        {% endif %}
+                      </li>
+                  {% endcase %}
+                {% endfor %}
+              </ul>
+              <ul class="d-md-none">
+                {% for block in section.blocks %}
+                  <li class="d-flex align-items-start gap-1 pb-3">
+                    {% if block.settings.iconMob != blank %}
+                      <img src="{{ block.settings.iconMob | img_url: '28x' }}" width="28px" alt="">
+                    {% endif %}
+                    {% if block.settings.textMob != blank %}
+                      <div>
+                        {{ block.settings.textMob }}
+                      </div>
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- -- image with text end -- -->
+  <!-- -- image with text end -- -->
+{% endif %}
+
 
 {% schema %}
 {

@@ -91,7 +91,7 @@
         "product_in_page_gkYdxK": {
           "type": "product_in_page",
           "settings": {
-            "image_product_1": "shopify://shop_images/award_MI_refill.png",
+            "image_product_1": "shopify://shop_images/Rectangle_198.png",
             "image_product_text_1": "lola with MI serums",
             "video_wistia_id_1": "",
             "image_product_2": "shopify://shop_images/Box_with_serums.png",
@@ -134,6 +134,26 @@
           "settings": {
             "video_new_section": "shopify://files/videos/Micro infusion Refill edit.mov"
           }
+        },
+        "supply_for_refill_a4qUrk": {
+          "type": "supply_for_refill",
+          "settings": {
+            "heading": "Next batch ships 15th of March 2025:",
+            "heading_mobile": "Next batch ships 03/15:",
+            "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
+            "first_option_date": "January 5th",
+            "first_option_text": "SOLD OUT",
+            "first_option_percent": 100,
+            "second_option_date": "March 15th",
+            "second_option_text": "51% Reserved",
+            "second_option_percent": 51,
+            "third_option_date": "April 30th",
+            "third_option_text": "In Production",
+            "third_option_percent": 0,
+            "option_wrinkles_darkspots": false,
+            "option_wrinkles": true,
+            "option_darkspots": false
+          }
         }
       },
       "block_order": [
@@ -150,7 +170,8 @@
         "liquid_a4mkYA",
         "product_in_page_gkYdxK",
         "before_and_after_jmNTNh",
-        "video_before_and_after_w4xCC8"
+        "video_before_and_after_w4xCC8",
+        "supply_for_refill_a4qUrk"
       ],
       "settings": {
         "seo_heading": "Microneedling Serum - Micro Infusion System Refill Kits",
@@ -166,7 +187,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Dermatologist"
+        "text_label_real_result_3": "Dermatologist",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "featuredin_EpYUrH": {
@@ -370,6 +393,19 @@
             "code": ""
           }
         },
+        "result_XkfqPc": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/New_review.png",
+            "heading": "Great Purchase",
+            "text": "<p>“I've been struggling with skin issues like hyperpigmentation, breakouts, and recently, I've noticed my skin looking dull. I've tried countless skincare products, but nothing seemed to work long-term. Although a few products showed some promise, the results were never lasting.  Recently, I came across Qure on my feeds, but I was hesitant to try it because I thought it would be just another product that wouldn’t make a difference. However, I was pleasantly surprised! This is now my fourth vial, and I absolutely love the results.</p>",
+            "see-more": "I used to get microneedling treatments because I loved the results, but Qure Micro-Infusion offers a similar effect right at home, and it's much more affordable than professional microneedling sessions.   I highly recommend giving it a try; I'm 99.99% sure you'll love it just as much as I do.\nI don’t usually write product reviews, but this one truly deserves it!”",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "United States",
+            "client": "Jasmine K.",
+            "code": ""
+          }
+        },
         "result_Wc4Xbd": {
           "type": "result",
           "settings": {
@@ -564,6 +600,19 @@
             "client": "Nue V.",
             "code": ""
           }
+        },
+        "result_inFnDQ": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/ANONYMUS.png",
+            "heading": "First Treatment Successful!",
+            "text": "<p>“I was very nervous at first that it would be painful but if anything it was oddly satisfying and didn't hurt in the slightest! I was also nervous that it would further irritate my skin because my skin is very sensitive but all I had was temporary redness from the pressure and needles which faded within a few hours. The next day I immediately noticed how smooth and rejuvenated my face looked and was relieved to see that my skin didn't have a terrible reaction to the product and there was actually results which has never happened in my life.</p>",
+            "see-more": "So excited to continue this journey and see what the skin will looks like in the coming months after more treatments especially after how this first treatment went!”",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "United States",
+            "client": "Anonymous",
+            "code": ""
+          }
         }
       },
       "block_order": [
@@ -572,6 +621,7 @@
         "result_eP4AeV",
         "result_Wz8gak",
         "result_nmtgEE",
+        "result_XkfqPc",
         "result_Wc4Xbd",
         "result_nkNAL3",
         "result_rwc7kD",
@@ -586,7 +636,8 @@
         "result_UYzMEq",
         "result_yQPg9y",
         "result_BEHANt",
-        "result_Tg3Ag9"
+        "result_Tg3Ag9",
+        "result_inFnDQ"
       ],
       "settings": {
         "classname": "mi_landing_result",

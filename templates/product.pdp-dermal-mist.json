@@ -28,16 +28,16 @@
         "supply_CTrVRQ": {
           "type": "supply",
           "settings": {
-            "heading": "Next batch ships 26th of December 2024:",
-            "heading_mobile": "Next batch ships 12/26:",
+            "heading": "Next batch ships 28th of January 2025:",
+            "heading_mobile": "Next batch ships 01/28:",
             "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
             "first_option_date": "November 20th",
             "first_option_text": "SOLD OUT",
             "first_option_percent": 100,
-            "second_option_date": "December 26th",
-            "second_option_text": "37% Reserved",
-            "second_option_percent": 37,
-            "third_option_date": "January 30th",
+            "second_option_date": "January 28th",
+            "second_option_text": "57% Reserved",
+            "second_option_percent": 57,
+            "third_option_date": "March 30th",
             "third_option_text": "In Production",
             "third_option_percent": 0
           }
@@ -238,6 +238,38 @@
         "background": "bg_clr_transparent",
         "heading": "Purify anything, anywhere, anytime.",
         "text": "From post-workout refreshes to prepping your skin for treatments, Dermal Mist is your secret weapon for keeping things calm, clear, and ready for whatever comes next —no rinsing, no fuss."
+      }
+    },
+    "text_with_video_tyRqaL": {
+      "type": "text-with-video",
+      "blocks": {
+        "video_A3GKHe": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/Dermal_Mist_video_cover.png",
+            "video": "https://www.youtube.com/watch?v=EjLx0IvKh7g",
+            "title": "Dr Shah & Dr Maxfield",
+            "des": "Board certified dermatologists"
+          }
+        },
+        "text_content_QDJUbt": {
+          "type": "text_content",
+          "settings": {
+            "trust_icon": "shopify://shop_images/verified_design.svg",
+            "trust_des": "Trusted and recommended by world leading Dermatologists",
+            "title": "\"...Spray your skin to sanitize it before using your Micro-Infusion device. It's absolutely genius.\"",
+            "title_clr": "#000000",
+            "title_strong_clr": "#797d7c"
+          }
+        }
+      },
+      "block_order": [
+        "video_A3GKHe",
+        "text_content_QDJUbt"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "compare_tLe6Fj": {
@@ -472,6 +504,7 @@
     "custom_qurify_filter_lp_featuredin_XN4VnN",
     "product_benefits_EhnmRK",
     "capsule_dropdowns_JnKRb9",
+    "text_with_video_tyRqaL",
     "compare_tLe6Fj",
     "benefits_slider_G6Lxbd",
     "faq_UUdrDJ",

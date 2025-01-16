@@ -84,20 +84,20 @@
         "supply_for_refill_VM6N4V": {
           "type": "supply_for_refill",
           "settings": {
-            "heading": "Next batch ships 26th of December 2024:",
-            "heading_mobile": "Next batch ships 12/26:",
+            "heading": "Next batch ships 15th of March 2025:",
+            "heading_mobile": "Next batch ships 03/15:",
             "text": "<p>Due to high demand we have sold out. Order now and secure yours from the next shipment.</p>",
-            "first_option_date": "December 5th",
-            "first_option_text": "SOLD OUT",
+            "first_option_date": "January 5th",
+            "first_option_text": "Sold Out",
             "first_option_percent": 100,
-            "second_option_date": "January 10th",
-            "second_option_text": "81% Reserved",
-            "second_option_percent": 81,
-            "third_option_date": "January 30th",
+            "second_option_date": "March 15th",
+            "second_option_text": "51% Reserved",
+            "second_option_percent": 52,
+            "third_option_date": "April 30th",
             "third_option_text": "In Production",
             "third_option_percent": 0,
             "option_wrinkles_darkspots": false,
-            "option_wrinkles": false,
+            "option_wrinkles": true,
             "option_darkspots": false
           }
         }
@@ -125,7 +125,9 @@
         "selected_design": "new",
         "text_label_real_result_1": "Product",
         "text_label_real_result_2": "Real Results",
-        "text_label_real_result_3": "Plastic Surgeon"
+        "text_label_real_result_3": "Plastic Surgeon",
+        "enable_jump_to_section": true,
+        "text_jump_to_section": "Jump To"
       }
     },
     "custom_qurify_filter_lp_featuredin_iXk4TL": {
@@ -260,7 +262,8 @@
         "column": 5,
         "padding_top": 60,
         "padding_bottom": 60,
-        "show_comment": false
+        "show_comment": false,
+        "custom_class": ""
       }
     },
     "confidence_slider_gTU9GE": {
@@ -535,6 +538,19 @@
             "code": ""
           }
         },
+        "result_jEQY3N": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/New_review.png",
+            "heading": "Great Purchase",
+            "text": "<p>“I've been struggling with skin issues like hyperpigmentation, breakouts, and recently, I've noticed my skin looking dull. I've tried countless skincare products, but nothing seemed to work long-term. Although a few products showed some promise, the results were never lasting.  Recently, I came across Qure on my feeds, but I was hesitant to try it because I thought it would be just another product that wouldn’t make a difference. However, I was pleasantly surprised! This is now my fourth vial, and I absolutely love the results.</p>",
+            "see-more": "I used to get microneedling treatments because I loved the results, but Qure Micro-Infusion offers a similar effect right at home, and it's much more affordable than professional microneedling sessions.   I highly recommend giving it a try; I'm 99.99% sure you'll love it just as much as I do.\nI don’t usually write product reviews, but this one truly deserves it!”",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "United States",
+            "client": "Jasmine K.",
+            "code": ""
+          }
+        },
         "result_FagUhT": {
           "type": "result",
           "settings": {
@@ -759,11 +775,25 @@
             "client": "Nue V.",
             "code": ""
           }
+        },
+        "result_VFw8Mj": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/ANONYMUS.png",
+            "heading": "First Treatment Successful!",
+            "text": "<p>“I was very nervous at first that it would be painful but if anything it was oddly satisfying and didn't hurt in the slightest! I was also nervous that it would further irritate my skin because my skin is very sensitive but all I had was temporary redness from the pressure and needles which faded within a few hours. The next day I immediately noticed how smooth and rejuvenated my face looked and was relieved to see that my skin didn't have a terrible reaction to the product and there was actually results which has never happened in my life.</p>",
+            "see-more": "So excited to continue this journey and see what the skin will looks like in the coming months after more treatments especially after how this first treatment went!”",
+            "image_country": "shopify://shop_images/usa_189ccd4e-add5-48f9-8078-c50c3e29332f.png",
+            "text_country": "United States",
+            "client": "Anonymous",
+            "code": ""
+          }
         }
       },
       "block_order": [
         "result_k44HbH",
         "result_XcNT6t",
+        "result_jEQY3N",
         "result_FagUhT",
         "result_NRGNyz",
         "result_BTCpkg",
@@ -780,7 +810,8 @@
         "result_RgmxFK",
         "result_EfPNCF",
         "result_eLJa6L",
-        "result_DYbUAd"
+        "result_DYbUAd",
+        "result_VFw8Mj"
       ],
       "settings": {
         "classname": "mi_landing_result pt-0",
@@ -976,7 +1007,7 @@
             "mark2": "tick",
             "point7": "Minimal downtime & Virtually Painless",
             "mark3": "tick",
-            "point8": "Less than $20 per treatment",
+            "point8": "Less than $25 per treatment",
             "mark4": "tick"
           }
         },
@@ -1041,7 +1072,7 @@
             "background": "bg-yellow",
             "pd_img": "shopify://shop_images/serhum.png",
             "name": "",
-            "serum_type": "Dark Spots & Uneven Skin Tone",
+            "serum_type": "Rejuvenating",
             "benefit1": "Brightens  discolouration",
             "icon1": "shopify://shop_images/brightens-even-skin-tone_1.png",
             "benefit2": "Fades  dark spots",
