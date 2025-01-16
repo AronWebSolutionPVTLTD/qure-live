@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "product-extended",
@@ -60,7 +60,7 @@
         "reserve": true,
         "underbutton_text_left": "Dermatologist Approved",
         "underbutton_text_right": "Free Shipping Over US$100",
-        "selected_design": "old",
+        "selected_design": "new",
         "text_label_real_result_1": "",
         "text_label_real_result_2": "",
         "text_label_real_result_3": ""
