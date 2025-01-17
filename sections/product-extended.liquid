@@ -474,12 +474,9 @@
                         </div>
                     {% endif %}
                 </div>
-                {% comment %} pdp caroulsel redesign {% endcomment %}
-                {% render 'pdm_before_after_carousel', settings: section.settings%}
                 {% endif %}
                 {% comment %} end component original {% endcomment %}
                 {% if new_design == true %}
-                    {% render 'pdm_before_after', data: section.blocks, dataSection: section.settings %}
                      {% comment %} pdp caroulsel redesign {% endcomment %}
                     {% render 'pdm_before_after_carousel', settings: section.settings%}
                 {% endif %}
