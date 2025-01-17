@@ -2454,10 +2454,23 @@ body[data-confidence-test][class~="page.sunil-mi-landing-special2"] .pdm-section
 
 }
 /* end confidence slider */
+
 /* test reorder landing */
+
 body[class~="page.sunil-mi-landing-special2-reorder"] .test-reorder-landing{
   display: none;
 }
+
+body[class~="page.sunil-mi-landing-special2-reorder"] #see_it_section{
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 769px) {
+  body[class~="page.sunil-mi-landing-special2-reorder"] #see_it_section{
+    padding: 60px 0 30px;
+  }
+}
+
 /* end test reorder landing */
 
 /* start pdp carousel image */
