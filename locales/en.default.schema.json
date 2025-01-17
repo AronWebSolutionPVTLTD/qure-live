@@ -1424,6 +1424,9 @@
     },
     "product_feature": {
       "label": "Product Feature"
+    },
+    "Replacement_Info":{
+      "label": "Replacement Info"
     }
   }
 }
