@@ -1,0 +1,13 @@
+{% liquid
+  assign url_dont_enable_gift = settings.dont_enable_gift_urls
+  assign urls = url_dont_enable_gift | newline_to_br | replace: '<br />', '\n' | split: '\n' | replace: '\n', ''
+  assign urls_clean = urls | remove: '[' | remove: ']' | remove: '"' | remove: ' ' | split: ','
+
+  assign current_path = request.path
+  assign is_available = true
+  if urls_clean contains current_path
+    assign is_available = false
+  endif
+%}
+
+{{ is_available }}
