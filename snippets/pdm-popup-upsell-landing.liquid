@@ -41,6 +41,7 @@
         assign data_product_discount_percent = data_product.metafields.custom.popup_discount
         assign total_product_discount = data_product_price | times: data_product_discount_percent | floor
         assign monthly_price = data_product.price | minus: total_product_discount | floor
+        assign unit_price = monthly_price | divided_by: 6.00 | money_without_trailing_zeros
       %}
 
       <div class="popupsell-card" data-product-id="{{ data_product.id }}">
@@ -81,7 +82,11 @@
           <div class="popupsell-card-content-valueprops">
             <div class="popupsell-card-content-valueprops-info">
               <p>{{ data.upsell_valueprops_title }}</p>
-              {{ data.upsell_valueprops_content | metafield_tag | replace: '(check)', check_icon }}
+              {{ data.upsell_valueprops_content 
+                | metafield_tag 
+                | replace: '(check)', check_icon
+                | replace: '(unit_price)', unit_price
+              }}
             </div>
             <div class="popupsell-card-content-valueprops-footer">
               <p>{{ data.upsell_valueprops_footer }}</p>
