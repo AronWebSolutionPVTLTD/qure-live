@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -113,34 +113,46 @@
         "link_GirQqh": {
           "type": "link",
           "settings": {
-            "link_label": "Shop Now",
-            "link_label_mobile": "Shop Now",
+            "link_label": "Shop & Save",
+            "link_label_mobile": "Shop & Save",
             "link_url": "shopify://collections/best-sellers"
           }
         },
         "product_BANXY7": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "heading": "<p><strong>Save up to 55% off</strong> on Black Friday Bundles.</p>",
-            "image": "shopify://shop_images/bf-bundle-sm.webp",
-            "product_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal"
+            "heading": "<p>Micro-Infusion Bundle</p>",
+            "image": "shopify://shop_images/mi_bundle.webp",
+            "product_url": "shopify://products/fade-firm-bundle-advance"
+          }
+        },
+        "banner_6wgzUN": {
+          "type": "banner",
+          "settings": {
+            "heading": "Save up to 55% on Exclusive Bundles",
+            "image": "shopify://shop_images/sub_banner.webp",
+            "image_mobile": "shopify://shop_images/sub_banner-mob.webp",
+            "link_label": "Buy Now",
+            "link_url": "https://www.qureskincare.com/pages/exclusive-holiday-bundle-deal"
           }
         }
       },
       "block_order": [
         "link_GirQqh",
-        "product_BANXY7"
+        "product_BANXY7",
+        "banner_6wgzUN"
       ],
       "disabled": true,
       "settings": {
-        "heading": "21% Off Sitewide",
-        "heading_mobile": "",
+        "heading": "LOVE YOUR SKIN",
+        "heading_mobile": "LOVE YOUR SKIN",
         "heading_tag": "h1",
-        "subheading": "<p>Top-rated products at <em>best prices</em> this Black Friday</p>",
-        "subheading_mobile": "",
-        "text": "",
-        "wistia_id": "xz6kx4xrh8"
+        "subheading": "<p>on Exclusive <strong>Valentine’s Day </strong>Micro-Infusion Bundle</p>",
+        "subheading_mobile": "<p>Exclusive <strong>Valentine’s Day </strong>Micro-Infusion Bundle</p>",
+        "text": "<p>66% Off</p>",
+        "image": "shopify://shop_images/hero_valentine_banner_desktop.webp",
+        "image_mobile": "shopify://shop_images/hero_valentine_banner_mob.webp",
+        "wistia_id": ""
       }
     },
     "promotion_main_banner_second_jCUkqh": {
@@ -363,7 +375,9 @@
       ],
       "settings": {
         "heading": "FEATURED IN",
-        "slider_type": "five_slides"
+        "slider_type": "five_slides",
+        "slide_per_view_desktop": 3,
+        "slide_per_view_mobile": 3
       }
     },
     "results_slider_w6BARa": {
