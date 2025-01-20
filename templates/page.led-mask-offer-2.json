@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "header_landing_SSnaTx": {
@@ -8,6 +17,7 @@
           "settings": {
             "heading": "SAVE $100 | FREE Worldwide Shipping",
             "heading_mobile": "SAVE $100 | FREE Worldwide Shipping",
+            "color": "white",
             "font_size_desktop": 14,
             "font_size_mobile": 13
           }
@@ -44,12 +54,13 @@
         "navigation_link_wVVWXW"
       ],
       "settings": {
-        "button_label": "SHOP NOW",
+        "button_label": "Save $299",
         "button_url": "#shop"
       }
     },
     "main": {
-      "type": "temp-page-led-mask-offer-2"
+      "type": "temp-page-led-mask-offer-2",
+      "settings": {}
     }
   },
   "order": [
