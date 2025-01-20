@@ -107,6 +107,9 @@
       "thumb": "Thumbnail",
       "single_slide": "Single Slide"
     },
+    "banner": {
+      "label": "Banner"
+    },
     "banner_14feb": {
       "label": "14feb banner"
     },
