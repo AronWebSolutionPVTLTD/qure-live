@@ -33,6 +33,7 @@
         },
         "supply_CTrVRQ": {
           "type": "supply",
+          "disabled": true,
           "settings": {
             "heading": "Next batch ships 28th of January 2025:",
             "heading_mobile": "Next batch ships 01/28:",
