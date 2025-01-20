@@ -301,8 +301,8 @@
       "settings": {
         "heading": "Want to collaborate with us as a UGC creator?",
         "text": "<p>Please reach out to us at: <a href=\"mailto:ugc@qureskincare.com\" title=\"ugc@qureskincare.com\"><strong>ugc@qureskincare.com</strong></a><strong> </strong><br/><br/>In the information please includ your age, location, portfolio, socials & please include some makeup-free images of your skin.<br/><br/>We'll be in touch!'</p>",
-        "btn_text": "",
-        "btn_url": ""
+        "btn_text": "Send an e-mail",
+        "btn_url": "mailto:ugc@qureskincare.com"
       }
     }
   },
