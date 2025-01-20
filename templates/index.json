@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -123,7 +123,7 @@
           "settings": {
             "heading": "<p>Micro-Infusion Bundle</p>",
             "image": "shopify://shop_images/mi_bundle.webp",
-            "product_url": "shopify://products/fade-firm-bundle-advance"
+            "product_url": "shopify://products/exclusive"
           }
         },
         "banner_6wgzUN": {
