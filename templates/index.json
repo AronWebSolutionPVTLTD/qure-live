@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "mobile-product-slider",
@@ -115,7 +115,7 @@
           "settings": {
             "link_label": "Shop & Save",
             "link_label_mobile": "Shop & Save",
-            "link_url": "shopify://collections/best-sellers"
+            "link_url": "https://qureskincare.com/pages/exclusive-holiday-bundle-deal#Pro-Aging-Bundles"
           }
         },
         "product_BANXY7": {
@@ -123,7 +123,7 @@
           "settings": {
             "heading": "<p>Micro-Infusion Bundle</p>",
             "image": "shopify://shop_images/mi_bundle.webp",
-            "product_url": "shopify://products/fade-firm-bundle-advance"
+            "product_url": "shopify://products/exclusive"
           }
         },
         "banner_6wgzUN": {
