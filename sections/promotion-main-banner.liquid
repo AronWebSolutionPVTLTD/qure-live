@@ -2,10 +2,27 @@
 
 {%- for block in section.blocks -%}
 	{%- case block.type -%}
+        {%- when 'link' -%}
+            {% assign location_href = block.settings.link_url %}
         {%- when 'product' -%}
             {%- assign product_count = product_count | plus: 1 -%}
     {%- endcase -%}
 {%- endfor -%}
+
+{% if location_href != blank %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth > 768) {
+            var banner = document.querySelector('.hero_valentine_banner');
+            if (banner) {
+                banner.addEventListener('click', function() {
+                    window.location.href = '{{ location_href }}';
+                });
+            }
+            }
+        });
+    </script>
+{% endif %}
 
 <link rel="stylesheet" href="{{ 'homepage_promo.css' | asset_url }}">
 
