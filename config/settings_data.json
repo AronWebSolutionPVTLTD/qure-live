@@ -35,6 +35,14 @@
     "frontrow_health_image_2": "shopify://shop_images/User_Image_1.png",
     "frontrow_health_count_circle_color": "#c8e6dc",
     "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_product_list_to_exclude": [
+      "silk-pillowcase",
+      "dermal-mist",
+      "shower-filter",
+      "faucet-filter-refill",
+      "faucet-filter"
+    ],
     "show_order_by_receive_by": true,
     "today_text": "Order today",
     "start_time_order": "2024-10-30T23:00",
@@ -258,15 +266,6 @@
               "upsell_product_thid_description": "Plump, smooth & brighten in just one step"
             }
           },
-          "trustpilot_a3exnp": {
-            "type": "trustpilot",
-            "settings": {
-              "text_area_first": "<p>Excellent <b>4.5</b></p>",
-              "starts": "shopify://shop_images/stars-4.5_2.svg",
-              "second_text_content": "reviews on",
-              "logo": "shopify://shop_images/logo_truspilot.svg"
-            }
-          },
           "upsell_GiyUV9": {
             "type": "upsell",
             "settings": {
@@ -347,7 +346,6 @@
           "upsell_DQMajg",
           "upsell_a74n8t",
           "upsell_ej4ULU",
-          "trustpilot_a3exnp",
           "upsell_GiyUV9",
           "upsell_UiGexh",
           "upsell_MBrVMA",
