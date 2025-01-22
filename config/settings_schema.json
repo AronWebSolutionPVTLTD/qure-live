@@ -139,6 +139,12 @@
         "id": "frontrow_health_background_color",
         "label": "Background Color",
         "default": "#f8f8f8"
+      },
+      {
+        "type": "product_list",
+        "id": "frontrow_product_list_to_exclude",
+        "label": "Products To Exclude",
+        "limit": 12
       }
     ]
   },

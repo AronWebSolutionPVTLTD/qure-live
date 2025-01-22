@@ -310,8 +310,16 @@
                             </div>
                         {% endif %}
 
-                        {% assign array_products_to_exclude = "dermal-mist, shower-filter, silk-pillowcase" | split: ", " %}
-                        {% unless array_products_to_exclude contains product.handle %}
+                        {% assign array_products_to_exclude = "" %}
+                        {% assign products_to_exclude = "" %}
+                        {% for excluded_product in settings.frontrow_product_list_to_exclude %}
+                            {% assign products_to_exclude = products_to_exclude | append: excluded_product.handle %}
+                            {% unless forloop.last  %}
+                                {% assign products_to_exclude = products_to_exclude | append: "," %}
+                            {% endunless %}
+                        {% endfor %}
+                        {% assign array_products_to_exclude = products_to_exclude | split: "," %}
+                        {% unless array_products_to_exclude contains product.handle  %}
                             {% render 'pdm_pdp-frontrow-health' %}
                         {% endunless %}
 
