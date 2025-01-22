@@ -35,6 +35,14 @@
     "frontrow_health_image_2": "shopify://shop_images/User_Image_1.png",
     "frontrow_health_count_circle_color": "#c8e6dc",
     "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_health_link": "https://qureskincare.com/pages/derm-reviews",
+    "frontrow_product_list_to_exclude": [
+      "silk-pillowcase",
+      "dermal-mist",
+      "shower-filter",
+      "faucet-filter-refill",
+      "faucet-filter"
+    ],
     "show_order_by_receive_by": true,
     "today_text": "Order today",
     "start_time_order": "2024-10-30T23:00",
