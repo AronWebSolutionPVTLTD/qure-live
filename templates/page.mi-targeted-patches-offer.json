@@ -844,7 +844,8 @@
         "wistia_FDDfkR": {
           "type": "wistia",
           "settings": {
-            "wistia_id": "xnr8wpyi8i"
+            "wistia_id": "xnr8wpyi8i",
+            "image": "shopify://shop_images/patches.png"
           }
         }
       },
