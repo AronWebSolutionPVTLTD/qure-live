@@ -174,7 +174,6 @@
     },
     "image_text_2_rn78Ab": {
       "type": "image-text-2",
-      "disabled": true,
       "blocks": {
         "image_FM83kj": {
           "type": "image",
@@ -201,6 +200,7 @@
         "image_FM83kj",
         "text_ARNPxF"
       ],
+      "disabled": true,
       "settings": {
         "background": "trasnparent",
         "custom_class": "section"
@@ -319,7 +319,6 @@
     },
     "ingredients_list_kx7Yjh": {
       "type": "ingredients-list",
-      "disabled": true,
       "blocks": {
         "column_7mEigp": {
           "type": "column",
@@ -411,6 +410,7 @@
         "skin_image_LCDYMx",
         "skin_image_eXjAJL"
       ],
+      "disabled": true,
       "custom_css": [
         ".section_header p a {text-decoration: underline;}",
         ".ingredients_img img {min-height: 49px;}"
@@ -422,7 +422,8 @@
       }
     },
     "temp-faucet-filter-section4": {
-      "type": "temp-faucet-filter-section4"
+      "type": "temp-faucet-filter-section4",
+      "settings": {}
     },
     "icons_list_KDdcxw": {
       "type": "icons-list",
@@ -544,17 +545,19 @@
       }
     },
     "temp-faucet-filter-section1": {
-      "type": "temp-faucet-filter-section1"
+      "type": "temp-faucet-filter-section1",
+      "settings": {}
     },
     "temp-faucet-filter-section2": {
-      "type": "temp-faucet-filter-section2"
+      "type": "temp-faucet-filter-section2",
+      "settings": {}
     },
     "temp-faucet-filter-section3": {
-      "type": "temp-faucet-filter-section3"
+      "type": "temp-faucet-filter-section3",
+      "settings": {}
     },
     "compare_images_TNaVYJ": {
       "type": "compare-images",
-      "disabled": true,
       "blocks": {
         "benefit_PgfEHx": {
           "type": "benefit",
@@ -629,9 +632,10 @@
         "icon_box_h3X8QJ",
         "column_HrmwD7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "4-Stage Advanced Filtration Technology",
-        "sub_text": "<p>Qure’s Faucet Filter uses an advanced carbon filter – the preferred and most effective method.</p>",
+        "sub_text": "<p>Qure’s Faucet Filter uses an advanced carbon filter – the preferred and most effective method.</p>"
       }
     },
     "videos_list_QVh9ma": {
