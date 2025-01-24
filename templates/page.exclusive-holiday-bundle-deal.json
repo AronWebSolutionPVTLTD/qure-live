@@ -85,6 +85,15 @@
             "link_url": "#bf-bundles"
           }
         },
+        "product_L8TbkG": {
+          "type": "product",
+          "settings": {
+            "heading": "Exclusive Valentine's day bundle",
+            "discount": 66,
+            "image": "shopify://shop_images/Exclusive_Valentines_day_bundle.png",
+            "product_url": "#exclusive-valentine's-day-bundle"
+          }
+        },
         "product_YzAr6q": {
           "type": "product",
           "settings": {
@@ -198,6 +207,7 @@
       "block_order": [
         "badge_bNNHbU",
         "link_Xz3LeQ",
+        "product_L8TbkG",
         "product_YzAr6q",
         "product_iEprpi",
         "product_QVwGAe",
