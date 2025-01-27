@@ -1529,7 +1529,7 @@ function initFrontrowHealth (frontrowContainer, trustedSection) {
 // DOM elements for controlling the upsell popup
 const openPopupUpsell = document.querySelector("#openPopupUpsell");
 
-if(openPopupUpsell.dataset.popupEnabled) {
+if(openPopupUpsell && openPopupUpsell.dataset?.popupEnabled) {
   const closePopupUpsell = document.querySelector("#closePopupUpsell")
   const popupUpsell = document.querySelector("#popupUpsell");
   const popupUpsellWrapper = document.querySelector('.popupsell-wrapper');
