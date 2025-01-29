@@ -163,40 +163,6 @@
         "custom_cls": "bg-lightGrey"
       }
     },
-    "image_text_2_rn78Ab": {
-      "type": "image-text-2",
-      "blocks": {
-        "image_FM83kj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/faucet_flter-pd.webp"
-          }
-        },
-        "text_ARNPxF": {
-          "type": "text",
-          "settings": {
-            "heading": "360° Nozzle for Precise Water Direction",
-            "text_content": "Our patent pending 360° nozzle offers precise and adjustable filtered water direction, making it suitable for all sink sizes.",
-            "richtext_id": "",
-            "img_1": "shopify:\/\/shop_images\/restart.svg",
-            "text_1": "Easy Toggle Options",
-            "img_2": "shopify:\/\/shop_images\/water_tap.svg",
-            "text_2": "99% Faucet Fit",
-            "img_3": "shopify:\/\/shop_images\/verfied_sheild.svg",
-            "text_3": "Lifetime Warranty"
-          }
-        }
-      },
-      "block_order": [
-        "image_FM83kj",
-        "text_ARNPxF"
-      ],
-      "disabled": true,
-      "settings": {
-        "background": "trasnparent",
-        "custom_class": "section"
-      }
-    },
     "reasons_Y4QGUa": {
       "type": "reasons",
       "blocks": {
@@ -595,6 +561,7 @@
         "column_GXqHQA"
       ],
       "settings": {
+        "ctm_cls": "pb-0",
         "heading": "4-Stage Advanced Filtration Technology",
         "sub_text": "<p>Qure’s Faucet Filter uses an advanced carbon filter – the preferred and most effective method.<\/p>"
       }
@@ -613,17 +580,17 @@
         "benefit_afG9TB": {
           "type": "benefit",
           "settings": {
-            "benefit_image": "shopify:\/\/shop_images\/descaling.svg",
-            "benefit_title": "ASP (descaling)",
-            "benefit_description": "Reduces limescale buildup, which, when left untreated, can dry out your skin."
+            "benefit_image": "shopify:\/\/shop_images\/metal.svg",
+            "benefit_title": "Heavy metal reduction layer",
+            "benefit_description": "Targets heavy metals like lead."
           }
         },
         "benefit_EGfHWJ": {
           "type": "benefit",
           "settings": {
-            "benefit_image": "shopify:\/\/shop_images\/descaling.svg",
-            "benefit_title": "ASP (descaling)",
-            "benefit_description": "Reduces limescale buildup, which, when left untreated, can dry out your skin."
+            "benefit_image": "shopify:\/\/shop_images\/Ultrafilter.svg",
+            "benefit_title": "Ultrafilter",
+            "benefit_description": "A very fine filter (down to 0.01 microns), it removes tiny particles like sand and bacteria."
           }
         }
       },
@@ -633,12 +600,93 @@
         "benefit_EGfHWJ"
       ],
       "settings": {
+        "ctm_cls": "pt-0",
         "section_heading": ""
+      }
+    },
+    "image_text_2_jnEkpL": {
+      "type": "image-text-2",
+      "blocks": {
+        "image_Nm6Y9h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/faucet_flter-pd10_1.webp"
+          }
+        },
+        "text_RwbnDq": {
+          "type": "text",
+          "settings": {
+            "heading": "360° Nozzle for Precise Water Direction",
+            "text_content": "Our patent pending 360° nozzle offers precise and adjustable filtered water direction, making it suitable for all sink sizes.",
+            "richtext_id": "",
+            "img_1": "shopify:\/\/shop_images\/restart.svg",
+            "text_1": "Easy Toggle Options",
+            "img_2": "shopify:\/\/shop_images\/water_tap.svg",
+            "text_2": "99% Faucet Fit",
+            "img_3": "shopify:\/\/shop_images\/verfied_sheild.svg",
+            "text_3": "Lifetime Warranty"
+          }
+        }
+      },
+      "block_order": [
+        "image_Nm6Y9h",
+        "text_RwbnDq"
+      ],
+      "settings": {
+        "background": "trasnparent",
+        "custom_class": "section"
       }
     },
     "temp-faucet-filter-section3": {
       "type": "temp-faucet-filter-section3",
       "settings": {}
+    },
+    "confidence_slider_TTtUDV": {
+      "type": "confidence-slider",
+      "blocks": {
+        "option_4fabBn": {
+          "type": "option",
+          "settings": {
+            "text": "<p>of participants say their fine lines<strong>looked smoother.<\/strong><\/p>",
+            "percent_bar": 70
+          }
+        },
+        "option_X6xrLB": {
+          "type": "option",
+          "settings": {
+            "text": "<p>noticed <strong>results the next day <\/strong>after the first Micro-Infusion treatment.<\/p>",
+            "percent_bar": 93
+          }
+        },
+        "option_9xi8Jq": {
+          "type": "option",
+          "settings": {
+            "text": "<p>of participants say their skin looked <strong>brighter and more even toned.<\/strong><\/p>",
+            "percent_bar": 70
+          }
+        },
+        "single_image_X3QJ6y": {
+          "type": "single_image",
+          "settings": {
+            "single_image_id": "shopify:\/\/shop_images\/sn_8_1.webp",
+            "proven_res": "Proven results in",
+            "hydration": "Hydration",
+            "wrinkles": "Wrinkles",
+            "acne": "Acne",
+            "skin_texture": " Skin Texture"
+          }
+        }
+      },
+      "block_order": [
+        "option_4fabBn",
+        "option_X6xrLB",
+        "option_9xi8Jq",
+        "single_image_X3QJ6y"
+      ],
+      "settings": {
+        "heading": "No hype, just evidence.",
+        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 fortnightly treatments.<\/p>"
+      }
     },
     "how_to_install_L9i7VN": {
       "type": "how-to-install",
@@ -760,6 +808,7 @@
       ],
       "disabled": true,
       "settings": {
+        "ctm_cls": "",
         "heading": "4-Stage Advanced Filtration Technology",
         "sub_text": "<p>Qure’s Faucet Filter uses an advanced carbon filter – the preferred and most effective method.<\/p>"
       }
@@ -1021,7 +1070,6 @@
     "main",
     "liquid_FrGCjn",
     "featuredin_FdCAV8",
-    "image_text_2_rn78Ab",
     "reasons_Y4QGUa",
     "results_B6nDgh",
     "ingredients_list_kx7Yjh",
@@ -1033,7 +1081,9 @@
     "temp-faucet-filter-section2",
     "compare_images_kJ9QKX",
     "product_details_banner_ryaLi8",
+    "image_text_2_jnEkpL",
     "temp-faucet-filter-section3",
+    "confidence_slider_TTtUDV",
     "how_to_install_L9i7VN",
     "compare_images_TNaVYJ",
     "videos_list_QVh9ma",
