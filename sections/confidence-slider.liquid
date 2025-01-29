@@ -1,5 +1,5 @@
 <!-- --  skincare slider start  -- -->
-<div class="skincare_slider_n section">
+<div class="skincare_slider_n section sssss">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -64,6 +64,24 @@
                                             <div class="skin_item_n_tag">
                                                 {{ block.settings.text |  replace: '<strong>', '<span class="sn_tag">' |  replace: '</strong>', '</span>' }}
                                             </div>
+                                        </div>
+                                    </div>
+                                {% when 'single_image' %}
+                                    <div class="skin_item_n">
+                                        {% if block.settings.single_image_id != blank %}
+                                            <div class="skin_item_n_img">
+                                                <img src="{{ block.settings.single_image_id | img_url: 'master' }}" alt="{{ block.settings.single_image_id.alt | escape }}" class="img-fluid">
+                                            </div>
+                                        {% endif %}
+                                        <div class="skin_item_n_tag ps-md-3">
+                                            <p class="ps-md-2">{{ block.settings.proven_res }}</p>
+                                            <p id="sn_tags">
+                                                <span class="sn_tag">{{ block.settings.hydration }}</span>
+                                                <span class="sn_tag">{{ block.settings.wrinkles }} </span>
+                                                <span class="sn_tag">{{ block.settings.acne }}</span>
+                                                <span class="sn_tag">{{ block.settings.skin_texture }}</span>
+                                            </p>
+                                            
                                         </div>
                                     </div>
                             {% endcase %}
@@ -164,6 +182,42 @@
                     {
                         "type": "richtext",
                         "id": "text",
+                        "label": "t:common.text.label"
+                    }
+                ]
+		    },
+            {
+                "type": "single_image",
+                "name": "Single Image",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "single_image_id",
+                        "label": "t:common.image.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "proven_res",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "hydration",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "wrinkles",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "acne",
+                        "label": "t:common.text.label"
+                    },
+                    {
+                        "type": "text",
+                        "id": "skin_texture",
                         "label": "t:common.text.label"
                     }
                 ]
