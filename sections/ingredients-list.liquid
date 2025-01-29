@@ -11,6 +11,60 @@
       {% endif %}
     </div>
     <div class="ingredients_content">
+
+        {% assign has_icon = false %}
+        {%- for block in section.blocks -%}
+          {% if block.type == 'icons_with_text_below' and block.settings.icon_img != blank %}
+            {% assign has_icon = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_icon %}
+        <div class="row justify-content-center justify-content-md-between gy-4 pb-5">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'icons_with_text_below' %}
+                {% if block.settings.icon_img != blank %}
+                <div class="col-md-auto col-4 text-center">
+                  <div class="ingredients_img my-0">
+                    <div class="ing_img-inner">
+                      <img src="{{ block.settings.icon_img | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.icon_img_text }}">
+                    </div>
+                  </div>
+                  <p class="fw-semibold">{{ block.settings.icon_img_text }}</p>
+                </div>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+
+
+        {% assign has_icon = false %}
+        {%- for block in section.blocks -%}
+          {% if block.type == 'rich_content' and block.settings.rich_content_text != blank %}
+            {% assign has_icon = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_icon %}
+        <div class="row justify-content-center pb-5 mb-5">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'rich_content' %}
+                {% if block.settings.rich_content_text != blank %}
+                <div class="col-auto col-md-8 text-md-center">
+                 <h2 class="title-lg">{{ block.settings.rich_content_heading }}</h2> 
+                 {{ block.settings.rich_content_text }} 
+                </div>
+                {% endif %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+
       <div class="row gy-3">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -23,13 +77,18 @@
                     </div>
                   {% endif %}
                   <div class="ingredients_text">
-                    {% if block.settings.i-heading != blank %}
-                      <p class="fw-bold">{{ block.settings.i-heading }}</p>
+                    {% if block.settings['i-heading'] != blank %}
+                      <p class="fw-bold">{{ block.settings['i-heading'] }}</p>
                     {% endif %}
-                    {% if block.settings.i-text != blank %}
-                      <p>{{ block.settings.i-text }}</p>
+                    {% if block.settings['i-text'] != blank %}
+                      <p>{{ block.settings['i-text'] }}</p>
                     {% endif %}
                   </div>
+                  {% if block.settings.img_id_ingr != blank %}
+                  <div class="ing_image">
+                    <img src="{{ block.settings.img_id_ingr | img_url: 'master' }}" class="img-fluid" alt="{{ block.settings.img_id_ingr }}">
+                  </div>
+                  {% endif %}
                 </div>
               </div>
           {% endcase %}
@@ -153,6 +212,11 @@
         },
         {
           "type": "image_picker",
+          "id": "img_id_ingr",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "image_picker",
           "id": "i_icon",
           "label": "t:common.ingredient.image"
         },
@@ -208,6 +272,38 @@
         {
           "type": "text",
           "id": "problem_text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "icons_with_text_below",
+      "name": "Icons With Text Below",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_img",
+          "label": "t:common.image.label"
+        },
+        {
+          "type": "text",
+          "id": "icon_img_text",
+          "label": "t:common.text.label"
+        }
+      ]
+    },
+    {
+      "type": "rich_content",
+      "name": "Rich Content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "rich_content_heading",
+          "label": "t:common.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "rich_content_text", 
           "label": "t:common.text.label"
         }
       ]
