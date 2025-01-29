@@ -183,8 +183,8 @@
         "icon_W4LDVM": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mi_pdp-reason8.svg",
-            "text": "<p>Increases skin hydration and improves skin barrier<\/p>"
+            "image": "shopify://shop_images/mi_pdp-reason8.svg",
+            "text": "<p>Increases skin hydration and improves skin barrier in 4 weeks</p>"
           }
         },
         "icon_4F6GcW": {
