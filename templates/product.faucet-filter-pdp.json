@@ -382,6 +382,135 @@
       "type": "temp-faucet-filter-section4",
       "settings": {}
     },
+    "ingredients_list_Cj4m3e": {
+      "type": "ingredients-list",
+      "blocks": {
+        "icons_with_text_below_bhKUKK": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/Chlorine_1.svg",
+            "icon_img_text": "Chlorine"
+          }
+        },
+        "icons_with_text_below_3Mtdcy": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/micro-organisms.svg",
+            "icon_img_text": "Micro-organisms"
+          }
+        },
+        "icons_with_text_below_GNKgmQ": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/Calcium_1.svg",
+            "icon_img_text": "Calcium"
+          }
+        },
+        "icons_with_text_below_k9VkJ9": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/rust.svg",
+            "icon_img_text": "Rust"
+          }
+        },
+        "icons_with_text_below_MzLH48": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/Magnesium_1.svg",
+            "icon_img_text": "Magnesium"
+          }
+        },
+        "icons_with_text_below_YqEqgp": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/Micro-plastics.svg",
+            "icon_img_text": "Micro-plastics"
+          }
+        },
+        "icons_with_text_below_MKbmGp": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/lead-particles.svg",
+            "icon_img_text": "Lead particles"
+          }
+        },
+        "icons_with_text_below_8paVim": {
+          "type": "icons_with_text_below",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/many-more.svg",
+            "icon_img_text": "Many more"
+          }
+        },
+        "rich_content_GgfwQ8": {
+          "type": "rich_content",
+          "settings": {
+            "rich_content_heading": "Water's hidden impact on your skin",
+            "rich_content_text": "<p>That water hardness is a contributor to <a href=\"https:\/\/www.sciencedirect.com\/science\/article\/pii\/S0022202X1732938X\">skin barrier impairment,<\/a> including worsened atopic <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/33259122\/\">eczema<\/a> and <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/27241890\/\">atopic dermatitis.<\/a> And not just from the well-known culprit chlorine – but also calcium and magnesium.<\/p>"
+          }
+        },
+        "column_Dgp3gA": {
+          "type": "column",
+          "settings": {
+            "flag": "Known irritant",
+            "flag-color": "#f9c91d",
+            "i-heading": "Chlorine",
+            "i-text": "Traditionally added to kill bacteria. Chlorine can deplete the skin of the natural oils that hold moisture in, leading to dry and itchy skin.",
+            "img_id_ingr": "shopify:\/\/shop_images\/dry_skin-2_1.webp",
+            "ingredient1": "",
+            "ingredient2": "",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        },
+        "column_eGRNh9": {
+          "type": "column",
+          "settings": {
+            "flag": "Long-term damage!",
+            "flag-color": "#fa6f0b",
+            "i-heading": "Magnesium",
+            "i-text": "Magnesium can result in the formation of free radicals which damage healthy skin cells and break down collagen, resulting in fine lines and wrinkles.",
+            "img_id_ingr": "shopify:\/\/shop_images\/wrikle_skin_1.webp",
+            "ingredient1": "",
+            "ingredient2": "",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        },
+        "column_UtNVg7": {
+          "type": "column",
+          "settings": {
+            "flag": "Most harmful",
+            "flag-color": "#c92127",
+            "i-heading": "Calcium",
+            "i-text": "Calcium can irritate the skin, causing dry, scaly, pinkish patches. It can also clog pores, which can lead to blackheads, blemishes, and\/or rosacea.",
+            "img_id_ingr": "shopify:\/\/shop_images\/acne_skin-2_1.webp",
+            "ingredient1": "",
+            "ingredient2": "",
+            "ingredient_text": "",
+            "column_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "icons_with_text_below_bhKUKK",
+        "icons_with_text_below_3Mtdcy",
+        "icons_with_text_below_GNKgmQ",
+        "icons_with_text_below_k9VkJ9",
+        "icons_with_text_below_MzLH48",
+        "icons_with_text_below_YqEqgp",
+        "icons_with_text_below_MKbmGp",
+        "icons_with_text_below_8paVim",
+        "rich_content_GgfwQ8",
+        "column_Dgp3gA",
+        "column_eGRNh9",
+        "column_UtNVg7"
+      ],
+      "settings": {
+        "heading": "It’s time to look toward your faucet, not (just) your ingredients list.",
+        "subtext": "<p>Research has shown tap water is contaminated with over 320* chemicals that your skin is absorbing daily. These micro-contaminants in water can clog pores, dry out and irritate sensitive skin.<\/p>",
+        "custom_class": "pb-4"
+      }
+    },
     "icons_list_KDdcxw": {
       "type": "icons-list",
       "blocks": {
@@ -1074,6 +1203,7 @@
     "results_B6nDgh",
     "ingredients_list_kx7Yjh",
     "temp-faucet-filter-section4",
+    "ingredients_list_Cj4m3e",
     "icons_list_KDdcxw",
     "text_with_video_MH3gBb",
     "temp-faucet-filter-section1",
