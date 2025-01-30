@@ -178,6 +178,8 @@
                                         {% include 'product-extended-subscription-product' product: product, product_custom: false %}
                                     {% endif %}
 
+                                    {%- assign discount_price_original = all_products[product.handle].price | times: 0.7 | money_without_trailing_zeros %}
+
                                     <div class="subscribe_save_wrapper with_subscription mt-2">
                                         <div class="subscribeTopInfo">
                                             <p>Over 1,000 people chose subscription</p>
@@ -194,6 +196,7 @@
                                                             {{ block.settings.text 
                                                                 | replace: '[future_price]', future_price 
                                                                 | replace: '[discount_price]', discount_price
+                                                                | replace: '[discount_price_original]', discount_price_original
                                                             }}
                                                         {% endif %}
                                                     </label>
