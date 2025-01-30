@@ -781,22 +781,22 @@
         "option_4fabBn": {
           "type": "option",
           "settings": {
-            "text": "<p>of participants say their fine lines<strong>looked smoother.<\/strong><\/p>",
-            "percent_bar": 70
+            "text": "<p>reported <strong>reduced tightness<\/strong> after washing with filtered water.<\/p>",
+            "percent_bar": 77
           }
         },
         "option_X6xrLB": {
           "type": "option",
           "settings": {
-            "text": "<p>noticed <strong>results the next day <\/strong>after the first Micro-Infusion treatment.<\/p>",
-            "percent_bar": 93
+            "text": "<p>noticed <strong>less dryness<\/strong> after 4 weeks.<\/p>",
+            "percent_bar": 83
           }
         },
         "option_9xi8Jq": {
           "type": "option",
           "settings": {
-            "text": "<p>of participants say their skin looked <strong>brighter and more even toned.<\/strong><\/p>",
-            "percent_bar": 70
+            "text": "<p><strong>would recommend<\/strong> Qure Faucet Filter to a friend.<\/p>",
+            "percent_bar": 83
           }
         },
         "single_image_X3QJ6y": {
@@ -818,7 +818,7 @@
         "single_image_X3QJ6y"
       ],
       "settings": {
-        "heading": "No hype, just evidence.",
+        "heading": "No promises, just results.",
         "text": "<p>In an independent user study, the Qure Faucet Filter was evaluated for its effects on skin hydration and wrinkle appearance under real-life conditions. Participants demonstrated significant visible improvements after just one month. <\/p>"
       }
     },
