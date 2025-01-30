@@ -98,7 +98,8 @@
     "liquid_FrGCjn": {
       "type": "liquid",
       "settings": {
-        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    setTimeout(() => { $(\"#productButton\").trigger('click') }, 1500);\n});\n\n<\/script>"
+        "code": "<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n    setTimeout(() => { $(\"#productButton\").trigger('click') }, 1500);\n});\n\n<\/script>",
+        "popup_micro_infusion_enabled": true
       }
     },
     "featuredin_FdCAV8": {
@@ -183,8 +184,8 @@
         "icon_W4LDVM": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/mi_pdp-reason8.svg",
-            "text": "<p>Increases skin hydration and improves skin barrier in 4 weeks</p>"
+            "image": "shopify:\/\/shop_images\/mi_pdp-reason8.svg",
+            "text": "<p>Increases skin hydration and improves skin barrier in 4 weeks<\/p>"
           }
         },
         "icon_4F6GcW": {
@@ -380,6 +381,7 @@
     },
     "temp-faucet-filter-section4": {
       "type": "temp-faucet-filter-section4",
+      "disabled": true,
       "settings": {}
     },
     "ingredients_list_Cj4m3e": {
@@ -590,6 +592,7 @@
     },
     "temp-faucet-filter-section1": {
       "type": "temp-faucet-filter-section1",
+      "disabled": true,
       "settings": {}
     },
     "image_text_8pHUQm": {
@@ -641,6 +644,7 @@
     },
     "temp-faucet-filter-section2": {
       "type": "temp-faucet-filter-section2",
+      "disabled": true,
       "settings": {}
     },
     "compare_images_kJ9QKX": {
@@ -768,6 +772,7 @@
     },
     "temp-faucet-filter-section3": {
       "type": "temp-faucet-filter-section3",
+      "disabled": true,
       "settings": {}
     },
     "confidence_slider_TTtUDV": {
@@ -814,7 +819,7 @@
       ],
       "settings": {
         "heading": "No hype, just evidence.",
-        "text": "<p>The results speak for themselves. In an independent user study, participants' skin was measured and showed proven visible improvement after just 6 fortnightly treatments.<\/p>"
+        "text": "<p>In an independent user study, the Qure Faucet Filter was evaluated for its effects on skin hydration and wrinkle appearance under real-life conditions. Participants demonstrated significant visible improvements after just one month. <\/p>"
       }
     },
     "how_to_install_L9i7VN": {
