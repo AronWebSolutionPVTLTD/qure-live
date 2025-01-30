@@ -94,6 +94,18 @@
           {% endcase %}
         {% endfor %}
       </div>
+
+
+     
+      {% assign has_iconz = false %}
+      {%- for block in section.blocks -%}
+        {% if block.type == 'column' and block.settings.i_icon != blank %}
+          {% assign has_iconz = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_iconz %}
+
       <div class="row gy-3 pt-4">
         {% for block in section.blocks %}
           {% case block.type %}
@@ -132,6 +144,7 @@
           {% endcase %}
         {% endfor %}
       </div>
+      {% endif %}
     </div>
     {% for block in section.blocks %}
       {% if block.settings.heading2 != blank %}
