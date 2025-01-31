@@ -51,7 +51,7 @@
     "enable_site_gamification": false,
     "enable_free_shipping_treshold": false,
     "enable_product_gift": false,
-    "product_free_gift": "face-serum",
+    "product_free_gift": "",
     "dont_enable_gift_urls": "/pages/led-mask-offer-2\n/pages/q-rejuvalight-pro-offer",
     "copy_get_product_free": "<p>You’re &price-left& away from  <strong>Free &product-title& </strong>worth &product-price&!</p>",
     "icon_product_gift_clean": "shopify://shop_images/Gift-grey1.svg",
