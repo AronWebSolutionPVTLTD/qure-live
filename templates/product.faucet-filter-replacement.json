@@ -279,6 +279,7 @@
         "content_VABXRx",
         "image_gxcdaY"
       ],
+      "disabled": true,
       "settings": {
         "classname": "technology_light pt-30 section",
         "column_image": 5,
