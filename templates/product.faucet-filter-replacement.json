@@ -64,9 +64,9 @@
           "type": "subscribe",
           "settings": {
             "heading": "Subscribe & save 30%",
-            "text": "<p>Get a new replacement filter delivered every 90 days for just [discount_price_original]. Skip or cancel at any time. <a href=\"https://www.qureskincare.com/pages/subscriptions\" target=\"_blank\">See more details</a></p>",
-            "product": "faucet-filter",
-            "plan": "6190465263",
+            "text": "<p>Get a new replacement filter delivered every 90 days for just [discount_price]. Skip or cancel at any time. <a href=\"https://www.qureskincare.com/pages/subscriptions\" target=\"_blank\">See more details</a></p>",
+            "product": "",
+            "plan": "6180143343",
             "discount": 30
           }
         }
@@ -279,6 +279,7 @@
         "content_VABXRx",
         "image_gxcdaY"
       ],
+      "disabled": true,
       "settings": {
         "classname": "technology_light pt-30 section",
         "column_image": 5,
@@ -333,7 +334,7 @@
       ],
       "settings": {
         "classname": "bg-transparent pt-0",
-        "heading": "5 reasons why everyone istapping into a whole new side of skincare",
+        "heading": "5 reasons why everyone is tapping into a whole new side of skincare",
         "text": ""
       }
     },
